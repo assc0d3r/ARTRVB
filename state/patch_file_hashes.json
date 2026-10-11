@@ -63,7 +63,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "566f65d08304db2ffb02d1bcc0fd88e0",
+      "com.google.android.apps.maps": "1f76a74f6c6df7e04ef12a2ee767a25a",
       "shared": "ccad433d728a8fca2434563b046d8fc7"
     }
   },
@@ -483,28 +483,28 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "ec404af0582fd2c4640ac25b225e00a9",
-      "shared": "510972dd381bb9c8380c17ea47594ca9"
+      "com.facebook.katana": "8e8db3912bb806e388fae98569e265aa",
+      "shared": "6f97cb36d0e2265bab57a21bf786a91e"
     }
   },
   "sysadmindoc/hushfeed": {
     "beta": {},
     "stable": {
-      "com.zhiliaoapp.musically": "faf820d4de49c2eb45bbf9b372de0b75",
+      "com.zhiliaoapp.musically": "c1a43dc629be9771412f20c2b30fab1f",
       "shared": "46d8882e3e2552c9319178d27875fbae"
     }
   },
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "4892975b60d0f85225714e03fddd105d",
-      "shared": "014be086a5df3a4a765c08b771eb8768"
+      "com.instagram.android": "ff7cdd27e9f9a6172a5baee54f5a6baf",
+      "shared": "577da86092db83be6d091d779bdb5a09"
     }
   },
   "sysadmindoc/hushmessenger": {
     "beta": {},
     "stable": {
-      "com.facebook.orca": "fdeaca2e810fa4b37a453e043caa8640",
+      "com.facebook.orca": "0d991c58a15e1df7ffafde12e32be630",
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
     }
   },
@@ -525,8 +525,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "2cd7abbad7bd65afcbc8b08eab76061b",
-      "shared": "93347688a57d48eb233f0810c96e78ff"
+      "com.discord": "dd7f5211ee158339ad925bacffc10dc1",
+      "shared": "8d953536a2e41393aa6f5adec7f2ec3b"
     }
   }
 }

@@ -122,8 +122,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.10.0",
-    "stable_date": "2026-10-11T03:01:47Z"
+    "stable": "v0.11.0",
+    "stable_date": "2026-10-11T21:37:00Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.8",
-    "stable_date": "2026-10-10T04:24:39Z"
+    "stable": "v0.0.9",
+    "stable_date": "2026-10-11T22:21:55Z"
   },
   "SysAdminDoc/HushMessenger": {
     "beta": "",
@@ -140,8 +140,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushMessenger",
-    "stable": "v0.22.0",
-    "stable_date": "2026-10-09T01:21:17Z"
+    "stable": "v0.23.0",
+    "stable_date": "2026-10-11T21:06:03Z"
   },
   "SysAdminDoc/HushTelegram": {
     "beta": "",
@@ -167,8 +167,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/hushfeed",
-    "stable": "v0.71.0",
-    "stable_date": "2026-10-11T20:10:05Z"
+    "stable": "v0.71.2",
+    "stable_date": "2026-10-11T23:25:46Z"
   },
   "VenusIsJaded/Venus-Patches": {
     "beta": "",
@@ -176,8 +176,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.6.0",
-    "stable_date": "2026-10-11T20:11:54Z"
+    "stable": "v1.7.0",
+    "stable_date": "2026-10-11T22:08:12Z"
   },
   "ajstrick81/morphe-androidtv-patches": {
     "beta": "test-212",
@@ -221,8 +221,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.2.2",
-    "stable_date": "2026-10-11T20:11:55Z"
+    "stable": "v2.2.5",
+    "stable_date": "2026-10-11T23:28:13Z"
   },
   "binarymend/morphe-patches": {
     "beta": "v1.3.1-dev.1",
@@ -342,8 +342,8 @@
     "stable_date": "2026-09-27T13:12:56Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.14.0-dev.2",
-    "beta_date": "2026-10-11T10:35:09Z",
+    "beta": "v1.14.0-dev.3",
+    "beta_date": "2026-10-11T20:38:00Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
