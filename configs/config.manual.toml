@@ -1,9 +1,11 @@
-[Flipkart-debakarr]
+[Sofascore-heval99]
 enabled = true
-pkg-name = "com.flipkart.android"
-app-name = "Flipkart"
-brand = "debakarr"
-patches-source = "debakarr/morphe-patches"
-included-patches = "'Sort by number of ratings'"
-excluded-patches = "'Install alongside original'"
-apkpure-dlurl = "https://apkpure.com/flipkart-online-shopping-app/com.flipkart.android"
+pkg-name = "com.sofascore.results"
+app-name = "Sofascore"
+brand = "heval99"
+patches-source = "heval99/Heval-Morphe-Patches"
+uptodown-dlurl = "https://sofascore.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/sofascore/soccer-scores-and-sports-livescore-sofascore"
+apkpure-dlurl = "https://apkpure.com/sofascore-sports-live-scores/com.sofascore.results"
+
+
