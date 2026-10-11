@@ -63,7 +63,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "78b97f4f7a00fdd2921933c45cc8c502",
+      "com.google.android.apps.maps": "566f65d08304db2ffb02d1bcc0fd88e0",
       "shared": "ccad433d728a8fca2434563b046d8fc7"
     }
   },
@@ -96,7 +96,7 @@
     "beta": {},
     "stable": {
       "org.swiftapps.swiftbackup": "19f8e7d3f7903d93d21919ae4e0b5bc2",
-      "shared": "2d38e281262a2e6d7e8ec39c97410315"
+      "shared": "7aa5d9136d9ba7f06fcb8298a69bd4bb"
     }
   },
   "crimera/piko": {
@@ -132,7 +132,7 @@
     "beta": {},
     "stable": {
       "ch.protonmail.android": "649bd0176545d5822d936803d4150e3f",
-      "shared": "d0082b0ab1c1ef4e67ddd07a8131a4b6"
+      "shared": "1fe847f9076537fdd2843cb04be0e428"
     }
   },
   "durgesh0505/chiggi_morphe_patches": {
@@ -326,7 +326,7 @@
   "morpheapp/morphe-patches": {
     "beta": {
       "com.google.android.apps.youtube.music": "7a0bfb3e79e2eea8e75e41dbf30cc548",
-      "com.google.android.youtube": "f4fe255457fe36b9081ea156c9abf56c",
+      "com.google.android.youtube": "737db0d0d79edf8bf44efafcd34aedbc",
       "com.reddit.frontpage": "59f4197c376045a317af241fe538c7eb",
       "shared": "37419c431fbdcfb2c425a66d42d8aaba"
     },
