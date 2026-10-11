@@ -170,6 +170,15 @@
     "stable": "v0.70.0",
     "stable_date": "2026-10-10T04:23:17Z"
   },
+  "VenusIsJaded/Venus-Patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "VenusIsJaded/Venus-Patches",
+    "stable": "v1.5.0",
+    "stable_date": "2026-10-11T06:21:13Z"
+  },
   "ajstrick81/morphe-androidtv-patches": {
     "beta": "test-212",
     "beta_date": "2026-10-06T22:01:57Z",
@@ -323,6 +332,15 @@
     "stable": "v1.4.2",
     "stable_date": "2026-09-29T16:39:00Z"
   },
+  "ggYasin/ggyasin-morphe-patches": {
+    "beta": "v1.6.1-dev.3",
+    "beta_date": "2026-09-27T15:14:13Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "ggYasin/ggyasin-morphe-patches",
+    "stable": "v1.6.0",
+    "stable_date": "2026-09-27T13:12:56Z"
+  },
   "heval99/Heval-Morphe-Patches": {
     "beta": "v1.14.0-dev.2",
     "beta_date": "2026-10-11T10:35:09Z",
@@ -331,6 +349,15 @@
     "repo": "heval99/Heval-Morphe-Patches",
     "stable": "v1.13.0",
     "stable_date": "2026-10-11T08:14:50Z"
+  },
+  "heyymichii/michii-patches": {
+    "beta": "v1.1.0-dev.3",
+    "beta_date": "2026-10-11T14:27:41Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "heyymichii/michii-patches",
+    "stable": "v1.1.0",
+    "stable_date": "2026-10-11T14:30:51Z"
   },
   "hoo-dles/morphe-patches": {
     "beta": "v1.47.1-dev.1",

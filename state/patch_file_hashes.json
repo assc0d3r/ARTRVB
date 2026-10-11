@@ -167,11 +167,25 @@
       "shared": "88145df615f85fd9e698657c6942f52f"
     }
   },
+  "ggyasin/ggyasin-morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.JindoBlu.OfflineGames": "d0ab602b441ea8c4eeba369641e73f79",
+      "shared": "74f4752016c3c66d296d5cc5c6c7aba3"
+    }
+  },
   "heval99/heval-morphe-patches": {
     "beta": {},
     "stable": {
       "eu.faircode.email": "10d00ca8fc6e4ddf38681226edc76521",
       "shared": "14efd9f2f66e672e8424a19e6e749180"
+    }
+  },
+  "heyymichii/michii-patches": {
+    "beta": {},
+    "stable": {
+      "com.linkedin.android": "eab08ffebb4cf94d1676e07689a4592f",
+      "shared": "3d14bd460d712e88a7ab80afd48cd175"
     }
   },
   "hoo-dles/morphe-patches": {
@@ -506,6 +520,13 @@
     "stable": {
       "com.instagram.barcelona": "7383b9b6c2b039099bfb9a30fc885072",
       "shared": "d4f3962c7eea56c55fb93e8ce65086dc"
+    }
+  },
+  "venusisjaded/venus-patches": {
+    "beta": {},
+    "stable": {
+      "com.discord": "8625e75738940c5a5455290bd35c2307",
+      "shared": "b64476492680851d6ce6acded3513904"
     }
   }
 }

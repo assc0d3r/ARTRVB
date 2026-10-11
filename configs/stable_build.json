@@ -310,7 +310,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/medium/com.medium.reader"
   },
   "SwiftBackup-byehi98": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "org.swiftapps.swiftbackup",
     "app-name": "Swift Backup",
     "patches-source": "byehi98/okish-morphe-patches",
@@ -426,24 +426,36 @@
     "apkcombo-dlurl": "https://apkcombo.com/titanium-browser/io.github.jqssun.helium"
   },
   "Discord-revenge": {
-    "cli-source": "JingMatrix/LSPatch",
     "enabled": false,
-    "patches-source": "revenge-mod/revenge-xposed",
-    "brand": "revenge",
     "pkg-name": "com.discord",
     "app-name": "Discord",
+    "brand": "revenge",
+    "patches-source": "revenge-mod/revenge-xposed",
+    "cli-source": "JingMatrix/LSPatch",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/discord/discord-chat-for-gamers",
+    "uptodown-dlurl": "https://discord-chat-for-gamers.en.uptodown.com/android",
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "Discord-rain": {
-    "cli-source": "JingMatrix/LSPatch",
     "enabled": false,
-    "patches-source": "raincord/rainXposed",
-    "patches-source-host": "codeberg",
-    "brand": "rain",
     "pkg-name": "com.discord",
     "app-name": "Discord",
+    "brand": "rain",
+    "patches-source": "raincord/rainXposed",
+    "patches-source-host": "codeberg",
+    "cli-source": "JingMatrix/LSPatch",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/discord/discord-chat-for-gamers",
+    "uptodown-dlurl": "https://discord-chat-for-gamers.en.uptodown.com/android",
+    "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
+  },
+  "Discord-Venus": {
+    "enabled": true,
+    "pkg-name": "com.discord",
+    "app-name": "Discord",
+    "brand": "Venus",
+    "patches-source": "VenusIsJaded/Venus-Patches",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/discord/discord-chat-for-gamers",
+    "uptodown-dlurl": "https://discord-chat-for-gamers.en.uptodown.com/android",
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleNews-docbt": {
@@ -514,6 +526,17 @@
     "apkpure-dlurl": "https://apkpure.com/byair-flight-tracker-status/com.byairapp.android",
     "apkcombo-dlurl": "https://apkcombo.com/byair-flight-tracker-status/com.byairapp.android"
   },
+  "OfflineGames-ggYasin": {
+    "enabled": true,
+    "pkg-name": "com.JindoBlu.OfflineGames",
+    "app-name": "Offline Games",
+    "brand": "ggYasin",
+    "patches-source": "ggYasin/ggyasin-morphe-patches",
+    "included-patches": "'Fast Offline Games startup' 'In-house ad not clickable' 'In-house ad only' 'Instant in-house ad close'",
+    "uptodown-dlurl": "https://offline-games-no-wifi-games.en.uptodown.com/android",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/jindoblu/offline-games-no-wifi-games",
+    "apkpure-dlurl": "https://apkpure.com/offline-games-no-wifi-games/com.JindoBlu.OfflineGames"
+  },
   "FairEmail-heval99": {
     "enabled": false,
     "pkg-name": "eu.faircode.email",
@@ -524,6 +547,16 @@
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/marcel-bokhorst/fairemail-open-source-privacy-oriented-email",
     "apkpure-dlurl": "https://apkpure.com/fairemail-privacy-aware-email/eu.faircode.email",
     "apkcombo-dlurl": "https://apkcombo.com/fairemail-privacy-aware-email/eu.faircode.email"
+  },
+  "Sofascore-heval99": {
+    "enabled": false,
+    "pkg-name": "com.sofascore.results",
+    "app-name": "Sofascore",
+    "brand": "heval99",
+    "patches-source": "heval99/Heval-Morphe-Patches",
+    "uptodown-dlurl": "https://sofascore.en.uptodown.com/android",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/sofascore/soccer-scores-and-sports-livescore-sofascore",
+    "apkpure-dlurl": "https://apkpure.com/sofascore-sports-live-scores/com.sofascore.results"
   },
   "Duolingo-hoodles": {
     "patches-source": "hoo-dles/morphe-patches",
@@ -1201,6 +1234,16 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca",
     "apkcombo-dlurl": "https://apkcombo.com/facebook-messenger/com.facebook.orca"
   },
+  "LinkedIn-michii": {
+    "enabled": true,
+    "pkg-name": "com.linkedin.android",
+    "app-name": "LinkedIn",
+    "brand": "michii",
+    "patches-source": "heyymichii/michii-patches",
+    "uptodown-dlurl": "https://linkedin.en.uptodown.com/android",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/linkedin/linkedin-linkedin",
+    "apkpure-dlurl": "https://apkpure.com/linkedin-network-job-finder/com.linkedin.android"
+  },
   "Cricbuzz-Paresh": {
     "patches-source": "Paresh-Maheshwari/paresh-patches",
     "patches-source-host": "gitlab",
@@ -1319,7 +1362,7 @@
     "uptodown-dlurl": "https://pinterest.en.uptodown.com/android"
   },
   "Pinterest-browzomje": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "browzomje/browzomje-patches",
@@ -1463,7 +1506,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/aliexpress-shopping-app/com.alibaba.aliexpresshd"
   },
   "Reddit-Morphe": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -1476,7 +1519,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.reddit.frontpage"
   },
   "Reddit-Morphe-Experimental": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -1990,7 +2033,7 @@
     "apkpure-dlurl": "https://apkpure.com/x-formerly-twitter/com.twitter.android"
   },
   "YouTubeMusic-Morphe": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.youtube.music",
     "app-name": "YouTube Music",
     "patches-source": "MorpheApp/morphe-patches",
@@ -2003,7 +2046,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube-music/com.google.android.apps.youtube.music"
   },
   "YouTubeMusic-Morphe-Experimental": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.youtube.music",
     "app-name": "YouTube Music",
     "patches-source": "MorpheApp/morphe-patches",
@@ -2056,7 +2099,7 @@
     "apkmirror-dlurl": "https://apkmirror.com/apk/google-inc/youtube-music"
   },
   "YouTube-Morphe": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": "MorpheApp/morphe-patches",
@@ -2069,7 +2112,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "YouTube-Morphe-NordTheme": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": "MorpheApp/morphe-patches",
@@ -2084,7 +2127,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "YouTube-Morphe-MochaTheme": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": "MorpheApp/morphe-patches",
@@ -2099,7 +2142,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "YouTube-Morphe-Experimental": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": "MorpheApp/morphe-patches",
