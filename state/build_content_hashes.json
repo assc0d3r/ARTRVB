@@ -1,17 +1,17 @@
 {
   "beta": {
-    "youtube-morphe-v21.20.405-arm64-v8a": "3ecc75ccc1c5ee69ef2098a514c7a358",
-    "youtube-morphe-v21.20.405-arm-v7a": "f2390bde782dd5a39ee9cadc01d7be5f",
-    "youtube-morphe-experimental-v21.40.161-arm64-v8a": "9f2fe8112f46bf0139757cdddea3b22d",
-    "youtube-morphe-experimental-v21.40.161-arm-v7a": "9a0cd1feb609f127767a6e7e3d4251af",
-    "youtube-music-morphe-v9.20.53-arm-v7a": "6d9376ce79c52b2c0880fffbc3fd2c16",
+    "youtube-morphe-v21.20.405-arm64-v8a": "abec8e465a7df4468a2c45b0eab7e62c",
+    "youtube-morphe-v21.20.405-arm-v7a": "fd22560eff7b30d0ec40b1802ab54dde",
+    "youtube-morphe-experimental-v21.40.161-arm64-v8a": "333c2f3016ca008d7fe7f95c25b91b8e",
+    "youtube-morphe-experimental-v21.40.161-arm-v7a": "9abebd61fa8d878256f18b79d8e78ab8",
+    "youtube-music-morphe-v9.20.53-arm-v7a": "2f88cfc85666aa28b8285ba99528c019",
     "reddit-morphe-v2026.24.0-arm-v7a": "7969b49385e041b0658a6cb8b593afee",
     "reddit-morphe-v2026.24.0-arm64-v8a": "5ed2867d35934e4102e9b30f0f004a29",
-    "youtube-music-morphe-v9.20.53-arm64-v8a": "a02249e5ed4b59a9dba6fd25245f7b9d",
+    "youtube-music-morphe-v9.20.53-arm64-v8a": "c93afc493a10c41747d2a6d9949fe48d",
     "reddit-morphe-experimental-v2026.41.0-arm-v7a": "2785699fc34dc06ec4323ca72069b4f4",
     "reddit-morphe-experimental-v2026.41.0-arm64-v8a": "25bb70123d6b4479cbd3053d6d6b70d2",
-    "youtube-music-morphe-experimental-v9.40.51-arm64-v8a": "99c3ccac8655539e887e916077b06c96",
-    "youtube-music-morphe-experimental-v9.40.51-arm-v7a": "99c3ccac8655539e887e916077b06c96"
+    "youtube-music-morphe-experimental-v9.40.51-arm64-v8a": "916b867e497e875aa7b046dadefdc1d2",
+    "youtube-music-morphe-experimental-v9.40.51-arm-v7a": "916b867e497e875aa7b046dadefdc1d2"
   },
   "stable": {
     "proton-mail-satanmerde-v7.11.6-arm-v7a": "401b3ef02d694c9da2bcb1e44c456d2e",
