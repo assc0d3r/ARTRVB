@@ -1,11 +1,14 @@
-[Sofascore-heval99]
+[OfflineGames-ggYasin]
 enabled = true
-pkg-name = "com.sofascore.results"
-app-name = "Sofascore"
-brand = "heval99"
-patches-source = "heval99/Heval-Morphe-Patches"
-uptodown-dlurl = "https://sofascore.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/sofascore/soccer-scores-and-sports-livescore-sofascore"
-apkpure-dlurl = "https://apkpure.com/sofascore-sports-live-scores/com.sofascore.results"
+pkg-name = "com.JindoBlu.OfflineGames"
+app-name = "Offline Games"
+brand = "ggYasin"
+patches-source = "ggYasin/ggyasin-morphe-patches"
+included-patches = "'Fast Offline Games startup' 'In-house ad not clickable' 'In-house ad only' 'Instant in-house ad close'"
+uptodown-dlurl = "https://offline-games-no-wifi-games.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/jindoblu/offline-games-no-wifi-games"
+apkpure-dlurl = "https://apkpure.com/offline-games-no-wifi-games/com.JindoBlu.OfflineGames"
+
+
 
 
