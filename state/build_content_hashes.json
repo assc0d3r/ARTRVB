@@ -35,13 +35,13 @@
     "pinterest-browzomje-v14.39.0-arm64-v8a": "25e30836e8d2c0d50b8b983b47e816eb",
     "pinterest-browzomje-v14.39.0-arm-v7a": "7e24443acbb4f8a88453b682b5953520",
     "threads-hushthreads-v450.0.0.51.78-arm64-v8a": "3305039720ee8d3ca3d2ff1b8a6ebc12",
-    "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a": "33b95257f715fa9fef699619c7d0e54a",
+    "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a": "c02f610dee46aa36bf80eb66fa6ce2e1",
     "fairemail-heval99-v1.2338-arm-v7a": "9237046705640c28b9819eb04c435557",
     "fairemail-heval99-v1.2338-arm64-v8a": "f8ef6700595633e92c01c56957b763cd",
     "swift-backup-byehi98-v5.1.0-arm64-v8a": "f15e167dcb790bccfc533c22d509bc1a",
     "swift-backup-byehi98-v5.1.0-arm-v7a": "0caf3157fb7ac6a12fd75f523348cd9b",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "08a35f18a44af23df5a7b9b5422ffab2",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "772261a2039632f30a3bd4f3b20d7ddd",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "466f3bd43dfe8a01d57f28aa4f397cd0",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "0d953b1ed42506d12dd311c3393bfa1a",
     "reddit-morphe-v2026.24.0-arm64-v8a": "65bd806af930987762743d7df604120a",
     "reddit-morphe-v2026.24.0-arm-v7a": "a86b3d46e938c96cebcf57d206f51435",
     "reddit-morphe-experimental-v2026.41.0-arm64-v8a": "f80ba4bb3fb4adfcd8e35c3d25e8c035",
@@ -64,9 +64,12 @@
     "linkedin-michii-v4.1.1259-arm64-v8a": "d6e3a1467639cbb72a0b7701c8ad5c9b",
     "sofascore-heval99-v26.09.28-arm64-v8a": "a7a42ba6e2f211c450d80113a0c96079",
     "sofascore-heval99-v26.09.28-arm-v7a": "664860490fa25a07708fd17b00ef28ad",
-    "tiktok-hushfeed-v47.1.4-arm64-v8a": "db7813155c950bdf180f75e4289a42e8",
-    "tiktok-hushfeed-v47.1.4-arm-v7a": "81ca5491c3a84172fc793790a6baec21",
+    "tiktok-hushfeed-v47.1.4-arm64-v8a": "92b04280f6db13b04a3319a06b85c9dc",
+    "tiktok-hushfeed-v47.1.4-arm-v7a": "fc78a43c6f6cd0a00b8b4f4baafbc625",
     "offline-games-ggyasin-v3.15.3-arm64-v8a": "ff798a1d6f83ce753568c9b4e885c75d",
-    "offline-games-ggyasin-v3.14.1-arm-v7a": "58ea9953c76f71e6daefddebd21e766f"
+    "offline-games-ggyasin-v3.14.1-arm-v7a": "58ea9953c76f71e6daefddebd21e766f",
+    "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198",
+    "messenger-hushmessenger-v582.0.0.61.92-arm64-v8a": "7bf48f56ea44f8886e736e8ac3c5730c",
+    "messenger-hushmessenger-material-you-v582.0.0.61.92-arm64-v8a": "28e31699e48443012bdf8b952131f9f0"
   }
 }
