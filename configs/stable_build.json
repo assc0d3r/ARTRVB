@@ -527,7 +527,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/byair-flight-tracker-status/com.byairapp.android"
   },
   "OfflineGames-ggYasin": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.JindoBlu.OfflineGames",
     "app-name": "Offline Games",
     "brand": "ggYasin",
@@ -1235,7 +1235,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook-messenger/com.facebook.orca"
   },
   "LinkedIn-michii": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.linkedin.android",
     "app-name": "LinkedIn",
     "brand": "michii",
@@ -1917,7 +1917,7 @@
     "apkpure-dlurl": "https://apkpure.com/threads-app/com.instagram.barcelona"
   },
   "TikTok-hushfeed": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.zhiliaoapp.musically",
     "app-name": "TikTok",
     "patches-source": "SysAdminDoc/hushfeed",

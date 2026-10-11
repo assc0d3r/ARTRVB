@@ -167,8 +167,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/hushfeed",
-    "stable": "v0.70.0",
-    "stable_date": "2026-10-10T04:23:17Z"
+    "stable": "v0.71.0",
+    "stable_date": "2026-10-11T20:10:05Z"
   },
   "VenusIsJaded/Venus-Patches": {
     "beta": "",
@@ -176,8 +176,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.5.0",
-    "stable_date": "2026-10-11T06:21:13Z"
+    "stable": "v1.6.0",
+    "stable_date": "2026-10-11T20:11:54Z"
   },
   "ajstrick81/morphe-androidtv-patches": {
     "beta": "test-212",
@@ -221,8 +221,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.2.0",
-    "stable_date": "2026-10-11T13:44:54Z"
+    "stable": "v2.2.2",
+    "stable_date": "2026-10-11T20:11:55Z"
   },
   "binarymend/morphe-patches": {
     "beta": "v1.3.1-dev.1",
@@ -450,8 +450,8 @@
     "stable_date": "2026-10-09T18:16:59Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.7.0-experimental.8",
-    "beta_date": "2026-10-11T17:17:55Z",
+    "beta": "v2.7.0-experimental.9",
+    "beta_date": "2026-10-11T19:46:30Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",

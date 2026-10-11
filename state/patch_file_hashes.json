@@ -490,7 +490,7 @@
   "sysadmindoc/hushfeed": {
     "beta": {},
     "stable": {
-      "com.zhiliaoapp.musically": "60800ffa40e90de110a8b789820c40b1",
+      "com.zhiliaoapp.musically": "faf820d4de49c2eb45bbf9b372de0b75",
       "shared": "46d8882e3e2552c9319178d27875fbae"
     }
   },
@@ -525,8 +525,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "8625e75738940c5a5455290bd35c2307",
-      "shared": "b64476492680851d6ce6acded3513904"
+      "com.discord": "2cd7abbad7bd65afcbc8b08eab76061b",
+      "shared": "93347688a57d48eb233f0810c96e78ff"
     }
   }
 }
