@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-11T11:21:02Z"
+    "publishedAt": "2026-10-11T15:05:18Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -7065,18 +7065,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.41.0.mpp"
+        "byehi98/patches-1.42.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.41.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.42.0"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-09T18:48:18Z"
+      "originBuild": "260246",
+      "publishedAt": "2026-10-11T15:05:05Z"
     },
     "swift-backup-byehi98-v5.1.0-arm-v7a.apk": {
       "name": "swift-backup-byehi98",
@@ -7091,18 +7091,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.41.0.mpp"
+        "byehi98/patches-1.42.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.41.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.42.0"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-09T18:48:18Z"
+      "originBuild": "260246",
+      "publishedAt": "2026-10-11T15:05:05Z"
     },
     "chess-com-prathxm-v4.10.0-arm-v7a.apk": {
       "name": "chess-com-prathxm",
@@ -20589,10 +20589,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-1.7.13.mpp"
+        "bearinmindcat/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v1.7.13"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -20614,12 +20614,14 @@
         "Remove permissions",
         "Remove sign-in prompts",
         "Remove telemetry",
+        "Speed cameras",
+        "Speeding chime",
         "Trim account menu",
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260231",
-      "publishedAt": "2026-10-10T00:11:25Z"
+      "originBuild": "260246",
+      "publishedAt": "2026-10-11T15:05:05Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -20634,10 +20636,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-1.7.13.mpp"
+        "bearinmindcat/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v1.7.13"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -20659,12 +20661,14 @@
         "Remove permissions",
         "Remove sign-in prompts",
         "Remove telemetry",
+        "Speed cameras",
+        "Speeding chime",
         "Trim account menu",
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260231",
-      "publishedAt": "2026-10-10T00:11:25Z"
+      "originBuild": "260246",
+      "publishedAt": "2026-10-11T15:05:05Z"
     },
     "discord-rain-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-rain",
