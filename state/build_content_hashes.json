@@ -37,6 +37,10 @@
     "threads-hushthreads-v450.0.0.51.78-arm64-v8a": "3305039720ee8d3ca3d2ff1b8a6ebc12",
     "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a": "33b95257f715fa9fef699619c7d0e54a",
     "fairemail-heval99-v1.2338-arm-v7a": "9237046705640c28b9819eb04c435557",
-    "fairemail-heval99-v1.2338-arm64-v8a": "f8ef6700595633e92c01c56957b763cd"
+    "fairemail-heval99-v1.2338-arm64-v8a": "f8ef6700595633e92c01c56957b763cd",
+    "swift-backup-byehi98-v5.1.0-arm64-v8a": "f15e167dcb790bccfc533c22d509bc1a",
+    "swift-backup-byehi98-v5.1.0-arm-v7a": "0caf3157fb7ac6a12fd75f523348cd9b",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "08a35f18a44af23df5a7b9b5422ffab2",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "772261a2039632f30a3bd4f3b20d7ddd"
   }
 }
