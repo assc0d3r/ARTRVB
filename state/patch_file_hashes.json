@@ -132,7 +132,7 @@
     "beta": {},
     "stable": {
       "ch.protonmail.android": "649bd0176545d5822d936803d4150e3f",
-      "shared": "2674a70ffb996779d92e38448ba5c505"
+      "shared": "d0082b0ab1c1ef4e67ddd07a8131a4b6"
     }
   },
   "durgesh0505/chiggi_morphe_patches": {
@@ -170,7 +170,7 @@
   "heval99/heval-morphe-patches": {
     "beta": {},
     "stable": {
-      "eu.faircode.email": "4459f969721b9bf76fa26613faa12261",
+      "eu.faircode.email": "10d00ca8fc6e4ddf38681226edc76521",
       "shared": "14efd9f2f66e672e8424a19e6e749180"
     }
   },
@@ -325,8 +325,8 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "784741f1da5d3f857a3f57bbb60f4d23",
-      "com.google.android.youtube": "64adc7a70531abd815467475bd02e40b",
+      "com.google.android.apps.youtube.music": "7a0bfb3e79e2eea8e75e41dbf30cc548",
+      "com.google.android.youtube": "f4fe255457fe36b9081ea156c9abf56c",
       "com.reddit.frontpage": "59f4197c376045a317af241fe538c7eb",
       "shared": "37419c431fbdcfb2c425a66d42d8aaba"
     },
@@ -462,7 +462,7 @@
   "satanmerde/d-moniakpatches": {
     "beta": {},
     "stable": {
-      "ch.protonmail.android": "2f553e25d2582ea1b4ff3f1f26526f59",
+      "ch.protonmail.android": "a87e331fcae370eae4e7736d304f8d59",
       "shared": "1973a8bff34f351dcd6ed13f665701ea"
     }
   },
@@ -497,8 +497,8 @@
   "sysadmindoc/hushtelegram": {
     "beta": {},
     "stable": {
-      "org.telegram.messenger.web": "0dc03d3f35c2af98e3ad28be125f21c1",
-      "shared": "dcfef6d1a183e801592ad1fe3941039e"
+      "org.telegram.messenger.web": "97c272cb5f0471e06d27fb11064b17fd",
+      "shared": "6e92282006e8b3fb62d9be463307da43"
     }
   },
   "sysadmindoc/hushthreads": {
