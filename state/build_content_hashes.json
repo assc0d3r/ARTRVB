@@ -65,6 +65,8 @@
     "sofascore-heval99-v26.09.28-arm64-v8a": "a7a42ba6e2f211c450d80113a0c96079",
     "sofascore-heval99-v26.09.28-arm-v7a": "664860490fa25a07708fd17b00ef28ad",
     "tiktok-hushfeed-v47.1.4-arm64-v8a": "db7813155c950bdf180f75e4289a42e8",
-    "tiktok-hushfeed-v47.1.4-arm-v7a": "81ca5491c3a84172fc793790a6baec21"
+    "tiktok-hushfeed-v47.1.4-arm-v7a": "81ca5491c3a84172fc793790a6baec21",
+    "offline-games-ggyasin-v3.15.3-arm64-v8a": "ff798a1d6f83ce753568c9b4e885c75d",
+    "offline-games-ggyasin-v3.14.1-arm-v7a": "58ea9953c76f71e6daefddebd21e766f"
   }
 }
