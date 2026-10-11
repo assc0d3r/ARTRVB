@@ -1,0 +1,14 @@
+[OfflineGames-ggYasin]
+enabled = true
+pkg-name = "com.JindoBlu.OfflineGames"
+app-name = "Offline Games"
+brand = "ggYasin"
+patches-source = "ggYasin/ggyasin-morphe-patches"
+included-patches = "'Fast Offline Games startup' 'In-house ad not clickable' 'In-house ad only' 'Instant in-house ad close'"
+uptodown-dlurl = "https://offline-games-no-wifi-games.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/jindoblu/offline-games-no-wifi-games"
+apkpure-dlurl = "https://apkpure.com/offline-games-no-wifi-games/com.JindoBlu.OfflineGames"
+
+
+
+
