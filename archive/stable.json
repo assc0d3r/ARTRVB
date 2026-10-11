@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-11T18:58:50Z"
+    "publishedAt": "2026-10-11T20:34:35Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -16422,10 +16422,10 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "SysAdminDoc/patches-0.70.0.mpp"
+        "SysAdminDoc/patches-0.71.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.70.0"
+        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.71.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -16499,6 +16499,7 @@
         "Keep playing in the background",
         "Keep pulled sounds",
         "Keep the Favorites tab",
+        "Keep the app language",
         "Keep the screen's refresh rate",
         "LIVE controls",
         "Lift text length limits",
@@ -16540,6 +16541,7 @@
         "Show the progress bar thumbnail",
         "Skip content warnings",
         "Skip first-launch setup",
+        "Skip passkey sign-in",
         "Skip the splash ad",
         "Skip update checks",
         "Stay on the video in full screen",
@@ -16558,8 +16560,8 @@
         "Use non-personalized search",
         "Use system font"
       ],
-      "originBuild": "260232",
-      "publishedAt": "2026-10-10T05:52:44Z"
+      "originBuild": "260250",
+      "publishedAt": "2026-10-11T20:34:04Z"
     },
     "tiktok-hushfeed-v47.1.4-arm-v7a.apk": {
       "name": "tiktok-hushfeed",
@@ -16574,10 +16576,10 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "SysAdminDoc/patches-0.70.0.mpp"
+        "SysAdminDoc/patches-0.71.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.70.0"
+        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.71.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -16651,6 +16653,7 @@
         "Keep playing in the background",
         "Keep pulled sounds",
         "Keep the Favorites tab",
+        "Keep the app language",
         "Keep the screen's refresh rate",
         "LIVE controls",
         "Lift text length limits",
@@ -16692,6 +16695,7 @@
         "Show the progress bar thumbnail",
         "Skip content warnings",
         "Skip first-launch setup",
+        "Skip passkey sign-in",
         "Skip the splash ad",
         "Skip update checks",
         "Stay on the video in full screen",
@@ -16710,8 +16714,8 @@
         "Use non-personalized search",
         "Use system font"
       ],
-      "originBuild": "260232",
-      "publishedAt": "2026-10-10T05:52:44Z"
+      "originBuild": "260250",
+      "publishedAt": "2026-10-11T20:34:04Z"
     },
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -21978,10 +21982,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.5.0.mpp"
+        "VenusIsJaded/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.5.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "CopyBios",
@@ -22001,6 +22005,7 @@
         "Hide Quests promotion",
         "Hide gift button",
         "JumpToTop",
+        "Message tap gestures",
         "No typing",
         "NoDelete",
         "Pastelize",
@@ -22011,8 +22016,8 @@
         "ReviewDB",
         "Venus settings"
       ],
-      "originBuild": "260248",
-      "publishedAt": "2026-10-11T18:51:59Z"
+      "originBuild": "260250",
+      "publishedAt": "2026-10-11T20:34:04Z"
     },
     "discord-venus-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -22027,10 +22032,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.5.0.mpp"
+        "VenusIsJaded/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.5.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "CopyBios",
@@ -22050,6 +22055,7 @@
         "Hide Quests promotion",
         "Hide gift button",
         "JumpToTop",
+        "Message tap gestures",
         "No typing",
         "NoDelete",
         "Pastelize",
@@ -22060,8 +22066,8 @@
         "ReviewDB",
         "Venus settings"
       ],
-      "originBuild": "260248",
-      "publishedAt": "2026-10-11T18:51:59Z"
+      "originBuild": "260250",
+      "publishedAt": "2026-10-11T20:34:04Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
