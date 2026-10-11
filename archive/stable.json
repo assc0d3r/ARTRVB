@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-11T18:52:20Z"
+    "publishedAt": "2026-10-11T18:58:50Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -22130,6 +22130,62 @@
       ],
       "originBuild": "260248",
       "publishedAt": "2026-10-11T18:51:59Z"
+    },
+    "sofascore-heval99-v26.09.28-arm64-v8a.apk": {
+      "name": "sofascore-heval99",
+      "version": "26.09.28",
+      "appKey": "sofascore",
+      "appName": "Sofascore",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.sofascore.results",
+      "patchSources": [
+        "heval99/patches-1.13.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.13.0"
+      ],
+      "appliedPatches": [
+        "Block marketing notifications",
+        "Disable Facebook SDK",
+        "Disable ads",
+        "Disable telemetry",
+        "Enable Premium"
+      ],
+      "originBuild": "260249",
+      "publishedAt": "2026-10-11T18:58:36Z"
+    },
+    "sofascore-heval99-v26.09.28-arm-v7a.apk": {
+      "name": "sofascore-heval99",
+      "version": "26.09.28",
+      "appKey": "sofascore",
+      "appName": "Sofascore",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.sofascore.results",
+      "patchSources": [
+        "heval99/patches-1.13.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.13.0"
+      ],
+      "appliedPatches": [
+        "Block marketing notifications",
+        "Disable Facebook SDK",
+        "Disable ads",
+        "Disable telemetry",
+        "Enable Premium"
+      ],
+      "originBuild": "260249",
+      "publishedAt": "2026-10-11T18:58:36Z"
     }
   }
 }
