@@ -321,7 +321,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/swift-backup/org.swiftapps.swiftbackup"
   },
   "Meesho-debakarr": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.meesho.supply",
     "app-name": "Meesho",
     "brand": "debakarr",
@@ -331,7 +331,7 @@
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/meesho/meesho-shopping"
   },
   "Flipkart-debakarr": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.flipkart.android",
     "app-name": "Flipkart",
     "brand": "debakarr",
@@ -426,7 +426,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/titanium-browser/io.github.jqssun.helium"
   },
   "Discord-revenge": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "revenge",
@@ -437,7 +437,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "Discord-rain": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "rain",
@@ -449,7 +449,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -1343,7 +1343,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "AkashSriram",
