@@ -1,17 +1,19 @@
 {
   "beta": {
-    "youtube-morphe-v21.20.405-arm64-v8a": "2530771cc9cfe35c4c956996af0b4bfa",
-    "youtube-morphe-v21.20.405-arm-v7a": "801f54d0beca505dd12338c6dbc6a1dc",
+    "youtube-morphe-v21.20.405-arm64-v8a": "06a954817b70c3b31d5b3f1705c04a3d",
+    "youtube-morphe-v21.20.405-arm-v7a": "07daff0ab48240dd18b020a842a0ba7f",
     "youtube-morphe-experimental-v21.40.161-arm64-v8a": "616a2c02025615fad6f9a62b0707b7d3",
     "youtube-morphe-experimental-v21.40.161-arm-v7a": "d72cb00795f2084cee744d2946d69e60",
-    "youtube-music-morphe-v9.20.53-arm-v7a": "2f88cfc85666aa28b8285ba99528c019",
-    "reddit-morphe-v2026.24.0-arm-v7a": "7969b49385e041b0658a6cb8b593afee",
-    "reddit-morphe-v2026.24.0-arm64-v8a": "5ed2867d35934e4102e9b30f0f004a29",
-    "youtube-music-morphe-v9.20.53-arm64-v8a": "c93afc493a10c41747d2a6d9949fe48d",
-    "reddit-morphe-experimental-v2026.41.0-arm-v7a": "2785699fc34dc06ec4323ca72069b4f4",
-    "reddit-morphe-experimental-v2026.41.0-arm64-v8a": "25bb70123d6b4479cbd3053d6d6b70d2",
-    "youtube-music-morphe-experimental-v9.40.51-arm64-v8a": "916b867e497e875aa7b046dadefdc1d2",
-    "youtube-music-morphe-experimental-v9.40.51-arm-v7a": "916b867e497e875aa7b046dadefdc1d2"
+    "youtube-music-morphe-v9.20.53-arm-v7a": "77eaad4822721e90bb127fabb193650a",
+    "reddit-morphe-v2026.24.0-arm-v7a": "08db4b2da2522334d0af8e78dc3f7c4f",
+    "reddit-morphe-v2026.24.0-arm64-v8a": "7a437827b83f0bed3a35b7a9f18df777",
+    "youtube-music-morphe-v9.20.53-arm64-v8a": "87fc64345f9015df434beb914b9700e1",
+    "reddit-morphe-experimental-v2026.41.0-arm-v7a": "c9d6a1165928dfd354ea36e333ef1e35",
+    "reddit-morphe-experimental-v2026.41.0-arm64-v8a": "9f5e7f5e9244ccb4d543c848de2a5e0c",
+    "youtube-music-morphe-experimental-v9.40.51-arm64-v8a": "c4acc9d2b16a579188d25104f0b57880",
+    "youtube-music-morphe-experimental-v9.40.51-arm-v7a": "c4acc9d2b16a579188d25104f0b57880",
+    "youtube-morphe-experimental-v21.41.525-arm64-v8a": "e5158f3727a2ba307403fee0c8b8e0de",
+    "youtube-morphe-experimental-v21.41.525-arm-v7a": "336c882a8f58873096116763fb91ed0a"
   },
   "stable": {
     "proton-mail-satanmerde-v7.11.6-arm-v7a": "401b3ef02d694c9da2bcb1e44c456d2e",
