@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-12T01:53:33Z"
+    "publishedAt": "2026-10-12T05:54:50Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -17714,10 +17714,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.47.0.mpp"
+        "hxreborn/patches-1.48.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.47.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17734,8 +17734,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-10T20:35:14Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-12T05:54:30Z"
     },
     "proton-vpn-hxreborn-v5.20.57.0-arm-v7a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -17750,10 +17750,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.47.0.mpp"
+        "hxreborn/patches-1.48.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.47.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17770,8 +17770,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-10T20:35:14Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-12T05:54:30Z"
     },
     "terabox-hxreborn-v4.26.5-arm64-v8a.apk": {
       "name": "terabox-hxreborn",
@@ -17786,10 +17786,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.47.0.mpp"
+        "hxreborn/patches-1.48.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.47.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17799,8 +17799,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-10T20:35:14Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-12T05:54:30Z"
     },
     "terabox-hxreborn-v4.26.5-arm-v7a.apk": {
       "name": "terabox-hxreborn",
@@ -17815,10 +17815,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.47.0.mpp"
+        "hxreborn/patches-1.48.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.47.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17828,8 +17828,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-10T20:35:14Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-12T05:54:30Z"
     },
     "termius-rushiranpise-v7.9.0-arm64-v8a.apk": {
       "name": "termius-rushiranpise",
@@ -19080,10 +19080,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.2.5.mpp"
+        "bearinmindcat/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.5"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -19108,11 +19108,12 @@
         "Speed cameras",
         "Speeding chime",
         "Trim account menu",
+        "Waze alerts",
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260252",
-      "publishedAt": "2026-10-11T23:40:10Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-12T05:54:30Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -19127,10 +19128,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.2.5.mpp"
+        "bearinmindcat/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.5"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -19155,11 +19156,12 @@
         "Speed cameras",
         "Speeding chime",
         "Trim account menu",
+        "Waze alerts",
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260252",
-      "publishedAt": "2026-10-11T23:40:10Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-12T05:54:30Z"
     },
     "discord-rain-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-rain",
