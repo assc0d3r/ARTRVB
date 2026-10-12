@@ -17,7 +17,7 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "6e242b29a76f6aec3eba7291844c0c07",
+      "com.google.android.apps.photos": "028b317d5c2bbafefa9167f94ea7a816",
       "shared": "e4941211327fd990dc348b77f232b3cd"
     }
   },
@@ -63,7 +63,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "b2ec20d858ec48c64b66a935034bb8de",
+      "com.google.android.apps.maps": "c4ca3a3925a663caf8f6c32a4e6c63a7",
       "shared": "ccad433d728a8fca2434563b046d8fc7"
     }
   },
@@ -114,9 +114,9 @@
   "debakarr/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.flipkart.android": "ab4c5b57b71f699ba6c04baf8b976823",
-      "com.meesho.supply": "4350416ea3cca7744b513cb6c3cc0702",
-      "shared": "f7d67a8eae03b585e869dd860cba63fe"
+      "com.flipkart.android": "82fd8370540c5f2ef8c07382238f0950",
+      "com.meesho.supply": "7a9a82f28d5e224a2449c58f49a5665f",
+      "shared": "830fd34752c620fcaba824d5ea0a214e"
     }
   },
   "dh6k/morphe-patches": {
@@ -339,10 +339,10 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "7a0bfb3e79e2eea8e75e41dbf30cc548",
-      "com.google.android.youtube": "596af4fe7f04f91ab00810fc72896f0e",
-      "com.reddit.frontpage": "59f4197c376045a317af241fe538c7eb",
-      "shared": "37419c431fbdcfb2c425a66d42d8aaba"
+      "com.google.android.apps.youtube.music": "016a5660aa88f0dd0d7747c35b7e58f2",
+      "com.google.android.youtube": "34ba838b1dc33ef40588a70ab157123b",
+      "com.reddit.frontpage": "284391ba00ed147752a106b5f5b6336f",
+      "shared": "00e6a4e475d62aa142b67b346f97f8cb"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "1e4aadd260009e9cc452874a2de1018d",
@@ -526,7 +526,7 @@
     "beta": {},
     "stable": {
       "com.discord": "dd7f5211ee158339ad925bacffc10dc1",
-      "shared": "8d953536a2e41393aa6f5adec7f2ec3b"
+      "shared": "c96e35587c9e00c49b158937ad93a4a4"
     }
   }
 }
