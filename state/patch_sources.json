@@ -221,8 +221,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.2.5",
-    "stable_date": "2026-10-11T23:28:13Z"
+    "stable": "v2.3.0",
+    "stable_date": "2026-10-12T03:02:46Z"
   },
   "binarymend/morphe-patches": {
     "beta": "v1.3.1-dev.1",
@@ -261,8 +261,8 @@
     "stable_date": "2026-07-18T18:58:06Z"
   },
   "byehi98/okish-morphe-patches": {
-    "beta": "v1.43.0-dev.1",
-    "beta_date": "2026-10-11T14:55:54Z",
+    "beta": "v1.44.0-dev.1",
+    "beta_date": "2026-10-12T04:14:19Z",
     "blocked": false,
     "host": "github",
     "repo": "byehi98/okish-morphe-patches",
@@ -342,8 +342,8 @@
     "stable_date": "2026-09-27T13:12:56Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.14.0-dev.3",
-    "beta_date": "2026-10-11T20:38:00Z",
+    "beta": "v1.14.0-dev.4",
+    "beta_date": "2026-10-12T02:45:24Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -383,8 +383,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.47.0",
-    "stable_date": "2026-10-10T18:49:33Z"
+    "stable": "v1.48.0",
+    "stable_date": "2026-10-12T00:04:41Z"
   },
   "icysymmetra/tiktok-patches-for-morphe": {
     "beta": "v0.8.0-dev.12",
@@ -450,8 +450,8 @@
     "stable_date": "2026-10-09T18:16:59Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.7.0-experimental.9",
-    "beta_date": "2026-10-11T19:46:30Z",
+    "beta": "v2.7.0-experimental.10",
+    "beta_date": "2026-10-12T05:14:24Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",

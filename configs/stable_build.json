@@ -449,7 +449,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -494,7 +494,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Facebook-HushFacebook": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -921,7 +921,7 @@
   "Showly-hxreborn": {
     "patches-source": "hxreborn/morphe-patches",
     "brand": "hxreborn",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.michaldrabik.showly2",
     "app-name": "Showly",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/trakt/showly",
@@ -932,7 +932,7 @@
   "AtvTools-hxreborn": {
     "patches-source": "hxreborn/morphe-patches",
     "brand": "hxreborn",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "dev.vodik7.atvtools",
     "app-name": "atvTools",
     "apkpure-dlurl": "https://apkpure.com/atvtools/dev.vodik7.atvtools",
@@ -941,7 +941,7 @@
   "PocketWhip-hxreborn": {
     "patches-source": "hxreborn/morphe-patches",
     "brand": "hxreborn",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.greenstone.pocketwhip",
     "app-name": "Pocket Whip",
     "uptodown-dlurl": "https://com-greenstone-pocketwhip.en.uptodown.com/android",
@@ -951,7 +951,7 @@
   "Terabox-hxreborn": {
     "patches-source": "hxreborn/morphe-patches",
     "brand": "hxreborn",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.dubox.drive",
     "app-name": "TeraBox",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/flextech-inc/terabox-cloud-storage-cloud-backup-data-backup",
@@ -1038,7 +1038,7 @@
     "uptodown-dlurl": "https://instagram.en.uptodown.com/android"
   },
   "Instagram-HushGram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -1209,7 +1209,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook-messenger/com.facebook.orca"
   },
   "Messenger-HushMessenger": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "patches-source": "SysAdminDoc/HushMessenger",
@@ -1221,7 +1221,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook-messenger/com.facebook.orca"
   },
   "Messenger-HushMessenger-MaterialYou": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "patches-source": "SysAdminDoc/HushMessenger",
@@ -1406,7 +1406,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/chess/com.chess"
   },
   "ProtonMail-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonmail.android",
     "app-name": "Proton Mail",
     "brand": "hxreborn",
@@ -1464,7 +1464,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",
@@ -1917,7 +1917,7 @@
     "apkpure-dlurl": "https://apkpure.com/threads-app/com.instagram.barcelona"
   },
   "TikTok-hushfeed": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.zhiliaoapp.musically",
     "app-name": "TikTok",
     "patches-source": "SysAdminDoc/hushfeed",
