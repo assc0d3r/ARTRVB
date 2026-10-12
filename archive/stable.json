@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-12T17:52:04Z"
+    "publishedAt": "2026-10-12T21:48:24Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -15111,94 +15111,6 @@
       "originBuild": "260152",
       "publishedAt": "2026-10-01T06:37:10Z"
     },
-    "discord-rain-v347.12-Stable-arm64-v8a.apk": {
-      "name": "discord-rain",
-      "version": "347.12-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "rain",
-      "brandName": "rain",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "raincord/app-release.apk"
-      ],
-      "changelogs": [
-        "https://codeberg.org/raincord/rainXposed/releases/tag/1130"
-      ],
-      "appliedPatches": [],
-      "originBuild": "260152",
-      "publishedAt": "2026-10-01T06:37:10Z"
-    },
-    "discord-rain-v347.12-Stable-arm-v7a.apk": {
-      "name": "discord-rain",
-      "version": "347.12-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "rain",
-      "brandName": "rain",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "raincord/app-release.apk"
-      ],
-      "changelogs": [
-        "https://codeberg.org/raincord/rainXposed/releases/tag/1130"
-      ],
-      "appliedPatches": [],
-      "originBuild": "260152",
-      "publishedAt": "2026-10-01T06:37:10Z"
-    },
-    "discord-revenge-v347.12-Stable-arm64-v8a.apk": {
-      "name": "discord-revenge",
-      "version": "347.12-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "revenge",
-      "brandName": "revenge",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "revenge-mod/app-release.apk"
-      ],
-      "changelogs": [
-        "https://github.com/revenge-mod/revenge-xposed/releases/tag/1603"
-      ],
-      "appliedPatches": [],
-      "originBuild": "260152",
-      "publishedAt": "2026-10-01T06:37:10Z"
-    },
-    "discord-revenge-v347.12-Stable-arm-v7a.apk": {
-      "name": "discord-revenge",
-      "version": "347.12-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "revenge",
-      "brandName": "revenge",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "revenge-mod/app-release.apk"
-      ],
-      "changelogs": [
-        "https://github.com/revenge-mod/revenge-xposed/releases/tag/1603"
-      ],
-      "appliedPatches": [],
-      "originBuild": "260152",
-      "publishedAt": "2026-10-01T06:37:10Z"
-    },
     "titanium-browser-dh6k-v153.0.8010.36-arm64-v8a.apk": {
       "name": "titanium-browser-dh6k",
       "version": "153.0.8010.36",
@@ -19184,8 +19096,8 @@
         "https://codeberg.org/raincord/rainXposed/releases/tag/1130"
       ],
       "appliedPatches": [],
-      "originBuild": "260213",
-      "publishedAt": "2026-10-08T16:01:07Z"
+      "originBuild": "260259",
+      "publishedAt": "2026-10-12T21:47:59Z"
     },
     "discord-rain-v348.10-Stable-arm-v7a.apk": {
       "name": "discord-rain",
@@ -19206,8 +19118,8 @@
         "https://codeberg.org/raincord/rainXposed/releases/tag/1130"
       ],
       "appliedPatches": [],
-      "originBuild": "260213",
-      "publishedAt": "2026-10-08T16:01:07Z"
+      "originBuild": "260259",
+      "publishedAt": "2026-10-12T21:47:59Z"
     },
     "discord-revenge-v348.10-Stable-arm-v7a.apk": {
       "name": "discord-revenge",
@@ -19228,8 +19140,8 @@
         "https://github.com/revenge-mod/revenge-xposed/releases/tag/1701"
       ],
       "appliedPatches": [],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-09T18:48:18Z"
+      "originBuild": "260259",
+      "publishedAt": "2026-10-12T21:47:59Z"
     },
     "discord-revenge-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-revenge",
@@ -19250,8 +19162,8 @@
         "https://github.com/revenge-mod/revenge-xposed/releases/tag/1701"
       ],
       "appliedPatches": [],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-09T18:48:18Z"
+      "originBuild": "260259",
+      "publishedAt": "2026-10-12T21:47:59Z"
     },
     "instagram-hushgram-v450.0.0.50.77-arm64-v8a.apk": {
       "name": "instagram-hushgram",
