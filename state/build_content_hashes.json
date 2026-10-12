@@ -42,8 +42,8 @@
     "fairemail-heval99-v1.2338-arm64-v8a": "f8ef6700595633e92c01c56957b763cd",
     "swift-backup-byehi98-v5.1.0-arm64-v8a": "f15e167dcb790bccfc533c22d509bc1a",
     "swift-backup-byehi98-v5.1.0-arm-v7a": "0caf3157fb7ac6a12fd75f523348cd9b",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "d5db2c668799e5419601fde8dfb7b508",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "84b07d8b431059bad97f68d73bb45c34",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "611a2049af93f3c53aaf75513284d7f5",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "3a8376ea850814611bcac72389114b38",
     "reddit-morphe-v2026.24.0-arm64-v8a": "65bd806af930987762743d7df604120a",
     "reddit-morphe-v2026.24.0-arm-v7a": "a86b3d46e938c96cebcf57d206f51435",
     "reddit-morphe-experimental-v2026.41.0-arm64-v8a": "f80ba4bb3fb4adfcd8e35c3d25e8c035",
@@ -60,8 +60,8 @@
     "youtube-morphe-mocha-theme-v21.20.405-arm-v7a": "9c665d2fb9c94aacecc82232e0e37c9f",
     "youtube-morphe-experimental-v21.40.161-arm64-v8a": "646fe8068b2d95425125d3a21db04aef",
     "youtube-morphe-experimental-v21.40.161-arm-v7a": "cb81339d66b38b07c99d41cb77ea66c5",
-    "discord-venus-v348.10-Stable-arm64-v8a": "b362622ee868206c4d672aa646774f5b",
-    "discord-venus-v348.10-Stable-arm-v7a": "1f2e598e9957c31b0ff7be898a031626",
+    "discord-venus-v348.10-Stable-arm64-v8a": "c4b53d44a6d411144efadd3c389beabb",
+    "discord-venus-v348.10-Stable-arm-v7a": "e1763e916b9f5d60c47bb7b870f51795",
     "linkedin-michii-v4.1.1259-arm-v7a": "1fb323ea73f0eb0d7019196a6f69171e",
     "linkedin-michii-v4.1.1259-arm64-v8a": "d6e3a1467639cbb72a0b7701c8ad5c9b",
     "sofascore-heval99-v26.09.28-arm64-v8a": "a7a42ba6e2f211c450d80113a0c96079",
@@ -72,6 +72,12 @@
     "offline-games-ggyasin-v3.14.1-arm-v7a": "58ea9953c76f71e6daefddebd21e766f",
     "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198",
     "messenger-hushmessenger-v582.0.0.61.92-arm64-v8a": "7bf48f56ea44f8886e736e8ac3c5730c",
-    "messenger-hushmessenger-material-you-v582.0.0.61.92-arm64-v8a": "28e31699e48443012bdf8b952131f9f0"
+    "messenger-hushmessenger-material-you-v582.0.0.61.92-arm64-v8a": "28e31699e48443012bdf8b952131f9f0",
+    "flipkart-debakarr-v9.15-arm-v7a": "2aa1270378b338a718cf055e97692018",
+    "flipkart-debakarr-v9.15-arm64-v8a": "df17f66f38d165b1dbb14fb0bca895a9",
+    "meesho-debakarr-v29.6-arm-v7a": "42c3d70d6fbe23b25771f2579fe8ce61",
+    "meesho-debakarr-v29.6-arm64-v8a": "7d3c2abc2a0ab16ae480dd567c4c635c",
+    "google-photos-akashsriram-v7.96.0.993165104-arm-v7a": "ab3368c003fb20203283d14363c19af4",
+    "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61"
   }
 }
