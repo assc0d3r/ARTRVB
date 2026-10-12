@@ -45,8 +45,8 @@
     "stable_date": "2026-09-30T17:03:44Z"
   },
   "IMXEren/mix-patches": {
-    "beta": "v1.8.0-dev.1",
-    "beta_date": "2026-10-02T05:48:14.401Z",
+    "beta": "v1.9.0-dev.2",
+    "beta_date": "2026-10-12T21:19:12.842Z",
     "blocked": false,
     "host": "gitlab",
     "repo": "IMXEren/mix-patches",
@@ -54,8 +54,8 @@
     "stable_date": "2026-10-07T04:17:11.999Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.48.0-dev.3",
-    "beta_date": "2026-10-12T08:30:23Z",
+    "beta": "v1.48.0-dev.4",
+    "beta_date": "2026-10-12T20:03:55Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -450,8 +450,8 @@
     "stable_date": "2026-10-09T18:16:59Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.7.0-experimental.11",
-    "beta_date": "2026-10-12T16:47:30Z",
+    "beta": "v2.7.0-experimental.16",
+    "beta_date": "2026-10-12T20:09:41Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
