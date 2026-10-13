@@ -261,8 +261,8 @@
     "stable_date": "2026-07-18T18:58:06Z"
   },
   "byehi98/okish-morphe-patches": {
-    "beta": "v1.44.0-dev.3",
-    "beta_date": "2026-10-13T03:46:48Z",
+    "beta": "v1.44.0-dev.4",
+    "beta_date": "2026-10-13T12:28:20Z",
     "blocked": false,
     "host": "github",
     "repo": "byehi98/okish-morphe-patches",
@@ -288,8 +288,8 @@
     "stable_date": "2026-10-12T11:19:43Z"
   },
   "dh6k/morphe-patches": {
-    "beta": "v1.9.0-dev.4",
-    "beta_date": "2026-10-05T19:15:22Z",
+    "beta": "v1.9.0-dev.5",
+    "beta_date": "2026-10-13T12:56:20Z",
     "blocked": false,
     "host": "github",
     "repo": "dh6k/morphe-patches",
