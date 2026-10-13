@@ -483,8 +483,8 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "8e8db3912bb806e388fae98569e265aa",
-      "shared": "6f97cb36d0e2265bab57a21bf786a91e"
+      "com.facebook.katana": "a6fa2e7f94aaa9881b032c7be1a1855e",
+      "shared": "b502b6192c590fbcf97f8de929d515a6"
     }
   },
   "sysadmindoc/hushfeed": {
@@ -511,8 +511,8 @@
   "sysadmindoc/hushtelegram": {
     "beta": {},
     "stable": {
-      "org.telegram.messenger.web": "97c272cb5f0471e06d27fb11064b17fd",
-      "shared": "6e92282006e8b3fb62d9be463307da43"
+      "org.telegram.messenger.web": "893de9641dfbe34550a5d4ed592f62ef",
+      "shared": "21bd870468cb344069ab510fcad424df"
     }
   },
   "sysadmindoc/hushthreads": {
