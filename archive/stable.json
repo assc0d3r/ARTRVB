@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-13T19:38:53Z"
+    "publishedAt": "2026-10-13T21:28:38Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -21747,10 +21747,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.10.0.mpp"
+        "VenusIsJaded/patches-1.11.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.10.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.11.0"
       ],
       "appliedPatches": [
         "Complete Quests automatically",
@@ -21786,8 +21786,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260261",
-      "publishedAt": "2026-10-13T06:53:40Z"
+      "originBuild": "260265",
+      "publishedAt": "2026-10-13T21:28:11Z"
     },
     "discord-venus-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -21802,10 +21802,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.10.0.mpp"
+        "VenusIsJaded/patches-1.11.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.10.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.11.0"
       ],
       "appliedPatches": [
         "Complete Quests automatically",
@@ -21841,8 +21841,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260261",
-      "publishedAt": "2026-10-13T06:53:40Z"
+      "originBuild": "260265",
+      "publishedAt": "2026-10-13T21:28:11Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
