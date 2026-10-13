@@ -176,8 +176,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.8.0",
-    "stable_date": "2026-10-12T07:21:58Z"
+    "stable": "v1.10.0",
+    "stable_date": "2026-10-13T05:04:22Z"
   },
   "ajstrick81/morphe-androidtv-patches": {
     "beta": "test-212",
@@ -261,8 +261,8 @@
     "stable_date": "2026-07-18T18:58:06Z"
   },
   "byehi98/okish-morphe-patches": {
-    "beta": "v1.44.0-dev.1",
-    "beta_date": "2026-10-12T04:14:19Z",
+    "beta": "v1.44.0-dev.3",
+    "beta_date": "2026-10-13T03:46:48Z",
     "blocked": false,
     "host": "github",
     "repo": "byehi98/okish-morphe-patches",
