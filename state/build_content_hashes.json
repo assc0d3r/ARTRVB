@@ -41,7 +41,7 @@
     "pinterest-browzomje-v14.39.0-arm64-v8a": "25e30836e8d2c0d50b8b983b47e816eb",
     "pinterest-browzomje-v14.39.0-arm-v7a": "7e24443acbb4f8a88453b682b5953520",
     "threads-hushthreads-v450.0.0.51.78-arm64-v8a": "3305039720ee8d3ca3d2ff1b8a6ebc12",
-    "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a": "c02f610dee46aa36bf80eb66fa6ce2e1",
+    "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a": "033298f0e08cba89b780d99c6373d5d8",
     "fairemail-heval99-v1.2338-arm-v7a": "9237046705640c28b9819eb04c435557",
     "fairemail-heval99-v1.2338-arm64-v8a": "f8ef6700595633e92c01c56957b763cd",
     "swift-backup-byehi98-v5.1.0-arm64-v8a": "f15e167dcb790bccfc533c22d509bc1a",
@@ -83,6 +83,8 @@
     "meesho-debakarr-v29.6-arm64-v8a": "7d3c2abc2a0ab16ae480dd567c4c635c",
     "google-photos-akashsriram-v7.96.0.993165104-arm-v7a": "ab3368c003fb20203283d14363c19af4",
     "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61",
-    "instagram-hushgram-clone-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198"
+    "instagram-hushgram-clone-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198",
+    "telegram-hushtelegram-foss-v13.0.2-arm64-v8a": "9d5c10009a2f188cddc5e63b7f9aaa82",
+    "telegram-hushtelegram-foss-v13.0.2-arm-v7a": "e9820c5f4033449b9b90c9d6e033a166"
   }
 }
