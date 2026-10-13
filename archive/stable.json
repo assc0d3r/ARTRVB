@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-13T01:57:05Z"
+    "publishedAt": "2026-10-13T06:53:58Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -21812,43 +21812,47 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.8.0.mpp"
+        "VenusIsJaded/patches-1.10.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.8.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.10.0"
       ],
       "appliedPatches": [
-        "CopyBios",
-        "Custom voice messages",
-        "Dashless",
+        "Complete Quests automatically",
+        "Copy profile bios",
         "Disable advertising identifiers",
         "Disable analytics",
         "Disable crash reporting",
         "Disable install attribution",
         "Disable telemetry and touch logging",
-        "FavouriteAnything",
-        "File size on picker",
-        "Force system emojis",
-        "Force system font",
-        "FreeNitro",
-        "Hidden Channels",
-        "Hide Quests promotion",
-        "Hide call button",
-        "Hide gift button",
-        "JumpToTop",
-        "Message tap gestures",
-        "No typing",
-        "NoDelete",
-        "Pastelize",
-        "PlatformIndicators",
-        "Quest Completer",
-        "QuickDelete",
-        "Read All",
-        "ReviewDB",
+        "Double-tap to reply",
+        "Favourite any image or video",
+        "Fix unknown mentions",
+        "Hide the Quests banner",
+        "Hide the call button",
+        "Hide the gift button",
+        "Hide typing indicator",
+        "Jump to first message",
+        "Keep deleted messages",
+        "Pastel name colors",
+        "Read all button",
+        "Send Nitro stickers and emojis as links",
+        "Send audio as voice messages",
+        "Send long messages",
+        "Show device indicators",
+        "Show file sizes when attaching",
+        "Show hidden channels",
+        "Skip delete confirmation",
+        "Spaces in channel names",
+        "Translate messages",
+        "Use your phone's emojis",
+        "Use your phone's font",
+        "User and server reviews",
+        "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260256",
-      "publishedAt": "2026-10-12T12:58:01Z"
+      "originBuild": "260261",
+      "publishedAt": "2026-10-13T06:53:40Z"
     },
     "discord-venus-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -21863,43 +21867,47 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.8.0.mpp"
+        "VenusIsJaded/patches-1.10.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.8.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.10.0"
       ],
       "appliedPatches": [
-        "CopyBios",
-        "Custom voice messages",
-        "Dashless",
+        "Complete Quests automatically",
+        "Copy profile bios",
         "Disable advertising identifiers",
         "Disable analytics",
         "Disable crash reporting",
         "Disable install attribution",
         "Disable telemetry and touch logging",
-        "FavouriteAnything",
-        "File size on picker",
-        "Force system emojis",
-        "Force system font",
-        "FreeNitro",
-        "Hidden Channels",
-        "Hide Quests promotion",
-        "Hide call button",
-        "Hide gift button",
-        "JumpToTop",
-        "Message tap gestures",
-        "No typing",
-        "NoDelete",
-        "Pastelize",
-        "PlatformIndicators",
-        "Quest Completer",
-        "QuickDelete",
-        "Read All",
-        "ReviewDB",
+        "Double-tap to reply",
+        "Favourite any image or video",
+        "Fix unknown mentions",
+        "Hide the Quests banner",
+        "Hide the call button",
+        "Hide the gift button",
+        "Hide typing indicator",
+        "Jump to first message",
+        "Keep deleted messages",
+        "Pastel name colors",
+        "Read all button",
+        "Send Nitro stickers and emojis as links",
+        "Send audio as voice messages",
+        "Send long messages",
+        "Show device indicators",
+        "Show file sizes when attaching",
+        "Show hidden channels",
+        "Skip delete confirmation",
+        "Spaces in channel names",
+        "Translate messages",
+        "Use your phone's emojis",
+        "Use your phone's font",
+        "User and server reviews",
+        "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260256",
-      "publishedAt": "2026-10-12T12:58:01Z"
+      "originBuild": "260261",
+      "publishedAt": "2026-10-13T06:53:40Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
@@ -22306,6 +22314,72 @@
       "appliedPatches": [],
       "originBuild": "260257",
       "publishedAt": "2026-10-12T17:51:48Z"
+    },
+    "instagram-instafel-clone-v451.0.0.53.80-arm64-v8a.apk": {
+      "name": "instagram-instafel-clone",
+      "version": "451.0.0.53.80",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": "Clone",
+      "subVariant": null,
+      "packageName": "com.instafel.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-db441b9.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger",
+        "Clone General",
+        "Replace Instagram Strings"
+      ],
+      "originBuild": "260261",
+      "publishedAt": "2026-10-13T06:53:40Z"
+    },
+    "instagram-instafel-v451.0.0.53.80-arm64-v8a.apk": {
+      "name": "instagram-instafel",
+      "version": "451.0.0.53.80",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-db441b9.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger"
+      ],
+      "originBuild": "260261",
+      "publishedAt": "2026-10-13T06:53:40Z"
     }
   }
 }
