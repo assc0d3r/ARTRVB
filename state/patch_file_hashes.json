@@ -252,13 +252,13 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonmail.android": "108385fc34c3b51e443f96023b96b7e1",
-      "ch.protonvpn.android": "062ebdc34a72c65828ef8fdfa14d6560",
-      "com.dubox.drive": "541511b101064d94fffd336a752f98de",
-      "com.greenstone.pocketwhip": "504a78080699d9aefdd00e5c82538000",
-      "com.michaldrabik.showly2": "a46e37f68a02a50191adaec71b718c20",
-      "dev.vodik7.atvtools": "6ed5843495b759cd9e074c1df1a3c227",
-      "shared": "6ad0c45f2a52877ee055af1e7ddf3cf5"
+      "ch.protonmail.android": "e169134065b5099aec2cb7b58958e439",
+      "ch.protonvpn.android": "ab9721176ad3d18f79f3a9092c2db325",
+      "com.dubox.drive": "1ae8ba9c87d66e871a708a476c71d4a1",
+      "com.greenstone.pocketwhip": "9301d7c1eb5d1b09598dec2893e331a2",
+      "com.michaldrabik.showly2": "569c0a08c8187529ef323022b03790bb",
+      "dev.vodik7.atvtools": "61d782f165b94b75ca19092d31debfba",
+      "shared": "c0678534dcb4c4966db63b86ee53e23b"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
