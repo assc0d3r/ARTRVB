@@ -71,7 +71,7 @@
     "tiktok-hushfeed-v47.1.4-arm-v7a": "fc78a43c6f6cd0a00b8b4f4baafbc625",
     "offline-games-ggyasin-v3.15.3-arm64-v8a": "ff798a1d6f83ce753568c9b4e885c75d",
     "offline-games-ggyasin-v3.14.1-arm-v7a": "58ea9953c76f71e6daefddebd21e766f",
-    "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198",
+    "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "effc650276aabbce79e72238e355ed84",
     "messenger-hushmessenger-v582.0.0.61.92-arm64-v8a": "7bf48f56ea44f8886e736e8ac3c5730c",
     "messenger-hushmessenger-material-you-v582.0.0.61.92-arm64-v8a": "28e31699e48443012bdf8b952131f9f0",
     "flipkart-debakarr-v9.15-arm-v7a": "2aa1270378b338a718cf055e97692018",
@@ -79,6 +79,7 @@
     "meesho-debakarr-v29.6-arm-v7a": "42c3d70d6fbe23b25771f2579fe8ce61",
     "meesho-debakarr-v29.6-arm64-v8a": "7d3c2abc2a0ab16ae480dd567c4c635c",
     "google-photos-akashsriram-v7.96.0.993165104-arm-v7a": "ab3368c003fb20203283d14363c19af4",
-    "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61"
+    "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61",
+    "instagram-hushgram-clone-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198"
   }
 }
