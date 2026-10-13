@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-12T21:48:24Z"
+    "publishedAt": "2026-10-13T01:57:05Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -17626,10 +17626,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.48.0.mpp"
+        "hxreborn/patches-1.49.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17646,8 +17646,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-12T05:54:30Z"
+      "originBuild": "260260",
+      "publishedAt": "2026-10-13T01:56:46Z"
     },
     "proton-vpn-hxreborn-v5.20.57.0-arm-v7a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -17662,10 +17662,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.48.0.mpp"
+        "hxreborn/patches-1.49.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17682,8 +17682,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-12T05:54:30Z"
+      "originBuild": "260260",
+      "publishedAt": "2026-10-13T01:56:46Z"
     },
     "terabox-hxreborn-v4.26.5-arm64-v8a.apk": {
       "name": "terabox-hxreborn",
@@ -17698,10 +17698,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.48.0.mpp"
+        "hxreborn/patches-1.49.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17711,8 +17711,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-12T05:54:30Z"
+      "originBuild": "260260",
+      "publishedAt": "2026-10-13T01:56:46Z"
     },
     "terabox-hxreborn-v4.26.5-arm-v7a.apk": {
       "name": "terabox-hxreborn",
@@ -17727,10 +17727,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.48.0.mpp"
+        "hxreborn/patches-1.49.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.48.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17740,8 +17740,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-12T05:54:30Z"
+      "originBuild": "260260",
+      "publishedAt": "2026-10-13T01:56:46Z"
     },
     "termius-rushiranpise-v7.9.0-arm64-v8a.apk": {
       "name": "termius-rushiranpise",
