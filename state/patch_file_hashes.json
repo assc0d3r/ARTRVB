@@ -525,8 +525,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "43436579cefd8be0692328a446c8850a",
-      "shared": "21179358557e01146de76d9bfdc7c179"
+      "com.discord": "0c099d8be14cc5f5f6e02f46fc0303ac",
+      "shared": "fd75ea465156d37b1724a4af08c50564"
     }
   }
 }
