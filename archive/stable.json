@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-13T23:44:37Z"
+    "publishedAt": "2026-10-14T05:00:20Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -5809,18 +5809,19 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.43.0.mpp"
+        "byehi98/patches-1.44.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.43.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0"
       ],
       "appliedPatches": [
+        "Swift Backup Local Cloud Metadata",
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260247",
-      "publishedAt": "2026-10-11T18:05:47Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "swift-backup-byehi98-v5.1.0-arm-v7a.apk": {
       "name": "swift-backup-byehi98",
@@ -5835,18 +5836,19 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.43.0.mpp"
+        "byehi98/patches-1.44.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.43.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0"
       ],
       "appliedPatches": [
+        "Swift Backup Local Cloud Metadata",
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260247",
-      "publishedAt": "2026-10-11T18:05:47Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "chess-com-prathxm-v4.10.0-arm-v7a.apk": {
       "name": "chess-com-prathxm",
@@ -16268,10 +16270,10 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "SysAdminDoc/patches-0.71.2.mpp"
+        "SysAdminDoc/patches-0.72.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.71.2"
+        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.72.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -16364,6 +16366,7 @@
         "Playback quality",
         "Playback speed",
         "Prefer H.264 playback",
+        "Profile background",
         "Region spoof",
         "Remember clear display",
         "Remove LIVE extras",
@@ -16380,6 +16383,7 @@
         "Share sheet tools",
         "Show LIVE search",
         "Show author region",
+        "Show commenter handle and region",
         "Show engagement rate",
         "Show exact counts",
         "Show follow status",
@@ -16406,8 +16410,8 @@
         "Use non-personalized search",
         "Use system font"
       ],
-      "originBuild": "260252",
-      "publishedAt": "2026-10-11T23:40:10Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "tiktok-hushfeed-v47.1.4-arm-v7a.apk": {
       "name": "tiktok-hushfeed",
@@ -16422,10 +16426,10 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "SysAdminDoc/patches-0.71.2.mpp"
+        "SysAdminDoc/patches-0.72.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.71.2"
+        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.72.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -16518,6 +16522,7 @@
         "Playback quality",
         "Playback speed",
         "Prefer H.264 playback",
+        "Profile background",
         "Region spoof",
         "Remember clear display",
         "Remove LIVE extras",
@@ -16534,6 +16539,7 @@
         "Share sheet tools",
         "Show LIVE search",
         "Show author region",
+        "Show commenter handle and region",
         "Show engagement rate",
         "Show exact counts",
         "Show follow status",
@@ -16560,8 +16566,8 @@
         "Use non-personalized search",
         "Use system font"
       ],
-      "originBuild": "260252",
-      "publishedAt": "2026-10-11T23:40:10Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -17560,10 +17566,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.49.1.mpp"
+        "hxreborn/patches-1.50.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17580,8 +17586,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-13T01:56:46Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "proton-vpn-hxreborn-v5.20.57.0-arm-v7a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -17596,10 +17602,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.49.1.mpp"
+        "hxreborn/patches-1.50.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17616,8 +17622,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-13T01:56:46Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "terabox-hxreborn-v4.26.5-arm64-v8a.apk": {
       "name": "terabox-hxreborn",
@@ -17632,10 +17638,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.49.1.mpp"
+        "hxreborn/patches-1.50.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17645,8 +17651,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-13T01:56:46Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "terabox-hxreborn-v4.26.5-arm-v7a.apk": {
       "name": "terabox-hxreborn",
@@ -17661,10 +17667,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.49.1.mpp"
+        "hxreborn/patches-1.50.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17674,8 +17680,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-13T01:56:46Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     },
     "termius-rushiranpise-v7.9.0-arm64-v8a.apk": {
       "name": "termius-rushiranpise",
@@ -22613,6 +22619,48 @@
       ],
       "originBuild": "260266",
       "publishedAt": "2026-10-13T23:44:18Z"
+    },
+    "threads-hushthreads-v451.0.0.51.80-arm64-v8a.apk": {
+      "name": "threads-hushthreads",
+      "version": "451.0.0.51.80",
+      "appKey": "threads",
+      "appName": "Threads",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushthreads",
+      "brandName": "HushThreads",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.barcelona",
+      "patchSources": [
+        "SysAdminDoc/patches-0.0.14.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/HushThreads/releases/tag/v0.0.14"
+      ],
+      "appliedPatches": [
+        "Block background-return feed refresh",
+        "Change version code",
+        "Disable analytics",
+        "Disable screenshot detection",
+        "Disable video autoplay",
+        "Hide ads",
+        "Hide ghost post bubbles",
+        "Hide suggested users",
+        "Hide the Instagram button",
+        "HushThreads settings",
+        "Max image quality",
+        "Open links in browser",
+        "Pure black dark mode",
+        "Remove share targets",
+        "Remove the advertising ID",
+        "Restore screens on re-signed builds",
+        "Sanitize sharing links",
+        "Save photos and videos",
+        "Trust user-added certificates"
+      ],
+      "originBuild": "260268",
+      "publishedAt": "2026-10-14T04:59:55Z"
     }
   }
 }
