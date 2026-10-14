@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-14T10:14:35Z"
+    "publishedAt": "2026-10-14T13:43:19Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -21897,10 +21897,10 @@
       "subVariant": null,
       "packageName": "com.sofascore.results",
       "patchSources": [
-        "heval99/patches-1.13.0.mpp"
+        "heval99/patches-1.14.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.13.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
       ],
       "appliedPatches": [
         "Block marketing notifications",
@@ -21909,8 +21909,8 @@
         "Disable telemetry",
         "Enable Premium"
       ],
-      "originBuild": "260249",
-      "publishedAt": "2026-10-11T18:58:36Z"
+      "originBuild": "260271",
+      "publishedAt": "2026-10-14T13:43:02Z"
     },
     "sofascore-heval99-v26.09.28-arm-v7a.apk": {
       "name": "sofascore-heval99",
@@ -21925,10 +21925,10 @@
       "subVariant": null,
       "packageName": "com.sofascore.results",
       "patchSources": [
-        "heval99/patches-1.13.0.mpp"
+        "heval99/patches-1.14.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.13.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
       ],
       "appliedPatches": [
         "Block marketing notifications",
@@ -21937,8 +21937,8 @@
         "Disable telemetry",
         "Enable Premium"
       ],
-      "originBuild": "260249",
-      "publishedAt": "2026-10-11T18:58:36Z"
+      "originBuild": "260271",
+      "publishedAt": "2026-10-14T13:43:02Z"
     },
     "offline-games-ggyasin-v3.14.1-arm-v7a.apk": {
       "name": "offline-games-ggyasin",
