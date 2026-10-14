@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-14T16:50:38Z"
+    "publishedAt": "2026-10-14T17:52:56Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -3809,10 +3809,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "andrewliang25/patches-3.5.0.mpp"
+        "andrewliang25/patches-3.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.5.0"
+        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.6.0"
       ],
       "appliedPatches": [
         "[Ad] Block ad telemetry",
@@ -3832,8 +3832,8 @@
         "[Stories] Download any story",
         "[Stories] Hide sponsored stories"
       ],
-      "originBuild": "260212",
-      "publishedAt": "2026-10-08T15:47:17Z"
+      "originBuild": "260275",
+      "publishedAt": "2026-10-14T17:52:38Z"
     },
     "facebook-andrewliang25-v577.0.0.50.72-arm64-v8a.apk": {
       "name": "facebook-andrewliang25",
@@ -3848,10 +3848,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "andrewliang25/patches-3.5.0.mpp"
+        "andrewliang25/patches-3.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.5.0"
+        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.6.0"
       ],
       "appliedPatches": [
         "[Ad] Block ad telemetry",
@@ -3871,8 +3871,8 @@
         "[Stories] Download any story",
         "[Stories] Hide sponsored stories"
       ],
-      "originBuild": "260212",
-      "publishedAt": "2026-10-08T15:47:17Z"
+      "originBuild": "260275",
+      "publishedAt": "2026-10-14T17:52:38Z"
     },
     "pixiv-fripe070-v6.196.0-arm-v7a.apk": {
       "name": "pixiv-fripe070",
@@ -18898,10 +18898,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.5.1.mpp"
+        "bearinmindcat/patches-2.5.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.1"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -18932,8 +18932,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260264",
-      "publishedAt": "2026-10-13T19:38:39Z"
+      "originBuild": "260275",
+      "publishedAt": "2026-10-14T17:52:38Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -18948,10 +18948,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.5.1.mpp"
+        "bearinmindcat/patches-2.5.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.1"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -18982,8 +18982,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260264",
-      "publishedAt": "2026-10-13T19:38:39Z"
+      "originBuild": "260275",
+      "publishedAt": "2026-10-14T17:52:38Z"
     },
     "discord-rain-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-rain",
@@ -22919,6 +22919,160 @@
       ],
       "originBuild": "260273",
       "publishedAt": "2026-10-14T16:50:15Z"
+    },
+    "messenger-hushmessenger-material-you-v583.0.0.29.95-arm64-v8a.apk": {
+      "name": "messenger-hushmessenger-material-you",
+      "version": "583.0.0.29.95",
+      "appKey": "messenger",
+      "appName": "Messenger",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushmessenger",
+      "brandName": "HushMessenger",
+      "variant": "Material You",
+      "subVariant": null,
+      "packageName": "com.facebook.orca",
+      "patchSources": [
+        "SysAdminDoc/patches-0.24.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/HushMessenger/releases/tag/v0.24.0"
+      ],
+      "appliedPatches": [
+        "Allow chat bubbles",
+        "Allow screenshots",
+        "Auto reply",
+        "Bold and italic text",
+        "Fix shared videos with xHE-AAC sound",
+        "Hide AI sticker tools",
+        "Hide Chat Moments",
+        "Hide Facebook shortcuts",
+        "Hide Mark as read",
+        "Hide Meta AI",
+        "Hide Notifications tab",
+        "Hide People You May Know",
+        "Hide People tab",
+        "Hide Reels badge",
+        "Hide ad banners in business chats",
+        "Hide avatar stickers",
+        "Hide business reply suggestions",
+        "Hide business typing suggestions",
+        "Hide chat promotions",
+        "Hide event prompts",
+        "Hide friend request cards",
+        "Hide growth prompts",
+        "Hide inbox ads",
+        "Hide inbox promotions",
+        "Hide inbox tabs",
+        "Hide joined community chats",
+        "Hide read receipts",
+        "Hide stories and notes",
+        "Hide typing indicator",
+        "Install beside Meta apps",
+        "Keep a message log",
+        "Keep emoji search on emoji",
+        "Keep unsent messages",
+        "Material You theme",
+        "Open settings from menu",
+        "Open web links externally",
+        "Pin more chats",
+        "Restore old emoji drawer",
+        "Restore screens on re-signed builds",
+        "Save any story",
+        "Send photos at original quality",
+        "Send videos without re-encoding",
+        "Slide chats in and out",
+        "Stop MQTT logging",
+        "Stop ad attribution uploads",
+        "Stop analytics uploads",
+        "Stop inbox and ad link logging",
+        "Stop nearby scans",
+        "Turn off the swipe up for disappearing messages",
+        "Unlock app icons",
+        "Use system emoji",
+        "Use the phone's camera app",
+        "Use your own font",
+        "View stories anonymously"
+      ],
+      "originBuild": "260275",
+      "publishedAt": "2026-10-14T17:52:38Z"
+    },
+    "messenger-hushmessenger-v583.0.0.29.95-arm64-v8a.apk": {
+      "name": "messenger-hushmessenger",
+      "version": "583.0.0.29.95",
+      "appKey": "messenger",
+      "appName": "Messenger",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushmessenger",
+      "brandName": "HushMessenger",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.facebook.orca",
+      "patchSources": [
+        "SysAdminDoc/patches-0.24.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/HushMessenger/releases/tag/v0.24.0"
+      ],
+      "appliedPatches": [
+        "Allow chat bubbles",
+        "Allow screenshots",
+        "Auto reply",
+        "Bold and italic text",
+        "Fix shared videos with xHE-AAC sound",
+        "Hide AI sticker tools",
+        "Hide Chat Moments",
+        "Hide Facebook shortcuts",
+        "Hide Mark as read",
+        "Hide Meta AI",
+        "Hide Notifications tab",
+        "Hide People You May Know",
+        "Hide People tab",
+        "Hide Reels badge",
+        "Hide ad banners in business chats",
+        "Hide avatar stickers",
+        "Hide business reply suggestions",
+        "Hide business typing suggestions",
+        "Hide chat promotions",
+        "Hide event prompts",
+        "Hide friend request cards",
+        "Hide growth prompts",
+        "Hide inbox ads",
+        "Hide inbox promotions",
+        "Hide inbox tabs",
+        "Hide joined community chats",
+        "Hide read receipts",
+        "Hide stories and notes",
+        "Hide typing indicator",
+        "Install beside Meta apps",
+        "Keep a message log",
+        "Keep emoji search on emoji",
+        "Keep unsent messages",
+        "Material You theme",
+        "Open settings from menu",
+        "Open web links externally",
+        "Pin more chats",
+        "Restore old emoji drawer",
+        "Restore screens on re-signed builds",
+        "Save any story",
+        "Send photos at original quality",
+        "Send videos without re-encoding",
+        "Slide chats in and out",
+        "Stop MQTT logging",
+        "Stop ad attribution uploads",
+        "Stop analytics uploads",
+        "Stop inbox and ad link logging",
+        "Stop nearby scans",
+        "Turn off the swipe up for disappearing messages",
+        "Unlock app icons",
+        "Use system emoji",
+        "Use the phone's camera app",
+        "Use your own font",
+        "View stories anonymously"
+      ],
+      "originBuild": "260275",
+      "publishedAt": "2026-10-14T17:52:38Z"
     }
   }
 }
