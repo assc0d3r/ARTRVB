@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-13T12:33:15Z"
+    "publishedAt": "2026-10-14T04:50:32Z"
   },
   "files": {
     "gboard-jasonwu1994-clone-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
@@ -20,10 +20,10 @@
       "subVariant": null,
       "packageName": "dev.jason.com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-3.12.1-dev.1.mpp"
+        "jasonwu1994/patches-3.13.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.12.1-dev.1"
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0-dev.1"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -60,6 +60,7 @@
         "Rounded Keyboard Panel",
         "Settings Homepage Override",
         "Simple Calculator",
+        "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
@@ -70,8 +71,8 @@
         "Zhuyin Slide Input",
         "Package Rename"
       ],
-      "originBuild": "260263",
-      "publishedAt": "2026-10-13T12:32:30Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-10-14T04:50:13Z"
     },
     "gboard-jasonwu1994-module-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-jasonwu1994",
@@ -86,10 +87,10 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-3.12.1-dev.1.mpp"
+        "jasonwu1994/patches-3.13.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.12.1-dev.1"
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0-dev.1"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -126,6 +127,7 @@
         "Rounded Keyboard Panel",
         "Settings Homepage Override",
         "Simple Calculator",
+        "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
@@ -135,8 +137,8 @@
         "Zhuyin Quick Traditional/Simplified Toggle",
         "Zhuyin Slide Input"
       ],
-      "originBuild": "260263",
-      "publishedAt": "2026-10-13T12:32:30Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-10-14T04:50:13Z"
     },
     "gboard-jasonwu1994-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-jasonwu1994",
@@ -151,10 +153,10 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-3.12.1-dev.1.mpp"
+        "jasonwu1994/patches-3.13.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.12.1-dev.1"
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0-dev.1"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -191,6 +193,7 @@
         "Rounded Keyboard Panel",
         "Settings Homepage Override",
         "Simple Calculator",
+        "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
@@ -200,8 +203,8 @@
         "Zhuyin Quick Traditional/Simplified Toggle",
         "Zhuyin Slide Input"
       ],
-      "originBuild": "260263",
-      "publishedAt": "2026-10-13T12:32:30Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-10-14T04:50:13Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -3703,146 +3706,6 @@
       ],
       "originBuild": "260263",
       "publishedAt": "2026-10-13T12:32:30Z"
-    },
-    "youtube-music-morphe-experimental-v9.39.52-arm-v7a.apk": {
-      "name": "youtube-music-morphe-experimental",
-      "version": "9.39.52",
-      "appKey": "youtubemusic",
-      "appName": "YouTube Music",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "morphe",
-      "brandName": "Morphe",
-      "variant": "Experimental",
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.youtube.music",
-      "patchSources": [
-        "MorpheApp/patches-1.46.0-dev.3.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.46.0-dev.3"
-      ],
-      "appliedPatches": [
-        "Android Auto",
-        "App refresh rate",
-        "Bypass certificate checks",
-        "Change header",
-        "Change miniplayer color",
-        "Change start page",
-        "Check watch history domain name resolution",
-        "Crossfade",
-        "Custom branding",
-        "Disable DRC audio",
-        "Disable QUIC protocol",
-        "Disable dislike redirection",
-        "Downloads",
-        "Enable debugging",
-        "Enable exclusive audio playback",
-        "Enable forced miniplayer",
-        "Enable swipe to dismiss miniplayer",
-        "Force original audio",
-        "Force portrait orientation",
-        "GmsCore support",
-        "Hide ads",
-        "Hide buttons",
-        "Hide filter bar",
-        "Hide flyout menu components",
-        "Hide layout components",
-        "Hide music action buttons",
-        "Jam queue sharing",
-        "Media notification controls",
-        "Miniplayer previous and next buttons",
-        "Navigation bar",
-        "Play albums songs",
-        "Playback speed",
-        "PoToken provider",
-        "Remember repeat state",
-        "Remember shuffle state",
-        "Remove background playback restrictions",
-        "Remove viewer discretion dialog",
-        "Return YouTube Dislike",
-        "Sanitize sharing links",
-        "Scrobbling",
-        "Settings menu filter",
-        "Skip silence",
-        "SponsorBlock",
-        "Spoof app version",
-        "Spoof video streams",
-        "Theme",
-        "Third-party lyrics"
-      ],
-      "originBuild": "260181",
-      "publishedAt": "2026-10-04T23:07:44Z"
-    },
-    "youtube-music-morphe-experimental-module-v9.39.52-arm-v7a.zip": {
-      "name": "youtube-music-morphe-experimental",
-      "version": "9.39.52",
-      "appKey": "youtubemusic",
-      "appName": "YouTube Music",
-      "arch": "arm",
-      "fileType": "Module",
-      "brandKey": "morphe",
-      "brandName": "Morphe",
-      "variant": "Experimental",
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.youtube.music",
-      "patchSources": [
-        "MorpheApp/patches-1.46.0-dev.3.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.46.0-dev.3"
-      ],
-      "appliedPatches": [
-        "Android Auto",
-        "App refresh rate",
-        "Bypass certificate checks",
-        "Change header",
-        "Change miniplayer color",
-        "Change start page",
-        "Check watch history domain name resolution",
-        "Crossfade",
-        "Custom branding",
-        "Disable DRC audio",
-        "Disable QUIC protocol",
-        "Disable dislike redirection",
-        "Downloads",
-        "Enable debugging",
-        "Enable exclusive audio playback",
-        "Enable forced miniplayer",
-        "Enable swipe to dismiss miniplayer",
-        "Force original audio",
-        "Force portrait orientation",
-        "GmsCore support",
-        "Hide ads",
-        "Hide buttons",
-        "Hide filter bar",
-        "Hide flyout menu components",
-        "Hide layout components",
-        "Hide music action buttons",
-        "Jam queue sharing",
-        "Media notification controls",
-        "Miniplayer previous and next buttons",
-        "Navigation bar",
-        "Play albums songs",
-        "Playback speed",
-        "PoToken provider",
-        "Remember repeat state",
-        "Remember shuffle state",
-        "Remove background playback restrictions",
-        "Remove viewer discretion dialog",
-        "Return YouTube Dislike",
-        "Sanitize sharing links",
-        "Scrobbling",
-        "Settings menu filter",
-        "Skip silence",
-        "SponsorBlock",
-        "Spoof app version",
-        "Spoof video streams",
-        "Theme",
-        "Third-party lyrics"
-      ],
-      "originBuild": "260181",
-      "publishedAt": "2026-10-04T23:07:44Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
