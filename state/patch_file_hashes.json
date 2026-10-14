@@ -95,8 +95,8 @@
   "byehi98/okish-morphe-patches": {
     "beta": {},
     "stable": {
-      "org.swiftapps.swiftbackup": "19f8e7d3f7903d93d21919ae4e0b5bc2",
-      "shared": "1314cce4a0c47434ab8f6d3d4861c7e6"
+      "org.swiftapps.swiftbackup": "4ff307579968d466093d99eb48630785",
+      "shared": "585299d14f95d2b910d3cd18cae2bed6"
     }
   },
   "crimera/piko": {
@@ -252,13 +252,13 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonmail.android": "e169134065b5099aec2cb7b58958e439",
-      "ch.protonvpn.android": "ab9721176ad3d18f79f3a9092c2db325",
-      "com.dubox.drive": "1ae8ba9c87d66e871a708a476c71d4a1",
-      "com.greenstone.pocketwhip": "9301d7c1eb5d1b09598dec2893e331a2",
-      "com.michaldrabik.showly2": "569c0a08c8187529ef323022b03790bb",
-      "dev.vodik7.atvtools": "61d782f165b94b75ca19092d31debfba",
-      "shared": "c0678534dcb4c4966db63b86ee53e23b"
+      "ch.protonmail.android": "e9bfa1861b0968890c96ee7240675c9f",
+      "ch.protonvpn.android": "effe8f61d68d773c9846f8921def8998",
+      "com.dubox.drive": "1f6228cf742d46c259d74c9433802d13",
+      "com.greenstone.pocketwhip": "0d07e66b6c45c4e748d5db6cc6897036",
+      "com.michaldrabik.showly2": "eda13c217060e03a2073893ed132568e",
+      "dev.vodik7.atvtools": "f5d9a1a8f8e5e98cd118d028c043014c",
+      "shared": "b80cc7b0bb31457d2cc7ccfa2862ca8e"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -291,8 +291,8 @@
   },
   "jasonwu1994/gboard-patches": {
     "beta": {
-      "com.google.android.inputmethod.latin": "d7e330ef6b4d286a8db0b2eaabb163d8",
-      "shared": "1d25d3822a8e70798e59b023790fb950"
+      "com.google.android.inputmethod.latin": "a4c9e2ed85338499d1fe5e427d867b32",
+      "shared": "a16653680b70bdff0006d79786e75a69"
     },
     "stable": {
       "com.google.android.inputmethod.latin": "c47434ff4d36e25323d30e352ae55e14",
@@ -490,7 +490,7 @@
   "sysadmindoc/hushfeed": {
     "beta": {},
     "stable": {
-      "com.zhiliaoapp.musically": "c1a43dc629be9771412f20c2b30fab1f",
+      "com.zhiliaoapp.musically": "056f9367f1f3be0526ccf3895a87ff16",
       "shared": "46d8882e3e2552c9319178d27875fbae"
     }
   },
@@ -518,8 +518,8 @@
   "sysadmindoc/hushthreads": {
     "beta": {},
     "stable": {
-      "com.instagram.barcelona": "7383b9b6c2b039099bfb9a30fc885072",
-      "shared": "d4f3962c7eea56c55fb93e8ce65086dc"
+      "com.instagram.barcelona": "677ff3d751584facc9d57057ce817870",
+      "shared": "ac96c17dfab9392528891e2168e1a160"
     }
   },
   "venusisjaded/venus-patches": {
