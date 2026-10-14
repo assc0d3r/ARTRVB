@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-14T05:00:20Z"
+    "publishedAt": "2026-10-14T10:14:35Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -16926,40 +16926,6 @@
       "originBuild": "260232",
       "publishedAt": "2026-10-10T05:52:44Z"
     },
-    "threads-hushthreads-v449.0.0.54.82-arm64-v8a.apk": {
-      "name": "threads-hushthreads",
-      "version": "449.0.0.54.82",
-      "appKey": "threads",
-      "appName": "Threads",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "hushthreads",
-      "brandName": "HushThreads",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.barcelona",
-      "patchSources": [
-        "SysAdminDoc/patches-0.0.11.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/SysAdminDoc/HushThreads/releases/tag/v0.0.11"
-      ],
-      "appliedPatches": [
-        "Block background-return feed refresh",
-        "Disable analytics",
-        "Disable video autoplay",
-        "Hide ads",
-        "Hide suggested users",
-        "HushThreads settings",
-        "Open links in browser",
-        "Pure black dark mode",
-        "Remove the advertising ID",
-        "Restore screens on re-signed builds",
-        "Sanitize sharing links"
-      ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-06T02:18:56Z"
-    },
     "brave-browser-kveld9-v1.96.61-arm64-v8a.apk": {
       "name": "brave-browser-kveld9",
       "version": "1.96.61",
@@ -17566,10 +17532,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.50.0.mpp"
+        "hxreborn/patches-1.51.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.51.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17586,8 +17552,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260268",
-      "publishedAt": "2026-10-14T04:59:55Z"
+      "originBuild": "260270",
+      "publishedAt": "2026-10-14T10:14:15Z"
     },
     "proton-vpn-hxreborn-v5.20.57.0-arm-v7a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -17602,10 +17568,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.50.0.mpp"
+        "hxreborn/patches-1.51.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.51.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -17622,8 +17588,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260268",
-      "publishedAt": "2026-10-14T04:59:55Z"
+      "originBuild": "260270",
+      "publishedAt": "2026-10-14T10:14:15Z"
     },
     "terabox-hxreborn-v4.26.5-arm64-v8a.apk": {
       "name": "terabox-hxreborn",
@@ -17638,10 +17604,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.50.0.mpp"
+        "hxreborn/patches-1.51.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.51.0"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17651,8 +17617,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260268",
-      "publishedAt": "2026-10-14T04:59:55Z"
+      "originBuild": "260270",
+      "publishedAt": "2026-10-14T10:14:15Z"
     },
     "terabox-hxreborn-v4.26.5-arm-v7a.apk": {
       "name": "terabox-hxreborn",
@@ -17667,10 +17633,10 @@
       "subVariant": null,
       "packageName": "com.dubox.drive",
       "patchSources": [
-        "hxreborn/patches-1.50.0.mpp"
+        "hxreborn/patches-1.51.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.50.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.51.0"
       ],
       "appliedPatches": [
         "Fix Google login",
@@ -17680,8 +17646,8 @@
         "Hide video recommendations",
         "Unlock Premium Plus"
       ],
-      "originBuild": "260268",
-      "publishedAt": "2026-10-14T04:59:55Z"
+      "originBuild": "260270",
+      "publishedAt": "2026-10-14T10:14:15Z"
     },
     "termius-rushiranpise-v7.9.0-arm64-v8a.apk": {
       "name": "termius-rushiranpise",
