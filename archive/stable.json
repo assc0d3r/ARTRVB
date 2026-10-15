@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-15T07:54:00Z"
+    "publishedAt": "2026-10-15T13:46:51Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -618,6 +618,476 @@
       ],
       "originBuild": "260005",
       "publishedAt": "2026-10-15T07:53:36Z"
+    },
+    "adobe-scan-aidan-v26.09.25-arm64-v8a.apk": {
+      "name": "adobe-scan-aidan",
+      "version": "26.09.25",
+      "appKey": "adobescan",
+      "appName": "Adobe Scan",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "aidan",
+      "brandName": "Aidan",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.adobe.scan.android",
+      "patchSources": [
+        "ihatenodejs/patches-1.7.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.7.0"
+      ],
+      "appliedPatches": [
+        "Remove Ads and Tracking",
+        "Remove Login",
+        "Unlock Premium"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "adobe-scan-rushi-v26.08.01-arm64-v8a.apk": {
+      "name": "adobe-scan-rushi",
+      "version": "26.08.01",
+      "appKey": "adobescan",
+      "appName": "Adobe Scan",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushi",
+      "brandName": "Rushi",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.adobe.scan.android",
+      "patchSources": [
+        "rushiranpise/patches-1.23.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0"
+      ],
+      "appliedPatches": [
+        "Unlock Premium"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a.apk": {
+      "name": "google-photos-akashsriram",
+      "version": "7.96.0.993165104",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.14.4.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Account avatar",
+        "Enable DCIM folders backup control",
+        "Enable Phenotype flag manager",
+        "Fix memory style font loading",
+        "GmsCore support",
+        "Google One Bento Badge",
+        "Local creation downloader",
+        "Model Readiness Gates",
+        "Spoof features"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "nova-launcher-mightymich-v8.8.8-arm64-v8a.apk": {
+      "name": "nova-launcher-mightymich",
+      "version": "8.8.8",
+      "appKey": "novalauncher",
+      "appName": "Nova Launcher",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "mightymich",
+      "brandName": "MightyMich",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.teslacoilsw.launcher",
+      "patchSources": [
+        "mich111discord/patches-1.11.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/mich111discord/MightyMichs-Patches/releases/tag/v1.11.0"
+      ],
+      "appliedPatches": [],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "railone-vipinvip-v2.1.66-arm64-v8a.apk": {
+      "name": "railone-vipinvip",
+      "version": "2.1.66",
+      "appKey": "railone",
+      "appName": "RailOne",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "vipinvip",
+      "brandName": "VipinVIP",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "org.cris.aikyam",
+      "patchSources": [
+        "VipinVIP/patches-1.1.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/VipinVIP/railone-patches/releases/tag/v1.1.1"
+      ],
+      "appliedPatches": [
+        "Allow screenshots",
+        "Bypass USB-debugging detection",
+        "Bypass rjsniffer ADB check",
+        "Bypass signature verification",
+        "Disable native security SDK",
+        "Hide screenshot detection"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
+      "name": "reddit-morphe",
+      "version": "2026.24.0",
+      "appKey": "reddit",
+      "appName": "Reddit",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "morphe",
+      "brandName": "Morphe",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.reddit.frontpage",
+      "patchSources": [
+        "MorpheApp/patches-1.47.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0"
+      ],
+      "appliedPatches": [
+        "App icon",
+        "Custom font",
+        "Disable modern home",
+        "Disable screenshot popup",
+        "Force system font",
+        "Hide Ask button",
+        "Hide Trending shelves",
+        "Hide ads",
+        "Hide communities shelf",
+        "Hide navigation buttons",
+        "Hide sidebar components",
+        "Open links directly",
+        "Open links externally",
+        "Remove subreddit dialog",
+        "Sanitize sharing links",
+        "Show view count",
+        "Spoof signature",
+        "Start as guest"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "sd-maid-se-rushi-v2.0.3-rc0-arm64-v8a.apk": {
+      "name": "sd-maid-se-rushi",
+      "version": "2.0.3-rc0",
+      "appKey": "sdmaidse",
+      "appName": "SD Maid SE",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushi",
+      "brandName": "Rushi",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "eu.darken.sdmse",
+      "patchSources": [
+        "rushiranpise/patches-1.23.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0"
+      ],
+      "appliedPatches": [
+        "Unlock Pro"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
+      "name": "sonyliv-android-tv-chiggi",
+      "version": "6.23.1",
+      "appKey": "sonylivandroidtv",
+      "appName": "SonyLIV (Android TV)",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "chiggi",
+      "brandName": "Chiggi",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.sonyliv",
+      "patchSources": [
+        "durgesh0505/patches-1.23.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.23.1"
+      ],
+      "appliedPatches": [
+        "Auto skip intro and recap",
+        "Auto-skip Up Next",
+        "Disable AppsFlyer tracking",
+        "Disable Firebase tracking",
+        "Disable forced update",
+        "Hide promo banners",
+        "Remove video ads",
+        "Suppress geo / VPN block"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
+      "name": "twitter-piko",
+      "version": "12.19.1-release.0",
+      "appKey": "twitter",
+      "appName": "Twitter",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "piko",
+      "brandName": "Piko",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.twitter.android",
+      "patchSources": [
+        "crimera/patches-3.10.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/crimera/piko/releases/tag/v3.10.0"
+      ],
+      "appliedPatches": [
+        "Add ability to copy media link",
+        "Block redirecting to X Lite",
+        "Block update screen",
+        "Change app icon",
+        "Change version code",
+        "Clear tracking params",
+        "Control video auto scroll",
+        "Custom download folder",
+        "Custom emoji font",
+        "Custom font",
+        "Custom share menu",
+        "Custom sharing domain",
+        "Customise post font size",
+        "Customize Inline action Bar items",
+        "Customize Navigation Bar items",
+        "Customize default reply sorting",
+        "Customize explore tabs",
+        "Customize notification tabs",
+        "Customize profile tabs",
+        "Customize search suggestions",
+        "Customize search tab items",
+        "Customize side bar items",
+        "Customize timeline top bar",
+        "Delete from database",
+        "Disable auto timeline scroll on launch",
+        "Disable chirp font",
+        "Download patch",
+        "Enable PiP mode automatically",
+        "Enable Undo Posts",
+        "Enable debug menu for posts",
+        "Enable force HD videos",
+        "Force enable translate",
+        "Handle custom twitter links",
+        "Hide Banner",
+        "Hide Community Notes",
+        "Hide FAB",
+        "Hide FAB Menu Buttons",
+        "Hide Live Threads",
+        "Hide Recommended Users",
+        "Hide badges from navigation bar icons",
+        "Hide bookmark icon in timeline",
+        "Hide community badges",
+        "Hide followed by context",
+        "Hide hidden replies",
+        "Hide immersive player",
+        "Hide nudge button",
+        "Hide post metrics",
+        "Hide promote button",
+        "Hide recommendation items",
+        "Hook feature flag",
+        "Import/Export login token",
+        "Legacy share links",
+        "Log server response",
+        "More information on profile",
+        "Native downloader",
+        "Native reader mode",
+        "Native translator",
+        "No shortened URL",
+        "Pause search suggestions",
+        "Remove Ads",
+        "Remove premium upsell",
+        "Remove search suggestions",
+        "Remove view count",
+        "Restore legacy follower lists",
+        "Round off numbers",
+        "Selectable Text",
+        "Share Tweet as Image",
+        "Show changelogs",
+        "Show poll results",
+        "Show post source label",
+        "Show sensitive media",
+        "Support external downloader"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
+      "name": "vn-video-editor-riky",
+      "version": "2.20.0",
+      "appKey": "vnvideoeditor",
+      "appName": "VN Video Editor",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "riky",
+      "brandName": "Riky",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.frontrow.vlog",
+      "patchSources": [
+        "riky-dev/patches-2.3.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/riky-dev/morphe-patches/releases/tag/v2.3.0"
+      ],
+      "appliedPatches": [
+        "Hide export nags",
+        "Hide projects ads",
+        "Unlock Premium"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
+    },
+    "youtube-morphe-v21.20.405-arm64-v8a.apk": {
+      "name": "youtube-morphe",
+      "version": "21.20.405",
+      "appKey": "youtube",
+      "appName": "YouTube",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "morphe",
+      "brandName": "Morphe",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.youtube",
+      "patchSources": [
+        "MorpheApp/patches-1.47.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0"
+      ],
+      "appliedPatches": [
+        "AI channel filter",
+        "Add to queue",
+        "Ambient mode",
+        "App refresh rate",
+        "Bypass image region restrictions",
+        "Bypass link redirects",
+        "Captions",
+        "Change form factor",
+        "Change header",
+        "Change start page",
+        "Channel search",
+        "Channel whitelist",
+        "Check watch history domain name resolution",
+        "Copy text",
+        "Copy video link",
+        "Custom branding",
+        "Custom player overlay opacity",
+        "DeArrow",
+        "Disable DRC audio",
+        "Disable QUIC protocol",
+        "Disable Shorts resuming on startup",
+        "Disable auto feed refresh",
+        "Disable continue watching prompt",
+        "Disable double tap actions",
+        "Disable fullscreen gestures",
+        "Disable haptic feedback",
+        "Disable layout updates",
+        "Disable player popup panels",
+        "Disable playlist autoplay",
+        "Disable rolling number animations",
+        "Disable scrolling speed limit",
+        "Disable sign in to TV popup",
+        "Disable video codecs",
+        "Double tap to seek",
+        "Downloads",
+        "Enable debugging",
+        "Exit fullscreen mode",
+        "Force fullscreen landscape",
+        "Force original audio",
+        "Force system font",
+        "Fullscreen video scale",
+        "GmsCore support",
+        "Hide Shorts components",
+        "Hide ads",
+        "Hide autoplay preview",
+        "Hide end screen cards",
+        "Hide end screen suggested video",
+        "Hide info cards",
+        "Hide layout components",
+        "Hide player flyout menu components",
+        "Hide player overlay buttons",
+        "Hide related video overlay",
+        "Hide related videos",
+        "Hide status bar",
+        "Hide timestamp",
+        "Hide video action buttons",
+        "Loop video",
+        "Media notification controls",
+        "Miniplayer",
+        "Mute button",
+        "Navigation bar",
+        "Open Shorts in regular player",
+        "Open channel of live avatar",
+        "Open links externally",
+        "Open system share sheet",
+        "Open videos fullscreen",
+        "Override YouTube Music buttons",
+        "Picture-in-picture button",
+        "Play all",
+        "Playback buffer",
+        "Playback in feeds",
+        "Playback speed",
+        "PoToken provider",
+        "Reload video",
+        "Remember live stream playback position",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Restore original titles",
+        "Return YouTube Dislike",
+        "Sanitize sharing links",
+        "Save to Watch later",
+        "Seekbar",
+        "Settings menu filter",
+        "Shorts autoplay",
+        "Skip silence",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof device dimensions",
+        "Spoof video streams",
+        "Swipe controls",
+        "Theme",
+        "Video quality",
+        "Voice over translation",
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
+      ],
+      "originBuild": "260006",
+      "publishedAt": "2026-10-15T13:46:27Z"
     }
   }
 }
