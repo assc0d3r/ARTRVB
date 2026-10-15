@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-14T18:41:10Z"
+    "publishedAt": "2026-10-15T07:09:18Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -60,6 +60,39 @@
       ],
       "originBuild": "260003",
       "publishedAt": "2026-10-14T18:40:57Z"
+    },
+    "truecaller-heval99-v26.39.6-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.39.6",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.14.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide family button",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260004",
+      "publishedAt": "2026-10-15T07:09:05Z"
     }
   }
 }
