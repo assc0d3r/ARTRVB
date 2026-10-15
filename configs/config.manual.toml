@@ -115,3 +115,225 @@ build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/gboard/"
 uptodown-dlurl = "https://gboard-go.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
+
+[YouTube-Morphe]
+enabled = true
+pkg-name = "com.google.android.youtube"
+app-name = "YouTube"
+patches-source = "MorpheApp/morphe-patches"
+brand = "Morphe"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "youtube"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/youtube-app/com.google.android.youtube"
+apkcombo-dlurl = "https://apkcombo.com/youtube/com.google.android.youtube"
+
+[GooglePhotos-AkashSriram]
+enabled = true
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+patches-source = "Akash-Sriram/morphe-google-photos"
+brand = "AkashSriram"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+
+[Twitter-Piko]
+enabled = true
+pkg-name = "com.twitter.android"
+app-name = "Twitter"
+patches-source = "crimera/piko"
+brand = "Piko"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "twitter"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/x/"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/x/com.twitter.android"
+apkcombo-dlurl = "https://apkcombo.com/x/com.twitter.android"
+
+[Truecaller-Neval]
+enabled = true
+pkg-name = "com.truecaller"
+app-name = "Truecaller"
+patches-source = "neval99/neval-morphe-patches"
+brand = "Neval"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "truecaller"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
+uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block/com.truecaller"
+apkcombo-dlurl = "https://apkcombo.com/truecaller/com.truecaller"
+
+[Spotify-Spicetify]
+enabled = true
+pkg-name = "com.spotify.music"
+app-name = "Spotify"
+patches-source = "spicetify/morphe-patches"
+brand = "Spicetify"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "spotify"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/spotify-ltd/spotify/"
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/spotify-music-and-podcasts/com.spotify.music"
+apkcombo-dlurl = "https://apkcombo.com/spotify/com.spotify.music"
+
+[Reddit-Morphe]
+enabled = true
+pkg-name = "com.reddit.frontpage"
+app-name = "Reddit"
+patches-source = "MorpheApp/morphe-patches"
+brand = "Morphe"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "reddit"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/reddit-inc/reddit/"
+uptodown-dlurl = "https://reddit-official.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/reddit/com.reddit.frontpage"
+apkcombo-dlurl = "https://apkcombo.com/reddit/com.reddit.frontpage"
+
+[NovaLauncher-MightyMich]
+enabled = true
+pkg-name = "com.teslacoilsw.launcher"
+app-name = "Nova Launcher"
+patches-source = "mich111discord/MightyMichs-Patches"
+brand = "MightyMich"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "novalauncher"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/teslacoil-software/nova-launcher/"
+uptodown-dlurl = "https://nova-launcher.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/nova-launcher/com.teslacoilsw.launcher"
+apkcombo-dlurl = "https://apkcombo.com/nova-launcher/com.teslacoilsw.launcher"
+
+[AdobeScan-Aidan]
+enabled = true
+pkg-name = "com.adobe.scan.android"
+app-name = "Adobe Scan"
+patches-source = "ihatenodejs/aidans-patches"
+brand = "Aidan"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "adobescan"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/adobe-scan-pdf-scanner-ocr/"
+uptodown-dlurl = "https://adobe-scan.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/adobe-scan-pdf-scanner-ocr/com.adobe.scan.android"
+apkcombo-dlurl = "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
+
+[VN-Riky]
+enabled = true
+pkg-name = "com.frontrow.vlog"
+app-name = "VN Video Editor"
+patches-source = "riky-dev/morphe-patches"
+brand = "Riky"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "vn"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/ubivlog/vn-video-editor-maker-vlog-now/"
+uptodown-dlurl = "https://vn-video-editor.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/vn-video-editor-maker-vlognow/com.frontrow.vlog"
+apkcombo-dlurl = "https://apkcombo.com/vn/com.frontrow.vlog"
+
+[SonyLIV-TV-Chiggi]
+enabled = true
+pkg-name = "com.sonyliv"
+app-name = "SonyLIV (Android TV)"
+patches-source = "durgesh0505/chiggi_morphe_patches"
+brand = "Chiggi"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "sonyliv-tv"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/sony-pictures-networks-india-private-limited/sonyliv-originals-hollywood-live-sportstv-show-android-tv/"
+uptodown-dlurl = "https://sony-liv.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/sony-liv-sports-entmt-android-tv/com.sonyliv"
+apkcombo-dlurl = "https://apkcombo.com/sony-liv/com.sonyliv"
+
+[GitHub-Noodles]
+enabled = true
+pkg-name = "com.github.android"
+app-name = "GitHub"
+patches-source = "hsd-dles/morphe-patches"
+brand = "Noodles"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "github"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/github/github/"
+uptodown-dlurl = "https://github.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/github/com.github.android"
+apkcombo-dlurl = "https://apkcombo.com/github/com.github.android"
+
+[SDMaidSE-Rushi]
+enabled = true
+pkg-name = "eu.darken.sdmse"
+app-name = "SD Maid SE"
+patches-source = "rushiranpise/morphe-patches"
+brand = "Rushi"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "sdmaidse"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/darken/sd-maid-2-se/"
+uptodown-dlurl = "https://sd-maid-se.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/sd-maid-se-system-cleaner/eu.darken.sdmse"
+apkcombo-dlurl = "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
+
+[RailOne-VipinVIP]
+enabled = true
+pkg-name = "org.cris.aikyam"
+app-name = "RailOne"
+patches-source = "VipinVIP/railone-patches"
+brand = "VipinVIP"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "railone"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/centre-for-railway-information-systems/railone/"
+uptodown-dlurl = "https://railone.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/railone/org.cris.aikyam"
+apkcombo-dlurl = "https://apkcombo.com/railone/org.cris.aikyam"
+
+[AdobeAcrobat-Rushi]
+enabled = true
+pkg-name = "com.adobe.reader"
+app-name = "Adobe Acrobat"
+patches-source = "rushiranpise/morphe-patches"
+brand = "Rushi"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "adobeacrobat"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/adobe-acrobat/"
+uptodown-dlurl = "https://adobe-reader.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/adobe-acrobat-reader-pdf-viewer/com.adobe.reader"
+apkcombo-dlurl = "https://apkcombo.com/adobe-acrobat-reader/com.adobe.reader"
+
+[AdobeScan-Rushi]
+enabled = true
+pkg-name = "com.adobe.scan.android"
+app-name = "Adobe Scan"
+patches-source = "rushiranpise/morphe-patches"
+brand = "Rushi"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "adobescan"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/adobe-scan-pdf-scanner-ocr/"
+uptodown-dlurl = "https://adobe-scan.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/adobe-scan-pdf-scanner-ocr/com.adobe.scan.android"
+apkcombo-dlurl = "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
