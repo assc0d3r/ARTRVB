@@ -337,3 +337,48 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/adobe-scan-pdf-scanner-oc
 uptodown-dlurl = "https://adobe-scan.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/adobe-scan-pdf-scanner-ocr/com.adobe.scan.android"
 apkcombo-dlurl = "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
+
+[NetGuard-Rushi]
+enabled = true
+pkg-name = "eu.faircode.netguard"
+app-name = "NetGuard"
+patches-source = "rushiranpise/morphe-patches"
+brand = "Rushi"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "netguard"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/faircode/netguard/"
+uptodown-dlurl = "https://netguard.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/netguard-no-root-firewall/eu.faircode.netguard"
+apkcombo-dlurl = "https://apkcombo.com/netguard/eu.faircode.netguard"
+
+[Wavelet-o0b]
+enabled = true
+pkg-name = "com.pittvandewitt.wavelet"
+app-name = "Wavelet"
+patches-source = "o0b/morphe-patches"
+brand = "o0b"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "wavelet"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/pittvandewitt/wavelet-headphone-specific-equalization/"
+uptodown-dlurl = "https://wavelet.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/wavelet-headphone-equalizer/com.pittvandewitt.wavelet"
+apkcombo-dlurl = "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
+
+[VesselFinder-Heval]
+enabled = true
+pkg-name = "com.astrapaging.vff"
+app-name = "VesselFinder"
+patches-source = "heval99/Heval-Morphe-Patches"
+brand = "Heval"
+arch = "arm64-v8a"
+build-mode = "apk"
+patches-version = "stable"
+patch-folder = "vesselfinder"
+apkmirror-dlurl = "https://www.apkmirror.com/"
+uptodown-dlurl = "https://vesselfinder.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/vesselfinder/com.astrapaging.vff"
+apkcombo-dlurl = "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
