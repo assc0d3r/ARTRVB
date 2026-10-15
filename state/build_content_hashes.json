@@ -1,6 +1,13 @@
 {
   "stable": {
     "pinterest-browzomje-v14.39.0-arm64-v8a": "25e30836e8d2c0d50b8b983b47e816eb",
-    "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855"
+    "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855",
+    "discord-venus-v348.10-Stable-arm64-v8a": "8336ad3026c2134aee19d5c030250eeb",
+    "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": "87b051a970e996d2ddbaf1bf732acbf3",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "7ffa87cceefe63a6a34f3b1e2cf19736",
+    "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a": "d2826093798b277403a36398c587d61d",
+    "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "effc650276aabbce79e72238e355ed84",
+    "messenger-hushmessenger-v583.0.0.29.95-arm64-v8a": "b333e669ab99bb7e96f6a468c7b77508",
+    "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a": "50a6b3b288060ac352108074a7ac52f3"
   }
 }
