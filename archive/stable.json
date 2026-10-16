@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-16T13:25:11Z"
+    "publishedAt": "2026-10-16T17:08:39Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1326,6 +1326,65 @@
       ],
       "originBuild": "260010",
       "publishedAt": "2026-10-16T13:12:46Z"
+    },
+    "truecaller-heval99-v26.40.5-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.40.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.15.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.15.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260012",
+      "publishedAt": "2026-10-16T17:08:23Z"
+    },
+    "vesselfinder-heval-v6.7.8-arm64-v8a.apk": {
+      "name": "vesselfinder-heval",
+      "version": "6.7.8",
+      "appKey": "vesselfinder",
+      "appName": "VesselFinder",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval",
+      "brandName": "Heval",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.astrapaging.vff",
+      "patchSources": [
+        "heval99/patches-1.15.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.15.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable license check"
+      ],
+      "originBuild": "260012",
+      "publishedAt": "2026-10-16T17:08:23Z"
     }
   }
 }
