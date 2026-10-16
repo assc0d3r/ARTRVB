@@ -1,31 +1,14 @@
-[Athena]
+[UiMote-rushiranpise]
 enabled = true
-pkg-name = "com.kin.athena"
-app-name = "Athena"
+pkg-name = "sensustech.universal.tv.remote.control"
+app-name = "Universal TV Remote"
+brand = "rushiranpise"
 patches-source = "rushiranpise/morphe-patches"
-patches-source-host = "github"
 patches-version = "stable"
-cli-source = "MorpheApp/morphe-desktop"
-cli-source-host = "github"
-cli-version = "stable"
 arch = "arm64-v8a"
 build-mode = "apk"
-version = "auto"
 inclusive-patches = true
-github-dlurl = "https://github.com/Kin69/Athena/releases"
-
-[Proton-Pass]
-enabled = true
-pkg-name = "proton.android.pass"
-app-name = "Proton Pass"
-patches-source = "hxreborn/morphe-patches"
-patches-source-host = "github"
-patches-version = "stable"
-cli-source = "MorpheApp/morphe-desktop"
-cli-source-host = "github"
-cli-version = "stable"
-arch = "arm64-v8a"
-build-mode = "apk"
-version = "auto"
-inclusive-patches = true
-github-dlurl = "https://github.com/protonpass/android-pass/releases"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/sensus-tech/tv-remote-control-universal"
+uptodown-dlurl = "https://universal-tv-remote-control.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
+apkcombo-dlurl = "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control/"
