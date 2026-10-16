@@ -1,7 +1,7 @@
 {
   "patches-version": "stable",
   "Pinterest-browzomje": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "browzomje/browzomje-patches",
@@ -41,7 +41,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -55,7 +55,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -67,7 +67,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -80,7 +80,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Telegram-rushiranpise-GooglePlay": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "variant": "Google Play",
@@ -92,7 +92,7 @@
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/telegram-fz-llc/telegram"
   },
   "Facebook-Messenger-HushMessenger": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "patches-source": "SysAdminDoc/HushMessenger",
@@ -118,7 +118,7 @@
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
   },
   "YouTube-Morphe": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": "MorpheApp/morphe-patches",
@@ -171,7 +171,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -199,7 +199,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/nova-launcher/com.teslacoilsw.launcher"
   },
   "AdobeScan-Aidan": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.adobe.scan.android",
     "app-name": "Adobe Scan",
     "patches-source": "ihatenodejs/aidans-patches",
@@ -213,7 +213,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
   },
   "VN-Riky": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.frontrow.vlog",
     "app-name": "VN Video Editor",
     "patches-source": "riky-dev/morphe-patches",
@@ -241,7 +241,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sony-liv/com.sonyliv"
   },
   "GitHub-Noodles": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.github.android",
     "app-name": "GitHub",
     "patches-source": "hsd-dles/morphe-patches",
@@ -269,7 +269,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
     "patches-source": "VipinVIP/railone-patches",
@@ -297,7 +297,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-acrobat-reader/com.adobe.reader"
   },
   "NetGuard-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "eu.faircode.netguard",
     "app-name": "NetGuard",
     "patches-source": "rushiranpise/morphe-patches",
@@ -311,7 +311,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/netguard/eu.faircode.netguard"
   },
   "Wavelet-o0b": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.pittvandewitt.wavelet",
     "app-name": "Wavelet",
     "patches-source": "o0b/morphe-patches",
@@ -325,7 +325,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
     "patches-source": "heval99/Heval-Morphe-Patches",

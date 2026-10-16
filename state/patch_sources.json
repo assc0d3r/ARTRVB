@@ -5,12 +5,12 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.15.2",
-    "stable_date": "2026-10-16T07:20:45Z"
+    "stable": "v1.15.3",
+    "stable_date": "2026-10-16T11:18:44Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.48.0-dev.8",
-    "beta_date": "2026-10-15T09:28:53Z",
+    "beta": "v1.48.0-dev.9",
+    "beta_date": "2026-10-16T08:36:34Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
-    "stable": "v3.12.0",
-    "stable_date": "2026-10-04T16:37:59Z"
+    "stable": "v3.13.0",
+    "stable_date": "2026-10-16T10:05:53Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
