@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-15T15:09:08Z"
+    "publishedAt": "2026-10-16T09:14:39Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -107,15 +107,16 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.12.0.mpp"
+        "VenusIsJaded/patches-1.13.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.12.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.13.0"
       ],
       "appliedPatches": [
         "Account switcher",
         "Complete Quests automatically",
         "Copy profile bios",
+        "Custom themes",
         "Disable advertising identifiers",
         "Disable analytics",
         "Disable crash reporting",
@@ -130,6 +131,7 @@
         "Hide typing indicator",
         "Jump to first message",
         "Keep deleted messages",
+        "Message highlights",
         "Pastel name colors",
         "Read all button",
         "Send Nitro stickers and emojis as links",
@@ -149,8 +151,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260005",
-      "publishedAt": "2026-10-15T07:53:36Z"
+      "originBuild": "260009",
+      "publishedAt": "2026-10-16T09:14:22Z"
     },
     "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
@@ -1086,8 +1088,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260007",
-      "publishedAt": "2026-10-15T15:08:39Z"
+      "originBuild": "260009",
+      "publishedAt": "2026-10-16T09:14:22Z"
     },
     "instagram-hushgram-v451.0.0.53.80-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -1263,6 +1265,35 @@
       ],
       "originBuild": "260007",
       "publishedAt": "2026-10-15T15:08:39Z"
+    },
+    "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a.apk": {
+      "name": "google-photos-akashsriram",
+      "version": "7.97.0.997578476",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.15.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.2"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "DCIM & backup control",
+        "Media engine & AI fixes",
+        "Spoof features",
+        "GmsCore support",
+        "Flag manager & Toolkit"
+      ],
+      "originBuild": "260009",
+      "publishedAt": "2026-10-16T09:14:22Z"
     }
   }
 }
