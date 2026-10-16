@@ -23,5 +23,14 @@
     "netguard-rushi-v2.337-arm64-v8a": "c964fc2f76a093ae4bac8823d3683d62",
     "wavelet-o0b-v26.05-arm64-v8a": "184811e5a81b238784a9fda2708fe520",
     "instagram-hushgram-v451.0.0.53.80-arm64-v8a": "b33b03076ae0cd0c95cf3776079a6d51"
+  },
+  "beta": {
+    "adobe-scan-aidan-v26.09.25-arm64-v8a": "ca7739f2277314b077db0a786b49a2c6",
+    "pinterest-browzomje-v14.39.0-arm64-v8a": "6447e4c15d045957f251d20d4f03c869",
+    "truecaller-heval99-v26.40.5-arm64-v8a": "5b400dde59a88e9043a0bb10f6bb0fed",
+    "reddit-morphe-v2026.24.0-arm64-v8a": "ca48b1bc524ef374dfd60eb3b2002c1e",
+    "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": "50adb5604c1505ebd5dd1c7c3c69a714",
+    "youtube-morphe-v21.20.405-arm64-v8a": "9db12d58f9f87fe456a649538281baf8",
+    "vesselfinder-heval-v6.7.8-arm64-v8a": "838ca0a48686e4995934a63f42d22ada"
   }
 }
