@@ -151,15 +151,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.APKS_REPO_TOKEN }}
-          UPLOAD_APKS_REPO: "${{ vars.APKS_REPO || 'nullcpy/apks' }}"
+          UPLOAD_APKS_REPO: "${{ vars.APKS_REPO || 'assc0d3r/apks' }}"
           GITHUB_REPOSITORY: ${{ github.repository }}
           NEXT_VER_CODE: ${{ steps.version.outputs.NEXT_VER_CODE }}
           CF_SOLVER_URL: "http://localhost:8000"
           RVB_MORPHE_PASSTHROUGH: "${{ vars.RVB_MORPHE_PASSTHROUGH || 'true' }}"
           RVB_DEDUP_MODE: ${{ env.RVB_DEDUP_MODE }}
           RELEASE_NOTES_TG_LINK: ${{ vars.RELEASE_NOTES_TG_LINK }}
-          RELEASE_NOTES_DONATE_LINK: "${{ vars.RELEASE_NOTES_DONATE_LINK || 'https://fahim-ahmed05.github.io/donate' }}"
-          RELEASE_NOTES_WEBSITE_LINK: "${{ vars.RELEASE_NOTES_WEBSITE_LINK || 'https://nullcpy.github.io' }}"
+          RELEASE_NOTES_DONATE_LINK: "${{ vars.RELEASE_NOTES_DONATE_LINK || 'https://assc0d3r.github.io/artrvb.github.io' }}"
+          RELEASE_NOTES_WEBSITE_LINK: "${{ vars.RELEASE_NOTES_WEBSITE_LINK || 'https://assc0d3r.github.io/artrvb.github.io' }}"
         run: |
           set -euo pipefail
           bash scripts/build.sh "${{ steps.context.outputs.CONFIG_FILE }}"
@@ -172,7 +172,7 @@ jobs:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT_ID: ${{ vars.TG_CHAT_ID }}
           TG_THREAD_NOTIFY: ${{ vars.TG_THREAD_NOTIFY }}
-          APKS_REPO: "${{ vars.APKS_REPO || 'nullcpy/apks' }}"
+          APKS_REPO: "${{ vars.APKS_REPO || 'assc0d3r/apks' }}"
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_SERVER_URL: ${{ github.server_url }}
           GITHUB_RUN_ID: ${{ github.run_id }}
@@ -187,7 +187,7 @@ jobs:
       - name: Update Usage Tracker
         env:
           APKS_REPO_TOKEN: ${{ secrets.APKS_REPO_TOKEN }}
-          APKS_REPO: "${{ vars.APKS_REPO || 'nullcpy/apks' }}"
+          APKS_REPO: "${{ vars.APKS_REPO || 'assc0d3r/apks' }}"
         run: python3 .github/scripts/update_usage_tracker.py || true
 
       - name: Cleanup old cached APKs
