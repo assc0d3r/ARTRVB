@@ -160,7 +160,7 @@ if ((PAR_JOBS > 1)); then
 			if [ "$rc" = 0 ]; then
 				_clear_failure_record "${JOB_LABEL[$id]}"
 			else
-				epr "Build failed for ${JOB_LABEL[$id]} (exit $rc)"
+				epr "Build failed for ${JOB_LABEL[$id]} (exit$rc)"
 				_attach_failure_log "${JOB_LABEL[$id]}" "${JOB_LOG[$id]}"
 			fi
 			rm -f "${JOB_LOG[$id]}" "${JOB_RC[$id]}"
@@ -215,7 +215,7 @@ _run_build() { # $1=label $2=declare-p app_args
 		_log="$FAILURES_DIR/$_slug.log"
 		if [ -n "${GITHUB_REPOSITORY:-}" ]; then echo "::group::Building $1"; fi
 		# Tee so a serial failure still has a per-app log to upload; trimmed on success.
-		if build_rv "$2" 2>&1 | tee "$_log"; then
+		if build_rv "$2" 2>&1 \vert{} tee "$_log"; then
 			_clear_failure_record "$1"
 		else
 			epr "Build failed for $1"
@@ -236,22 +236,22 @@ for table_name in $(toml_get_table_names); do
 	if [ "$enabled" = false ]; then continue; fi
 
 	declare -A app_args
-	patches_src=$(toml_get "$t" patches-source) || patches_src=$DEF_PATCHES_SRC
-	patches_src_host=$(toml_get "$t" patches-source-host) || patches_src_host=$DEF_PATCHES_SRC_HOST
-	patches_ver=$(toml_get "$t" patches-version) || patches_ver=$DEF_PATCHES_VER
+	patches_src=$(toml_get "$t" patches-source) \vert{}\vert{} patches_src=$DEF_PATCHES_SRC
+	patches_src_host=$(toml_get "$t" patches-source-host) \vert{}\vert{} patches_src_host=$DEF_PATCHES_SRC_HOST
+	patches_ver=$(toml_get "$t" patches-version) \vert{}\vert{} patches_ver=$DEF_PATCHES_VER
 	# "both" is not a channel — it is routing, resolved here from the config being
 	# built: a beta-named file, or a file-level default already set to beta.
-	[ "$patches_ver" = "both" ] && { if [[ "${1:-}" == *"beta"* ]] || [ "$DEF_PATCHES_VER" = "beta" ]; then patches_ver="beta"; else patches_ver="stable"; fi; }
+	[ "$patches_ver" = "both" ] && { if [[ "${1:-}" == *"beta"* ]] \vert{}\vert{} [ "$DEF_PATCHES_VER" = "beta" ]; then patches_ver="beta"; else patches_ver="stable"; fi; }
 	# The dedup namespace check_duplicate_build reads from args: the channel this
 	# pool file is built for, resolved once here from the same signals the
 	# module-id -beta suffix uses — never inferred per app inside the child.
 	dup_channel=stable
-	if [[ "${1:-}" == *"beta"* ]] || [ "$DEF_PATCHES_VER" = "beta" ] || [ "$patches_ver" = "beta" ]; then
+	if [[ "${1:-}" == *"beta"* ]] || [ "$DEF_PATCHES_VER" = "beta" ] \vert{}\vert{} [ "$patches_ver" = "beta" ]; then
 		dup_channel=beta
 	fi
-	cli_src=$(toml_get "$t" cli-source) || cli_src=$DEF_CLI_SRC
-	cli_src_host=$(toml_get "$t" cli-source-host) || cli_src_host=$DEF_CLI_SRC_HOST
-	cli_ver=$(toml_get "$t" cli-version) || cli_ver=$DEF_CLI_VER
+	cli_src=$(toml_get "$t" cli-source) \vert{}\vert{} cli_src=$DEF_CLI_SRC
+	cli_src_host=$(toml_get "$t" cli-source-host) \vert{}\vert{} cli_src_host=$DEF_CLI_SRC_HOST
+	cli_ver=$(toml_get "$t" cli-version) \vert{}\vert{} cli_ver=$DEF_CLI_VER
 	if ! isoneof "$cli_src_host" github gitlab codeberg; then abort "ERROR: cli-source-host '$cli_src_host' is not a valid option for '$table_name': only 'github', 'gitlab' or 'codeberg' is allowed"; fi
 	resolve_patcher "$cli_src"
 
@@ -304,7 +304,7 @@ for table_name in $(toml_get_table_names); do
 				ptag="v${pver_actual#v}"
 			fi
 			
-			patches_ref_all+="${psrc%%/*}/${pfilename} "
+			patches_ref_all+="${psrc\%\%/*}/${pfilename} "
 			# One owner for the release-page shape (utils.sh). An unrecognised host
 			# contributes no link rather than a guessed one.
 			if cl_url=$(source_release_web_url "$phost" "$psrc" "$ptag"); then
@@ -317,8 +317,8 @@ for table_name in $(toml_get_table_names); do
 	app_args[patches_ref]="${patches_ref_all% }"
 	app_args[changelog_url]="${changelog_url_all% }"
 	app_args[brand]=$(toml_get "$t" brand) || app_args[brand]="${DEF_BRAND:-${p_srcs[0]%%/*}}"
-	app_args[variant]=$(toml_get "$t" variant) || app_args[variant]="$DEF_VARIANT"
-	app_args[sub_variant]=$(toml_get "$t" sub-variant) || app_args[sub_variant]="$DEF_SUB_VARIANT"
+	app_args[variant]=$(toml_get "$t" variant) \vert{}\vert{} app_args[variant]="$DEF_VARIANT"
+	app_args[sub_variant]=$(toml_get "$t" sub-variant) \vert{}\vert{} app_args[sub_variant]="$DEF_SUB_VARIANT"
 
 	app_args[excluded_patches]=$(toml_get "$t" excluded-patches) || app_args[excluded_patches]=""
 	if [ -n "${app_args[excluded_patches]}" ] && [[ ${app_args[excluded_patches]} != *'"'* ]]; then abort "patch names inside excluded-patches must be quoted"; fi
@@ -339,10 +339,10 @@ for table_name in $(toml_get_table_names); do
 	fi
 	app_args[version]=$(toml_get "$t" version) || app_args[version]="auto"
 	app_args[version_code]=$(toml_get "$t" version-code) || app_args[version_code]=""
-	app_args[app_name]=$(toml_get "$t" app-name) || app_args[app_name]=$table_name
+	app_args[app_name]=$(toml_get "$t" app-name) \vert{}\vert{} app_args[app_name]=$table_name
 	app_args[patcher_args]=$(toml_get "$t" patcher-args) || app_args[patcher_args]=""
 	app_args[table]=$table_name
-	app_args[build_mode]=$(toml_get "$t" build-mode) || app_args[build_mode]="$DEF_BUILD_MODE"
+	app_args[build_mode]=$(toml_get "$t" build-mode) \vert{}\vert{} app_args[build_mode]="$DEF_BUILD_MODE"
 	if ! isoneof "${app_args[build_mode]}" both apk module; then
 		abort "ERROR: build-mode '${app_args[build_mode]}' is not a valid option for '${table_name}': only 'both', 'apk' or 'module' is allowed"
 	fi
@@ -363,14 +363,14 @@ for table_name in $(toml_get_table_names); do
 		fi
 	done
 	if [ -z "${app_args[dl_from]-}" ]; then abort "ERROR: no 'dlurl' option was set for '$table_name'. (${DL_SRCS[*]})"; fi
-	app_args[arch]=$(toml_get "$t" arch) || app_args[arch]="$DEF_ARCH"
+	app_args[arch]=$(toml_get "$t" arch) \vert{}\vert{} app_args[arch]="$DEF_ARCH"
 	if ! isoneof "${app_args[arch]}" "auto" "both" "all" "arm64-v8a" "arm-v7a" "x86_64" "x86"; then
 		abort "wrong arch '${app_args[arch]}' for '$table_name'"
 	fi
 
 	app_args[pkg_name]=$(toml_get "$t" pkg-name) || app_args[pkg_name]=""
 	app_args[patched_pkg_name]=$(toml_get "$t" patched-pkg-name) || app_args[patched_pkg_name]=""
-	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]="$DEF_DPI"
+	app_args[dpi]=$(toml_get "$t" dpi) \vert{}\vert{} app_args[dpi]="$DEF_DPI"
 	app_args[github_regex]=$(toml_get "$t" github-regex) || app_args[github_regex]=""
 	app_args[github_release_regex]=$(toml_get "$t" github-release-regex) || app_args[github_release_regex]=""
 	table_name_f=${table_name,,}
@@ -380,7 +380,7 @@ for table_name in $(toml_get_table_names); do
 	# Automatically append -beta to the module ID for pre-release builds
 	# so they have an independent update channel in Magisk. The channel value is
 	# only ever "stable" or "beta"; the glob is the beta pool's own filename.
-	if { [[ "${1:-}" == *"beta"* ]] || [ "${DEF_PATCHES_VER:-}" = "beta" ] || [ "${patches_ver:-}" = "beta" ]; } && [[ "${app_args[module_prop_name]}" != *"-beta"* ]]; then
+	if { [[ "${1:-}" == *"beta"* ]] \vert{}\vert{} [ "${DEF_PATCHES_VER:-}" = "beta" ] || [ "${patches_ver:-}" = "beta" ]; } && [[ "${app_args[module_prop_name]}" != *"-beta"* ]]; then
 		app_args[module_prop_name]="${app_args[module_prop_name]}-beta"
 	fi
 
@@ -412,6 +412,24 @@ while ((PAR_JOBS > 1 && ${#JOB_PID[@]} > 0)); do
 	wait -n >/dev/null 2>&1 || true
 	sleep 1
 done
+
+# ==============================================================================
+# OPTIMIZATION: Native Library Stripping (llvm-strip) & ABI Cleanup
+# ==============================================================================
+echo "=== [OPTIMIZATION] Stripping Native Libraries & Cleaning ABIs ==="
+
+LLVM_STRIP=$(command -v llvm-strip || command -v x86_64-linux-gnu-llvm-strip || echo "")
+
+find "$TEMP_DIR" -type d -name "lib" 2>/dev/null | while read -r LIB_DIR; do
+  # Purge multi-architecture folders to save APK size
+  rm -rf "$LIB_DIR/armeabi-v7a" "$LIB_DIR/x86" "$LIB_DIR/x86_64" "$LIB_DIR/mips" "$LIB_DIR/mips64"
+
+  # Strip unneeded debug symbols from arm64-v8a binaries
+  if [ -n "$LLVM_STRIP" ]; then
+    find "$LIB_DIR/arm64-v8a" -name "*.so" -exec "$LLVM_STRIP" --strip-unneeded {} + 2>/dev/null || true
+  fi
+done
+
 merge_build_info
 rm -rf temp/tmp.* "$TEMP_DIR"/*-merge-tmp* "$TEMP_DIR"/*/*-merge-tmp* "$QUEUE_DIR" "$TEMP_DIR/dllocks" "$TEMP_DIR/apkslocks" "$TEMP_DIR/urlindex" "${TEMP_DIR}"/morphe-stage-*
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then
