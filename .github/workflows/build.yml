@@ -138,6 +138,11 @@ jobs:
             done
           fi
 
+      - name: Setup LLVM and build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y llvm clang
+
       - name: Setup Python dependencies
         run: |
           pip install --no-cache-dir curl_cffi || true
@@ -184,7 +189,7 @@ jobs:
           APKS_REPO_TOKEN: ${{ secrets.APKS_REPO_TOKEN }}
           APKS_REPO: "${{ vars.APKS_REPO || 'nullcpy/apks' }}"
         run: python3 .github/scripts/update_usage_tracker.py || true
-        
+
       - name: Cleanup old cached APKs
         run: bash .github/scripts/build_cache_cleanup.sh
 
@@ -238,9 +243,6 @@ jobs:
 
       - name: Commit updated build and module update files
         if: steps.no_change.outputs.HAS_NEW_FILES == 'true' && steps.update_changelog.outputs.has_modules == 'true'
-        # Explicit staging (the auto-commit action's default would sweep in
-        # unrelated dirt): pointers listed by build_update_changelog.sh plus
-        # this build's changelog. Branch already checked out by that script.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -266,9 +268,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_TAG: ${{ steps.context.outputs.ARCHIVE_TAG }}
-          # Assets only: no metadata field is named, so the archive releases keep
-          # the title, notes and pre-release badge written by hand while files are
-          # (re)uploaded with --clobber. Why: docs/decisions/0001-release-metadata-ownership.md
           RELEASE_TARGET: main
           UPLOAD_FILES: "./build/*"
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -285,21 +284,12 @@ jobs:
 
       - name: Merge published content hashes into state
         id: merge_hashes
-        # Runs only when the upload chain got through: a fingerprint becomes
-        # authoritative precisely when its artifact is live. archive_upload is
-        # continue-on-error, so gate on its outcome too - a run whose assets
-        # never landed must not record hashes it did not publish.
         if: steps.no_change.outputs.HAS_NEW_FILES == 'true' && steps.archive_upload.outcome != 'failure'
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: bash .github/scripts/build_merge_hashes.sh
 
       - name: Commit artifact hashes to data branch
-        # Plumbing writer for state/build_content_hashes.json (and any other
-        # generated JSON this run legitimately touched). Runs only when the
-        # merge step actually changed the file. A failed data push is not
-        # fatal: the next run's fetch converges, the worst case is one
-        # redundant republish - never a wrong skip.
         if: always() && steps.merge_hashes.outputs.STATE_UPDATED == 'true'
         id: commit_hashes
         run: |
@@ -309,9 +299,6 @@ jobs:
 
       - name: Notify telegram
         if: steps.no_change.outputs.HAS_NEW_FILES == 'true'
-        # Last step, after everything is published: a missing chat or topic is a
-        # configuration error, so the scripts name no fallback chat and fail loudly
-        # - but they must not mark a run that already released its files as failed.
         continue-on-error: true
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
