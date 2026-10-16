@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-16T13:12:55Z"
+    "publishedAt": "2026-10-16T13:25:11Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -358,10 +358,10 @@
       "subVariant": null,
       "packageName": "dev.jason.com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-3.12.0.mpp"
+        "jasonwu1994/patches-3.13.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.12.0"
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -398,6 +398,7 @@
         "Rounded Keyboard Panel",
         "Settings Homepage Override",
         "Simple Calculator",
+        "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
@@ -408,8 +409,8 @@
         "Zhuyin Slide Input",
         "Package Rename"
       ],
-      "originBuild": "260005",
-      "publishedAt": "2026-10-15T07:53:36Z"
+      "originBuild": "260011",
+      "publishedAt": "2026-10-16T13:24:53Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -1279,10 +1280,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.15.2.mpp"
+        "Akash-Sriram/patches-1.15.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.2"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.3"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1292,8 +1293,8 @@
         "GmsCore support",
         "Flag manager & Toolkit"
       ],
-      "originBuild": "260009",
-      "publishedAt": "2026-10-16T09:14:22Z"
+      "originBuild": "260011",
+      "publishedAt": "2026-10-16T13:24:53Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
