@@ -47,9 +47,9 @@
       "shared": "bae959b0d1344b8804d8a39ed0e98880"
     },
     "stable": {
-      "com.astrapaging.vff": "d41d8cd98f00b204e9800998ecf8427e",
-      "com.truecaller": "634b0386879e0bea8ace560c061edf7f",
-      "shared": "4424283b4cbe93812c2225979b7e2fb0"
+      "com.astrapaging.vff": "2442f6efef4c859f2e69e84df3cbcea5",
+      "com.truecaller": "22bafb95f9650fe556eec813d5ca2439",
+      "shared": "bae959b0d1344b8804d8a39ed0e98880"
     }
   },
   "ihatenodejs/aidans-patches": {
