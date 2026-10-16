@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-16T09:14:39Z"
+    "publishedAt": "2026-10-16T13:12:55Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1294,6 +1294,37 @@
       ],
       "originBuild": "260009",
       "publishedAt": "2026-10-16T09:14:22Z"
+    },
+    "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
+      "name": "universal-tv-remote-rushiranpise",
+      "version": "1.8.1",
+      "appKey": "universaltvremote",
+      "appName": "Universal TV Remote",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushiranpise",
+      "brandName": "rushiranpise",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "sensustech.universal.tv.remote.control",
+      "patchSources": [
+        "rushiranpise/patches-1.23.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0"
+      ],
+      "appliedPatches": [
+        "Disable PairIP license check",
+        "Fix Firebase after re-signing",
+        "GmsCore support (MicroG)",
+        "Provide Original app certificate",
+        "Spoof Widevine / DRM level",
+        "Spoof app signature",
+        "Spoof install source",
+        "Unlock Premium"
+      ],
+      "originBuild": "260010",
+      "publishedAt": "2026-10-16T13:12:46Z"
     }
   }
 }
