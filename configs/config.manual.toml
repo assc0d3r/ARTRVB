@@ -13,3 +13,19 @@ build-mode = "apk"
 version = "auto"
 inclusive-patches = true
 apk-dlurl = "https://github.com/Kin69/Athena/releases"
+
+[Proton-Pass]
+enabled = true
+pkg-name = "proton.android.pass"
+app-name = "Proton Pass"
+patches-source = "hxreborn/morphe-patches"
+patches-source-host = "github"
+patches-version = "stable"
+cli-source = "MorpheApp/morphe-desktop"
+cli-source-host = "github"
+cli-version = "stable"
+arch = "arm64-v8a"
+build-mode = "apk"
+version = "auto"
+inclusive-patches = true
+github-dlurl = "https://github.com/protonpass/android-pass/releases"
