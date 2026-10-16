@@ -99,7 +99,7 @@ for file in "$TEMP_DIR"/*/changelog.md; do
 	[ -f "$file" ] && : >"$file"
 done
 
-mkdir -p ${MODULE_TEMPLATE_DIR}/bin/arm64 ${MODULE_TEMPLATE_DIR}/bin/arm ${MODULE_TEMPLATE_DIR}/bin/x86${MODULE_TEMPLATE_DIR}/bin/x64
+mkdir -p ${MODULE_TEMPLATE_DIR}/bin/arm64 ${MODULE_TEMPLATE_DIR}/bin/arm ${MODULE_TEMPLATE_DIR}/bin/x86 ${MODULE_TEMPLATE_DIR}/bin/x64
 echo "${DEF_AUTHOR_NAME}${DEF_AUTHOR_PAGE:+ ($DEF_AUTHOR_PAGE)}" > "${MODULE_TEMPLATE_DIR}/maintainer.txt"
 
 QUEUE_DIR="$TEMP_DIR/queue"
@@ -350,7 +350,12 @@ done
 # ==============================================================================
 echo "=== [OPTIMIZATION] Stripping Native Libraries & Cleaning ABIs ==="
 
-LLVM_STRIP=$(type -p llvm-strip x86_64-linux-gnu-llvm-strip | head -n 1)
+LLVM_STRIP=""
+if command -v llvm-strip >/dev/null 2>&1; then
+  LLVM_STRIP="$(command -v llvm-strip)"
+elif command -v x86_64-linux-gnu-llvm-strip >/dev/null 2>&1; then
+  LLVM_STRIP="$(command -v x86_64-linux-gnu-llvm-strip)"
+fi
 
 find "$TEMP_DIR" -type d -name "lib" 2>/dev/null | while read -r LIB_DIR; do
   rm -rf "$LIB_DIR/armeabi-v7a" "$LIB_DIR/x86" "$LIB_DIR/x86_64" "$LIB_DIR/mips" "$LIB_DIR/mips64"
