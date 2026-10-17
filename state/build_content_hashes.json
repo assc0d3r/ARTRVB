@@ -2,7 +2,7 @@
   "stable": {
     "pinterest-browzomje-v14.39.0-arm64-v8a": "25e30836e8d2c0d50b8b983b47e816eb",
     "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855",
-    "discord-venus-v348.10-Stable-arm64-v8a": "b61a44f5ad6e48eb07c402f2f50fc301",
+    "discord-venus-v348.10-Stable-arm64-v8a": "0c779c93dee1fc87a8282edf5cae220f",
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": "51fdb2efb091bea7f609b524ebe5d30c",
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "7ffa87cceefe63a6a34f3b1e2cf19736",
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a": "d2826093798b277403a36398c587d61d",
@@ -22,11 +22,15 @@
     "sd-maid-se-rushi-v2.0.3-rc0-arm64-v8a": "029c4d4e575f683fe350b961d89133f8",
     "netguard-rushi-v2.337-arm64-v8a": "c964fc2f76a093ae4bac8823d3683d62",
     "wavelet-o0b-v26.05-arm64-v8a": "184811e5a81b238784a9fda2708fe520",
-    "instagram-hushgram-v451.0.0.53.80-arm64-v8a": "b33b03076ae0cd0c95cf3776079a6d51",
-    "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a": "2930e8680c378bb5fad5f341f7c9ee47",
+    "instagram-hushgram-v451.0.0.53.80-arm64-v8a": "179d2b7909bf7b463fba5937b74f9544",
+    "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a": "522299047ffd586a5a3a47d3f013c510",
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a": "6c886ce5cf01651a1c8424f70088b31d",
     "vesselfinder-heval-v6.7.8-arm64-v8a": "838ca0a48686e4995934a63f42d22ada",
-    "truecaller-heval99-v26.40.5-arm64-v8a": "5b400dde59a88e9043a0bb10f6bb0fed"
+    "truecaller-heval99-v26.40.5-arm64-v8a": "5b400dde59a88e9043a0bb10f6bb0fed",
+    "proton-vpn-hxreborn-v5.20.74.0-arm64-v8a": "87e18686bdf8d0303d038ed38e342552",
+    "accuweather-rushi-v21.1.15-3-rc-arm64-v8a": "67b9ab8eb076a96e1e5f4612a1905ffe",
+    "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a": "0add6164f8cb8adbad8856c7d4445301",
+    "facebook-hushfacebook-v583.0.0.39.55-arm64-v8a": "67220784f7edf3d619d39769f17c45be"
   },
   "beta": {
     "adobe-scan-aidan-v26.09.25-arm64-v8a": "ca7739f2277314b077db0a786b49a2c6",
