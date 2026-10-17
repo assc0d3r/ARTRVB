@@ -27,7 +27,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -41,7 +41,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -55,7 +55,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -67,7 +67,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -80,7 +80,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Telegram-rushiranpise-GooglePlay": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "variant": "Google Play",
@@ -104,15 +104,16 @@
     "uptodown-dlurl": "https://facebook-messenger.en.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
-  "Google-Gboard-GboardPatches": {
-    "enabled": false,
+  "Google-Gboard-Combined": {
+    "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
-    "patches-source": "jasonwu1994/Gboard-patches",
+    "patches-source": "'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches'",
     "brand": "GboardPatches",
     "arch": "arm64-v8a",
     "inclusive-patches": true,
     "build-mode": "apk",
+    "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input'",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/gboard/",
     "uptodown-dlurl": "https://gboard-go.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
@@ -132,7 +133,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "patches-source": "Akash-Sriram/morphe-google-photos",
@@ -337,5 +338,57 @@
     "uptodown-dlurl": "https://vesselfinder.en.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/vesselfinder/com.astrapaging.vff",
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
+  },
+  "ProtonVPN-hxreborn": {
+    "enabled": true,
+    "pkg-name": "ch.protonvpn.android",
+    "app-name": "Proton VPN",
+    "patches-source": "hxreborn/morphe-patches",
+    "brand": "hxreborn",
+    "arch": "arm64-v8a",
+    "build-mode": "apk",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn",
+    "uptodown-dlurl": "https://protonvpn.en.uptodown.com/android",
+    "apkcombo-dlurl": "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
+  },
+  "AccuWeather-Rushi": {
+    "enabled": true,
+    "pkg-name": "com.accuweather.android",
+    "app-name": "AccuWeather",
+    "patches-source": "rushiranpise/morphe-patches",
+    "brand": "Rushi",
+    "arch": "arm64-v8a",
+    "build-mode": "apk",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/accuweather/accuweather",
+    "uptodown-dlurl": "https://accuweather.en.uptodown.com/android",
+    "apkpure-dlurl": "https://apkpure.com/accuweather-weather-radar/com.accuweather.android",
+    "apkcombo-dlurl": "https://apkcombo.com/accuweather/com.accuweather.android"
+  },
+  "SoundCloud-V4n1X": {
+    "enabled": true,
+    "pkg-name": "com.soundcloud.android",
+    "app-name": "SoundCloud",
+    "patches-source": "V4n1X/morphe-patches",
+    "brand": "V4n1X",
+    "arch": "arm64-v8a",
+    "build-mode": "apk",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/soundcloud/soundcloud-soundcloud",
+    "uptodown-dlurl": "https://soundcloud.en.uptodown.com/android",
+    "apkpure-dlurl": "https://apkpure.com/sound-cloud-android-app/com.soundcloud.android",
+    "apkcombo-dlurl": "https://apkcombo.com/soundcloud/com.soundcloud.android"
+  },
+  "UiMote-rushiranpise": {
+    "enabled": true,
+    "pkg-name": "sensustech.universal.tv.remote.control",
+    "app-name": "Universal TV Remote",
+    "brand": "rushiranpise",
+    "patches-source": "rushiranpise/morphe-patches",
+    "arch": "arm64-v8a",
+    "build-mode": "apk",
+    "inclusive-patches": true,
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/sensus-tech/tv-remote-control-universal",
+    "uptodown-dlurl": "https://universal-tv-remote-control.en.uptodown.com/android",
+    "apkpure-dlurl": "https://apkpure.com/universal-tv-remote-control/sensustech.universal.tv.remote.control",
+    "apkcombo-dlurl": "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control/"
   }
 }

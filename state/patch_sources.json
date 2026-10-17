@@ -5,12 +5,12 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.15.3",
-    "stable_date": "2026-10-16T11:18:44Z"
+    "stable": "v1.15.4",
+    "stable_date": "2026-10-17T07:38:02Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.48.0-dev.9",
-    "beta_date": "2026-10-16T08:36:34Z",
+    "beta": "v1.48.0-dev.10",
+    "beta_date": "2026-10-17T10:54:29Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -23,8 +23,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.13.0",
-    "stable_date": "2026-10-14T17:40:12Z"
+    "stable": "v0.14.0",
+    "stable_date": "2026-10-16T20:46:11Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -32,8 +32,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.11",
-    "stable_date": "2026-10-15T14:22:42Z"
+    "stable": "v0.0.12",
+    "stable_date": "2026-10-16T19:32:38Z"
   },
   "SysAdminDoc/HushMessenger": {
     "beta": "",
@@ -44,14 +44,23 @@
     "stable": "v0.24.0",
     "stable_date": "2026-10-14T15:59:46Z"
   },
+  "V4n1X/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "V4n1X/morphe-patches",
+    "stable": "v1.4.0",
+    "stable_date": "2026-09-30T02:28:11Z"
+  },
   "VenusIsJaded/Venus-Patches": {
     "beta": "",
     "beta_date": "",
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.13.0",
-    "stable_date": "2026-10-16T06:24:02Z"
+    "stable": "v1.15.0",
+    "stable_date": "2026-10-17T08:25:12Z"
   },
   "VipinVIP/railone-patches": {
     "beta": "",
@@ -61,6 +70,15 @@
     "repo": "VipinVIP/railone-patches",
     "stable": "v1.1.1",
     "stable_date": "2026-10-11T07:03:32Z"
+  },
+  "ausamnco/gboard-enc-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "ausamnco/gboard-enc-patches",
+    "stable": "v1.4.2",
+    "stable_date": "2026-09-22T04:52:37Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -99,13 +117,13 @@
     "stable_date": "2026-09-22T01:01:04Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.16.0-dev.1",
-    "beta_date": "2026-10-16T14:13:28Z",
+    "beta": "v1.16.0-dev.3",
+    "beta_date": "2026-10-16T21:47:22Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
-    "stable": "v1.15.0",
-    "stable_date": "2026-10-16T13:37:20Z"
+    "stable": "v1.16.0",
+    "stable_date": "2026-10-17T11:57:40Z"
   },
   "hsd-dles/morphe-patches": {
     "beta": "",
@@ -116,9 +134,18 @@
     "stable": "",
     "stable_date": ""
   },
+  "hxreborn/morphe-patches": {
+    "beta": "v1.1.0-dev.1",
+    "beta_date": "2026-07-19T18:13:41Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "hxreborn/morphe-patches",
+    "stable": "v1.54.0",
+    "stable_date": "2026-10-17T11:18:27Z"
+  },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.8.0-dev.7",
-    "beta_date": "2026-10-16T16:25:44Z",
+    "beta": "v1.8.0-dev.9",
+    "beta_date": "2026-10-17T02:06:01Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",

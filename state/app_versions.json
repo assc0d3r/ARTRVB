@@ -15,7 +15,7 @@
     "keys": [
       "Discord-Venus"
     ],
-    "version": "348.10 - Stable"
+    "version": "349.9 - Stable"
   },
   "Facebook-HushFacebook": {
     "keys": [
@@ -45,13 +45,13 @@
     "keys": [
       "GoogleMaps-bearinmindcat"
     ],
-    "version": "26.41.03.993332563"
+    "version": "26.41.04.993332563"
   },
   "GooglePhotos-AkashSriram": {
     "keys": [
       "GooglePhotos-AkashSriram"
     ],
-    "version": "7.97.0.997578476"
+    "version": "7.97.0.1000520730"
   },
   "Instagram-HushGram": {
     "keys": [
@@ -111,7 +111,7 @@
     "keys": [
       "Telegram-rushiranpise-GooglePlay"
     ],
-    "version": "13.0.2"
+    "version": "13.0.3"
   },
   "Truecaller-heval99": {
     "keys": [
@@ -148,5 +148,35 @@
       "YouTube-Morphe"
     ],
     "version": "21.41.529"
+  },
+  "AccuWeather-Rushi": {
+    "keys": [
+      "AccuWeather-Rushi"
+    ],
+    "version": "21.2.0-2-rc"
+  },
+  "Google-Gboard-Combined": {
+    "keys": [
+      "Google-Gboard-Combined"
+    ],
+    "version": "18.4.1.985164140-release-arm64-v8a"
+  },
+  "ProtonVPN-hxreborn": {
+    "keys": [
+      "ProtonVPN-hxreborn"
+    ],
+    "version": "5.20.74.0"
+  },
+  "SoundCloud-V4n1X": {
+    "keys": [
+      "SoundCloud-V4n1X"
+    ],
+    "version": "2026.10.08-release"
+  },
+  "UiMote-rushiranpise": {
+    "keys": [
+      "UiMote-rushiranpise"
+    ],
+    "version": "1.0"
   }
 }

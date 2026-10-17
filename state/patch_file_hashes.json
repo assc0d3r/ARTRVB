@@ -2,9 +2,13 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "e9f3a30144fea28fa4ff6c4a520dbf1e",
+      "com.google.android.apps.photos": "5870e687b768cb740878fc230355e0ac",
       "shared": "4896b91072faee9736005cde611b031d"
     }
+  },
+  "ausamnco/gboard-enc-patches": {
+    "beta": {},
+    "stable": {}
   },
   "bearinmindcat/morphe-patches": {
     "beta": {},
@@ -47,9 +51,16 @@
       "shared": "bae959b0d1344b8804d8a39ed0e98880"
     },
     "stable": {
-      "com.astrapaging.vff": "2442f6efef4c859f2e69e84df3cbcea5",
-      "com.truecaller": "22bafb95f9650fe556eec813d5ca2439",
+      "com.astrapaging.vff": "e20b38503c2be0ddcd4d25fe3477186e",
+      "com.truecaller": "d9812dc30838a08aaa0a2fbe06c467fc",
       "shared": "bae959b0d1344b8804d8a39ed0e98880"
+    }
+  },
+  "hxreborn/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "ch.protonvpn.android": "f395f7ef187d7da089632fb33dd00ba8",
+      "shared": "94efe6acd6aa13f4f350fcfa1791fd60"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -137,15 +148,15 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "87094cb4d7bdff4043dd4e5625a7f340",
-      "shared": "ab62ce7acc18e0f458626cefd09f7149"
+      "com.facebook.katana": "223c965fdd490e5526a8b72b66e3f9c5",
+      "shared": "fda61e0f75347046961da94e2f7bb8c4"
     }
   },
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "e6a19083ab9213738f5b089fc149a720",
-      "shared": "ebbc31edca73bc601d4ae9f648917a84"
+      "com.instagram.android": "32b9d25a49eaaed6eb8221bed5ac2dbd",
+      "shared": "f1a593de854bcab3640b6cd43b43d1c5"
     }
   },
   "sysadmindoc/hushmessenger": {
@@ -155,11 +166,18 @@
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
     }
   },
+  "v4n1x/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.soundcloud.android": "1401bce8cc6a6105ec6f0d0a6af73b7f",
+      "shared": "ee92353b8d6e559e4ad906c1858aecaa"
+    }
+  },
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
       "com.discord": "07d72f6ad4bee8fe7166aced4c05d004",
-      "shared": "3dfb5bd7c5e6f6b75c8b220e150b047a"
+      "shared": "bc50c41b54acd2c763de3f15a6e26047"
     }
   },
   "vipinvip/railone-patches": {
