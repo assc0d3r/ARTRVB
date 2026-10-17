@@ -14,7 +14,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -27,7 +27,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -41,7 +41,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -55,7 +55,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -67,7 +67,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -80,7 +80,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Telegram-rushiranpise-GooglePlay": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "variant": "Google Play",
@@ -105,7 +105,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": "'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches'",
@@ -133,7 +133,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "patches-source": "Akash-Sriram/morphe-google-photos",
@@ -200,7 +200,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/nova-launcher/com.teslacoilsw.launcher"
   },
   "AdobeScan-Aidan": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.adobe.scan.android",
     "app-name": "Adobe Scan",
     "patches-source": "ihatenodejs/aidans-patches",
@@ -326,7 +326,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
     "patches-source": "heval99/Heval-Morphe-Patches",
@@ -340,7 +340,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",
@@ -352,7 +352,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
   },
   "AccuWeather-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.accuweather.android",
     "app-name": "AccuWeather",
     "patches-source": "rushiranpise/morphe-patches",
@@ -365,7 +365,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/accuweather/com.accuweather.android"
   },
   "SoundCloud-V4n1X": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.soundcloud.android",
     "app-name": "SoundCloud",
     "patches-source": "V4n1X/morphe-patches",
@@ -378,7 +378,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/soundcloud/com.soundcloud.android"
   },
   "UiMote-rushiranpise": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "sensustech.universal.tv.remote.control",
     "app-name": "Universal TV Remote",
     "brand": "rushiranpise",

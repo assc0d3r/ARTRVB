@@ -149,8 +149,8 @@
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",
-    "stable": "v1.7.0",
-    "stable_date": "2026-10-13T05:35:41Z"
+    "stable": "v1.8.0",
+    "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
     "beta": "v3.13.0-dev.2",
