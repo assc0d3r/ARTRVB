@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-16T17:08:39Z"
+    "publishedAt": "2026-10-17T00:36:56Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -358,16 +358,19 @@
       "subVariant": null,
       "packageName": "dev.jason.com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-3.13.0.mpp"
+        "jasonwu1994/patches-3.13.0.mpp",
+        "ausamnco/patches-1.4.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0"
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0",
+        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2"
       ],
       "appliedPatches": [
         "AI Writing Tools",
         "Access Points menu style",
         "Add Gboard Signature Bypass",
         "Advanced Voice Typing",
+        "Backspace Repeat Haptic Feedback",
         "Backup & Restore",
         "Change emoji size",
         "Clipboard Custom Character Limit",
@@ -383,10 +386,11 @@
         "Enable cursor trackpad mode",
         "Enable split keyboard",
         "English QWERTY Up-Flick Uppercase",
-        "FTP Server",
+        "Enter Key Tasker Event",
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
+        "Glide Trail Customization",
         "Grammar Checker",
         "Hyperspeed Typing Animation",
         "Incognito Mode Toggle",
@@ -403,14 +407,10 @@
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
         "Use Bluetooth Microphone",
-        "Web Clipboard",
-        "Zhuyin Bottom Row Key Sizes",
-        "Zhuyin Quick Traditional/Simplified Toggle",
-        "Zhuyin Slide Input",
         "Package Rename"
       ],
-      "originBuild": "260011",
-      "publishedAt": "2026-10-16T13:24:53Z"
+      "originBuild": "260013",
+      "publishedAt": "2026-10-17T00:36:41Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
