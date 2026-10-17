@@ -9,8 +9,8 @@
     "stable_date": "2026-10-17T07:38:02Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.48.0-dev.10",
-    "beta_date": "2026-10-17T10:54:29Z",
+    "beta": "v1.48.0-dev.11",
+    "beta_date": "2026-10-17T18:40:08Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -117,8 +117,8 @@
     "stable_date": "2026-09-22T01:01:04Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.17.0-dev.1",
-    "beta_date": "2026-10-17T12:19:45Z",
+    "beta": "v1.17.0-dev.2",
+    "beta_date": "2026-10-17T18:10:43Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
