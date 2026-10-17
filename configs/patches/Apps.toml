@@ -406,21 +406,6 @@ uptodown-dlurl = "https://accuweather.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/accuweather-weather-radar/com.accuweather.android"
 apkcombo-dlurl = "https://apkcombo.com/accuweather/com.accuweather.android"
 
-[GitHub-Noodles]
-enabled = true
-pkg-name = "com.github.android"
-app-name = "GitHub"
-patches-source = "hsd-dles/morphe-patches"
-brand = "Noodles"
-arch = "arm64-v8a"
-build-mode = "apk"
-patches-version = "stable"
-patch-folder = "github"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/github/github/"
-uptodown-dlurl = "https://github.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/github/com.github.android"
-apkcombo-dlurl = "https://apkcombo.com/github/com.github.android"
-
 [SoundCloud-V4n1X]
 enabled = true
 pkg-name = "com.soundcloud.android"
