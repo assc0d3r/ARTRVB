@@ -374,21 +374,6 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvp
 uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
 apkcombo-dlurl = "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
 
-[AdobeAcrobat-Rushi]
-enabled = true
-pkg-name = "com.adobe.reader"
-app-name = "Adobe Acrobat"
-patches-source = "rushiranpise/morphe-patches"
-brand = "Rushi"
-arch = "arm64-v8a"
-build-mode = "apk"
-patches-version = "stable"
-patch-folder = "adobeacrobat"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/adobe-acrobat/"
-uptodown-dlurl = "https://adobe-reader.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/adobe-acrobat-reader-pdf-viewer/com.adobe.reader"
-apkcombo-dlurl = "https://apkcombo.com/adobe-acrobat-reader/com.adobe.reader"
-
 [AccuWeather-Rushi]
 enabled = true
 pkg-name = "com.accuweather.android"
@@ -432,7 +417,7 @@ uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/sound-cloud-android-app/com.soundcloud.android"
 apkcombo-dlurl = "https://apkcombo.com/soundcloud/com.soundcloud.android"
 
-UiMote-rushiranpise]
+[UiMote-rushiranpise]
 enabled = true
 pkg-name = "sensustech.universal.tv.remote.control"
 app-name = "Universal TV Remote"
