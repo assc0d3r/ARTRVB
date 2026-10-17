@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-17T00:36:56Z"
+    "publishedAt": "2026-10-17T12:21:19Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -107,10 +107,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.13.0.mpp"
+        "VenusIsJaded/patches-1.15.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.13.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.15.0"
       ],
       "appliedPatches": [
         "Account switcher",
@@ -151,8 +151,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260009",
-      "publishedAt": "2026-10-16T09:14:22Z"
+      "originBuild": "260014",
+      "publishedAt": "2026-10-17T12:21:03Z"
     },
     "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
@@ -1105,10 +1105,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.11.mpp"
+        "SysAdminDoc/patches-0.0.12.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.11"
+        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.12"
       ],
       "appliedPatches": [
         "Accent color",
@@ -1151,6 +1151,7 @@
         "Hide group buttons on the share sheet",
         "Hide highlights",
         "Hide paid partnership Reels",
+        "Hide reels by caption words",
         "Hide suggested accounts in DMs",
         "Hide suggested accounts in Reels",
         "Hide suggested people on profiles",
@@ -1216,8 +1217,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260007",
-      "publishedAt": "2026-10-15T15:08:39Z"
+      "originBuild": "260014",
+      "publishedAt": "2026-10-17T12:21:03Z"
     },
     "netguard-rushi-v2.337-arm64-v8a.apk": {
       "name": "netguard-rushi",
@@ -1280,21 +1281,21 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.15.3.mpp"
+        "Akash-Sriram/patches-1.15.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.3"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
         "DCIM & backup control",
+        "Flag manager & Toolkit",
         "Media engine & AI fixes",
         "Spoof features",
-        "GmsCore support",
-        "Flag manager & Toolkit"
+        "GmsCore support"
       ],
-      "originBuild": "260011",
-      "publishedAt": "2026-10-16T13:24:53Z"
+      "originBuild": "260014",
+      "publishedAt": "2026-10-17T12:21:03Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
@@ -1385,6 +1386,206 @@
       ],
       "originBuild": "260012",
       "publishedAt": "2026-10-16T17:08:23Z"
+    },
+    "accuweather-rushi-v21.1.15-3-rc-arm64-v8a.apk": {
+      "name": "accuweather-rushi",
+      "version": "21.1.15-3-rc",
+      "appKey": "accuweather",
+      "appName": "AccuWeather",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushi",
+      "brandName": "Rushi",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.accuweather.android",
+      "patchSources": [
+        "rushiranpise/patches-1.23.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0"
+      ],
+      "appliedPatches": [
+        "Unlock Premium+"
+      ],
+      "originBuild": "260014",
+      "publishedAt": "2026-10-17T12:21:03Z"
+    },
+    "facebook-hushfacebook-v583.0.0.39.55-arm64-v8a.apk": {
+      "name": "facebook-hushfacebook",
+      "version": "583.0.0.39.55",
+      "appKey": "facebook",
+      "appName": "Facebook",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushfacebook",
+      "brandName": "HushFacebook",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.facebook.katana",
+      "patchSources": [
+        "SysAdminDoc/patches-0.14.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.14.0"
+      ],
+      "appliedPatches": [
+        "AMOLED black theme",
+        "Allow screenshots",
+        "Block Instant Games ads",
+        "Block ad telemetry",
+        "Block background ad prefetch",
+        "Block background-return feed refresh",
+        "Block promotional notifications",
+        "Block screenshot detection",
+        "Clean up Facebook's chat list",
+        "Clean up Reels",
+        "Comment sheet options",
+        "Default comment order",
+        "Default playback quality",
+        "Disable Audience Network",
+        "Don't send reel watch history",
+        "Download any photo",
+        "Download any reel",
+        "Download any story",
+        "Download any video",
+        "Following feed on Home",
+        "Force dark mode",
+        "Frame step",
+        "Hide AI-detected posts",
+        "Hide Menu promotions",
+        "Hide Meta AI comment summaries",
+        "Hide Meta AI in search",
+        "Hide Meta AI questions under posts",
+        "Hide Meta upsells",
+        "Hide Reels in the feed",
+        "Hide Stories tray",
+        "Hide affiliate product links",
+        "Hide carrier data banners",
+        "Hide post prompts",
+        "Hide posts by words",
+        "Hide read receipts",
+        "Hide reel interest prompts",
+        "Hide seen posts",
+        "Hide sponsored Marketplace listings",
+        "Hide sponsored posts",
+        "Hide sponsored profile posts",
+        "Hide sponsored reels",
+        "Hide sponsored search results",
+        "Hide sponsored stories",
+        "Hide suggested and promoted posts",
+        "Hide suggested stories",
+        "Hide tab badges",
+        "Hide tabs",
+        "Hide the Feeds header",
+        "Hide the Get Messenger card",
+        "Hide the Reels tab",
+        "Hide the Reels tab dot",
+        "Hide typing indicator",
+        "Hold a reel for 2x",
+        "Hold back analytics uploads",
+        "Hushfacebook in the Menu",
+        "Hushfacebook settings",
+        "Install beside Meta's apps",
+        "Keep post dates",
+        "Keep the progress bar",
+        "Keep the reel speed",
+        "Marketplace only",
+        "Open Messenger from the top bar",
+        "Open links in external browser",
+        "Open on a chosen tab",
+        "Picture-in-picture",
+        "Restore screens on re-signed builds",
+        "Resume long videos",
+        "Sanitize sharing links",
+        "Send chat photos and videos at original quality",
+        "Share sheet items",
+        "Show View profile on Marketplace sellers",
+        "Skip silent parts",
+        "Start on x86 devices",
+        "Stop Story auto-advance",
+        "Stop update prompts",
+        "Tab bar at the bottom",
+        "Tag suggestions only after @",
+        "Tap to play",
+        "Turn off HDR brightness",
+        "Turn off auto-translation",
+        "Turn off double tap to like",
+        "Turn off haptics",
+        "Turn off screen transitions",
+        "Unlock app icons",
+        "Upload Stories in HD",
+        "Use the phone's emoji",
+        "Use the system font",
+        "View stories anonymously",
+        "Material You theme",
+        "Disable Play Store updates",
+        "Accent color"
+      ],
+      "originBuild": "260014",
+      "publishedAt": "2026-10-17T12:21:03Z"
+    },
+    "proton-vpn-hxreborn-v5.20.74.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.20.74.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.54.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.54.0"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260014",
+      "publishedAt": "2026-10-17T12:21:03Z"
+    },
+    "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a.apk": {
+      "name": "soundcloud-v4n1x",
+      "version": "4n1x-v2026.08.26-release",
+      "appKey": "soundcloud",
+      "appName": "SoundCloud",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "v4n1x",
+      "brandName": "V4n1X",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.soundcloud.android",
+      "patchSources": [
+        "V4n1X/patches-1.4.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/V4n1X/morphe-patches/releases/tag/v1.4.0"
+      ],
+      "appliedPatches": [
+        "Disable analytics",
+        "Disable consent popup",
+        "Enable SoundCloud Go+"
+      ],
+      "originBuild": "260014",
+      "publishedAt": "2026-10-17T12:21:03Z"
     }
   }
 }
