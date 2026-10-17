@@ -1,4 +1,4 @@
-[# Gboard: jasonwu1994 (base, 44 patches) + ausamnco (2 extra patches)
+[# Gboard: jasonwu1994 (base, 44 patches) + ausamnco (2 extra patches)]
 # Both bundles declare support for Gboard 18.0.3.954559732 (arm64-v8a).
 # Replace the old [Google-Gboard-GboardPatches] block in apps.toml with this one.
 [Google-Gboard-Combined]
