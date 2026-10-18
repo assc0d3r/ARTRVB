@@ -23,7 +23,7 @@
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     },
     "stable": {
-      "com.pinterest": "7c728109a4ce5e1c2d148c950ebe1f15",
+      "com.pinterest": "2836f3449a571a1a7c7e444ca6ac5a26",
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     }
   },
@@ -176,8 +176,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "07d72f6ad4bee8fe7166aced4c05d004",
-      "shared": "bc50c41b54acd2c763de3f15a6e26047"
+      "com.discord": "09d434b5443827708badb513ea6d683a",
+      "shared": "9b0517ad93aaa329b431d167eedec653"
     }
   },
   "vipinvip/railone-patches": {
