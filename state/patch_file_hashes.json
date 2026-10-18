@@ -59,8 +59,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "f395f7ef187d7da089632fb33dd00ba8",
-      "shared": "94efe6acd6aa13f4f350fcfa1791fd60"
+      "ch.protonvpn.android": "fe75a4f53554f7dd8f10ab476eeccf64",
+      "shared": "1b35c43f6d9a5782ea4d90e308e73ac5"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -183,8 +183,8 @@
   "vipinvip/railone-patches": {
     "beta": {},
     "stable": {
-      "org.cris.aikyam": "3ac41f629241b0296b559fef3e6e3d1c",
-      "shared": "287fda32ac62422a9026603796fb6b51"
+      "org.cris.aikyam": "4c6eab7af5db1e0712d93aa3b4a653af",
+      "shared": "a3eba0c4c188ec76bd11fd7c2d8fe6aa"
     }
   }
 }
