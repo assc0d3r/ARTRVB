@@ -1,7 +1,7 @@
 {
   "patches-version": "stable",
   "Pinterest-browzomje": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "browzomje/browzomje-patches",
@@ -27,7 +27,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -214,7 +214,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
   },
   "VN-Riky": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.frontrow.vlog",
     "app-name": "VN Video Editor",
     "patches-source": "riky-dev/morphe-patches",
