@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-17T22:17:23Z"
+    "publishedAt": "2026-10-18T09:15:48Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -741,10 +741,10 @@
       "subVariant": null,
       "packageName": "org.cris.aikyam",
       "patchSources": [
-        "VipinVIP/patches-1.1.1.mpp"
+        "VipinVIP/patches-1.2.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/VipinVIP/railone-patches/releases/tag/v1.1.1"
+        "https://github.com/VipinVIP/railone-patches/releases/tag/v1.2.1"
       ],
       "appliedPatches": [
         "Allow screenshots",
@@ -752,10 +752,11 @@
         "Bypass rjsniffer ADB check",
         "Bypass signature verification",
         "Disable native security SDK",
-        "Hide screenshot detection"
+        "Hide screenshot detection",
+        "Monochrome icon support"
       ],
-      "originBuild": "260006",
-      "publishedAt": "2026-10-15T13:46:27Z"
+      "originBuild": "260016",
+      "publishedAt": "2026-10-18T09:15:37Z"
     },
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
       "name": "reddit-morphe",
@@ -1539,10 +1540,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.54.0.mpp"
+        "hxreborn/patches-1.55.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.54.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.55.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1559,8 +1560,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260014",
-      "publishedAt": "2026-10-17T12:21:03Z"
+      "originBuild": "260016",
+      "publishedAt": "2026-10-18T09:15:37Z"
     },
     "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-v4n1x",
