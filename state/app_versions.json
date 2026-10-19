@@ -3,7 +3,7 @@
     "keys": [
       "AdobeAcrobat-Rushi"
     ],
-    "version": "26.9.2.50367"
+    "version": "26.9.2"
   },
   "AdobeScan-Aidan": {
     "keys": [
@@ -57,7 +57,7 @@
     "keys": [
       "Instagram-HushGram"
     ],
-    "version": "453.0.0.0.45"
+    "version": "451.0.0.53.80"
   },
   "NetGuard-Rushi": {
     "keys": [
@@ -69,13 +69,13 @@
     "keys": [
       "NovaLauncher-MightyMich"
     ],
-    "version": "89400 (8.9.4)"
+    "version": "8.9.4)"
   },
   "Pinterest-browzomje": {
     "keys": [
       "Pinterest-browzomje"
     ],
-    "version": "14.40.0"
+    "version": "14.41.0"
   },
   "RailOne-VipinVIP": {
     "keys": [
@@ -93,19 +93,19 @@
     "keys": [
       "SDMaidSE-Rushi"
     ],
-    "version": "2.2.1-rc0"
+    "version": "2.2.1"
   },
   "SonyLIV-TV-Chiggi": {
     "keys": [
       "SonyLIV-TV-Chiggi"
     ],
-    "version": "6.38.18"
+    "version": "6.29.11"
   },
   "Spotify-Spicetify": {
     "keys": [
       "Spotify-Spicetify"
     ],
-    "version": "9.1.92.3058"
+    "version": "20261005_05_RC00"
   },
   "Telegram-rushiranpise-GooglePlay": {
     "keys": [
@@ -117,13 +117,13 @@
     "keys": [
       "Truecaller-heval99"
     ],
-    "version": "15.28.7"
+    "version": "0.0"
   },
   "Twitter-Piko": {
     "keys": [
       "Twitter-Piko"
     ],
-    "version": "12.34.0-prod.01"
+    "version": "12.35.0"
   },
   "VN-Riky": {
     "keys": [
@@ -153,13 +153,13 @@
     "keys": [
       "AccuWeather-Rushi"
     ],
-    "version": "21.2.0-2-rc"
+    "version": "21.2.0"
   },
   "Google-Gboard-Combined": {
     "keys": [
       "Google-Gboard-Combined"
     ],
-    "version": "18.4.1.985164140-release-arm64-v8a"
+    "version": "18.4.1.985164140"
   },
   "ProtonVPN-hxreborn": {
     "keys": [
@@ -177,6 +177,6 @@
     "keys": [
       "UiMote-rushiranpise"
     ],
-    "version": "1.0"
+    "version": "1.8.1"
   }
 }

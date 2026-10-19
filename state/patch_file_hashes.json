@@ -87,7 +87,7 @@
     "beta": {},
     "stable": {
       "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
-      "shared": "b781de879faa26befba5a6291d4bf143"
+      "shared": "13247b79f14091350894d74436923467"
     }
   },
   "morpheapp/morphe-patches": {
@@ -176,8 +176,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "09d434b5443827708badb513ea6d683a",
-      "shared": "9b0517ad93aaa329b431d167eedec653"
+      "com.discord": "086ff5345cfda30fd6c8664b51b1c0e3",
+      "shared": "542064cf372597f674dea0409cae21b3"
     }
   },
   "vipinvip/railone-patches": {
