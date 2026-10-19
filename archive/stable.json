@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-18T22:56:00Z"
+    "publishedAt": "2026-10-19T04:46:48Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -281,10 +281,10 @@
       "subVariant": null,
       "packageName": "com.facebook.orca.hush",
       "patchSources": [
-        "SysAdminDoc/patches-0.24.0.mpp"
+        "SysAdminDoc/patches-0.25.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushMessenger/releases/tag/v0.24.0"
+        "https://github.com/SysAdminDoc/HushMessenger/releases/tag/v0.25.0"
       ],
       "appliedPatches": [
         "Allow chat bubbles",
@@ -293,7 +293,7 @@
         "Bold and italic text",
         "Clone install under another package name",
         "Custom new-message sound",
-        "Fix shared videos with xHE-AAC sound",
+        "Fix videos that won't send",
         "Hide AI sticker tools",
         "Hide Chat Moments",
         "Hide Facebook shortcuts",
@@ -318,13 +318,16 @@
         "Hide read receipts",
         "Hide stories and notes",
         "Hide typing indicator",
+        "Hold stories at the end",
         "Install beside Meta apps",
         "Keep a message log",
         "Keep emoji search on emoji",
         "Keep unsent messages",
+        "Mark as read button",
         "Material You theme",
         "Open settings from menu",
         "Open web links externally",
+        "Open your gallery app",
         "Pin more chats",
         "Restore old emoji drawer",
         "Restore screens on re-signed builds",
@@ -336,6 +339,7 @@
         "Stop MQTT logging",
         "Stop ad attribution uploads",
         "Stop analytics uploads",
+        "Stop app list and device ID sharing",
         "Stop inbox and ad link logging",
         "Stop nearby scans",
         "Turn off the swipe up for disappearing messages",
@@ -345,8 +349,8 @@
         "Use your own font",
         "View stories anonymously"
       ],
-      "originBuild": "260005",
-      "publishedAt": "2026-10-15T07:53:36Z"
+      "originBuild": "260020",
+      "publishedAt": "2026-10-19T04:46:29Z"
     },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-gboardpatches",
@@ -1110,10 +1114,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.12.mpp"
+        "SysAdminDoc/patches-0.0.13.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.12"
+        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.13"
       ],
       "appliedPatches": [
         "Accent color",
@@ -1147,6 +1151,8 @@
         "Glass tab bar",
         "Group Instagram's notifications",
         "Hide AI-labeled reels",
+        "Hide Follow on feed posts",
+        "Hide Follow on stories",
         "Hide Instants",
         "Hide Meta AI",
         "Hide Notes on profile pictures",
@@ -1168,6 +1174,7 @@
         "Hide the Repost button",
         "Hide the Share button",
         "Hide the Threads button",
+        "Hide the comment emoji row",
         "Hide the home feed",
         "Hide the notes row",
         "Hide your active status",
@@ -1222,8 +1229,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260014",
-      "publishedAt": "2026-10-17T12:21:03Z"
+      "originBuild": "260020",
+      "publishedAt": "2026-10-19T04:46:29Z"
     },
     "netguard-rushi-v2.337-arm64-v8a.apk": {
       "name": "netguard-rushi",
@@ -1429,10 +1436,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "SysAdminDoc/patches-0.14.0.mpp"
+        "SysAdminDoc/patches-0.15.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.14.0"
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.15.0"
       ],
       "appliedPatches": [
         "AMOLED black theme",
@@ -1497,6 +1504,8 @@
         "Keep the reel speed",
         "Marketplace only",
         "Open Messenger from the top bar",
+        "Open comments at full height",
+        "Open comments with a gesture",
         "Open links in external browser",
         "Open on a chosen tab",
         "Picture-in-picture",
@@ -1527,8 +1536,8 @@
         "Disable Play Store updates",
         "Accent color"
       ],
-      "originBuild": "260014",
-      "publishedAt": "2026-10-17T12:21:03Z"
+      "originBuild": "260020",
+      "publishedAt": "2026-10-19T04:46:29Z"
     },
     "proton-vpn-hxreborn-v5.20.74.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
