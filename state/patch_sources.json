@@ -23,8 +23,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.14.0",
-    "stable_date": "2026-10-16T20:46:11Z"
+    "stable": "v0.15.0",
+    "stable_date": "2026-10-19T02:27:37Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -32,8 +32,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.12",
-    "stable_date": "2026-10-16T19:32:38Z"
+    "stable": "v0.0.13",
+    "stable_date": "2026-10-19T01:09:35Z"
   },
   "SysAdminDoc/HushMessenger": {
     "beta": "",
@@ -41,8 +41,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushMessenger",
-    "stable": "v0.24.0",
-    "stable_date": "2026-10-14T15:59:46Z"
+    "stable": "v0.25.0",
+    "stable_date": "2026-10-18T22:38:06Z"
   },
   "V4n1X/morphe-patches": {
     "beta": "",
@@ -90,8 +90,8 @@
     "stable_date": "2026-10-14T18:28:44Z"
   },
   "browzomje/browzomje-patches": {
-    "beta": "v1.13.0-dev.4",
-    "beta_date": "2026-10-14T09:10:50Z",
+    "beta": "v1.14.1-dev.1",
+    "beta_date": "2026-10-18T23:45:19Z",
     "blocked": false,
     "host": "github",
     "repo": "browzomje/browzomje-patches",
@@ -144,8 +144,8 @@
     "stable_date": "2026-10-18T08:29:29Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.8.0-dev.9",
-    "beta_date": "2026-10-17T02:06:01Z",
+    "beta": "v1.9.0-dev.1",
+    "beta_date": "2026-10-18T22:56:11Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",
