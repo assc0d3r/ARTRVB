@@ -55,7 +55,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
