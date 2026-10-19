@@ -51,9 +51,9 @@
       "shared": "bae959b0d1344b8804d8a39ed0e98880"
     },
     "stable": {
-      "com.astrapaging.vff": "e20b38503c2be0ddcd4d25fe3477186e",
-      "com.truecaller": "d9812dc30838a08aaa0a2fbe06c467fc",
-      "shared": "bae959b0d1344b8804d8a39ed0e98880"
+      "com.astrapaging.vff": "d3a7bb0c20798f19386208afd79f2b4c",
+      "com.truecaller": "ea0559870a5c1de96cbbb706a1602c27",
+      "shared": "bfc1b491bbfc686a29db5477497c479a"
     }
   },
   "hxreborn/morphe-patches": {
