@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-19T21:28:28Z"
+    "publishedAt": "2026-10-19T23:40:26Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -349,8 +349,8 @@
         "Use your own font",
         "View stories anonymously"
       ],
-      "originBuild": "260023",
-      "publishedAt": "2026-10-19T21:28:04Z"
+      "originBuild": "260024",
+      "publishedAt": "2026-10-19T23:40:10Z"
     },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-gboardpatches",
@@ -1229,8 +1229,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260023",
-      "publishedAt": "2026-10-19T21:28:04Z"
+      "originBuild": "260024",
+      "publishedAt": "2026-10-19T23:40:10Z"
     },
     "netguard-rushi-v2.337-arm64-v8a.apk": {
       "name": "netguard-rushi",
