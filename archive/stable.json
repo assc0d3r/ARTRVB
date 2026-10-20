@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-19T23:40:26Z"
+    "publishedAt": "2026-10-20T05:31:25Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1552,10 +1552,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.55.0.mpp"
+        "hxreborn/patches-1.56.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.55.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.56.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1572,8 +1572,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260016",
-      "publishedAt": "2026-10-18T09:15:37Z"
+      "originBuild": "260025",
+      "publishedAt": "2026-10-20T05:31:17Z"
     },
     "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-v4n1x",
