@@ -27,7 +27,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -67,7 +67,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -80,7 +80,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Telegram-rushiranpise-GooglePlay": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "variant": "Google Play",
@@ -105,7 +105,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": "'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches'",
@@ -340,7 +340,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",
@@ -365,7 +365,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/accuweather/com.accuweather.android"
   },
   "SoundCloud-V4n1X": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.soundcloud.android",
     "app-name": "SoundCloud",
     "patches-source": "V4n1X/morphe-patches",
