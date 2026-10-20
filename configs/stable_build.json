@@ -14,7 +14,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -144,7 +144,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",
@@ -158,7 +158,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
     "patches-source": "spicetify/morphe-patches",
@@ -186,7 +186,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/reddit/com.reddit.frontpage"
   },
   "NovaLauncher-MightyMich": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.teslacoilsw.launcher",
     "app-name": "Nova Launcher",
     "patches-source": "mich111discord/MightyMichs-Patches",
@@ -228,7 +228,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vn/com.frontrow.vlog"
   },
   "SonyLIV-TV-Chiggi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.sonyliv",
     "app-name": "SonyLIV (Android TV)",
     "patches-source": "durgesh0505/chiggi_morphe_patches",
@@ -256,7 +256,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/github/com.github.android"
   },
   "SDMaidSE-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "eu.darken.sdmse",
     "app-name": "SD Maid SE",
     "patches-source": "rushiranpise/morphe-patches",
@@ -284,7 +284,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/railone/org.cris.aikyam"
   },
   "AdobeAcrobat-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.adobe.reader",
     "app-name": "Adobe Acrobat",
     "patches-source": "rushiranpise/morphe-patches",
@@ -378,7 +378,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/soundcloud/com.soundcloud.android"
   },
   "UiMote-rushiranpise": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "sensustech.universal.tv.remote.control",
     "app-name": "Universal TV Remote",
     "brand": "rushiranpise",
