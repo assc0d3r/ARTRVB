@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-20T09:53:01Z"
+    "publishedAt": "2026-10-20T23:13:27Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1640,10 +1640,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.16.1.mpp"
+        "VenusIsJaded/patches-1.17.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.16.1"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.17.0"
       ],
       "appliedPatches": [
         "Account switcher",
@@ -1662,6 +1662,7 @@
         "Hide the call button",
         "Hide the gift button",
         "Hide typing indicator",
+        "Icon packs",
         "Jump to first message",
         "Keep deleted messages",
         "Message highlights",
@@ -1670,6 +1671,7 @@
         "Send Nitro stickers and emojis as links",
         "Send audio as voice messages",
         "Send long messages",
+        "Server info",
         "Show device indicators",
         "Show file sizes when attaching",
         "Show hidden channels",
@@ -1684,8 +1686,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260022",
-      "publishedAt": "2026-10-19T16:12:46Z"
+      "originBuild": "260027",
+      "publishedAt": "2026-10-20T23:13:13Z"
     }
   }
 }
