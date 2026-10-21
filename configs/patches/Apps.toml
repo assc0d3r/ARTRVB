@@ -444,7 +444,6 @@ brand = "HushTelegram"
 arch = "arm64-v8a"
 inclusive-patches = true
 build-mode = "apk"
-excluded-patches = "''"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fa-org/telegram/telegram-web-version/"
 uptodown-dlurl = "https://telegram.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/telegram/org.telegram.messenger"
