@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-21T14:35:23Z"
+    "publishedAt": "2026-10-21T17:53:52Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1313,10 +1313,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "SysAdminDoc/patches-0.16.0.mpp"
+        "SysAdminDoc/patches-0.16.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.16.0"
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.16.1"
       ],
       "appliedPatches": [
         "AMOLED black theme",
@@ -1414,8 +1414,8 @@
         "Disable Play Store updates",
         "Accent color"
       ],
-      "originBuild": "260029",
-      "publishedAt": "2026-10-21T09:52:40Z"
+      "originBuild": "260031",
+      "publishedAt": "2026-10-21T17:53:34Z"
     },
     "proton-vpn-hxreborn-v5.20.74.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
