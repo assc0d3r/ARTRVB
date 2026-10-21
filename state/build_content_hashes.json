@@ -14,7 +14,7 @@
     "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61",
     "nova-launcher-mightymich-v8.8.8-arm64-v8a": "71c119663b057dc42292dad41b18d1eb",
     "reddit-morphe-v2026.24.0-arm64-v8a": "65bd806af930987762743d7df604120a",
-    "twitter-piko-v12.19.1-release.0-arm64-v8a": "ed8d88f0a80d86da7d6cf0d3b120a544",
+    "twitter-piko-v12.19.1-release.0-arm64-v8a": "c9731f9064f13c1419ff63ad41230ac3",
     "youtube-morphe-v21.20.405-arm64-v8a": "51fdb2f69cfde064f8374d650954b868",
     "railone-vipinvip-v2.1.66-arm64-v8a": "bcf66f818ba8a40a33cb00d5932acef3",
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a": "34dc7d46805dcc756b77b7a997e21d09",
@@ -32,7 +32,8 @@
     "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a": "0add6164f8cb8adbad8856c7d4445301",
     "facebook-hushfacebook-v583.0.0.39.55-arm64-v8a": "6746813759d4259df221e089e9bf73e6",
     "vn-video-editor-riky-v2.22.1-arm64-v8a": "773113f29aad4e23ad8c3cc7016ccf3e",
-    "discord-venus-v349.9-Stable-arm64-v8a": "ee30198835047e8fae950f975fb842f5"
+    "discord-venus-v349.9-Stable-arm64-v8a": "ee30198835047e8fae950f975fb842f5",
+    "instagram-hushgram-v452.0.0.48.64-arm64-v8a": "3a5e46317291f7eeb3c5d9a47b9035a2"
   },
   "beta": {
     "adobe-scan-aidan-v26.09.25-arm64-v8a": "ca7739f2277314b077db0a786b49a2c6",
