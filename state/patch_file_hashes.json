@@ -148,7 +148,7 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "c1074a11f6962193b073fc03bbceeda1",
+      "com.facebook.katana": "f13c5c5f5e4faccb0bf77db1c765b3c4",
       "shared": "0f1c733462fdcc5d69550bcfb2d7bafc"
     }
   },
@@ -164,6 +164,13 @@
     "stable": {
       "com.facebook.orca": "a5151cadb1e69ee33d24cc9bcb7f46cc",
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "sysadmindoc/hushtelegram": {
+    "beta": {},
+    "stable": {
+      "org.telegram.messenger.web": "59dd1d58f73e698329d6e4073e8da1e6",
+      "shared": "b7ec28105a4cea05a13a7caa76681979"
     }
   },
   "v4n1x/morphe-patches": {

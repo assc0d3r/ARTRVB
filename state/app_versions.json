@@ -178,5 +178,11 @@
       "UiMote-rushiranpise"
     ],
     "version": "1.0"
+  },
+  "Telegram-HushTelegram": {
+    "keys": [
+      "Telegram-HushTelegram"
+    ],
+    "version": "13.1.0"
   }
 }

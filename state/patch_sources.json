@@ -23,8 +23,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.16.0",
-    "stable_date": "2026-10-21T05:41:19Z"
+    "stable": "v0.16.1",
+    "stable_date": "2026-10-21T16:10:59Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -43,6 +43,15 @@
     "repo": "SysAdminDoc/HushMessenger",
     "stable": "v0.25.0",
     "stable_date": "2026-10-18T22:38:06Z"
+  },
+  "SysAdminDoc/HushTelegram": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "SysAdminDoc/HushTelegram",
+    "stable": "v0.0.19",
+    "stable_date": "2026-10-17T22:47:09Z"
   },
   "V4n1X/morphe-patches": {
     "beta": "",
@@ -144,8 +153,8 @@
     "stable_date": "2026-10-20T00:13:13Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.9.0-dev.1",
-    "beta_date": "2026-10-18T22:56:11Z",
+    "beta": "v1.9.0-dev.2",
+    "beta_date": "2026-10-21T17:20:02Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",
