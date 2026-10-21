@@ -1,6 +1,8 @@
 # Telegram Web: SysAdminDoc/HushTelegram
 [Telegram-HushTelegram]
 enabled = true
+api_id = 20756772
+api_hash = da2ecbf68f2991463a775d406aa5f3c2
 pkg-name = "org.telegram.messenger.web"
 app-name = "Telegram"
 patches-source = "SysAdminDoc/HushTelegram"
