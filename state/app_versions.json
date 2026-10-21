@@ -3,7 +3,7 @@
     "keys": [
       "AdobeAcrobat-Rushi"
     ],
-    "version": "26.9.2.50367"
+    "version": "26.9.2"
   },
   "AdobeScan-Aidan": {
     "keys": [
@@ -27,7 +27,7 @@
     "keys": [
       "Facebook-Messenger-HushMessenger"
     ],
-    "version": "583.0.0.29.95"
+    "version": "584.0.0.49.98"
   },
   "GitHub-Noodles": {
     "keys": [
@@ -51,13 +51,13 @@
     "keys": [
       "GooglePhotos-AkashSriram"
     ],
-    "version": "7.97.0.1000520730"
+    "version": "7.98.0.1001971222"
   },
   "Instagram-HushGram": {
     "keys": [
       "Instagram-HushGram"
     ],
-    "version": "453.0.0.0.56"
+    "version": "452.0.0.48.64"
   },
   "NetGuard-Rushi": {
     "keys": [
@@ -69,7 +69,7 @@
     "keys": [
       "NovaLauncher-MightyMich"
     ],
-    "version": "89400 (8.9.4)"
+    "version": "8.9.4)"
   },
   "Pinterest-browzomje": {
     "keys": [
@@ -93,19 +93,19 @@
     "keys": [
       "SDMaidSE-Rushi"
     ],
-    "version": "2.2.1-rc0"
+    "version": "2.2.2"
   },
   "SonyLIV-TV-Chiggi": {
     "keys": [
       "SonyLIV-TV-Chiggi"
     ],
-    "version": "6.38.18"
+    "version": "6.29.11"
   },
   "Spotify-Spicetify": {
     "keys": [
       "Spotify-Spicetify"
     ],
-    "version": "9.1.92.3058"
+    "version": "2026.42.0"
   },
   "Telegram-rushiranpise-GooglePlay": {
     "keys": [
@@ -117,13 +117,13 @@
     "keys": [
       "Truecaller-heval99"
     ],
-    "version": "15.28.7"
+    "version": "26.41.5"
   },
   "Twitter-Piko": {
     "keys": [
       "Twitter-Piko"
     ],
-    "version": "12.34.0-prod.01"
+    "version": "12.36.1"
   },
   "VN-Riky": {
     "keys": [
@@ -153,13 +153,13 @@
     "keys": [
       "AccuWeather-Rushi"
     ],
-    "version": "21.2.0-2-rc"
+    "version": "21.2.0"
   },
   "Google-Gboard-Combined": {
     "keys": [
       "Google-Gboard-Combined"
     ],
-    "version": "18.5.3.993608717-release-arm64-v8a"
+    "version": "18.5.3.993608717"
   },
   "ProtonVPN-hxreborn": {
     "keys": [
@@ -171,12 +171,12 @@
     "keys": [
       "SoundCloud-V4n1X"
     ],
-    "version": "2026.10.14-release"
+    "version": "2026.10.14"
   },
   "UiMote-rushiranpise": {
     "keys": [
       "UiMote-rushiranpise"
     ],
-    "version": "1.0"
+    "version": "1.8.1"
   }
 }
