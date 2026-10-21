@@ -9,8 +9,8 @@
     "stable_date": "2026-10-17T07:38:02Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.48.0-dev.16",
-    "beta_date": "2026-10-20T23:46:03Z",
+    "beta": "v1.48.0-dev.17",
+    "beta_date": "2026-10-21T08:24:32Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -23,8 +23,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.15.0",
-    "stable_date": "2026-10-19T02:27:37Z"
+    "stable": "v0.16.0",
+    "stable_date": "2026-10-21T05:41:19Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
