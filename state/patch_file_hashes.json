@@ -162,14 +162,14 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "f436631b00a489aa867f2b0a70cb7239",
-      "shared": "e3cf146dd8d334e09e10eedc45fdffd5"
+      "com.instagram.android": "740d85738364ee1fe1961bbbe764c7c1",
+      "shared": "7fbfdfbc5d4e133b3da162288ad60360"
     }
   },
   "sysadmindoc/hushmessenger": {
     "beta": {},
     "stable": {
-      "com.facebook.orca": "a5151cadb1e69ee33d24cc9bcb7f46cc",
+      "com.facebook.orca": "1b2d9cdfc42433839cbde3d023a1c861",
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
     }
   },
