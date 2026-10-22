@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-21T18:26:52Z"
+    "publishedAt": "2026-10-22T09:50:06Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1700,8 +1700,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260028",
-      "publishedAt": "2026-10-21T05:20:47Z"
+      "originBuild": "260032",
+      "publishedAt": "2026-10-22T09:49:44Z"
     },
     "telegram-hushtelegram-v13.0.3-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
@@ -1791,7 +1791,7 @@
         "Voice messages in the music player"
       ],
       "originBuild": "260032",
-      "publishedAt": "2026-10-21T18:26:42Z"
+      "publishedAt": "2026-10-22T09:49:44Z"
     }
   }
 }
