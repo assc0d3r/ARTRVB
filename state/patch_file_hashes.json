@@ -51,9 +51,9 @@
       "shared": "bae959b0d1344b8804d8a39ed0e98880"
     },
     "stable": {
-      "com.astrapaging.vff": "d3a7bb0c20798f19386208afd79f2b4c",
-      "com.truecaller": "ea0559870a5c1de96cbbb706a1602c27",
-      "shared": "bfc1b491bbfc686a29db5477497c479a"
+      "com.astrapaging.vff": "2f63a67a17d8fa6e5a1aecff857190cf",
+      "com.truecaller": "67ed401681c6cc9ba8c1ab4b0cd2e02d",
+      "shared": "d9e4e3fd5035d7486aa1595b9ddf0701"
     }
   },
   "hxreborn/morphe-patches": {
@@ -81,6 +81,13 @@
     "stable": {
       "com.google.android.inputmethod.latin": "2b386956fca774c631a6b373b7758be8",
       "shared": "8498854420cdf3dd91e3864a7ccdebfd"
+    }
+  },
+  "madushas/pdb_patch": {
+    "beta": {},
+    "stable": {
+      "pdb.app": "002c68cabef6a9e7590f81d4a2e316bf",
+      "shared": "7026e4a3848fff1b10a30356884a0367"
     }
   },
   "mich111discord/mightymichs-patches": {
