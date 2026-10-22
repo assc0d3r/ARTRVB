@@ -435,3 +435,14 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-sa/telegram/"
 uptodown-dlurl = "https://telegram.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/telegram/org.telegram.messenger"
 apkcombo-dlurl = "https://apkcombo.com/telegram/org.telegram.messenger/"
+
+[[apps]]
+name = "Pdbee"
+package = "pdb.app"
+patches-source = "madushas/pdb_patch"
+brand = "madushas"
+arch = "arm64-v8a"
+inclusive-patches = true
+build-mode = "apk"
+uptodown-dlurl = "https://pdbee-mbti-friends-chat.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
