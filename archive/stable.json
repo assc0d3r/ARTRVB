@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-22T09:50:06Z"
+    "publishedAt": "2026-10-22T13:51:39Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1700,8 +1700,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260032",
-      "publishedAt": "2026-10-22T09:49:44Z"
+      "originBuild": "260033",
+      "publishedAt": "2026-10-22T13:51:13Z"
     },
     "telegram-hushtelegram-v13.0.3-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
@@ -1792,6 +1792,42 @@
       ],
       "originBuild": "260032",
       "publishedAt": "2026-10-22T09:49:44Z"
+    },
+    "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.20.98.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.58.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.58.0"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260033",
+      "publishedAt": "2026-10-22T13:51:13Z"
     }
   }
 }
