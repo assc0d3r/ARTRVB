@@ -83,19 +83,6 @@ uptodown-dlurl = "https://google-maps.en.uptodown.com/android/download"
 apkpure-dlurl = "https://apkpure.com/google-maps-app/com.google.android.apps.maps"
 apkcombo-dlurl = "https://apkcombo.com/google-maps/com.google.android.apps.maps"
 
-[Telegram-rushiranpise-GooglePlay]
-enabled = true
-pkg-name = "org.telegram.messenger"
-app-name = "Telegram"
-variant = "Google Play"
-patches-source = "rushiranpise/morphe-patches"
-patches-version = "stable"
-brand = "rushiranpise"
-arch = "arm64-v8a"
-build-mode = "apk"
-uptodown-dlurl = "https://telegram-google-play-version.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram"
-
 [Facebook-Messenger-HushMessenger]
 enabled = true
 pkg-name = "com.facebook.orca"
@@ -435,7 +422,7 @@ uptodown-dlurl = "https://universal-tv-remote-control.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
 apkcombo-dlurl = "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
 
-[Telegram-HushTelegram]
+[Telegram-HushTelegram-Web]
 enabled = true
 pkg-name = "org.telegram.messenger.web"
 app-name = "Telegram"
@@ -448,3 +435,17 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fa-org/telegram/telegr
 uptodown-dlurl = "https://telegram.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/telegram/org.telegram.messenger"
 apkcombo-dlurl = "https://apkcombo.com/telegram/org.telegram.messenger"
+
+[Telegram-HushTelegram]
+enabled = true
+pkg-name = "org.telegram.messenger"
+app-name = "Telegram"
+patches-source = "SysAdminDoc/HushTelegram"
+brand = "HushTelegram"
+arch = "arm64-v8a"
+inclusive-patches = true
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-sa/telegram/"
+uptodown-dlurl = "https://telegram.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/telegram/org.telegram.messenger"
+apkcombo-dlurl = "https://apkcombo.com/telegram/org.telegram.messenger/"
