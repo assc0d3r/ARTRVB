@@ -1,6 +1,19 @@
 {
   "patches-version": "stable",
   "Pinterest-browzomje": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
@@ -14,6 +27,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
@@ -27,6 +53,19 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
@@ -41,7 +80,20 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": true,
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
+    "enabled": false,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -55,6 +107,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
@@ -67,6 +132,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
@@ -80,6 +158,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Facebook-Messenger-HushMessenger": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
@@ -93,6 +184,19 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
@@ -107,7 +211,20 @@
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
   },
   "YouTube-Morphe": {
-    "enabled": false,
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
+    "enabled": true,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": "MorpheApp/morphe-patches",
@@ -121,6 +238,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
@@ -132,6 +262,19 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
@@ -146,6 +289,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
@@ -160,7 +316,20 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": false,
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
+    "enabled": true,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -174,6 +343,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/reddit/com.reddit.frontpage"
   },
   "NovaLauncher-MightyMich": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.teslacoilsw.launcher",
     "app-name": "Nova Launcher",
@@ -188,6 +370,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/nova-launcher/com.teslacoilsw.launcher"
   },
   "AdobeScan-Aidan": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.adobe.scan.android",
     "app-name": "Adobe Scan",
@@ -202,6 +397,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
   },
   "VN-Riky": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.frontrow.vlog",
     "app-name": "VN Video Editor",
@@ -216,6 +424,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/vn/com.frontrow.vlog"
   },
   "SonyLIV-TV-Chiggi": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.sonyliv",
     "app-name": "SonyLIV (Android TV)",
@@ -230,6 +451,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/sony-liv/com.sonyliv"
   },
   "GitHub-Noodles": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.github.android",
     "app-name": "GitHub",
@@ -244,6 +478,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/github/com.github.android"
   },
   "SDMaidSE-Rushi": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "eu.darken.sdmse",
     "app-name": "SD Maid SE",
@@ -258,6 +505,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
@@ -272,6 +532,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/railone/org.cris.aikyam"
   },
   "AdobeAcrobat-Rushi": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.adobe.reader",
     "app-name": "Adobe Acrobat",
@@ -286,6 +559,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-acrobat-reader/com.adobe.reader"
   },
   "NetGuard-Rushi": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "eu.faircode.netguard",
     "app-name": "NetGuard",
@@ -300,6 +586,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/netguard/eu.faircode.netguard"
   },
   "Wavelet-o0b": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.pittvandewitt.wavelet",
     "app-name": "Wavelet",
@@ -314,6 +613,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
@@ -328,7 +640,20 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",
@@ -340,6 +665,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
   },
   "AccuWeather-Rushi": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.accuweather.android",
     "app-name": "AccuWeather",
@@ -353,6 +691,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/accuweather/com.accuweather.android"
   },
   "SoundCloud-V4n1X": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "com.soundcloud.android",
     "app-name": "SoundCloud",
@@ -366,6 +717,19 @@
     "apkcombo-dlurl": "https://apkcombo.com/soundcloud/com.soundcloud.android"
   },
   "UiMote-rushiranpise": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "sensustech.universal.tv.remote.control",
     "app-name": "Universal TV Remote",
@@ -379,21 +743,20 @@
     "apkpure-dlurl": "https://apkpure.com/universal-tv-remote-control/sensustech.universal.tv.remote.control",
     "apkcombo-dlurl": "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
   },
-  "Telegram-HushTelegram-Web": {
-    "enabled": true,
-    "pkg-name": "org.telegram.messenger.web",
-    "app-name": "Telegram",
-    "patches-source": "SysAdminDoc/HushTelegram",
-    "brand": "HushTelegram",
-    "arch": "arm64-v8a",
-    "inclusive-patches": true,
-    "build-mode": "apk",
-    "apkmirror-dlurl": "https://www.apkmirror.com/apk/telegram-fa-org/telegram/telegram-web-version/",
-    "uptodown-dlurl": "https://telegram.en.uptodown.com/android",
-    "apkpure-dlurl": "https://apkpure.com/telegram/org.telegram.messenger",
-    "apkcombo-dlurl": "https://apkcombo.com/telegram/org.telegram.messenger"
-  },
   "Telegram-HushTelegram": {
+    "apps": [
+      {
+        "name": "Pdbee",
+        "package": "pdb.app",
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "arch": "arm64-v8a",
+        "inclusive-patches": true,
+        "build-mode": "apk",
+        "uptodown-dlurl": "https://pdbee-mbti-friends-chat.en.uptodown.com/android",
+        "apkpure-dlurl": "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+      }
+    ],
     "enabled": false,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",

@@ -60,7 +60,7 @@
     "beta": {},
     "stable": {
       "ch.protonvpn.android": "b37ea82fb4d1929efea42d6a46066524",
-      "shared": "b484e1e498aca11d8fefb4752229907c"
+      "shared": "155058ea02b2d2678285686c86ed89ad"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -97,9 +97,9 @@
       "shared": "b05722c155ceae0fbafebc45403050cb"
     },
     "stable": {
-      "com.google.android.youtube": "ee369d0d806fec06676675abe4d472c9",
-      "com.reddit.frontpage": "59f4197c376045a317af241fe538c7eb",
-      "shared": "37419c431fbdcfb2c425a66d42d8aaba"
+      "com.google.android.youtube": "9afc212e5ee6e7e41d12c397b48353dc",
+      "com.reddit.frontpage": "acd05fd6faa2ee4b86716a822759f192",
+      "shared": "986a989b1f52ce1f548dd08c65941d53"
     }
   },
   "o0b/morphe-patches": {
