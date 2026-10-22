@@ -422,20 +422,6 @@ uptodown-dlurl = "https://universal-tv-remote-control.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
 apkcombo-dlurl = "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
 
-[Telegram-HushTelegram-Web]
-enabled = true
-pkg-name = "org.telegram.messenger.web"
-app-name = "Telegram"
-patches-source = "SysAdminDoc/HushTelegram"
-brand = "HushTelegram"
-arch = "arm64-v8a"
-inclusive-patches = true
-build-mode = "apk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fa-org/telegram/telegram-web-version/"
-uptodown-dlurl = "https://telegram.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/telegram/org.telegram.messenger"
-apkcombo-dlurl = "https://apkcombo.com/telegram/org.telegram.messenger"
-
 [Telegram-HushTelegram]
 enabled = true
 pkg-name = "org.telegram.messenger"
