@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-22T13:51:39Z"
+    "publishedAt": "2026-10-22T17:50:19Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1230,13 +1230,14 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.17.0.mpp"
+        "heval99/patches-1.18.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.17.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0"
       ],
       "appliedPatches": [
         "Disable ads",
+        "Disable contact upload",
         "Disable telemetry",
         "Disable update prompts",
         "Enable Premium",
@@ -1248,8 +1249,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260021",
-      "publishedAt": "2026-10-19T10:28:20Z"
+      "originBuild": "260034",
+      "publishedAt": "2026-10-22T17:50:06Z"
     },
     "vesselfinder-heval-v6.7.8-arm64-v8a.apk": {
       "name": "vesselfinder-heval",
@@ -1264,17 +1265,17 @@
       "subVariant": null,
       "packageName": "com.astrapaging.vff",
       "patchSources": [
-        "heval99/patches-1.15.0.mpp"
+        "heval99/patches-1.18.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.15.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0"
       ],
       "appliedPatches": [
         "Disable ads",
         "Disable license check"
       ],
-      "originBuild": "260012",
-      "publishedAt": "2026-10-16T17:08:23Z"
+      "originBuild": "260034",
+      "publishedAt": "2026-10-22T17:50:06Z"
     },
     "accuweather-rushi-v21.1.15-3-rc-arm64-v8a.apk": {
       "name": "accuweather-rushi",
