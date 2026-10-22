@@ -21,7 +21,7 @@
     "keys": [
       "Facebook-HushFacebook"
     ],
-    "version": "583.0.0.39.55"
+    "version": "584.0.0.51.56"
   },
   "Facebook-Messenger-HushMessenger": {
     "keys": [
@@ -57,7 +57,7 @@
     "keys": [
       "Instagram-HushGram"
     ],
-    "version": "453.0.0.0.67"
+    "version": "453.0.0.0.72"
   },
   "NetGuard-Rushi": {
     "keys": [
@@ -182,6 +182,12 @@
   "Telegram-HushTelegram": {
     "keys": [
       "Telegram-HushTelegram"
+    ],
+    "version": "13.1.0"
+  },
+  "Telegram-HushTelegram-Web": {
+    "keys": [
+      "Telegram-HushTelegram-Web"
     ],
     "version": "13.1.0"
   }
