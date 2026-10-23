@@ -42,6 +42,13 @@ def main():
     next_ver_code = os.environ.get("NEXT_VER_CODE", "").strip()
     github_server = os.environ.get("GITHUB_SERVER_URL", "https://github.com").rstrip("/")
     github_repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    # The permanent build mirror lives in another repository (nullcpy/archive).
+    # When its name is set, the release note is rendered a second time with ONLY
+    # the per-file download-link base swapped to that repo — every other line
+    # (headers, the notes block, and the footer's GitHub/Discord/Donate/Website
+    # links, which stay pointing at the project's canonical home) is byte-identical
+    # to build.md. Unset means no second file: the whole feature is opt-in.
+    archive_repo = os.environ.get("ARCHIVE_REPO", "").strip()
 
     build_dir = Path("build")
     build_json_file = Path("build.json")
@@ -127,15 +134,13 @@ def main():
             if lower.endswith(".apk") and not "-module-" in lower:
                 raw_arch = extract_arch(fname, version)
                 norm_arch = normalize_arch(raw_arch)
-                dl_url = f"{github_server}/{github_repo}/releases/download/{next_ver_code}/{fname}" if (github_repo and next_ver_code) else f"./build/{fname}"
-                app_entry["apks"].append((norm_arch, dl_url, file_ver))
+                app_entry["apks"].append((norm_arch, fname, file_ver))
 
             # Check if module zip
             elif lower.endswith(".zip") and "-module-" in lower:
                 raw_arch = extract_arch(fname, version)
                 norm_arch = normalize_arch(raw_arch)
-                dl_url = f"{github_server}/{github_repo}/releases/download/{next_ver_code}/{fname}" if (github_repo and next_ver_code) else f"./build/{fname}"
-                app_entry["modules"].append((norm_arch, dl_url, file_ver))
+                app_entry["modules"].append((norm_arch, fname, file_ver))
 
         # Sort architectures consistently: arm64, arm, all, etc.
         arch_priority = {"arm64": 0, "arm": 1, "all": 2, "universal": 3, "x86_64": 4, "x86": 5}
@@ -150,69 +155,15 @@ def main():
         if app_entry["apks"] or app_entry["modules"]:
             patch_groups[group_key]["apps"][display_name] = app_entry
 
-    # Build output markdown
-    lines = []
-
-    # Sort groups alphabetically
-    sorted_group_keys = sorted(patch_groups.keys())
-
-    for gkey in sorted_group_keys:
-        group = patch_groups[gkey]
-        apps = group["apps"]
-        if not apps:
-            continue
-
-        # Header format: ### 🧩 source ([tag](url))
-        src = group["source"]
-        tag = group["tag"]
-        cl_url = group["changelog_url"]
-
-        if tag and cl_url:
-            tag_str = f" ([{tag}]({cl_url}))"
-        elif tag:
-            tag_str = f" ({tag})"
-        elif cl_url:
-            tag_str = f" ([changelog]({cl_url}))"
-        else:
-            tag_str = ""
-
-        lines.append(f"### 🧩 {src}{tag_str}")
-        lines.append("")
-
-        # List apps in this patch group. A single build can publish one arch at a
-        # newer version and another at a fallback, so emit one bullet per distinct
-        # version, each listing only the arches actually built at that version
-        # (newest first) rather than cramming mixed versions into one line.
-        for app_name in sorted(apps.keys()):
-            app = apps[app_name]
-            by_ver = {}
-            for arch, url, fv in app["apks"]:
-                by_ver.setdefault(fv or app["version"], {"apks": [], "modules": []})["apks"].append((arch, url))
-            for arch, url, fv in app["modules"]:
-                by_ver.setdefault(fv or app["version"], {"apks": [], "modules": []})["modules"].append((arch, url))
-
-            for ver in sorted(by_ver.keys(), key=_version_sort_key, reverse=True):
-                grp = by_ver[ver]
-                ver_str = f" `v{ver}`" if ver else ""
-                lines.append(f"* **{app['display_name']}**{ver_str}")
-
-                if grp["apks"]:
-                    apk_links = " • ".join(f"[{arch}]({url})" for arch, url in grp["apks"])
-                    lines.append(f"  * APK: {apk_links}")
-
-                if grp["modules"]:
-                    mod_links = " • ".join(f"[{arch}]({url})" for arch, url in grp["modules"])
-                    lines.append(f"  * Module: {mod_links}")
-
-                lines.append("")
-
-    # Notes section
-    lines.append("---")
-    lines.append("")
-    lines.append("### ℹ️ Notes")
-    lines.append("• Install [MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) or [MicroG](https://github.com/ReVanced/GmsCore/releases/latest), required for Google APKs.  ")
-    lines.append("• Use [Zygisk Detach](https://github.com/j-hc/zygisk-detach) to stop Play Store from updating Modules.  ")
-    lines.append("")
+    # Notes + footer block — identical for every rendering, so it is computed once
+    # and appended to each variant. Nothing here carries a per-file asset link.
+    tail = []
+    tail.append("---")
+    tail.append("")
+    tail.append("### ℹ️ Notes")
+    tail.append("• Install [MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) or [MicroG](https://github.com/ReVanced/GmsCore/releases/latest), required for Google APKs.  ")
+    tail.append("• Use [Zygisk Detach](https://github.com/j-hc/zygisk-detach) to stop Play Store from updating Modules.  ")
+    tail.append("")
     gh_repo = os.environ.get("GITHUB_REPOSITORY") or "nullcpy/rvb"
     # No built-in link values: a written-in fallback named one specific page or
     # chat, so after a rename or a site move every release body kept advertising a
@@ -231,13 +182,80 @@ def main():
             footer.append(label)
         else:
             print(f"Warning: {var} is not set; omitting that link from the release notes.")
-    lines.append(" | ".join(footer))
-    lines.append("")
-    content = "\n".join(lines)
-    with open("build.md", "w", encoding="utf-8") as f:
-        f.write(content)
+    tail.append(" | ".join(footer))
+    tail.append("")
 
+    def asset_url(link_repo, fname):
+        if link_repo and next_ver_code:
+            return f"{github_server}/{link_repo}/releases/download/{next_ver_code}/{fname}"
+        return f"./build/{fname}"
+
+    def render(link_repo):
+        lines = []
+        # Sort groups alphabetically
+        sorted_group_keys = sorted(patch_groups.keys())
+
+        for gkey in sorted_group_keys:
+            group = patch_groups[gkey]
+            apps = group["apps"]
+            if not apps:
+                continue
+
+            # Header format: ### 🧩 source ([tag](url))
+            src = group["source"]
+            tag = group["tag"]
+            cl_url = group["changelog_url"]
+
+            if tag and cl_url:
+                tag_str = f" ([{tag}]({cl_url}))"
+            elif tag:
+                tag_str = f" ({tag})"
+            elif cl_url:
+                tag_str = f" ([changelog]({cl_url}))"
+            else:
+                tag_str = ""
+
+            lines.append(f"### 🧩 {src}{tag_str}")
+            lines.append("")
+
+            # List apps in this patch group. A single build can publish one arch at a
+            # newer version and another at a fallback, so emit one bullet per distinct
+            # version, each listing only the arches actually built at that version
+            # (newest first) rather than cramming mixed versions into one line.
+            for app_name in sorted(apps.keys()):
+                app = apps[app_name]
+                by_ver = {}
+                for arch, fname, fv in app["apks"]:
+                    by_ver.setdefault(fv or app["version"], {"apks": [], "modules": []})["apks"].append((arch, asset_url(link_repo, fname)))
+                for arch, fname, fv in app["modules"]:
+                    by_ver.setdefault(fv or app["version"], {"apks": [], "modules": []})["modules"].append((arch, asset_url(link_repo, fname)))
+
+                for ver in sorted(by_ver.keys(), key=_version_sort_key, reverse=True):
+                    grp = by_ver[ver]
+                    ver_str = f" `v{ver}`" if ver else ""
+                    lines.append(f"* **{app['display_name']}**{ver_str}")
+
+                    if grp["apks"]:
+                        apk_links = " • ".join(f"[{arch}]({url})" for arch, url in grp["apks"])
+                        lines.append(f"  * APK: {apk_links}")
+
+                    if grp["modules"]:
+                        mod_links = " • ".join(f"[{arch}]({url})" for arch, url in grp["modules"])
+                        lines.append(f"  * Module: {mod_links}")
+
+                    lines.append("")
+
+        lines.extend(tail)
+        return "\n".join(lines)
+
+    with open("build.md", "w", encoding="utf-8") as f:
+        f.write(render(github_repo))
     print("Successfully generated build.md")
+
+    if archive_repo:
+        with open("build.archive.md", "w", encoding="utf-8") as f:
+            f.write(render(archive_repo))
+        print(f"Successfully generated build.archive.md (asset links -> {archive_repo})")
 
 if __name__ == "__main__":
     main()
