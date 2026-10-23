@@ -102,3 +102,71 @@ chmod +x "$t2/bin/gh"
 	hasnt gh.log "build.md"
 )
 echo "PASS: build_upload_release cross-repo mirror"
+
+# ---------------------------------------------------------------------------
+# (c) push_archive_manifest.sh — publish to the mirror repo's website branch
+# ---------------------------------------------------------------------------
+t3=$(mktemp -d)
+trap 'rm -rf "$t" "$t2" "$t3"' EXIT
+mkdir -p "$t3/temp/manifest" "$t3/bin"
+printf '{"schema":1,"files":{}}\n' > "$t3/temp/manifest/build.json"
+cat > "$t3/bin/gh" <<'STUB'
+#!/usr/bin/env bash
+echo "ARGS: $*" >> "$GH_LOG"
+m=GET nx=0 path=""
+args=("$@")
+for ((i=0;i<${#args[@]};i++)); do
+  a=${args[i]}
+  if [ "$nx" = 1 ]; then m="$a"; nx=0; continue; fi
+  if [ "$a" = "-X" ]; then nx=1; continue; fi
+  case "$a" in repos/*) path="$a";; esac
+done
+base=${path%%\?*}
+mode=${GH_STUB_MODE:-absent}
+case "$base" in
+  repos/nullcpy/archive) echo '{"default_branch":"main"}';;
+  repos/nullcpy/archive/branches/website) { [ "$mode" = present ] && echo '{}'; } || exit 1;;
+  repos/nullcpy/archive/git/ref/heads/main) echo '{"object":{"sha":"DEAD"}}';;
+  repos/nullcpy/archive/git/refs) echo '{}';;
+  repos/nullcpy/archive/contents/manifests/260999.json)
+    if [ "$m" = GET ]; then { [ "$mode" = present ] && echo '{"sha":"OLD123"}'; } || exit 1
+    else { [ "$mode" = fail ] && exit 1; }; echo '{"content":{"sha":"NEW456"}}'; fi;;
+  *) echo '{}';;
+esac
+STUB
+chmod +x "$t3/bin/gh"
+
+run_push() { # $1 = stub mode; leaves combined output in $t3/out.<mode>, returns rc
+	local out rc
+	: > "$t3/gh.log"
+	out=$( cd "$t3" && PATH="$t3/bin:$PATH" GH_LOG="$t3/gh.log" GH_TOKEN=fake \
+		ARCHIVE_REPO=nullcpy/archive BUILD_TAG=260999 GH_STUB_MODE="$1" \
+		bash "$ROOT/.github/scripts/push_archive_manifest.sh" 2>&1 )
+	rc=$?
+	printf '%s\n' "$out" > "$t3/out.$1"
+	return $rc
+}
+
+# absent: no website branch and no existing manifest -> seed branch + create (no sha)
+run_push absent || fail "push (absent) must exit 0"
+have "$t3/gh.log" '-X POST repos/nullcpy/archive/git/refs'
+grep -F 'PUT repos/nullcpy/archive/contents/manifests/260999.json' "$t3/gh.log" > "$t3/put" || fail "no manifest PUT (absent)"
+have "$t3/put" 'message=chore: publish'
+have "$t3/put" '-f content='
+hasnt "$t3/put" '-f sha='
+
+# present: branch and file exist -> do not re-create, update in place with the prior sha
+run_push present || fail "push (present) must exit 0"
+hasnt "$t3/gh.log" '-X POST repos/nullcpy/archive/git/refs'
+grep -F 'PUT repos/nullcpy/archive/contents/manifests/260999.json' "$t3/gh.log" > "$t3/put" || fail "no manifest PUT (present)"
+have "$t3/put" '-f sha=OLD123'
+have "$t3/put" 'message=chore: update'
+
+# fail: the PUT is rejected -> the publisher must stay non-fatal (fail-soft)
+rcf=0
+run_push fail || rcf=$?
+[ "$rcf" = 0 ] || fail "push_archive_manifest did not fail soft (rc=$rcf)"
+have "$t3/out.fail" '::warning::'
+
+echo "PASS: push_archive_manifest website publish"
+
