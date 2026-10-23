@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-23T14:09:37Z"
+    "publishedAt": "2026-10-23T17:32:10Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -255,11 +255,13 @@
       "packageName": "dev.jason.com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-3.13.0.mpp",
-        "ausamnco/patches-1.4.2.mpp"
+        "ausamnco/patches-1.4.2.mpp",
+        "JacksonJones2003/patches-1.13.0.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0",
-        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2"
+        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
+        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.13.0"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -275,6 +277,7 @@
         "Custom Symbols",
         "Custom Theme",
         "Developer options",
+        "Emoji Key On Right",
         "Emojis, stickers & GIFs Tab Order",
         "Enable Inline Autofill Suggestions",
         "Enable OCR / Scan Text",
@@ -286,9 +289,12 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
+        "Glass Panel",
+        "Glass Press Effect",
         "Glide Trail Customization",
         "Grammar Checker",
         "Hyperspeed Typing Animation",
+        "Immersive Keyboard",
         "Incognito Mode Toggle",
         "Inline Suggestions",
         "Key Shape Selection",
@@ -300,13 +306,15 @@
         "Simple Calculator",
         "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
+        "Theme Follows Dark Mode",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
+        "Translucent Bottom Bar",
         "Use Bluetooth Microphone",
         "Package Rename"
       ],
-      "originBuild": "260038",
-      "publishedAt": "2026-10-23T14:09:11Z"
+      "originBuild": "260039",
+      "publishedAt": "2026-10-23T17:31:57Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
