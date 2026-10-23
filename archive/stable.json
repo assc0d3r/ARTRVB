@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-23T09:46:04Z"
+    "publishedAt": "2026-10-23T14:09:37Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -305,8 +305,8 @@
         "Use Bluetooth Microphone",
         "Package Rename"
       ],
-      "originBuild": "260013",
-      "publishedAt": "2026-10-17T00:36:41Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -528,8 +528,8 @@
         "Hide screenshot detection",
         "Monochrome icon support"
       ],
-      "originBuild": "260016",
-      "publishedAt": "2026-10-18T09:15:37Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
       "name": "reddit-morphe",
@@ -593,8 +593,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260006",
-      "publishedAt": "2026-10-15T13:46:27Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -609,10 +609,10 @@
       "subVariant": null,
       "packageName": "com.sonyliv",
       "patchSources": [
-        "durgesh0505/patches-1.23.1.mpp"
+        "durgesh0505/patches-1.25.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.23.1"
+        "https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.25.0"
       ],
       "appliedPatches": [
         "Auto skip intro and recap",
@@ -624,8 +624,8 @@
         "Remove video ads",
         "Suppress geo / VPN block"
       ],
-      "originBuild": "260006",
-      "publishedAt": "2026-10-15T13:46:27Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
       "name": "twitter-piko",
@@ -719,8 +719,8 @@
         "Show sensitive media",
         "Support external downloader"
       ],
-      "originBuild": "260028",
-      "publishedAt": "2026-10-21T05:20:47Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -972,8 +972,8 @@
         "Spoof install source",
         "Unlock Premium"
       ],
-      "originBuild": "260010",
-      "publishedAt": "2026-10-16T13:12:46Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "truecaller-heval99-v26.40.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -1235,8 +1235,8 @@
         "Disable consent popup",
         "Enable SoundCloud Go+"
       ],
-      "originBuild": "260014",
-      "publishedAt": "2026-10-17T12:21:03Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "vn-video-editor-riky-v2.22.1-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -1323,8 +1323,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260027",
-      "publishedAt": "2026-10-20T23:13:13Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "instagram-hushgram-v452.0.0.48.64-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -1565,10 +1565,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.58.0.mpp"
+        "hxreborn/patches-1.59.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.58.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.59.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1585,8 +1585,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260033",
-      "publishedAt": "2026-10-22T13:51:13Z"
+      "originBuild": "260038",
+      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "messenger-hushmessenger-v584.0.0.49.98-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
