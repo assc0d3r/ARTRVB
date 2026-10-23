@@ -73,6 +73,10 @@
       "shared": "a98c6240d3113d9e97b61e5ed6cda379"
     }
   },
+  "jacksonjones2003/immersive-keyboard-patches": {
+    "beta": {},
+    "stable": {}
+  },
   "jasonwu1994/gboard-patches": {
     "beta": {
       "com.google.android.inputmethod.latin": "aa31afbadc7fdbac2ba302a8dccb9cbf",
@@ -86,8 +90,8 @@
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
-      "pdb.app": "002c68cabef6a9e7590f81d4a2e316bf",
-      "shared": "7026e4a3848fff1b10a30356884a0367"
+      "pdb.app": "e01bda77bd9267c70718e6d34a871872",
+      "shared": "f8418ae25219a77655e700d6acd70d9c"
     }
   },
   "mich111discord/mightymichs-patches": {
