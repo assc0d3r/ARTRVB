@@ -89,7 +89,11 @@ Releases, records build metadata on a Git branch, and feeds a static download si
 
 Releases: numbered (`260141`) = immutable per-build; `stable`/`beta` = rolling
 archives whose metadata CI never touches. External: `nullcpy/apks` = shared
-download cache (release per package name). Full detail:
+download cache (release per package name); `nullcpy/archive` = permanent numbered
+mirror of every build (release per build number) plus its per-build manifests on a
+`website` branch, opt-in via `vars.ARCHIVE_REPO`
+([decisions/0015](decisions/0015-builds-are-mirrored-to-a-permanent-archive-repo.md)).
+Full detail:
 [storage-and-branches.md](storage-and-branches.md) and
 [cache-repo.md](cache-repo.md).
 
@@ -115,6 +119,7 @@ source and the arch goes unbuilt if none supplies it
 | The archive upload step passes no title/notes/prerelease | CI does not own release prose → [decisions/0001](decisions/0001-release-metadata-ownership.md) |
 | `--clobber` is unconditional on asset upload | retried runs must be idempotent; absence is not expressible for a file list |
 | `continue-on-error: true` on the archive upload, `|| true` on Telegram/usage tracker | one failed upload must not lose the other 60 apps' release |
+| The archive mirror is opt-in and its steps are `continue-on-error` | an unset `ARCHIVE_REPO` changes nothing; a mirror or manifest-push miss must not lose the rvb release or redden a live run → [decisions/0015](decisions/0015-builds-are-mirrored-to-a-permanent-archive-repo.md) |
 | `merge_archive_branch.sh` has no "start from empty" fallback; fetch failure kills the job | the 2026-09-24 archive collapse |
 | `get_prebuilts` is called outside `$( )` | it writes `__PREBUILTS_CACHE__`; a subshell discards it |
 | `declare -gA JOB_…=()` has explicit empty initialisers | bash 5.3 treats a bare `declare -gA` as unset under `set -u` |

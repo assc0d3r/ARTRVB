@@ -232,6 +232,29 @@ This repo's Actions cache (`temp/apks`) is a fast local copy of the same
 population; both are caches, neither is authoritative. Layout, read/write rules,
 retention policy and debugging: [cache-repo.md](cache-repo.md).
 
+## `nullcpy/archive` (permanent build mirror)
+
+A **separate repository**, not a branch: a durable, numbered mirror of every
+build, so a release note or a Telegram/Discord link keeps resolving long after rvb
+prunes its own numbered releases (newest 98). After the numbered upload the same
+`./build/*` set is pushed here under the identical build-number tag, its body is
+the archive-linked `build.archive.md`, and this build's `manifests/<tag>.json` is
+committed to this repo's `website` branch so a download site can be generated from
+the mirror later. Written by `build.yml`'s `Upload to archive repo` and `Publish
+archive manifest` steps with `ARCHIVE_REPO_TOKEN`; read by whoever stands up the
+site.
+
+**Numbered-only.** There are no rolling `stable`/`beta` releases here, no cleanup
+workflow in phase 1 (the repo just accumulates; the intended bound is a later
+coarse time/count cap, deleted whole-build, which never moves a link), and the
+per-build manifest has no cumulative `archive/<channel>.json` and no live-existence
+filter — the future frontend folds the per-build manifests instead. The whole mirror
+is opt-in: unset `vars.ARCHIVE_REPO` leaves every run byte-identical to before. The
+two notes (`build.md` on rvb, `build.archive.md` on the mirror) differ only in the
+per-file download base. Why a separate repo rather than a link at the rolling
+release, and the rejected per-app layout:
+[decisions/0015](decisions/0015-builds-are-mirrored-to-a-permanent-archive-repo.md).
+
 ## `temp/` (gitignored, but load-bearing locally)
 
 Scratch space for downloads, prebuilts, per-job logs and manifests — plus the

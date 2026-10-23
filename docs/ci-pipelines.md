@@ -228,6 +228,21 @@ Step order, with the reason each is where it is:
 10. `build_make_manifest.py` → `temp/manifest/build.json`.
 11. **Upload to release** (numbered): title `Build No. <code>`, body from
     `build.md`, `--prerelease` for beta.
+11b. **Upload to archive repo (per-build mirror)** (`build_upload_release.sh`
+    unchanged, `if: HAS_NEW_FILES && vars.ARCHIVE_REPO != ''`, `continue-on-error`,
+    `id: archive_mirror`): mirrors the whole `./build/*` into `nullcpy/archive` under
+    the same build-number tag while it is still complete (before the exclude trim in
+    step 13), with the repository overridden via env and the archive-linked
+    `build.archive.md` as the body, so files and their links agree. Opt-in: an unset
+    `ARCHIVE_REPO` skips the step and changes nothing else
+    ([decisions/0015](decisions/0015-builds-are-mirrored-to-a-permanent-archive-repo.md)).
+11c. **Publish archive manifest** (`push_archive_manifest.sh`, gated on
+    `steps.archive_mirror.outcome == 'success'`, `continue-on-error`): commits this
+    build's `manifests/<tag>.json` to `nullcpy/archive`'s `website` branch (the branch
+    is created from the default head when absent, and the blob updated in place by sha
+    on a rerun). Numbered-only — no cumulative `archive/<channel>.json` and no
+    live-existence filter; a metadata-push miss fails soft, never reddening a run whose
+    files shipped.
 12. **Update changelog and module update files**: `build_update_changelog.sh`
     checks out `update`, writes `changelogs/<code>.md` plus one JSON pointer per
     module zip, and lists the exact paths it created in `.updated_pointers`. The
@@ -269,6 +284,10 @@ Step order, with the reason each is where it is:
     from variables only (no built-in handle), so an unset one fails this step — but
     the step runs last, after publishing, and a notification-config error must not
     turn a run whose files are already live into a failed build.
+    It reads `NOTES_FILE`, which the workflow names `build.archive.md` only when the
+    archive mirror (11b) landed and `build.md` otherwise, so a successful mirror makes
+    Telegram and Discord link the permanent copy while a failed one — or a fork with no
+    archive repo — keeps linking rvb and never advertises a file that is not there.
 
 ## Cleanup (`cleanup.yml`)
 
@@ -447,10 +466,12 @@ the runner's git config.
 | secret | `GITHUB_TOKEN` (auto) | all | `contents: write` on the jobs that push branches |
 | secret | `KEYSTORE_B64`, `KEYSTORE_P12_B64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS` | build | signing identity; **all four required** — `install_keystore.sh` fails the run when any is missing and no keystore ships in the repo ([decisions/0008](decisions/0008-signing-identity-is-secret-only.md)) |
 | secret | `APKS_REPO_TOKEN` | build, cleanup | cross-repo write to `nullcpy/apks`, doubles as dispatch token |
+| secret | `ARCHIVE_REPO_TOKEN` | build | cross-repo write to `nullcpy/archive` (per-build mirror + manifest push); with `ARCHIVE_REPO` unset the whole feature is off |
 | secret | `CODEBERG_TOKEN` | watcher | raises Codeberg/Forgejo rate limits |
 | secret | `TG_TOKEN`, `WEBSITE_DISPATCH_TOKEN` (optional) | notify steps | |
 | secret | `DISCORD_WEBHOOK_PATCH_ALERT`, `DISCORD_WEBHOOK_GITHUB_LOG`, `DISCORD_WEBHOOK_BUILDER_LOG` (optional) | notify steps | per-channel Discord mirrors; unset means that sink is not mirrored ([§Discord mirror](#discord-mirror-notify_discordsh)) |
 | var | `APKS_REPO`, `WEBSITE_REPO` | build, cleanup | alternate cache/site repos for forks |
+| var | `ARCHIVE_REPO` | build | the permanent mirror repo (`nullcpy/archive`); **unset disables the whole archive feature** — no mirror, no manifest push, notes stay rvb-linked ([decisions/0015](decisions/0015-builds-are-mirrored-to-a-permanent-archive-repo.md)) |
 | var | `TG_CHAT_ID`, `TG_CHAT_ID_BROADCAST`, `TG_THREAD_CI`, `TG_THREAD_STABLE`, `TG_THREAD_BETA`, `TG_THREAD_NOTIFY`, `TG_THREAD_ANNOUNCE` | notifications | the chat handle and every topic ID come from here only, and an unset one fails its notify step (see the target guard above) instead of falling back to a written-in chat; `TG_THREAD_NOTIFY` is the log topic and receives two separate kinds of message — the per-app build/download failure report, and the watcher's build-queue notice listing what the run resolved to build; `TG_THREAD_ANNOUNCE` is the announcement topic — config additions and config-change rebuild notices together (that step is `continue-on-error`, so an unset one only skips the notice). It replaced `TG_THREAD_NEWAPPS`, which pointed at the same topic under the narrower name |
 | var | `RELEASE_NOTES_DISCORD_LINK`, `RELEASE_NOTES_DONATE_LINK`, `RELEASE_NOTES_WEBSITE_LINK` | build, watcher | the footer links of the generated release body; `RELEASE_NOTES_WEBSITE_LINK` doubles as the announcement's download link (`WEBSITE_LINK`). No URL is written into the workflows or the scripts, so an unset var drops its entry — the announcement loses the whole download line — instead of inventing a target |
 | var | `RVB_MORPHE_PASSTHROUGH` | build | bundle handling escape hatch |

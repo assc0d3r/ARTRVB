@@ -70,6 +70,31 @@ Regression tests: `temp/test_merge_archive_branch.sh` (stubbed `gh`, local
 bare `origin`; run from Git Bash — `temp/` is gitignored, keep a copy
 alongside the other local tests).
 
+### `push_archive_manifest.sh`
+Cross-repo companion to `merge_archive_branch.sh`: publishes THIS build's
+`temp/manifest/build.json` to the **permanent mirror repo** (`nullcpy/archive`) at
+`manifests/<tag>.json` on its `website` branch, via the Contents API with
+`ARCHIVE_REPO_TOKEN` (`gh api`). Numbered-only — the mirror has no rolling
+stable/beta, so there is no cumulative `archive/<channel>.json` and no live-existence
+filter here; a future frontend folds the per-build manifests instead. It creates the
+`website` branch from the repo default when absent and updates the blob in place by
+sha on a rerun, so a retried build is idempotent. Gated on the archive mirror upload
+landing and **fail-soft**: a rejected push warns and exits 0, never reddening a run
+whose files shipped. rvb's own `website` branch is untouched. Env: `ARCHIVE_REPO`,
+`BUILD_TAG`, `GH_TOKEN`. Regression test: `.github/traces/test_archive_mirror.sh`
+block (c) (stubbed `gh api`; absent / present / fail modes).
+Why the mirror exists: [decisions/0015](../../docs/decisions/0015-builds-are-mirrored-to-a-permanent-archive-repo.md).
+
+### `generate_release_notes.py` — the second note
+Renders `build.md` exactly as before, and when `ARCHIVE_REPO` is set also renders
+`build.archive.md` — identical byte-for-byte **except** the per-file asset download
+base, which points at the mirror repo so the archive release body and the Telegram /
+Discord notices link the permanent copy. The footer's GitHub/Discord/Donate/Website
+links stay on the canonical home. Unset writes no second file (the feature is opt-in).
+`build_upload_release.sh` is reused unchanged for the mirror upload — the same script
+with `GITHUB_REPOSITORY` overridden to `ARCHIVE_REPO` and `RELEASE_BODY_FILE:
+build.archive.md`.
+
 ## Duplicate-build suppression (state branch, not the manifest)
 
 The engine's `check_duplicate_build` (`scripts/utils.sh`) decides whether a
