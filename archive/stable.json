@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-23T17:32:10Z"
+    "publishedAt": "2026-10-23T17:46:31Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -255,13 +255,11 @@
       "packageName": "dev.jason.com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-3.13.0.mpp",
-        "ausamnco/patches-1.4.2.mpp",
-        "JacksonJones2003/patches-1.13.0.mpp"
+        "ausamnco/patches-1.4.2.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0",
-        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.13.0"
+        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -277,7 +275,6 @@
         "Custom Symbols",
         "Custom Theme",
         "Developer options",
-        "Emoji Key On Right",
         "Emojis, stickers & GIFs Tab Order",
         "Enable Inline Autofill Suggestions",
         "Enable OCR / Scan Text",
@@ -289,12 +286,9 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
-        "Glass Panel",
-        "Glass Press Effect",
         "Glide Trail Customization",
         "Grammar Checker",
         "Hyperspeed Typing Animation",
-        "Immersive Keyboard",
         "Incognito Mode Toggle",
         "Inline Suggestions",
         "Key Shape Selection",
@@ -306,15 +300,13 @@
         "Simple Calculator",
         "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
-        "Theme Follows Dark Mode",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
-        "Translucent Bottom Bar",
         "Use Bluetooth Microphone",
         "Package Rename"
       ],
-      "originBuild": "260039",
-      "publishedAt": "2026-10-23T17:31:57Z"
+      "originBuild": "260040",
+      "publishedAt": "2026-10-23T17:46:18Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -329,10 +321,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.5.5.mpp"
+        "bearinmindcat/patches-2.5.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.5"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.6"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -363,8 +355,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260026",
-      "publishedAt": "2026-10-20T09:52:24Z"
+      "originBuild": "260040",
+      "publishedAt": "2026-10-23T17:46:18Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -1935,6 +1927,96 @@
       ],
       "originBuild": "260036",
       "publishedAt": "2026-10-23T04:48:33Z"
+    },
+    "telegram-hushtelegram-v13.1.0-arm64-v8a.apk": {
+      "name": "telegram-hushtelegram",
+      "version": "13.1.0",
+      "appKey": "telegram",
+      "appName": "Telegram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushtelegram",
+      "brandName": "HushTelegram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "org.telegram.messenger",
+      "patchSources": [
+        "SysAdminDoc/patches-0.0.20.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.20"
+      ],
+      "appliedPatches": [
+        "AMOLED black",
+        "Add Repeat to the message menu",
+        "Allow chat blur on slower phones",
+        "Ask before sending a sticker",
+        "Black and white launch logo",
+        "Change sticker size",
+        "Disable analytics",
+        "Disable call debug upload",
+        "Disable chat swipe actions",
+        "Disable double-tap reactions",
+        "Disable draft link previews",
+        "Disable pull to archive",
+        "Disable pull to next channel",
+        "Disable update checks",
+        "Exact numbers",
+        "Faster downloads",
+        "Folders by chat type",
+        "Gallery camera on tap",
+        "Hide Contacts tab",
+        "Hide Premium, gifts and Stars",
+        "Hide Send as button",
+        "Hide Stories",
+        "Hide Telegram Features and Invite Friends",
+        "Hide ads",
+        "Hide blocked users in groups",
+        "Hide channel bar buttons",
+        "Hide contacts on Telegram",
+        "Hide folder tab counters",
+        "Hide gallery camera tile",
+        "Hide greeting stickers",
+        "Hide keyboard on scroll",
+        "Hide messages by keyword",
+        "Hide phone number",
+        "Hide popular apps",
+        "Hide promotional banners",
+        "Hide recommendations",
+        "Hide sender names when forwarding",
+        "Hide sponsored proxy channel",
+        "Hide time on stickers",
+        "Hide translate bar",
+        "Holiday look all year",
+        "HushTelegram icon and name",
+        "HushTelegram settings",
+        "Ignore mentions in muted chats",
+        "Keep deleted messages",
+        "Keep videos muted on volume keys",
+        "Message times with seconds",
+        "Open links externally",
+        "Play voice messages one at a time",
+        "Quiet contacts nag",
+        "Repair Firebase push registration",
+        "Reveal spoilers",
+        "Save downloaded files",
+        "Show user and chat IDs",
+        "Silence people outside your contacts",
+        "Start the camera on the rear lens",
+        "Strip link tracking",
+        "Swipe back on profiles",
+        "Translate with an outside service",
+        "Turn off haptic feedback",
+        "Turn off reaction effects",
+        "UnifiedPush notifications",
+        "Use normal paste",
+        "Use registered Maps API key",
+        "Use registered Telegram API credentials",
+        "Use system font",
+        "Voice messages in the music player"
+      ],
+      "originBuild": "260040",
+      "publishedAt": "2026-10-23T17:46:18Z"
     }
   }
 }
