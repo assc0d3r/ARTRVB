@@ -170,3 +170,48 @@ have "$t3/out.fail" '::warning::'
 
 echo "PASS: push_archive_manifest website publish"
 
+# ---------------------------------------------------------------------------
+# (b) build_notify_telegram.sh — NOTES_FILE override and fallback
+# ---------------------------------------------------------------------------
+t4=$(mktemp -d)
+trap 'rm -rf "$t" "$t2" "$t3" "$t4"' EXIT
+mkdir -p "$t4/bin"
+cat > "$t4/bin/curl" <<'STUB'
+#!/usr/bin/env bash
+printf '%s\n' "$*" >> "$CURL_LOG"
+exit 0
+STUB
+chmod +x "$t4/bin/curl"
+printf '### YouTube\n  * APK: [arm64](https://github.com/nullcpy/rvb/releases/download/260999/x.apk)\n' > "$t4/build.md"
+printf '### YouTube\n  * APK: [arm64](https://github.com/nullcpy/archive/releases/download/260999/x.apk)\n' > "$t4/build.archive.md"
+
+post_note() { # $1 = NOTES_FILE value; empty string leaves it unset
+	local nf="$1"
+	: > "$t4/curl.log"
+	if [ -n "$nf" ]; then
+		( cd "$t4" && PATH="$t4/bin:$PATH" CURL_LOG="$t4/curl.log" \
+			TG_TOKEN=fake TG_CHAT_ID=-1001 TG_THREAD_ID=7 TG_CHAT_ID_BROADCAST=@bc \
+			NEXT_VER_CODE=260999 TITLE_SUFFIX= NOTES_FILE="$nf" \
+			bash "$ROOT/.github/scripts/build_notify_telegram.sh" >/dev/null 2>&1 )
+	else
+		( cd "$t4" && PATH="$t4/bin:$PATH" CURL_LOG="$t4/curl.log" \
+			TG_TOKEN=fake TG_CHAT_ID=-1001 TG_THREAD_ID=7 TG_CHAT_ID_BROADCAST=@bc \
+			NEXT_VER_CODE=260999 TITLE_SUFFIX= \
+			bash "$ROOT/.github/scripts/build_notify_telegram.sh" >/dev/null 2>&1 )
+	fi
+}
+
+# override to the archive note -> the mirror link is posted
+post_note build.archive.md
+have "$t4/curl.log" 'nullcpy/archive'
+# unset -> fall back to build.md (rvb links) ...
+post_note ''
+have "$t4/curl.log" 'nullcpy/rvb'
+hasnt "$t4/curl.log" 'nullcpy/archive'
+# ... and a named-but-missing NOTES_FILE also falls back, never links a phantom
+post_note 'build.does-not-exist.md'
+have "$t4/curl.log" 'nullcpy/rvb'
+hasnt "$t4/curl.log" 'nullcpy/archive'
+echo "PASS: build_notify_telegram NOTES_FILE override"
+
+

@@ -14,12 +14,21 @@ if [ -z "${TG_TOKEN:-}" ]; then
   exit 0
 fi
 
-BUILD_FILE="build.md"
+# Which note to post: NOTES_FILE lets the workflow point the release notification at
+# the archive-linked note (build.archive.md) once the mirror has landed, so Telegram
+# and Discord advertise the permanent copy. It is only named when that file exists —
+# an unset or missing NOTES_FILE falls back to build.md, then build.tmp, so a run
+# whose mirror did not land (or a fork with no archive repo) posts the rvb note and
+# never links a file that is not there.
+BUILD_FILE="${NOTES_FILE:-build.md}"
+if [ ! -f "$BUILD_FILE" ]; then
+  BUILD_FILE="build.md"
+fi
 if [ ! -f "$BUILD_FILE" ]; then
   BUILD_FILE="build.tmp"
 fi
 if [ ! -f "$BUILD_FILE" ]; then
-  echo "Release notes file (build.md or build.tmp) not found"
+  echo "Release notes file (NOTES_FILE, build.md or build.tmp) not found"
   exit 1
 fi
 
