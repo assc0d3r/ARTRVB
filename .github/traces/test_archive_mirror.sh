@@ -68,3 +68,37 @@ notes_fixture "$t"
 	cmp -s md.norm arch.norm || fail "notes differ beyond the download base"
 )
 echo "PASS: generate_release_notes two-note split"
+
+# ---------------------------------------------------------------------------
+# (d) build_upload_release.sh — the same uploader pointed at the mirror repo
+# ---------------------------------------------------------------------------
+t2=$(mktemp -d)
+trap 'rm -rf "$t" "$t2"' EXIT
+mkdir -p "$t2/bin" "$t2/build"
+: > "$t2/build/one.apk"
+: > "$t2/build/two.zip"
+printf 'archive body\n' > "$t2/build.archive.md"
+cat > "$t2/bin/gh" <<'STUB'
+#!/usr/bin/env bash
+printf '%s\n' "$*" >> "$GH_LOG"
+if [ "${1:-}" = "release" ] && [ "${2:-}" = "view" ]; then exit 1; fi
+exit 0
+STUB
+chmod +x "$t2/bin/gh"
+(
+	cd "$t2" || exit 1
+	export PATH="$t2/bin:$PATH" GH_LOG="$t2/gh.log"
+	export GH_TOKEN=fake GITHUB_REPOSITORY=nullcpy/archive
+	export RELEASE_TAG=260999 RELEASE_TITLE="Build No. 260999"
+	export RELEASE_BODY_FILE=build.archive.md IS_PRERELEASE=true UPLOAD_FILES="./build/*"
+	bash "$ROOT/.github/scripts/build_upload_release.sh" >/dev/null
+	# Cross-repo target honoured, and the metadata the numbered step names.
+	have gh.log "-R nullcpy/archive"
+	grep -qE 'release create 260999 -t Build No\. 260999 -F build\.archive\.md --prerelease -R nullcpy/archive' gh.log \
+		|| fail "create call missing title/body/prerelease: $(cat gh.log)"
+	grep -qE 'release upload 260999 .*/one\.apk --clobber -R nullcpy/archive' gh.log \
+		|| fail "assets not uploaded to the mirror repo: $(cat gh.log)"
+	# Negative control: it uploaded the archive body, never the rvb build.md.
+	hasnt gh.log "build.md"
+)
+echo "PASS: build_upload_release cross-repo mirror"

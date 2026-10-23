@@ -162,6 +162,7 @@ jobs:
           RELEASE_NOTES_DISCORD_LINK: ${{ vars.RELEASE_NOTES_DISCORD_LINK }}
           RELEASE_NOTES_DONATE_LINK: ${{ vars.RELEASE_NOTES_DONATE_LINK }}
           RELEASE_NOTES_WEBSITE_LINK: ${{ vars.RELEASE_NOTES_WEBSITE_LINK }}
+          ARCHIVE_REPO: ${{ vars.ARCHIVE_REPO }}
         run: |
           set -euo pipefail
           bash scripts/build.sh "${{ steps.context.outputs.CONFIG_FILE }}"
@@ -256,6 +257,25 @@ jobs:
           IS_PRERELEASE: ${{ steps.context.outputs.IS_PRERELEASE }}
           UPLOAD_FILES: "./build/*"
           GITHUB_REPOSITORY: ${{ github.repository }}
+        run: bash .github/scripts/build_upload_release.sh
+
+      - name: Upload to archive repo (per-build mirror)
+        id: archive_mirror
+        if: steps.no_change.outputs.HAS_NEW_FILES == 'true' && vars.ARCHIVE_REPO != ''
+        continue-on-error: true
+        # Mirror the exact numbered set into the permanent archive repo while
+        # ./build/* is still whole (before the exclude step trims it below). The
+        # body is the archive-linked note, so files and their links agree. Gated
+        # on the opt-in var and continue-on-error: a mirror miss must never lose
+        # the rvb release (repo rule 9).
+        env:
+          GH_TOKEN: ${{ secrets.ARCHIVE_REPO_TOKEN }}
+          GITHUB_REPOSITORY: ${{ vars.ARCHIVE_REPO }}
+          RELEASE_TAG: ${{ steps.version.outputs.NEXT_VER_CODE }}
+          RELEASE_TITLE: "Build No. ${{ steps.version.outputs.NEXT_VER_CODE }}"
+          RELEASE_BODY_FILE: build.archive.md
+          IS_PRERELEASE: ${{ steps.context.outputs.IS_PRERELEASE }}
+          UPLOAD_FILES: "./build/*"
         run: bash .github/scripts/build_upload_release.sh
 
       - name: Update changelog and module update files
