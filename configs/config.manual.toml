@@ -1,14 +1,12 @@
-# Telegram Web: SysAdminDoc/HushTelegram
-[Telegram-HushTelegram]
+[Pdbee-madushas]
 enabled = true
-pkg-name = "org.telegram.messenger.web"
-app-name = "Telegram"
-patches-source = "SysAdminDoc/HushTelegram"
-brand = "HushTelegram"
+pkg-name = "pdb.app"
+app-name = "Pdbee"
+patches-source = "madushas/pdb_patch"
+brand = "madushas"
 arch = "arm64-v8a"
 inclusive-patches = true
 build-mode = "apk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fa-org/telegram/telegram-web-version/"
-uptodown-dlurl = "https://telegram.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/telegram/org.telegram.messenger"
-apkcombo-dlurl = "https://apkcombo.com/telegram/org.telegram.messenger"
+uptodown-dlurl = "https://pdbee-mbti-friends-chat.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.net/pdb-meet-like-minded-friends/pdb.app"
+apkcombo-dlurl = "https://apkcombo.com/pdb-meet-like-minded-friends/pdb.app/"
