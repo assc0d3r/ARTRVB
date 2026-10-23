@@ -3,8 +3,8 @@
     "pinterest-browzomje-v14.39.0-arm64-v8a": "c0ccd4e6f8d67752465370f114e9771b",
     "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855",
     "discord-venus-v348.10-Stable-arm64-v8a": "0c779c93dee1fc87a8282edf5cae220f",
-    "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": "d32ca5f712a10361d62925a61fcbf6fa",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "ea366184c542509dd38c5db057336a52",
+    "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": "953f655857ea57fe10ead87220350c8f",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "bc55b950dd5f9cbe57e609dbb2c48bcd",
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a": "d2826093798b277403a36398c587d61d",
     "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "effc650276aabbce79e72238e355ed84",
     "messenger-hushmessenger-v583.0.0.29.95-arm64-v8a": "8d8ff5ae59dc7e444343d62b25b7041f",
@@ -38,7 +38,8 @@
     "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a": "b546aeabf624f9c4badb12dd665cd791",
     "instagram-hushgram-v452.1.0.53.64-arm64-v8a": "2705cce07beb59b778c81d75c5acd14c",
     "messenger-hushmessenger-v584.0.0.49.98-arm64-v8a": "af2fdd0c7796c5b585ef6699540c34ec",
-    "facebook-hushfacebook-v584.0.0.51.56-arm64-v8a": "dd0a25f8be60b17cc8d62d6551d5ea96"
+    "facebook-hushfacebook-v584.0.0.51.56-arm64-v8a": "dd0a25f8be60b17cc8d62d6551d5ea96",
+    "telegram-hushtelegram-v13.1.0-arm64-v8a": "8b37bc4ec938890baff58aff1467aa71"
   },
   "beta": {
     "adobe-scan-aidan-v26.09.25-arm64-v8a": "ca7739f2277314b077db0a786b49a2c6",
