@@ -13,7 +13,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "d1a946951921b8e51d00a34c663ad951",
+      "com.google.android.apps.maps": "f9618d17c16b011a631a840658d45a20",
       "shared": "ccad433d728a8fca2434563b046d8fc7"
     }
   },
@@ -176,8 +176,8 @@
   "sysadmindoc/hushtelegram": {
     "beta": {},
     "stable": {
-      "org.telegram.messenger.web": "59dd1d58f73e698329d6e4073e8da1e6",
-      "shared": "b7ec28105a4cea05a13a7caa76681979"
+      "org.telegram.messenger": "fe59349aec5a62eebeb7fc87146abec2",
+      "shared": "1cbb0d9c002e86bb6403698a365c7852"
     }
   },
   "v4n1x/morphe-patches": {

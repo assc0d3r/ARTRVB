@@ -3,7 +3,7 @@
     "keys": [
       "AdobeAcrobat-Rushi"
     ],
-    "version": "26.9.2"
+    "version": "26.9.2.50367"
   },
   "AdobeScan-Aidan": {
     "keys": [
@@ -15,7 +15,7 @@
     "keys": [
       "Discord-Venus"
     ],
-    "version": "350.8 - Stable"
+    "version": "349.9 - Stable"
   },
   "Facebook-HushFacebook": {
     "keys": [
@@ -57,7 +57,7 @@
     "keys": [
       "Instagram-HushGram"
     ],
-    "version": "452.1.0.53.64"
+    "version": "454.0.0.0.11"
   },
   "NetGuard-Rushi": {
     "keys": [
@@ -69,7 +69,7 @@
     "keys": [
       "NovaLauncher-MightyMich"
     ],
-    "version": "8.9.4)"
+    "version": "89400 (8.9.4)"
   },
   "Pinterest-browzomje": {
     "keys": [
@@ -81,7 +81,7 @@
     "keys": [
       "RailOne-VipinVIP"
     ],
-    "version": "2.1.67"
+    "version": "2.1.66"
   },
   "Reddit-Morphe": {
     "keys": [
@@ -93,13 +93,13 @@
     "keys": [
       "SDMaidSE-Rushi"
     ],
-    "version": "2.2.2"
+    "version": "2.2.1-rc0"
   },
   "SonyLIV-TV-Chiggi": {
     "keys": [
       "SonyLIV-TV-Chiggi"
     ],
-    "version": "6.29.11"
+    "version": "6.38.20"
   },
   "Spotify-Spicetify": {
     "keys": [
@@ -117,19 +117,19 @@
     "keys": [
       "Truecaller-heval99"
     ],
-    "version": "26.41.5"
+    "version": "15.28.7"
   },
   "Twitter-Piko": {
     "keys": [
       "Twitter-Piko"
     ],
-    "version": "12.36.1"
+    "version": "12.36.1-prod.01"
   },
   "VN-Riky": {
     "keys": [
       "VN-Riky"
     ],
-    "version": "2.22.1"
+    "version": "2.23.1"
   },
   "VesselFinder-Heval": {
     "keys": [
@@ -159,7 +159,7 @@
     "keys": [
       "Google-Gboard-Combined"
     ],
-    "version": "18.5.4.993608717"
+    "version": "18.5.4.993608717-release-arm64-v8a"
   },
   "ProtonVPN-hxreborn": {
     "keys": [
@@ -171,19 +171,19 @@
     "keys": [
       "SoundCloud-V4n1X"
     ],
-    "version": "2026.10.14"
+    "version": "2026.10.14-release"
   },
   "UiMote-rushiranpise": {
     "keys": [
       "UiMote-rushiranpise"
     ],
-    "version": "1.8.1"
+    "version": "1.0"
   },
   "Telegram-HushTelegram": {
     "keys": [
       "Telegram-HushTelegram"
     ],
-    "version": "13.1.0"
+    "version": "13.1.1"
   },
   "Telegram-HushTelegram-Web": {
     "keys": [
@@ -195,6 +195,6 @@
     "keys": [
       "Pdbee-madushas"
     ],
-    "version": "2.134.6"
+    "version": "2.134.1"
   }
 }

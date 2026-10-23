@@ -50,8 +50,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushTelegram",
-    "stable": "v0.0.19",
-    "stable_date": "2026-10-17T22:47:09Z"
+    "stable": "v0.0.20",
+    "stable_date": "2026-10-23T14:38:24Z"
   },
   "V4n1X/morphe-patches": {
     "beta": "",
@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.5.5",
-    "stable_date": "2026-10-14T18:28:44Z"
+    "stable": "v2.5.6",
+    "stable_date": "2026-10-23T13:42:26Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",
@@ -126,8 +126,8 @@
     "stable_date": "2026-10-18T13:48:32Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.19.0-dev.1",
-    "beta_date": "2026-10-23T09:00:33Z",
+    "beta": "v1.19.0-dev.2",
+    "beta_date": "2026-10-23T14:49:26Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
