@@ -265,12 +265,14 @@ jobs:
         continue-on-error: true
         # Mirror the exact numbered set into the permanent archive repo while
         # ./build/* is still whole (before the exclude step trims it below). The
-        # body is the archive-linked note, so files and their links agree. Gated
-        # on the opt-in var and continue-on-error: a mirror miss must never lose
-        # the rvb release (repo rule 9).
+        # body is the archive-linked note, so files and their links agree. The
+        # target is named via RELEASE_REPO — a step `env:` cannot shadow the
+        # runner's built-in GITHUB_REPOSITORY, so overriding that would silently
+        # re-upload onto rvb. Gated on the opt-in var and continue-on-error: a
+        # mirror miss must never lose the rvb release (repo rule 9).
         env:
           GH_TOKEN: ${{ secrets.ARCHIVE_REPO_TOKEN }}
-          GITHUB_REPOSITORY: ${{ vars.ARCHIVE_REPO }}
+          RELEASE_REPO: ${{ vars.ARCHIVE_REPO }}
           RELEASE_TAG: ${{ steps.version.outputs.NEXT_VER_CODE }}
           RELEASE_TITLE: "Build No. ${{ steps.version.outputs.NEXT_VER_CODE }}"
           RELEASE_BODY_FILE: build.archive.md

@@ -92,8 +92,9 @@ base, which points at the mirror repo so the archive release body and the Telegr
 Discord notices link the permanent copy. The footer's GitHub/Discord/Donate/Website
 links stay on the canonical home. Unset writes no second file (the feature is opt-in).
 `build_upload_release.sh` is reused unchanged for the mirror upload — the same script
-with `GITHUB_REPOSITORY` overridden to `ARCHIVE_REPO` and `RELEASE_BODY_FILE:
-build.archive.md`.
+with `RELEASE_REPO` set to `ARCHIVE_REPO` (a step `env:` cannot shadow the runner's
+built-in `GITHUB_REPOSITORY`, so the target is named through a non-reserved variable)
+and `RELEASE_BODY_FILE: build.archive.md`.
 
 ## Duplicate-build suppression (state branch, not the manifest)
 

@@ -88,11 +88,12 @@ chmod +x "$t2/bin/gh"
 (
 	cd "$t2" || exit 1
 	export PATH="$t2/bin:$PATH" GH_LOG="$t2/gh.log"
-	export GH_TOKEN=fake GITHUB_REPOSITORY=nullcpy/archive
+	export GH_TOKEN=fake GITHUB_REPOSITORY=nullcpy/rvb RELEASE_REPO=nullcpy/archive
 	export RELEASE_TAG=260999 RELEASE_TITLE="Build No. 260999"
 	export RELEASE_BODY_FILE=build.archive.md IS_PRERELEASE=true UPLOAD_FILES="./build/*"
 	bash "$ROOT/.github/scripts/build_upload_release.sh" >/dev/null
-	# Cross-repo target honoured, and the metadata the numbered step names.
+	# RELEASE_REPO must win over a conflicting GITHUB_REPOSITORY (the runner
+	# default is rvb) — the exact regression that made the mirror re-upload to rvb.
 	have gh.log "-R nullcpy/archive"
 	grep -qE 'release create 260999 -t Build No\. 260999 -F build\.archive\.md --prerelease -R nullcpy/archive' gh.log \
 		|| fail "create call missing title/body/prerelease: $(cat gh.log)"

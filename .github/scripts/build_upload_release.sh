@@ -22,13 +22,18 @@ set -euo pipefail
 #                           Ignored when the release already exists.
 #   UPLOAD_FILES          : Space-separated files/glob patterns (default: "./build/*")
 #   GITHUB_REPOSITORY     : owner/repo (required)
+#   RELEASE_REPO          : Optional owner/repo that overrides GITHUB_REPOSITORY for a
+#                           cross-repo (mirror) upload. Needed because a step's `env:`
+#                           cannot shadow the runner's built-in GITHUB_REPOSITORY, so
+#                           the archive mirror must name its target through a
+#                           non-reserved variable or it silently writes to rvb.
 #   GH_TOKEN              : GitHub token (required)
 #
 # Assets are the exception: the file list IS the named intent and gh refuses a
 # duplicate asset name, so --clobber stays unconditional (retries must be idempotent).
 
 TAG="${RELEASE_TAG:-${TAG:?RELEASE_TAG or TAG not set}}"
-REPO="${GITHUB_REPOSITORY:?GITHUB_REPOSITORY not set}"
+REPO="${RELEASE_REPO:-${GITHUB_REPOSITORY:?GITHUB_REPOSITORY not set}}"
 TITLE="${RELEASE_TITLE:-${TITLE:-}}"
 BODY_FILE="${RELEASE_BODY_FILE:-${BODY_FILE:-}}"
 RELEASE_NOTES="${RELEASE_NOTES:-}"
