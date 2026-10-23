@@ -41,7 +41,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -146,7 +146,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
     "patches-source": "spicetify/morphe-patches",
@@ -202,7 +202,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
   },
   "VN-Riky": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.frontrow.vlog",
     "app-name": "VN Video Editor",
     "patches-source": "riky-dev/morphe-patches",
