@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-24T16:20:57Z"
+    "publishedAt": "2026-10-24T19:00:22Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1687,10 +1687,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.15.mpp"
+        "SysAdminDoc/patches-0.0.16.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.15"
+        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.16"
       ],
       "appliedPatches": [
         "Accent color",
@@ -1736,6 +1736,7 @@
         "Hide paid partnership Reels",
         "Hide profile tabs",
         "Hide reels by caption words",
+        "Hide rows in Instagram's settings",
         "Hide suggested accounts in DMs",
         "Hide suggested accounts in Reels",
         "Hide suggested people on profiles",
@@ -1764,6 +1765,7 @@
         "Message box buttons",
         "Open comments without the keyboard",
         "Open links in external browser",
+        "Pick the app icon",
         "Profile posts as a list",
         "Pure black dark mode",
         "Read messages without the seen receipt",
@@ -1797,6 +1799,7 @@
         "Stop swipe up to reply",
         "Stop swiping between tabs",
         "Story ring size",
+        "Story text fonts",
         "Swipe left to open the profile",
         "Tap a feed video to pause it",
         "Tap to play",
@@ -1807,8 +1810,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260035",
-      "publishedAt": "2026-10-22T23:19:52Z"
+      "originBuild": "260042",
+      "publishedAt": "2026-10-24T19:00:05Z"
     },
     "facebook-hushfacebook-v584.0.0.51.56-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
@@ -1823,10 +1826,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "SysAdminDoc/patches-0.17.0.mpp"
+        "SysAdminDoc/patches-0.18.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.17.0"
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.18.0"
       ],
       "appliedPatches": [
         "AMOLED black theme",
@@ -1845,6 +1848,7 @@
         "Disable Audience Network",
         "Don't save search history",
         "Don't send reel watch history",
+        "Double tap to skip",
         "Download any photo",
         "Download any reel",
         "Download any story",
@@ -1864,6 +1868,7 @@
         "Hide carrier data banners",
         "Hide post prompts",
         "Hide posts by words",
+        "Hide profile notes",
         "Hide read receipts",
         "Hide reel interest prompts",
         "Hide seen posts",
@@ -1884,6 +1889,7 @@
         "Hide typing indicator",
         "Hold a reel for 2x",
         "Hold back analytics uploads",
+        "Home header text",
         "Hushfacebook in the Menu",
         "Hushfacebook settings",
         "Install beside Meta's apps",
@@ -1891,13 +1897,16 @@
         "Keep post dates",
         "Keep the progress bar",
         "Keep the reel speed",
+        "Longer music on photo stories",
         "Marketplace only",
+        "Newest reels first",
         "Open Messenger from the top bar",
         "Open comments at full height",
         "Open comments with a gesture",
         "Open links in external browser",
         "Open on a chosen tab",
         "Picture-in-picture",
+        "Pinch to zoom",
         "Restore screens on re-signed builds",
         "Resume long videos",
         "Sanitize sharing links",
@@ -1910,6 +1919,7 @@
         "Stop update prompts",
         "Tab bar at the bottom",
         "Tag suggestions only after @",
+        "Tap shows the controls",
         "Tap to play",
         "Turn off HDR brightness",
         "Turn off auto-translation",
@@ -1925,8 +1935,8 @@
         "Disable Play Store updates",
         "Accent color"
       ],
-      "originBuild": "260036",
-      "publishedAt": "2026-10-23T04:48:33Z"
+      "originBuild": "260042",
+      "publishedAt": "2026-10-24T19:00:05Z"
     },
     "telegram-hushtelegram-v13.1.0-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
