@@ -14,7 +14,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -55,7 +55,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -314,7 +314,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
     "patches-source": "heval99/Heval-Morphe-Patches",
