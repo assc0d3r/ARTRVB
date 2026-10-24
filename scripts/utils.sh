@@ -9,10 +9,17 @@ DL_SRCS=("cache_repo" "direct" "github" "archive" "apkmirror" "uptodown" "apkpur
 BUILD_JSON_FILE="build.json"
 PATCH_OUTPUT=""
 
-if [ -z "${GITHUB_TOKEN-}" ] && command -v gh >/dev/null 2>&1; then
-	GITHUB_TOKEN=$(gh auth token 2>/dev/null || true)
+# Prioritize GH_TOKEN / APKS_REPO_TOKEN for cross-repo private access, falling back to GITHUB_TOKEN
+_api_token="${GH_TOKEN:-${APKS_REPO_TOKEN:-${GITHUB_TOKEN:-}}}"
+if [ -z "$_api_token" ] && command -v gh >/dev/null 2>&1; then
+	_api_token=$(gh auth token 2>/dev/null || true)
 fi
-if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
+if [ -n "$_api_token" ]; then 
+	GH_HEADER="Authorization: token ${_api_token}" 
+else 
+	GH_HEADER="" 
+fi
+
 NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 OS=$(uname -o)
 DEFAULT_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
@@ -209,8 +216,6 @@ wpr() {
 }
 abort() {
 	epr "ABORT: ${1-}"
-	# In a pooled child (build.sh parallel-jobs) the parent owns the shared
-	# tmp-file sweep — deleting temp/*tmp.* here would kill sibling downloads.
 	if [ "${RVB_CHILD-}" = 1 ]; then
 		trap - SIGTERM SIGINT EXIT
 		exit 1
@@ -219,28 +224,12 @@ abort() {
 	trap - SIGTERM SIGINT EXIT
 	exit 1
 }
-# -- Per-app failure records (temp/failures) ---------------------------------
-# build.sh's post-build CI step reads these to report per-app failures once the
-# engine finishes. Each record is one jq-built JSON file; the engine writes them,
-# the CI step consumes them. Kept notification-free on purpose (no Telegram/curl
-# here) so the engine stays pure. A build failure leaves <slug>.json (descriptor)
-# plus <slug>.log (attached by build.sh's parent); a download-exhaustion leaves
-# only <slug>_dl.json; a patch-set rejection leaves only <slug>_np.json. All
-# fail-soft: a write error never aborts a build.
-#
-# The slug is derived from the display label "$table" (which already carries the
-# arch, e.g. "Foo (arm64-v8a)"), lowercased with every non-alphanumeric run
-# collapsed to a single '-'. build.sh and build_rv compute it identically so the
-# descriptor and the parent-attached log share a basename.
-failure_slug() { # $1=label ($table)
+
+failure_slug() {
 	printf '%s' "${1:-}" | tr '[:upper:]' '[:lower:]' | tr -cs 'a-z0-9' '-' | sed 's/^-//; s/-$//'
 }
 
-# write_build_failure_descriptor — record an intended build for the current app so
-# that if any later step aborts, the parent can attach the log and report it.
-# Deleted by the parent on a clean build_rv return. Called from build_rv once the
-# version, version-code and patches-source are all resolved.
-write_build_failure_descriptor() { # $1=slug $2=app $3=version $4=vc $5=arch $6=patches_src
+write_build_failure_descriptor() {
 	[ -n "${TEMP_DIR:-}" ] || return 0
 	local dir="$TEMP_DIR/failures"
 	mkdir -p "$dir" 2> /dev/null || return 0
@@ -250,10 +239,7 @@ write_build_failure_descriptor() { # $1=slug $2=app $3=version $4=vc $5=arch $6=
 		> "$dir/$1.json" 2> /dev/null || true
 }
 
-# write_dl_failure_descriptor — record that every configured download source was
-# exhausted for this app. Emitted and build_rv returns 0 (skip), so the parent
-# never sees a non-zero rc for it and does not touch it.
-write_dl_failure_descriptor() { # $1=slug $2=app $3=version $4=vc $5=arch $6=pkg
+write_dl_failure_descriptor() {
 	[ -n "${TEMP_DIR:-}" ] || return 0
 	local dir="$TEMP_DIR/failures"
 	mkdir -p "$dir" 2> /dev/null || return 0
@@ -263,14 +249,6 @@ write_dl_failure_descriptor() { # $1=slug $2=app $3=version $4=vc $5=arch $6=pkg
 		> "$dir/$1_dl.json" 2> /dev/null || true
 }
 
-# write_no_patches_failure_descriptor — record that every supported version of this
-# app was rejected by the patch set (no compatible patch, or no build for the
-# requested arch), so NOTHING was ever fetched. Distinct from the dl record above:
-# reporting this one as a download failure asks for a manual APK upload of a file that
-# is already cached and sends the patch author no message at all. Like the dl record
-# it uses its own suffix, because the parent deletes <slug>.json/.log on a clean (rc 0)
-# return and build_rv skips with rc 0 here.
-# $1=slug $2=app $3=versions-tried $4=requested $5=vc $6=arch $7=patches_src $8=pkg
 write_no_patches_failure_descriptor() {
 	[ -n "${TEMP_DIR:-}" ] || return 0
 	local dir="$TEMP_DIR/failures"
@@ -280,22 +258,13 @@ write_no_patches_failure_descriptor() {
 		'{type:$type, app:$app, tried:$tried, version:$version, vc:$vc, arch:$arch, patches_src:$patches_src, pkg:$pkg}' \
 		> "$dir/$1_np.json" 2> /dev/null || true
 }
-# env -i keeps JVM runs hermetic; XDG_DATA_HOME is forwarded so callers can
-# relocate an app's per-user state dir out of the shared HOME (see the
-# instafel flows) — without it, parallel builds race on $HOME state.
+
 java() {
 	local -a java_env=(PATH="$PATH" HOME="$HOME" LANG="${LANG:-en_US.UTF-8}")
 	[ -n "${XDG_DATA_HOME:-}" ] && java_env+=(XDG_DATA_HOME="$XDG_DATA_HOME")
 	env -i "${java_env[@]}" java --enable-native-access=ALL-UNNAMED "$@";
 }
 
-# Per-forge release API endpoints. $2 is always "owner/repo" (gitlab URL-encodes
-# it because its API keys projects by numeric/encoded path).
-# codeberg.org runs Forgejo, whose REST API is the Gitea one: paths hang off
-# /api/v1/repos/<owner>/<repo>, releases carry prerelease/published_at like GitHub,
-# but pagination uses limit (per_page is ignored) and an asset's API url is null -
-# only browser_download_url is populated. Hence the dedicated helpers below rather
-# than reusing github's case arms wholesale.
 source_release_api_base() {
 	local host=${1,,} src=$2 encoded
 	case "$host" in
@@ -309,10 +278,6 @@ source_release_api_base() {
 	esac
 }
 
-# Release listing URL, with the pagination parameter that forge actually honours.
-# Asking Codeberg for per_page=100 silently returns its 30-item default page, which
-# would make an older release look like it no longer exists; limit=50 is that API's
-# page maximum, and it lists newest-first like the others.
 source_release_list_url() {
 	local host=${1,,} src=$2 base
 	base=$(source_release_api_base "$host" "$src") || return 1
@@ -322,14 +287,10 @@ source_release_list_url() {
 	esac
 }
 
-# Human-facing release page: $1=host $2=owner/repo $3=tag. This is the one owner of
-# that shape - changelog.md, build metadata and the release notes all derive it from
-# here instead of repeating the per-forge literal.
 source_release_web_url() {
 	local host=${1,,} src=$2 tag=$3
 	case "$host" in
 		github) echo "https://github.com/${src}/releases/tag/${tag}" ;;
-		# Forgejo/Gitea keeps GitHub's /releases/tag/<tag> web layout
 		codeberg) echo "https://codeberg.org/${src}/releases/tag/${tag}" ;;
 		gitlab) echo "https://gitlab.com/${src}/-/releases/${tag}" ;;
 		*) return 1 ;;
@@ -340,9 +301,6 @@ source_release_tag_api() {
 	local host=${1,,} src=$2 tag=$3 base
 	base=$(source_release_api_base "$host" "$src") || return 1
 	case "$host" in
-		# This is the path a resolved tag takes (a concrete pin, or a channel keyword
-		# answered from state/patch_sources.json), so every supported forge needs an
-		# arm here - Forgejo keeps GitHub's /releases/tags/<tag> layout.
 		github | codeberg) echo "${base}/tags/${tag}" ;;
 		gitlab) echo "${base}/${tag}" ;;
 		*) return 1 ;;
@@ -352,9 +310,6 @@ source_release_tag_api() {
 source_release_assets_json() {
 	local host=${1,,}
 	case "$host" in
-		# Codeberg assets sit directly under .assets[] like GitHub's, and a release
-		# there commonly ships a metadata sidecar (output-metadata.json) next to the
-		# apk, so the same .json/.asc filter matters.
 		github | codeberg) jq -e '[.assets[]? | select(.name | (endswith("asc") or endswith("json")) | not)]' ;;
 		gitlab) jq -e '[.assets.links[]? | select(.name | (endswith("asc") or endswith("json")) | not)]' ;;
 		*) return 1 ;;
@@ -365,8 +320,6 @@ source_release_asset_url() {
 	local host=${1,,}
 	case "$host" in
 		github) jq -r '.url' ;;
-		# .url is null on Forgejo/Gitea installations; browser_download_url is the
-		# only usable link (and needs no auth header for public repos).
 		codeberg) jq -r '.browser_download_url // .url' ;;
 		gitlab) jq -r '.direct_asset_url // .url' ;;
 		*) return 1 ;;
@@ -374,14 +327,9 @@ source_release_asset_url() {
 }
 
 source_release_pick_from_list() {
-	# $2 = channel keyword: "beta" or anything else (read as stable). "dev" is not a
-	# keyword any more, so it is not tested here even though a release TAG may
-	# contain it (v1.2.3-dev.4) - that is matched by the gitlab pattern below.
 	local host=${1,,} mode=$2
 	case "$host" in
 		github | codeberg)
-			# .draft is always false for GitHub (its API omits drafts entirely) but
-			# Forgejo lists them, and an unpublished release is nobody's channel entry.
 			if [ "$mode" = beta ]; then
 				jq -e -c 'map(select(.prerelease == true and .draft != true and .tag_name != null and .tag_name != "")) | sort_by(.published_at // .created_at // "") | reverse | .[0] // empty'
 			else
@@ -410,12 +358,6 @@ get_apkeditor() {
 	gh_dl "$TEMP_DIR/apkeditor.jar" "$dl_url" >/dev/null || return 1
 }
 
-# Result is published through the global __PREBUILTS_RESULT instead of stdout on
-# purpose: callers MUST invoke this directly (NOT via $(...)). Command
-# substitution runs in a subshell, so the __PREBUILTS_CACHE__ write below would
-# be discarded there and every call would miss the cache and re-hit the release
-# API. Printing to a global keeps both the cache write and the read in the main
-# shell so repeated apps sharing a source set are served from memory.
 get_prebuilts() {
 	local cache_key="${1}_${2}_${3}_${4}_${5}_${6}"
 	if [ -n "${__PREBUILTS_CACHE__["$cache_key"]:-}" ]; then
@@ -428,26 +370,12 @@ get_prebuilts() {
 	__PREBUILTS_RESULT="$result"
 }
 
-# Canonical on-disk folder for a source's downloaded release assets. Namespaced by
-# forge host AND the full owner/repo so that two repos under one owner (e.g.
-# hxreborn/morphe-patches vs hxreborn/hxreborn-tiktok-patches), or the same
-# owner/repo on GitHub vs GitLab, never share a folder and cross-match by version.
-# Lowercased; '/' becomes '__'; the legacy '-rv' (ReVanced) marker is kept.
-rv_release_dir() { # $1=host (github|gitlab) $2=owner/repo -> ${TEMP_DIR}/<host>__<owner>__<repo>-rv
+rv_release_dir() {
 	local slug=${2,,}
 	slug=${slug//\//__}
 	printf '%s/%s__%s-rv' "$TEMP_DIR" "${1,,}" "$slug"
 }
 
-# Canonical release channel of a version value, or empty when it is not a channel
-# keyword. "stable" and "beta" are the entire vocabulary - CONFIG.md documents
-# nothing else, and compile_patch_configs.py routes pools on the same two words.
-# Anything else (a concrete tag, or a word someone typed by mistake) goes down the
-# exact-release path, so "latest" fails loudly at the release API instead of
-# quietly building whichever channel a fallback happened to pick. "both" is pool
-# routing that build.sh resolves from the config it was given before a build ever
-# sees it, so it is deliberately not a channel here. Keeping the two tests in one
-# function is what stops the beta/stable branch conditions from drifting apart.
 _release_channel_of() {
 	case "${1,,}" in
 	stable) echo stable ;;
@@ -456,17 +384,6 @@ _release_channel_of() {
 	esac
 }
 
-# Concrete tag the watcher recorded for one patch source, or nothing.
-# $1=owner/repo (any case) $2=host $3=channel (stable|beta)
-# state/patch_sources.json is the watcher's snapshot of every patch source's
-# current release per channel (see sync_patch_sources.py); reading it here saves
-# a release listing plus a second copy of the selection heuristics. A blocked
-# source is reported as "no tag" here even though the snapshot still carries its
-# last known tag - callers must check _patch_source_state_blocked and skip it.
-# RVB_PATCH_SOURCES_JSON lets the trace harness pin the lookup off, the same way
-# RVB_PATCHERS_SH does. The type==object filter skips metadata keys: jq errors out
-# of the whole program on ".value.repo" of a string, which would silently disable
-# every resolution.
 _patch_source_state_tag() {
 	local file="${RVB_PATCH_SOURCES_JSON:-state/patch_sources.json}"
 	[ -f "$file" ] || return 0
@@ -480,14 +397,6 @@ _patch_source_state_tag() {
 	' "$file"
 }
 
-# Is this patch source's repository blocked? Success = yes. $1=owner/repo (any case)
-# $2=host
-# sync_patch_sources.py marks an entry blocked when the forge answers 404 (deleted
-# or renamed), 451 (legal takedown) or 403 (made private / access refused), and
-# freezes whatever tags it last knew. Those are not things a retry or a live listing
-# can fix, so a build must not spend a request on them - see _get_prebuilts.
-# A missing file, an unknown source or a jq error all answer "not blocked", which
-# leaves the live listing path as the default behaviour.
 _patch_source_state_blocked() {
 	local file="${RVB_PATCH_SOURCES_JSON:-state/patch_sources.json}"
 	[ -f "$file" ] || return 1
@@ -506,9 +415,6 @@ _get_prebuilts() {
 	
 	local first_patch_src
 	first_patch_src=$(list_args "$patches_src_list" | tr -d \"\' | head -n 1)
-	# The "Getting prebuilts" header is printed lazily, exactly once, the first
-	# time a file actually needs to be downloaded (see the download sites below),
-	# so fully disk-cached runs stay silent instead of repeating it per app.
 	local prebuilts_header_printed=false
 
 	local first_patch_host
@@ -528,8 +434,6 @@ _get_prebuilts() {
 
 	local rv_rel release resp tag_name matches asset name url channel
 	rv_rel=$(source_release_list_url "$host" "$src") || return 1
-	# The CLI is not in the watcher snapshot (that file tracks patch sources only),
-	# so its channel keyword still resolves through the live listing below.
 	channel=$(_release_channel_of "$ver")
 	if [ "$channel" = beta ]; then
 		resp=$(source_release_req "$host" "$rv_rel" -) || return 1
@@ -537,7 +441,7 @@ _get_prebuilts() {
 		ver=$(jq -r '.tag_name' <<<"$release") || true
 		if [ -z "$ver" ] || [ "$ver" = "null" ]; then
 			ver=$(jq -e -r '.[].tag_name' <<<"$resp" | get_highest_ver) || return 1
-			release="" # Clear release if we had to fallback to get_highest_ver
+			release=""
 		fi
 	fi
 	if [ "$channel" = stable ]; then
@@ -624,11 +528,6 @@ _get_prebuilts() {
 		local tag="Patches" fprefix="patches"
 		local grab_cl=true
 		
-		# Reset per-source resolution state. `local` re-declaration does NOT clear a
-		# variable already local to this function, so release would otherwise leak from
-		# the CLI block (or the previous source). The concrete-version branch below is
-		# gated on [ -z "$release" ], so a stale release would skip the tag fetch and
-		# resolve this source's bundle from the wrong release entirely.
 		local rv_rel resp tag_name matches asset name url release=""
 		local dir
 		dir=$(rv_release_dir "$host" "$src")
@@ -636,19 +535,10 @@ _get_prebuilts() {
 		
 		rv_rel=$(source_release_list_url "$host" "$src") || return 1
 		local channel snap_tag
-		# Gone, taken down or unreachable as far as the forge is concerned: skip the
-		# whole app rather than spend a live listing on it (and on every arch of it).
-		# Checked before any version handling, because a pinned tag of a dead repo is
-		# just as undownloadable as a keyword - build.sh logs the skip and moves on.
 		if _patch_source_state_blocked "$src" "$host"; then
 			epr "Patch source '$src' is blocked in the watcher state (repository gone, taken down or inaccessible); not building this app"
 			return 1
 		fi
-		# A channel keyword is a question the watcher has already answered: this
-		# source's current stable/beta release is recorded in the state snapshot the
-		# build job checked out. Resolve from there (one local read, and no second
-		# copy of the selection heuristics); on a miss - unknown source, or no tag
-		# recorded for that channel - fall through to the live path below unchanged.
 		channel=$(_release_channel_of "$ver")
 		if [ -n "$channel" ]; then
 			snap_tag=$(_patch_source_state_tag "$src" "$host" "$channel")
@@ -664,7 +554,7 @@ _get_prebuilts() {
 			ver=$(jq -r '.tag_name' <<<"$release") || true
 			if [ -z "$ver" ] || [ "$ver" = "null" ]; then
 				ver=$(jq -e -r '.[].tag_name' <<<"$resp" | get_highest_ver) || return 1
-				release="" # Clear release if we had to fallback to get_highest_ver
+				release=""
 			fi
 		fi
 		if [ "$channel" = stable ]; then
@@ -733,10 +623,6 @@ _get_prebuilts() {
 		fi
 
 		echo "$tag_name" > "${dir}/tag_name.txt"
-		# Per-bundle tag marker, keyed to the exact downloaded/found file. Unlike the
-		# dir-level tag_name.txt it is immune to other versions/apps sharing the same
-		# folder and to a process-level cache hit skipping the rewrite, so build.sh
-		# can always read the authoritative tag for the file this build actually used.
 		echo "$tag_name" > "${file}.tag"
 
 		if [ "$grab_cl" = true ]; then
@@ -799,9 +685,6 @@ _req() {
 	local _req_lock=""
 	if [ "$op" != - ]; then
 		if [ -f "$op" ]; then return; fi
-		# Serialize fetches per destination: parallel siblings used to download
-		# the same jar/mpp twice because the exists-check and the write were not
-		# atomic. Re-check under the lock; a waiter finds the file already there.
 		if command -v flock >/dev/null 2>&1; then
 			mkdir -p "${TEMP_DIR}/dllocks"
 			exec 204>"${TEMP_DIR}/dllocks/$(tr -cs 'a-zA-Z0-9._-' '_' <<<"$op").lock"
@@ -819,13 +702,6 @@ _req() {
 			if [ -f "$op" ]; then return 0; fi
 		fi
 	fi
-	# Ceilings for the transfer itself: --connect-timeout only bounds setup, so a
-	# mirror that connects and then trickles could occupy its build slot
-	# indefinitely. 30 min is far above any legitimate APK/bundle fetch on a
-	# runner link, and the stall guard aborts a transfer sustaining <1 KiB/s for
-	# 2 min so the caller can fall through to the next download source instead of
-	# burning the whole job timeout.
-	# Placed before "$@" so a caller can still override them with its own flags.
 	if ! curl -L -c "$TEMP_DIR/cookie.txt" -b "$TEMP_DIR/cookie.txt" \
 		--connect-timeout 10 --retry 1 --max-time "${RVB_DL_MAX_TIME:-1800}" \
 		--speed-limit 1024 --speed-time 120 \
@@ -871,7 +747,6 @@ get_highest_ver() {
 	local vers valid_vers=""
 	vers=$(tee)
 	
-	# Try to find the highest valid semver first
 	while IFS= read -r v; do
 		if [ -n "$v" ] && semver_validate "$v"; then
 			valid_vers+="${v}"$'\n'
@@ -881,7 +756,6 @@ get_highest_ver() {
 	if [ -n "$valid_vers" ]; then
 		sort -s -t- -k1,1Vr <<<"$valid_vers" | head -1
 	else
-		# Fallback to sorting all versions descending if no semvers validated
 		sort -s -t- -k1,1Vr <<<"$vers" | head -1
 	fi
 }
@@ -889,7 +763,6 @@ sort_vers() {
 	local vers valid_vers=""
 	vers=$(tee)
 	
-	# Try to find valid semvers first
 	while IFS= read -r v; do
 		if [ -n "$v" ] && semver_validate "$v"; then
 			valid_vers+="${v}"$'\n'
@@ -925,11 +798,6 @@ _get_patch_last_supported_ver() {
 	local list_patches=$1 pkg_name=$2 inc_sel=${3:-} _exc_sel=${4:-} _exclusive=${5:-} cli_source=${6:-} cli_jar=${7:-} patches_jar=${8:-}
 	local op
 	if [ "$inc_sel" ]; then
-		# Rank the versions the named patches declare - the table carries one occurrence
-		# per declaring patch, so this still prefers the version the most patches agree
-		# on - and takes the two highest. It is read from the same listing the
-		# compatibility gate consults, so a version can never be advertised here and
-		# rejected there.
 		local _vs="" _ev=""
 		if _ev=$(_effective_patch_versions "$cli_jar" "$patches_jar" "$pkg_name" "$cli_source" named "$inc_sel"); then
 			_vs=$(cut -f1 <<<"$_ev" | sed -e '/^$/d' -e '/^Any$/d' | sort | uniq -c | sort -k1,1nr | awk '
@@ -941,8 +809,6 @@ _get_patch_last_supported_ver() {
 			echo "$_vs"
 			return
 		fi
-		# Names that match no version block: fall through to the CLI's own counting,
-		# which is what happened before this table existed.
 	fi
 	op=$(patches_list_versions "$cli_jar" "$patches_jar" "$pkg_name" "$cli_source") || return 1
 	op=$(sed -n '/Most common compatible versions:/,$p' <<<"$op" | sed '1d' | awk '{$1=$1}1')
@@ -991,8 +857,6 @@ get_patch_version_code() {
 
 	if [[ "$line" =~ \[versionCodes:[[:space:]]*([^]]+)\] ]]; then
 		local vcodes="${BASH_REMATCH[1]}"
-		# Canonicalize the ABI spelling (ARM64_V8A and arm64-v8a both occur in the
-		# wild) so this and _effective_arch_verdict read the same token.
 		vcodes="${vcodes^^}"
 		vcodes="${vcodes//-/_}"
 		if [ -n "$abi" ]; then
@@ -1033,13 +897,6 @@ parse_arch_mapping() {
 	echo "$matched"
 }
 
-# build_rv cache check for one resolved version across all archs:
-#   _cache_all_archs_present <version> [validate]
-# Returns 0 when every arch has a cached (and, with "validate", versionCode-
-# matching) APK, touching all cached variants for cache-LRU purposes; 1
-# otherwise. Reads apk_cache_dir/arch_list/pkg_name + cli vars from scope.
-# (The pre-refactor code inlined this loop twice with and without validation;
-# a deletion of an invalidating non-"all" APK preserves that behavior.)
 _cache_all_archs_present() {
 	local ver=$1 validate=${2:-no} raw_ver=${3:-$1}
 	local arch arch_f check_apk
@@ -1065,10 +922,6 @@ _cache_all_archs_present() {
 	return 0
 }
 
-# Resolve the target versionCode for one cached-APK lookup (build_rv cache
-# checks). $1=version $2=arch. Reads cli_jar/patches_jar/pkg_name/cli_lv_extra
-# and args from the calling build_rv scope (bash dynamic scoping). Echoes the
-# versionCode or empty.
 _cache_target_vc() {
 	local target
 	target=$(parse_arch_mapping "${args[version_code]:-}" "$2")
@@ -1079,10 +932,6 @@ _cache_target_vc() {
 			if raw_vers=$(patches_list_versions "$cli_jar" "$patches_jar" "$pkg_name" "${args[cli_source]:-}" "$cli_lv_extra"); then
 				target=$(get_patch_version_code "$raw_vers" "$1" "$2" || true)
 			fi
-			# list-versions counts only the patches used by default, so a bundle whose
-			# app patches ship disabled carries no annotation for it here. The effective
-			# table knows the code the named patches tested, and without it the cache key
-			# and the post-download check would both go unverified.
 			if [ -z "$target" ]; then
 				target=$(_patch_arch_verdict "$1" "$2" || true)
 			fi
@@ -1091,20 +940,6 @@ _cache_target_vc() {
 	echo "$target"
 }
 
-# Discover the cached APK for one pkg/arch at a resolved version (build_rv
-# cache checks). $1=stripped version (paths), $2=arch, $3=raw version for
-# versionCode metadata lookup (defaults to $1 — the pre-refactor code used
-# version_f in filenames but the unstripped resolved_version in
-# get_patch_version_code). Populates: _CACHE_VC, _CACHE_CHECK_APK (path or
-# empty), _CACHE_ALL_APK (the "all" candidate, which the validation delete check
-# spares because it is shared by every arch).
-#
-# The version code entered these names after the cache existed. Names without it
-# are deliberately not probed: nothing writes them any more, so reviving them
-# meant trusting a file whose code was never checked when it was stored, and
-# _cache_touch_apks kept refreshing its mtime so cache eviction never retired it.
-# A miss now costs one re-download per app+version, after which the modern name is
-# what exists.
 _cache_probe_apk() {
 	local ver=$1 arch=$2 raw_ver=${3:-$1}
 	local vc check_apk=""
@@ -1127,9 +962,6 @@ _cache_probe_apk() {
 	_CACHE_ALL_APK="$all_apk"
 }
 
-
-# Refresh mtimes on every cached variant this pkg/arch/version can be served by,
-# so a cache hit does not age toward eviction while it is still in use.
 _cache_touch_apks() {
 	local ver=$1 arch=$2
 	local vc; vc=$(_cache_target_vc "$ver" "$arch")
@@ -1173,18 +1005,13 @@ _patches_list_versions() {
 	for j in "${p_jars[@]}"; do
 		p_args+="$PATCHER_LIST_BUNDLE_ARG '$j' "
 	done
-	# shellcheck disable=SC2086  # registry tokens are single fixed args
 	if ! op=$(eval java -jar "'$cli_jar'" $PATCHER_LIST_VERSIONS_SUB $PATCHER_LIST_B $p_args-f "'$pkg_name'" "$extra_args" 2>&1); then
 		epr "Could not list versions $cli_jar: '$op'"
 		return 1
 	fi
 	echo "$op"
 }
-# Wrap raw patch names (one per line) into the "'A' 'B'" group shape that TOML
-# values use. Deliberately NOT shell-escaped: this is the same representation a
-# person writes by hand, so everything downstream - list_args, the compatibility
-# gate, the applied-patch post-flight check - sees one shape from both sources.
-# Shell quoting happens once, in join_args.
+
 _group_patch_names() {
 	local n
 	while IFS= read -r n; do
@@ -1193,11 +1020,7 @@ _group_patch_names() {
 	done
 }
 
-# Every patch name a bundle offers for one package, one raw name per line (the
-# caller quotes them). Used by inclusive-patches. Fails when the tool cannot list
-# patches or the listing errors: guessing at "all" is worse than refusing, the same
-# rule the exclusive-patches expansion below already follows.
-_all_patch_names() { # $1=cli_jar $2=bundle $3=pkg $4=cli_source
+_all_patch_names() {
 	local op
 	[ "${PATCHER_HAS_PATCH_LIST:-false}" = true ] || return 1
 	if ! op=$(patches_list "$1" "$2" "$3" "$4"); then return 1; fi
@@ -1205,17 +1028,11 @@ _all_patch_names() { # $1=cli_jar $2=bundle $3=pkg $4=cli_source
 		| sed -E 's/^[[:space:]]*Name:[[:space:]]*//I' | sed 's/[[:space:]]*$//'
 }
 
-# Applied patch names from a morphe -r result file, as a JSON array. Echoes nothing
-# when the file is absent or unparsable, which is the caller's cue to fall back to
-# scraping. Shape (verified against morphe-desktop 1.15.1):
-#   {"packageName":..,"packageVersion":..,"patchingSteps":[{"step","success"}],
-#    "appliedPatches":[{"name":..}],"failedPatches":[{"name":..}]}
 _applied_from_result() {
 	[ -f "$1" ] || return 0
 	jq -c '[.appliedPatches[]? | if type=="object" then .name else . end | select(. != null)]' "$1" 2>/dev/null || :
 }
 
-# Names morphe reported as failed, comma separated (empty when none/unparsable).
 _failed_from_result() {
 	[ -f "$1" ] || return 0
 	jq -r '[.failedPatches[]? | if type=="object" then (.name // .patch // tostring) else . end] | join(", ")' "$1" 2>/dev/null || :
@@ -1233,12 +1050,6 @@ patches_list() {
 	echo "$result"
 }
 
-# Instafel CLI resolves its patcher-core jar by filename in the CLI dir, CWD
-# (and, during patching, the run temp dir). Shadow copies of the bundle jars
-# under every name the CLI may look for. Extra target dirs passed as args.
-# The CLI-dir/CWD targets are shared with sibling builds, so copy with
-# --remove-destination (unlink+create) instead of truncate-in-place when the
-# platform's cp supports it.
 _instafel_shadow_core() {
 	local cli_jar=$1 patches_jar=$2; shift 2
 	local -a extra_dirs=("$@")
@@ -1274,10 +1085,6 @@ _patches_list() {
 	local p_jars=($(echo "$patches_jar" | tr ' ' '\n' | grep -v '^$'))
 	if [ "$PATCHER_FLOW" = instafel-workflow ]; then
 		_instafel_shadow_core "$cli_jar" "$patches_jar"
-		# The patcher creates $XDG_DATA_HOME|~/.local/share/.../core_data/info.json
-		# check-then-create style at startup; concurrent builds sharing one HOME
-		# crash the loser ("Information file cannot be created"). Give each list
-		# call a private, throwaway data dir instead.
 		local ifl_xdg
 		ifl_xdg=$(mktemp -d "${TMPDIR:-/tmp}/ifl-xdg.XXXXXX" 2>/dev/null) || ifl_xdg=""
 		local op_rc=0
@@ -1316,18 +1123,9 @@ _patches_list() {
 	echo "$op"
 }
 
-# The engine's canonical form of a version string. Bundles print names like
-# "348.10 - Stable", while build_rv's version_f (and every cache filename) has its
-# spaces removed, so the two sides of every comparison have to be folded the same way:
-# strip whitespace, then one leading v/V. This is the shape the pre-table gate used
-# with ${version// /} and ${v_raw// /}.
 _ver_key() { local v=${1// /}; v="${v#v}"; v="${v#V}"; printf '%s' "$v"; }
 
-# Map a build arch onto the ABI token a patch bundle uses in its version-code
-# annotation ("[versionCodes: ARM64_V8A=3327]" / "3.15.3: ARM64_V8A=3327"). The one
-# mapping for the whole engine: get_patch_version_code, the candidate verdict and the
-# cache probes all read it, so a token spelling cannot drift between them.
-_abi_token_of_arch() { # $1=build arch
+_abi_token_of_arch() {
 	case "${1,,}" in
 		arm64-v8a | arm64) echo "ARM64_V8A" ;;
 		arm-v7a | armeabi-v7a | arm) echo "ARMEABI_V7A" ;;
@@ -1337,30 +1135,6 @@ _abi_token_of_arch() { # $1=build arch
 	esac
 }
 
-# The version set of the patches that will ACTUALLY be applied for one package
-# (docs/decisions/0009).
-#
-# Why this exists: included-patches names are handed to the CLI as -e arguments, so
-# they apply whether or not the bundle marks them Enabled. Morphe's list-versions
-# counts only the patches "used by default" (-u is what widens it), so a bundle whose
-# app patches ship disabled answers list-versions with nothing at all - and the
-# compatibility gate then rejects every version the resolver just advertised from the
-# same bundle (OfflineGames-ggYasin, where every com.JindoBlu.OfflineGames patch in
-# ggYasin/ggyasin-morphe-patches v1.6.0 ships Enabled: false). The two questions have
-# to be answered from one table, so -u is deliberately NOT used anywhere: widening
-# list-versions would also make the resolver advertise versions supported only by
-# patches that never get applied.
-#
-# $1=cli_jar $2=bundles $3=pkg $4=cli_source $5=mode $6=included-patches group (named)
-#   mode "named"   -> the patches listed in $6, read out of list-patches
-#   mode "default" -> the patches the CLI itself counts, read out of list-versions
-# stdout: "<version>\t<ABI=vc[ ABI=vc]>" - one occurrence per declaring patch, so a
-#   caller can rank versions by how many patches support them; "Any\t" for a patch
-#   that puts no version constraint. The version column is a _ver_key, and commas in
-#   the annotation are normalized to spaces (Venus prints "ARM64_V8A=348010, ...") -
-#   a caller comparing against anything else compares a different string.
-# rc: 0 table | 1 no listing (CLI failed / printed nothing: caller stays permissive)
-#     2 the CLI answered but declares no version (caller runs its own logic)
 _effective_patch_versions() {
 	local cli_jar=$1 patches_jar=$2 pkg_name=$3 cli_source=$4 mode=${5:-named} inc=${6:-}
 	[ -n "$cli_jar" ] && [ -n "$patches_jar" ] && [ -n "$pkg_name" ] || return 1
@@ -1383,15 +1157,8 @@ _effective_patch_versions() {
 			__EFF_PATCH_VER_CACHE__["$key"]="@fail"
 			return 1
 		fi
-		# Names arrive in the TOML group shape ("'A' 'B'"), possibly one group per
-		# bundle joined with '|'. Flatten, then strip only the OUTER quote pair: an
-		# apostrophe inside a name ("Keep the screen's refresh rate") must survive, and
-		# it does here exactly as it does in the version-unpinned matcher below.
 		local names
 		names=$(list_args "${inc//|/ }" | sed -e "s/^'//" -e "s/'\$//" -e 's/^"//' -e 's/"$//')
-		# Names and listing share one stream: the awk pass reads the wanted names until
-		# the sentinel, then the listing. Passed this way rather than through -v because
-		# -v re-interprets backslash escapes in a multi-line value.
 		out=$(printf '%s\n__RVB_EFF_NAMES__\n%s\n' "$names" "$listing" | awk -v sent="__RVB_EFF_NAMES__" '
 			function flush(  i, v) {
 				if (active) {
@@ -1409,9 +1176,6 @@ _effective_patch_versions() {
 			t ~ /^(INFO: )?Index:/ { flush(); next }
 			t ~ /^Compatible versions:/ { if (active) sect = "ver"; next }
 			t ~ /^Version codes:/ { if (active) sect = "vc"; next }
-			# Any other patch-level field closes the block being collected. Enumerated
-			# rather than pattern-matched on "word:" so a wrapped description that
-			# happens to contain a colon cannot truncate the version list.
 			t ~ /^(Enabled|Description|Options|Requires|Version|Compatible packages|Min version|UUID|Author|Package name):/ { sect = ""; next }
 			!active { next }
 			sect == "ver" && t == "Any" { anyv = 1; next }
@@ -1463,22 +1227,12 @@ _effective_patch_versions() {
 	printf '%s\n' "$out"
 }
 
-# What one candidate version means for one build arch, decided over the effective
-# table. A version whose annotation lists other ABIs only has no build for this arch,
-# so the engine must not fetch it (ADR 0007 makes the arch a hard requirement and the
-# post-download gate would reject the bytes anyway - the fetch is pure waste).
-# $1=table $2=version $3=arch
-# stdout: the versionCode when the table pins exactly one for this arch
-# rc: 0 buildable (pinned, or not annotated at all) | 1 annotated without this arch
 _effective_arch_verdict() {
 	local tab=$1 ver arch=$3 abi
 	ver=$(_ver_key "$2")
 	abi=$(_abi_token_of_arch "$arch")
-	# all / auto / an unmapped arch: nothing to filter or pin on.
 	[ -z "$abi" ] && return 0
 	awk -F'\t' -v ver="$ver" -v abi="$abi" '
-		# Bundles print the token either as ARM64_V8A or arm64-v8a; both spellings
-		# mean the same ABI, so the comparison is canonicalized on both sides.
 		function canon(s) { gsub(/-/, "_", s); return toupper(s) }
 		$1 != ver { next }
 		{
@@ -1487,9 +1241,6 @@ _effective_arch_verdict() {
 			n = split($2, tok, " ")
 			for (i = 1; i <= n; i++) {
 				if (tok[i] == "") continue
-				# Strip any leftover list punctuation and take only a numeric code: a
-				# versionCode is a claim the cache filename and the post-download check go
-				# on making, so a value that is not a bare number is not a pin at all.
 				t = tok[i]; sub(/[,;]+$/, "", t)
 				p = index(t, "=")
 				if (p < 2) continue
@@ -1509,13 +1260,9 @@ _effective_arch_verdict() {
 		}' <<<"$tab"
 }
 
-# Does one effective table mention a version at all? $1=table $2=version (stripped)
 _table_has_version() { awk -F'\t' -v ver="$2" '$1 == ver { found = 1 } END { exit !found }' <<<"$1"; }
 
-# Verdict for one version+arch across both tables: the named patches decide when they
-# know the version, otherwise the default set does. Echoes a versionCode or nothing;
-# rc 1 means the version is annotated for other ABIs only (skip the candidate).
-_patch_arch_verdict() { # $1=version $2=arch  (reads build_rv scope: cli_jar, patches_jar, pkg_name, args)
+_patch_arch_verdict() {
 	local tab v
 	v=$(_ver_key "$1")
 	if [ -n "${args[included_patches]:-}" ]; then
@@ -1530,14 +1277,6 @@ _patch_arch_verdict() { # $1=version $2=arch  (reads build_rv scope: cli_jar, pa
 	_effective_arch_verdict "$tab" "$v" "$2"
 }
 
-# What build_rv does with one candidate version for one requested arch.
-# $1=version $2=arch $3=the whole candidate list (space separated)
-# stdout: the versionCode when the annotation pins one for this arch
-# rc: 0 build it | 1 skip it - another supported version is viable for this arch and
-#     should take the slot instead
-# The annotation records what the patch author tested, not what the store ships, so it
-# is only allowed to REDIRECT: when no candidate mentions the arch the download
-# proceeds and _artifact_satisfies_arch judges the bytes (docs/decisions/0009).
 _candidate_arch_verdict() {
 	local vc="" cand v
 	v=$(_ver_key "$1")
@@ -1568,11 +1307,6 @@ has_compatible_patches() {
 	local ver_clean
 	ver_clean=$(_ver_key "$version")
 
-	# Pinned scan over the patch set that will actually be applied: the included-patches
-	# names when configured (those reach the CLI as -e and apply whatever the bundle
-	# marks them), then the default set list-versions counts on its own. Consulting both
-	# keeps a bundle whose app patches ship default-disabled buildable, and keeps a config
-	# whose names match nothing on exactly the list-versions behaviour it had before.
 	local _named="" _default="" _default_rc=0
 	if [ -n "$inc_patches" ]; then
 		_named=$(_effective_patch_versions "$cli_jar" "$patches_jar" "$pkg_name" "$cli_source" named "$inc_patches") || _named=""
@@ -1589,30 +1323,13 @@ has_compatible_patches() {
 		done <<<"$_tbl"
 	done
 
-	# No listing at all (the CLI failed or printed nothing): stay permissive, as before -
-	# a tool that cannot answer must not drop a build on its own.
 	if [ "$_default_rc" = 1 ]; then
 		return 0
 	fi
 
-	# Version-unpinned patches (e.g. structural browser hooks) enumerate their
-	# package under Compatible packages but print no version constraint, so
-	# list-versions yields no candidate line for any version. Morphe's CLI still
-	# applies them with "Compatibility: Unknown". When the strict scan above
-	# found nothing, accept the target only if an unpinned patch actually gets
-	# applied: with included-patches configured, at least one of its names must
-	# match a package-enumerated unpinned patch; with none configured, at least
-	# one such patch must be default-enabled. Otherwise warn and skip rather
-	# than hand Morphe a target where nothing applies. Global/universal patches
-	# print no package line, and pinned packages keep their version block, so
-	# both stay on the strict skip path. Only reached when no pinned patch
-	# matched, so pinned-app behavior is untouched.
 	if [ "$PATCHER_KIND" = morphe ] && [ -n "$patches_jar" ]; then
 		local op_list
 		if op_list=$(patches_list "$cli_jar" "$patches_jar" "$pkg_name" "$cli_source"); then
-			# Emit "<patch name>\t<default-enabled>" per unpinned patch that
-			# enumerates this package. Dynamic pattern only via $0 ~ pat; state
-			# resets on every Package name line; flush at END (no exit-in-rule).
 			local unp
 			unp=$(awk -v pkg="$pkg_name" 'BEGIN{pat="^[[:space:]]*Package name:[[:space:]]*" pkg "[[:space:]]*$"}
 				function flush(){if (seen && !pins && name != "") print name "\t" en}
@@ -1663,29 +1380,21 @@ isoneof() {
 	return 1
 }
 
-# -------------------- morphe bundle passthrough helpers --------------------
-# When _CACHE_BUNDLE_OK=true (morphe + RVB_MORPHE_PASSTHROUGH) the cache may
-# hold the vendor bundle (.xapk/.apkm/.apks) instead of a merged apk.
-
-_bundle_ext_of() { # $1=path -> echoes extension without dot if it is a bundle
+_bundle_ext_of() {
 	local ext="${1##*.}"
 	case "${ext,,}" in xapk|apkm|apks) echo "${ext,,}" ;; *) return 1 ;; esac
 }
 
-# config.* member keep-list for one target arch (mips/unknown ABIs treated as
-# generic: only base kept is never correct, so for those we keep everything).
 _bundle_keep_regex_for_arch() {
 	case "$1" in
 		arm64-v8a) echo 'arm64_v8a' ;;
 		arm-v7a) echo 'armeabi' ;;
 		x86_64) echo 'x86_64' ;;
 		x86) echo 'x86(?!_)' ;;
-		*) echo '' ;; # all/universal: keep everything
+		*) echo '' ;;
 	esac
 }
 
-# Copy $1 bundle -> $2 trimmed to $3 arch by deleting other-ABI config members.
-# Density/language configs are always kept (name doesn't identify an ABI).
 _trim_bundle_for_arch() {
 	local src=$1 dst=$2 arch=$3
 	cp -f "$src" "$dst" || return 1
@@ -1697,9 +1406,7 @@ _trim_bundle_for_arch() {
 		[[ "$name" == *.apk ]] || continue
 		name="${name##*/}"
 		[[ "$name" == base.apk ]] && continue
-		# only native-ABI config splits are trim candidates; language/density/
-	# sdk splits (config.hdpi, config.en, config.v21…) must always stay
-	[[ "$name" =~ config\.(arm64_v8a|armeabi[_-]v7a|armeabi|x86_64|x86|mips|mips64)([._-]|\.apk$) ]] || continue
+		[[ "$name" =~ config\.(arm64_v8a|armeabi[_-]v7a|armeabi|x86_64|x86|mips|mips64)([._-]|\.apk$) ]] || continue
 		if ! grep -qP "$keep" <<<"$name"; then drop+=("$name"); fi
 	done < <(unzip -Z1 "$src" 2>/dev/null)
 	if [ ${#drop[@]} -gt 0 ]; then
@@ -1708,22 +1415,16 @@ _trim_bundle_for_arch() {
 	return 0
 }
 
-# Extract base.apk from bundle $1 to path $2 (no merge, no re-sign: base.apk
-# carries AndroidManifest, package name and versionCode — enough for the
-# aapt/validation reads on bundle cache entries).
 _bundle_extract_base() {
 	if unzip -p "$1" base.apk > "$2" 2>/dev/null && [ -s "$2" ]; then
 		return 0
 	fi
-	# bundles without a literal base.apk: largest member is conventionally it
 	local largest
 	largest=$(unzip -l "$1" 2>/dev/null | awk '/\.apk$/{if ($1>max){max=$1; name=$NF}} END{print name}')
 	[ -n "$largest" ] || { rm -f "$2"; return 1; }
 	unzip -p "$1" "$largest" > "$2" 2>/dev/null && [ -s "$2" ]
 }
 
-# Read aapt badging field ($3: versionCode|versionName|package) from file $1,
-# transparently handling bundles by their base.apk. Echoes value or nothing.
 _meta_field_of() {
 	local file=$1 field=$2
 	local probe="$file" tmp=""
@@ -1733,11 +1434,6 @@ _meta_field_of() {
 		probe="$tmp"
 	fi
 	local v="" _tool
-	# Tool preference: AAPT2 first. Legacy `aapt` (V1) `dump badging` silently
-	# prints nothing for manifests compiled against recent SDKs (e.g. apps that
-	# target Android 15/16), which used to make download verification reject
-	# perfectly valid modern APKs. Only fall back to legacy aapt when AAPT2 is
-	# unavailable or yields no value for the field.
 	for _tool in "${AAPT2:-}" aapt2 aapt; do
 		[ -z "$_tool" ] && continue
 		if ! command -v "$_tool" >/dev/null 2>&1 && [ ! -x "$_tool" ]; then
@@ -1759,10 +1455,6 @@ _meta_field_of() {
 
 merge_splits() {
 	local bundle=$1 output=$2
-	# Serialize merges (and the apkeditor/apksigner writes they do) targeting
-	# the same output: build.sh may run several tables over one shared stock
-	# cache path concurrently when parallel-jobs > 1. Lock name is flattened
-	# from the target path — no mkdir needed.
 	local _ms_lock="${TEMP_DIR}/mergesplits.$(tr -c 'a-zA-Z0-9._-' '_' <<<"$output").lock"
 	if command -v flock >/dev/null 2>&1; then
 		exec 201>"$_ms_lock"
@@ -1773,6 +1465,7 @@ merge_splits() {
 	exec 201>&-
 	return $_ms_ret
 }
+
 _merge_splits_locked() {
 	local bundle=$1 output=$2
 	if unzip -l "$bundle" 2>/dev/null | grep -q '^[[:space:]]*[0-9].*AndroidManifest\.xml$'; then
@@ -1790,14 +1483,11 @@ _merge_splits_locked() {
 	fi
 	pr "Merging splits"
 	get_apkeditor || return 1
-	# write to temp siblings and rename atomically: a concurrent process may
-	# have already produced (or be reading) $output — never truncate in place
 	if ! OP=$(java -jar "$TEMP_DIR/apkeditor.jar" merge -i "$bundle" -o "${output}-merge-tmp.unsigned" -clean-meta -f 2>&1); then
 		epr "APKEditor error: $OP"
 		rm -f "${output}-merge-tmp.unsigned"
 		return 1
 	fi
-	# sign the merged stock apk
 	if ! OP=$(java -jar "$APKSIGNER" sign --ks "$RVB_KEYSTORE_P12" --ks-pass pass:$RVB_KEYSTORE_PASS --key-pass pass:$RVB_KEYSTORE_PASS --ks-key-alias "$RVB_KEY_ALIAS" \
 		--out "${output}-merge-tmp" "${output}-merge-tmp.unsigned"); then
 		epr "apksigner error: $OP"
@@ -1850,9 +1540,6 @@ _cf_cffi_get() {
 	[ ! -f "$py_script" ] && return 2
 
 	local cffi_res
-	# Which path produced $html matters to the scrapers: curl_cffi returns the raw page
-	# while the solver returns a JS-rendered DOM that is not the same document. Clear the
-	# note first, so a failed call cannot report the previous page's provenance.
 	__CF_GET_VIA__=""
 	rm -f "$TEMP_DIR/cf_source.txt" 2> /dev/null
 	if cffi_res=$("$py_cmd" "$py_script" "$url" "$TEMP_DIR/cookie.txt" 2> /dev/null); then
@@ -1885,6 +1572,7 @@ _unqueued_cf_get() {
 	fi
 	return 1
 }
+
 _cf_get() {
 	mkdir -p "$TEMP_DIR"
 	local lock=$TEMP_DIR/cf_get.lock
@@ -1895,1701 +1583,6 @@ _cf_get() {
 	trap 'exec 200>&-' RETURN EXIT INT TERM
 	_unqueued_cf_get "$@"
 }
-
-# -------------------- apkmirror --------------------
-get_apkmirror_resp() {
-	local url="${1}"
-	if [ -n "${__DL_RESP_CACHE__["apkmirror_resp_$url"]:-}" ]; then
-		__APKMIRROR_RESP__="${__DL_RESP_CACHE__["apkmirror_resp_$url"]}"
-		__APKMIRROR_CAT__="${__DL_RESP_CACHE__["apkmirror_cat_$url"]}"
-		return 0
-	fi
-	local html=""
-	_cf_get "${url}" || return 1
-	__APKMIRROR_RESP__="$html"
-	local clean_url="${url%/}"
-	__APKMIRROR_CAT__="${clean_url##*/}"
-	__DL_RESP_CACHE__["apkmirror_resp_$url"]="$__APKMIRROR_RESP__"
-	__DL_RESP_CACHE__["apkmirror_cat_$url"]="$__APKMIRROR_CAT__"
-	set +u
-	__APKMIRROR_EXAMPLE_URL__="${args[apkmirror_example_url]:-}" 
-	set -u
-}
-
-get_apkmirror_vers() {
-	local vers apkm_resp html=""
-	_cf_get "https://www.apkmirror.com/uploads/?appcategory=${__APKMIRROR_CAT__}" || return 1
-	apkm_resp="$html"
-
-	local py_cmd=""
-	if command -v python3 >/dev/null 2>&1; then
-		py_cmd="python3"
-	elif command -v python >/dev/null 2>&1; then
-		py_cmd="python"
-	fi
-
-	local py_script="${CWD}/scripts/apkmirror_search.py"
-	[ ! -f "$py_script" ] && [ -n "${BASH_SOURCE[0]:-}" ] && py_script="$(dirname "${BASH_SOURCE[0]}")/apkmirror_search.py"
-
-	local allow_all="${__AAV__:-false}"
-	if [ -n "$py_cmd" ] && [ -f "$py_script" ]; then
-		local py_vers
-		if py_vers=$("$py_cmd" "$py_script" vers "$allow_all" <<<"$apkm_resp") && [ -n "$py_vers" ]; then
-			echo "$py_vers"
-			return 0
-		fi
-	fi
-
-	if [ -n "${HTMLQ:-}" ] && [ -x "$HTMLQ" ]; then
-		local main_content
-		main_content=$($HTMLQ "#primary" <<<"$apkm_resp" 2>/dev/null || true)
-		[ -z "$main_content" ] && main_content=$($HTMLQ "#content" <<<"$apkm_resp" 2>/dev/null || true)
-		[ -n "$main_content" ] && apkm_resp="$main_content"
-	fi
-
-	vers=$(echo "$apkm_resp" | grep -oP 'class="fontBlack"[^>]*href="[^"]*-release/"[^>]*>\K[^<]+' | awk '{print $NF}' || true)
-	if [ "$allow_all" = false ]; then
-		local IFS=$'\n'
-		vers=$(grep -iv "\(beta\|alpha\|secondary\)" <<<"$vers" || true)
-		local v r_vers=()
-		for v in $vers; do
-			grep -iq "${v} \(beta\|alpha\|secondary\)" <<<"$apkm_resp" || r_vers+=("$v")
-		done
-		echo "${r_vers[*]}"
-	else
-		echo "$vers"
-	fi
-}
-
-# Extract the app package name from an arbitrary APKMirror page's HTML
-# (release page or category page). Every APKMirror app page embeds a Play
-# Store deep link, so this works on the release page we resolved to as well
-# as the config's category page.
-_apkmirror_html_pkg_name() {
-	local resp="$1"
-	local py_cmd=""
-	if command -v python3 >/dev/null 2>&1; then
-		py_cmd="python3"
-	elif command -v python >/dev/null 2>&1; then
-		py_cmd="python"
-	fi
-
-	local py_script="${CWD}/scripts/apkmirror_search.py"
-	[ ! -f "$py_script" ] && [ -n "${BASH_SOURCE[0]:-}" ] && py_script="$(dirname "${BASH_SOURCE[0]}")/apkmirror_search.py"
-
-	if [ -n "$py_cmd" ] && [ -f "$py_script" ]; then
-		local py_pkg
-		if py_pkg=$("$py_cmd" "$py_script" pkg <<<"$resp") && [ -n "$py_pkg" ]; then
-			echo "$py_pkg"
-			return 0
-		fi
-	fi
-
-	local pkg
-	pkg=$(echo "$resp" | grep -oP 'play\.google\.com/store/apps/details\?id=\K[a-zA-Z0-9_.]+' | head -1) || true
-	if [ -z "$pkg" ]; then
-		pkg=$(sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$resp")
-	fi
-	echo "$pkg"
-}
-
-get_apkmirror_pkg_name() {
-	_apkmirror_html_pkg_name "$__APKMIRROR_RESP__"
-}
-
-apkmirror_search() {
-	local resp="$1" dpi="$2" arch="$3" apk_bundle="$4" clean_search_version="$5" search_version="$6" target_vc="${7:-}"
-	
-	local py_cmd=""
-	if command -v python3 >/dev/null 2>&1; then
-		py_cmd="python3"
-	elif command -v python >/dev/null 2>&1; then
-		py_cmd="python"
-	fi
-
-	local py_script="${CWD}/scripts/apkmirror_search.py"
-	[ ! -f "$py_script" ] && [ -n "${BASH_SOURCE[0]:-}" ] && py_script="$(dirname "${BASH_SOURCE[0]}")/apkmirror_search.py"
-
-	if [ -n "$py_cmd" ] && [ -f "$py_script" ]; then
-		local py_res
-		if py_res=$("$py_cmd" "$py_script" "$dpi" "$arch" "$apk_bundle" "$clean_search_version" "$search_version" "$target_vc" <<<"$resp") && [ -n "$py_res" ]; then
-			echo "$py_res"
-			return 0
-		fi
-	fi
-
-	local dlurl="" node app_table emptyCheck
-
-	local appdpi=("nodpi" "anydpi")
-	local match_any_dpi=false
-	local dpi_to_use="${dpi:-nodpi anydpi auto}"
-	if [ "$dpi_to_use" ]; then
-		appdpi+=($dpi_to_use)
-		if isoneof "auto" "${appdpi[@]}"; then
-			match_any_dpi=true
-		fi
-	fi
-
-	local best_fallback_url=""
-	local specific_arch_url=""
-	local specific_arch_fallback_url=""
-
-	for ((n = 1; n < 100; n++)); do
-		node=$($HTMLQ "div.table-row.headerFont:nth-last-child($n)" <<<"$resp")
-		if [ -z "$node" ]; then break; fi
-		
-		dlurl=$($HTMLQ --base https://www.apkmirror.com --attribute href "div.table-cell:nth-child(1) > a:nth-child(1)" <<<"$node")
-		if [ -z "$dlurl" ]; then continue; fi
-
-		local node_apk_bundle node_arch node_dpi node_vc
-		node_apk_bundle=$($HTMLQ "div.table-cell:nth-child(1) span.apkm-badge:first-of-type" --text <<<"$node" | xargs)
-		[ -z "$node_apk_bundle" ] && node_apk_bundle="APK"
-
-		node_arch=$($HTMLQ "div.table-cell:nth-child(2)" --text <<<"$node" | xargs)
-		node_dpi=$($HTMLQ "div.table-cell:nth-child(4)" --text <<<"$node" | xargs)
-		node_vc=""
-		local vc_regex='class="colorLightBlack"[^>]*>([0-9]+)</span>'
-		if [[ "$node" =~ $vc_regex ]]; then
-			node_vc="${BASH_REMATCH[1]}"
-		else
-			local raw_vc
-			raw_vc=$($HTMLQ "div.table-cell:nth-child(1) span.colorLightBlack" --text <<<"$node" 2>/dev/null || true)
-			local num_regex='([0-9]+)'
-			if [[ "$raw_vc" =~ $num_regex ]]; then
-				node_vc="${BASH_REMATCH[1]}"
-			fi
-		fi
-
-		if [ "$node_apk_bundle" != "$apk_bundle" ]; then continue; fi
-
-		if [ -n "$clean_search_version" ]; then
-			if [[ "$dlurl" != *"$clean_search_version"* ]] && [[ "$dlurl" != *"$search_version"* ]]; then
-				continue
-			fi
-		fi
-
-		if [ -n "$target_vc" ]; then
-			if [ -n "$node_vc" ] && [ "$node_vc" = "$target_vc" ]; then
-				echo "$dlurl"
-				return 0
-			else
-				continue
-			fi
-		fi
-
-		# Pass 1 Logic: Return Universal/Fat Bundles immediately to optimize cache size
-		if isoneof "$node_arch" 'universal' 'noarch' 'arm64-v8a + x86_64' 'arm64-v8a + armeabi-v7a'; then
-			if isoneof "$node_dpi" "${appdpi[@]}"; then
-				echo "$dlurl"
-				return 0
-			elif [ "$match_any_dpi" = true ] && [ -z "$best_fallback_url" ]; then
-				best_fallback_url="$dlurl"
-			fi
-		# Pass 2 Logic: If it's strictly the requested arch, save it as a fallback in case no universal is found
-		elif [ "$node_arch" = "$arch" ]; then
-			if isoneof "$node_dpi" "${appdpi[@]}"; then
-				[ -z "$specific_arch_url" ] && specific_arch_url="$dlurl"
-			elif [ "$match_any_dpi" = true ] && [ -z "$specific_arch_fallback_url" ]; then
-				specific_arch_fallback_url="$dlurl"
-			fi
-		fi
-	done
-
-	if [ -n "$best_fallback_url" ]; then
-		echo "$best_fallback_url"
-		return 0
-	elif [ -n "$specific_arch_url" ]; then
-		echo "$specific_arch_url"
-		return 0
-	elif [ -n "$specific_arch_fallback_url" ]; then
-		echo "$specific_arch_fallback_url"
-		return 0
-	fi
-	return 1
-}
-
-dl_apkmirror() {
-	local url=$1 version=${2// /-} output=$3 arch=$4 dpi=$5 is_bundle=false get_latest_ver=${6:-false} version_code=${7:-}
-	local base_url="https://www.apkmirror.com"
-	local html=""
-
-	if [ -f "${output%.apk}.apkm" ]; then
-		# Cached sidecar from an earlier run. _bundle_to_apk yields whatever the caller
-		# has to verify - base.apk under passthrough, a merged apk otherwise - and leaves
-		# the bundle itself in place for build_rv's adoption logic.
-		_bundle_to_apk "${output%.apk}.apkm" "${output}"
-		return 0
-	fi
-
-	if [ "$arch" = "arm-v7a" ]; then arch="armeabi-v7a"; fi
-
-	local clean_version="${version//[^0-9.]/}"
-	local clean_search_version="${clean_version//./-}"
-
-	local short_version="" short_search_version=""
-	if [[ "$clean_version" == *.*.*.* ]]; then
-		short_version=$(echo "$clean_version" | cut -d. -f1-3)
-	elif [[ "$clean_version" == *.*.* ]]; then
-		short_version=$(echo "$clean_version" | cut -d. -f1-2)
-	fi
-	if [ -n "$short_version" ]; then
-		short_search_version="${short_version//./-}"
-	fi
-
-	local resp release_url=""
-
-	if [ -n "${__APKMIRROR_EXAMPLE_URL__:-}" ]; then
-		local example_path="${__APKMIRROR_EXAMPLE_URL__#$base_url}"
-		local slug_ver target_ver
-		slug_ver=$(echo "$example_path" | grep -oP '\d+(-\d+)+' | tail -1)
-		target_ver=$(echo "$version" | tr '.' '-' | grep -oP '\d+(-\d+)+')
-		if [ -n "$slug_ver" ] && [ -n "$target_ver" ]; then
-			release_url="${base_url}${example_path/$slug_ver/$target_ver}"
-				__SILENT_CF_GET__=true _cf_get "$release_url" || true
-			resp="$html"
-			if [[ "$resp" == *"Page Not Found"* ]] || [[ "$resp" == *"404 Whoops"* ]] || [ -z "$resp" ]; then
-					release_url=""
-			fi
-		fi
-	fi
-
-	local search_version="${version//./-}"
-	search_version="${search_version//_/-}"
-	search_version="${search_version,,}"
-	search_version="${search_version//[^a-z0-9-]/}"
-	search_version="${search_version//---/-}"
-
-	if [ -z "$release_url" ]; then
-		local apkmname
-		apkmname=$($HTMLQ "h1.marginZero" --text <<<"$__APKMIRROR_RESP__")
-		apkmname="${apkmname,,}" apkmname="${apkmname// /-}" apkmname="${apkmname//[^a-z0-9-]/}"
-		release_url="${url%/}/${apkmname}-${search_version}-release/"
-		__SILENT_CF_GET__=true _cf_get "$release_url" || true
-		resp="$html"
-		if [[ "$resp" == *"Page Not Found"* ]] || [[ "$resp" == *"404 Whoops"* ]] || [ -z "$resp" ]; then
-			release_url=""
-		fi
-	fi
-
-	if [ -z "$release_url" ]; then
-		local list_url="${url%/}"
-		local version_href=""
-
-		# 1. Targeted search query (?s=version) first as inspired by uni-apks
-		local search_target_url="${list_url}/?s=${clean_version}"
-		if _cf_get "$search_target_url" 2>/dev/null && [ -n "$html" ]; then
-			local s_flat=$(echo "$html" | tr -d '\n\r')
-			local s_split="${s_flat//<\/a>/<\/a>
-}"
-			local s_links=$(echo "$s_split" | grep -oP 'href="\K/apk/[^"]+')
-			version_href=$(echo "$s_links" | grep -F "$search_version-release" | head -1) || true
-			if [ -z "$version_href" ]; then
-				version_href=$(echo "$s_split" | grep -F "$version" | grep -oP 'href="\K/apk/[^"]+' | grep -F -- '-release/' | head -1) || true
-			fi
-			if [ -n "$version_href" ]; then
-				release_url="$base_url$version_href"
-				_cf_get "$release_url" || return 1
-				resp="$html"
-			fi
-		fi
-
-		if [ -z "$release_url" ]; then
-			for page_num in $(seq 1 10); do
-			local page_url="$list_url/"
-			[[ $page_num -gt 1 ]] && page_url="$list_url/page/$page_num/"
-			_cf_get "$page_url" || return 1
-			
-			
-			local html_flat=$(echo "$html" | tr -d '\n\r')
-			local html_split="${html_flat//<\/a>/<\/a>
-}"
-
-			local all_links=$(echo "$html_split" | grep -oP 'href="\K/apk/[^"]+')
-			
-			# 1. Exact URL match (strict)
-			version_href=$(echo "$all_links" | grep -F "$search_version-release" | head -1) || true
-			
-			# 2. Exact text match
-			if [ -z "$version_href" ]; then
-				version_href=$(echo "$html_split" | grep -F "$version" | grep -oP 'href="\K[^"]+' | head -1) || true
-			fi
-			
-			# 3. Clean text match
-			if [ -z "$version_href" ] && [ -n "$clean_version" ] && [ "$clean_version" != "$version" ]; then
-				version_href=$(echo "$html_split" | grep -F "$clean_version" | grep -oP 'href="\K[^"]+' | head -1) || true
-			fi
-
-			# 4. Clean URL match
-			if [ -z "$version_href" ] && [ -n "$clean_search_version" ]; then
-				version_href=$(echo "$all_links" | grep -E "${clean_search_version}(-[a-z0-9]+)*-release" | head -1) || true
-			fi
-
-			# 5. Safe Short URL match (for grouped versions)
-			if [ -z "$version_href" ] && [ -n "$short_search_version" ] && [ "$short_search_version" != "$clean_search_version" ]; then
-				version_href=$(echo "$all_links" | grep -E "${short_search_version}(-[0-9])?-release/?$" | head -1) || true
-			fi
-
-				if [ -n "$version_href" ]; then
-					release_url="$base_url$version_href"
-					_cf_get "$release_url" || return 1
-					resp="$html"
-					break
-				fi
-			done
-		fi
-		
-		# Fallback to direct search if not found on first 5 pages
-		if [ -z "$release_url" ]; then
-			local search_list_url="https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=${__APKMIRROR_CAT__}+${version}"
-			__SILENT_CF_GET__=true _cf_get "$search_list_url" || true
-			if [ -n "$html" ] && [ "$html" != "null" ]; then
-				local search_links=""
-				if [[ "$html" != *"No results found matching your query"* ]]; then
-					search_links=$($HTMLQ --attribute href "div.appRow h5 a" <<<"$html")
-				fi
-				
-				# Try to find exact version match first to be safe
-				version_href=$(echo "$search_links" | grep -F "$search_version-release" | head -1) || true
-				if [ -z "$version_href" ] && [ -n "$clean_search_version" ]; then
-					version_href=$(echo "$search_links" | grep -E "${clean_search_version}(-[a-z0-9]+)*-release" | head -1) || true
-				fi
-
-				if [ -n "$version_href" ]; then
-					release_url="$base_url$version_href"
-					_cf_get "$release_url" || return 1
-					resp="$html"
-				fi
-			fi
-		fi
-
-		if [ -z "$release_url" ]; then
-			epr "Could not find version $version on APKMirror"
-			return 1
-		fi
-	fi
-
-	# APKMirror's fuzzy search fallback can resolve to an unrelated app's
-	# release page (e.g. a superseded version grabbing the top search hit),
-	# which then wastes a bundle download + merge before the post-download
-	# package guard rejects it. Verify the discovered page's package against
-	# the expected pkg_name first; only reject when the page clearly belongs
-	# to a different app (an empty extraction keeps prior behavior).
-	if [ -n "${pkg_name:-}" ] && [ -n "$resp" ]; then
-		local page_pkg
-		page_pkg=$(_apkmirror_html_pkg_name "$resp")
-		if [ -n "$page_pkg" ] && [ "$page_pkg" != "$pkg_name" ]; then
-			epr "Resolved APKMirror page is for '$page_pkg', not expected '$pkg_name'. Skipping apkmirror for version $version."
-			return 1
-		fi
-	fi
-
-	local node dlurl=""
-	node=$($HTMLQ "div.table-row.headerFont:nth-last-child(1)" -r "span:nth-child(n+3)" <<<"$resp")
-	if [ "$node" ]; then
-		if [ "${args[prefer_dl_mode]:-}" = "bundle" ]; then
-			types="BUNDLE APK"
-		else
-			types="APK BUNDLE"
-		fi
-		for type in $types; do
-			if dlurl=$(apkmirror_search "$resp" "$dpi" "$arch" "$type" "$clean_search_version" "$search_version" "$version_code"); then
-				[ "$type" = "BUNDLE" ] && is_bundle=true || is_bundle=false
-				break
-			fi
-		done
-		if [ -z "$dlurl" ]; then
-			if [ -n "$version_code" ]; then
-				wpr "Could not find variant with version code '$version_code' for version '$version' on APKMirror"
-			fi
-			return 1
-		fi
-		
-		_cf_get "$dlurl" || return 1
-		resp="$html"
-		
-	fi
-
-	local all_dl_btns btn_url
-	all_dl_btns=$(echo "$resp" | $HTMLQ "a.downloadButton" --attribute href)
-	if [ "$is_bundle" = true ]; then
-		btn_url=$(echo "$all_dl_btns" | grep -v 'forcebaseapk' | head -1)
-		[ -z "$btn_url" ] && btn_url=$(echo "$all_dl_btns" | head -1)
-	else
-		btn_url=$(echo "$all_dl_btns" | grep 'forcebaseapk' | head -1)
-		[ -z "$btn_url" ] && btn_url=$(echo "$all_dl_btns" | head -1)
-	fi
-	if [ -z "$btn_url" ]; then epr "Could not find download button on APKMirror"; return 1; fi
-	btn_url=$(echo "$btn_url" | sed 's/&amp;/\&/g')
-
-	_cf_get "$base_url$btn_url" || return 1
-	local final_url
-	final_url=$($HTMLQ "a#download-link" --attribute href <<<"$html" 2>/dev/null | head -1) || true
-	[ -z "$final_url" ] && final_url=$(echo "$html" | grep -oP 'id="download-link"[^>]*href="\K[^"]+' | head -1) || true
-	if [ -z "$final_url" ]; then epr "Could not find final download link on APKMirror"; return 1; fi
-	final_url=$(echo "$final_url" | sed 's/&amp;/\&/g')
-	[[ "$final_url" != http* ]] && final_url="${base_url}${final_url}"
-
-	pr "Downloading APK: $final_url"
-	local cookie_args=()
-	[ -n "${CF_COOKIES:-}" ] && cookie_args=(--header "Cookie: $CF_COOKIES")
-	local referer_url="$base_url$btn_url"
-	[[ "$btn_url" == http* ]] && referer_url="$btn_url"
-
-	local target_dl_dest="${output}"
-	[ "$is_bundle" = true ] && target_dl_dest="${output%.apk}.apkm"
-
-	if ! _cf_cffi_download "$final_url" "$target_dl_dest" "$referer_url"; then
-		wget -nv -O "$target_dl_dest" \
-			--header="User-Agent: ${user_agent:-$DEFAULT_UA}" \
-			--referer="$referer_url" \
-			"${cookie_args[@]}" \
-			--timeout=300 \
-			"$final_url" || return 1
-	fi
-
-	if [ "$is_bundle" = true ]; then
-		if ! unzip -l "${output%.apk}.apkm" >/dev/null 2>&1; then
-			epr "Downloaded file is not a valid zip (apkm): $final_url"
-			rm -f "${output%.apk}.apkm"
-			return 1
-		fi
-		_bundle_to_apk "${output%.apk}.apkm" "${output}" || return 1
-	fi
-}
-
-# -------------------- apkpure --------------------
-get_apkpure_resp() {
-	local url="${1}"
-	if [ -n "${__DL_RESP_CACHE__["apkpure_resp_$url"]:-}" ]; then
-		__APKPURE_BASE_URL__="${__DL_RESP_CACHE__["apkpure_base_$url"]}"
-		__APKPURE_PKG__="${__DL_RESP_CACHE__["apkpure_pkg_$url"]}"
-		__APKPURE_RESP__="${__DL_RESP_CACHE__["apkpure_resp_$url"]}"
-		return 0
-	fi
-	url="${url%/downloading*}"
-	url="${url%/download*}"
-	url="${url%/}"
-	__APKPURE_BASE_URL__="$url"
-	__APKPURE_PKG__=$(echo "$url" | grep -oP '[a-zA-Z][a-zA-Z0-9]*(\.[a-zA-Z][a-zA-Z0-9]*){1,}' | tail -1)
-	local html=""
-	_cf_get "${url}/downloading/" || return 1
-	__APKPURE_RESP__="$html"
-	__DL_RESP_CACHE__["apkpure_base_$1"]="$__APKPURE_BASE_URL__"
-	__DL_RESP_CACHE__["apkpure_pkg_$1"]="$__APKPURE_PKG__"
-	__DL_RESP_CACHE__["apkpure_resp_$1"]="$__APKPURE_RESP__"
-}
-
-get_apkpure_vers() {
-	local ver
-	ver=$(echo "$__APKPURE_RESP__" | sed 's/<h2[^>]*>/\n__H2__/g' | grep '__H2__' | sed 's/__H2__//' | grep -oP '[0-9]+\.[0-9][0-9.]*' | head -1) || true
-	[ -z "$ver" ] && ver=$(echo "$__APKPURE_RESP__" | grep -oP '"softwareVersion":"\K[^"]+' | head -1) || true
-	echo "$ver"
-}
-
-get_apkpure_pkg_name() { echo "$__APKPURE_PKG__"; }
-
-# Build arch token -> the ABI name APKPure spells in its links. One mapping, because
-# _apkpure_pick_link reads it out of the page and _apkpure_construct_link has to write the
-# same spelling - a second copy would be a second thing to keep in sync.
-_apkpure_abi_of() { # $1=arch token; prints nothing when this arch has no store spelling
-	case "$1" in
-		arm64-v8a | arm64) echo arm64-v8a ;;
-		arm-v7a | arm) echo armeabi-v7a ;;
-		x86_64) echo x86_64 ;;
-		x86) echo x86 ;;
-	esac
-}
-
-# Choose APKPure's link for the architecture being built.
-#
-# An APKPure download page carries exactly one <a id="download_link"> - the variant
-# APKPure happens to feature, which need not be the arch being built - plus a
-# per-variant link for every ABI it publishes. atvTools 1.3.2 for example:
-#
-#   b/XAPK/<pkg>?versionCode=49&nc=armeabi-v7a&sv=26   <- the featured #download_link
-#   b/XAPK/<pkg>?versionCode=49&nc=arm64-v8a&sv=26
-#
-# and, where an app is published universal, a multi-ABI single APK whose ABI list is
-# comma separated and percent encoded:
-#
-#   b/APK/com.google.android.youtube?versionCode=...&nc=arm64-v8a%2Carmeabi-v7a%2Cx86%2Cx86_64&sv=29
-#
-# Taking the featured link for every arch meant an arm64 build fetched the
-# armeabi-v7a bundle and published it under an arm64-v8a file name - the native code
-# inside was simply wrong for the label (the two bases are different artifacts, only
-# their AndroidManifest differs).
-#
-# Preference order: universal first, then the exact ABI, then give up. Universal wins
-# because one fetch then serves every arch of the matrix and the store is asked once per
-# app rather than once per arch - avoiding repeated hits from one egress IP is the point
-# of the policy, since that is what gets an address blocked. atvTools publishes no
-# universal at all, which is why the per-ABI link is a fallback and not an error.
-#
-# Returns 1 whenever nothing matches - the caller then keeps using the featured link and
-# says so, which is all a single-variant app ever offers. Whether the fetched file really
-# is universal stays decided by its contents, as everywhere else in this pipeline:
-# _cache_arch_key reads the artifact and picks the cache key from that, never from here.
-#
-# $3 may be empty: a page with no featured anchor still lists its variants, and the
-# version code the build wants is then taken from $4 (resolved from patch metadata or the
-# config's version-code map by the build loop) instead of from the anchor.
-_apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url  $4=version code to prefer
-	local html=$1 arch=$2 featured=$3 want_vc=${4:-} abi="" want_type="" cands picked all_links
-	abi=$(_apkpure_abi_of "$arch")
-	want_type=$(grep -oE '/b/(XAPK|APK)/' <<<"$featured" | head -1) || true
-	if [ -z "$want_vc" ]; then
-		want_vc=$(grep -oE 'versionCode=[0-9]+' <<<"$featured" | head -1 | cut -d= -f2) || true
-	fi
-
-	all_links=$(grep -oE 'https://d\.apkpure\.com/b/(XAPK|APK)/[^"]+' <<<"$html" | sed 's/&amp;/\&/g' | sort -u) || true
-	[ -z "$all_links" ] && return 1
-	# Universal first, deliberately: one download then serves every arch in the matrix,
-	# so the store is asked once per app instead of once per arch - the reason for the
-	# policy is not spending download quota from one IP, and repeated per-arch hits are
-	# what gets an egress address blocked. Not every app publishes a universal (atvTools
-	# does not), so the per-ABI link is the fallback, never a hard requirement.
-	#
-	# The universal link is recognised by its percent-separated ABI list; matching the
-	# single-ABI form as a prefix would let "arm64-v8a%2Carmeabi-v7a" answer for
-	# arm64-v8a, which is what the universal case is for anyway - so the order below is
-	# what makes the distinction, not the pattern.
-	cands=$(printf '%s\n' "$all_links" | grep -E '[?&]nc=[^&]*%2C') || true
-	if [ -z "$cands" ] && [ -n "$abi" ]; then
-		cands=$(printf '%s\n' "$all_links" | grep -E "[?&]nc=${abi}(&|$)") || true
-	elif [ -z "$cands" ]; then
-		return 1
-	fi
-	[ -z "$cands" ] && return 1
-	# Stay on the bundle kind the featured link used, so the caller's xapk-vs-apk
-	# handling (merge_splits vs a plain file) does not silently change shape.
-	if [ -n "$want_type" ]; then
-		picked=$(grep -F "$want_type" <<<"$cands") || true
-		[ -n "$picked" ] && cands="$picked"
-	fi
-	# Prefer the same version code APKPure featured; if the page lists older builds for
-	# this ABI, take the newest one rather than whatever appears first in the markup.
-	if [ -n "$want_vc" ]; then
-		picked=$(grep -F "versionCode=${want_vc}" <<<"$cands") || true
-		[ -n "$picked" ] && cands="$picked"
-	fi
-	picked=$(printf '%s\n' "$cands" | awk '
-		{ vc = -1; if (match($0, /versionCode=[0-9]+/)) vc = substr($0, RSTART + 12, RLENGTH - 12) + 0
-		  if (vc > best) { best = vc; line = $0 } }
-		END { if (line) print line }
-	')
-	[ -z "$picked" ] && return 1
-	printf '%s\n' "$picked"
-}
-
-# Did APKPure actually serve an app page? A version the store does not carry is answered
-# with HTTP 200 and a generic "Free APK Downloader Online" page - measured on
-# /downloading/9.99: 294k chars, no app markup and no file link anywhere in it - so an
-# empty link search has two completely different causes and only this tells them apart.
-# A challenge or anti-bot interstitial has no file link either, which is why the caller
-# also reports how the page was fetched.
-_apkpure_has_file_links() { # $1=page html
-	grep -qE 'https://d\.apkpure\.com/b/(XAPK|APK)/' <<<"${1:-}"
-}
-
-# The store's own file-link form, built without reading a page.
-#
-# This is not a guessed URL: it is the exact href APKPure puts in #download_link and in the
-# hidden iframe_download of its /downloading/<v> page -
-#   https://d.apkpure.com/b/XAPK/<pkg>?versionCode=<vc>&nc=<abi>
-# - and it was measured (2026-10-09, from this machine) to honour both parameters without
-# any page or cookie: versionCode=3240500 answers 302 with a different file per nc
-# (arm64-v8a -> full_size=41069874, armeabi-v7a -> 54307675, both labelled
-# Flipkart...9.15_APKPure.xapk), an unknown versionCode redirects to a target carrying no
-# filename and no size, and sv= changes nothing (sv=99 returned the same bytes), so it is
-# left out instead of being invented.
-#
-# It is reached only when every page this source read carried no file link at all, which is
-# what the bypass sidecar's rendered DOM does for apkpure.com (run 37964499217: three pages
-# per build, ~206k chars each, not one d.apkpure.com href in any of them), and only when the
-# engine already resolved a version code from patch metadata or the config - never one
-# chosen here. The bytes are then judged by the pipeline as usual (zip, manifest at root,
-# package, version, signature, then the arch-honesty gate of docs/decisions/0007), and the
-# caller logs that the link was constructed rather than scraped, so this cannot pass as a
-# read from the store's markup. An arch with no store spelling (all, universal) gets nothing
-# back, because there is no ABI to name and inventing one would be a claim, not a fallback.
-_apkpure_construct_link() { # $1=pkg  $2=arch  $3=version code
-	local abi
-	abi=$(_apkpure_abi_of "$2")
-	if [ -z "$abi" ] || [ -z "${3:-}" ] || [ -z "${1:-}" ]; then return 1; fi
-	printf 'https://d.apkpure.com/b/XAPK/%s?versionCode=%s&nc=%s\n' "$1" "$3" "$abi"
-}
-
-dl_apkpure() {
-	local url=$1 version=$2 output=$3 arch=${4:-} _dpi=${5:-} version_code=${7:-}
-	local html=""
-
-	local dl_page_url
-	if [ -n "$version" ]; then
-		dl_page_url="${__APKPURE_BASE_URL__}/downloading/${version}"
-	else
-		dl_page_url="${__APKPURE_BASE_URL__}/downloading/"
-	fi
-
-	_cf_get "$dl_page_url" || return 1
-
-	if [ -z "$version" ]; then
-		version=$(echo "$html" | sed 's/<h2[^>]*>/\n__H2__/g' | grep '__H2__' | sed 's/__H2__//' | grep -oP '[0-9]+\.[0-9][0-9.]*' | head -1) || true
-		[ -z "$version" ] && version=$(echo "$html" | grep -oP '"softwareVersion":"\K[^"]+' | head -1) || true
-	fi
-
-	# APKPure's featured link: the one variant the page advertises, which need not be this
-	# build's arch. It is a candidate below, never a precondition - see why at the page scan.
-	local featured_url
-	featured_url=$($HTMLQ "a#download_link" --attribute href <<<"$html" 2>/dev/null | head -1) || true
-	[ -z "$featured_url" ] && \
-		featured_url=$(echo "$html" | grep -oP '<a[^>]+id="download_link"[^>]+href="\Khttps://[^"]+' | head -1) || true
-	[ -z "$featured_url" ] && \
-		featured_url=$(echo "$html" | grep -oP 'id="download_link"[^>]*href="\Khttps://[^"]+' | head -1) || true
-	[ -n "$featured_url" ] && featured_url=$(echo "$featured_url" | sed 's/&amp;/\&/g')
-
-	# The featured link is only correct for the arch APKPure happened to feature, so ask
-	# for this build's own variant and keep the featured one as the fallback.
-	#
-	# The version page is not enough: /downloading/<version> advertises only the single
-	# variant APKPure features for that version (measured on atvTools 1.3.2: one
-	# nc=armeabi-v7a link, no nc=arm64-v8a at all), while /download/<version> lists one link
-	# per ABI for exactly that version (measured on flipkart 9.15: both
-	# versionCode=3240500&nc=arm64-v8a and ...&nc=armeabi-v7a sit on it) and the app's
-	# /download page lists the variants of whatever APKPure calls latest. So ask the page in
-	# hand, then the version's own all-variants page, then latest, and only then fall back -
-	# otherwise an arm64 build silently fetches a 32-bit bundle.
-	#
-	# A missing featured link does not stop any of that, and must not: it is server-rendered
-	# markup, and a rendered DOM can lose it. When Cloudflare keeps challenging curl_cffi,
-	# _cf_get returns the solver's browser DOM instead of the raw page - measured 2026-10-09
-	# on flipkart 9.15: 209k chars against 280k for the same URL, with no #download_link in
-	# it - and this source then died on the anchor while its variants were one page away.
-	# Parsing what a page offers instead of requiring one particular element is what keeps
-	# the source alive while a challenge is escalated.
-	local apkpure_page_html="$html" variant_url="" page_html="" links_seen=false
-	if [ -n "$featured_url" ]; then links_seen=true; fi
-	variant_url=$(_apkpure_pick_link "$apkpure_page_html" "$arch" "$featured_url" "$version_code") || true
-
-	if [ -z "$variant_url" ] && { [ -n "$arch" ] || [ -z "$featured_url" ]; }; then
-		local -a apkpure_pages=()
-		if [ -n "$version" ]; then
-			apkpure_pages+=("${__APKPURE_BASE_URL__}/download/${version}")
-		fi
-		apkpure_pages+=("${__APKPURE_BASE_URL__}/download")
-		local apkpure_page
-		for apkpure_page in "${apkpure_pages[@]}"; do
-			html=""
-			if _cf_get "$apkpure_page" >/dev/null 2>&1; then
-				page_html="$html"
-				if _apkpure_has_file_links "$page_html"; then links_seen=true; fi
-				variant_url=$(_apkpure_pick_link "$page_html" "$arch" "$featured_url" "$version_code") || true
-			fi
-			if [ -n "$variant_url" ]; then break; fi
-		done
-		html="$apkpure_page_html"
-	fi
-
-	local download_url=""
-	if [ -n "$variant_url" ]; then
-		download_url="$variant_url"
-	elif [ -n "$featured_url" ]; then
-		download_url="$featured_url"
-		if [ -n "$arch" ] && ! isoneof "$arch" all universal; then
-			# Deliberately still taken: when the store lists no variant for this arch the
-			# featured link is the only thing there, and its real ABI is only knowable from
-			# its bytes. It is fetched, fingerprinted into the download-link index, then judged
-			# by the arch-honesty gate in build_rv - which rejects a wrong single ABI instead of
-			# shipping it under this arch's name. A repeat job hits the index and skips the
-			# fetch. (docs/decisions/0007)
-			wpr "APKPure lists no '$arch' variant for '${__APKPURE_PKG__}'; using the featured link, which may carry a different ABI than '$arch'"
-		fi
-	else
-		# Nothing on any page. Before calling that a store failure, take the one route that
-		# does not depend on the page at all - the link form the store itself writes into its
-		# download markup (see _apkpure_construct_link), for the version code the engine
-		# already resolved. Needed because the bypass sidecar's rendered DOM carries no file
-		# link whatsoever for this host: measured on run 37964499217, all three pages of every
-		# build came back from /html at ~206k characters with not one d.apkpure.com href in
-		# them, while the same URLs from a normal browser list the arm64 link. Scraping this
-		# store from a datacenter address is therefore not a solvable problem, and the URL form
-		# is - the file endpoint is checked by the pipeline afterwards exactly like a scraped one.
-		download_url=$(_apkpure_construct_link "$__APKPURE_PKG__" "$arch" "$version_code") || true
-		if [ -n "$download_url" ]; then
-			wpr "APKPure pages carried no link (last page read via ${__CF_GET_VIA__:-unknown}); using the store's file-link form for '$arch' at versionCode $version_code - the artifact is verified from its bytes"
-		elif [ "$links_seen" != true ]; then
-			# Used to be one message for two different failures. Whether the store carries this
-			# version at all and whether it publishes this arch are answered by different next
-			# steps - a retry at another version, or a different source - so they are named apart,
-			# with the fetch path that produced the page, because a rendered DOM is not the raw
-			# page and only says something is absent from the markup it kept.
-			local construct_reason
-			if [ -z "$version_code" ]; then
-				construct_reason="no target version code was resolved to build the link from"
-			else
-				construct_reason="arch '$arch' has no per-ABI spelling to build the link from"
-			fi
-			epr "APKPure served no app page for '${__APKPURE_PKG__}' v${version:-latest} - no file link on any page tried (fetched via ${__CF_GET_VIA__:-unknown}), and $construct_reason"
-			return 1
-		else
-			epr "APKPure publishes no '${arch:-any}' variant for '${__APKPURE_PKG__}' v${version:-latest}"
-			return 1
-		fi
-	fi
-
-	pr "Downloading from APKPure: $download_url"
-	local cookie_header=()
-	[ -n "${CF_COOKIES:-}" ] && cookie_header=(-H "Cookie: $CF_COOKIES")
-
-	local is_bundle=false
-	echo "$download_url" | grep -qi 'xapk' && is_bundle=true
-
-	local bundle="${output%.apk}.xapk"
-
-	# Learned link index: the URL has no ABI in it, so consult what an earlier build
-	# already fetched from this exact link. Adopt it (no network) when it satisfies
-	# this arch, skip the source (no network) when it is a known other single ABI,
-	# and only download-and-remember when nothing is recorded yet.
-	local _idx=""
-	_idx=$(_dlurl_index_lookup "$download_url" "$arch") || true
-	if [ "$_idx" = REJECT ]; then
-		wpr "APKPure link for '${__APKPURE_PKG__}' is known to serve a different ABI than '$arch'; skipping source without re-download"
-		return 1
-	fi
-
-	if [ "$is_bundle" = true ]; then
-		# d.apkpure.com sits behind Cloudflare (verified: Server: cloudflare, CF-RAY on the
-		# file endpoint itself). It answers a residential IP with a plain 302 to the CDN and
-		# a datacenter IP with a managed challenge, which is why this source works from a
-		# laptop and 403s on the runner. The solver-backed path is the only one that can
-		# clear it - the solver container shares the runner's egress IP, so the clearance it
-		# earns is valid for the request that follows, provided the user agent travels with
-		# it (cf_get.py applies the solver's UA). Plain curl stays as the fallback for
-		# networks that are never challenged, and for when curl_cffi is not installed.
-		#
-		# --fail on the fallback matters: without it a challenge page exits 0, is written to
-		# the .xapk, and only then trips the zip check, so the log blames a corrupt archive
-		# instead of naming the HTTP status. APKPure challenges are also frequently
-		# transient, hence the retry on the transient statuses curl knows.
-		if [ -n "$_idx" ]; then
-			cp -f "$_idx" "$bundle" || { rm -f "$bundle"; return 1; }
-			pr "Adopting cached APKPure download for '$download_url' (no re-download)"
-		else
-			if ! _cf_cffi_download "$download_url" "$bundle" "$dl_page_url"; then
-				rm -f "$bundle" 2>/dev/null
-				curl -L --fail --retry 2 --retry-delay 3 --retry-connrefused -s -S \
-					-H "User-Agent: ${user_agent:-$DEFAULT_UA}" \
-					-H "Referer: $dl_page_url" \
-					"${cookie_header[@]}" \
-					--connect-timeout 30 --max-time 300 \
-					"$download_url" -o "$bundle" || { rm -f "$bundle"; return 1; }
-			fi
-			_dlurl_index_record "$download_url" "$bundle"
-		fi
-		if ! _apkpure_install_xapk "$bundle" "${output}"; then
-			rm -f "$bundle"
-			return 1
-		fi
-		if [ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" != true ]; then
-			rm -f "$bundle"
-		fi
-	else
-		if [ -n "$_idx" ]; then
-			cp -f "$_idx" "${output}" || { rm -f "${output}"; return 1; }
-			pr "Adopting cached APKPure download for '$download_url' (no re-download)"
-		else
-			if ! _cf_cffi_download "$download_url" "${output}" "$dl_page_url"; then
-				rm -f "${output}" 2>/dev/null
-				curl -L --fail -s -S \
-					-H "User-Agent: ${user_agent:-$DEFAULT_UA}" \
-					-H "Referer: $dl_page_url" \
-					"${cookie_header[@]}" \
-					--connect-timeout 30 --max-time 300 \
-					"$download_url" -o "${output}" || { rm -f "${output}"; return 1; }
-			fi
-			_dlurl_index_record "$download_url" "${output}"
-		fi
-	fi
-}
-
-# Turn a downloaded bundle into the APK the download loop verifies, without merging when
-# morphe will not use the result.
-#
-# morphe-desktop merges split bundles itself; build_rv adopts the vendor bundle sitting
-# next to this output and deletes the merged file. So under passthrough a full apkeditor
-# merge was pure waste - a JVM start, a rewrite and a re-sign of the archive, and the
-# result thrown away minutes later. Two sources tried to dodge it with
-# "cp -f bundle output", which puts bundle bytes into a .apk path; that only survives
-# because the manifest-at-root check renames the file before anything reads metadata,
-# and _meta_field_of decides "is this a bundle?" from the EXTENSION - so the copy makes
-# every later probe look at a zip of zips instead of recognising it.
-#
-# Extracting base.apk is cheaper than both and leaves a real APK behind: package,
-# versionName and versionCode all read correctly, the AndroidManifest check passes on
-# its own terms, and the untouched bundle beside it is what gets cached and patched.
-_bundle_to_apk() { # $1=bundle  $2=output apk
-	local bundle=$1 output=$2
-	if ! unzip -l "$bundle" >/dev/null 2>&1; then
-		epr "Downloaded bundle is not a valid zip (anti-bot interstitial or truncated file): $bundle"
-		return 1
-	fi
-	if [ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" = true ]; then
-		if ! _bundle_extract_base "$bundle" "$output"; then
-			epr "Cannot extract base.apk from bundle: $bundle"
-			return 1
-		fi
-		pr "Passthrough: verifying base.apk of $(basename "$bundle") (no merge)"
-		return 0
-	fi
-	merge_splits "$bundle" "$output"
-}
-
-_apkpure_install_xapk() {
-	local xapk=$1 output=$2
-	if ! unzip -l "$xapk" >/dev/null 2>&1; then
-		epr "Downloaded XAPK is not a valid zip (Cloudflare block?): $xapk"
-		rm -f "$xapk"
-		return 1
-	fi
-	if ! _bundle_to_apk "$xapk" "$output"; then
-		rm -f "$output"
-		return 1
-	fi
-}
-
-# -------------------- apkcombo --------------------
-get_apkcombo_resp() {
-	local url="${1}"
-	if [ -n "${__DL_RESP_CACHE__["apkcombo_resp_$url"]:-}" ]; then
-		__APKCOMBO_RESP__="${__DL_RESP_CACHE__["apkcombo_resp_$url"]}"
-		__APKCOMBO_PKG__="${__DL_RESP_CACHE__["apkcombo_pkg_$url"]}"
-		__APKCOMBO_BASE_URL__="${__DL_RESP_CACHE__["apkcombo_base_$url"]}"
-		return 0
-	fi
-	url="${url%/}"
-	__APKCOMBO_PKG__="${url##*/}"
-	__APKCOMBO_BASE_URL__="$url"
-	local html=""
-	_cf_get "https://apkcombo.com/search/${__APKCOMBO_PKG__}/download" || return 1
-	__APKCOMBO_RESP__="$html"
-	__DL_RESP_CACHE__["apkcombo_resp_$1"]="$__APKCOMBO_RESP__"
-	__DL_RESP_CACHE__["apkcombo_pkg_$1"]="$__APKCOMBO_PKG__"
-	__DL_RESP_CACHE__["apkcombo_base_$1"]="$__APKCOMBO_BASE_URL__"
-}
-get_apkcombo_vers() {
-	echo "$__APKCOMBO_RESP__" | grep -oP 'phone-\K[0-9][^-]+-apk' | sed 's/-apk$//' | head -1
-}
-get_apkcombo_pkg_name() { echo "$__APKCOMBO_PKG__"; }
-# Pick APKCombo's link for the architecture being built.
-#
-# The redesigned variant page keeps its download links in a hidden "APK Variants" tab,
-# grouped by ABI: a <code>armeabi-v7a</code> / <code>arm64-v8a</code> header owns every
-# link that follows it until the next header, and each link is the tokenised form
-#
-#   https://apkcombo.com/d?u=<url-safe base64 of https://download.pureapk.com/b/XAPK/...>
-#
-# dl_apkcombo used to take the first link it could find, which is always the first ABI
-# on the page (armeabi-v7a for atvTools), so every arch build fetched the same 32-bit
-# bundle under an arm64 file name - the defect just fixed on APKPure, here.
-#
-# Version scoping needs no handling: the page requested is already
-# /download/phone-<version>-apk, so the first row inside a group is the newest shown.
-#
-# A fat row (its header names two ABIs with a '+', e.g. "arm64-v8a + armeabi-v7a") also
-# satisfies a specific ABI, but only when the page has no single-ABI row for it - the
-# narrow artifact is what the output file name promises.
-#
-# Returns 1 when the page has no row for this ABI; the caller then keeps the first link
-# it saw on any page and says so, rather than failing the source silently.
-_apkcombo_pick_link() { # $1=page html  $2=arch
-	local abi flat lnk hit
-	case "$2" in
-		arm64-v8a | arm64) abi='arm64[-_]v8a' ;;
-		arm-v7a | arm) abi='armeabi[-_]v7a' ;;
-		x86_64) abi='x86_64' ;;
-		x86) abi='x86' ;;
-		all | universal) abi='' ;;
-		*) return 1 ;;
-	esac
-	# Links wrap across newlines in the markup, so flatten before matching. .*? stops at
-	# the first link after the matched header, and \K drops everything up to the URL.
-	flat=$(tr -d '\n\r' <<<"$1")
-	# Both link forms occur on this site and the difference is per app, not per release:
-	# apps APKCombo hosts themselves link through /r2?u= to their own Cloudflare R2
-	# bucket (YouTube does), apps they do not link through /d?u= to download.pureapk.com
-	# and from there to apkpure.com (atvTools does). Only the first makes APKCombo an
-	# independent source, so neither form may be dropped.
-	lnk='(?:https://apkcombo\.com/d\?u=|/r2\?u=)[^"]+'
-	# A header naming more than one ABI - comma or '+' separated, e.g.
-	# <code>arm64-v8a, armeabi-v7a, x86, x86_64</code> - is the universal row. It wins
-	# over a per-ABI row for the same reason as on APKPure: one download covers every
-	# arch in the matrix, so the source is hit once per app rather than once per arch.
-	if [ -z "$abi" ]; then
-		hit=$(printf '%s' "$flat" | grep -oP "<code>[^<]*[+,][^<]*</code>.*?href=\"\\K$lnk" | head -1) || true
-	else
-		hit=$(printf '%s' "$flat" | grep -oP "<code>[^<]*${abi}[^<]*[+,][^<]*</code>.*?href=\"\\K$lnk" | head -1) || true
-		[ -z "$hit" ] && hit=$(printf '%s' "$flat" | grep -oP "<code>${abi}</code>.*?href=\"\\K$lnk" | head -1) || true
-	fi
-	[ -n "$hit" ] && printf '%s\n' "$hit"
-}
-# What extension the bytes APKCombo is about to serve really have.
-#
-# The storage object key and the delivered file disagree for split bundles: the bucket
-# holds "<sha>.apks" while the presigned URL overrides the response with
-#
-#   response-content-disposition=attachment; filename="<App>_<ver>_apkcombo.com.xapk"
-#   response-content-type=application/xapk-package-archive
-#
-# Naming the sidecar from the key labelled those bytes ".apks", so the identical
-# artifact arriving from APKPure (…-arm-v7a.xapk) and from APKCombo (…-arm-v7a.apks)
-# took two cache entries and two release assets, and the file name misdescribed its
-# content. The disposition is the server's own statement of what the file is, so it
-# wins; the key remains the fallback for link forms that carry no disposition. Those
-# values arrive percent-encoded twice over, hence two rounds of decoding before matching.
-_apkcombo_served_ext() { # $@=urls to inspect
-	local served
-	served=$(printf '%s\n' "$@" | sed 's/%25/%/g; s/%22/"/g; s/%3D/=/g; s/%3B/;/g')
-	grep -qiE 'filename=[^&;"]*\.xapk' <<<"$served" && { echo xapk; return; }
-	grep -qiE 'filename=[^&;"]*\.apks' <<<"$served" && { echo apks; return; }
-	grep -qi 'xapk' <<<"$served" && { echo xapk; return; }
-	echo apks
-}
-dl_apkcombo() {
-	local _url=$1 version=$2 output=$3 arch=${4:-} _dpi=${5:-}
-	local html="" dl_url="" final_url checkin page_url page compact_page any_url=""
-
-	if [ -n "$version" ]; then
-		local sfxs=("apk" "xapk" "apks")
-	else
-		local sfxs=("apk")
-	fi
-
-	for sfx in "${sfxs[@]}"; do
-		if [ -n "$version" ]; then
-			local safe_version="${version// /-}"
-			page_url="https://apkcombo.com/search/${__APKCOMBO_PKG__}/download/phone-${safe_version}-${sfx}"
-		else
-			page_url="https://apkcombo.com/search/${__APKCOMBO_PKG__}/download/apk"
-		fi
-
-		_cf_get "$page_url" "https://apkcombo.com/" || continue
-		page="$html"
-		compact_page=$(tr '\n' ' ' <<<"$page")
-
-		if [ -n "$version" ]; then
-			local page_vername
-			page_vername=$(echo "$page" | grep -oP '<span class="vername">\K[^<]+' | head -1) || true
-			if [ -n "$page_vername" ] && ! echo "$page_vername" | grep -qFi "$version"; then
-				wpr "Version mismatch on APKCombo: requested '$version' but found '$page_vername'"
-				continue
-			fi
-		fi
-
-		dl_url=$(_apkcombo_pick_link "$page" "$arch") || true
-		if [ -z "$dl_url" ]; then
-			# No row labelled for this arch here. Remember any link on the page, but keep
-			# looking: the next suffix page may still have a labelled row, and a labelled
-			# artifact beats an unverified one.
-			local any_link
-			any_link=$(tr -d '\n\r' <<<"$page" | grep -oP 'https://apkcombo\.com/d\?u=[A-Za-z0-9_=+/%-]+' | head -1) || true
-			[ -z "$any_url" ] && any_url="$any_link"
-		fi
-		[ -z "$dl_url" ] && dl_url=$(echo "$page" | grep -oP '(?<=a href=")https://download\.apkcombo\.com/[^"]+' | head -1) || true
-		[ -z "$dl_url" ] && dl_url=$(echo "$page" | grep -oP '(?<=a href=")/r2[^"]+' | head -1) || true
-		[ -z "$dl_url" ] && dl_url=$(echo "$compact_page" | grep -oP '"download_url"\s*:\s*"\K[^"]+' | head -1 | sed 's#\\/#/#g') || true
-		[ -z "$dl_url" ] && dl_url=$(echo "$compact_page" | grep -oP '"url"\s*:\s*"\Khttps://download\.apkcombo\.com/[^"]+' | head -1 | sed 's#\\/#/#g') || true
-		[ -z "$dl_url" ] && dl_url=$(echo "$compact_page" | grep -oP 'https://download\.apkcombo\.com/[^"'"'"' <>]+' | head -1 | sed 's#\\/#/#g') || true
-		[ -z "$dl_url" ] && dl_url=$(echo "$compact_page" | grep -oP '/r2\?u=[^"'"'"' <>]+' | head -1 | sed 's#\\/#/#g') || true
-
-		if [ -n "$dl_url" ]; then
-			break
-		fi
-	done
-
-	if [ -z "$dl_url" ] && [ -n "$any_url" ]; then
-		# Same as APKPure: this link's real ABI is decided by its bytes downstream, not
-		# by the unlabelled URL here. It is fingerprinted into the download-link index and
-		# then judged by the arch-honesty gate in build_rv (docs/decisions/0007).
-		wpr "APKCombo lists no '$arch' variant for '${__APKCOMBO_PKG__}'; using the first link on the page, which may carry a different ABI"
-		dl_url="$any_url"
-	fi
-
-	[ -z "$dl_url" ] && { epr "Could not find APK link on APKCombo"; return 1; }
-	[[ "$dl_url" != http* ]] && dl_url="https://apkcombo.com${dl_url}"
-	dl_url=$(echo "$dl_url" | sed 's/\\u0026/\&/g; s/&amp;/\&/g')
-
-	if [[ "$dl_url" == *apkcombo.com/d\?u=* ]]; then
-		# Tokenised wrapper: it carries its own signed path, so the checkin parameters the
-		# old /r2 form expected must not be appended to it, and it resolves to the file
-		# through a redirect chain that ends on another host entirely.
-		final_url="$dl_url"
-	elif [[ "$dl_url" == https://apkcombo.com/r2\?u=* ]]; then
-		final_url=$(python - <<'PYC' "$dl_url"
-import sys, urllib.parse
-u=sys.argv[1]
-q=urllib.parse.urlparse(u).query
-raw=urllib.parse.parse_qs(q).get('u',[''])[0]
-decoded=urllib.parse.unquote(raw)
-parts=urllib.parse.urlsplit(decoded)
-query=urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
-encoded=urllib.parse.urlunsplit((
-    parts.scheme,
-    parts.netloc,
-    urllib.parse.quote(parts.path, safe='/'),
-    urllib.parse.urlencode(query, doseq=True, safe='/:_-.'),
-    parts.fragment,
-))
-print(encoded)
-PYC
-		) || return 1
-	else
-		checkin=$(req "https://apkcombo.com/checkin" -) || true
-		if [ -n "$checkin" ] && [[ "$dl_url" != *fp=* ]]; then
-			if [[ "$dl_url" == *\?* ]]; then
-				dl_url="${dl_url}&${checkin}"
-			else
-				dl_url="${dl_url}?${checkin}"
-			fi
-		fi
-		final_url=$(curl -s -o /dev/null -w "%{url_effective}" -L --max-redirs 10 \
-			-H "User-Agent: ${user_agent:-$DEFAULT_UA}" \
-			-H "Referer: $page_url" "$dl_url") || return 1
-	fi
-
-	# Learned link index (see dl_apkpure): adopt without a fetch, skip a known wrong
-	# ABI without a fetch, otherwise fetch once and remember what the bytes are.
-	local _idx=""
-	_idx=$(_dlurl_index_lookup "$final_url" "$arch") || true
-	if [ "$_idx" = REJECT ]; then
-		wpr "APKCombo link is known to serve a different ABI than '$arch'; skipping source without re-download"
-		return 1
-	fi
-
-	pr "Downloading from APKCombo: $final_url"
-	# The redirect chain from apkcombo.com -> download.pureapk.com -> data.winudf.com
-	# forbids cross-origin referers from apkcombo.com (pureapk treats it as hotlinking
-	# and redirects to apkpure.com/url?e=2 which 403s). Send with no referer.
-	if [ -n "$_idx" ]; then
-		cp -f "$_idx" "$output" || { rm -f "$output"; return 1; }
-		pr "Adopting cached APKCombo download for '$final_url' (no re-download)"
-	else
-		if ! _cf_cffi_download "$final_url" "$output" ""; then
-			rm -f "$output" 2>/dev/null
-			curl -L --fail -s -S --connect-timeout 30 --max-time 300 \
-				-H "User-Agent: ${user_agent:-$DEFAULT_UA}" \
-				"$final_url" -o "$output" || { rm -f "$output"; return 1; }
-		fi
-		_dlurl_index_record "$final_url" "$output"
-	fi
-	if ! unzip -l "$output" >/dev/null 2>&1; then
-		epr "Downloaded file from APKCombo is not a valid zip"
-		rm -f "$output"
-		return 1
-	fi
-	if echo "$final_url$dl_url" | grep -qi 'xapk\|\.apks'; then
-		local ext
-		ext=$(_apkcombo_served_ext "$final_url" "$dl_url")
-		if ! _apkpure_install_xapk "$output" "${output}.extracted"; then
-			rm -f "$output" "${output}.extracted"
-			return 1
-		fi
-		if [ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" = true ]; then
-			cp -f "$output" "${output%.apk}.${ext}"
-		fi
-		mv "${output}.extracted" "$output"
-	fi
-}
-
-
-# -------------------- uptodown --------------------
-get_uptodown_resp() {
-	local url="${1}"
-	local clean_url="${url%/versions}"
-	clean_url="${clean_url%/download}"
-	clean_url="${clean_url%/}"
-	__UPTODOWN_CLEAN_URL__="$clean_url"
-	[ -n "${__DL_RESP_CACHE__["uptodown_resp_$url"]:-}" ] && return 0
-	__DL_RESP_CACHE__["uptodown_resp_$url"]="$clean_url"
-	return 0
-}
-
-get_uptodown_vers() {
-	local py_cmd=""
-	if command -v python3 >/dev/null 2>&1; then
-		py_cmd="python3"
-	elif command -v python >/dev/null 2>&1; then
-		py_cmd="python"
-	fi
-
-	local py_script="${CWD}/scripts/uptodown.py"
-	[ ! -f "$py_script" ] && [ -n "${BASH_SOURCE[0]:-}" ] && py_script="$(dirname "${BASH_SOURCE[0]}")/uptodown.py"
-
-	local allow_all="${__AAV__:-false}"
-	if [ -n "$py_cmd" ] && [ -f "$py_script" ] && [ -n "${__UPTODOWN_CLEAN_URL__:-}" ]; then
-		local py_vers
-		if py_vers=$("$py_cmd" "$py_script" vers "$__UPTODOWN_CLEAN_URL__" "$allow_all" 2>/dev/null) && [ -n "$py_vers" ]; then
-			echo "$py_vers"
-			return 0
-		fi
-	fi
-
-	local vers
-	vers=$(grep -oP '<span class="version">\K[^<]+' <<<"${__UPTODOWN_RESP__:-}" || true)
-	if [ -z "$vers" ] && [ -n "${HTMLQ:-}" ] && [ -x "$HTMLQ" ]; then
-		vers=$($HTMLQ --text ".version" <<<"${__UPTODOWN_RESP__:-}" 2>/dev/null || true)
-	fi
-	if [ "$allow_all" = false ]; then
-		vers=$(grep -iv "\(beta\|alpha\|secondary\)" <<<"$vers" || true)
-	fi
-	echo "$vers"
-}
-
-get_uptodown_pkg_name() {
-	local py_cmd=""
-	if command -v python3 >/dev/null 2>&1; then
-		py_cmd="python3"
-	elif command -v python >/dev/null 2>&1; then
-		py_cmd="python"
-	fi
-
-	local py_script="${CWD}/scripts/uptodown.py"
-	[ ! -f "$py_script" ] && [ -n "${BASH_SOURCE[0]:-}" ] && py_script="$(dirname "${BASH_SOURCE[0]}")/uptodown.py"
-
-	if [ -n "$py_cmd" ] && [ -f "$py_script" ] && [ -n "${__UPTODOWN_CLEAN_URL__:-}" ]; then
-		local py_pkg
-		if py_pkg=$("$py_cmd" "$py_script" pkg "$__UPTODOWN_CLEAN_URL__" 2>/dev/null) && [ -n "$py_pkg" ]; then
-			echo "$py_pkg"
-			return 0
-		fi
-	fi
-
-	local pkg
-	pkg=$(grep -oP 'play\.google\.com/store/apps/details\?id=\K[a-zA-Z0-9_.]+' <<<"${__UPTODOWN_RESP_PKG__:-}${__UPTODOWN_RESP__:-}" | head -1) || true
-	if [ -z "$pkg" ] && [ -n "${HTMLQ:-}" ] && [ -x "$HTMLQ" ]; then
-		pkg=$($HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"${__UPTODOWN_RESP_PKG__:-}" 2>/dev/null || true)
-	fi
-	echo "$pkg"
-}
-
-dl_uptodown() {
-	local uptodown_dlurl=$1 version=$2 output=$3 arch=$4 _dpi=$5
-	# Keep the build-arch token for the link index; $arch is remapped to the store's
-	# ABI spelling below for the resolver, and the index keys speak build tokens.
-	local _arch_f="$arch"
-	if [ "$arch" = "arm-v7a" ]; then arch="armeabi-v7a"; fi
-
-	local py_cmd=""
-	if command -v python3 >/dev/null 2>&1; then
-		py_cmd="python3"
-	elif command -v python >/dev/null 2>&1; then
-		py_cmd="python"
-	fi
-
-	local py_script="${CWD}/scripts/uptodown.py"
-	[ ! -f "$py_script" ] && [ -n "${BASH_SOURCE[0]:-}" ] && py_script="$(dirname "${BASH_SOURCE[0]}")/uptodown.py"
-
-	local errf="${TEMP_DIR}/uptodown_resolve_$$.err"
-	if [ -n "$py_cmd" ] && [ -f "$py_script" ]; then
-		local py_info="" attempt
-		# Retry: Uptodown's API/auth endpoints are bot-gated and can throw
-		# intermittently (HTTP 403/503 or a JSON error) from datacenter IPs
-		# like GitHub runners. A few short-backoff attempts ride out transient
-		# blocks; stderr is captured (not discarded) so a hard failure reports
-		# its real cause instead of a blank "Failed to resolve".
-		for attempt in 1 2 3; do
-			if py_info=$("$py_cmd" "$py_script" download-url "$uptodown_dlurl" "$version" "$arch" 2>"$errf") && [ -n "$py_info" ]; then
-				break
-			fi
-			py_info=""
-			if [ "$attempt" -lt 3 ]; then
-				sleep $((attempt * 2))
-			fi
-		done
-		if [ -n "$py_info" ]; then
-			local cdn_url is_bundle
-			cdn_url=$(cut -f1 <<<"$py_info")
-			is_bundle=$(cut -f2 <<<"$py_info")
-
-			pr "Downloading from Uptodown CDN: $cdn_url"
-			# Learned link index (see dl_apkpure): adopt, skip, or fetch-and-remember.
-			local _idx=""
-			_idx=$(_dlurl_index_lookup "$cdn_url" "$_arch_f") || true
-			if [ "$_idx" = REJECT ]; then
-				wpr "Uptodown link is known to serve a different ABI than '$_arch_f'; skipping source without re-download"
-				rm -f "$errf"
-				return 1
-			fi
-			if [ "$is_bundle" = "true" ]; then
-				local bundle="${output%.apk}.apkm"
-				if [ -n "$_idx" ]; then
-					cp -f "$_idx" "$bundle" || { rm -f "$errf"; return 1; }
-					pr "Adopting cached Uptodown download for '$cdn_url' (no re-download)"
-				else
-					req "$cdn_url" "$bundle" || { rm -f "$errf"; return 1; }
-					_dlurl_index_record "$cdn_url" "$bundle"
-				fi
-				_bundle_to_apk "$bundle" "${output}" || { rm -f "$bundle" "$errf"; return 1; }
-				[ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" != true ] && rm -f "$bundle"
-			else
-				if [ -n "$_idx" ]; then
-					cp -f "$_idx" "${output}" || { rm -f "$errf"; return 1; }
-					pr "Adopting cached Uptodown download for '$cdn_url' (no re-download)"
-				else
-					req "$cdn_url" "${output}" || { rm -f "$errf"; return 1; }
-					_dlurl_index_record "$cdn_url" "${output}"
-				fi
-			fi
-			rm -f "$errf"
-			return 0
-		fi
-	fi
-
-	local reason=""
-	if [ -f "$errf" ]; then
-		reason=$(tail -1 "$errf" 2>/dev/null)
-	fi
-	epr "Failed to resolve Uptodown download URL for $uptodown_dlurl version $version: ${reason:-unknown error}"
-	rm -f "$errf"
-	return 1
-}
-
-# -------------------- archive --------------------
-dl_archive() {
-	local url=$1 version=$2 output=$3 arch=$4 is_bundle=${5:-false} get_latest_ver=${6:-false} version_code=${7:-}
-	local path="" version_f=${version// /}
-	local norm_resp="${__ARCHIVE_RESP__//$'\r'/}"
-	if [ -n "$version_code" ]; then
-		for a in "${arch// /}" "all"; do
-			for ext in "apk" "apkm" "xapk" "apks" "apk.apkm" "apk.xapk" "apk.apks"; do
-				while IFS= read -r p; do
-					if [[ "$p" == *"${version_f#v}-${version_code}-${a}.${ext}" ]]; then
-						path="$p"
-						break 3
-					fi
-				done <<<"$norm_resp"
-			done
-		done
-	fi
-	if [ -z "$path" ]; then
-		for a in "${arch// /}" "all"; do
-			for ext in "apk" "apkm" "xapk" "apks" "apk.apkm" "apk.xapk" "apk.apks"; do
-				while IFS= read -r p; do
-					if [[ "$p" == *"${version_f#v}-${a}.${ext}" ]]; then
-						path="$p"
-						break 3
-					fi
-				done <<<"$norm_resp"
-			done
-		done
-	fi
-	if [ -z "$path" ]; then
-		epr "Version ${version} with arch ${arch} not found in archive"
-		return 1
-	fi
-	case "${path##*.}" in
-		apk)
-			req "${url}/${path}" "$output"
-			;;
-		apkm|xapk|apks)
-			local bundle="${output%.apk}.${path##*.}"
-			req "${url}/${path}" "$bundle" || return 1
-			_bundle_to_apk "$bundle" "${output}" || { rm -f "$bundle"; return 1; }
-			if [ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" != true ]; then
-				rm -f "$bundle"
-			fi
-			;;
-		*)
-			epr "Unsupported archive file type for ${path}"
-			return 1
-			;;
-	esac
-}
-get_archive_resp() {
-	local url="${1}"
-	if [ -n "${__DL_RESP_CACHE__["archive_resp_$url"]:-}" ]; then
-		__ARCHIVE_RESP__="${__DL_RESP_CACHE__["archive_resp_$url"]}"
-		__ARCHIVE_PKG_NAME__="${__DL_RESP_CACHE__["archive_pkg_$url"]}"
-		return 0
-	fi
-	local r
-	r=$(req "$url" -)
-	if [ -z "$r" ]; then return 1; else __ARCHIVE_RESP__=$(sed -n 's;^<a href="\(.*\)"[^"]*;\1;p' <<<"$r"); fi
-	__ARCHIVE_PKG_NAME__=$(awk -F/ '{print $NF}' <<<"$url")
-	__DL_RESP_CACHE__["archive_resp_$url"]="$__ARCHIVE_RESP__"
-	__DL_RESP_CACHE__["archive_pkg_$url"]="$__ARCHIVE_PKG_NAME__"
-}
-get_archive_vers() {
-	if command -v python3 >/dev/null 2>&1 || command -v python >/dev/null 2>&1; then
-		local py_bin="python3"
-		command -v python3 >/dev/null 2>&1 || py_bin="python"
-		"$py_bin" -c "
-import sys, re
-pat = re.compile(r'^[^-]*-|(-[0-9]+)?-(all|arm64-v8a|arm-v7a|x86|x86_64)\.(apk|apkm|xapk|apks)$')
-for line in sys.stdin:
-    l = line.strip()
-    if l:
-        print(pat.sub('', l))
-" <<<"$__ARCHIVE_RESP__"
-	else
-		sed -E 's/^[^-]*-//;s/(-[0-9]+)?-(all|arm64-v8a|arm-v7a|x86|x86_64)\.(apk|apkm|xapk|apks)$//g' <<<"$__ARCHIVE_RESP__"
-	fi
-}
-get_archive_pkg_name() { echo "$__ARCHIVE_PKG_NAME__"; }
-
-# -------------------- github --------------------
-dl_github() {
-    local url=$1 version=$2 output=$3 arch=$4 is_bundle=${5:-false} get_latest_ver=${6:-false}
-    local path="" version_f=${version// /}
-    local repo=$(cut -d/ -f4-5 <<<"$url")
-    local exact_tag=""
-    while IFS= read -r t; do
-        [ -z "$t" ] && continue
-        if [ "$t" = "v${version_f#v}" ] || [ "$t" = "${version_f#v}" ]; then
-            exact_tag="$t"
-            break
-        fi
-    done <<<"$__GITHUB_TAG__"
-
-    if [ -z "$exact_tag" ]; then
-        local tag_lines
-        tag_lines=$(grep -c . <<<"$__GITHUB_TAG__" || true)
-        if [ "$tag_lines" -eq 1 ]; then
-            exact_tag="$__GITHUB_TAG__"
-        else
-            exact_tag="v${version_f#v}"
-        fi
-    fi
-    local base_url="https://github.com/${repo}/releases/download/${exact_tag}"
-    
-local regex=""
-    if [ -n "${args[github_regex]:-}" ]; then
-        if [[ "${args[github_regex]}" == *":"* ]]; then
-            regex=$(echo "${args[github_regex]}" | awk -F'|' -v a="$arch" '{
-                for(i=1;i<=NF;i++) {
-                    split($i, kv, ":")
-                    gsub(/^[ \t'\''"]+|[ \t'\''"]+$/, "", kv[1])
-                    if(kv[1] == a) {
-                        gsub(/^[ \t'\''"]+|[ \t'\''"]+$/, "", kv[2])
-                        print kv[2]
-                        exit
-                    }
-                }
-            }')
-        else
-            regex="${args[github_regex]}"
-        fi
-    fi
-
-    if [ -n "$regex" ] && [ "$dl_p" != "cache_repo" ]; then
-        regex="${regex//\{version\}/${version_f#v}}"
-        regex="${regex//\{arch\}/${arch}}"
-        path=$(grep -iE "$regex" <<<"$__GITHUB_RESP__" | head -1)
-    else
-        # Matches the exact file selection logic from dl_archive
-        local norm_resp="${__GITHUB_RESP__//$'\r'/}"
-        for a in "${arch// /}" "all"; do
-            for ext in "apk" "apkm" "xapk" "apks" "apk.apkm" "apk.xapk" "apk.apks"; do
-                while IFS= read -r p; do
-                    if [[ "$p" == *"${version_f#v}-${a}.${ext}" ]]; then
-                        path="$p"
-                        break 3
-                    fi
-                done <<<"$norm_resp"
-            done
-        done
-    fi
-    
-    path="${path%$'\r'}"
-    if [ -z "$path" ]; then
-        epr "Version ${version} with arch ${arch} not found in github"
-        return 1
-    fi
-    
-    local ext="${path##*.}"
-    case "$ext" in
-        apk)
-            req "${base_url}/${path}" "$output"
-            ;;
-        apkm|xapk|apks)
-			local bundle="${output%.apk}.${ext}"
-			req "${base_url}/${path}" "$bundle" || return 1
-			_bundle_to_apk "$bundle" "$output" || { rm -f "$bundle"; return 1; }
-			if [ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" != true ]; then
-				rm -f "$bundle"
-			fi
-            ;;
-        *)
-            epr "Unsupported github file type for ${path}"
-            return 1
-            ;;
-    esac
-}
-
-get_github_resp() {
-	local url="${1}"
-	local cache_key="${url}_${pkg_name:-default}"
-	if [ -n "${__DL_RESP_CACHE__["github_resp_$cache_key"]:-}" ]; then
-		__GITHUB_RESP__="${__DL_RESP_CACHE__["github_resp_$cache_key"]}"
-		__GITHUB_PKG_NAME__="${__DL_RESP_CACHE__["github_pkg_$cache_key"]}"
-		__GITHUB_URL__="${__DL_RESP_CACHE__["github_url_$cache_key"]}"
-		__GITHUB_TAG__="${__DL_RESP_CACHE__["github_tag_$cache_key"]}"
-		return 0
-	fi
-	local repo tag resp endpoint
-	
-	repo=$(cut -d/ -f4-5 <<<"$url")
-	tag=${url%/}
-	tag=${tag##*/}
-	
-	if [ "$tag" = "${repo##*/}" ]; then
-		if [ -n "${resolved_version:-}" ]; then
-			tag="v${resolved_version#v}"
-		elif [ -n "${version:-}" ] && ! isoneof "$version" auto latest beta exp; then
-			tag="v${version#v}"
-		else
-			tag="latest"
-		fi
-	fi
-	
-	if [ "$tag" = "latest" ]; then
-		endpoint=""
-	else
-		endpoint="tags/${tag}"
-	fi
-	
-	if ! resp=$(gh_req "https://api.github.com/repos/${repo}/releases${endpoint:+/$endpoint}" -); then
-		if [ "$tag" != "latest" ] && [[ "$tag" == v* ]]; then
-			tag="${tag#v}"
-			endpoint="tags/${tag}"
-			if ! resp=$(gh_req "https://api.github.com/repos/${repo}/releases/${endpoint}" -); then
-				return 1
-			fi
-		else
-			return 1
-		fi
-	fi
-
-	if [ "$tag" = "latest" ]; then
-		local jq_filter=""
-		if [ -n "${args[github_release_regex]:-}" ]; then
-			jq_filter="[.[] | select((.name // \"\") | test(\"${args[github_release_regex]}\"; \"i\"))]"
-		else
-			local variant_l="${table,,} ${args[variant]:-} ${args[brand]:-}"
-			if [[ "$variant_l" == *"beta"* ]]; then
-				jq_filter='[.[] | select((.name // "") | test("(^|[^a-zA-Z])Beta([^a-zA-Z]|$)"; "i"))]'
-			elif [[ "$variant_l" == *"nightly"* ]]; then
-				jq_filter='[.[] | select((.name // "") | test("(^|[^a-zA-Z])Nightly([^a-zA-Z]|$)"; "i"))]'
-			elif [[ "$variant_l" == *"alpha"* ]]; then
-				jq_filter='[.[] | select((.name // "") | test("(^|[^a-zA-Z])Alpha([^a-zA-Z]|$)"; "i"))]'
-			elif [[ "$variant_l" == *"canary"* ]]; then
-				jq_filter='[.[] | select((.name // "") | test("(^|[^a-zA-Z])Canary([^a-zA-Z]|$)"; "i"))]'
-			else
-				# Stable / default: exclude prereleases and channel-tagged builds if stable releases exist
-				jq_filter='[.[] | select((.prerelease == false) and (((.name // "") | test("(^|[^a-zA-Z])(Beta|Nightly|Alpha|Canary|Dev)([^a-zA-Z]|$)"; "i")) | not))]'
-			fi
-		fi
-		if [ -n "$jq_filter" ]; then
-			local filtered_resp
-			if filtered_resp=$(jq -e "$jq_filter" <<<"$resp" 2>/dev/null) && [ -n "$filtered_resp" ] && [ "$filtered_resp" != "[]" ]; then
-				resp="$filtered_resp"
-			fi
-		fi
-		tag=$(jq -r '.[].tag_name' <<<"$resp")
-		__GITHUB_RESP__=$(jq -r '.[].assets[]? | select(.name | test("\\.(apk|apkm|xapk|apks)$")) | .name' <<<"$resp")
-	else
-		__GITHUB_RESP__=$(jq -r '.assets[]? | select(.name | test("\\.(apk|apkm|xapk|apks)$")) | .name' <<<"$resp")
-	fi
-	
-	if [ -z "$__GITHUB_RESP__" ]; then return 1; fi
-	
-	# Grab the package name exactly like how get_archive_vers isolates the version
-	__GITHUB_PKG_NAME__=$(get_github_pkg_name)
-	[ -z "$__GITHUB_PKG_NAME__" ] && __GITHUB_PKG_NAME__="${pkg_name:-}"
-	if [ -z "$__GITHUB_PKG_NAME__" ]; then return 1; fi
-	
-	local tag_lines
-	tag_lines=$(grep -c . <<<"$tag" || true)
-	if [ "$tag_lines" -eq 1 ]; then
-		__GITHUB_URL__="https://github.com/${repo}/releases/download/${tag}"
-	else
-		__GITHUB_URL__="https://github.com/${repo}/releases/download"
-	fi
-	__GITHUB_TAG__="$tag"
-	
-	__DL_RESP_CACHE__["github_resp_$cache_key"]="$__GITHUB_RESP__"
-	__DL_RESP_CACHE__["github_pkg_$cache_key"]="$__GITHUB_PKG_NAME__"
-	__DL_RESP_CACHE__["github_url_$cache_key"]="$__GITHUB_URL__"
-	__DL_RESP_CACHE__["github_tag_$cache_key"]="$__GITHUB_TAG__"
-}
-
-# Extracts version matching the archive logic: strips prefix (up to first '-') and suffix (arch/extension)
-get_github_vers() {
-    echo "$__GITHUB_TAG__" | sed 's/^v//'
-}
-
-# Extracts package name by stripping everything from the first hyphen '-' onwards
-get_github_pkg_name() {
-    local p
-    p=$(sed 's/-.*//' <<<"$__GITHUB_RESP__" | head -n 1)
-    if [ -n "$p" ] && [[ "$p" != *".apk"* ]]; then
-        echo "$p"
-    elif [ -n "${pkg_name:-}" ]; then
-        echo "$pkg_name"
-    fi
-}
-
-# -------------------- cache_repo --------------------
-get_cache_repo_resp() {
-	local url="${1}"
-	if [ -n "${__DL_RESP_CACHE__["cache_repo_resp_$url"]:-}" ]; then
-		__CACHE_REPO_RESP__="${__DL_RESP_CACHE__["cache_repo_resp_$url"]}"
-		__CACHE_REPO_PKG_NAME__="${__DL_RESP_CACHE__["cache_repo_pkg_$url"]}"
-		__CACHE_REPO_URL__="${__DL_RESP_CACHE__["cache_repo_url_$url"]}"
-		__CACHE_REPO_TAG__="${__DL_RESP_CACHE__["cache_repo_tag_$url"]}"
-		return 0
-	fi
-	local repo tag resp endpoint
-	__CACHE_REPO_MISS__=false
-
-	repo=$(cut -d/ -f4-5 <<<"$url")
-	tag=${url%/}
-	tag=${tag##*/}
-	endpoint="tags/${tag}"
-
-	# Ask for the status code as well, because "this package has never been uploaded"
-	# and "the API call broke" are different news to report: _req runs curl with --fail,
-	# so a 4xx/5xx returns nothing but the appended %{http_code}, and a success carries
-	# the code as the last three bytes after the body.
-	local raw="" call_rc=0 http_code=""
-	raw=$(gh_req "https://api.github.com/repos/${repo}/releases/${endpoint}" - -w '%{http_code}') || call_rc=$?
-	http_code="${raw: -3}"
-	if [[ ! "$http_code" =~ ^[0-9]{3}$ ]]; then http_code=""; fi
-	resp="${raw%"$http_code"}"
-	if [ -n "$http_code" ] && [ "$http_code" != "200" ]; then
-		if [ "$http_code" = "404" ]; then __CACHE_REPO_MISS__=true; fi
-		return 1
-	fi
-	if [ "$call_rc" != 0 ] || [ -z "$resp" ]; then return 1; fi
-
-	# Extract only supported file extensions
-	__CACHE_REPO_RESP__=$(jq -r '.assets[]? | select(.name | test("\\.(apk|apkm|xapk|apks)$")) | .name' <<<"$resp")
-	if [ -z "$__CACHE_REPO_RESP__" ]; then return 1; fi
-	
-	# Grab the package name exactly like how get_archive_vers isolates the version
-	__CACHE_REPO_PKGNAME__=$(sed 's/-.*//' <<<"$__CACHE_REPO_RESP__" | head -n 1)
-	if [ -z "$__CACHE_REPO_PKGNAME__" ]; then return 1; fi
-	
-	__CACHE_REPO_URL__="https://github.com/${repo}/releases/download/${tag}"
-	__CACHE_REPO_TAG__="$tag"
-	
-	__DL_RESP_CACHE__["cache_repo_resp_$url"]="$__CACHE_REPO_RESP__"
-	__DL_RESP_CACHE__["cache_repo_pkg_$url"]="$__CACHE_REPO_PKGNAME__"
-	__DL_RESP_CACHE__["cache_repo_url_$url"]="$__CACHE_REPO_URL__"
-	__DL_RESP_CACHE__["cache_repo_tag_$url"]="$__CACHE_REPO_TAG__"
-}
-
-get_cache_repo_vers() {
-    # cache_repo is never used for checking versions, only for downloading
-    echo "${__CACHE_REPO_TAG__#v}"
-}
-
-get_cache_repo_pkg_name() {
-    echo "${__CACHE_REPO_PKGNAME__:-$__CACHE_REPO_PKG_NAME__}"
-}
-
-dl_cache_repo() {
-    local url=$1 version=$2 output=$3 arch=$4 is_bundle=${5:-false} get_latest_ver=${6:-false} version_code=${7:-}
-    local path="" version_f=${version// /}
-	local base_url=${__CACHE_REPO_URL__:-$url}
-    
-    local regex=""
-    if [ -n "${args[cache_repo_regex]:-}" ]; then
-        if [[ "${args[cache_repo_regex]}" == *":"* ]]; then
-            regex=$(echo "${args[cache_repo_regex]}" | awk -F'|' -v a="$arch" '{
-                for(i=1;i<=NF;i++) {
-                    split($i, kv, ":")
-                    gsub(/^[ \t'\''"]+|[ \t'\''"]+$/, "", kv[1])
-                    if(kv[1] == a) {
-                        gsub(/^[ \t'\''"]+|[ \t'\''"]+$/, "", kv[2])
-                        print kv[2]
-                        exit
-                    }
-                }
-            }')
-        else
-            regex="${args[cache_repo_regex]}"
-        fi
-    fi
-
-    if [ -n "$regex" ]; then
-        regex="${regex//\{version\}/${version_f#v}}"
-        regex="${regex//\{arch\}/${arch}}"
-        path=$(grep -iE "$regex" <<<"$__CACHE_REPO_RESP__" | head -1)
-    else
-        # Matches the exact file selection logic from dl_archive
-        local norm_resp="${__CACHE_REPO_RESP__//$'\r'/}"
-        if [ -n "$version_code" ]; then
-            for a in "${arch// /}" "all"; do
-                for ext in "apk" "apkm" "xapk" "apks" "apk.apkm" "apk.xapk" "apk.apks"; do
-                    while IFS= read -r p; do
-                        if [[ "$p" == *"${version_f#v}-${version_code}-${a}.${ext}" ]]; then
-                            path="$p"
-                            break 3
-                        fi
-                    done <<<"$norm_resp"
-                done
-            done
-        fi
-        if [ -z "$path" ]; then
-            for a in "${arch// /}" "all"; do
-                for ext in "apk" "apkm" "xapk" "apks" "apk.apkm" "apk.xapk" "apk.apks"; do
-                    while IFS= read -r p; do
-                        if [[ "$p" == *"${version_f#v}-${a}.${ext}" ]]; then
-                            path="$p"
-                            break 3
-                        fi
-                    done <<<"$norm_resp"
-                done
-            done
-        fi
-    fi
-    
-    # Strip any \r from path just in case
-    path="${path%$'\r'}"
-    if [ -z "$path" ]; then
-        epr "Version ${version} with arch ${arch} not found in cache_repo"
-        return 1
-    fi
-    
-    local ext="${path##*.}"
-    case "$ext" in
-        apk)
-            req "${base_url}/${path}" "$output"
-            ;;
-        apkm|xapk|apks)
-			local bundle="${output%.apk}.${ext}"
-			req "${base_url}/${path}" "$bundle" || return 1
-			_bundle_to_apk "$bundle" "$output" || { rm -f "$bundle"; return 1; }
-			if [ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" != true ]; then
-				rm -f "$bundle"
-			fi
-            ;;
-        *)
-            epr "Unsupported cache_repo file type for ${path}"
-            return 1
-            ;;
-    esac
-}
-
-
-# -------------------- direct --------------------
-dl_direct() {
-	local url=$1 version=${2// /-} output=$3 arch=$4 _dpi=$5
-	req "$url" "${output}" || return 1
-}
-get_direct_vers() { cut -d- -f2 <<<"$__DIRECT_APKNAME__" | sed 's/\.\(apk\|xapk\|apks\|apkm\)$//'; }
-get_direct_pkg_name() { cut -d- -f1 <<<"$__DIRECT_APKNAME__" | sed 's/\.\(apk\|xapk\|apks\|apkm\)$//'; }
-get_direct_resp() { __DIRECT_APKNAME__=$(awk -F/ '{print $NF}' <<<"$1"); }
-# --------------------------------------------------
 
 patch_apk() {
 	local stock_input=$1 patched_apk=$2 patcher_args=$3 cli_jar=$4 patches_jar=$5 cli_source=$6
@@ -3606,11 +1599,6 @@ patch_apk() {
 		for j in "${p_jars[@]}"; do
 			p_args_modules+=" -m '$j'"
 		done
-		# Both tools sign the output themselves, so the identity has to reach them as
-		# arguments: -k <path> <storePass> <alias> <aliasPass>, same order in LSPatch
-		# (KeystoreSpec.of) and NPatch. Which store each can read is a per-tool fact -
-		# NPatch asks JCA for a BKS type, LSPatch for the JDK default (PKCS12) - so the
-		# registry names it. Placed before $patcher_args so a config can still override.
 		local ks_args="" ks_file="$RVB_KEYSTORE_P12"
 		if [ "${PATCHER_SIGNING:-false}" = true ]; then
 			if [ "${PATCHER_KEYSTORE_FORMAT:-pkcs12}" = bks ]; then
@@ -3645,9 +1633,6 @@ patch_apk() {
 	if [ "$PATCHER_FLOW" = instafel-workflow ]; then
 		local rel_tmp_dir="${patched_apk}-temporary-files"
 		mkdir -p "$rel_tmp_dir"
-		# Private copy of the patcher's per-user data dir (core_data/info.json):
-		# sibling builds sharing $HOME race on creating it. Lives under
-		# rel_tmp_dir, so it is cleaned up with the rest of the run's temp files.
 		local ifl_xdg="$rel_tmp_dir/xdg-data"
 		mkdir -p "$ifl_xdg"
 		_instafel_shadow_core "$cli_jar" "$patches_jar" "$rel_tmp_dir"
@@ -3669,8 +1654,8 @@ patch_apk() {
 			wdir="$rel_tmp_dir/$expected_base"
 		else
 			local proj_file
-			proj_file=$(find "$rel_tmp_dir" . -maxdepth 3 -type f -name "project.json" 2>/dev/null | grep "$expected_base" | head -n 1)
-			[ -z "$proj_file" ] && proj_file=$(find "$rel_tmp_dir" . -maxdepth 3 -type f -name "project.json" 2>/dev/null | head -n 1)
+			proj_file=$(find "$rel_tmp_dir" . -maxdepth 3 -type f -name "project.json" 2>/dev/null | grep "$expected_base" | head -1)
+			[ -z "$proj_file" ] && proj_file=$(find "$rel_tmp_dir" . -maxdepth 3 -type f -name "project.json" 2>/dev/null | head -1)
 			if [ -n "$proj_file" ]; then
 				wdir=$(dirname "$proj_file")
 				wdir="${wdir#./}"
@@ -3725,10 +1710,6 @@ patch_apk() {
 		fi
 	fi
 
-	# Morphe keeps a writable data root *next to its JAR* (morphe-data/). With
-	# parallel builds, siblings sharing the cached JAR would share — and purge —
-	# that directory, so each patch run executes from a private JAR copy in its
-	# own stage dir, removed right after patching. The cached JAR stays read-only.
 	local stage_jar="$cli_jar" stage_dir=""
 	if [ "${PATCHER_KIND:-}" = morphe ]; then
 		local sbase
@@ -3745,11 +1726,6 @@ patch_apk() {
 	local base_cmd="java -jar '$stage_jar' patch '$stock_input' -t '$tmp_dir' -o '$patched_apk' --keystore=$RVB_KEYSTORE \
 --keystore-entry-password=$RVB_KEYSTORE_PASS --keystore-password=$RVB_KEYSTORE_PASS --signer=$RVB_KEY_ALIAS --keystore-entry-alias=$RVB_KEY_ALIAS"
 
-	# Morphe writes a machine-readable summary of the run (-r): which patches applied,
-	# which failed, and per-step success. Other tools have no equivalent, so the
-	# stdout scrape in write_build_info stays the fallback. The path is deliberately
-	# under TEMP_DIR and never apk_cache_dir - build.yml lists that directory into the
-	# APK cache manifest, so a stray .json there would be published as a cache asset.
 	PATCH_RESULT_FILE=""
 	if [ "${PATCHER_KIND:-}" = morphe ]; then
 		if mkdir -p "${TEMP_DIR}/patch_results" 2>/dev/null; then
@@ -3788,7 +1764,6 @@ patch_apk() {
 		local cmd_short="${base_cmd}${p_args_short} ${all_ed} $patcher_args"
 	fi
 
-	# TODO: remove this later — revanced-cli needs -b to bypass build provenance checks
 	local cli_name=$(basename "$cli_jar")
 	if [ "${cli_name::8}" = revanced ]; then
 		cmd_long+=" -b"
@@ -3823,7 +1798,6 @@ patch_apk() {
 	fi
 }
 
-
 check_sig() {
 	local file=$1 pkg_name=$2
 	local sig
@@ -3850,18 +1824,9 @@ write_build_info() {
 	local brand=${11:-${args[brand]:-}}
 	local variant=${12:-${args[variant]:-}}
 	local sub_variant=${13:-${args[sub_variant]:-}}
-	# Raw filename arch token (e.g. arm64-v8a) — captured before `arch` is folded
-	# into `ext` below. The merge keys its per-arch version/applied-patch maps by
-	# it, matching what build_make_manifest.py re-derives from the built filename.
 	local arch_token="$arch"
 	local arch_orig="${args[arch]// /}"
 	if [ "$arch_orig" != "auto" ]; then ext="${arch}${ext}"; arch=""; fi
-	# Applied patches: morphe's -r summary when we have one (it lists every patch
-	# actually applied, defaults included, verified against morphe-desktop 1.15.1),
-	# otherwise scrape the CLI output.
-	#   revanced: INFO: "Patch Name" succeeded
-	#   morphe:   INFO: Applied: Patch Name
-	#   instafel: I: Patch 'Patch Name' loaded
 	local applied_json=""
 	if [ -n "${PATCH_RESULT_FILE:-}" ]; then
 		applied_json=$(_applied_from_result "$PATCH_RESULT_FILE")
@@ -3870,10 +1835,6 @@ write_build_info() {
 			failed_list=$(_failed_from_result "$PATCH_RESULT_FILE")
 			[ -n "$failed_list" ] && wpr "Morphe reported failed patches for '$key': $failed_list"
 		elif [ -n "$applied_json" ]; then
-			# An empty list from a tool that writes a summary is a real signal, not a
-			# parse miss - but it is also what a schema change would look like, so say
-			# which source produced it before anyone reads the empty catalog field as
-			# "this app has no patches".
 			wpr "Morphe result file for '$key' lists no applied patches (schema change?)"
 			applied_json=""
 		fi
@@ -3883,12 +1844,6 @@ write_build_info() {
 	fi
 	[[ "$applied_json" != \[* ]] && applied_json='[]'
 
-	# A name the config explicitly asked for that the run did not report applying means
-	# the catalog would advertise a patch that is not in the APK: usually the author
-	# renaming or dropping it, sometimes a version the patch no longer supports. Warn
-	# only - tools without a result file scrape less reliably, and an inclusive
-	# expansion lists every name the bundle offered, so "not applied" there can also
-	# mean "applied but unreported".
 	if [ "$applied_json" != "[]" ] && [ -n "${args[included_patches]:-}" ]; then
 		local inc_name missing_inc=""
 		while IFS= read -r inc_name; do
@@ -3901,18 +1856,9 @@ write_build_info() {
 		[ -n "$missing_inc" ] && wpr "Requested but not reported as applied for '$key':$missing_inc"
 	fi
 
-	# Warn (don't fail) when a tool that reports applied patches yields none —
-	# previously this degraded silently into an empty catalog field. xposed
-	# modules and instafel are excluded: xposed reports none by design, and
-	# instafel prints its names before the -o build step whose captured
-	# PATCH_OUTPUT we parse here (its run/build split makes the empty case
-	# legitimately common).
 	if [ "$applied_json" = "[]" ] && [ -n "$PATCH_OUTPUT" ] && [ "${PATCHER_FLOW:-}" = cli-patch ]; then
 		wpr "No applied patches parsed from ${PATCHER_KIND:-cli-patch} CLI output for '$key' — catalog may show an empty patch list."
 	fi
-	# One fragment per write (key+arch+ext suffixed, pid-guarded): concurrent
-	# build processes never touch the same file; merge_build_info folds them
-	# into $BUILD_JSON_FILE at the end of the run.
 	local frag_dir="${TEMP_DIR}/build_info" fid
 	mkdir -p "$frag_dir"
 	fid=$(tr -cs 'a-zA-Z0-9._-' '-' <<<"${key}|${arch}|${ext}")
@@ -3950,24 +1896,7 @@ write_build_info() {
 		} }' >"${frag_dir}/${fid}.$$.json"
 }
 
-# -- Duplicate-build detection (temp/hashes, temp/unchanged, state JSON) -----
-# Rebuilding an app whose patch inputs did not really change (a patch source
-# touching only shared/ — see issue #165) produces a logically identical APK,
-# and republishing it under a new build number falsely notifies updaters.
-# build_rv asks check_duplicate_build right after patch_apk: a verdict of
-# "unchanged" ends the table build before module packaging, and nothing is
-# copied to $BUILD_DIR, so no release record, note or manifest entry exists
-# for a duplicate. The reference store is state/build_content_hashes.json
-# on the data branch (fetch_data_branch.sh materialises it, the CI merge
-# step and commit_data_branch.sh publish it after a successful upload) —
-# deliberately NOT build.json or the website manifest: the hash is dedup
-# bookkeeping, not published metadata. The engine itself makes no network
-# calls for any of this, same stance as temp/failures.
-
-# Content fingerprint of an APK (md5 over the zip central directory, signing
-# and timestamps excluded — see .github/scripts/content_hash.py). Prints the
-# digest; empty rc=1 means "no verdict" (no python, unreadable archive).
-content_hash() { # $1=apk
+content_hash() {
 	local py=""
 	if command -v python3 >/dev/null 2>&1; then
 		py="python3"
@@ -3978,29 +1907,18 @@ content_hash() { # $1=apk
 	"$py" "${CWD}/.github/scripts/content_hash.py" "$1" 2>/dev/null || printf ''
 }
 
-# Published fingerprint for one dedup key, "" when the state file or the key
-# is absent (first build of that app+arch ever → publish, never guess).
-_dedup_recorded_hash() { # $1=channel $2=key
+_dedup_recorded_hash() {
 	local sf="state/build_content_hashes.json"
 	[ -f "$sf" ] || return 0
 	jq -r --arg chan "$1" --arg key "$2" '(.[$chan][$key] // "")' "$sf" 2>/dev/null || true
 }
 
-# Record a freshly built fingerprint for the CI merge step (tab-separated
-# channel/key/hash lines). Each process appends to its own file —
-# RVB_HASH_APPEND is pid-named by build.sh, so parallel children never share
-# an fd and no lock is needed; lines are short enough to stay atomic.
-_dedup_record_hash() { # $1=channel $2=key $3=hash
+_dedup_record_hash() {
 	[ -n "${RVB_HASH_APPEND:-}" ] || return 0
 	printf '%s\t%s\t%s\n' "$1" "$2" "$3" >>"$RVB_HASH_APPEND" 2>/dev/null || true
 }
 
-# Merge this build's hashes into the local state JSON. Only the ENFORCE mode
-# calls this: the local file doubles as the reference for later arch jobs in
-# the same run, and mutating it while merely measuring (log mode) would let
-# the observation period pollute its own baseline. The published copy on the
-# data branch still comes only from a successful-upload run (CI merge step).
-_dedup_store_hash() { # $1=channel $2=key $3=hash
+_dedup_store_hash() {
 	local sf="state/build_content_hashes.json" tmp
 	mkdir -p "${sf%/*}" 2>/dev/null || return 0
 	[ -f "$sf" ] || echo '{}' >"$sf"
@@ -4013,9 +1931,7 @@ _dedup_store_hash() { # $1=channel $2=key $3=hash
 	fi
 }
 
-# Append the unchanged record the parent build.sh and the CI steps read
-# (temp/unchanged/<slug>.json, upserted so both arches of one app agree).
-_dedup_write_unchanged() { # $1=label $2=app $3=version $4=arch $5=key $6=hash
+_dedup_write_unchanged() {
 	local dir="${RVB_UNCHANGED_DIR:-${TEMP_DIR}/unchanged}" slug
 	mkdir -p "$dir" 2>/dev/null || return 0
 	slug=$(failure_slug "$1")
@@ -4032,15 +1948,7 @@ _dedup_write_unchanged() { # $1=label $2=app $3=version $4=arch $5=key $6=hash
 	fi
 }
 
-# Verdict for one finished patched APK. rc 0 = identical to published (caller
-# skips the rest of the table build), rc 1 = changed / no verdict (publish).
-# Never touches the failure records: a duplicate is a skip, like the
-# download-exhaustion precedent, not something to report.
-check_duplicate_build() { # $1=apk $2=stem $3=label $4=app $5=version $6=arch
-	# off / local builds / a tool the registry deems hash-unstable: no check.
-	# A hash that wobbles across rebuilds of unchanged input would only ever
-	# say "changed" (dead weight), so eligibility is measured per tool before
-	# granting it the power to suppress a release.
+check_duplicate_build() {
 	[ "${RVB_DEDUP_MODE:-log}" != "off" ] || return 1
 	[ -n "${GITHUB_REPOSITORY:-}" ] || return 1
 	[ "${PATCHER_HASH_DEDUP_ELIGIBLE:-false}" = true ] || return 1
@@ -4058,9 +1966,6 @@ check_duplicate_build() { # $1=apk $2=stem $3=label $4=app $5=version $6=arch
 			_dedup_write_unchanged "$3" "$4" "$5" "$6" "$key" "$hash"
 			return 0
 		fi
-		# Measurement phase: report what WOULD be skipped, keep publishing,
-		# and do not append — the reference set must stay exactly the
-		# published one while the numbers are being watched.
 		pr "Dedup [log]: '$key' identical to published hash ${rec} (would skip)."
 		return 1
 	fi
@@ -4071,11 +1976,6 @@ check_duplicate_build() { # $1=apk $2=stem $3=label $4=app $5=version $6=arch
 	return 1
 }
 
-# Recombine the per-write fragments from $TEMP_DIR/build_info into
-# $BUILD_JSON_FILE. Called once by build.sh after all builds (serial or
-# pooled) finish; fragment filenames sort in creation order, so the first
-# fragment for a key provides the entry and later ones only union exts and
-# fill empty scalars — mirroring the old sequential update semantics.
 merge_build_info() {
 	local frag_dir="${TEMP_DIR}/build_info"
 	[ -d "$frag_dir" ] || return 0
@@ -4097,18 +1997,13 @@ merge_build_info() {
 				if ((.[$e.key].applied_patches | length) == 0) and (($e.value.applied_patches | length) > 0)
 				then .[$e.key].applied_patches = $e.value.applied_patches else . end
 			end)
-			# Per-arch truth (additive): a single build can resolve different
-			# versions/patch-sets per arch (an arch falling back to an older build),
-			# which the first-wins scalars above lose. Key the concrete arch token to
-			# the version and applied patches of this fragment so downstream readers
-			# use the values of each file. The scalar version/applied_patches stay
-			# unchanged for backward compatibility.
 			| .[$e.key].archVersion = ((.[$e.key].archVersion // {}) + {($e.value.arch_token // "all"): ($e.value.version // "")})
 			| .[$e.key].archApplied  = ((.[$e.key].archApplied  // {}) + {($e.value.arch_token // "all"): ($e.value.applied_patches // [])})
 		)
 	' "${files[@]}" >"${BUILD_JSON_FILE}.merge-tmp" && mv -f "${BUILD_JSON_FILE}.merge-tmp" "$BUILD_JSON_FILE"
 	rm -rf "$frag_dir"
 }
+
 verify_downloaded_apk() {
 	local stock_apk=$1
 	local pkg_name=$2
@@ -4116,7 +2011,6 @@ verify_downloaded_apk() {
 	local sig_op
 
 	if _bundle_ext_of "$stock_apk" >/dev/null 2>&1; then
-		# bundle stock: signature lives on base.apk
 		local tmpb="${TEMP_DIR}/verify_base_$$.apk"
 		if ! _bundle_extract_base "$stock_apk" "$tmpb"; then
 			epr "Cannot extract base.apk from bundle $stock_apk"
@@ -4161,23 +2055,8 @@ verify_downloaded_apk() {
 	return 0
 }
 
-# Which ABIs an artifact actually carries, read off its contents.
-#
-# Prints one build-arch token per line (arm64-v8a, arm-v7a, x86_64, x86), nothing when
-# the artifact has no ABI-specific content, and fails when the file is not a zip.
-# Two shapes have to be understood, and only the first ever was:
-#   merged apk               -> native libraries at lib/<abi>/
-#   bundle (xapk/apkm/apks)  -> nested config.<abi>.apk splits. A listing of one has no
-#                          "lib/" entry at all, so grepping for lib/ concludes "nothing
-#                          arch specific here" about a file whose entire purpose is being
-#                          arch specific - which is how every XAPK came to be called
-#                          universal and cached under the shared -all key.
-_artifact_abis() { # $1=apk or bundle
+_artifact_abis() {
 	local names
-	# The status of unzip itself has to be checked: piping it into awk makes the
-	# pipeline succeed on empty input, which would read a corrupt or truncated download
-	# as "no ABI content" and therefore "universal" - caching junk under the key every
-	# arch is allowed to adopt.
 	names=$(unzip -l "$1" 2>/dev/null) || return 1
 	printf '%s\n' "$names" | awk 'NF >= 4 { p = $4; for (i = 5; i <= NF; i++) p = p " " $i; print p }' | {
 		while IFS= read -r n; do
@@ -4192,30 +2071,17 @@ _artifact_abis() { # $1=apk or bundle
 				*config.x86.apk) echo x86 ;;
 			esac
 		done
-		# LC_ALL=C: plain sort collates '-' before digits differently per locale, which
-		# would make this output (and so the key derived from it) machine-dependent.
 	} | LC_ALL=C sort -u | grep . || :
 }
 
-# True when the artifact may be cached under the shared "-all" key: it carries no
-# ABI-specific content at all, or it carries both arm ABIs (the rule as it was, kept).
-check_is_universal() { # $1=apk or bundle
+check_is_universal() {
 	local abis
 	abis=$(_artifact_abis "$1") || return 1
 	[ -z "$abis" ] && return 0
 	printf '%s\n' "$abis" | grep -qx arm64-v8a && printf '%s\n' "$abis" | grep -qx arm-v7a
 }
 
-# The arch token an artifact belongs under in a cache file name.
-#
-# Derived from the bytes, not from what the build asked for: a bundle carrying a single
-# ABI is keyed by that ABI even when it was fetched for another arch, so a mis-served
-# download lands under a name that cannot be mistaken for somebody else's artifact and
-# the mismatch is logged instead of silently adopted by the next build. "all" when
-# check_is_universal holds; the requested arch when the artifact names several ABIs but
-# not the pair that makes it universal; the requested arch for a file that cannot be
-# read at all, which is the conservative key (it can only ever be served to itself).
-_cache_arch_key() { # $1=artifact  $2=arch_f this build asked for
+_cache_arch_key() {
 	local abis n
 	abis=$(_artifact_abis "$1") || { printf '%s' "$2"; return 0; }
 	check_is_universal "$1" && { printf 'all'; return 0; }
@@ -4224,43 +2090,22 @@ _cache_arch_key() { # $1=artifact  $2=arch_f this build asked for
 	printf '%s' "$2"
 }
 
-# Does a list of ABIs satisfy a build arch? $1=ABI tokens (space or newline
-# separated), $2=build arch token. An arch-agnostic artifact (empty list) and the
-# catch-all arches (all/universal/auto) satisfy everything; otherwise the list has
-# to name $2 exactly. Deliberately NOT a downward-compat test: arm-v7a bytes do run
-# on arm64 devices, but shipping them under an arm64-v8a name would be the mislabel
-# this gate exists to remove (docs/decisions/0007). IFS-independent on purpose -
-# build_rv runs with IFS=$'\n'.
-_abis_satisfies() { # $1=abi list  $2=arch
+_abis_satisfies() {
 	local arch=${2:-}; arch=${arch// /}
 	case "$arch" in all | universal | auto | "") return 0 ;; esac
 	[ -z "${1// /}" ] && return 0
 	tr ' \n' '\n\n' <<<"$1" | grep -qxF -- "$arch"
 }
 
-# Same predicate, read straight off an artifact's bytes. Unreadable is treated as a
-# pass (the conservative key: it can only ever be served to itself, matching
-# _cache_arch_key's stance), never as a reason to drop a build.
-_artifact_satisfies_arch() { # $1=apk or bundle  $2=arch
+_artifact_satisfies_arch() {
 	local abis
 	abis=$(_artifact_abis "$1" 2>/dev/null) || return 0
 	_abis_satisfies "$abis" "${2:-}"
 }
 
-# -------------------- learned download-link index --------------------
-# An APKPure/APKCombo/Uptodown link carries no ABI in its URL, so the only way to
-# know what it serves is to fetch it. The first build to want one fetches it once and
-# records what the bytes actually are here; every later build consults the record and
-# either adopts the stored blob with no network hit (right arch) or skips the source
-# with no network hit (wrong arch). Kept out of apk_cache_dir so it never enters the
-# cache manifest, and independent of the arch-specific staging so a build that rejects
-# an artifact still leaves it for its sibling. Scoped to a run; wiped with temp/.
 _dlurl_sha() { printf '%s' "$1" | sha1sum | cut -d' ' -f1; }
 
-# Echoes the blob path when a recorded link satisfies $2, "REJECT" when it is a
-# recorded different single ABI, or nothing when the link is unknown (so an unknown
-# link is fetched, never refused without evidence).
-_dlurl_index_lookup() { # $1=url  $2=arch
+_dlurl_index_lookup() {
 	local url=$1 arch=${2:-} key abis="" path=""
 	key="${TEMP_DIR}/urlindex/keys/$(_dlurl_sha "$url")"
 	[ -f "$key" ] || return 0
@@ -4269,9 +2114,7 @@ _dlurl_index_lookup() { # $1=url  $2=arch
 	if _abis_satisfies "$abis" "$arch"; then printf '%s' "$path"; else printf 'REJECT'; fi
 }
 
-# Record what a link's bytes are, after a real fetch, whether or not this build keeps
-# them. Published atomically (temp+mv) so a concurrent reader never sees a half line.
-_dlurl_index_record() { # $1=url  $2=artifact path
+_dlurl_index_record() {
 	local url=$1 art=$2
 	[ -f "$art" ] || return 0
 	local sha ext keysdir="${TEMP_DIR}/urlindex/keys" blobsdir="${TEMP_DIR}/urlindex/blobs"
@@ -4286,11 +2129,6 @@ _dlurl_index_record() { # $1=url  $2=artifact path
 		&& mv -f "$keysdir/$sha.tmp.$$" "$keysdir/$sha"
 }
 
-# Recorded version for one app from state/app_versions.json. $1 = build table
-# name (the " (arch)" suffix build_rv carries is stripped before matching).
-# The file maps a group to {keys[], version} and the watcher only maintains the
-# groups hand-listed in it ("_check_only_listed") — i.e. exactly the apps whose
-# patch CLI advertises no supported version. Echoes nothing when untracked.
 _app_versions_json_ver() {
 	local app_versions_file="state/app_versions.json"
 	[ -f "$app_versions_file" ] || return 0
@@ -4299,16 +2137,6 @@ _app_versions_json_ver() {
 	jq -r --arg t "$t_pure" 'to_entries | map(select(.key | startswith("_") | not)) | map(select(.value.keys != null and (.value.keys | index($t)))) | .[0].value.version // empty' "$app_versions_file"
 }
 
-# Shared version-resolution pre-pass used by build_rv's two call sites
-# (early pkg path + post-download path). Operates on the caller's dynamic
-# locals: list_patches, resolved_version, version_mode.
-#
-# Precedence (highest first): an explicit version_mode (a concrete tag, or
-# exp/latest/beta) > the version the patch bundle advertises > the version the
-# watcher recorded in state/app_versions.json (only reachable when the bundle
-# advertises nothing, i.e. get_patch_last_supported_ver returns "Any") > the
-# live latest from the download source, which build_rv resolves afterwards.
-# Returns: 0 continue | 1 hard failure (caller `return 1`) | 2 skip app (caller `return 0`)
 _resolve_list_and_version() {
 	local cli_jar=$1 patches_jar=$2 pkg_name=$3 table=$4 say_pkg=${5:-false}
 	if [ -z "$list_patches" ]; then
@@ -4328,10 +2156,6 @@ _resolve_list_and_version() {
 				epr "get_patch_last_supported_ver failed for '$pkg_name'"
 				return 2
 			fi
-			# A bundle can also advertise no version at all ("Any" — see
-			# _get_patch_last_supported_ver), which succeeds with empty output.
-			# That is the only case the watcher's recorded version is a fallback
-			# for; it must never outrank a version the patches were tested with.
 			if [ -z "$resolved_version" ]; then
 				local json_ver
 				json_ver=$(_app_versions_json_ver "$table")
@@ -4353,7 +2177,7 @@ _resolve_list_and_version() {
 				return 2
 			fi
 		elif isoneof "$version_mode" latest beta; then
-			: # Needs latest
+			:
 		else
 			resolved_version=$version_mode
 		fi
@@ -4398,13 +2222,6 @@ build_rv() {
 	local exc_str="${args[excluded_patches]}"
 	local inc_str="${args[included_patches]}"
 
-	# inclusive-patches: expand "every patch this bundle offers for the app" into
-	# explicit names, right here, so everything downstream - the version-compatibility
-	# gate, the -e/-d assembly below, the catalog's applied-patch list - keeps reading
-	# the one included-patches string it already understands and no other code has to
-	# learn the flag. Setting both flags at once is rejected in build.sh. An excluded
-	# name is dropped from the expansion rather than passed as both -e and -d, where
-	# argument order would decide what happens.
 	if [ "${args[inclusive_patches]:-false}" = true ]; then
 		local -a incl_exc=()
 		if [[ "$exc_str" == *"|"* ]]; then
@@ -4412,13 +2229,6 @@ build_rv() {
 		else
 			incl_exc=("$exc_str")
 		fi
-		# Strip the wrapper quotes off the exclusion names before matching them against
-		# the listing, which carries them bare. toml_get hands config names back
-		# DOUBLE-quoted (it rewrites ' to "), so the double-quote pair has to be the one
-		# that really works: inside single quotes \$ is a literal dollar to sed, not the
-		# end-of-line anchor, and a pattern still carrying its trailing quote matches no
-		# listing line at all - the exclusion then silently stays in the expansion and
-		# reaches the CLI as both -e and -d.
 		local incl_bi incl_names incl_drop incl_out incl_join="" incl_n
 		for ((incl_bi=0; incl_bi<n_bundles; incl_bi++)); do
 			if ! incl_names=$(_all_patch_names "$cli_jar" "${p_jars_arr[$incl_bi]}" "$pkg_name" "${args[cli_source]:-}"); then
@@ -4482,7 +2292,6 @@ build_rv() {
 						done <<< "$(list_args "$bp_inc" | sed -e "s/^'//" -e "s/'$//" -e 's/^"//' -e 's/"$//')"
 					fi
 					
-					local new_bp_exc="$bp_exc"
 					for p_name in "${all_patches[@]}"; do
 						local found=false
 						for inc_p in "${current_bp_inc[@]}"; do
@@ -4552,10 +2361,6 @@ build_rv() {
 	cli_source_l="${cli_source_l,,}"
 	resolve_patcher "${args[cli_source]:-}"
 	local cli_lv_extra="$PATCHER_LIST_X"
-	# Morphe bundle passthrough: keep vendor bundles (.xapk/.apkm/.apks) as the
-	# cache artifact and hand them to morphe directly (it merges bundles natively)
-	# — only when the tool is morphe-desktop and RVB_MORPHE_PASSTHROUGH is on.
-	# Other tools keep the apkeditor-merge-at-download flow unchanged.
 	local MORPHE_PASSTHROUGH_ACTIVE=false
 	local _CACHE_BUNDLE_OK=false
 	local morphe_bundle_path=""
@@ -4564,10 +2369,7 @@ build_rv() {
 		_CACHE_BUNDLE_OK=true
 	fi
 
-	# 1. Resolve pkg_name early if possible and check cache
 	if [ -n "$pkg_name" ]; then
-		# Re-resolve fresh at this site (matches original unconditional call);
-		# list_patches may be cached from an earlier pkg attempt.
 		list_patches=""
 		local _rstatus=0
 		_resolve_list_and_version "$cli_jar" "$patches_jar" "$pkg_name" "$table" false || _rstatus=$?
@@ -4585,9 +2387,6 @@ build_rv() {
 	local final_stock_apk=""
 	local final_all_apk=""
 	local final_version=""
-	# Why the candidate loop produced nothing. The two outcomes are reported very
-	# differently: versions rejected by the patch set never wanted an APK, so telling a
-	# human to upload one is noise; a fetch no source served is exactly that request.
 	local _no_patch_versions=""
 	local _dl_attempted=""
 	
@@ -4597,7 +2396,6 @@ build_rv() {
 		get_latest_ver=false
 		tried_dl=()
 		dl_from=""
-			# Cache Check
 			if [ -n "$pkg_name" ]; then
 				if [ -n "$resolved_version" ]; then
 					local version_f=${resolved_version// /}
@@ -4608,13 +2406,11 @@ build_rv() {
 						version="$resolved_version"
 					fi
 				else
-					# Dynamic Cache Discovery for "latest" or empty version
 					local cached_apks=($(find "$apk_cache_dir" -name "${pkg_name}-*.apk" -type f 2>/dev/null || true))
 					if [ ${#cached_apks[@]} -gt 0 ]; then
 						local cached_versions=""
 						for capk in "${cached_apks[@]}"; do
 							local bname=$(basename "$capk")
-							# extract version from format: pkg_name-version-arch.apk or pkg_name-version-vc-arch.apk
 							local v=${bname#${pkg_name}-}
 							v=${v%.apk}
 							v=${v%-arm64-v8a}
@@ -4642,16 +2438,13 @@ build_rv() {
 				fi
 			fi
 
-
 		if [ "$skip_dl_source_check" = false ]; then
-			# 2. Establish dl_from and fetch required HTML responses
 		if [ -n "${UPLOAD_APKS_REPO:-}" ] && [ -n "$pkg_name" ]; then
 			args[cache_repo_dlurl]="https://github.com/${UPLOAD_APKS_REPO}/releases/tag/${pkg_name}"
 		fi
 			for dl_p in "${DL_SRCS[@]}"; do
 				if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 				
-				# If we need to find the latest version, do not use cache repositories as the source of truth
 				if [ -z "$resolved_version" ]; then
 					if [ "$dl_p" = "archive" ] || [ "$dl_p" = "cache_repo" ]; then
 						continue
@@ -4661,9 +2454,6 @@ build_rv() {
 				if ! get_${dl_p}_resp "${args[${dl_p}_dlurl]}"; then
 					args[${dl_p}_dlurl]=""
 					if [ "$dl_p" = "cache_repo" ] && [ "${__CACHE_REPO_MISS__:-false}" = true ]; then
-						# Not a failure: the package has never been uploaded to the cache repo,
-						# which is the state of every app's first build. Calling it ERROR made
-						# each of those runs look broken over a normal cache miss.
 						pr "No cached release for '${pkg_name:-$table}' on ${UPLOAD_APKS_REPO} yet; using the live sources."
 					else
 						epr "ERROR: Could not get response for ${table} in ${dl_p}"
@@ -4671,7 +2461,6 @@ build_rv() {
 					continue
 				fi
 				
-				# If pkg_name is still empty, try to scrape it from the response
 				if [ -z "$pkg_name" ]; then
 					if ! pkg_name=$(get_"${dl_p}"_pkg_name) || [ -z "$pkg_name" ]; then
 						args[${dl_p}_dlurl]=""
@@ -4687,8 +2476,6 @@ build_rv() {
 
 			if [ -z "$dl_from" ]; then
 				epr "ERROR: No valid download source found for ${table}."
-				# Record so the CI step can ask for a manual cache-repo upload. version is
-				# the config value here (resolution hasn't run); show "unknown" when unpinned.
 				write_dl_failure_descriptor "$(failure_slug "$table")" "$table" \
 					"${resolved_version:-$version_mode}" \
 					"$(parse_arch_mapping "${args[version_code]:-}" "${arch_f:-}")" \
@@ -4701,7 +2488,6 @@ build_rv() {
 				return 0
 			fi
 			
-			# If we didn't run patches_list earlier because pkg_name was empty
 			local _rstatus=0
 			_resolve_list_and_version "$cli_jar" "$patches_jar" "$pkg_name" "$table" true || _rstatus=$?
 			if [ "$_rstatus" = 1 ]; then return 1; fi
@@ -4747,12 +2533,6 @@ build_rv() {
 			continue
 		fi
 
-		# Arch honesty at the candidate level (docs/decisions/0007): a version whose
-		# patch annotation lists other ABIs only has no build for this arch, so its bytes
-		# would be thrown away by the post-download gate after a full fetch. Drop the
-		# candidate now and let the next supported version take its place. Ordered AFTER
-		# the gate on purpose: the gate is a direct call and fills the memo tables this
-		# subshell reads, so no second JVM run per candidate.
 		local _tbl_vc=""
 		if [ "$arch_f" != "all" ] && [ "$arch_f" != "auto" ] && [ "$arch_f" != "universal" ]; then
 			if ! _tbl_vc=$(_candidate_arch_verdict "$version_f" "$arch_f" "${all_resolved_versions[*]}"); then
@@ -4762,9 +2542,6 @@ build_rv() {
 			fi
 		fi
 
-		# Version, VC and patches-source are final here; anything that aborts from the
-		# build loop below leaves this descriptor for the CI step to report. The parent
-		# deletes it when build_rv returns clean. Written once with the requested arch.
 		write_build_failure_descriptor "$(failure_slug "$table")" "$table" "$version_f" \
 			"$(parse_arch_mapping "${args[version_code]:-}" "$arch_f")" \
 			"$arch_f" "${args[patches_src]:-${args[cli_source]:-}}"
@@ -4780,10 +2557,6 @@ build_rv() {
 					if raw_vers=$(patches_list_versions "$cli_jar" "$patches_jar" "$pkg_name" "${args[cli_source]:-}" "$cli_lv_extra"); then
 						target_version_code=$(get_patch_version_code "$raw_vers" "$version" "$arch_f" || true)
 					fi
-					# Same fallback as _cache_target_vc: the effective table still knows the
-					# code when list-versions ignores the patches this build will apply. The
-					# candidate filter above already read it for this arch; reuse that value
-					# instead of starting another pass.
 					if [ -z "$target_version_code" ]; then
 						target_version_code="${_tbl_vc:-}"
 						if [ -z "$target_version_code" ]; then
@@ -4797,11 +2570,6 @@ build_rv() {
 			fi
 
 			local vc_infix="${target_version_code:+-${target_version_code}}"
-			# Serialize the cache-check → download → upload sequence per pkg+version.
-			# Sibling processes (parallel builds) then hit the local cache path or the
-			# cache repo instead of hammering the same source twice, and can never
-			# race on creating/uploading to the same apks-cache-repo release.
-			# Lock files live OUTSIDE apk_cache_dir so they never enter its cache manifest.
 			local _apk_lock_held=""
 			if command -v flock >/dev/null 2>&1; then
 				mkdir -p "${TEMP_DIR}/apkslocks"
@@ -4813,17 +2581,6 @@ build_rv() {
 			local cached_all_apk="${apk_cache_dir}/${pkg_name}-${version_f}${vc_infix}-all.apk"
 			local stock_apk="$cached_stock_apk"
 			local all_apk="$cached_all_apk"
-			# No pre-versionCode name is tried here (see _cache_probe_apk for why): if
-			# the modern names miss, this arch re-downloads and lands under the key that
-			# states the code it was checked against.
-			# Bundle lookup: this arch's own key first, then the shared "-all" key, which
-			# now only ever holds a bundle verified to carry every ABI (or none). Nothing here
-			# re-derives the arch from the file to decide whether the name was honest, because
-			# the name is written from the file in the first place (_cache_arch_key).
-			#
-			# Before that, an arm64 bundle sat in <pkg>-<ver>-<vc>-all.xapk, this arm-v7a build
-			# adopted it, the merge dropped the arm64 split as not the target arch, and the
-			# patcher failed on the resulting library-less APK.
 			local cached_bundle_apk=""
 			if [ "$_CACHE_BUNDLE_OK" = true ]; then
 				local bx _bp
@@ -4855,7 +2612,6 @@ build_rv() {
 			fi
 
 			if [ ! -f "$stock_apk" ]; then
-				# Redirect to staging directory for safe downloading and processing
 				stock_apk="${apk_dl_dir}/${pkg_name}-${version_f}${vc_infix}-${arch_f}.apk"
 				all_apk="${apk_dl_dir}/${pkg_name}-${version_f}${vc_infix}-all.apk"
 
@@ -4883,8 +2639,6 @@ build_rv() {
 						pr "WARNING: ${stock_apk} does not contain AndroidManifest.xml at root. Attempting to extract as bundle (XAPK/APKS/APKM)..."
 						mv "$stock_apk" "${stock_apk}.bundle"
 						if [ "${MORPHE_PASSTHROUGH_ACTIVE:-false}" = true ]; then
-							# passthrough: keep the bundle (generic .xapk name is fine for
-							# morphe; it merges bundles natively) — no apkeditor merge.
 							mv -f "${stock_apk}.bundle" "${stock_apk%.apk}.xapk"
 							stock_apk="${stock_apk%.apk}.xapk"
 						else
@@ -4911,13 +2665,6 @@ build_rv() {
 						downloaded_pkg=$(_meta_field_of "$stock_apk" package) || true
 						downloaded_ver=$(_meta_field_of "$stock_apk" versionName) || true
 						
-						# Every rejection in this loop clears the same artifact set the
-						# download-failure paths above use: the staged apk plus any sibling
-						# extension the source produced (.apkm/.xapk/.apks/.bundle). These are
-						# staging paths - the sync into apk_cache_dir happens after the loop - so a
-						# leftover bundle could otherwise be picked up by the NEXT source's download
-						# (the candidate scans at the bottom of the loop look for "${stock_apk%.apk}.<ext>")
-						# and get merged, verified and cached as if it had passed identity checks.
 						if [ -z "$downloaded_pkg" ]; then
 							epr "ERROR: Downloaded file is not a valid APK or aapt failed to parse it. Rejecting..."
 							rm -f "$stock_apk" "${stock_apk%.apk}".* "${stock_apk}".*
@@ -4930,13 +2677,6 @@ build_rv() {
 							continue
 						fi
 
-						# A target version code is a claim the cache filename goes on making
-						# (<pkg>-<version>-<code>-<arch>), so it has to be read off the bytes.
-						# An unreadable code is NOT a pass: versionCode only comes from
-						# `dump badging`, while the package check above can succeed on the
-						# cheaper `dump packagename` - so a badging failure used to slip an
-						# unverified APK into the cache under a version code it never proved.
-						# Apps with no resolved target code never enter this block at all.
 						if [ -n "$target_version_code" ]; then
 							downloaded_vc=$(_meta_field_of "$stock_apk" versionCode) || true
 							if [ -z "$downloaded_vc" ]; then
@@ -4971,12 +2711,6 @@ build_rv() {
 						continue
 					fi
 
-					# Arch honesty: a download that does not carry the requested ABI is not
-					# the artifact this build asked for. Reject it and fall through to the next
-					# source; when no source supplies the arch the build is not produced at all
-					# (replaces the old "warn + ship the featured bundle under another arch's
-					# name" behaviour - docs/decisions/0007). Judged on the vendor bundle when one
-					# is present, because a passthrough base.apk alone can look ABI-less.
 					local _abi_file="$stock_apk" _abx
 					for _abx in xapk apkm apks; do
 						[ -f "${stock_apk%.apk}.${_abx}" ] && { _abi_file="${stock_apk%.apk}.${_abx}"; break; }
@@ -5017,10 +2751,7 @@ build_rv() {
 						done
 					fi
 					if [ -n "$morphe_bundle_path" ]; then
-						# cache/ship the vendor bundle; the apkeditor-merged apk is
-						# redundant for morphe (it merges bundles natively) — drop it
 						[ "$morphe_bundle_path" != "$stock_apk" ] && rm -f "$stock_apk"
-						# drop leftover sidecars so only one file represents the bundle
 						for _bx in xapk apkm apks; do
 							[ -f "${stock_apk%.apk}.${_bx}" ] && [ "${stock_apk%.apk}.${_bx}" != "$morphe_bundle_path" ] && rm -f "${stock_apk%.apk}.${_bx}"
 							[ -f "${stock_apk}.${_bx}" ] && [ "${stock_apk}.${_bx}" != "$morphe_bundle_path" ] && rm -f "${stock_apk}.${_bx}"
@@ -5039,12 +2770,9 @@ build_rv() {
 					fi
 				fi
 				
-				# Sync pristine files from staging to cache
 				if [ -f "$stock_apk" ]; then
 					local _sync_bext
 					if _sync_bext=$(_bundle_ext_of "$stock_apk"); then
-						# Key the bundle by what it contains. Naming every bundle "-all" is what
-						# let one arch's artifact be adopted by another.
 						local _bkey cached_bundle
 						_bkey=$(_cache_arch_key "$stock_apk" "$arch_f")
 						cached_bundle="${apk_cache_dir}/${pkg_name}-${version_f}${vc_infix}-${_bkey}.${_sync_bext}"
@@ -5069,9 +2797,6 @@ build_rv() {
 					pr "Uploading newly downloaded APKs to ${UPLOAD_APKS_REPO}..."
 					local _ua_file="$stock_apk" _ua_ok="" _ua_att
 					[ -n "$all_apk" ] && [ -f "$all_apk" ] && _ua_file="$all_apk"
-					# Retry: with parallel builds a sibling process can create the same
-					# release tag between our view (404) and create (422 tag exists);
-					# the next attempt's view finds it. Upload races are transient too.
 					for _ua_att in 1 2 3; do
 						if { gh release view "$pkg_name" --repo "$UPLOAD_APKS_REPO" >/dev/null 2>&1 || \
 							gh release create "$pkg_name" --repo "$UPLOAD_APKS_REPO" --title "$pkg_name" --notes ""; } && \
@@ -5108,9 +2833,6 @@ build_rv() {
 	
 	if [ ! -f "$stock_apk" ]; then
 		if [ -z "$_dl_attempted" ] && [ -n "$_no_patch_versions" ]; then
-			# Nothing was fetched: the patch set refused every supported version (or
-			# annotated none for this arch). Reporting this as an exhausted download
-			# asks a human to upload an APK that was never the problem.
 			local _tried_versions
 			_tried_versions=$(printf '%s' "${_no_patch_versions# }" | tr -s ' ' ',')
 			epr "ERROR: No supported version of '${table}' has patches to apply from '${args[patches_src]:-${args[cli_source]:-}}' (tried: ${_tried_versions})."
@@ -5121,14 +2843,6 @@ build_rv() {
 			return 0
 		fi
 		epr "ERROR: Could not download '${table}' after trying all supported versions."
-		# This path used to be silent in the notification. The sources all responded and were
-		# all tried, so it is not the "no valid download source" case above (which does record),
-		# and build_rv skips with rc 0 here - so the parent runs _clear_failure_record, which
-		# deletes <slug>.json and <slug>.log as a clean return, and temp/failures was empty by
-		# the time the CI step looked (run 37964499217: Flipkart unbuilt on both arches, report
-		# said "No failure records in temp/failures; nothing to report").
-		# write_dl_failure_descriptor uses its own <slug>_dl.json name, which that clearing does
-		# not touch, so the app now reaches the notify topic with the manual-upload hint.
 		write_dl_failure_descriptor "$(failure_slug "$table")" "$table" \
 			"${resolved_version:-$version_mode}" \
 			"$(parse_arch_mapping "${args[version_code]:-}" "${arch_f:-}")" \
@@ -5136,19 +2850,10 @@ build_rv() {
 		return 0
 	fi
 
-	# Ensure the mtime is set to now so newly downloaded APKs with old server timestamps aren't purged
 	touch "$stock_apk" 2>/dev/null || true
 	[ -f "${stock_apk%.apk}.apkm" ] && touch "${stock_apk%.apk}.apkm" 2>/dev/null || true
 	[ -n "${all_apk:-}" ] && [ -f "$all_apk" ] && touch "$all_apk" 2>/dev/null || true
 
-	# Log usage for the apks repo cache tracker. The key is "<pkg>-<version>" and
-	# must NOT carry the target versionCode: cleanup-apks.py derives its key by
-	# stripping (-[0-9]+)?-(<arch>).(<ext>) off the stored filename, so the optional
-	# numeric group removes the version code deliberately and every ABI/artifact of
-	# one app version shares a single usage stamp. Appending ${vc_infix} here - which
-	# looks like it "matches the filename" - untracks those versions instead: the key
-	# is never matched, the version falls back to aging out by upload time, and the
-	# phantom key is pruned as a ghost entry. See docs/cache-repo.md.
 	echo "${pkg_name}-${version_f}" >> "$TEMP_DIR/used_versions.txt"
 
 	local sig_op
@@ -5179,7 +2884,7 @@ build_rv() {
 					epr "Not building $table, apk signature mismatch '$a': $sig_op"
 					return 0
 				fi
-				break # Only check one APK if no base.apk
+				break
 			done
 		fi
 		rm -rf "${stock_apk}-zip" || :
@@ -5288,8 +2993,6 @@ build_rv() {
 		local stock_apk_to_patch
 		local _pt_bext=""
 		if [ -n "$morphe_bundle_path" ] || _pt_bext=$(_bundle_ext_of "$stock_apk"); then
-			# morphe passthrough input: trim the bundle's config members to the
-			# target arch (no apkeditor, no re-sign); "all" ships the raw bundle.
 			[ -z "$_pt_bext" ] && _pt_bext=xapk
 			stock_apk_to_patch="${TEMP_DIR}/${file_prefix}-${version_f}-${arch_f}.stripped.${_pt_bext}"
 			if [ ! -f "$stock_apk_to_patch" ]; then
@@ -5335,21 +3038,12 @@ build_rv() {
 			fi
 		fi
 
-		# Duplicate-build verdict on the first patched APK of this table build.
-		# Owner premise: apk- and module-mode patching of one app differ only in
-		# microG handling, so the apk-mode APK (or the module APK when module is
-		# the only mode) is a valid fingerprint for every artifact this app+arch
-		# would publish; on a match the module stage is never patched or packed.
-		# NORB reuse can leave the fresh bytes only in $apk_output, so hash
-		# whichever file this iteration just produced.
 		if [ "$build_mode" = apk ] || [ ${#build_mode_arr[@]} -eq 1 ]; then
 			local _dedup_apk="$patched_apk"
 			[ -f "$_dedup_apk" ] || _dedup_apk="$apk_output"
 			if [ -f "$_dedup_apk" ] &&
 				check_duplicate_build "$_dedup_apk" "${file_prefix}-v${version_f}-${arch_f}" \
 					"$table" "$app_name" "$version_f" "$arch_f"; then
-				# rc 0 is the skip itself: nothing copied to BUILD_DIR, no
-				# write_build_info fragment, notes and manifest stay truthful.
 				return 0
 			fi
 		fi
@@ -5430,8 +3124,6 @@ build_rv() {
 			_bundle_ext_of "$stock_apk" >/dev/null 2>&1 && _stk_bext=1
 			if [ "${args[include_stock]}" = "merged" ]; then
 				if [ -n "$_stk_bext" ]; then
-					# module needs a real merged apk for stock; merge from the
-					# cached bundle on demand (throwaway, never cached)
 					local _mod_stock="${TEMP_DIR}/${file_prefix}-${version_f}-stock-merged.apk"
 					merge_splits "$stock_apk" "$_mod_stock" >/dev/null 2>&1 || {
 						epr "Failed to merge bundle for module stock"
@@ -5475,17 +3167,8 @@ build_rv() {
 }
 
 list_args() { tr -d '\t\r' <<<"$1" | tr -s ' ' | sed "s/' '/'\\n'/g" | sed 's/" "/"\n"/g' | sed 's/\([^"]\)"\([^"]\)/\1'\''\2/g' | grep -v '^$' || :; }
-# Read back the words join_args produced ("-e 'a' -e 'b c'") as raw patch names, one
-# per line. Needed wherever code wants the NAMES rather than the command words: the
-# Instafel branch of patch_apk used to grep quoted spans out of the same string
-# (grep -oE "['\"][^'\"]+['\"]"), which misreads the backslash-quote escape join_args
-# emits for a name like "Keep the screen's refresh rate", handing Instafel a truncated
-# patch name.
-# Letting the shell re-parse is the only correct reader, since it resolves the escaping
-# instead of trying to second-guess it. Flag words are skipped; -e and -d names are
-# both returned, which is what the previous scrape did and what the Instafel caller
-# has always passed on.
-_ed_names() { # $1=ed string as join_args built it
+
+_ed_names() {
 	local IFS=$' \t\n' w
 	eval "set -- $1" || return 1
 	for w in "$@"; do
@@ -5493,14 +3176,7 @@ _ed_names() { # $1=ed string as join_args built it
 		printf '%s\n' "$w"
 	done
 }
-# Turn a group string ("'A' 'B'", the shape included-patches/excluded-patches hold)
-# into "<flag> '<name>'" words. This is the one place patch names get shell-quoted:
-# the result is interpolated into a command string that build_rv evals, so a name
-# carrying an apostrophe - hushfeed ships "Keep the screen's refresh rate" - would
-# otherwise leave an unbalanced quote there, failing the run with "unexpected EOF
-# while looking for matching quote" or, with an even number of strays, silently
-# splitting one name into several CLI arguments. Escaping exactly one layer of
-# wrapper quotes also means hand-written and inclusive selections behave the same.
+
 join_args() {
 	local n
 	list_args "$1" | while IFS= read -r n; do
@@ -5522,14 +3198,6 @@ PKG_VER=$3
 MODULE_ARCH=$ma" >"$1/config"
 }
 
-# Map a module id (module_prop_name) to its update-branch JSON path:
-#   <channel>/<id-without-author-or-channel-suffix>.json
-# The channel folder (stable|beta) replaces the old "-beta-" filename infix,
-# and the author segment is dropped since it's constant for this repo.
-# Module id shape from build.sh: <table>-<author>[-beta][-arm64|-arm].
-# This path is a wire format baked into every module zip via module.prop
-# updateJson — changing it orphans installed modules; never restructure
-# the branch to "tidy" it.
 update_json_path() {
 	local mpn=${1,,} author=${2,,} chan=stable arch=""
 	case $mpn in
