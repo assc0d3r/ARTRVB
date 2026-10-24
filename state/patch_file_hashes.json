@@ -194,8 +194,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "adb577a9862610f5ad43bfbe58f4367d",
-      "shared": "efb779718a83be0c4771b9ebb3ce1644"
+      "com.discord": "bed57294995c2d65e29fe4741477cf78",
+      "shared": "0f718e329d05bc04eb43f3d88e8d39e9"
     }
   },
   "vipinvip/railone-patches": {

@@ -18,8 +18,8 @@
     "stable_date": "2026-10-24T01:12:18Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.1",
-    "beta_date": "2026-10-23T10:58:30Z",
+    "beta": "v1.49.0-dev.2",
+    "beta_date": "2026-10-24T08:47:13Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -77,8 +77,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.17.0",
-    "stable_date": "2026-10-20T22:17:26Z"
+    "stable": "v1.18.0",
+    "stable_date": "2026-10-24T05:10:17Z"
   },
   "VipinVIP/railone-patches": {
     "beta": "",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-18T13:48:32Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.19.0-dev.5",
-    "beta_date": "2026-10-23T22:20:50Z",
+    "beta": "v1.19.0-dev.6",
+    "beta_date": "2026-10-24T08:16:28Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.60.0-dev.2",
-    "beta_date": "2026-10-23T12:23:00Z",
+    "beta": "v1.60.0-dev.3",
+    "beta_date": "2026-10-24T07:44:56Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -171,8 +171,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.0.0-dev.2",
-    "beta_date": "2026-10-23T23:20:25Z",
+    "beta": "v4.0.0-dev.3",
+    "beta_date": "2026-10-24T05:39:09Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
