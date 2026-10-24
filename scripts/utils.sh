@@ -588,7 +588,7 @@ _get_prebuilts() {
 			if [ "$(jq 'length' <<<"$matches")" -gt 1 ]; then
 				local matches_new
 				matches_new=$(jq -e -r 'map(select(.name | contains("debug") | not))' <<<"$matches")
-				if [ "$(jq 'length' <<<"$matches_new")" -ge 1 ]; then
+				if [ "$(jq 'length' <<<"$matches_new")" -eq 1 ]; then
 					matches=$matches_new
 				fi
 			fi
@@ -2444,6 +2444,7 @@ build_rv() {
 		fi
 			for dl_p in "${DL_SRCS[@]}"; do
 				if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
+				if ! declare -f "get_${dl_p}_resp" >/dev/null 2>&1; then continue; fi
 				
 				if [ -z "$resolved_version" ]; then
 					if [ "$dl_p" = "archive" ] || [ "$dl_p" = "cache_repo" ]; then
@@ -2617,6 +2618,7 @@ build_rv() {
 
 				for dl_p in "${DL_SRCS[@]}"; do
 					if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
+					if ! declare -f "dl_${dl_p}" >/dev/null 2>&1; then continue; fi
 					_dl_attempted=1
 					pr "Downloading '${table}' from '${dl_p}'"
 					if ! isoneof $dl_p "${tried_dl[@]}"; then
@@ -3166,7 +3168,7 @@ build_rv() {
 	done
 }
 
-list_args() { tr -d '\t\r' <<<"$1" | tr -s ' ' | sed "s/' '/'\\n'/g" | sed 's/" "/"\n"/g' | sed 's/\([^"]\)"\([^"]\)/\1'\''\2/g' | grep -v '^$' || :; }
+list_args() { tr -d '\t\r' <<<"$1" | tr -s ' ' | sed "s/' '/'\\n'/g" | sed 's/"/"\n"/g' | sed 's/\([^"]\)"\([^"]\)/\1'\''\2/g' | grep -v '^$' || :; }
 
 _ed_names() {
 	local IFS=$' \t\n' w
