@@ -18,8 +18,8 @@
     "stable_date": "2026-10-24T01:12:18Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.3",
-    "beta_date": "2026-10-24T09:55:27Z",
+    "beta": "v1.49.0-dev.4",
+    "beta_date": "2026-10-24T13:39:45Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-18T13:48:32Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.19.0-dev.6",
-    "beta_date": "2026-10-24T08:16:28Z",
+    "beta": "v2.0.0-dev.1",
+    "beta_date": "2026-10-24T15:05:14Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -153,13 +153,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.60.0-dev.4",
-    "beta_date": "2026-10-24T12:32:32Z",
+    "beta": "v1.60.0-dev.5",
+    "beta_date": "2026-10-24T13:00:12Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.59.0",
-    "stable_date": "2026-10-23T10:08:49Z"
+    "stable": "v1.60.0",
+    "stable_date": "2026-10-24T13:05:04Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.4",
