@@ -9,13 +9,13 @@
     "stable_date": "2026-10-17T07:38:02Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
-    "beta": "v1.13.0-dev.1",
-    "beta_date": "2026-10-21T18:33:42Z",
+    "beta": "v1.13.1-dev.1",
+    "beta_date": "2026-10-24T01:09:59Z",
     "blocked": false,
     "host": "github",
     "repo": "JacksonJones2003/immersive-keyboard-patches",
-    "stable": "v1.13.0",
-    "stable_date": "2026-10-21T18:36:08Z"
+    "stable": "v1.13.1",
+    "stable_date": "2026-10-24T01:12:18Z"
   },
   "MorpheApp/morphe-patches": {
     "beta": "v1.49.0-dev.1",
@@ -162,8 +162,8 @@
     "stable_date": "2026-10-23T10:08:49Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.9.0-dev.2",
-    "beta_date": "2026-10-21T17:20:02Z",
+    "beta": "v1.9.0-dev.4",
+    "beta_date": "2026-10-24T02:44:22Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",
@@ -171,8 +171,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.0.0-dev.1",
-    "beta_date": "2026-10-22T19:31:28Z",
+    "beta": "v4.0.0-dev.2",
+    "beta_date": "2026-10-23T23:20:25Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
