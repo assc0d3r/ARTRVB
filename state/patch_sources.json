@@ -135,8 +135,8 @@
     "stable_date": "2026-10-18T13:48:32Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.0.0-dev.1",
-    "beta_date": "2026-10-24T15:05:14Z",
+    "beta": "v2.0.0-dev.2",
+    "beta_date": "2026-10-25T02:26:29Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.60.0-dev.5",
-    "beta_date": "2026-10-24T13:00:12Z",
+    "beta": "v1.61.0-dev.1",
+    "beta_date": "2026-10-25T01:17:56Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -171,8 +171,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.0.0-dev.3",
-    "beta_date": "2026-10-24T05:39:09Z",
+    "beta": "v4.0.0-dev.4",
+    "beta_date": "2026-10-25T03:47:02Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
@@ -186,7 +186,7 @@
     "host": "github",
     "repo": "madushas/pdb_patch",
     "stable": "v0.5.1",
-    "stable_date": "2026-10-23T19:51:25Z"
+    "stable_date": "2026-10-25T04:30:07Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
