@@ -239,6 +239,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "google-photos-akashsriram-v7.98.0.1001971222-arm64-v8a": {
+      "hash": "fb04a8fac85e8ce89289da310bcb8e27",
+      "kinds": [
+        "apk"
+      ]
     }
   },
   "beta": {
