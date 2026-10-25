@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# Utility Functions for Build & CI/CD Pipeline (`utils.sh`)
+# Core Utility Functions for Build & CI/CD Pipeline (`scripts/utils.sh`)
 # ==============================================================================
+
+# Prevent multiple inclusions and ensure safe sourcing under strict modes
+[[ -n "${_UTILS_SH_LOADED:-}" ]] && return 0
+_UTILS_SH_LOADED=1
 
 # Generates a normalized, lowercase hyphen-separated slug for file naming and identifiers
 failure_slug() {
@@ -16,7 +20,7 @@ write_build_failure_descriptor() {
     local reason="${3:-unknown}"
     local output_dir="${BUILD_FAILURE_DIR:-.failures}"
     
-    mkdir -p "$output_dir"
+    mkdir -p "$output_dir" 2>/dev/null || true
     local slug
     slug="$(failure_slug "$app_name")"
     local timestamp
@@ -50,7 +54,7 @@ _dedup_store_hash() {
     local hash_val="${3:-}"
     local state_file="state/build_content_hashes.json"
 
-    mkdir -p "$(dirname "$state_file")"
+    mkdir -p "$(dirname "$state_file")" 2>/dev/null || true
     
     if ! [[ -f "$state_file" ]]; then
         echo '{}' > "$state_file"
@@ -59,7 +63,11 @@ _dedup_store_hash() {
     if command -v jq &>/dev/null; then
         local tmp
         tmp=$(mktemp)
-        jq --arg c "$channel" --arg k "$key" --arg h "$hash_val" '.[$c][$k] = $h' "$state_file" > "$tmp" && mv "$tmp" "$state_file"
+        if jq --arg c "$channel" --arg k "$key" --arg h "$hash_val" '.[$c][$k] = $h' "$state_file" > "$tmp" 2>/dev/null; then
+            mv "$tmp" "$state_file"
+        else
+            rm -f "$tmp"
+        fi
     fi
 }
 
