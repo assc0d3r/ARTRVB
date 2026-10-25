@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.15.4",
-    "stable_date": "2026-10-17T07:38:02Z"
+    "stable": "v1.16.0",
+    "stable_date": "2026-10-25T17:37:58Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
     "beta": "v1.13.1-dev.1",
@@ -117,8 +117,8 @@
     "stable_date": "2026-10-18T19:56:10Z"
   },
   "crimera/piko": {
-    "beta": "v3.11.0-dev.2",
-    "beta_date": "2026-10-25T06:54:41Z",
+    "beta": "v3.11.0-dev.3",
+    "beta_date": "2026-10-25T17:20:44Z",
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.61.0-dev.3",
-    "beta_date": "2026-10-25T10:31:52Z",
+    "beta": "v1.62.0-dev.1",
+    "beta_date": "2026-10-25T18:50:58Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
