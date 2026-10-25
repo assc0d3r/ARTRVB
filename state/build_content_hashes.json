@@ -17,10 +17,30 @@
     "adobe-scan-rushi-v26.08.01-arm64-v8a": "69fa22b79c9fd210bbfac74f876aa342",
     "adobe-scan-aidan-v26.09.25-arm64-v8a": "ca7739f2277314b077db0a786b49a2c6",
     "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61",
-    "nova-launcher-mightymich-v8.8.8-arm64-v8a": "71c119663b057dc42292dad41b18d1eb",
-    "reddit-morphe-v2026.24.0-arm64-v8a": "65bd806af930987762743d7df604120a",
-    "twitter-piko-v12.19.1-release.0-arm64-v8a": "87faff45aa8060db4e992c48b938eb48",
-    "youtube-morphe-v21.20.405-arm64-v8a": "51fdb2f69cfde064f8374d650954b868",
+    "nova-launcher-mightymich-v8.8.8-arm64-v8a": {
+      "hash": "71c119663b057dc42292dad41b18d1eb",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "reddit-morphe-v2026.24.0-arm64-v8a": {
+      "hash": "07aa86d812aa00529061ef794c2383dc",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "twitter-piko-v12.19.1-release.0-arm64-v8a": {
+      "hash": "87faff45aa8060db4e992c48b938eb48",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "youtube-morphe-v21.20.405-arm64-v8a": {
+      "hash": "730a72c48e17459837ded67bcba2c46d",
+      "kinds": [
+        "apk"
+      ]
+    },
     "railone-vipinvip-v2.1.66-arm64-v8a": "0049252eee9d710c1589e1013ec09692",
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a": "c81254379db4ca58fbbbe374f2cc1793",
     "vn-video-editor-riky-v2.20.0-arm64-v8a": "58f7421b3e3843f33bffad2217bb0b00",
@@ -33,7 +53,12 @@
     "vesselfinder-heval-v6.7.8-arm64-v8a": "e1f2e100e997fa8b73eb9e0c7d1e23ff",
     "truecaller-heval99-v26.40.5-arm64-v8a": "64059bcddb3f37e46a2e3219954fc382",
     "proton-vpn-hxreborn-v5.20.74.0-arm64-v8a": "6af0be07af1754e56812b56fdb56ebb4",
-    "accuweather-rushi-v21.1.15-3-rc-arm64-v8a": "67b9ab8eb076a96e1e5f4612a1905ffe",
+    "accuweather-rushi-v21.1.15-3-rc-arm64-v8a": {
+      "hash": "76e912d3b11f0121422010d7b6ad1fbf",
+      "kinds": [
+        "apk"
+      ]
+    },
     "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a": "c8c0ee01a0dfc3d760b45b7ce081412f",
     "facebook-hushfacebook-v583.0.0.39.55-arm64-v8a": "71454e76c371c6a02ea6e4c80d3d36dd",
     "vn-video-editor-riky-v2.22.1-arm64-v8a": "3e2cbef4703baab0da958ce098e52d0c",
@@ -41,7 +66,12 @@
     "instagram-hushgram-v452.0.0.48.64-arm64-v8a": "4d39f7f4b4d1a75be6ccd8db36ced219",
     "telegram-hushtelegram-v13.0.3-arm64-v8a": "03e1210e03bfc22da66016ab4408306c",
     "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a": "f91f7def1e05b9d1a5d86e75272e66c1",
-    "instagram-hushgram-v452.1.0.53.64-arm64-v8a": "6260839c7d6f1339631d6d78e10a90f5",
+    "instagram-hushgram-v452.1.0.53.64-arm64-v8a": {
+      "hash": "5e05a875f54b0d1f901ad4339c338f00",
+      "kinds": [
+        "apk"
+      ]
+    },
     "messenger-hushmessenger-v584.0.0.49.98-arm64-v8a": "af2fdd0c7796c5b585ef6699540c34ec",
     "facebook-hushfacebook-v584.0.0.51.56-arm64-v8a": "b9e609fec6c3d090492ac12569ab62af",
     "telegram-hushtelegram-v13.1.0-arm64-v8a": "8b37bc4ec938890baff58aff1467aa71"
