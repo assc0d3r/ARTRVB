@@ -114,10 +114,13 @@ printf '{"schema":1,"files":{}}\n' > "$t3/temp/manifest/build.json"
 cat > "$t3/bin/gh" <<'STUB'
 #!/usr/bin/env bash
 echo "ARGS: $*" >> "$GH_LOG"
-m=GET nx=0 path=""
+: > "$GH_BODY"
+m=GET nx=0 path="" nxin=0
 args=("$@")
 for ((i=0;i<${#args[@]};i++)); do
   a=${args[i]}
+  if [ "$nxin" = 1 ]; then cp "$a" "$GH_BODY" 2>/dev/null; nxin=0; continue; fi
+  if [ "$a" = "--input" ]; then nxin=1; continue; fi
   if [ "$nx" = 1 ]; then m="$a"; nx=0; continue; fi
   if [ "$a" = "-X" ]; then nx=1; continue; fi
   case "$a" in repos/*) path="$a";; esac
@@ -137,10 +140,10 @@ esac
 STUB
 chmod +x "$t3/bin/gh"
 
-run_push() { # $1 = stub mode; leaves combined output in $t3/out.<mode>, returns rc
+run_push() { # $1 = stub mode; leaves output in $t3/out.<mode>, body in $t3/body.json
 	local out rc
 	: > "$t3/gh.log"
-	out=$( cd "$t3" && PATH="$t3/bin:$PATH" GH_LOG="$t3/gh.log" GH_TOKEN=fake \
+	out=$( cd "$t3" && PATH="$t3/bin:$PATH" GH_LOG="$t3/gh.log" GH_BODY="$t3/body.json" GH_TOKEN=fake \
 		ARCHIVE_REPO=nullcpy/archive BUILD_TAG=260999 GH_STUB_MODE="$1" \
 		bash "$ROOT/.github/scripts/push_archive_manifest.sh" 2>&1 )
 	rc=$?
@@ -152,22 +155,46 @@ run_push() { # $1 = stub mode; leaves combined output in $t3/out.<mode>, returns
 run_push absent || fail "push (absent) must exit 0"
 have "$t3/gh.log" '-X POST repos/nullcpy/archive/git/refs'
 grep -F 'PUT repos/nullcpy/archive/contents/manifests/260999.json' "$t3/gh.log" > "$t3/put" || fail "no manifest PUT (absent)"
-have "$t3/put" 'message=chore: publish'
-have "$t3/put" '-f content='
-hasnt "$t3/put" '-f sha='
+# The payload must travel as a request body, never as an argv string.
+have "$t3/put" '--input'
+hasnt "$t3/put" '-f content='
+have "$t3/body.json" '"content"'
+have "$t3/body.json" 'chore: publish'
+hasnt "$t3/body.json" '"sha"'
 
 # present: branch and file exist -> do not re-create, update in place with the prior sha
 run_push present || fail "push (present) must exit 0"
 hasnt "$t3/gh.log" '-X POST repos/nullcpy/archive/git/refs'
-grep -F 'PUT repos/nullcpy/archive/contents/manifests/260999.json' "$t3/gh.log" > "$t3/put" || fail "no manifest PUT (present)"
-have "$t3/put" '-f sha=OLD123'
-have "$t3/put" 'message=chore: update'
+have "$t3/body.json" 'OLD123'
+have "$t3/body.json" 'chore: update'
 
 # fail: the PUT is rejected -> the publisher must stay non-fatal (fail-soft)
 rcf=0
 run_push fail || rcf=$?
 [ "$rcf" = 0 ] || fail "push_archive_manifest did not fail soft (rc=$rcf)"
 have "$t3/out.fail" '::warning::'
+
+# oversized: the real 260368 condition. A full-pool manifest's base64 payload
+# overruns MAX_ARG_STRLEN (131072 B, the Linux cap on ONE argument), so passing
+# it in argv died with "Argument list too long" before gh ever ran — silently
+# skipping exactly the biggest builds. The fixture must cross that line or this
+# assertion proves nothing.
+python3 - "$t3/temp/manifest/build.json" <<'PY'
+import json, sys
+files = {("app-%05d-v1.2.3-arm64-v8a.apk" % i): {"name": "app", "version": "1.2.3",
+         "arch": "arm64", "appliedPatches": ["patch-%02d" % j for j in range(24)]}
+         for i in range(1500)}
+json.dump({"schema": 1, "kind": "build",
+           "meta": {"build": "260999", "channel": "beta", "publishedAt": "x"},
+           "files": files}, open(sys.argv[1], "w"))
+PY
+raw=$(wc -c < "$t3/temp/manifest/build.json")
+b64=$((raw * 4 / 3))
+[ "$b64" -gt 131072 ] || fail "oversized fixture too small to cross MAX_ARG_STRLEN (raw=$raw)"
+run_push absent || fail "oversized manifest push must exit 0"
+[ "$(wc -c < "$t3/body.json")" -gt "$b64" ] || fail "oversized payload did not reach the request body"
+echo "PASS: oversized manifest (${raw} B -> ${b64} B base64) sent as a body"
+printf '{"schema":1,"files":{}}\n' > "$t3/temp/manifest/build.json"
 
 echo "PASS: push_archive_manifest website publish"
 

@@ -48,15 +48,28 @@ fi
 #    this pipeline fail, so the || pins an empty value rather than tripping ERR.
 OLD_SHA=$(gh api "repos/$REPO/contents/${PATH_JSON}?ref=${BRANCH}" 2>/dev/null | jq -r '.sha // ""') || OLD_SHA=""
 
-CONTENT=$(base64 "$MANIFEST" | tr -d '\n')
+# 3. Build the request body in a file and hand it to gh as a body, never as argv.
+#    Linux caps ONE argument at MAX_ARG_STRLEN (128 KiB); a full-pool rebuild's
+#    manifest is larger than that once base64-encoded (260368: 104 KB -> 139 KB),
+#    and `-f content=<b64>` then dies with "Argument list too long" before gh even
+#    starts — the push silently never landed for the builds that matter most.
 if [ -n "$OLD_SHA" ]; then
-	gh api -X PUT "repos/$REPO/contents/$PATH_JSON" \
-		-f "message=chore: update $BRANCH manifest for build $TAG [skip ci]" \
-		-f "branch=$BRANCH" -f "content=$CONTENT" -f "sha=$OLD_SHA" >/dev/null
+	MSG="chore: update $BRANCH manifest for build $TAG [skip ci]"
+else
+	MSG="chore: publish $BRANCH manifest for build $TAG [skip ci]"
+fi
+
+REQ=$(mktemp)
+trap 'rm -f "$REQ"' EXIT
+base64 "$MANIFEST" | tr -d '\n' | jq -Rs \
+	--arg message "$MSG" --arg branch "$BRANCH" --arg sha "$OLD_SHA" \
+	'{content: ., message: $message, branch: $branch}
+	 + (if $sha == "" then {} else {sha: $sha} end)' > "$REQ"
+
+gh api -X PUT "repos/$REPO/contents/$PATH_JSON" --input "$REQ" >/dev/null
+
+if [ -n "$OLD_SHA" ]; then
 	echo "Updated $PATH_JSON on $REPO#$BRANCH."
 else
-	gh api -X PUT "repos/$REPO/contents/$PATH_JSON" \
-		-f "message=chore: publish $BRANCH manifest for build $TAG [skip ci]" \
-		-f "branch=$BRANCH" -f "content=$CONTENT" >/dev/null
 	echo "Published $PATH_JSON on $REPO#$BRANCH."
 fi
