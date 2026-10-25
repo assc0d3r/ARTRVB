@@ -18,8 +18,8 @@
     "stable_date": "2026-10-24T01:12:18Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.5",
-    "beta_date": "2026-10-24T17:56:40Z",
+    "beta": "v1.49.0-dev.6",
+    "beta_date": "2026-10-25T15:25:07Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -104,8 +104,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.5.7",
-    "stable_date": "2026-10-24T19:24:37Z"
+    "stable": "v2.6.0",
+    "stable_date": "2026-10-25T16:25:34Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",
@@ -158,8 +158,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.60.0",
-    "stable_date": "2026-10-24T13:05:04Z"
+    "stable": "v1.61.0",
+    "stable_date": "2026-10-25T14:59:16Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
@@ -185,8 +185,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.5.1",
-    "stable_date": "2026-10-25T04:30:07Z"
+    "stable": "v0.5.3",
+    "stable_date": "2026-10-25T15:06:06Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
@@ -194,8 +194,8 @@
     "blocked": false,
     "host": "github",
     "repo": "mich111discord/MightyMichs-Patches",
-    "stable": "v1.11.1",
-    "stable_date": "2026-10-19T12:18:07Z"
+    "stable": "v1.12.0",
+    "stable_date": "2026-10-25T13:29:39Z"
   },
   "o0b/morphe-patches": {
     "beta": "",
@@ -216,8 +216,8 @@
     "stable_date": "2026-10-18T14:08:26Z"
   },
   "rushiranpise/morphe-patches": {
-    "beta": "v1.22.0-dev.1",
-    "beta_date": "2026-09-15T20:50:28Z",
+    "beta": "v1.23.1-dev.1",
+    "beta_date": "2026-10-25T13:21:08Z",
     "blocked": false,
     "host": "github",
     "repo": "rushiranpise/morphe-patches",

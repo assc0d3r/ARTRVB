@@ -59,8 +59,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "d41ff2a2991a4b77770761c5438fbdbe",
-      "shared": "e29888ca1ac695bf058b391917865889"
+      "ch.protonvpn.android": "983ff3e66ecd7133246e102b6b374a17",
+      "shared": "6121deeb89d1b880b91c06f0a77b6c18"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -90,7 +90,7 @@
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
-      "pdb.app": "e01bda77bd9267c70718e6d34a871872",
+      "pdb.app": "52095bc2cbf42afcb83ac87a8175ebf3",
       "shared": "f8418ae25219a77655e700d6acd70d9c"
     }
   },
