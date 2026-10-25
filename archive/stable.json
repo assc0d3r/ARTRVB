@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-25T06:53:18Z"
+    "publishedAt": "2026-10-25T09:35:11Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -500,14 +500,14 @@
       "subVariant": null,
       "packageName": "com.teslacoilsw.launcher",
       "patchSources": [
-        "mich111discord/patches-1.11.0.mpp"
+        "mich111discord/patches-1.11.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/mich111discord/MightyMichs-Patches/releases/tag/v1.11.0"
+        "https://github.com/mich111discord/MightyMichs-Patches/releases/tag/v1.11.1"
       ],
       "appliedPatches": [],
-      "originBuild": "260006",
-      "publishedAt": "2026-10-15T13:46:27Z"
+      "originBuild": "260044",
+      "publishedAt": "2026-10-25T09:34:50Z"
     },
     "railone-vipinvip-v2.1.66-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -552,33 +552,44 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.47.0.mpp"
+        "MorpheApp/patches-1.48.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0"
       ],
       "appliedPatches": [
         "App icon",
+        "Copy text",
         "Custom font",
+        "Customize post layout",
         "Disable modern home",
         "Disable screenshot popup",
+        "Download location",
+        "Feed media max height",
         "Force system font",
+        "Full width feed media",
         "Hide Ask button",
         "Hide Trending shelves",
         "Hide ads",
         "Hide communities shelf",
+        "Hide media viewer components",
         "Hide navigation buttons",
         "Hide sidebar components",
+        "Keep feed position",
+        "Media viewer black background",
+        "Media viewer fade",
         "Open links directly",
         "Open links externally",
+        "Redgifs audio",
+        "Remember collapsed comments",
         "Remove subreddit dialog",
         "Sanitize sharing links",
-        "Show view count",
+        "Show flairs in home feed",
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260006",
-      "publishedAt": "2026-10-15T13:46:27Z"
+      "originBuild": "260044",
+      "publishedAt": "2026-10-25T09:34:50Z"
     },
     "sd-maid-se-rushi-v2.0.3-rc0-arm64-v8a.apk": {
       "name": "sd-maid-se-rushi",
@@ -727,8 +738,8 @@
         "Show sensitive media",
         "Support external downloader"
       ],
-      "originBuild": "260038",
-      "publishedAt": "2026-10-23T14:09:11Z"
+      "originBuild": "260044",
+      "publishedAt": "2026-10-25T09:34:50Z"
     },
     "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -769,16 +780,17 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0.mpp"
+        "MorpheApp/patches-1.48.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0"
       ],
       "appliedPatches": [
         "AI channel filter",
         "Add to queue",
         "Ambient mode",
         "App refresh rate",
+        "Ask flyout menu",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -791,6 +803,7 @@
         "Copy text",
         "Copy video link",
         "Custom branding",
+        "Custom font",
         "Custom player overlay opacity",
         "DeArrow",
         "Disable DRC audio",
@@ -812,9 +825,12 @@
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
+        "Feed card layout",
+        "Feed video actions",
+        "Feed view count",
+        "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
-        "Force system font",
         "Fullscreen video scale",
         "GmsCore support",
         "Hide Shorts components",
@@ -857,8 +873,10 @@
         "Sanitize sharing links",
         "Save to Watch later",
         "Seekbar",
+        "Series tracking",
         "Settings menu filter",
         "Shorts autoplay",
+        "Skip live Shorts",
         "Skip silence",
         "SponsorBlock",
         "Spoof app version",
@@ -866,14 +884,15 @@
         "Spoof video streams",
         "Swipe controls",
         "Theme",
+        "Video delay",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260018",
-      "publishedAt": "2026-10-18T19:29:50Z"
+      "originBuild": "260044",
+      "publishedAt": "2026-10-25T09:34:50Z"
     },
     "netguard-rushi-v2.337-arm64-v8a.apk": {
       "name": "netguard-rushi",
@@ -1064,8 +1083,8 @@
       "appliedPatches": [
         "Unlock Premium+"
       ],
-      "originBuild": "260014",
-      "publishedAt": "2026-10-17T12:21:03Z"
+      "originBuild": "260044",
+      "publishedAt": "2026-10-25T09:34:50Z"
     },
     "facebook-hushfacebook-v583.0.0.39.55-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
@@ -1818,8 +1837,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260042",
-      "publishedAt": "2026-10-24T19:00:05Z"
+      "originBuild": "260044",
+      "publishedAt": "2026-10-25T09:34:50Z"
     },
     "facebook-hushfacebook-v584.0.0.51.56-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
