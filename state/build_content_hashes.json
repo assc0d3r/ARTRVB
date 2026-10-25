@@ -3,7 +3,12 @@
     "pinterest-browzomje-v14.39.0-arm64-v8a": "c0ccd4e6f8d67752465370f114e9771b",
     "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855",
     "discord-venus-v348.10-Stable-arm64-v8a": "0c779c93dee1fc87a8282edf5cae220f",
-    "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": "953f655857ea57fe10ead87220350c8f",
+    "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": {
+      "hash": "fc6f29413de915414b6f6375afcc2f1e",
+      "kinds": [
+        "apk"
+      ]
+    },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "bc55b950dd5f9cbe57e609dbb2c48bcd",
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a": "d2826093798b277403a36398c587d61d",
     "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "effc650276aabbce79e72238e355ed84",
