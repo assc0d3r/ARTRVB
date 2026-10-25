@@ -117,8 +117,8 @@
     "stable_date": "2026-10-18T19:56:10Z"
   },
   "crimera/piko": {
-    "beta": "v3.11.0-dev.1",
-    "beta_date": "2026-10-22T22:32:43Z",
+    "beta": "v3.11.0-dev.2",
+    "beta_date": "2026-10-25T06:54:41Z",
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.61.0-dev.1",
-    "beta_date": "2026-10-25T01:17:56Z",
+    "beta": "v1.61.0-dev.2",
+    "beta_date": "2026-10-25T09:14:16Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

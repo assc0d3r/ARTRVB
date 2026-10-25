@@ -1,0 +1,405 @@
+{
+  "stable": {
+    "Pinterest-browzomje": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "browzomje/browzomje-patches",
+        "brand": "browzomje",
+        "app-name": "Pinterest",
+        "pkg-name": "com.pinterest",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Truecaller-heval99": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "heval99/Heval-Morphe-Patches",
+        "brand": "heval99",
+        "app-name": "Truecaller",
+        "pkg-name": "com.truecaller",
+        "included-patches": "'GmsCore support' 'Hide Premium tab' 'Hide Scam feed' 'Hide family button' 'Spoof signature' 'Use SMS for verification codes'",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Instagram-HushGram": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "SysAdminDoc/HushGram",
+        "brand": "HushGram",
+        "app-name": "Instagram",
+        "pkg-name": "com.instagram.android",
+        "excluded-patches": "'Install next to Instagram'",
+        "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Facebook-HushFacebook": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "SysAdminDoc/HushFacebook",
+        "brand": "HushFacebook",
+        "app-name": "Facebook",
+        "pkg-name": "com.facebook.katana",
+        "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Discord-Venus": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "VenusIsJaded/Venus-Patches",
+        "brand": "Venus",
+        "app-name": "Discord",
+        "pkg-name": "com.discord",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "GoogleMaps-bearinmindcat": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "bearinmindcat/morphe-patches",
+        "brand": "bearinmindcat",
+        "app-name": "Google Maps",
+        "pkg-name": "com.google.android.apps.maps",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Facebook-Messenger-HushMessenger": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "SysAdminDoc/HushMessenger",
+        "brand": "HushMessenger",
+        "app-name": "Messenger",
+        "pkg-name": "com.facebook.orca",
+        "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Google-Gboard-Combined": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches' 'JacksonJones2003/immersive-keyboard-patches'",
+        "brand": "GboardPatches",
+        "app-name": "Gboard",
+        "pkg-name": "com.google.android.inputmethod.latin",
+        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input'",
+        "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "YouTube-Morphe": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "MorpheApp/morphe-patches",
+        "brand": "Morphe",
+        "app-name": "YouTube",
+        "pkg-name": "com.google.android.youtube",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "GooglePhotos-AkashSriram": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "Akash-Sriram/morphe-google-photos",
+        "brand": "AkashSriram",
+        "app-name": "Google Photos",
+        "pkg-name": "com.google.android.apps.photos",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Twitter-Piko": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "crimera/piko",
+        "brand": "Piko",
+        "app-name": "Twitter",
+        "pkg-name": "com.twitter.android",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Spotify-Spicetify": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "spicetify/morphe-patches",
+        "brand": "Spicetify",
+        "app-name": "Spotify",
+        "pkg-name": "com.spotify.music",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Reddit-Morphe": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "MorpheApp/morphe-patches",
+        "brand": "Morphe",
+        "app-name": "Reddit",
+        "pkg-name": "com.reddit.frontpage",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "NovaLauncher-MightyMich": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "mich111discord/MightyMichs-Patches",
+        "brand": "MightyMich",
+        "app-name": "Nova Launcher",
+        "pkg-name": "com.teslacoilsw.launcher",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "AdobeScan-Aidan": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "ihatenodejs/aidans-patches",
+        "brand": "Aidan",
+        "app-name": "Adobe Scan",
+        "pkg-name": "com.adobe.scan.android",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "VN-Riky": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "riky-dev/morphe-patches",
+        "brand": "Riky",
+        "app-name": "VN Video Editor",
+        "pkg-name": "com.frontrow.vlog",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "SonyLIV-TV-Chiggi": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "durgesh0505/chiggi_morphe_patches",
+        "brand": "Chiggi",
+        "app-name": "SonyLIV (Android TV)",
+        "pkg-name": "com.sonyliv",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "GitHub-Noodles": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "hsd-dles/morphe-patches",
+        "brand": "Noodles",
+        "app-name": "GitHub",
+        "pkg-name": "com.github.android",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "SDMaidSE-Rushi": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "rushiranpise/morphe-patches",
+        "brand": "Rushi",
+        "app-name": "SD Maid SE",
+        "pkg-name": "eu.darken.sdmse",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "RailOne-VipinVIP": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "VipinVIP/railone-patches",
+        "brand": "VipinVIP",
+        "app-name": "RailOne",
+        "pkg-name": "org.cris.aikyam",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "AdobeAcrobat-Rushi": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "rushiranpise/morphe-patches",
+        "brand": "Rushi",
+        "app-name": "Adobe Acrobat",
+        "pkg-name": "com.adobe.reader",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "NetGuard-Rushi": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "rushiranpise/morphe-patches",
+        "brand": "Rushi",
+        "app-name": "NetGuard",
+        "pkg-name": "eu.faircode.netguard",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Wavelet-o0b": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "o0b/morphe-patches",
+        "brand": "o0b",
+        "app-name": "Wavelet",
+        "pkg-name": "com.pittvandewitt.wavelet",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "VesselFinder-Heval": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "heval99/Heval-Morphe-Patches",
+        "brand": "Heval",
+        "app-name": "VesselFinder",
+        "pkg-name": "com.astrapaging.vff",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "ProtonVPN-hxreborn": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "hxreborn/morphe-patches",
+        "brand": "hxreborn",
+        "app-name": "Proton VPN",
+        "pkg-name": "ch.protonvpn.android",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "AccuWeather-Rushi": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "rushiranpise/morphe-patches",
+        "brand": "Rushi",
+        "app-name": "AccuWeather",
+        "pkg-name": "com.accuweather.android",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "SoundCloud-V4n1X": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "V4n1X/morphe-patches",
+        "brand": "V4n1X",
+        "app-name": "SoundCloud",
+        "pkg-name": "com.soundcloud.android",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "UiMote-rushiranpise": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "rushiranpise/morphe-patches",
+        "brand": "rushiranpise",
+        "app-name": "Universal TV Remote",
+        "pkg-name": "sensustech.universal.tv.remote.control",
+        "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Telegram-HushTelegram": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "SysAdminDoc/HushTelegram",
+        "brand": "HushTelegram",
+        "app-name": "Telegram",
+        "pkg-name": "org.telegram.messenger",
+        "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    },
+    "Pdbee-madushas": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "madushas/pdb_patch",
+        "brand": "madushas",
+        "app-name": "Pdbee",
+        "pkg-name": "pdb.app",
+        "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk"
+      }
+    }
+  },
+  "beta": {}
+}

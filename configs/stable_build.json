@@ -27,7 +27,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -107,7 +107,7 @@
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
   },
   "YouTube-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": "MorpheApp/morphe-patches",
@@ -132,7 +132,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",
@@ -160,7 +160,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -174,7 +174,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/reddit/com.reddit.frontpage"
   },
   "NovaLauncher-MightyMich": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.teslacoilsw.launcher",
     "app-name": "Nova Launcher",
     "patches-source": "mich111discord/MightyMichs-Patches",
@@ -340,7 +340,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
   },
   "AccuWeather-Rushi": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.accuweather.android",
     "app-name": "AccuWeather",
     "patches-source": "rushiranpise/morphe-patches",

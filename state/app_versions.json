@@ -57,7 +57,7 @@
     "keys": [
       "Instagram-HushGram"
     ],
-    "version": "454.0.0.0.11"
+    "version": "454.0.0.0.17"
   },
   "NetGuard-Rushi": {
     "keys": [
@@ -69,7 +69,7 @@
     "keys": [
       "NovaLauncher-MightyMich"
     ],
-    "version": "89400 (8.9.4)"
+    "version": "89500 (8.9.5)"
   },
   "Pinterest-browzomje": {
     "keys": [
@@ -87,7 +87,7 @@
     "keys": [
       "Reddit-Morphe"
     ],
-    "version": "2026.42.0"
+    "version": "2026.43.0"
   },
   "SDMaidSE-Rushi": {
     "keys": [
@@ -123,7 +123,7 @@
     "keys": [
       "Twitter-Piko"
     ],
-    "version": "12.37.0-prod.01"
+    "version": "12.37.2-prod.01"
   },
   "VN-Riky": {
     "keys": [
@@ -147,13 +147,13 @@
     "keys": [
       "YouTube-Morphe"
     ],
-    "version": "21.42.243"
+    "version": "21.42.244"
   },
   "AccuWeather-Rushi": {
     "keys": [
       "AccuWeather-Rushi"
     ],
-    "version": "21.2.0-2-rc"
+    "version": "21.2.1-1-rc"
   },
   "Google-Gboard-Combined": {
     "keys": [
