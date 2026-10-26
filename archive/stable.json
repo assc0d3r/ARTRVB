@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-26T19:01:51Z"
+    "publishedAt": "2026-10-26T23:52:49Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1690,10 +1690,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "SysAdminDoc/patches-0.18.0.mpp"
+        "SysAdminDoc/patches-0.18.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.18.0"
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.18.1"
       ],
       "appliedPatches": [
         "AMOLED black theme",
@@ -1799,8 +1799,8 @@
         "Disable Play Store updates",
         "Accent color"
       ],
-      "originBuild": "260042",
-      "publishedAt": "2026-10-24T19:00:05Z"
+      "originBuild": "260055",
+      "publishedAt": "2026-10-26T23:52:37Z"
     },
     "telegram-hushtelegram-v13.1.0-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
@@ -2027,8 +2027,8 @@
         "Spoof app signature",
         "Spoof install source"
       ],
-      "originBuild": "260054",
-      "publishedAt": "2026-10-26T19:01:35Z"
+      "originBuild": "260055",
+      "publishedAt": "2026-10-26T23:52:37Z"
     },
     "truecaller-heval99-v26.41.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
