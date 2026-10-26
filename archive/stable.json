@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-26T15:14:43Z"
+    "publishedAt": "2026-10-26T19:01:51Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -199,10 +199,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.6.3.mpp"
+        "bearinmindcat/patches-2.6.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.6.3"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.6.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -233,8 +233,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260053",
-      "publishedAt": "2026-10-26T15:14:24Z"
+      "originBuild": "260054",
+      "publishedAt": "2026-10-26T19:01:35Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -1429,10 +1429,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.62.0.mpp"
+        "hxreborn/patches-1.63.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.62.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.63.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1449,8 +1449,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260050",
-      "publishedAt": "2026-10-26T10:44:52Z"
+      "originBuild": "260054",
+      "publishedAt": "2026-10-26T19:01:35Z"
     },
     "messenger-hushmessenger-v584.0.0.49.98-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2001,10 +2001,10 @@
       "subVariant": null,
       "packageName": "pdb.app",
       "patchSources": [
-        "madushas/patches-0.5.4.mpp"
+        "madushas/patches-0.5.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/madushas/pdb_patch/releases/tag/v0.5.4"
+        "https://github.com/madushas/pdb_patch/releases/tag/v0.5.5"
       ],
       "appliedPatches": [
         "Allow standalone install (split-less APK)",
@@ -2015,19 +2015,20 @@
         "Fix app icon",
         "Floating power button",
         "GmsCore support (MicroG)",
+        "Mock Pro (client-side)",
         "No profile-visitor limit",
         "Pdb Extras feature menu",
         "Pdb Extras — resources",
         "Provide Original app certificate",
         "Remove ads",
         "Show profile IDs on names",
+        "Soul history",
         "Spoof Widevine / DRM level",
         "Spoof app signature",
-        "Spoof install source",
-        "Unlock Pro"
+        "Spoof install source"
       ],
-      "originBuild": "260050",
-      "publishedAt": "2026-10-26T10:44:52Z"
+      "originBuild": "260054",
+      "publishedAt": "2026-10-26T19:01:35Z"
     },
     "truecaller-heval99-v26.41.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",

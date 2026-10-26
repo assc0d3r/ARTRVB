@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260054",
+    "channel": "stable",
+    "publishedAt": "2026-10-26T19:01:35Z"
+  },
+  "files": {
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
+      "name": "google-maps-bearinmindcat",
+      "version": "26.36.04.973607363",
+      "appKey": "googlemaps",
+      "appName": "Google Maps",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "bearinmindcat",
+      "brandName": "bearinmindcat",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "org.ungoogled.android.apps.maps",
+      "patchSources": [
+        "bearinmindcat/patches-2.6.4.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.6.4"
+      ],
+      "appliedPatches": [
+        "120 refresh rate",
+        "Account sheet cleanup",
+        "Any media app",
+        "Avoid Flock cameras",
+        "Better offline maps",
+        "Black theme",
+        "Blue pin",
+        "Bypass Play Services checks",
+        "Change app name",
+        "Change package name",
+        "Customization screen",
+        "Flock cameras",
+        "Hide ads and clutter",
+        "Legacy icon",
+        "Location provider toggle",
+        "Offline saved places",
+        "Proxy",
+        "Rectangle shapes",
+        "Remove permissions",
+        "Remove sign-in prompts",
+        "Remove telemetry",
+        "Speed cameras",
+        "Speeding chime",
+        "Trim account menu",
+        "Waze alerts",
+        "Zoom controls in navigation",
+        "Power saving mode"
+      ],
+      "originBuild": "260054",
+      "publishedAt": "2026-10-26T19:01:35Z"
+    },
+    "pdbee-madushas-v2.135.1-arm64-v8a.apk": {
+      "name": "pdbee-madushas",
+      "version": "2.135.1",
+      "appKey": "pdbee",
+      "appName": "Pdbee",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "madushas",
+      "brandName": "madushas",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "pdb.app",
+      "patchSources": [
+        "madushas/patches-0.5.5.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/madushas/pdb_patch/releases/tag/v0.5.5"
+      ],
+      "appliedPatches": [
+        "Allow standalone install (split-less APK)",
+        "Bypass PairIP license check",
+        "Disable PairIP license check",
+        "Disable trackers",
+        "Fix Firebase after re-signing",
+        "Fix app icon",
+        "Floating power button",
+        "GmsCore support (MicroG)",
+        "Mock Pro (client-side)",
+        "No profile-visitor limit",
+        "Pdb Extras feature menu",
+        "Pdb Extras — resources",
+        "Provide Original app certificate",
+        "Remove ads",
+        "Show profile IDs on names",
+        "Soul history",
+        "Spoof Widevine / DRM level",
+        "Spoof app signature",
+        "Spoof install source"
+      ],
+      "originBuild": "260054",
+      "publishedAt": "2026-10-26T19:01:35Z"
+    },
+    "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.20.98.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.63.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.63.0"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260054",
+      "publishedAt": "2026-10-26T19:01:35Z"
+    }
+  }
+}
