@@ -1,7 +1,7 @@
 {
   "stable": {
     "pinterest-browzomje-v14.39.0-arm64-v8a": {
-      "hash": "c0ccd4e6f8d67752465370f114e9771b",
+      "hash": "63bb3213558e6995043189dd8664147c",
       "kinds": [
         "apk"
       ]
@@ -211,7 +211,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a": {
-      "hash": "d460a422b35df2ca42f98652df0e0020",
+      "hash": "809d1991f27534e00a6f3b293ef2ea5b",
       "kinds": [
         "apk"
       ]
@@ -241,7 +241,25 @@
       ]
     },
     "google-photos-akashsriram-v7.98.0.1001971222-arm64-v8a": {
-      "hash": "fb04a8fac85e8ce89289da310bcb8e27",
+      "hash": "7eadeba220ef6a45efbebd21e631f3b2",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "discord-venus-v350.8-Stable-arm64-v8a": {
+      "hash": "c1792dea171d1806fc26105cb064dcd3",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "truecaller-heval99-v26.41.5-arm64-v8a": {
+      "hash": "ebab63f0bf281ebd67f18fbf120d40a2",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "pdbee-madushas-v2.135.1-arm64-v8a": {
+      "hash": "cf9bec900a124d02f73d77048f0e1051",
       "kinds": [
         "apk"
       ]
