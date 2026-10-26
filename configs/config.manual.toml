@@ -6,6 +6,7 @@ patches-source = " 'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches' 'J
 brand = "GboardPatches"
 arch = "arm64-v8a"
 inclusive-patches = false
+included-patches = " | 'Backspace Repeat Haptic Feedback' 'Glide Trail Customization' | 'Glass Press Effect' 'Glass Panel' 'Translucent Bottom Bar' 'Theme Follows Dark Mode' 'Immersive Keyboard' | "
 patches-version = "beta"
 build-mode = "both"
 excluded-patches = " 'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' "
