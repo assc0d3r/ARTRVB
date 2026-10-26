@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-26T11:52:38Z"
+    "publishedAt": "2026-10-26T15:14:43Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -199,10 +199,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.5.6.mpp"
+        "bearinmindcat/patches-2.6.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.6"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.6.3"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -233,8 +233,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260040",
-      "publishedAt": "2026-10-23T17:46:18Z"
+      "originBuild": "260053",
+      "publishedAt": "2026-10-26T15:14:24Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -1920,138 +1920,6 @@
       ],
       "originBuild": "260050",
       "publishedAt": "2026-10-26T10:44:52Z"
-    },
-    "gboard-gboardpatches-module-v18.5.3.993608717-release-arm64-v8a-arm64-v8a.zip": {
-      "name": "gboard-gboardpatches",
-      "version": "18.5.3.993608717-release-arm64-v8a",
-      "appKey": "gboard",
-      "appName": "Gboard",
-      "arch": "arm64",
-      "fileType": "Module",
-      "brandKey": "gboardpatches",
-      "brandName": "GboardPatches",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.google.android.inputmethod.latin",
-      "patchSources": [
-        "jasonwu1994/patches-4.0.0-dev.4.mpp",
-        "ausamnco/patches-1.4.2.mpp",
-        "JacksonJones2003/patches-1.14.0-dev.1.mpp",
-        "Akshayykadam/PixelBoard.apk"
-      ],
-      "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.4",
-        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.14.0-dev.1",
-        "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
-      ],
-      "appliedPatches": [
-        "AI Writing Tools",
-        "Access Points menu style",
-        "Add Gboard Signature Bypass",
-        "Advanced Voice Typing",
-        "Backup & Restore",
-        "Change emoji size",
-        "Clipboard Custom Character Limit",
-        "Clipboard Enhancements",
-        "Close Proactive Suggestions",
-        "Custom Symbols",
-        "Custom Theme",
-        "Developer options",
-        "Emojis, stickers & GIFs Tab Order",
-        "Enable Inline Autofill Suggestions",
-        "Enable OCR / Scan Text",
-        "Enable accessibility layout",
-        "Enable cursor trackpad mode",
-        "Enable split keyboard",
-        "English QWERTY Up-Flick Uppercase",
-        "Floating Web Search",
-        "Frosted Glass",
-        "G Logo on Spacebar",
-        "Grammar Checker",
-        "Incognito Mode Toggle",
-        "Inline Suggestions",
-        "Key Shape Selection",
-        "Latin Globe Key Ignore Interval",
-        "Long-Press Editing Shortcuts",
-        "Quick Insert",
-        "Rounded Keyboard Panel",
-        "Settings Homepage Override",
-        "Simple Calculator",
-        "Swipe Down to Dismiss Keyboard",
-        "Swipeable Custom Top Row",
-        "Toolbar Editing Buttons",
-        "Top Toolbar Item Count",
-        "Use Bluetooth Microphone"
-      ],
-      "originBuild": "260049",
-      "publishedAt": "2026-10-26T07:18:30Z"
-    },
-    "gboard-gboardpatches-v18.5.3.993608717-release-arm64-v8a-arm64-v8a.apk": {
-      "name": "gboard-gboardpatches",
-      "version": "18.5.3.993608717-release-arm64-v8a",
-      "appKey": "gboard",
-      "appName": "Gboard",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "gboardpatches",
-      "brandName": "GboardPatches",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.google.android.inputmethod.latin",
-      "patchSources": [
-        "jasonwu1994/patches-4.0.0-dev.4.mpp",
-        "ausamnco/patches-1.4.2.mpp",
-        "JacksonJones2003/patches-1.14.0-dev.1.mpp",
-        "Akshayykadam/PixelBoard.apk"
-      ],
-      "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.4",
-        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.14.0-dev.1",
-        "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
-      ],
-      "appliedPatches": [
-        "AI Writing Tools",
-        "Access Points menu style",
-        "Add Gboard Signature Bypass",
-        "Advanced Voice Typing",
-        "Backup & Restore",
-        "Change emoji size",
-        "Clipboard Custom Character Limit",
-        "Clipboard Enhancements",
-        "Close Proactive Suggestions",
-        "Custom Symbols",
-        "Custom Theme",
-        "Developer options",
-        "Emojis, stickers & GIFs Tab Order",
-        "Enable Inline Autofill Suggestions",
-        "Enable OCR / Scan Text",
-        "Enable accessibility layout",
-        "Enable cursor trackpad mode",
-        "Enable split keyboard",
-        "English QWERTY Up-Flick Uppercase",
-        "Floating Web Search",
-        "Frosted Glass",
-        "G Logo on Spacebar",
-        "Grammar Checker",
-        "Incognito Mode Toggle",
-        "Inline Suggestions",
-        "Key Shape Selection",
-        "Latin Globe Key Ignore Interval",
-        "Long-Press Editing Shortcuts",
-        "Quick Insert",
-        "Rounded Keyboard Panel",
-        "Settings Homepage Override",
-        "Simple Calculator",
-        "Swipe Down to Dismiss Keyboard",
-        "Swipeable Custom Top Row",
-        "Toolbar Editing Buttons",
-        "Top Toolbar Item Count",
-        "Use Bluetooth Microphone"
-      ],
-      "originBuild": "260049",
-      "publishedAt": "2026-10-26T07:18:30Z"
     },
     "discord-venus-v350.8-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
