@@ -2,7 +2,7 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "053c252b711749b103b067a8faebaf3b",
+      "com.google.android.apps.photos": "2c174f1b21a7d7ac55624bb7b0d87738",
       "shared": "4896b91072faee9736005cde611b031d"
     }
   },
@@ -23,7 +23,7 @@
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     },
     "stable": {
-      "com.pinterest": "2836f3449a571a1a7c7e444ca6ac5a26",
+      "com.pinterest": "f1869bac9d36ff020561d95661a870fa",
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     }
   },
@@ -51,16 +51,16 @@
       "shared": "bae959b0d1344b8804d8a39ed0e98880"
     },
     "stable": {
-      "com.astrapaging.vff": "497e8f04bb07b9efddd5fd445630e307",
-      "com.truecaller": "1ccdc5dd19fe2c131e9d7e2b99417fca",
-      "shared": "a24337d8ff2461e261b6cd21a582dbb8"
+      "com.astrapaging.vff": "38de9e6460ca108b8613e785301c6c5a",
+      "com.truecaller": "8a714b34f84ca95da973ae9d2d4147a9",
+      "shared": "9559484535a8399740bc1d5c127a6356"
     }
   },
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "983ff3e66ecd7133246e102b6b374a17",
-      "shared": "6121deeb89d1b880b91c06f0a77b6c18"
+      "ch.protonvpn.android": "01eda6e6ce9f0b10d2f237c5c024e5c3",
+      "shared": "4ed8726f0bb89e289301fc3a10c04e78"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -90,7 +90,7 @@
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
-      "pdb.app": "52095bc2cbf42afcb83ac87a8175ebf3",
+      "pdb.app": "91d76a07e56ffec05f9e79ee3168358e",
       "shared": "f8418ae25219a77655e700d6acd70d9c"
     }
   },

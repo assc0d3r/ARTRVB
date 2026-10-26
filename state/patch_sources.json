@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.16.0",
-    "stable_date": "2026-10-25T17:37:58Z"
+    "stable": "v1.16.1",
+    "stable_date": "2026-10-26T06:17:22Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
     "beta": "v1.14.0-dev.1",
@@ -18,8 +18,8 @@
     "stable_date": "2026-10-25T21:50:33Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.6",
-    "beta_date": "2026-10-25T15:25:07Z",
+    "beta": "v1.49.0-dev.7",
+    "beta_date": "2026-10-26T07:48:29Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -113,8 +113,8 @@
     "blocked": false,
     "host": "github",
     "repo": "browzomje/browzomje-patches",
-    "stable": "v1.14.0",
-    "stable_date": "2026-10-18T19:56:10Z"
+    "stable": "v1.14.1",
+    "stable_date": "2026-10-26T10:05:48Z"
   },
   "crimera/piko": {
     "beta": "v3.11.0-dev.3",
@@ -140,8 +140,8 @@
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
-    "stable": "v1.19.0",
-    "stable_date": "2026-10-24T12:33:51Z"
+    "stable": "v2.0.0",
+    "stable_date": "2026-10-26T09:33:36Z"
   },
   "hsd-dles/morphe-patches": {
     "beta": "",
@@ -153,13 +153,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.62.0-dev.8",
-    "beta_date": "2026-10-25T23:09:13Z",
+    "beta": "v1.62.0-dev.15",
+    "beta_date": "2026-10-26T09:51:42Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.61.0",
-    "stable_date": "2026-10-25T14:59:16Z"
+    "stable": "v1.62.0",
+    "stable_date": "2026-10-26T09:58:58Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
@@ -171,8 +171,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.0.0-dev.4",
-    "beta_date": "2026-10-25T03:47:02Z",
+    "beta": "v4.0.0-dev.5",
+    "beta_date": "2026-10-26T07:04:24Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
@@ -185,8 +185,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.5.3",
-    "stable_date": "2026-10-25T15:06:06Z"
+    "stable": "v0.5.4",
+    "stable_date": "2026-10-26T07:52:21Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
