@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-26T10:45:14Z"
+    "publishedAt": "2026-10-26T11:29:08Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -63,99 +63,6 @@
       ],
       "originBuild": "260050",
       "publishedAt": "2026-10-26T10:44:52Z"
-    },
-    "truecaller-heval99-v26.39.6-arm64-v8a.apk": {
-      "name": "truecaller-heval99",
-      "version": "26.39.6",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-1.14.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "GmsCore support",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide family button",
-        "Spoof signature",
-        "Use SMS for verification codes"
-      ],
-      "originBuild": "260004",
-      "publishedAt": "2026-10-15T07:09:05Z"
-    },
-    "discord-venus-v348.10-Stable-arm64-v8a.apk": {
-      "name": "discord-venus",
-      "version": "348.10-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "venus",
-      "brandName": "Venus",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "VenusIsJaded/patches-1.15.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.15.0"
-      ],
-      "appliedPatches": [
-        "Account switcher",
-        "Complete Quests automatically",
-        "Copy profile bios",
-        "Custom themes",
-        "Disable advertising identifiers",
-        "Disable analytics",
-        "Disable crash reporting",
-        "Disable install attribution",
-        "Disable telemetry and touch logging",
-        "Double-tap to reply",
-        "Favourite any image or video",
-        "Fix unknown mentions",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
-        "Hide typing indicator",
-        "Jump to first message",
-        "Keep deleted messages",
-        "Message highlights",
-        "Pastel name colors",
-        "Read all button",
-        "Send Nitro stickers and emojis as links",
-        "Send audio as voice messages",
-        "Send long messages",
-        "Show device indicators",
-        "Show file sizes when attaching",
-        "Show hidden channels",
-        "Skip delete confirmation",
-        "Spaces in channel names",
-        "Translate messages",
-        "Unlock app icons",
-        "Use your phone's emojis",
-        "Use your phone's font",
-        "User activity notifications",
-        "User and server reviews",
-        "Venus button on profile bar",
-        "Venus settings"
-      ],
-      "originBuild": "260014",
-      "publishedAt": "2026-10-17T12:21:03Z"
     },
     "messenger-hushmessenger-v583.0.0.29.95-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -252,69 +159,32 @@
       "brandName": "GboardPatches",
       "variant": null,
       "subVariant": null,
-      "packageName": "dev.jason.com.google.android.inputmethod.latin",
+      "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-3.13.0.mpp",
+        "jasonwu1994/patches-4.0.0-dev.5.mpp",
         "ausamnco/patches-1.4.2.mpp",
-        "JacksonJones2003/patches-1.13.1.mpp"
+        "JacksonJones2003/patches-1.14.0-dev.1.mpp",
+        "Akshayykadam/PixelBoard.apk"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v3.13.0",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
         "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.13.1"
+        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.14.0-dev.1",
+        "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
       ],
       "appliedPatches": [
-        "AI Writing Tools",
-        "Access Points menu style",
-        "Add Gboard Signature Bypass",
-        "Advanced Voice Typing",
         "Backspace Repeat Haptic Feedback",
-        "Backup & Restore",
-        "Change emoji size",
-        "Clipboard Custom Character Limit",
-        "Clipboard Enhancements",
-        "Close Proactive Suggestions",
-        "Custom Symbols",
-        "Custom Theme",
-        "Developer options",
         "Emoji Key On Right",
-        "Emojis, stickers & GIFs Tab Order",
-        "Enable Inline Autofill Suggestions",
-        "Enable OCR / Scan Text",
-        "Enable accessibility layout",
-        "Enable cursor trackpad mode",
-        "Enable split keyboard",
-        "English QWERTY Up-Flick Uppercase",
         "Enter Key Tasker Event",
-        "Floating Web Search",
-        "Frosted Glass",
-        "G Logo on Spacebar",
         "Glass Panel",
         "Glass Press Effect",
         "Glide Trail Customization",
-        "Grammar Checker",
-        "Hyperspeed Typing Animation",
         "Immersive Keyboard",
-        "Incognito Mode Toggle",
-        "Inline Suggestions",
-        "Key Shape Selection",
-        "Latin Globe Key Ignore Interval",
-        "Long-Press Editing Shortcuts",
-        "Quick Insert",
-        "Rounded Keyboard Panel",
-        "Settings Homepage Override",
-        "Simple Calculator",
-        "Swipe Down to Dismiss Keyboard",
-        "Swipeable Custom Top Row",
         "Theme Follows Dark Mode",
-        "Toolbar Editing Buttons",
-        "Top Toolbar Item Count",
-        "Translucent Bottom Bar",
-        "Use Bluetooth Microphone",
-        "Package Rename"
+        "Translucent Bottom Bar"
       ],
-      "originBuild": "260043",
-      "publishedAt": "2026-10-25T06:53:04Z"
+      "originBuild": "260051",
+      "publishedAt": "2026-10-26T11:28:52Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -2328,6 +2198,44 @@
       ],
       "originBuild": "260050",
       "publishedAt": "2026-10-26T10:44:52Z"
+    },
+    "gboard-gboardpatches-module-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.zip": {
+      "name": "gboard-gboardpatches",
+      "version": "18.0.3.954559732-release-arm64-v8a",
+      "appKey": "gboard",
+      "appName": "Gboard",
+      "arch": "arm64",
+      "fileType": "Module",
+      "brandKey": "gboardpatches",
+      "brandName": "GboardPatches",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.google.android.inputmethod.latin",
+      "patchSources": [
+        "jasonwu1994/patches-4.0.0-dev.5.mpp",
+        "ausamnco/patches-1.4.2.mpp",
+        "JacksonJones2003/patches-1.14.0-dev.1.mpp",
+        "Akshayykadam/PixelBoard.apk"
+      ],
+      "changelogs": [
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
+        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
+        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.14.0-dev.1",
+        "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
+      ],
+      "appliedPatches": [
+        "Backspace Repeat Haptic Feedback",
+        "Emoji Key On Right",
+        "Enter Key Tasker Event",
+        "Glass Panel",
+        "Glass Press Effect",
+        "Glide Trail Customization",
+        "Immersive Keyboard",
+        "Theme Follows Dark Mode",
+        "Translucent Bottom Bar"
+      ],
+      "originBuild": "260051",
+      "publishedAt": "2026-10-26T11:28:52Z"
     }
   }
 }
