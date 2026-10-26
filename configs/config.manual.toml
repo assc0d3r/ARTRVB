@@ -2,7 +2,7 @@
 enabled = true
 pkg-name = "com.google.android.inputmethod.latin"
 app-name = "Gboard"
-patches-source = "jasonwu1994/Gboard-patches ausamnco/gboard-enc-patches JacksonJones2003/immersive-keyboard-patches Akshayykadam/PixelBoard"
+patches-source = " 'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches' 'JacksonJones2003/immersive-keyboard-patches' 'Akshayykadam/PixelBoard' "
 brand = "GboardPatches"
 arch = "arm64-v8a"
 inclusive-patches = true
