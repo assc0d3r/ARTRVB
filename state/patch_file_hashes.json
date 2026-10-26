@@ -163,8 +163,8 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "879055976ca71352e5a4a198b6ce64ba",
-      "shared": "e3641de65e92b39ecad9906a6788f589"
+      "com.facebook.katana": "b180de73f4bb8d641a3357b73338b89e",
+      "shared": "141bd8a683966646c87ede3c9bf17e3c"
     }
   },
   "sysadmindoc/hushgram": {
