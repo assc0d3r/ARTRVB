@@ -10,6 +10,6 @@ included-patches = " | 'Backspace Repeat Haptic Feedback' 'Glide Trail Customiza
 patches-version = "beta"
 build-mode = "both"
 excluded-patches = " 'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' "
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/gboard/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/gboard/gboard-the-keyboard-18-5-3-993608717-release/"
 uptodown-dlurl = "https://gboard-go.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
