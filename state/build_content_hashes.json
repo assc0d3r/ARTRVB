@@ -291,9 +291,10 @@
       ]
     },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": {
-      "hash": "50adb5604c1505ebd5dd1c7c3c69a714",
+      "hash": "c45a8834e772841e3c3c37c335f81af6",
       "kinds": [
-        "apk"
+        "apk",
+        "module"
       ]
     },
     "youtube-morphe-v21.20.405-arm64-v8a": {
