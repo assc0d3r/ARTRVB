@@ -316,6 +316,13 @@
         "apk",
         "module"
       ]
+    },
+    "gboard-gboardpatches-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
+      "hash": "86e52a62682e5542473da187ca050a4a",
+      "kinds": [
+        "apk",
+        "module"
+      ]
     }
   }
 }
