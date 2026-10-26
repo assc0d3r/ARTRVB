@@ -1,16 +1,12 @@
-#Gboard: jasonwu1994 (base, 44 patches) + ausamnco (2 extra patches)
-# Both bundles declare support for Gboard 18.0.3.954559732 (arm64-v8a).
-# Replace the old [Google-Gboard-GboardPatches] block in apps.toml with this one.
-[Google-Gboard-Combined]
+[Telegram-HushTelegram]
 enabled = true
-pkg-name = "com.google.android.inputmethod.latin"
-app-name = "Gboard"
-patches-source = "'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches' 'JacksonJones2003/immersive-keyboard-patches'" 
-brand = "GboardPatches"
+pkg-name = "org.telegram.messenger.web"
+app-name = "Telegram"
+patches-source = "SysAdminDoc/HushTelegram"
+brand = "HushTelegram"
 arch = "arm64-v8a"
 inclusive-patches = true
 build-mode = "apk"
-excluded-patches = "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input'"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/gboard/"
-uptodown-dlurl = "https://gboard-go.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
+patcher-args = "-e 'Use registered Telegram API credentials' -OapiId=$TELEGRAM_API_ID -OapiHash=$TELEGRAM_API_HASH"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram-web-version"
+uptodown-dlurl = "https://telegram.en.uptodown.com/android"
