@@ -21,7 +21,8 @@
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": {
       "hash": "fc6f29413de915414b6f6375afcc2f1e",
       "kinds": [
-        "apk"
+        "apk",
+        "module"
       ]
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": {
