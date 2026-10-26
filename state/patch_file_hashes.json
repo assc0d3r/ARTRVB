@@ -17,7 +17,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "0231c0d1b72c3f8d991352f37c4f715b",
+      "com.google.android.apps.maps": "7253ced2554d8fda10cdcf2073e0afec",
       "shared": "19bc25f6b1b38d8ac29280ed630dc132"
     }
   },
@@ -63,8 +63,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "01eda6e6ce9f0b10d2f237c5c024e5c3",
-      "shared": "4ed8726f0bb89e289301fc3a10c04e78"
+      "ch.protonvpn.android": "49165a2021abfd7b59081ed1d9ed0ace",
+      "shared": "5959d68d5e4a4c4711fa330d3bcb559e"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -94,7 +94,7 @@
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
-      "pdb.app": "91d76a07e56ffec05f9e79ee3168358e",
+      "pdb.app": "794176f7430e2e598bbd0d6d257a891e",
       "shared": "f8418ae25219a77655e700d6acd70d9c"
     }
   },

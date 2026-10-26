@@ -314,7 +314,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",
@@ -380,7 +380,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/telegram/org.telegram.messenger/"
   },
   "Pdbee-madushas": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "pdb.app",
     "app-name": "Pdbee",
     "patches-source": "madushas/pdb_patch",
