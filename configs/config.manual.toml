@@ -10,7 +10,6 @@ patches-source = [
     # You can append any other GitHub repository here, e.g.:
     # "username/custom-patch-repo"
 ]
-patches-version = "dev"  # Targets dev/bleeding-edge branches for the sources
 brand = "GboardPatches"
 arch = "arm64-v8a"
 inclusive-patches = true
