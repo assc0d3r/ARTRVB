@@ -18,13 +18,13 @@
     "stable_date": "2026-10-25T15:08:51Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
-    "beta": "v1.14.0-dev.1",
-    "beta_date": "2026-10-25T21:48:40Z",
+    "beta": "v1.15.0-dev.1",
+    "beta_date": "2026-10-27T04:46:51Z",
     "blocked": false,
     "host": "github",
     "repo": "JacksonJones2003/immersive-keyboard-patches",
-    "stable": "v1.14.0",
-    "stable_date": "2026-10-25T21:50:33Z"
+    "stable": "v1.15.0",
+    "stable_date": "2026-10-27T04:49:13Z"
   },
   "MorpheApp/morphe-patches": {
     "beta": "v1.49.0-dev.7",
@@ -86,8 +86,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.18.0",
-    "stable_date": "2026-10-24T05:10:17Z"
+    "stable": "v1.19.0",
+    "stable_date": "2026-10-26T23:55:19Z"
   },
   "VipinVIP/railone-patches": {
     "beta": "",
