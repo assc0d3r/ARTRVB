@@ -18,17 +18,17 @@
     "stable_date": "2026-10-25T15:08:51Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
-    "beta": "v1.15.0-dev.1",
-    "beta_date": "2026-10-27T04:46:51Z",
+    "beta": "v1.16.0-dev.1",
+    "beta_date": "2026-10-27T06:12:39Z",
     "blocked": false,
     "host": "github",
     "repo": "JacksonJones2003/immersive-keyboard-patches",
-    "stable": "v1.15.0",
-    "stable_date": "2026-10-27T04:49:13Z"
+    "stable": "v1.16.0",
+    "stable_date": "2026-10-27T06:15:15Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.7",
-    "beta_date": "2026-10-26T07:48:29Z",
+    "beta": "v1.49.0-dev.8",
+    "beta_date": "2026-10-27T09:09:25Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -162,13 +162,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.64.0-dev.1",
-    "beta_date": "2026-10-26T15:50:22Z",
+    "beta": "v1.65.0-dev.2",
+    "beta_date": "2026-10-27T09:41:35Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.63.0",
-    "stable_date": "2026-10-26T15:40:53Z"
+    "stable": "v1.64.0",
+    "stable_date": "2026-10-27T07:23:57Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",

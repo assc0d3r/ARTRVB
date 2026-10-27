@@ -63,8 +63,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "49165a2021abfd7b59081ed1d9ed0ace",
-      "shared": "5959d68d5e4a4c4711fa330d3bcb559e"
+      "ch.protonvpn.android": "53dc5fca8f5b88285279366a81fea51d",
+      "shared": "9688fcfbe22590e1c3f83b19fbf21a9d"
     }
   },
   "ihatenodejs/aidans-patches": {
