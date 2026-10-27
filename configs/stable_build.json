@@ -366,7 +366,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
   },
   "Telegram-HushTelegram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "patches-source": "SysAdminDoc/HushTelegram",
@@ -380,7 +380,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/telegram/org.telegram.messenger/"
   },
   "Pdbee-madushas": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "pdb.app",
     "app-name": "Pdbee",
     "patches-source": "madushas/pdb_patch",

@@ -184,8 +184,8 @@
   "sysadmindoc/hushtelegram": {
     "beta": {},
     "stable": {
-      "org.telegram.messenger": "fe59349aec5a62eebeb7fc87146abec2",
-      "shared": "1cbb0d9c002e86bb6403698a365c7852"
+      "org.telegram.messenger": "444cfc300ecd8c4377c01808f8c945de",
+      "shared": "d03d779f97cdb8e96edae7d2c096f4e4"
     }
   },
   "v4n1x/morphe-patches": {

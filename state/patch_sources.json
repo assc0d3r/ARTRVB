@@ -18,13 +18,13 @@
     "stable_date": "2026-10-25T15:08:51Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
-    "beta": "v1.16.4-dev.1",
-    "beta_date": "2026-10-27T16:09:17Z",
+    "beta": "v1.16.5-dev.1",
+    "beta_date": "2026-10-27T22:27:41Z",
     "blocked": false,
     "host": "github",
     "repo": "JacksonJones2003/immersive-keyboard-patches",
-    "stable": "v1.16.4",
-    "stable_date": "2026-10-27T16:14:18Z"
+    "stable": "v1.16.5",
+    "stable_date": "2026-10-27T22:29:43Z"
   },
   "MorpheApp/morphe-patches": {
     "beta": "v1.49.0-dev.9",
@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushTelegram",
-    "stable": "v0.0.20",
-    "stable_date": "2026-10-23T14:38:24Z"
+    "stable": "v0.0.21",
+    "stable_date": "2026-10-27T21:32:40Z"
   },
   "V4n1X/morphe-patches": {
     "beta": "",
@@ -113,8 +113,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.7.1",
-    "stable_date": "2026-10-27T17:18:53Z"
+    "stable": "v2.7.2",
+    "stable_date": "2026-10-27T21:10:07Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",
@@ -162,8 +162,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.65.0-dev.4",
-    "beta_date": "2026-10-27T16:48:54Z",
+    "beta": "v1.65.0-dev.7",
+    "beta_date": "2026-10-27T23:35:32Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -195,7 +195,7 @@
     "host": "github",
     "repo": "madushas/pdb_patch",
     "stable": "v0.5.6",
-    "stable_date": "2026-10-27T20:43:49Z"
+    "stable_date": "2026-10-27T20:54:59Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
