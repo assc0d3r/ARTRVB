@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260057",
+    "channel": "stable",
+    "publishedAt": "2026-10-27T10:11:14Z"
+  },
+  "files": {
+    "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.20.98.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.64.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.64.0"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260057",
+      "publishedAt": "2026-10-27T10:11:14Z"
+    }
+  }
+}
