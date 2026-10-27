@@ -264,6 +264,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "telegram-hushtelegram-v13.1.1-arm64-v8a": {
+      "hash": "418a34d754e1d596ecf8233f1c30a9b9",
+      "kinds": [
+        "apk"
+      ]
     }
   },
   "beta": {
