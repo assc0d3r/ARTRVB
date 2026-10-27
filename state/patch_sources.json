@@ -27,8 +27,8 @@
     "stable_date": "2026-10-27T16:14:18Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.8",
-    "beta_date": "2026-10-27T09:09:25Z",
+    "beta": "v1.49.0-dev.9",
+    "beta_date": "2026-10-27T19:52:31Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -194,8 +194,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.5.5",
-    "stable_date": "2026-10-26T23:33:41Z"
+    "stable": "v0.5.6",
+    "stable_date": "2026-10-27T20:43:49Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
