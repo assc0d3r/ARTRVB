@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-26T23:52:49Z"
+    "publishedAt": "2026-10-27T05:01:52Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1934,14 +1934,16 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.18.0.mpp"
+        "VenusIsJaded/patches-1.19.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.18.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.19.0"
       ],
       "appliedPatches": [
         "Account switcher",
         "Bring back Tenor GIFs",
+        "Bulk delete messages",
+        "Clean channel names",
         "Complete Quests automatically",
         "Complete badges automatically",
         "Copy profile bios",
@@ -1955,6 +1957,7 @@
         "Favourite any image or video",
         "Fix link previews",
         "Fix unknown mentions",
+        "Hide blocked or ignored messages",
         "Hide extra buttons",
         "Hide the Quests banner",
         "Hide the call button",
@@ -1962,7 +1965,9 @@
         "Hide typing indicator",
         "Icon packs",
         "Jump to first message",
+        "Keep Bluetooth audio clear in calls",
         "Keep deleted messages",
+        "Material You colors",
         "Message highlights",
         "Pastel name colors",
         "Read all button",
@@ -1976,6 +1981,7 @@
         "Skip delete confirmation",
         "Spaces in channel names",
         "Translate messages",
+        "Unlock Discord experiments",
         "Unlock Nitro themes",
         "Unlock app icons",
         "Use your phone's emojis",
@@ -1985,8 +1991,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260050",
-      "publishedAt": "2026-10-26T10:44:52Z"
+      "originBuild": "260056",
+      "publishedAt": "2026-10-27T05:01:38Z"
     },
     "pdbee-madushas-v2.135.1-arm64-v8a.apk": {
       "name": "pdbee-madushas",
