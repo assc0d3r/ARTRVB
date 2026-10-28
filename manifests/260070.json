@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260070",
+    "channel": "stable",
+    "publishedAt": "2026-10-28T18:45:36Z"
+  },
+  "files": {
+    "netguard-rushi-v2.337-arm64-v8a.apk": {
+      "name": "netguard-rushi",
+      "version": "2.337",
+      "appKey": "netguard",
+      "appName": "NetGuard",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushi",
+      "brandName": "Rushi",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "eu.faircode.netguard",
+      "patchSources": [
+        "rushiranpise/patches-1.23.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1"
+      ],
+      "appliedPatches": [
+        "Unlock Pro"
+      ],
+      "originBuild": "260070",
+      "publishedAt": "2026-10-28T18:45:36Z"
+    }
+  }
+}

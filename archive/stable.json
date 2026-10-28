@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-28T15:14:30Z"
+    "publishedAt": "2026-10-28T18:45:42Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -660,16 +660,16 @@
       "subVariant": null,
       "packageName": "eu.faircode.netguard",
       "patchSources": [
-        "rushiranpise/patches-1.23.0.mpp"
+        "rushiranpise/patches-1.23.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0"
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1"
       ],
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260007",
-      "publishedAt": "2026-10-15T15:08:39Z"
+      "originBuild": "260070",
+      "publishedAt": "2026-10-28T18:45:36Z"
     },
     "wavelet-o0b-v26.05-arm64-v8a.apk": {
       "name": "wavelet-o0b",
