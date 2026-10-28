@@ -41,7 +41,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -80,7 +80,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Facebook-Messenger-HushMessenger": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "patches-source": "SysAdminDoc/HushMessenger",
@@ -107,7 +107,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "patches-source": "Akash-Sriram/morphe-google-photos",
@@ -366,7 +366,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
   },
   "Telegram-HushTelegram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "patches-source": "SysAdminDoc/HushTelegram",
