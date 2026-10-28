@@ -147,10 +147,11 @@
       "shared": "b337cf3aa24d7635804a8e2fa9435a93"
     },
     "stable": {
-      "com.adobe.reader": "98b548b18cb16fe0201d32390ac21632",
-      "eu.darken.sdmse": "d6b69e35523f87a8ae0ca7b52be10793",
-      "eu.faircode.netguard": "f5688fc5b72e58d7242ed5368043020f",
-      "org.telegram.messenger": "893c50131ed18c5c4f2b6e1bd5eda6f5",
+      "com.accuweather.android": "42a081e400d6cbbee9bc6d19c4c2e1b6",
+      "com.adobe.reader": "dfa21e9a6594658071677df882af8676",
+      "eu.darken.sdmse": "03e380d9e3b696c5265622f7e81e0ee0",
+      "eu.faircode.netguard": "eab6ec0b1f7439c1b533b57a15d40c78",
+      "sensustech.universal.tv.remote.control": "b30f8ab351cf76d23f1a86d653fa7049",
       "shared": "b337cf3aa24d7635804a8e2fa9435a93"
     }
   },
