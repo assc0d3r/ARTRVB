@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-28T12:53:51Z"
+    "publishedAt": "2026-10-28T13:58:08Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2288,13 +2288,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.0.0-dev.5.mpp",
-        "ausamnco/patches-1.4.2.mpp",
+        "assc0d3r/patches-1.0.3.mpp",
         "JacksonJones2003/patches-1.20.0-dev.1.mpp",
         "Akshayykadam/PixelBoard.apk"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
-        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.3",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
         "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
       ],
@@ -2324,6 +2324,7 @@
         "G Logo on Spacebar",
         "Glass Panel",
         "Glass Press Effect",
+        "Glide Trail Customization",
         "Grammar Checker",
         "Immersive Keyboard",
         "Incognito Mode Toggle",
@@ -2343,8 +2344,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260065",
-      "publishedAt": "2026-10-28T12:53:35Z"
+      "originBuild": "260066",
+      "publishedAt": "2026-10-28T13:57:56Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -2360,13 +2361,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.0.0-dev.5.mpp",
-        "ausamnco/patches-1.4.2.mpp",
+        "assc0d3r/patches-1.0.3.mpp",
         "JacksonJones2003/patches-1.20.0-dev.1.mpp",
         "Akshayykadam/PixelBoard.apk"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
-        "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.3",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
         "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
       ],
@@ -2396,6 +2397,7 @@
         "G Logo on Spacebar",
         "Glass Panel",
         "Glass Press Effect",
+        "Glide Trail Customization",
         "Grammar Checker",
         "Immersive Keyboard",
         "Incognito Mode Toggle",
@@ -2415,8 +2417,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260065",
-      "publishedAt": "2026-10-28T12:53:35Z"
+      "originBuild": "260066",
+      "publishedAt": "2026-10-28T13:57:56Z"
     }
   }
 }
