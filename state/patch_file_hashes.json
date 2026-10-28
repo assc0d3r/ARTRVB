@@ -63,8 +63,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "53dc5fca8f5b88285279366a81fea51d",
-      "shared": "9688fcfbe22590e1c3f83b19fbf21a9d"
+      "ch.protonvpn.android": "2969566db7d0e65434d4ed64842b91ef",
+      "shared": "4b2766e72f5769e5d8e0e997ea6613fd"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -170,8 +170,8 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "1d79ad6d9ad909c9efe367589e138b1a",
-      "shared": "c4e05f58d300fe09ea1898d7a7f78f59"
+      "com.instagram.android": "61b5de210f4f5119ca7a31d6150a7d93",
+      "shared": "5d0e780a05160c9f8db07a2c5601def5"
     }
   },
   "sysadmindoc/hushmessenger": {

@@ -1,7 +1,7 @@
 {
   "patches-version": "beta",
-  "Google-Gboard-Combined": {
-    "enabled": false,
+  "Gboard-GboardPatches": {
+    "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches' 'JacksonJones2003/immersive-keyboard-patches' 'Akshayykadam/PixelBoard' ",

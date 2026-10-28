@@ -99,7 +99,7 @@
     "keys": [
       "SonyLIV-TV-Chiggi"
     ],
-    "version": "6.38.20"
+    "version": "6.38.22"
   },
   "Spotify-Spicetify": {
     "keys": [
@@ -196,5 +196,11 @@
       "Pdbee-madushas"
     ],
     "version": "2.136.0"
+  },
+  "Gboard-GboardPatches": {
+    "keys": [
+      "Gboard-GboardPatches"
+    ],
+    "version": "18.5.4.993608717"
   }
 }
