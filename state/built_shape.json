@@ -407,11 +407,11 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": " 'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches' 'JacksonJones2003/immersive-keyboard-patches' 'Akshayykadam/PixelBoard' ",
-        "brand": "GboardPatches",
+        "patches-source": " 'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'Akshayykadam/PixelBoard' 'urroxyz/morphe-patches' ",
+        "brand": "Combined",
         "app-name": "Gboard",
         "pkg-name": "com.google.android.inputmethod.latin",
-        "excluded-patches": " 'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' ",
+        "excluded-patches": " 'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync' ",
         "inclusive-patches": "false",
         "arch": "arm64-v8a",
         "build-mode": "both"
