@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-28T14:38:44Z"
+    "publishedAt": "2026-10-28T15:14:30Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -115,10 +115,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.7.1.mpp"
+        "bearinmindcat/patches-2.7.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.1"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -149,8 +149,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260059",
-      "publishedAt": "2026-10-27T18:31:50Z"
+      "originBuild": "260068",
+      "publishedAt": "2026-10-28T15:14:15Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
