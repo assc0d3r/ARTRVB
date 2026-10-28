@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-28T05:40:04Z"
+    "publishedAt": "2026-10-28T06:26:15Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -63,90 +63,6 @@
       ],
       "originBuild": "260050",
       "publishedAt": "2026-10-26T10:44:52Z"
-    },
-    "messenger-hushmessenger-v583.0.0.29.95-arm64-v8a.apk": {
-      "name": "messenger-hushmessenger",
-      "version": "583.0.0.29.95",
-      "appKey": "messenger",
-      "appName": "Messenger",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "hushmessenger",
-      "brandName": "HushMessenger",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.facebook.orca.hush",
-      "patchSources": [
-        "SysAdminDoc/patches-0.25.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/SysAdminDoc/HushMessenger/releases/tag/v0.25.0"
-      ],
-      "appliedPatches": [
-        "Allow chat bubbles",
-        "Allow screenshots",
-        "Auto reply",
-        "Bold and italic text",
-        "Clone install under another package name",
-        "Custom new-message sound",
-        "Fix videos that won't send",
-        "Hide AI sticker tools",
-        "Hide Chat Moments",
-        "Hide Facebook shortcuts",
-        "Hide Mark as read",
-        "Hide Meta AI",
-        "Hide Notifications tab",
-        "Hide People You May Know",
-        "Hide People tab",
-        "Hide Reels badge",
-        "Hide ad banners in business chats",
-        "Hide avatar stickers",
-        "Hide business reply suggestions",
-        "Hide business typing suggestions",
-        "Hide chat promotions",
-        "Hide event prompts",
-        "Hide friend request cards",
-        "Hide growth prompts",
-        "Hide inbox ads",
-        "Hide inbox promotions",
-        "Hide inbox tabs",
-        "Hide joined community chats",
-        "Hide read receipts",
-        "Hide stories and notes",
-        "Hide typing indicator",
-        "Hold stories at the end",
-        "Install beside Meta apps",
-        "Keep a message log",
-        "Keep emoji search on emoji",
-        "Keep unsent messages",
-        "Mark as read button",
-        "Material You theme",
-        "Open settings from menu",
-        "Open web links externally",
-        "Open your gallery app",
-        "Pin more chats",
-        "Restore old emoji drawer",
-        "Restore screens on re-signed builds",
-        "Save any story",
-        "Send photos at original quality",
-        "Send videos without re-encoding",
-        "Slide chats in and out",
-        "Spoof package version",
-        "Stop MQTT logging",
-        "Stop ad attribution uploads",
-        "Stop analytics uploads",
-        "Stop app list and device ID sharing",
-        "Stop inbox and ad link logging",
-        "Stop nearby scans",
-        "Turn off the swipe up for disappearing messages",
-        "Unlock app icons",
-        "Use system emoji",
-        "Use the phone's camera app",
-        "Use your own font",
-        "View stories anonymously"
-      ],
-      "originBuild": "260024",
-      "publishedAt": "2026-10-19T23:40:10Z"
     },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-gboardpatches",
@@ -2041,13 +1957,13 @@
       "patchSources": [
         "jasonwu1994/patches-4.0.0-dev.5.mpp",
         "ausamnco/patches-1.4.2.mpp",
-        "JacksonJones2003/patches-1.14.0-dev.1.mpp",
+        "JacksonJones2003/patches-1.20.0-dev.1.mpp",
         "Akshayykadam/PixelBoard.apk"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
         "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.14.0-dev.1",
+        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
         "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
       ],
       "appliedPatches": [
@@ -2063,6 +1979,7 @@
         "Custom Symbols",
         "Custom Theme",
         "Developer options",
+        "Emoji Key On Right",
         "Emojis, stickers & GIFs Tab Order",
         "Enable Inline Autofill Suggestions",
         "Enable OCR / Scan Text",
@@ -2073,7 +1990,10 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
+        "Glass Panel",
+        "Glass Press Effect",
         "Grammar Checker",
+        "Immersive Keyboard",
         "Incognito Mode Toggle",
         "Inline Suggestions",
         "Key Shape Selection",
@@ -2085,12 +2005,14 @@
         "Simple Calculator",
         "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
+        "Theme Follows Dark Mode",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
+        "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260052",
-      "publishedAt": "2026-10-26T11:52:23Z"
+      "originBuild": "260063",
+      "publishedAt": "2026-10-28T06:26:02Z"
     },
     "gboard-gboardpatches-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-gboardpatches",
@@ -2107,13 +2029,13 @@
       "patchSources": [
         "jasonwu1994/patches-4.0.0-dev.5.mpp",
         "ausamnco/patches-1.4.2.mpp",
-        "JacksonJones2003/patches-1.14.0-dev.1.mpp",
+        "JacksonJones2003/patches-1.20.0-dev.1.mpp",
         "Akshayykadam/PixelBoard.apk"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
         "https://github.com/ausamnco/gboard-enc-patches/releases/tag/v1.4.2",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.14.0-dev.1",
+        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
         "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
       ],
       "appliedPatches": [
@@ -2129,6 +2051,7 @@
         "Custom Symbols",
         "Custom Theme",
         "Developer options",
+        "Emoji Key On Right",
         "Emojis, stickers & GIFs Tab Order",
         "Enable Inline Autofill Suggestions",
         "Enable OCR / Scan Text",
@@ -2139,7 +2062,10 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
+        "Glass Panel",
+        "Glass Press Effect",
         "Grammar Checker",
+        "Immersive Keyboard",
         "Incognito Mode Toggle",
         "Inline Suggestions",
         "Key Shape Selection",
@@ -2151,12 +2077,14 @@
         "Simple Calculator",
         "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
+        "Theme Follows Dark Mode",
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
+        "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260052",
-      "publishedAt": "2026-10-26T11:52:23Z"
+      "originBuild": "260063",
+      "publishedAt": "2026-10-28T06:26:02Z"
     },
     "telegram-hushtelegram-v13.1.1-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
