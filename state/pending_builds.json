@@ -12,15 +12,5 @@
       "cfg": "0aa9ac52a3de71fcfde09d3fe4206b988b6d7141"
     }
   },
-  "beta": {
-    "Google-Gboard-Combined": {
-      "reason": "config",
-      "arches": [
-        "arm64-v8a"
-      ],
-      "attempts": 0,
-      "parked": false,
-      "cfg": "2b15637db2a1940b3fad1c919bd46113596f772b"
-    }
-  }
+  "beta": {}
 }
