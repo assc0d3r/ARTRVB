@@ -97,7 +97,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
 uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/facebook-messenger/com.facebook.orca"
 
-[Google-Gboard-Combined]
+[Gboard-GboardPatches]
 enabled = true
 pkg-name = "com.google.android.inputmethod.latin"
 app-name = "Gboard"
