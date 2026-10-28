@@ -1,4 +1,4 @@
-[Google-Gboard-Combined]
+[Gboard-GboardPatches]
 enabled = true
 pkg-name = "com.google.android.inputmethod.latin"
 app-name = "Gboard"
