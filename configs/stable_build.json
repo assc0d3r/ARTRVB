@@ -14,7 +14,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -55,7 +55,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -230,7 +230,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/github/com.github.android"
   },
   "SDMaidSE-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "eu.darken.sdmse",
     "app-name": "SD Maid SE",
     "patches-source": "rushiranpise/morphe-patches",
@@ -272,7 +272,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-acrobat-reader/com.adobe.reader"
   },
   "NetGuard-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "eu.faircode.netguard",
     "app-name": "NetGuard",
     "patches-source": "rushiranpise/morphe-patches",
@@ -326,7 +326,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
   },
   "AccuWeather-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.accuweather.android",
     "app-name": "AccuWeather",
     "patches-source": "rushiranpise/morphe-patches",
@@ -352,7 +352,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/soundcloud/com.soundcloud.android"
   },
   "UiMote-rushiranpise": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "sensustech.universal.tv.remote.control",
     "app-name": "Universal TV Remote",
     "brand": "rushiranpise",
