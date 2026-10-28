@@ -10,6 +10,10 @@
     "beta": {},
     "stable": {}
   },
+  "assc0d3r/art-glidge-customization": {
+    "beta": {},
+    "stable": {}
+  },
   "ausamnco/gboard-enc-patches": {
     "beta": {},
     "stable": {}
@@ -17,7 +21,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "f277235dade4ea6753813be4868cddb5",
+      "com.google.android.apps.maps": "e74d54fe76f615832b108895c62a5691",
       "shared": "19bc25f6b1b38d8ac29280ed630dc132"
     }
   },
@@ -187,6 +191,10 @@
       "org.telegram.messenger": "444cfc300ecd8c4377c01808f8c945de",
       "shared": "d03d779f97cdb8e96edae7d2c096f4e4"
     }
+  },
+  "urroxyz/morphe-patches": {
+    "beta": {},
+    "stable": {}
   },
   "v4n1x/morphe-patches": {
     "beta": {},

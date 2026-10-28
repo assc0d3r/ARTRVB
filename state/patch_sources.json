@@ -98,14 +98,14 @@
     "stable": "v1.2.1",
     "stable_date": "2026-10-18T07:29:00Z"
   },
-  "ausamnco/gboard-enc-patches": {
+  "assc0d3r/ART-GLIDGE-CUSTOMIZATION": {
     "beta": "",
     "beta_date": "",
     "blocked": false,
     "host": "github",
-    "repo": "ausamnco/gboard-enc-patches",
-    "stable": "v1.4.2",
-    "stable_date": "2026-09-22T04:52:37Z"
+    "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
+    "stable": "v1.0.4",
+    "stable_date": "2026-10-28T14:33:03Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -113,8 +113,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.7.2",
-    "stable_date": "2026-10-27T21:10:07Z"
+    "stable": "v2.7.4",
+    "stable_date": "2026-10-28T14:34:45Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",
@@ -144,8 +144,8 @@
     "stable_date": "2026-10-18T13:48:32Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.1.0-dev.1",
-    "beta_date": "2026-10-26T22:28:31Z",
+    "beta": "v2.1.0-dev.2",
+    "beta_date": "2026-10-28T11:12:04Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -162,8 +162,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.65.0-dev.9",
-    "beta_date": "2026-10-28T08:54:38Z",
+    "beta": "v1.66.0-dev.1",
+    "beta_date": "2026-10-28T14:34:18Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -241,5 +241,14 @@
     "repo": "spicetify/morphe-patches",
     "stable": "v1.2.0",
     "stable_date": "2026-10-08T17:58:34Z"
+  },
+  "urroxyz/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "urroxyz/morphe-patches",
+    "stable": "v0.0.4",
+    "stable_date": "2026-10-27T20:35:08Z"
   }
 }
