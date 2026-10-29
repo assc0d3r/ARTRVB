@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-29T05:47:48Z"
+    "publishedAt": "2026-10-29T07:02:02Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2287,16 +2287,16 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-4.0.0-dev.5.mpp",
+        "jasonwu1994/patches-4.0.0.mpp",
         "assc0d3r/patches-1.0.4.mpp",
-        "JacksonJones2003/patches-1.20.0-dev.1.mpp",
-        "Akshayykadam/PixelBoard.apk"
+        "JacksonJones2003/patches-1.20.0.mpp",
+        "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0",
         "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.4",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
-        "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
+        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0",
+        "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -2304,6 +2304,7 @@
         "Add Gboard Signature Bypass",
         "Advanced Voice Typing",
         "Backup & Restore",
+        "Better translate UX",
         "Change emoji size",
         "Clipboard Custom Character Limit",
         "Clipboard Enhancements",
@@ -2345,8 +2346,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260067",
-      "publishedAt": "2026-10-28T14:38:17Z"
+      "originBuild": "260072",
+      "publishedAt": "2026-10-29T07:01:47Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -2361,16 +2362,16 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-4.0.0-dev.5.mpp",
+        "jasonwu1994/patches-4.0.0.mpp",
         "assc0d3r/patches-1.0.4.mpp",
-        "JacksonJones2003/patches-1.20.0-dev.1.mpp",
-        "Akshayykadam/PixelBoard.apk"
+        "JacksonJones2003/patches-1.20.0.mpp",
+        "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0-dev.5",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0",
         "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.4",
-        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
-        "https://github.com/Akshayykadam/PixelBoard/releases/tag/v18.0.3"
+        "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0",
+        "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -2378,6 +2379,7 @@
         "Add Gboard Signature Bypass",
         "Advanced Voice Typing",
         "Backup & Restore",
+        "Better translate UX",
         "Change emoji size",
         "Clipboard Custom Character Limit",
         "Clipboard Enhancements",
@@ -2419,8 +2421,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260067",
-      "publishedAt": "2026-10-28T14:38:17Z"
+      "originBuild": "260072",
+      "publishedAt": "2026-10-29T07:01:47Z"
     }
   }
 }
