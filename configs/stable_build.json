@@ -41,7 +41,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -260,7 +260,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
     "patches-source": "VipinVIP/railone-patches",
@@ -330,7 +330,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",
