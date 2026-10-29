@@ -101,14 +101,16 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": "'jasonwu1994/Gboard-patches' 'ausamnco/gboard-enc-patches' 'JacksonJones2003/immersive-keyboard-patches'",
-        "brand": "GboardPatches",
+        "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'",
+        "brand": "Combined",
         "app-name": "Gboard",
         "pkg-name": "com.google.android.inputmethod.latin",
-        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input'",
-        "inclusive-patches": "true",
+        "included-patches": "'Better translate UX'",
+        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync'",
+        "inclusive-patches": "false",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "both",
+        "version": "auto"
       }
     },
     "YouTube-Morphe": {
