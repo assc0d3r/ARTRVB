@@ -4,19 +4,14 @@
     "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
-    "patches-source": [
-      "jasonwu1994/Gboard-patches",
-      "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-      "JacksonJones2003/immersive-keyboard-patches",
-      "urroxyz/morphe-patches"
-    ],
+    "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'",
     "brand": "Combined",
     "arch": "arm64-v8a",
     "inclusive-patches": false,
     "version": "auto",
     "build-mode": "both",
-    "included-patches": "Better translate UX",
-    "excluded-patches": "FTP Server Web Clipboard Enter Key Tasker Event Zhuyin Bottom Row Key Sizes Zhuyin Quick Traditional/Simplified Toggle Zhuyin Slide Input Package Rename ClipCascade sync",
+    "included-patches": "'Better translate UX'",
+    "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync'",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/gboard/",
     "uptodown-dlurl": "https://gboard-go.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
