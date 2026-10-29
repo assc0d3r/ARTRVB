@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-29T07:02:02Z"
+    "publishedAt": "2026-10-29T11:15:03Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2288,13 +2288,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.0.0.mpp",
-        "assc0d3r/patches-1.0.4.mpp",
+        "assc0d3r/patches-1.0.6.mpp",
         "JacksonJones2003/patches-1.20.0.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.4",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.6",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -2323,6 +2323,7 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
+        "Gboard Theme Studio",
         "Glass Panel",
         "Glass Press Effect",
         "Glide Trail Customization",
@@ -2331,6 +2332,7 @@
         "Incognito Mode Toggle",
         "Inline Suggestions",
         "Key Shape Selection",
+        "Keyboard Icon Packs",
         "Latin Globe Key Ignore Interval",
         "Long-Press Editing Shortcuts",
         "Multilingual Suggestion",
@@ -2346,8 +2348,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260072",
-      "publishedAt": "2026-10-29T07:01:47Z"
+      "originBuild": "260075",
+      "publishedAt": "2026-10-29T11:14:49Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -2363,13 +2365,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.0.0.mpp",
-        "assc0d3r/patches-1.0.4.mpp",
+        "assc0d3r/patches-1.0.6.mpp",
         "JacksonJones2003/patches-1.20.0.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.4",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.6",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -2398,6 +2400,7 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
+        "Gboard Theme Studio",
         "Glass Panel",
         "Glass Press Effect",
         "Glide Trail Customization",
@@ -2406,6 +2409,7 @@
         "Incognito Mode Toggle",
         "Inline Suggestions",
         "Key Shape Selection",
+        "Keyboard Icon Packs",
         "Latin Globe Key Ignore Interval",
         "Long-Press Editing Shortcuts",
         "Multilingual Suggestion",
@@ -2421,8 +2425,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260072",
-      "publishedAt": "2026-10-29T07:01:47Z"
+      "originBuild": "260075",
+      "publishedAt": "2026-10-29T11:14:49Z"
     }
   }
 }
