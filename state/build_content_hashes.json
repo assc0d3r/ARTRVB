@@ -295,6 +295,13 @@
       "kinds": [
         "apk"
       ]
+    },
+    "gboard-combined-experimental-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
+      "hash": "7b8c4983dc715f3a4bbb888542e68b4b",
+      "kinds": [
+        "apk",
+        "module"
+      ]
     }
   },
   "beta": {
