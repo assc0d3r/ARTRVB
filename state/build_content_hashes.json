@@ -230,7 +230,7 @@
       ]
     },
     "facebook-hushfacebook-v584.0.0.51.56-arm64-v8a": {
-      "hash": "3ddbe34e3b5ab4eec313a3f19025ad5f",
+      "hash": "c9c700f87c53d5a0003672846e48affd",
       "kinds": [
         "apk"
       ]
@@ -288,6 +288,12 @@
       "kinds": [
         "apk",
         "module"
+      ]
+    },
+    "railone-vipinvip-v2.1.71-arm64-v8a": {
+      "hash": "e62062e74aad95a66f290e8bba6ce23f",
+      "kinds": [
+        "apk"
       ]
     }
   },
