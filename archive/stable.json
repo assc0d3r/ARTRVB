@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-29T15:17:12Z"
+    "publishedAt": "2026-10-29T18:49:44Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1492,8 +1492,8 @@
         "Badge and logo colors",
         "Accent color"
       ],
-      "originBuild": "260062",
-      "publishedAt": "2026-10-28T05:39:53Z"
+      "originBuild": "260080",
+      "publishedAt": "2026-10-29T18:49:17Z"
     },
     "telegram-hushtelegram-v13.1.0-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
@@ -2427,6 +2427,36 @@
       ],
       "originBuild": "260075",
       "publishedAt": "2026-10-29T11:14:49Z"
+    },
+    "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
+      "name": "railone-vipinvip",
+      "version": "2.1.71",
+      "appKey": "railone",
+      "appName": "RailOne",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "vipinvip",
+      "brandName": "VipinVIP",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "org.cris.aikyam",
+      "patchSources": [
+        "VipinVIP/patches-1.2.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/VipinVIP/railone-patches/releases/tag/v1.2.2"
+      ],
+      "appliedPatches": [
+        "Allow screenshots",
+        "Bypass USB-debugging detection",
+        "Bypass rjsniffer ADB check",
+        "Bypass signature verification",
+        "Disable native security SDK",
+        "Hide screenshot detection",
+        "Monochrome icon support"
+      ],
+      "originBuild": "260080",
+      "publishedAt": "2026-10-29T18:49:17Z"
     }
   }
 }
