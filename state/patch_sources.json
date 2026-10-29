@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.6",
-    "stable_date": "2026-10-29T07:32:04Z"
+    "stable": "v1.0.9",
+    "stable_date": "2026-10-29T13:29:05Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -158,8 +158,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.65.0",
-    "stable_date": "2026-10-28T09:20:17Z"
+    "stable": "v1.66.0",
+    "stable_date": "2026-10-29T12:50:35Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
