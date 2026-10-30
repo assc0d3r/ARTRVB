@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-30T18:24:06Z"
+    "publishedAt": "2026-10-30T23:44:05Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -115,10 +115,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.7.4.mpp"
+        "bearinmindcat/patches-2.7.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.4"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.6"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -149,8 +149,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260068",
-      "publishedAt": "2026-10-28T15:14:15Z"
+      "originBuild": "260089",
+      "publishedAt": "2026-10-30T23:43:53Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -694,35 +694,6 @@
       ],
       "originBuild": "260007",
       "publishedAt": "2026-10-15T15:08:39Z"
-    },
-    "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a.apk": {
-      "name": "google-photos-akashsriram",
-      "version": "7.97.0.997578476",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.15.4.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "DCIM & backup control",
-        "Flag manager & Toolkit",
-        "Media engine & AI fixes",
-        "Spoof features",
-        "GmsCore support"
-      ],
-      "originBuild": "260014",
-      "publishedAt": "2026-10-17T12:21:03Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
@@ -1968,10 +1939,10 @@
       "subVariant": null,
       "packageName": "org.telegram.messenger",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.21.mpp"
+        "SysAdminDoc/patches-0.0.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.21"
+        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.22"
       ],
       "appliedPatches": [
         "AMOLED black",
@@ -2042,8 +2013,8 @@
         "Use system font",
         "Voice messages in the music player"
       ],
-      "originBuild": "260061",
-      "publishedAt": "2026-10-27T23:48:25Z"
+      "originBuild": "260089",
+      "publishedAt": "2026-10-30T23:43:53Z"
     },
     "messenger-hushmessenger-v584.1.0.61.98-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
