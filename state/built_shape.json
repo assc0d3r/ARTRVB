@@ -409,12 +409,12 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches' 'markpaul099/gboard-gifs-extended' ",
+        "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'",
         "brand": "Combined",
         "app-name": "Gboard",
         "pkg-name": "com.google.android.inputmethod.latin",
         "included-patches": "'Better translate UX'",
-        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync' 'Remove network access' 'Remove Google components' 'Disable Google Play services' 'Block Google IPC' 'Change app name' 'Change package name' ",
+        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync'",
         "inclusive-patches": "false",
         "arch": "arm64-v8a",
         "build-mode": "both",
