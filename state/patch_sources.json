@@ -18,8 +18,8 @@
     "stable_date": "2026-10-28T02:07:57Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.0.0-dev.1",
-    "beta_date": "2026-10-29T18:33:56Z",
+    "beta": "v2.0.0-dev.4",
+    "beta_date": "2026-10-30T11:01:50Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -77,8 +77,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.19.0",
-    "stable_date": "2026-10-26T23:55:19Z"
+    "stable": "v1.20.0",
+    "stable_date": "2026-10-30T08:51:04Z"
   },
   "VipinVIP/railone-patches": {
     "beta": "",
@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.9",
-    "stable_date": "2026-10-29T13:29:05Z"
+    "stable": "v1.0.11",
+    "stable_date": "2026-10-30T07:22:30Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-18T13:48:32Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.1.0-dev.4",
-    "beta_date": "2026-10-29T21:06:29Z",
+    "beta": "v2.1.0-dev.5",
+    "beta_date": "2026-10-30T08:24:26Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.66.0-dev.3",
-    "beta_date": "2026-10-29T08:03:53Z",
+    "beta": "v1.67.0-dev.1",
+    "beta_date": "2026-10-30T07:13:31Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
