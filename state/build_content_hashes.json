@@ -302,6 +302,18 @@
         "apk",
         "module"
       ]
+    },
+    "youtube-morphe-v21.30.216-arm64-v8a": {
+      "hash": "42ac1e669756d23dd38aa529b5610d97",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "reddit-morphe-v2026.40.0-arm64-v8a": {
+      "hash": "7637522eadb0daf7c616d79443faf55e",
+      "kinds": [
+        "apk"
+      ]
     }
   },
   "beta": {
