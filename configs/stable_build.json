@@ -67,7 +67,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -382,7 +382,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
   },
   "Telegram-HushTelegram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "patches-source": "SysAdminDoc/HushTelegram",
