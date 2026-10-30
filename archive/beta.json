@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-30T07:25:58Z"
+    "publishedAt": "2026-10-30T11:11:58Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -400,15 +400,13 @@
         "jasonwu1994/patches-4.1.0-dev.2.mpp",
         "assc0d3r/patches-1.0.11.mpp",
         "JacksonJones2003/patches-1.20.0-dev.1.mpp",
-        "urroxyz/patches-0.0.4.mpp",
-        "markpaul099/patches-1.0.0-dev.2.mpp"
+        "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.1.0-dev.2",
         "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.11",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
-        "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4",
-        "https://github.com/markpaul099/gboard-gifs-extended/releases/tag/v1.0.0-dev.2"
+        "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -440,7 +438,6 @@
         "Glass Panel",
         "Glass Press Effect",
         "Glide Trail Customization",
-        "Google Images GIF Search",
         "Grammar Checker",
         "Immersive Keyboard",
         "Incognito Mode Toggle",
@@ -460,11 +457,10 @@
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
         "Translucent Bottom Bar",
-        "Use Bluetooth Microphone",
-        "GIFs Extended settings"
+        "Use Bluetooth Microphone"
       ],
-      "originBuild": "260084",
-      "publishedAt": "2026-10-30T07:25:47Z"
+      "originBuild": "260085",
+      "publishedAt": "2026-10-30T11:11:46Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -482,15 +478,13 @@
         "jasonwu1994/patches-4.1.0-dev.2.mpp",
         "assc0d3r/patches-1.0.11.mpp",
         "JacksonJones2003/patches-1.20.0-dev.1.mpp",
-        "urroxyz/patches-0.0.4.mpp",
-        "markpaul099/patches-1.0.0-dev.2.mpp"
+        "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.1.0-dev.2",
         "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.11",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
-        "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4",
-        "https://github.com/markpaul099/gboard-gifs-extended/releases/tag/v1.0.0-dev.2"
+        "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -522,7 +516,6 @@
         "Glass Panel",
         "Glass Press Effect",
         "Glide Trail Customization",
-        "Google Images GIF Search",
         "Grammar Checker",
         "Immersive Keyboard",
         "Incognito Mode Toggle",
@@ -542,11 +535,10 @@
         "Toolbar Editing Buttons",
         "Top Toolbar Item Count",
         "Translucent Bottom Bar",
-        "Use Bluetooth Microphone",
-        "GIFs Extended settings"
+        "Use Bluetooth Microphone"
       ],
-      "originBuild": "260084",
-      "publishedAt": "2026-10-30T07:25:47Z"
+      "originBuild": "260085",
+      "publishedAt": "2026-10-30T11:11:46Z"
     }
   }
 }
