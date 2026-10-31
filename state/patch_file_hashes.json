@@ -107,7 +107,7 @@
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
-      "pdb.app": "0bdcd619313a83cbdd5f5d932f8c37f0",
+      "pdb.app": "48b18962841551ae852abc1449929f42",
       "shared": "f8418ae25219a77655e700d6acd70d9c"
     }
   },
@@ -184,8 +184,8 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "61b5de210f4f5119ca7a31d6150a7d93",
-      "shared": "5d0e780a05160c9f8db07a2c5601def5"
+      "com.instagram.android": "13ffc3adc663b8f0d85740c420e0880f",
+      "shared": "fd96a32e2357ac51432bb1dd7217cdd8"
     }
   },
   "sysadmindoc/hushmessenger": {

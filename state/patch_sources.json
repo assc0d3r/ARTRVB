@@ -41,8 +41,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.17",
-    "stable_date": "2026-10-28T06:49:05Z"
+    "stable": "v0.0.18",
+    "stable_date": "2026-10-31T22:50:09Z"
   },
   "SysAdminDoc/HushMessenger": {
     "beta": "",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.68.0-dev.5",
-    "beta_date": "2026-10-31T16:46:02Z",
+    "beta": "v1.68.0-dev.7",
+    "beta_date": "2026-10-31T20:51:24Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -185,8 +185,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.5.6",
-    "stable_date": "2026-10-27T20:54:59Z"
+    "stable": "v0.5.7",
+    "stable_date": "2026-10-31T22:36:25Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
