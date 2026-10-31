@@ -85,8 +85,14 @@
     }
   },
   "jacksonjones2003/immersive-keyboard-patches": {
-    "beta": {},
-    "stable": {}
+    "beta": {
+      "com.google.android.inputmethod.latin": "6e5e27caab3582651da760581b9f9112",
+      "shared": "0347851f1e18bba74a5a47bf247da23f"
+    },
+    "stable": {
+      "com.google.android.inputmethod.latin": "6e5e27caab3582651da760581b9f9112",
+      "shared": "0347851f1e18bba74a5a47bf247da23f"
+    }
   },
   "jasonwu1994/gboard-patches": {
     "beta": {
@@ -185,15 +191,15 @@
   "sysadmindoc/hushmessenger": {
     "beta": {},
     "stable": {
-      "com.facebook.orca": "e613ef705d8cb4f419514b5090ea1965",
+      "com.facebook.orca": "ef2a67a2f30fac849a419ee4e8f9c284",
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
     }
   },
   "sysadmindoc/hushtelegram": {
     "beta": {},
     "stable": {
-      "org.telegram.messenger": "8798448d92d171327123cfdf50bbc45f",
-      "shared": "95cf13af2feaf9d8d2ba1addf00048d2"
+      "org.telegram.messenger": "bba4c012bd356ac6ea93c3e63e8d7645",
+      "shared": "7ba2d4f19614388c7ee4a39ac7dab2ab"
     }
   },
   "urroxyz/morphe-patches": {

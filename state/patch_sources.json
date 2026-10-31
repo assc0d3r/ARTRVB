@@ -9,17 +9,17 @@
     "stable_date": "2026-10-30T16:13:57Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
-    "beta": "v1.20.0-dev.1",
-    "beta_date": "2026-10-28T02:05:41Z",
+    "beta": "v1.21.1-dev.1",
+    "beta_date": "2026-10-31T17:15:53Z",
     "blocked": false,
     "host": "github",
     "repo": "JacksonJones2003/immersive-keyboard-patches",
-    "stable": "v1.20.0",
-    "stable_date": "2026-10-28T02:07:57Z"
+    "stable": "v1.21.1",
+    "stable_date": "2026-10-31T17:17:54Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.2",
-    "beta_date": "2026-10-31T09:44:52Z",
+    "beta": "v2.1.0-dev.4",
+    "beta_date": "2026-10-31T17:10:04Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -50,8 +50,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushMessenger",
-    "stable": "v0.27.0",
-    "stable_date": "2026-10-28T00:13:38Z"
+    "stable": "v0.28.0",
+    "stable_date": "2026-10-31T15:55:32Z"
   },
   "SysAdminDoc/HushTelegram": {
     "beta": "",
@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushTelegram",
-    "stable": "v0.0.22",
-    "stable_date": "2026-10-30T23:23:25Z"
+    "stable": "v0.0.23",
+    "stable_date": "2026-10-31T16:21:07Z"
   },
   "V4n1X/morphe-patches": {
     "beta": "",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.68.0-dev.3",
-    "beta_date": "2026-10-31T14:25:31Z",
+    "beta": "v1.68.0-dev.5",
+    "beta_date": "2026-10-31T16:46:02Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
