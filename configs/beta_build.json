@@ -1,7 +1,7 @@
 {
   "patches-version": "beta",
   "Google-Gboard-Combined": {
-    "enabled": false,
+    "enabled": True,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'",
