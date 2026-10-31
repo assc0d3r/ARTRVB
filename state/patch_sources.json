@@ -18,8 +18,8 @@
     "stable_date": "2026-10-28T02:07:57Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.0.0-dev.4",
-    "beta_date": "2026-10-30T11:01:50Z",
+    "beta": "v2.1.0-dev.2",
+    "beta_date": "2026-10-31T09:44:52Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.11",
-    "stable_date": "2026-10-30T07:22:30Z"
+    "stable": "v1.0.13",
+    "stable_date": "2026-10-31T07:18:01Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -153,13 +153,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.67.0-dev.3",
-    "beta_date": "2026-10-30T23:29:27Z",
+    "beta": "v1.67.1-dev.1",
+    "beta_date": "2026-10-31T09:05:09Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.66.0",
-    "stable_date": "2026-10-29T12:50:35Z"
+    "stable": "v1.67.0",
+    "stable_date": "2026-10-31T07:35:46Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",

@@ -12,7 +12,10 @@
   },
   "assc0d3r/art-glidge-customization": {
     "beta": {},
-    "stable": {}
+    "stable": {
+      "com.google.android.inputmethod.latin": "4a025b8ba3fdc6cea713a6a741aed058",
+      "shared": "48af56b24506f886b8b31e317a4d4ad4"
+    }
   },
   "ausamnco/gboard-enc-patches": {
     "beta": {},
@@ -67,8 +70,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "b99a1cd6ef78f40d57249511ae8c997d",
-      "shared": "d607fc695d533ffd2087f600f3b42289"
+      "ch.protonvpn.android": "2d279cc1e17d1cb1b8e24897f51003d9",
+      "shared": "97b62a08a64b34ecbaf03d4fa7bdec84"
     }
   },
   "ihatenodejs/aidans-patches": {
