@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-31T06:43:52Z"
+    "publishedAt": "2026-10-31T07:21:52Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -398,13 +398,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.1.0-dev.4.mpp",
-        "assc0d3r/patches-1.0.12.mpp",
+        "assc0d3r/patches-1.0.13.mpp",
         "JacksonJones2003/patches-1.20.0-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.1.0-dev.4",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.12",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.13",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -459,8 +459,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260091",
-      "publishedAt": "2026-10-31T06:43:38Z"
+      "originBuild": "260092",
+      "publishedAt": "2026-10-31T07:21:40Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -476,13 +476,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.1.0-dev.4.mpp",
-        "assc0d3r/patches-1.0.12.mpp",
+        "assc0d3r/patches-1.0.13.mpp",
         "JacksonJones2003/patches-1.20.0-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.1.0-dev.4",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.12",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.13",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -537,8 +537,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260091",
-      "publishedAt": "2026-10-31T06:43:38Z"
+      "originBuild": "260092",
+      "publishedAt": "2026-10-31T07:21:40Z"
     }
   }
 }
