@@ -284,7 +284,7 @@
       ]
     },
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
-      "hash": "ec1a492305baae4d872c8ca5835e1c2c",
+      "hash": "ec3253be192c56087e2f85ec7deef918",
       "kinds": [
         "apk",
         "module"
@@ -317,6 +317,12 @@
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a": {
       "hash": "92fb7286d2f7c8004cf021319cec0343",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
+      "hash": "76350cc77162b0e88b93049071d3ebec",
       "kinds": [
         "apk"
       ]
