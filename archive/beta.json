@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-31T07:21:52Z"
+    "publishedAt": "2026-10-31T10:45:41Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -432,6 +432,7 @@
         "Enable split keyboard",
         "English QWERTY Up-Flick Uppercase",
         "Floating Web Search",
+        "Frosted Glass",
         "G Logo on Spacebar",
         "Gboard Theme Studio",
         "Glass Panel",
@@ -459,8 +460,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260092",
-      "publishedAt": "2026-10-31T07:21:40Z"
+      "originBuild": "260093",
+      "publishedAt": "2026-10-31T10:45:25Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -510,6 +511,7 @@
         "Enable split keyboard",
         "English QWERTY Up-Flick Uppercase",
         "Floating Web Search",
+        "Frosted Glass",
         "G Logo on Spacebar",
         "Gboard Theme Studio",
         "Glass Panel",
@@ -537,8 +539,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260092",
-      "publishedAt": "2026-10-31T07:21:40Z"
+      "originBuild": "260093",
+      "publishedAt": "2026-10-31T10:45:25Z"
     }
   }
 }
