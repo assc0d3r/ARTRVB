@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-30T23:44:05Z"
+    "publishedAt": "2026-10-31T10:48:59Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2263,14 +2263,14 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-4.0.0.mpp",
-        "assc0d3r/patches-1.0.6.mpp",
+        "jasonwu1994/patches-4.1.0.mpp",
+        "assc0d3r/patches-1.0.13.mpp",
         "JacksonJones2003/patches-1.20.0.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.6",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.1.0",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.13",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -2288,6 +2288,7 @@
         "Custom Symbols",
         "Custom Theme",
         "Developer options",
+        "Dictionaries & Predictions",
         "Emoji Key On Right",
         "Emojis, stickers & GIFs Tab Order",
         "Enable Inline Autofill Suggestions",
@@ -2309,6 +2310,7 @@
         "Inline Suggestions",
         "Key Shape Selection",
         "Keyboard Icon Packs",
+        "Keypress Vibration Intensity Control",
         "Latin Globe Key Ignore Interval",
         "Long-Press Editing Shortcuts",
         "Multilingual Suggestion",
@@ -2324,8 +2326,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260075",
-      "publishedAt": "2026-10-29T11:14:49Z"
+      "originBuild": "260094",
+      "publishedAt": "2026-10-31T10:48:45Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -2340,14 +2342,14 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-4.0.0.mpp",
-        "assc0d3r/patches-1.0.6.mpp",
+        "jasonwu1994/patches-4.1.0.mpp",
+        "assc0d3r/patches-1.0.13.mpp",
         "JacksonJones2003/patches-1.20.0.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.0.0",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.6",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.1.0",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.13",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.20.0",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -2365,6 +2367,7 @@
         "Custom Symbols",
         "Custom Theme",
         "Developer options",
+        "Dictionaries & Predictions",
         "Emoji Key On Right",
         "Emojis, stickers & GIFs Tab Order",
         "Enable Inline Autofill Suggestions",
@@ -2386,6 +2389,7 @@
         "Inline Suggestions",
         "Key Shape Selection",
         "Keyboard Icon Packs",
+        "Keypress Vibration Intensity Control",
         "Latin Globe Key Ignore Interval",
         "Long-Press Editing Shortcuts",
         "Multilingual Suggestion",
@@ -2401,8 +2405,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260075",
-      "publishedAt": "2026-10-29T11:14:49Z"
+      "originBuild": "260094",
+      "publishedAt": "2026-10-31T10:48:45Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -2799,6 +2803,42 @@
       ],
       "originBuild": "260088",
       "publishedAt": "2026-10-30T18:23:56Z"
+    },
+    "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.21.9.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.67.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.67.0"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260094",
+      "publishedAt": "2026-10-31T10:48:45Z"
     }
   }
 }
