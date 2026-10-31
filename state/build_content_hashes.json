@@ -260,7 +260,7 @@
       ]
     },
     "pdbee-madushas-v2.135.1-arm64-v8a": {
-      "hash": "37a7e407a32f990ac854d563e6195418",
+      "hash": "99b5348b9547113bd516357ed6f5fb47",
       "kinds": [
         "apk"
       ]
@@ -329,6 +329,12 @@
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a": {
       "hash": "e9643b67e4db7040a8ace6515b19a138",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "instagram-hushgram-v453.0.0.57.79-arm64-v8a": {
+      "hash": "3823ed1dab1537768d9b0b88adfdb784",
       "kinds": [
         "apk"
       ]
