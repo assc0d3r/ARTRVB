@@ -171,13 +171,13 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.1.0-dev.3",
-    "beta_date": "2026-10-30T21:24:03Z",
+    "beta": "v4.1.0-dev.4",
+    "beta_date": "2026-10-31T00:57:42Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
-    "stable": "v4.0.0",
-    "stable_date": "2026-10-26T22:41:52Z"
+    "stable": "v4.1.0",
+    "stable_date": "2026-10-31T02:56:36Z"
   },
   "madushas/pdb_patch": {
     "beta": "",
