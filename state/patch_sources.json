@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.67.1-dev.1",
-    "beta_date": "2026-10-31T09:05:09Z",
+    "beta": "v1.68.0-dev.3",
+    "beta_date": "2026-10-31T14:25:31Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -171,8 +171,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.1.0-dev.4",
-    "beta_date": "2026-10-31T00:57:42Z",
+    "beta": "v4.1.1-dev.1",
+    "beta_date": "2026-10-31T10:53:14Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",

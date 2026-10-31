@@ -90,8 +90,8 @@
   },
   "jasonwu1994/gboard-patches": {
     "beta": {
-      "com.google.android.inputmethod.latin": "aa31afbadc7fdbac2ba302a8dccb9cbf",
-      "shared": "fbc47d291242fd807dae3d2a6ebd0408"
+      "com.google.android.inputmethod.latin": "e7b267726960c09a23b11c11180a8659",
+      "shared": "e3faee8d860c455f6ff1da43af971ad1"
     },
     "stable": {
       "com.google.android.inputmethod.latin": "2b386956fca774c631a6b373b7758be8",
