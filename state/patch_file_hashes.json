@@ -86,12 +86,12 @@
   },
   "jacksonjones2003/immersive-keyboard-patches": {
     "beta": {
-      "com.google.android.inputmethod.latin": "6e5e27caab3582651da760581b9f9112",
-      "shared": "0347851f1e18bba74a5a47bf247da23f"
+      "com.google.android.inputmethod.latin": "48e19b68427f0190cf0b7c6a6d7d387b",
+      "shared": "8db3d2547c4f521c1f5c6981b5e1658f"
     },
     "stable": {
-      "com.google.android.inputmethod.latin": "6e5e27caab3582651da760581b9f9112",
-      "shared": "0347851f1e18bba74a5a47bf247da23f"
+      "com.google.android.inputmethod.latin": "48e19b68427f0190cf0b7c6a6d7d387b",
+      "shared": "8db3d2547c4f521c1f5c6981b5e1658f"
     }
   },
   "jasonwu1994/gboard-patches": {
@@ -100,8 +100,8 @@
       "shared": "e3faee8d860c455f6ff1da43af971ad1"
     },
     "stable": {
-      "com.google.android.inputmethod.latin": "2b386956fca774c631a6b373b7758be8",
-      "shared": "8498854420cdf3dd91e3864a7ccdebfd"
+      "com.google.android.inputmethod.latin": "2bcbcec113d202dac6caa8f247081075",
+      "shared": "7b5f9991d328758eb1c1983efe672619"
     }
   },
   "madushas/pdb_patch": {
