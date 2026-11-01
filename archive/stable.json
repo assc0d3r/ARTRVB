@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-01T06:03:08Z"
+    "publishedAt": "2026-11-01T11:41:44Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2528,10 +2528,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.2.mpp"
+        "Akash-Sriram/patches-1.17.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.2"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2541,8 +2541,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260100",
-      "publishedAt": "2026-11-01T06:02:57Z"
+      "originBuild": "260103",
+      "publishedAt": "2026-11-01T11:41:22Z"
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -2557,10 +2557,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.67.0.mpp"
+        "hxreborn/patches-1.68.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.67.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.68.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2577,8 +2577,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260094",
-      "publishedAt": "2026-10-31T10:48:45Z"
+      "originBuild": "260103",
+      "publishedAt": "2026-11-01T11:41:22Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2834,6 +2834,138 @@
       ],
       "originBuild": "260098",
       "publishedAt": "2026-10-31T23:24:21Z"
+    },
+    "facebook-hushfacebook-v585.0.0.47.54-arm64-v8a.apk": {
+      "name": "facebook-hushfacebook",
+      "version": "585.0.0.47.54",
+      "appKey": "facebook",
+      "appName": "Facebook",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushfacebook",
+      "brandName": "HushFacebook",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.facebook.katana",
+      "patchSources": [
+        "SysAdminDoc/patches-0.20.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.20.0"
+      ],
+      "appliedPatches": [
+        "AMOLED black theme",
+        "Allow screenshots",
+        "Block Instant Games ads",
+        "Block ad telemetry",
+        "Block background ad prefetch",
+        "Block background-return feed refresh",
+        "Block promotional notifications",
+        "Block screenshot detection",
+        "Clean up Facebook's chat list",
+        "Clean up Reels",
+        "Comment sheet options",
+        "Default comment order",
+        "Default playback quality",
+        "Disable Audience Network",
+        "Don't save search history",
+        "Don't send reel watch history",
+        "Double tap to skip",
+        "Download any photo",
+        "Download any reel",
+        "Download any story",
+        "Download any video",
+        "Following feed on Home",
+        "Force dark mode",
+        "Frame step",
+        "Hide AI-detected posts",
+        "Hide Menu promotions",
+        "Hide Meta AI comment summaries",
+        "Hide Meta AI in search",
+        "Hide Meta AI questions under posts",
+        "Hide Meta upsells",
+        "Hide Reels in the feed",
+        "Hide Stories tray",
+        "Hide affiliate product links",
+        "Hide carrier data banners",
+        "Hide post prompts",
+        "Hide posts by words",
+        "Hide profile notes",
+        "Hide read receipts",
+        "Hide reel interest prompts",
+        "Hide seen posts",
+        "Hide sponsored Marketplace listings",
+        "Hide sponsored posts",
+        "Hide sponsored profile posts",
+        "Hide sponsored reels",
+        "Hide sponsored search results",
+        "Hide sponsored stories",
+        "Hide suggested and promoted posts",
+        "Hide suggested stories",
+        "Hide tab badges",
+        "Hide tabs",
+        "Hide the Feeds header",
+        "Hide the Get Messenger card",
+        "Hide the Reels tab",
+        "Hide the Reels tab dot",
+        "Hide typing indicator",
+        "Hold a reel for 2x",
+        "Hold back analytics uploads",
+        "Home header text",
+        "Hushfacebook in the Menu",
+        "Hushfacebook settings",
+        "Install beside Meta's apps",
+        "Keep feed videos muted",
+        "Keep post dates",
+        "Keep the progress bar",
+        "Keep the reel speed",
+        "Local profile counts",
+        "Longer music on photo stories",
+        "Marketplace only",
+        "Newest reels first",
+        "Open Messenger from the top bar",
+        "Open comments at full height",
+        "Open comments with a gesture",
+        "Open links in external browser",
+        "Open on a chosen tab",
+        "Picture-in-picture",
+        "Pinch to zoom",
+        "Post action buttons",
+        "Restore screens on re-signed builds",
+        "Resume long videos",
+        "Round stories tray",
+        "Sanitize sharing links",
+        "Search date range",
+        "See who shared",
+        "Send chat photos and videos at original quality",
+        "Share sheet items",
+        "Show View profile on Marketplace sellers",
+        "Show full post text",
+        "Skip silent parts",
+        "Start on x86 devices",
+        "Stop Story auto-advance",
+        "Stop update prompts",
+        "Tab bar at the bottom",
+        "Tag suggestions only after @",
+        "Tap shows the controls",
+        "Tap to play",
+        "Turn off HDR brightness",
+        "Turn off auto-translation",
+        "Turn off double tap to like",
+        "Turn off haptics",
+        "Turn off screen transitions",
+        "Unlock app icons",
+        "Upload Stories in HD",
+        "Use the phone's emoji",
+        "Use the system font",
+        "View stories anonymously",
+        "Material You theme",
+        "Disable Play Store updates",
+        "Badge and logo colors",
+        "Accent color"
+      ],
+      "originBuild": "260103",
+      "publishedAt": "2026-11-01T11:41:22Z"
     }
   }
 }
