@@ -104,8 +104,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.3",
-    "stable_date": "2026-11-01T15:28:36Z"
+    "stable": "v2.8.4",
+    "stable_date": "2026-11-01T23:09:17Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",
@@ -185,8 +185,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.5.7",
-    "stable_date": "2026-10-31T22:36:25Z"
+    "stable": "v0.5.8",
+    "stable_date": "2026-11-01T22:06:55Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
