@@ -2,7 +2,7 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "c368aa2b261214079983a293f4f00e13",
+      "com.google.android.apps.photos": "b0705fa8786a4fedc39d93263cebf064",
       "shared": "cb2a7725c3365cbe6e29daf444e8c2b8"
     }
   },
@@ -13,8 +13,8 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "4a025b8ba3fdc6cea713a6a741aed058",
-      "shared": "48af56b24506f886b8b31e317a4d4ad4"
+      "com.google.android.inputmethod.latin": "491bfde6e3406788a1168454a6468134",
+      "shared": "bb9e292e1f52e9baf8eab8457fdc4236"
     }
   },
   "ausamnco/gboard-enc-patches": {
@@ -70,8 +70,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonvpn.android": "2d279cc1e17d1cb1b8e24897f51003d9",
-      "shared": "97b62a08a64b34ecbaf03d4fa7bdec84"
+      "ch.protonvpn.android": "0260eaca96a5845270395c860c4991f7",
+      "shared": "7ad6f4c6938873b69bfb2b5f123af765"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -177,8 +177,8 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "c02ab671c0e280f7c966238a5edc08f9",
-      "shared": "67f7c045172d1a251ebe35c7ea850aef"
+      "com.facebook.katana": "608d4d2d89495a8cff417fa571597559",
+      "shared": "8fdc2a1338470b6bfdb4eae8d0686950"
     }
   },
   "sysadmindoc/hushgram": {

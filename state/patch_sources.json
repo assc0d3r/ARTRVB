@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.17.2",
-    "stable_date": "2026-11-01T04:16:04Z"
+    "stable": "v1.17.4",
+    "stable_date": "2026-11-01T10:37:56Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
     "beta": "v1.21.3-dev.1",
@@ -18,8 +18,8 @@
     "stable_date": "2026-10-31T17:45:34Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.4",
-    "beta_date": "2026-10-31T17:10:04Z",
+    "beta": "v2.1.0-dev.5",
+    "beta_date": "2026-11-01T09:55:14Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -32,8 +32,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.19.0",
-    "stable_date": "2026-10-28T04:37:09Z"
+    "stable": "v0.20.0",
+    "stable_date": "2026-11-01T07:31:26Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.13",
-    "stable_date": "2026-10-31T07:18:01Z"
+    "stable": "v1.0.17",
+    "stable_date": "2026-11-01T09:07:43Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -104,8 +104,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.1",
-    "stable_date": "2026-11-01T05:18:09Z"
+    "stable": "v2.8.2",
+    "stable_date": "2026-11-01T09:12:54Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",
@@ -153,13 +153,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.68.0-dev.7",
-    "beta_date": "2026-10-31T20:51:24Z",
+    "beta": "v1.69.0-dev.4",
+    "beta_date": "2026-11-01T11:26:27Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.67.0",
-    "stable_date": "2026-10-31T07:35:46Z"
+    "stable": "v1.68.0",
+    "stable_date": "2026-11-01T07:51:54Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
