@@ -13,8 +13,8 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "491bfde6e3406788a1168454a6468134",
-      "shared": "bb9e292e1f52e9baf8eab8457fdc4236"
+      "com.google.android.inputmethod.latin": "2304ef46d8ab7daf100272d5f1437748",
+      "shared": "89c29c82120f9b4c2c1036b5d5ed9955"
     }
   },
   "ausamnco/gboard-enc-patches": {

@@ -41,7 +41,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -102,8 +102,8 @@
     "inclusive-patches": false,
     "version": "auto",
     "build-mode": "both",
-    "included-patches": "'Better translate UX'",
-    "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync'",
+    "included-patches": "'Better translate UX' 'Key Mapper Watchdog' ",
+    "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync' 'AMOLED Gboard Settings' ",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/gboard/",
     "uptodown-dlurl": "https://gboard-go.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
@@ -123,7 +123,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "patches-source": "Akash-Sriram/morphe-google-photos",
@@ -134,7 +134,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",
@@ -260,7 +260,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
     "patches-source": "VipinVIP/railone-patches",
@@ -330,7 +330,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",

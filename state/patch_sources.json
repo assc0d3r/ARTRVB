@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.17",
-    "stable_date": "2026-11-01T09:07:43Z"
+    "stable": "v1.0.22",
+    "stable_date": "2026-11-01T14:00:33Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -117,8 +117,8 @@
     "stable_date": "2026-10-26T10:05:48Z"
   },
   "crimera/piko": {
-    "beta": "v3.11.0-dev.3",
-    "beta_date": "2026-10-25T17:20:44Z",
+    "beta": "v3.11.0-dev.4",
+    "beta_date": "2026-11-01T13:26:43Z",
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
