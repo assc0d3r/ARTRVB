@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-01T20:49:52Z"
+    "publishedAt": "2026-11-01T23:35:24Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1298,10 +1298,10 @@
       "subVariant": null,
       "packageName": "pdb.app",
       "patchSources": [
-        "madushas/patches-0.5.7.mpp"
+        "madushas/patches-0.5.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/madushas/pdb_patch/releases/tag/v0.5.7"
+        "https://github.com/madushas/pdb_patch/releases/tag/v0.5.8"
       ],
       "appliedPatches": [
         "Allow standalone install (split-less APK)",
@@ -1326,8 +1326,8 @@
         "Spoof app signature",
         "Spoof install source"
       ],
-      "originBuild": "260098",
-      "publishedAt": "2026-10-31T23:24:21Z"
+      "originBuild": "260109",
+      "publishedAt": "2026-11-01T23:35:13Z"
     },
     "truecaller-heval99-v26.41.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
