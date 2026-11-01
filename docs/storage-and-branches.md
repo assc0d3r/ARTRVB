@@ -239,16 +239,26 @@ build, so a release note or a Telegram/Discord link keeps resolving long after r
 prunes its own numbered releases (newest 98). After the numbered upload the same
 `./build/*` set is pushed here under the identical build-number tag, its body is
 the archive-linked `build.archive.md`, and this build's `manifests/<tag>.json` is
-committed to this repo's `website` branch so a download site can be generated from
-the mirror later. Written by `build.yml`'s `Upload to archive repo` and `Publish
-archive manifest` steps with `ARCHIVE_REPO_TOKEN`; read by whoever stands up the
-site.
+committed to this repo's `website` branch. Three branches carry different things:
+`website` is machine data (`manifests/*.json` and nothing else); `main` carries the
+**github.com README surface**, an index README plus one `apps/<appKey>/README.md` per
+app, so visiting the repository shows every app's build history with working download
+links; `site` carries the **Pages surface**, `index.md` and `apps/<appKey>/index.md`,
+plus a copy of the chrome (`_config.yml`, `_layouts/`, `assets/`, `favicon.svg`) that
+the workflow syncs from `main` each run. `build.yml`'s `Upload to archive repo`,
+`Publish archive manifest` and `Notify archive pages` steps write the data with
+`ARCHIVE_REPO_TOKEN`; the pages themselves are rendered by this repo's own `pages.yml`,
+which reads `website`, commits the README surface to `main` and the Pages surface to
+`site` with its own `GITHUB_TOKEN`, then builds Jekyll from `site`. Nothing on either
+branch links into `website`, which makes the generator the only reader of the data
+layer, so that layer can change shape without breaking a visible link
+([decisions/0016](decisions/0016-archive-pages-are-generated-markdown-on-main.md)).
 
 **Numbered-only.** There are no rolling `stable`/`beta` releases here, no cleanup
 workflow in phase 1 (the repo just accumulates; the intended bound is a later
 coarse time/count cap, deleted whole-build, which never moves a link), and the
 per-build manifest has no cumulative `archive/<channel>.json` and no live-existence
-filter — the future frontend folds the per-build manifests instead. The whole mirror
+filter — the generated pages fold the per-build manifests instead. The whole mirror
 is opt-in: unset `vars.ARCHIVE_REPO` leaves every run byte-identical to before. The
 two notes (`build.md` on rvb, `build.archive.md` on the mirror) differ only in the
 per-file download base. Why a separate repo rather than a link at the rolling

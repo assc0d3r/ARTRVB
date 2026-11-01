@@ -76,14 +76,41 @@ Cross-repo companion to `merge_archive_branch.sh`: publishes THIS build's
 `manifests/<tag>.json` on its `website` branch, via the Contents API with
 `ARCHIVE_REPO_TOKEN` (`gh api`). Numbered-only — the mirror has no rolling
 stable/beta, so there is no cumulative `archive/<channel>.json` and no live-existence
-filter here; a future frontend folds the per-build manifests instead. It creates the
+filter here; `build_archive_pages.py` below folds the per-build manifests into the
+browsable pages. It creates the
 `website` branch from the repo default when absent and updates the blob in place by
-sha on a rerun, so a retried build is idempotent. Gated on the archive mirror upload
-landing and **fail-soft**: a rejected push warns and exits 0, never reddening a run
-whose files shipped. rvb's own `website` branch is untouched. Env: `ARCHIVE_REPO`,
-`BUILD_TAG`, `GH_TOKEN`. Regression test: `.github/traces/test_archive_mirror.sh`
-block (c) (stubbed `gh api`; absent / present / fail modes).
+sha on a rerun, so a retried build is idempotent. The base64 payload goes as a
+request body via `--input`, never `-f content=<b64>`: Linux caps one argument at
+128 KiB and a full-pool manifest exceeds that once encoded. Gated on the archive
+mirror upload landing and **fail-soft**: a rejected push warns and exits 0, never
+reddening a run whose files shipped. rvb's own `website` branch is untouched. Env:
+`ARCHIVE_REPO`, `BUILD_TAG`, `GH_TOKEN`. Output: `PUBLISHED=true` on
+`$GITHUB_OUTPUT`, written only after the PUT returns, which is what gates the page
+rebuild. Regression test: `.github/traces/test_archive_mirror.sh`
+block (c) (stubbed `gh api`; absent / present / oversized / fail modes).
 Why the mirror exists: [decisions/0015](../../docs/decisions/0015-builds-are-mirrored-to-a-permanent-archive-repo.md).
+
+### `build_archive_pages.py`
+Renders the archive repo's browsable site from its `manifests/*.json`: an index
+README (an apps table with each app's last build date, plus a line pointing anyone
+after the newest versions or Obtainium adds at NullStore) and one
+`apps/<appKey>/README.md` per app, grouped brand then variant, with each distinct
+applied-patch list folded once above the build table it covers. Stdlib only, no
+network, and every collection sorted with a tie-break, because unstable order would
+rewrite files whose data did not change. `NULLSTORE_URL` is required with no
+default, so a hub move cannot leave a stale link advertising itself, and
+`ARCHIVE_SITE_BASE` sets the page links, which are always absolute because a
+relative link 404s for a logged-out reader. When `ARCHIVE_PAGES_BASE` is set it also
+writes the `index.md` mirror that Pages (Jekyll) renders, front matter included,
+linking at that base, with continuation pages named `page-2.md` rather than `2.md` so
+the two surfaces cannot overwrite each other. The archive workflow commits the README
+surface to `main`, the index surface plus a synced copy of the chrome to `site`, and
+builds Jekyll from `site`. Run by the archive repo's own `pages.yml`, which imports it
+from a sparse clone of `main` exactly like
+`naming.py` ([0006](../../docs/decisions/0006-filename-parsing-is-imported-not-mirrored.md),
+[0016](../../docs/decisions/0016-archive-pages-are-generated-markdown-on-main.md)).
+Regression test: `.github/traces/test_archive_pages.sh` (goldens, two-run
+determinism, and a perturbed sort key that must break the comparison).
 
 ### `generate_release_notes.py` — the second note
 Renders `build.md` exactly as before, and when `ARCHIVE_REPO` is set also renders
@@ -220,6 +247,28 @@ arch extraction/normalization). Imported — never copied — by
 across the repo boundary; a change here is live on the site at the next catalogue
 rebuild, so run `rebuild-catalog.yml` with `dry_run: true` before merging one.
 See [docs/decisions/0006](../../docs/decisions/0006-filename-parsing-is-imported-not-mirrored.md).
+
+### `channels.py`
+Single source of truth for the pre-release marker words of a source's release tag
+(`PRE_RELEASE_MARKERS`, `TAG_MARKER_PATTERN`, `is_pre_release_tag`). Imported by
+`sync_patch_sources.py` (which release of a source is its stable head and which is
+its beta head) and by `compile_patch_configs.py` (which pool a pinned
+`patches-version` joins), so a tag and a pin of that same tag cannot be read by two
+different lists. `scripts/utils.sh` cannot import Python and mirrors the words in
+`RVB_CHANNEL_MARKERS`, assembled by `channel_beta_re()`. A marker counts only as its
+own component of the tag, `[-._]` before it and no letter after, which is what keeps
+`rc` from firing inside `-arch` and a short word like `exp` from firing inside
+`-express`. Forge precedence is the caller's decision, not this module's: a GitLab
+release carries no pre-release flag so its tag is the whole signal, while on GitHub
+and Forgejo the flag outranks the name, and the engine reads the flag alone there so
+a tag never overrides what the publisher ticked. Keep it stdlib-only, like
+`naming.py`.
+
+Guard: `.github/traces/test_channel_markers.sh` (Git Bash) asserts the shell and the
+module build the identical pattern string and classify the same tags, then drives
+both consumers and the engine's picker for real. Its controls mutate each copy back
+toward the old loose filter and require the suite to go red, so the green run means
+something.
 
 ### `jsonfmt.py`
 The one serialization for every JSON **document** this pipeline persists: the
