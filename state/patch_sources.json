@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.17.0",
-    "stable_date": "2026-10-30T16:13:57Z"
+    "stable": "v1.17.2",
+    "stable_date": "2026-11-01T04:16:04Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
     "beta": "v1.21.3-dev.1",
@@ -104,8 +104,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.7.6",
-    "stable_date": "2026-10-30T21:31:17Z"
+    "stable": "v2.8.1",
+    "stable_date": "2026-11-01T05:18:09Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",
@@ -171,8 +171,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.1.1-dev.1",
-    "beta_date": "2026-10-31T10:53:14Z",
+    "beta": "v4.2.0-dev.2",
+    "beta_date": "2026-11-01T02:27:21Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
