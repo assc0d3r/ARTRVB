@@ -31,20 +31,8 @@
         "apk"
       ]
     },
-    "instagram-hushgram-v450.0.0.50.77-arm64-v8a": {
-      "hash": "effc650276aabbce79e72238e355ed84",
-      "kinds": [
-        "apk"
-      ]
-    },
     "messenger-hushmessenger-v583.0.0.29.95-arm64-v8a": {
       "hash": "8d8ff5ae59dc7e444343d62b25b7041f",
-      "kinds": [
-        "apk"
-      ]
-    },
-    "facebook-hushfacebook-v582.0.0.50.54-arm64-v8a": {
-      "hash": "50a6b3b288060ac352108074a7ac52f3",
       "kinds": [
         "apk"
       ]
