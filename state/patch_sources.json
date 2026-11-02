@@ -53,6 +53,15 @@
     "stable": "v0.28.0",
     "stable_date": "2026-10-31T15:55:32Z"
   },
+  "SysAdminDoc/HushPinterest": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "SysAdminDoc/HushPinterest",
+    "stable": "v0.0.13",
+    "stable_date": "2026-10-23T04:10:04Z"
+  },
   "SysAdminDoc/HushTelegram": {
     "beta": "",
     "beta_date": "",
@@ -104,8 +113,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.4",
-    "stable_date": "2026-11-01T23:09:17Z"
+    "stable": "v2.8.5",
+    "stable_date": "2026-11-02T04:01:07Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.14.1-dev.1",

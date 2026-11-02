@@ -202,5 +202,11 @@
       "Gboard-GboardPatches"
     ],
     "version": "18.5.4.993608717"
+  },
+  "Pinterest": {
+    "keys": [
+      "Pinterest"
+    ],
+    "version": "14.42.0"
   }
 }
