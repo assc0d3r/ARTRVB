@@ -1,14 +1,4 @@
 {
-  "stable": {
-    "Pinterest": {
-      "reason": "new",
-      "arches": [
-        "arm64-v8a"
-      ],
-      "attempts": 0,
-      "parked": false,
-      "cfg": "6f6b05d8d8dd3bdd128a2cc5dd68d109b67f9eaf"
-    }
-  },
+  "stable": {},
   "beta": {}
 }

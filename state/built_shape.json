@@ -401,6 +401,21 @@
         "arch": "arm64-v8a",
         "build-mode": "apk"
       }
+    },
+    "Pinterest": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
+        "brand": "Pinterest",
+        "app-name": "Pinterest",
+        "pkg-name": "com.pinterest",
+        "inclusive-patches": "false",
+        "arch": "arm64-v8a",
+        "build-mode": "apk",
+        "version": "auto"
+      }
     }
   },
   "beta": {
