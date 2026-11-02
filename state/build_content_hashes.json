@@ -320,6 +320,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "pinterest-pinterest-v14.39.0-arm64-v8a": {
+      "hash": "63bb3213558e6995043189dd8664147c",
+      "kinds": [
+        "apk"
+      ]
     }
   },
   "beta": {
