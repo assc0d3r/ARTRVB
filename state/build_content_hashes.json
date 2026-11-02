@@ -298,7 +298,7 @@
       ]
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a": {
-      "hash": "3823ed1dab1537768d9b0b88adfdb784",
+      "hash": "1e117263191b22c323a9a96d7636f473",
       "kinds": [
         "apk"
       ]
@@ -311,6 +311,12 @@
     },
     "pinterest-pinterest-v14.39.0-arm64-v8a": {
       "hash": "63bb3213558e6995043189dd8664147c",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "truecaller-heval99-v26.42.5-arm64-v8a": {
+      "hash": "4a4e91fdc8a16b4ab8303d57c341ee1a",
       "kinds": [
         "apk"
       ]
