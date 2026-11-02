@@ -2,7 +2,7 @@
 enabled = true
 pkg-name = "com.pinterest"
 app-name = "Pinterest"
-patches-source = "'SysAdminDoc/HushPinterest' 'tbrowzomje/browzomje-patches'"
+patches-source = "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'"
 patches-version = "both"
 brand = "Pinterest"
 arch = "arm64-v8a"
