@@ -392,6 +392,12 @@
         "apk",
         "module"
       ]
+    },
+    "pinterest-pinterest-v14.39.0-arm64-v8a": {
+      "hash": "bb51993103171da194d3354a8c296dae",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
