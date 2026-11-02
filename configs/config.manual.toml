@@ -1,19 +1,15 @@
-[Google-Gboard-Combined]
+[Pinterest]
 enabled = true
-pkg-name = "com.google.android.inputmethod.latin"
-app-name = "Gboard"
-patches-source = "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'"
-brand = "Combined"
-arch = "arm64-v8a"
-patch-folder = "gboard"
-variant = "Experimental"
-version = "exp"
-inclusive-patches = false
+pkg-name = "com.pinterest"
+app-name = "Pinterest"
+patches-source = "'SysAdminDoc/HushPinteres' 'tbrowzomje/browzomje-patches'"
 patches-version = "both"
+brand = "Pinterest"
+arch = "arm64-v8a"
+inclusive-patches = false
 version = "auto"
-build-mode = "both"
-included-patches = "'Better translate UX' 'Key Mapper Watchdog' "
-excluded-patches = "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync' 'AMOLED Gboard Settings' "
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/gboard/"
-uptodown-dlurl = "https://gboard-go.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/pinterest/pinterest-one-destination-for-a-world-of-inspiration"
+uptodown-dlurl = "https://pinterest.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/pinterest/com.pinterest"
+apkcombo-dlurl = "https://apkcombo.com/pinterest/com.pinterest"
