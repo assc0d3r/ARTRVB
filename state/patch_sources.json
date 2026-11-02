@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.17.6",
-    "stable_date": "2026-11-01T18:23:26Z"
+    "stable": "v1.17.7",
+    "stable_date": "2026-11-02T10:11:27Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
     "beta": "v1.21.3-dev.1",
@@ -18,8 +18,8 @@
     "stable_date": "2026-10-31T17:45:34Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.5",
-    "beta_date": "2026-11-01T09:55:14Z",
+    "beta": "v2.1.0-dev.6",
+    "beta_date": "2026-11-02T08:28:24Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -162,13 +162,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.69.0-dev.7",
-    "beta_date": "2026-11-01T19:20:16Z",
+    "beta": "v1.70.0-dev.1",
+    "beta_date": "2026-11-02T11:04:04Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.68.0",
-    "stable_date": "2026-11-01T07:51:54Z"
+    "stable": "v1.69.0",
+    "stable_date": "2026-11-02T08:53:39Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
