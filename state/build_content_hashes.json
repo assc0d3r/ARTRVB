@@ -6,12 +6,6 @@
         "apk"
       ]
     },
-    "discord-venus-v348.10-Stable-arm64-v8a": {
-      "hash": "0c779c93dee1fc87a8282edf5cae220f",
-      "kinds": [
-        "apk"
-      ]
-    },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a": {
       "hash": "fc6f29413de915414b6f6375afcc2f1e",
       "kinds": [
@@ -111,12 +105,6 @@
     },
     "instagram-hushgram-v451.0.0.53.80-arm64-v8a": {
       "hash": "65df842dc387d1d8e2d20272d8c2793f",
-      "kinds": [
-        "apk"
-      ]
-    },
-    "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a": {
-      "hash": "522299047ffd586a5a3a47d3f013c510",
       "kinds": [
         "apk"
       ]
