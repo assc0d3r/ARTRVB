@@ -320,6 +320,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "discord-venus-v351.11-Stable-arm64-v8a": {
+      "hash": "443d2521cf36ed4e4716dd4ebc764ebf",
+      "kinds": [
+        "apk"
+      ]
     }
   },
   "beta": {
