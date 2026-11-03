@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-03T02:21:46Z"
+    "publishedAt": "2026-11-03T12:34:42Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -826,68 +826,6 @@
       ],
       "originBuild": "260037",
       "publishedAt": "2026-10-23T09:45:32Z"
-    },
-    "discord-venus-v349.9-Stable-arm64-v8a.apk": {
-      "name": "discord-venus",
-      "version": "349.9-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "venus",
-      "brandName": "Venus",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "VenusIsJaded/patches-1.17.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.17.0"
-      ],
-      "appliedPatches": [
-        "Account switcher",
-        "Complete Quests automatically",
-        "Copy profile bios",
-        "Custom themes",
-        "Disable advertising identifiers",
-        "Disable analytics",
-        "Disable crash reporting",
-        "Disable install attribution",
-        "Disable telemetry and touch logging",
-        "Double-tap to reply",
-        "Favourite any image or video",
-        "Fix unknown mentions",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
-        "Hide typing indicator",
-        "Icon packs",
-        "Jump to first message",
-        "Keep deleted messages",
-        "Message highlights",
-        "Pastel name colors",
-        "Read all button",
-        "Send Nitro stickers and emojis as links",
-        "Send audio as voice messages",
-        "Send long messages",
-        "Server info",
-        "Show device indicators",
-        "Show file sizes when attaching",
-        "Show hidden channels",
-        "Skip delete confirmation",
-        "Spaces in channel names",
-        "Translate messages",
-        "Unlock app icons",
-        "Use your phone's emojis",
-        "Use your phone's font",
-        "User activity notifications",
-        "User and server reviews",
-        "Venus button on profile bar",
-        "Venus settings"
-      ],
-      "originBuild": "260038",
-      "publishedAt": "2026-10-23T14:09:11Z"
     },
     "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -2378,10 +2316,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.7.mpp"
+        "Akash-Sriram/patches-1.17.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.7"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2391,8 +2329,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260112",
-      "publishedAt": "2026-11-02T13:00:36Z"
+      "originBuild": "260117",
+      "publishedAt": "2026-11-03T12:34:19Z"
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -2927,10 +2865,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.21.0.mpp"
+        "VenusIsJaded/patches-1.21.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.1"
       ],
       "appliedPatches": [
         "Account switcher",
@@ -3012,8 +2950,8 @@
         "View raw data",
         "Voice channel options"
       ],
-      "originBuild": "260115",
-      "publishedAt": "2026-11-03T02:21:24Z"
+      "originBuild": "260117",
+      "publishedAt": "2026-11-03T12:34:19Z"
     }
   }
 }
