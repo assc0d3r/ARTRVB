@@ -57,7 +57,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -82,7 +82,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Facebook-Messenger-HushMessenger": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "patches-source": "SysAdminDoc/HushMessenger",
@@ -276,7 +276,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/railone/org.cris.aikyam"
   },
   "AdobeAcrobat-Rushi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.adobe.reader",
     "app-name": "Adobe Acrobat",
     "patches-source": "rushiranpise/morphe-patches",
