@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-03T02:17:43Z"
+    "publishedAt": "2026-11-03T12:32:25Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -397,13 +397,13 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-4.2.0-dev.4.mpp",
+        "jasonwu1994/patches-4.2.0-dev.5.mpp",
         "assc0d3r/patches-1.0.22.mpp",
         "JacksonJones2003/patches-1.21.3-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.2.0-dev.4",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.2.0-dev.5",
         "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.22",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
@@ -461,8 +461,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260114",
-      "publishedAt": "2026-11-03T02:17:27Z"
+      "originBuild": "260116",
+      "publishedAt": "2026-11-03T12:32:11Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -477,13 +477,13 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "jasonwu1994/patches-4.2.0-dev.4.mpp",
+        "jasonwu1994/patches-4.2.0-dev.5.mpp",
         "assc0d3r/patches-1.0.22.mpp",
         "JacksonJones2003/patches-1.21.3-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.2.0-dev.4",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.2.0-dev.5",
         "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.22",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
@@ -541,8 +541,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260114",
-      "publishedAt": "2026-11-03T02:17:27Z"
+      "originBuild": "260116",
+      "publishedAt": "2026-11-03T12:32:11Z"
     },
     "pinterest-pinterest-v14.39.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
