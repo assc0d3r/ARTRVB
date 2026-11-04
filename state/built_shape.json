@@ -1,0 +1,37 @@
+{
+  "stable": {},
+  "beta": {
+    "Pinterest": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
+        "brand": "Pinterest",
+        "app-name": "Pinterest",
+        "pkg-name": "com.pinterest",
+        "inclusive-patches": "false",
+        "arch": "arm64-v8a",
+        "build-mode": "apk",
+        "version": "auto"
+      }
+    },
+    "Google-Gboard-Combined": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'",
+        "brand": "Combined",
+        "app-name": "Gboard",
+        "pkg-name": "com.google.android.inputmethod.latin",
+        "included-patches": "'Better translate UX' 'Key Mapper Watchdog' ",
+        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync' 'AMOLED Gboard Settings' ",
+        "inclusive-patches": "false",
+        "arch": "arm64-v8a",
+        "build-mode": "both",
+        "version": "auto"
+      }
+    }
+  }
+}
