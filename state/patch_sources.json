@@ -18,8 +18,8 @@
     "stable_date": "2026-10-31T17:45:34Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.7",
-    "beta_date": "2026-11-03T08:24:27Z",
+    "beta": "v2.1.0-dev.8",
+    "beta_date": "2026-11-04T06:02:06Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -185,8 +185,8 @@
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
-    "stable": "v4.1.1",
-    "stable_date": "2026-10-31T19:29:30Z"
+    "stable": "v4.2.0",
+    "stable_date": "2026-11-04T01:56:14Z"
   },
   "madushas/pdb_patch": {
     "beta": "",
