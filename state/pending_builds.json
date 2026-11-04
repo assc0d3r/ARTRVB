@@ -1,4 +1,15 @@
 {
-  "stable": {},
+  "stable": {
+    "AdobeAcrobat-Rushi": {
+      "reason": "retry",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 1,
+      "parked": false,
+      "run": 41903369457,
+      "ts": "2026-11-04T20:26:58Z"
+    }
+  },
   "beta": {}
 }
