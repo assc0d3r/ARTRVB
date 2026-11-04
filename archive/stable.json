@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-04T16:16:54Z"
+    "publishedAt": "2026-11-04T20:27:58Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -115,10 +115,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.7.6.mpp"
+        "bearinmindcat/patches-2.8.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.6"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.5"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -149,8 +149,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260089",
-      "publishedAt": "2026-10-30T23:43:53Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -213,8 +213,8 @@
         "Remove Login",
         "Unlock Premium"
       ],
-      "originBuild": "260086",
-      "publishedAt": "2026-10-30T11:14:39Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "adobe-scan-rushi-v26.08.01-arm64-v8a.apk": {
       "name": "adobe-scan-rushi",
@@ -396,8 +396,8 @@
         "Remove video ads",
         "Suppress geo / VPN block"
       ],
-      "originBuild": "260038",
-      "publishedAt": "2026-10-23T14:09:11Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
       "name": "twitter-piko",
@@ -491,8 +491,8 @@
         "Show sensitive media",
         "Support external downloader"
       ],
-      "originBuild": "260044",
-      "publishedAt": "2026-10-25T09:34:50Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -668,8 +668,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260070",
-      "publishedAt": "2026-10-28T18:45:36Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "wavelet-o0b-v26.05-arm64-v8a.apk": {
       "name": "wavelet-o0b",
@@ -692,8 +692,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260007",
-      "publishedAt": "2026-10-15T15:08:39Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
@@ -708,10 +708,10 @@
       "subVariant": null,
       "packageName": "sensustech.universal.tv.remote.control",
       "patchSources": [
-        "rushiranpise/patches-1.23.0.mpp"
+        "rushiranpise/patches-1.23.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0"
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1"
       ],
       "appliedPatches": [
         "Disable PairIP license check",
@@ -723,8 +723,8 @@
         "Spoof install source",
         "Unlock Premium"
       ],
-      "originBuild": "260038",
-      "publishedAt": "2026-10-23T14:09:11Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "vesselfinder-heval-v6.7.8-arm64-v8a.apk": {
       "name": "vesselfinder-heval",
@@ -739,17 +739,17 @@
       "subVariant": null,
       "packageName": "com.astrapaging.vff",
       "patchSources": [
-        "heval99/patches-1.18.0.mpp"
+        "heval99/patches-2.1.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.1.0"
       ],
       "appliedPatches": [
         "Disable ads",
         "Disable license check"
       ],
-      "originBuild": "260034",
-      "publishedAt": "2026-10-22T17:50:06Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "accuweather-rushi-v21.1.15-3-rc-arm64-v8a.apk": {
       "name": "accuweather-rushi",
@@ -764,16 +764,16 @@
       "subVariant": null,
       "packageName": "com.accuweather.android",
       "patchSources": [
-        "rushiranpise/patches-1.23.0.mpp"
+        "rushiranpise/patches-1.23.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0"
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1"
       ],
       "appliedPatches": [
         "Unlock Premium+"
       ],
-      "originBuild": "260044",
-      "publishedAt": "2026-10-25T09:34:50Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-v4n1x",
@@ -798,8 +798,8 @@
         "Disable consent popup",
         "Enable SoundCloud Go+"
       ],
-      "originBuild": "260086",
-      "publishedAt": "2026-10-30T11:14:39Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "vn-video-editor-riky-v2.22.1-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -824,8 +824,8 @@
         "Hide projects ads",
         "Unlock Premium"
       ],
-      "originBuild": "260037",
-      "publishedAt": "2026-10-23T09:45:32Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -1229,8 +1229,8 @@
         "Spoof app signature",
         "Spoof install source"
       ],
-      "originBuild": "260109",
-      "publishedAt": "2026-11-01T23:35:13Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "truecaller-heval99-v26.41.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -1539,8 +1539,8 @@
         "Use system font",
         "Voice messages in the music player"
       ],
-      "originBuild": "260096",
-      "publishedAt": "2026-10-31T17:32:23Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "messenger-hushmessenger-v584.1.0.61.98-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -1790,13 +1790,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.2.0.mpp",
-        "assc0d3r/patches-1.0.22.mpp",
+        "assc0d3r/patches-1.0.23.mpp",
         "JacksonJones2003/patches-1.21.3.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.2.0",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.22",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.23",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -1826,7 +1826,7 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
-        "Gboard Theme Studio",
+        "Gboard Theme Builder",
         "Glass Panel",
         "Glass Press Effect",
         "Glide Trail Customization",
@@ -1853,8 +1853,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260120",
-      "publishedAt": "2026-11-04T06:14:46Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -1870,13 +1870,13 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "jasonwu1994/patches-4.2.0.mpp",
-        "assc0d3r/patches-1.0.22.mpp",
+        "assc0d3r/patches-1.0.23.mpp",
         "JacksonJones2003/patches-1.21.3.mpp",
         "urroxyz/patches-0.0.4.mpp"
       ],
       "changelogs": [
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.2.0",
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.22",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.23",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4"
       ],
@@ -1906,7 +1906,7 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
-        "Gboard Theme Studio",
+        "Gboard Theme Builder",
         "Glass Panel",
         "Glass Press Effect",
         "Glide Trail Customization",
@@ -1933,8 +1933,8 @@
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone"
       ],
-      "originBuild": "260120",
-      "publishedAt": "2026-11-04T06:14:46Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1963,8 +1963,8 @@
         "Hide screenshot detection",
         "Monochrome icon support"
       ],
-      "originBuild": "260080",
-      "publishedAt": "2026-10-29T18:49:17Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "gboard-combined-experimental-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined-experimental",
@@ -2169,8 +2169,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260087",
-      "publishedAt": "2026-10-30T15:06:43Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -2300,8 +2300,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260087",
-      "publishedAt": "2026-10-30T15:06:43Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -2329,8 +2329,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-11-04T16:16:43Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -2365,8 +2365,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-11-04T16:16:43Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2620,8 +2620,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260113",
-      "publishedAt": "2026-11-02T22:07:18Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "facebook-hushfacebook-v585.0.0.47.54-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
@@ -2752,8 +2752,8 @@
         "Badge and logo colors",
         "Accent color"
       ],
-      "originBuild": "260103",
-      "publishedAt": "2026-11-01T11:41:22Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "pinterest-pinterest-v14.39.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
@@ -2811,8 +2811,8 @@
         "Show pin image information",
         "Use the system share sheet"
       ],
-      "originBuild": "260110",
-      "publishedAt": "2026-11-02T02:15:58Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "truecaller-heval99-v26.42.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -2849,8 +2849,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260113",
-      "publishedAt": "2026-11-02T22:07:18Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "discord-venus-v351.11-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -2950,8 +2950,8 @@
         "View raw data",
         "Voice channel options"
       ],
-      "originBuild": "260117",
-      "publishedAt": "2026-11-03T12:34:19Z"
+      "originBuild": "260123",
+      "publishedAt": "2026-11-04T20:27:15Z"
     }
   }
 }
