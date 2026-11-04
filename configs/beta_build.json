@@ -1,7 +1,7 @@
 {
   "patches-version": "beta",
   "Pinterest": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Google-Gboard-Combined": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'",
