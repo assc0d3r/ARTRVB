@@ -1,4 +1,14 @@
 {
   "stable": {},
-  "beta": {}
+  "beta": {
+    "Google-Gboard-Combined": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "65ead0bda0c42d68797a48630ff585b614a65579"
+    }
+  }
 }

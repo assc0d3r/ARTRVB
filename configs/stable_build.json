@@ -69,7 +69,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -332,7 +332,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "patches-source": "hxreborn/morphe-patches",
