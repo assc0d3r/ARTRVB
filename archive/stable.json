@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-04T06:14:59Z"
+    "publishedAt": "2026-11-04T16:16:54Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2316,10 +2316,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.9.mpp"
+        "Akash-Sriram/patches-1.17.10.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.9"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.10"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2329,8 +2329,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260119",
-      "publishedAt": "2026-11-04T00:39:26Z"
+      "originBuild": "260122",
+      "publishedAt": "2026-11-04T16:16:43Z"
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -2345,10 +2345,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.70.0.mpp"
+        "hxreborn/patches-1.71.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.70.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.71.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2365,8 +2365,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260118",
-      "publishedAt": "2026-11-03T16:14:24Z"
+      "originBuild": "260122",
+      "publishedAt": "2026-11-04T16:16:43Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
