@@ -144,6 +144,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "truecaller-heval99-v26.43.5-arm64-v8a": {
+      "hash": "e5f982e935b50b59ae9fe7bc05ec3b31",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
