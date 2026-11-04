@@ -38,9 +38,9 @@
   "heval99/heval-morphe-patches": {
     "beta": {},
     "stable": {
-      "com.astrapaging.vff": "57d836c573de25207e4fa1cd362ecba4",
-      "com.truecaller": "e19a6b4fc8f4fb4bf044f5b3c6f556fe",
-      "shared": "9559484535a8399740bc1d5c127a6356"
+      "com.astrapaging.vff": "c50eaec730a2de34774d8a77036a3b86",
+      "com.truecaller": "beb27f33322addf610aecc855aa46c5c",
+      "shared": "d34c26a61bc73d3dc2fb40582b05774f"
     }
   },
   "hxreborn/morphe-patches": {
