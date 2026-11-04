@@ -1,7 +1,7 @@
 {
   "patches-version": "beta",
   "Pinterest": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
