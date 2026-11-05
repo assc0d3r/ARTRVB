@@ -81,10 +81,23 @@
     }
   },
   "hxreborn/morphe-patches": {
-    "beta": {},
+    "beta": {
+      "ch.protonvpn.android": "7c3101fe493693f167fcec96a972da65",
+      "shared": "00dd2155a5aed15ef931516239ea1b76"
+    },
     "stable": {
-      "ch.protonvpn.android": "c6c1dac574b39050cdb626b8738c397f",
-      "shared": "0fc2f398cdb8bf24c52dc4ba582666d5"
+      "ch.protonvpn.android": "7c3101fe493693f167fcec96a972da65",
+      "shared": "5bf2465f01ccd6f36b6664fbfd6f9a5c"
+    }
+  },
+  "hyzor/hyzor-morphe-patches": {
+    "beta": {
+      "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "stable": {
+      "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
     }
   },
   "ihatenodejs/aidans-patches": {
@@ -120,6 +133,13 @@
     "stable": {
       "com.google.android.inputmethod.latin": "2d6d040a087582d92942b9ba2c7b8185",
       "shared": "cd5fb2f48a86148d9a7c1158ae583e4e"
+    }
+  },
+  "kveld9/kveld-extra-morphe-patches": {
+    "beta": {},
+    "stable": {
+      "eu.darken.sdmse": "1c35518127e2e476b64803b587915287",
+      "shared": "c35f7e263921e0912ffe7873609060a3"
     }
   },
   "madushas/pdb_patch": {
@@ -192,8 +212,8 @@
   },
   "sashade8-ship-it/dual-vot-patches": {
     "beta": {
-      "com.google.android.youtube": "a8486d528a92644f079754f7166d3f68",
-      "shared": "6562c4228570006d9bc244d1b1cf295b"
+      "com.google.android.youtube": "b95aec47e38959d4c7c8f46e73d898b1",
+      "shared": "4b90356a6453f40c5a652b8ec33d606e"
     },
     "stable": {
       "com.google.android.youtube": "c5d04aecf0e95fca0c22ef596063f358",
@@ -217,8 +237,8 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "608d4d2d89495a8cff417fa571597559",
-      "shared": "8fdc2a1338470b6bfdb4eae8d0686950"
+      "com.facebook.katana": "47aad729225728584a75611689bb25ef",
+      "shared": "2dbcf250fb87f2d42ea172da3920eaad"
     }
   },
   "sysadmindoc/hushgram": {

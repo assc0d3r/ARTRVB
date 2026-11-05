@@ -27,7 +27,7 @@
     "keys": [
       "Facebook-HushFacebook"
     ],
-    "version": "585.0.0.47.54"
+    "version": "586.0.0.52.53"
   },
   "Facebook-Messenger-HushMessenger": {
     "keys": [
@@ -135,7 +135,7 @@
     "keys": [
       "Telegram-HushTelegram"
     ],
-    "version": "13.1.1"
+    "version": "13.2.0"
   },
   "Truecaller-heval99": {
     "keys": [
@@ -178,5 +178,11 @@
       "YouTube-Morphe"
     ],
     "version": "21.44.534"
+  },
+  "SDMaidSE-kveld9": {
+    "keys": [
+      "SDMaidSE-kveld9"
+    ],
+    "version": "2.2.2-rc0"
   }
 }
