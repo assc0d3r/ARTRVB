@@ -132,5 +132,14 @@
         "apk"
       ]
     }
+  },
+  "beta": {
+    "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
+      "hash": "fc2c7c505ec1a7e54f1c224733b408b7",
+      "kinds": [
+        "apk",
+        "module"
+      ]
+    }
   }
 }
