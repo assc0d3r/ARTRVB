@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260129",
+    "channel": "beta",
+    "publishedAt": "2026-11-05T16:33:33Z"
+  },
+  "files": {
+    "sd-maid-se-rushi-v2.2.2-rc0-arm64-v8a.apk": {
+      "name": "sd-maid-se-rushi",
+      "version": "2.2.2-rc0",
+      "appKey": "sdmaidse",
+      "appName": "SD Maid SE",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushi",
+      "brandName": "Rushi",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "eu.darken.sdmse",
+      "patchSources": [
+        "kveld9/patches-1.31.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/kveld9/kveld-extra-morphe-patches/releases/tag/v1.31.0"
+      ],
+      "appliedPatches": [
+        "Unlock Pro"
+      ],
+      "originBuild": "260129",
+      "publishedAt": "2026-11-05T16:33:33Z"
+    }
+  }
+}
