@@ -126,7 +126,7 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": " 'MorpheApp/morphe-patches' 'anddea/revanced-patches' 'Dan1elTheMan1el/Morphe-Patches' 'sashade8-ship-it/dual-vot-patches' 'Dragon0WaTTyler/dragon0wattyler-morphe-patches' 'ca-za/morphe-yt-dlna' 'sk1nnnny/morphe-patche' ",
+        "patches-source": " 'MorpheApp/morphe-patches' 'sashade8-ship-it/dual-vot-patches' 'sk1nnnny/morphe-patche' ",
         "brand": "Morphe",
         "app-name": "YouTube",
         "pkg-name": "com.google.android.youtube",
@@ -427,6 +427,20 @@
         "app-name": "Pdbee",
         "pkg-name": "pdb.app",
         "inclusive-patches": "true",
+        "arch": "arm64-v8a",
+        "build-mode": "apk",
+        "version": "auto"
+      }
+    },
+    "SDMaidSE-kveld9": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": "kveld9/kveld-extra-morphe-patches",
+        "brand": "Rushi",
+        "app-name": "SD Maid SE",
+        "pkg-name": "eu.darken.sdmse",
         "arch": "arm64-v8a",
         "build-mode": "apk",
         "version": "auto"
