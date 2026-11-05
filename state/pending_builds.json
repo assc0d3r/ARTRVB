@@ -13,27 +13,16 @@
     }
   },
   "beta": {
-    "AdobeAcrobat-Rushi": {
+    "NovaLauncher-MightyMich": {
       "reason": "retry",
       "arches": [
         "arm64-v8a"
       ],
       "attempts": 3,
       "parked": true,
-      "cfg": "1e28abeb89801739b9ebe2fa63f8fcbcfd1ee0bc",
-      "run": 42102409761,
-      "ts": "2026-11-05T20:29:31Z"
-    },
-    "NovaLauncher-MightyMich": {
-      "reason": "retry",
-      "arches": [
-        "arm64-v8a"
-      ],
-      "attempts": 2,
-      "parked": false,
       "cfg": "a43ef4d7beb6134643f196baf90daa8b2c4925ae",
-      "run": 42102409761,
-      "ts": "2026-11-05T20:29:31Z"
+      "run": 42119398451,
+      "ts": "2026-11-05T22:22:51Z"
     }
   }
 }
