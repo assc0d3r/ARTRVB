@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-05T20:32:34Z"
+    "publishedAt": "2026-11-05T22:25:57Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3000,11 +3000,11 @@
       "packageName": "com.pinterest",
       "patchSources": [
         "SysAdminDoc/patches-0.0.13.mpp",
-        "browzomje/patches-1.15.0.mpp"
+        "browzomje/patches-1.16.0.mpp"
       ],
       "changelogs": [
         "https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.13",
-        "https://github.com/browzomje/browzomje-patches/releases/tag/v1.15.0"
+        "https://github.com/browzomje/browzomje-patches/releases/tag/v1.16.0"
       ],
       "appliedPatches": [
         "Choose startup tab",
@@ -3036,14 +3036,15 @@
         "Morphe settings screen (manifest)",
         "Neutralize advertising ID",
         "Open links in the default browser",
+        "Repair Firebase registration",
         "Sanitize copied links",
         "Sanitize shared links",
         "Set pin as wallpaper",
         "Show pin image information",
         "Use the system share sheet"
       ],
-      "originBuild": "260132",
-      "publishedAt": "2026-11-05T20:32:24Z"
+      "originBuild": "260133",
+      "publishedAt": "2026-11-05T22:25:43Z"
     }
   }
 }
