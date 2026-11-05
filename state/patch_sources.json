@@ -140,8 +140,8 @@
     "blocked": false,
     "host": "github",
     "repo": "browzomje/browzomje-patches",
-    "stable": "v1.15.0",
-    "stable_date": "2026-11-05T18:58:12Z"
+    "stable": "v1.16.0",
+    "stable_date": "2026-11-05T20:28:36Z"
   },
   "crimera/piko": {
     "beta": "v3.11.0-dev.4",
