@@ -8,6 +8,24 @@
     "stable": "v1.17.10",
     "stable_date": "2026-11-04T09:23:26Z"
   },
+  "Dan1elTheMan1el/Morphe-Patches": {
+    "beta": "v1.6.1-dev.1",
+    "beta_date": "2026-11-03T01:08:20Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "Dan1elTheMan1el/Morphe-Patches",
+    "stable": "v1.6.0",
+    "stable_date": "2026-11-01T21:26:31Z"
+  },
+  "Dragon0WaTTyler/dragon0wattyler-morphe-patches": {
+    "beta": "v1.0.0-dev.8",
+    "beta_date": "2026-11-04T19:58:04Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "Dragon0WaTTyler/dragon0wattyler-morphe-patches",
+    "stable": "",
+    "stable_date": ""
+  },
   "JacksonJones2003/immersive-keyboard-patches": {
     "beta": "v1.21.3-dev.1",
     "beta_date": "2026-10-31T17:43:22Z",
@@ -17,9 +35,27 @@
     "stable": "v1.21.3",
     "stable_date": "2026-10-31T17:45:34Z"
   },
+  "Kirkland-Pickles/Gboard-offline-morphe": {
+    "beta": "v0.1.3-dev.1",
+    "beta_date": "2026-11-04T23:25:33Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "Kirkland-Pickles/Gboard-offline-morphe",
+    "stable": "v0.1.2",
+    "stable_date": "2026-10-31T14:34:12Z"
+  },
+  "Mlkem/Morphe": {
+    "beta": "v1.0.0-dev.24",
+    "beta_date": "2026-11-05T02:45:39Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "Mlkem/Morphe",
+    "stable": "",
+    "stable_date": ""
+  },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.10",
-    "beta_date": "2026-11-04T15:00:43Z",
+    "beta": "v2.1.0-dev.11",
+    "beta_date": "2026-11-05T08:23:09Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -98,6 +134,15 @@
     "stable": "v1.2.2",
     "stable_date": "2026-10-29T17:23:57Z"
   },
+  "anddea/revanced-patches": {
+    "beta": "v4.4.0-dev.5",
+    "beta_date": "2026-11-03T18:04:59Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "anddea/revanced-patches",
+    "stable": "v4.3.0",
+    "stable_date": "2026-09-28T12:26:39Z"
+  },
   "assc0d3r/ART-GLIDGE-CUSTOMIZATION": {
     "beta": "",
     "beta_date": "",
@@ -113,17 +158,26 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.5",
-    "stable_date": "2026-11-02T04:01:07Z"
+    "stable": "v2.8.6",
+    "stable_date": "2026-11-05T07:15:19Z"
   },
   "browzomje/browzomje-patches": {
-    "beta": "v1.14.1-dev.1",
-    "beta_date": "2026-10-18T23:45:19Z",
+    "beta": "v1.15.0-dev.2",
+    "beta_date": "2026-11-05T12:00:23Z",
     "blocked": false,
     "host": "github",
     "repo": "browzomje/browzomje-patches",
     "stable": "v1.14.1",
     "stable_date": "2026-10-26T10:05:48Z"
+  },
+  "ca-za/morphe-yt-dlna": {
+    "beta": "v0.1.16-alpha",
+    "beta_date": "2026-11-02T09:46:02Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "ca-za/morphe-yt-dlna",
+    "stable": "",
+    "stable_date": ""
   },
   "crimera/piko": {
     "beta": "v3.11.0-dev.4",
@@ -188,6 +242,15 @@
     "stable": "v4.2.0",
     "stable_date": "2026-11-04T01:56:14Z"
   },
+  "jkennethcarino/adobo": {
+    "beta": "v2.0.0-dev.3",
+    "beta_date": "2026-11-01T17:27:28Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "jkennethcarino/adobo",
+    "stable": "v1.7.0",
+    "stable_date": "2026-10-25T14:41:12Z"
+  },
   "madushas/pdb_patch": {
     "beta": "",
     "beta_date": "",
@@ -196,6 +259,15 @@
     "repo": "madushas/pdb_patch",
     "stable": "v0.5.8",
     "stable_date": "2026-11-01T22:06:55Z"
+  },
+  "markpaul099/gboard-gifs-extended": {
+    "beta": "v1.0.0-dev.2",
+    "beta_date": "2026-10-27T12:09:21Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "markpaul099/gboard-gifs-extended",
+    "stable": "v1.0.0",
+    "stable_date": "2026-10-27T12:09:24Z"
   },
   "mich111discord/MightyMichs-Patches": {
     "beta": "",
@@ -233,6 +305,24 @@
     "stable": "v1.23.1",
     "stable_date": "2026-10-28T18:16:06Z"
   },
+  "sashade8-ship-it/dual-vot-patches": {
+    "beta": "v2.1.0-dev.10-dualvot.8.5.4",
+    "beta_date": "2026-11-04T17:54:52Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "sashade8-ship-it/dual-vot-patches",
+    "stable": "v2.0.0-dualvot.8.5.4",
+    "stable_date": "2026-10-30T17:32:50Z"
+  },
+  "sk1nnnny/morphe-patche": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "sk1nnnny/morphe-patche",
+    "stable": "v1.0.0",
+    "stable_date": "2026-11-04T16:39:46Z"
+  },
   "spicetify/morphe-patches": {
     "beta": "v1.0.0-dev.4",
     "beta_date": "2026-09-18T15:07:57Z",
@@ -241,6 +331,15 @@
     "repo": "spicetify/morphe-patches",
     "stable": "v1.2.0",
     "stable_date": "2026-10-08T17:58:34Z"
+  },
+  "thrkingunknown/gboard-theme-patch": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "thrkingunknown/gboard-theme-patch",
+    "stable": "v1.3.0",
+    "stable_date": "2026-09-15T12:37:12Z"
   },
   "urroxyz/morphe-patches": {
     "beta": "",

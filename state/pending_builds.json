@@ -8,8 +8,496 @@
       "attempts": 1,
       "parked": false,
       "run": 41981305071,
-      "ts": "2026-11-05T07:53:34Z"
+      "ts": "2026-11-05T07:53:34Z",
+      "cfg": "1e28abeb89801739b9ebe2fa63f8fcbcfd1ee0bc"
+    },
+    "Truecaller-heval99": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "c281b9b4a9f8e575419106a9090c5309279f1c23"
+    },
+    "Instagram-HushGram": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "e7b0c51684bd6ec4e98f3198586b20514e581fb9"
+    },
+    "Facebook-HushFacebook": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "9db9271b374e36070bb6485028dfc5c1c8467887"
+    },
+    "Discord-Venus": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "da2226ba7185519fd52b288b98525d61f0ed879a"
+    },
+    "GoogleMaps-bearinmindcat": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "2bbb125d30abbd945ce8bf1773e516e3f22ba5d5"
+    },
+    "Facebook-Messenger-HushMessenger": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "faf9ea24e999c8741d076d93cf680f2ac3ac06ad"
+    },
+    "Google-Gboard-Combined": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "de95a127bd03790c46b38f2be443d8d198ddc5fd"
+    },
+    "YouTube-Morphe": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "e4900e4131f00313334d6f1c84b659381da1b21d"
+    },
+    "GooglePhotos-AkashSriram": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "04349ce29d621d78ef22c85d521290e6e1106e58"
+    },
+    "Twitter-Piko": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "47deecc881e55d6aeeffb2570054203d58b6b2c9"
+    },
+    "Spotify-Spicetify": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "0be30973129c1e3a9fe3920aa13d003be7c9732f"
+    },
+    "Reddit-Morphe": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "8111c4f6d37de1e23c29aca1169f3b051acea9a6"
+    },
+    "NovaLauncher-MightyMich": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "9ce1d4088365573b81428b2bc78672c01c167168"
+    },
+    "AdobeScan-Aidan": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "957e4c3f8a12885cbba42b5af169c4aae8998bc7"
+    },
+    "VN-Riky": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "6acf7568bf77b1ea93f54184d02d7b185366bb21"
+    },
+    "SonyLIV-TV-Chiggi": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "615e6dbc7acf48f317fd5e62669ed414a98b8b31"
+    },
+    "GitHub-Noodles": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "1695438b483688c922a3479b2953f202bb4e480a"
+    },
+    "SDMaidSE-Rushi": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "4a3c97fcd49c0885543295378f9fac446ff5c65c"
+    },
+    "RailOne-VipinVIP": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "d9f62fc5a4395b9c60d446765cf3677a45072229"
+    },
+    "NetGuard-Rushi": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "d3835baf1ac6efe8cf4b1dafce3509ffa9a26fc8"
+    },
+    "Wavelet-o0b": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "69d7ea2730eb941d5019be5d182eec5142c544dc"
+    },
+    "VesselFinder-Heval": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "4c4d823800ab30da65632ffc0da2d6c37ac6e1a8"
+    },
+    "ProtonVPN-hxreborn": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "2b5513d06bd1409791cae37470fddcb7a3ff03a6"
+    },
+    "AccuWeather-Rushi": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "b7f50781e024af09ff168492927ceb979d183e97"
+    },
+    "SoundCloud-V4n1X": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "63fd61682e28f3a7b51a2973357d32376b794fe6"
+    },
+    "UiMote-rushiranpise": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "4b57e822db9b7726e5c29f87cb917dcabc54076f"
+    },
+    "Telegram-HushTelegram": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "387c8f8a014a82d79890de378585dde236cc97df"
+    },
+    "Pdbee-madushas": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "b9278e90eb71c6c08ddca6d8dd95346948d0d9db"
     }
   },
-  "beta": {}
+  "beta": {
+    "Truecaller-heval99": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "c281b9b4a9f8e575419106a9090c5309279f1c23"
+    },
+    "Instagram-HushGram": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "e7b0c51684bd6ec4e98f3198586b20514e581fb9"
+    },
+    "Facebook-HushFacebook": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "9db9271b374e36070bb6485028dfc5c1c8467887"
+    },
+    "Discord-Venus": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "da2226ba7185519fd52b288b98525d61f0ed879a"
+    },
+    "GoogleMaps-bearinmindcat": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "2bbb125d30abbd945ce8bf1773e516e3f22ba5d5"
+    },
+    "Facebook-Messenger-HushMessenger": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "faf9ea24e999c8741d076d93cf680f2ac3ac06ad"
+    },
+    "YouTube-Morphe": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "e4900e4131f00313334d6f1c84b659381da1b21d"
+    },
+    "GooglePhotos-AkashSriram": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "04349ce29d621d78ef22c85d521290e6e1106e58"
+    },
+    "Twitter-Piko": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "47deecc881e55d6aeeffb2570054203d58b6b2c9"
+    },
+    "Spotify-Spicetify": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "0be30973129c1e3a9fe3920aa13d003be7c9732f"
+    },
+    "Reddit-Morphe": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "8111c4f6d37de1e23c29aca1169f3b051acea9a6"
+    },
+    "NovaLauncher-MightyMich": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "9ce1d4088365573b81428b2bc78672c01c167168"
+    },
+    "AdobeScan-Aidan": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "957e4c3f8a12885cbba42b5af169c4aae8998bc7"
+    },
+    "VN-Riky": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "6acf7568bf77b1ea93f54184d02d7b185366bb21"
+    },
+    "SonyLIV-TV-Chiggi": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "615e6dbc7acf48f317fd5e62669ed414a98b8b31"
+    },
+    "GitHub-Noodles": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "1695438b483688c922a3479b2953f202bb4e480a"
+    },
+    "SDMaidSE-Rushi": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "4a3c97fcd49c0885543295378f9fac446ff5c65c"
+    },
+    "RailOne-VipinVIP": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "d9f62fc5a4395b9c60d446765cf3677a45072229"
+    },
+    "AdobeAcrobat-Rushi": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "1e28abeb89801739b9ebe2fa63f8fcbcfd1ee0bc"
+    },
+    "NetGuard-Rushi": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "d3835baf1ac6efe8cf4b1dafce3509ffa9a26fc8"
+    },
+    "Wavelet-o0b": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "69d7ea2730eb941d5019be5d182eec5142c544dc"
+    },
+    "VesselFinder-Heval": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "4c4d823800ab30da65632ffc0da2d6c37ac6e1a8"
+    },
+    "ProtonVPN-hxreborn": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "2b5513d06bd1409791cae37470fddcb7a3ff03a6"
+    },
+    "AccuWeather-Rushi": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "b7f50781e024af09ff168492927ceb979d183e97"
+    },
+    "SoundCloud-V4n1X": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "63fd61682e28f3a7b51a2973357d32376b794fe6"
+    },
+    "UiMote-rushiranpise": {
+      "reason": "new",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "4b57e822db9b7726e5c29f87cb917dcabc54076f"
+    }
+  }
 }
