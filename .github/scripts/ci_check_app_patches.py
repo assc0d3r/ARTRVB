@@ -45,12 +45,16 @@ def get_app_mappings():
             if not enabled:
                 continue
 
-            src = (val.get('patches-source')
-                   or 'morpheapp/morphe-patches').strip().lower()
+            # patches-source may list several repos ("'a/b' 'c/d'"); map the app
+            # under each repo so a release of any one of them wakes the app.
+            srcs = [x for x in re.split(
+                r"[\s'\"]+", (val.get('patches-source')
+                              or 'morpheapp/morphe-patches').lower()) if x]
             cli_src = (val.get('cli-source')
                        or 'morpheapp/morphe-desktop').strip().lower()
             if cli_src:
-                cli_sources.setdefault(src, set()).add(cli_src)
+                for src in srcs:
+                    cli_sources.setdefault(src, set()).add(cli_src)
 
             pkg_name = val.get('pkg-name') or ''
             app_name = (val.get('app-name') or '').lower()
@@ -65,11 +69,12 @@ def get_app_mappings():
                     pkg_name = m_arch.rstrip('/').split('/')[-1]
 
             if pkg_name:
-                target_dict.setdefault(src, {})[key] = {
-                    'pkg': pkg_name,
-                    'app_name': app_name,
-                    'patch_folder': patch_folder
-                }
+                for src in srcs:
+                    target_dict.setdefault(src, {})[key] = {
+                        'pkg': pkg_name,
+                        'app_name': app_name,
+                        'patch_folder': patch_folder
+                    }
 
     return apps_stable, apps_beta, cli_sources
 
