@@ -26,7 +26,8 @@
         "pkg-name": "com.truecaller",
         "included-patches": "'GmsCore support' 'Hide Premium tab' 'Hide Scam feed' 'Hide family button' 'Spoof signature' 'Use SMS for verification codes'",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Instagram-HushGram": {
@@ -41,7 +42,8 @@
         "excluded-patches": "'Install next to Instagram'",
         "inclusive-patches": "true",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Facebook-HushFacebook": {
@@ -55,7 +57,8 @@
         "pkg-name": "com.facebook.katana",
         "inclusive-patches": "true",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Discord-Venus": {
@@ -68,7 +71,8 @@
         "app-name": "Discord",
         "pkg-name": "com.discord",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "GoogleMaps-bearinmindcat": {
@@ -81,7 +85,8 @@
         "app-name": "Google Maps",
         "pkg-name": "com.google.android.apps.maps",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Facebook-Messenger-HushMessenger": {
@@ -95,7 +100,8 @@
         "pkg-name": "com.facebook.orca",
         "inclusive-patches": "true",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Google-Gboard-Combined": {
@@ -103,15 +109,15 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": "'jasonwu1994/Gboard-patches' 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches'",
+        "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'jasonwu1994/Gboard-patches' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches' 'jkennethcarino/adobo' 'Mlkem/Morphe' 'Kirkland-Pickles/Gboard-offline-morphe' 'markpaul099/gboard-gifs-extended' 'thrkingunknown/gboard-theme-patch' ",
         "brand": "Combined",
         "app-name": "Gboard",
         "pkg-name": "com.google.android.inputmethod.latin",
-        "included-patches": "'Better translate UX' 'Key Mapper Watchdog' ",
-        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync' 'AMOLED Gboard Settings' ",
+        "included-patches": "'Better translate UX' 'Key Mapper Watchdog' 'Toggle feature flags' 'Disable Gboard floating and one-handed modes' 'Gboard AMOLED Theme Studio' ",
+        "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'ClipCascade sync' 'AMOLED Gboard Settings' 'Always-incognito mode' 'Remove network access' 'Change app name' 'Change package name' 'Incognito Mode Toggle' 'incognito_mode_toggle' 'manual_incognito' 'Toggle feature flags' ",
         "inclusive-patches": "false",
         "arch": "arm64-v8a",
-        "build-mode": "both",
+        "build-mode": "apk",
         "version": "auto"
       }
     },
@@ -120,12 +126,14 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": "MorpheApp/morphe-patches",
+        "patches-source": " 'MorpheApp/morphe-patches' 'anddea/revanced-patches' 'Dan1elTheMan1el/Morphe-Patches' 'sashade8-ship-it/dual-vot-patches' 'Dragon0WaTTyler/dragon0wattyler-morphe-patches' 'ca-za/morphe-yt-dlna' 'sk1nnnny/morphe-patche' ",
         "brand": "Morphe",
         "app-name": "YouTube",
         "pkg-name": "com.google.android.youtube",
+        "inclusive-patches": "false",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "GooglePhotos-AkashSriram": {
@@ -138,7 +146,8 @@
         "app-name": "Google Photos",
         "pkg-name": "com.google.android.apps.photos",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Twitter-Piko": {
@@ -151,7 +160,8 @@
         "app-name": "Twitter",
         "pkg-name": "com.twitter.android",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Spotify-Spicetify": {
@@ -164,7 +174,8 @@
         "app-name": "Spotify",
         "pkg-name": "com.spotify.music",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Reddit-Morphe": {
@@ -177,7 +188,8 @@
         "app-name": "Reddit",
         "pkg-name": "com.reddit.frontpage",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "NovaLauncher-MightyMich": {
@@ -190,7 +202,8 @@
         "app-name": "Nova Launcher",
         "pkg-name": "com.teslacoilsw.launcher",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "AdobeScan-Aidan": {
@@ -203,7 +216,8 @@
         "app-name": "Adobe Scan",
         "pkg-name": "com.adobe.scan.android",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "VN-Riky": {
@@ -216,7 +230,8 @@
         "app-name": "VN Video Editor",
         "pkg-name": "com.frontrow.vlog",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "SonyLIV-TV-Chiggi": {
@@ -229,7 +244,8 @@
         "app-name": "SonyLIV (Android TV)",
         "pkg-name": "com.sonyliv",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "GitHub-Noodles": {
@@ -242,7 +258,8 @@
         "app-name": "GitHub",
         "pkg-name": "com.github.android",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "SDMaidSE-Rushi": {
@@ -255,7 +272,8 @@
         "app-name": "SD Maid SE",
         "pkg-name": "eu.darken.sdmse",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "RailOne-VipinVIP": {
@@ -268,7 +286,8 @@
         "app-name": "RailOne",
         "pkg-name": "org.cris.aikyam",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "AdobeAcrobat-Rushi": {
@@ -294,7 +313,8 @@
         "app-name": "NetGuard",
         "pkg-name": "eu.faircode.netguard",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Wavelet-o0b": {
@@ -307,7 +327,8 @@
         "app-name": "Wavelet",
         "pkg-name": "com.pittvandewitt.wavelet",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "VesselFinder-Heval": {
@@ -320,7 +341,8 @@
         "app-name": "VesselFinder",
         "pkg-name": "com.astrapaging.vff",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "ProtonVPN-hxreborn": {
@@ -333,7 +355,8 @@
         "app-name": "Proton VPN",
         "pkg-name": "ch.protonvpn.android",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "AccuWeather-Rushi": {
@@ -346,7 +369,8 @@
         "app-name": "AccuWeather",
         "pkg-name": "com.accuweather.android",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "SoundCloud-V4n1X": {
@@ -359,7 +383,8 @@
         "app-name": "SoundCloud",
         "pkg-name": "com.soundcloud.android",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "UiMote-rushiranpise": {
@@ -373,7 +398,8 @@
         "pkg-name": "sensustech.universal.tv.remote.control",
         "inclusive-patches": "true",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Telegram-HushTelegram": {
@@ -387,7 +413,8 @@
         "pkg-name": "org.telegram.messenger",
         "inclusive-patches": "true",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     },
     "Pdbee-madushas": {
@@ -401,7 +428,8 @@
         "pkg-name": "pdb.app",
         "inclusive-patches": "true",
         "arch": "arm64-v8a",
-        "build-mode": "apk"
+        "build-mode": "apk",
+        "version": "auto"
       }
     }
   },
