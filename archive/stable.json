@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-05T07:54:42Z"
+    "publishedAt": "2026-11-05T13:17:49Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2582,8 +2582,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260125",
-      "publishedAt": "2026-11-05T07:54:00Z"
+      "originBuild": "260128",
+      "publishedAt": "2026-11-05T13:17:11Z"
     },
     "facebook-hushfacebook-v585.0.0.47.54-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
@@ -2714,8 +2714,8 @@
         "Badge and logo colors",
         "Accent color"
       ],
-      "originBuild": "260125",
-      "publishedAt": "2026-11-05T07:54:00Z"
+      "originBuild": "260128",
+      "publishedAt": "2026-11-05T13:17:11Z"
     },
     "pinterest-pinterest-v14.39.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
