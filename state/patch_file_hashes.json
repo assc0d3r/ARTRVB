@@ -29,10 +29,13 @@
   },
   "browzomje/browzomje-patches": {
     "beta": {
-      "com.pinterest": "723360897d4170c49c491a6c7a21ac06",
+      "com.pinterest": "e9698c92555a16c3a1058b61346994b8",
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     },
-    "stable": {}
+    "stable": {
+      "com.pinterest": "96282871750f33a5d11693d4e87ac5d7",
+      "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
+    }
   },
   "ca-za/morphe-yt-dlna": {
     "beta": {

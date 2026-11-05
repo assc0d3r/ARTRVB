@@ -135,13 +135,13 @@
     "stable_date": "2026-11-05T07:15:19Z"
   },
   "browzomje/browzomje-patches": {
-    "beta": "v1.15.0-dev.2",
-    "beta_date": "2026-11-05T12:00:23Z",
+    "beta": "v1.16.0-dev.1",
+    "beta_date": "2026-11-05T19:08:56Z",
     "blocked": false,
     "host": "github",
     "repo": "browzomje/browzomje-patches",
-    "stable": "v1.14.1",
-    "stable_date": "2026-10-26T10:05:48Z"
+    "stable": "v1.15.0",
+    "stable_date": "2026-11-05T18:58:12Z"
   },
   "crimera/piko": {
     "beta": "v3.11.0-dev.4",
@@ -189,13 +189,13 @@
     "stable_date": "2026-11-05T16:20:23Z"
   },
   "hyzor/hyzor-morphe-patches": {
-    "beta": "v1.6.1-dev.1",
-    "beta_date": "2026-11-04T20:45:58Z",
+    "beta": "v1.6.2-dev.2",
+    "beta_date": "2026-11-05T19:40:17Z",
     "blocked": false,
     "host": "github",
     "repo": "hyzor/hyzor-morphe-patches",
-    "stable": "v1.6.1",
-    "stable_date": "2026-11-04T21:06:32Z"
+    "stable": "v1.6.2",
+    "stable_date": "2026-11-05T19:51:21Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
