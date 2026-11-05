@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-05T13:17:49Z"
+    "publishedAt": "2026-11-05T16:39:43Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2307,10 +2307,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.71.0.mpp"
+        "hxreborn/patches-1.72.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.71.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.72.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2327,8 +2327,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260125",
-      "publishedAt": "2026-11-05T07:54:00Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-11-05T16:38:59Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2598,10 +2598,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "SysAdminDoc/patches-0.20.0.mpp"
+        "SysAdminDoc/patches-0.21.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.20.0"
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.21.0"
       ],
       "appliedPatches": [
         "AMOLED black theme",
@@ -2614,6 +2614,7 @@
         "Block screenshot detection",
         "Clean up Facebook's chat list",
         "Clean up Reels",
+        "Clean up the story viewer",
         "Comment sheet options",
         "Default comment order",
         "Default playback quality",
@@ -2628,6 +2629,7 @@
         "Following feed on Home",
         "Force dark mode",
         "Frame step",
+        "GmsCore support",
         "Hide AI-detected posts",
         "Hide Menu promotions",
         "Hide Meta AI comment summaries",
@@ -2676,16 +2678,20 @@
         "Open Messenger from the top bar",
         "Open comments at full height",
         "Open comments with a gesture",
+        "Open in Facebook from the share menu",
         "Open links in external browser",
         "Open on a chosen tab",
+        "Photo carousel",
         "Picture-in-picture",
         "Pinch to zoom",
         "Post action buttons",
+        "Remove the gap above Marketplace listings",
         "Restore screens on re-signed builds",
         "Resume long videos",
         "Round stories tray",
         "Sanitize sharing links",
         "Search date range",
+        "Search posts tab",
         "See who shared",
         "Send chat photos and videos at original quality",
         "Share sheet items",
@@ -2695,10 +2701,12 @@
         "Start on x86 devices",
         "Stop Story auto-advance",
         "Stop update prompts",
+        "Story viewer taps",
         "Tab bar at the bottom",
         "Tag suggestions only after @",
         "Tap shows the controls",
         "Tap to play",
+        "Translate posts",
         "Turn off HDR brightness",
         "Turn off auto-translation",
         "Turn off double tap to like",
@@ -2714,8 +2722,8 @@
         "Badge and logo colors",
         "Accent color"
       ],
-      "originBuild": "260128",
-      "publishedAt": "2026-11-05T13:17:11Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-11-05T16:38:59Z"
     },
     "pinterest-pinterest-v14.39.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
@@ -2953,6 +2961,30 @@
       ],
       "originBuild": "260125",
       "publishedAt": "2026-11-05T07:54:00Z"
+    },
+    "sd-maid-se-rushi-v2.2.2-rc0-arm64-v8a.apk": {
+      "name": "sd-maid-se-rushi",
+      "version": "2.2.2-rc0",
+      "appKey": "sdmaidse",
+      "appName": "SD Maid SE",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushi",
+      "brandName": "Rushi",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "eu.darken.sdmse",
+      "patchSources": [
+        "kveld9/patches-1.31.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/kveld9/kveld-extra-morphe-patches/releases/tag/v1.31.0"
+      ],
+      "appliedPatches": [
+        "Unlock Pro"
+      ],
+      "originBuild": "260130",
+      "publishedAt": "2026-11-05T16:38:59Z"
     }
   }
 }
