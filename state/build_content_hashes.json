@@ -260,6 +260,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "sd-maid-se-rushi-v2.2.2-rc0-arm64-v8a": {
+      "hash": "b3e931cdd5176869712ff28e03979ade",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
