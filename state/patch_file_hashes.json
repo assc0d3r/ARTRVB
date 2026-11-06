@@ -1,0 +1,291 @@
+{
+  "akash-sriram/morphe-google-photos": {
+    "beta": {
+      "com.google.android.apps.photos": "19762647c86bbff6685e2802a57f1680",
+      "shared": "796c2550311378527b1a1c1d14685ff2"
+    },
+    "stable": {
+      "com.google.android.apps.photos": "6e73b85a2f73ad70279eee9e0d435082",
+      "shared": "796c2550311378527b1a1c1d14685ff2"
+    }
+  },
+  "assc0d3r/art-glidge-customization": {
+    "beta": {},
+    "stable": {
+      "com.google.android.inputmethod.latin": "2ca94cce8e26f24c1caa46eff10deba0",
+      "shared": "89ea1ce9e2298ac54d78f618d308dffc"
+    }
+  },
+  "bearinmindcat/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.google.android.apps.maps": "9855895468861edfbc9e9f85b6b707b0",
+      "shared": "19bc25f6b1b38d8ac29280ed630dc132"
+    }
+  },
+  "browzomje/browzomje-patches": {
+    "beta": {
+      "com.pinterest": "e9698c92555a16c3a1058b61346994b8",
+      "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
+    },
+    "stable": {
+      "com.pinterest": "3000f88b6b9b9e497a69cdd0ed5b4c75",
+      "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
+    }
+  },
+  "crimera/piko": {
+    "beta": {
+      "com.twitter.android": "defec6088d45e9604dc18ccf727e6ece",
+      "shared": "4190f095983e3deac0e70dd851523d6c"
+    },
+    "stable": {
+      "com.twitter.android": "b8ef463a3395befffaaf196a91f1ab8f",
+      "shared": "af8e6b25a156bf0a8dd0cc8a238f9f09"
+    }
+  },
+  "durgesh0505/chiggi_morphe_patches": {
+    "beta": {},
+    "stable": {
+      "com.sonyliv": "75b1f77190177e49c48ee13c7c274743",
+      "shared": "813bc339f8fa6e2ea7f511bc5af1c816"
+    }
+  },
+  "heval99/heval-morphe-patches": {
+    "beta": {
+      "com.astrapaging.vff": "c50eaec730a2de34774d8a77036a3b86",
+      "com.truecaller": "beb27f33322addf610aecc855aa46c5c",
+      "shared": "d34c26a61bc73d3dc2fb40582b05774f"
+    },
+    "stable": {
+      "com.astrapaging.vff": "c50eaec730a2de34774d8a77036a3b86",
+      "com.truecaller": "beb27f33322addf610aecc855aa46c5c",
+      "shared": "d34c26a61bc73d3dc2fb40582b05774f"
+    }
+  },
+  "hxreborn/morphe-patches": {
+    "beta": {
+      "ch.protonvpn.android": "93d10bbc3c60000f75c33b630fa96bda",
+      "shared": "9ec72346df464be576172c07e5c9e117"
+    },
+    "stable": {
+      "ch.protonvpn.android": "7c3101fe493693f167fcec96a972da65",
+      "shared": "5bf2465f01ccd6f36b6664fbfd6f9a5c"
+    }
+  },
+  "hyzor/hyzor-morphe-patches": {
+    "beta": {
+      "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "stable": {
+      "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "ihatenodejs/aidans-patches": {
+    "beta": {
+      "com.adobe.scan.android": "5a7321d5785fa0b0d9b1aec2b684e8fd",
+      "shared": "badbe4c067c62ecb4590411cd68e5c2f"
+    },
+    "stable": {
+      "com.adobe.scan.android": "01007fe47e57be6eaf455a35ffa5718e",
+      "shared": "a98c6240d3113d9e97b61e5ed6cda379"
+    }
+  },
+  "jacksonjones2003/immersive-keyboard-patches": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "48e19b68427f0190cf0b7c6a6d7d387b",
+      "shared": "8db3d2547c4f521c1f5c6981b5e1658f"
+    },
+    "stable": {
+      "com.google.android.inputmethod.latin": "48e19b68427f0190cf0b7c6a6d7d387b",
+      "shared": "8db3d2547c4f521c1f5c6981b5e1658f"
+    }
+  },
+  "jasonwu1994/gboard-patches": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "67dd8e6778a79f181a5a210fbf93687d",
+      "shared": "c401230287caac5cc88ae3e4d2f54ff8"
+    },
+    "stable": {
+      "com.google.android.inputmethod.latin": "c0ef178cd14c5974d7aad24e0741777b",
+      "shared": "fd10f3ab2b6b5c644f6cca0bd123a188"
+    }
+  },
+  "jkennethcarino/adobo": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "fb570d61ce1408ff085edb81b4be5b25",
+      "shared": "7c3ede93cb096012ebd7721ee7598d68"
+    },
+    "stable": {
+      "com.google.android.inputmethod.latin": "fb570d61ce1408ff085edb81b4be5b25",
+      "shared": "042b69840c096850d7e038c0a4da8751"
+    }
+  },
+  "kirkland-pickles/gboard-offline-morphe": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "4bea250fc9efd3ffc71c27c6f25f5ec4",
+      "shared": "461f3c87d312fbde5e424f36ae8ee5e8"
+    },
+    "stable": {
+      "com.google.android.inputmethod.latin": "2d6d040a087582d92942b9ba2c7b8185",
+      "shared": "cd5fb2f48a86148d9a7c1158ae583e4e"
+    }
+  },
+  "kveld9/kveld-extra-morphe-patches": {
+    "beta": {},
+    "stable": {
+      "eu.darken.sdmse": "1c35518127e2e476b64803b587915287",
+      "shared": "c35f7e263921e0912ffe7873609060a3"
+    }
+  },
+  "madushas/pdb_patch": {
+    "beta": {},
+    "stable": {
+      "pdb.app": "d648779695c25752b9539b1a668bd5fb",
+      "shared": "f8418ae25219a77655e700d6acd70d9c"
+    }
+  },
+  "markpaul099/gboard-gifs-extended": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "1dc5d6a28d472ed39b3e74a0e0c34616",
+      "shared": "cfba457f8346667d435d69fcb425e97a"
+    },
+    "stable": {
+      "com.google.android.inputmethod.latin": "1dc5d6a28d472ed39b3e74a0e0c34616",
+      "shared": "cfba457f8346667d435d69fcb425e97a"
+    }
+  },
+  "mlkem/morphe": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "13ad92c13f6b532ceac8baa9191d35ae",
+      "shared": "26cb94dd595582154e54a0c39593d56c"
+    },
+    "stable": {}
+  },
+  "morpheapp/morphe-patches": {
+    "beta": {
+      "com.google.android.youtube": "502191b95cc0c725e5fd051af5a3b0eb",
+      "com.reddit.frontpage": "0ccbd2d1ffe6a5b4a851834b00fa47cd",
+      "shared": "524bdc55d024f4263ec858843466e574"
+    },
+    "stable": {
+      "com.google.android.youtube": "502191b95cc0c725e5fd051af5a3b0eb",
+      "com.reddit.frontpage": "9e4383fdea6c9ea58acc76b168e7b898",
+      "shared": "524bdc55d024f4263ec858843466e574"
+    }
+  },
+  "o0b/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.pittvandewitt.wavelet": "1ecdec73ff6109677d5fc2729244271c",
+      "shared": "d715715d72fd2cf1cbda5e4669540de8"
+    }
+  },
+  "riky-dev/morphe-patches": {
+    "beta": {
+      "com.frontrow.vlog": "32ed521b9d49717696523f0124640b1a",
+      "shared": "b01d4f859a21a4167576736f1a629d34"
+    },
+    "stable": {
+      "com.frontrow.vlog": "32ed521b9d49717696523f0124640b1a",
+      "shared": "b01d4f859a21a4167576736f1a629d34"
+    }
+  },
+  "rushiranpise/morphe-patches": {
+    "beta": {
+      "com.accuweather.android": "c3781a20c70fe00a997ce06bf25e8779",
+      "com.adobe.reader": "7baf3471abbc9cfbc7caf335035de76e",
+      "eu.faircode.netguard": "e42b622095b45f14f2a206f35e60ef94",
+      "sensustech.universal.tv.remote.control": "eb406649058c19516ed2b5fa1eb63607",
+      "shared": "b337cf3aa24d7635804a8e2fa9435a93"
+    },
+    "stable": {
+      "com.accuweather.android": "42a081e400d6cbbee9bc6d19c4c2e1b6",
+      "com.adobe.reader": "dfa21e9a6594658071677df882af8676",
+      "eu.faircode.netguard": "eab6ec0b1f7439c1b533b57a15d40c78",
+      "sensustech.universal.tv.remote.control": "b30f8ab351cf76d23f1a86d653fa7049",
+      "shared": "b337cf3aa24d7635804a8e2fa9435a93"
+    }
+  },
+  "spicetify/morphe-patches": {
+    "beta": {
+      "com.spotify.music": "b158b267bb7d7a2e8ffb4c4758d8c06b",
+      "shared": "3312914ee0e1566751fe55365e21f9a4"
+    },
+    "stable": {
+      "com.spotify.music": "b6c317f930e4db07ba57b9de12b0d0ea",
+      "shared": "1b05a35b1fdd2f827b94b270c21363b6"
+    }
+  },
+  "sysadmindoc/hushfacebook": {
+    "beta": {},
+    "stable": {
+      "com.facebook.katana": "47aad729225728584a75611689bb25ef",
+      "shared": "2dbcf250fb87f2d42ea172da3920eaad"
+    }
+  },
+  "sysadmindoc/hushgram": {
+    "beta": {},
+    "stable": {
+      "com.instagram.android": "13ffc3adc663b8f0d85740c420e0880f",
+      "shared": "fd96a32e2357ac51432bb1dd7217cdd8"
+    }
+  },
+  "sysadmindoc/hushmessenger": {
+    "beta": {},
+    "stable": {
+      "com.facebook.orca": "e2967c29ccb4534bf175a066aada0ab4",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "sysadmindoc/hushpinterest": {
+    "beta": {},
+    "stable": {
+      "com.pinterest": "64ff47333a775d63ef6dd1474d3f5a02",
+      "shared": "d246c221571536531c21fad1049ab61f"
+    }
+  },
+  "sysadmindoc/hushtelegram": {
+    "beta": {},
+    "stable": {
+      "org.telegram.messenger": "bba4c012bd356ac6ea93c3e63e8d7645",
+      "shared": "7ba2d4f19614388c7ee4a39ac7dab2ab"
+    }
+  },
+  "thrkingunknown/gboard-theme-patch": {
+    "beta": {},
+    "stable": {
+      "com.google.android.inputmethod.latin": "67a5e61786b18f209a4d72b8cd8d1198",
+      "shared": "7d08de863db8cd14a0fa295df9d83d24"
+    }
+  },
+  "urroxyz/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.google.android.inputmethod.latin": "9dfeb71ac4bf0ec87efbea237bc57839",
+      "shared": "fd6b77a8dcdbb2016b3924ae2020c58a"
+    }
+  },
+  "v4n1x/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.soundcloud.android": "1401bce8cc6a6105ec6f0d0a6af73b7f",
+      "shared": "ee92353b8d6e559e4ad906c1858aecaa"
+    }
+  },
+  "venusisjaded/venus-patches": {
+    "beta": {},
+    "stable": {
+      "com.discord": "6bacc5f932d8870523b4ac59d9c5f82a",
+      "shared": "9b1c9a22435cf7362a9e7de7e8eca429"
+    }
+  },
+  "vipinvip/railone-patches": {
+    "beta": {},
+    "stable": {
+      "org.cris.aikyam": "ee7cf4546759df7be015395e73b4cb11",
+      "shared": "a3eba0c4c188ec76bd11fd7c2d8fe6aa"
+    }
+  }
+}

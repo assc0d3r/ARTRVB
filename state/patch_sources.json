@@ -1,0 +1,308 @@
+{
+  "Akash-Sriram/morphe-google-photos": {
+    "beta": "v1.18.0-dev.1",
+    "beta_date": "2026-11-04T13:21:22Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "Akash-Sriram/morphe-google-photos",
+    "stable": "v1.17.10",
+    "stable_date": "2026-11-04T09:23:26Z"
+  },
+  "JacksonJones2003/immersive-keyboard-patches": {
+    "beta": "v1.21.3-dev.1",
+    "beta_date": "2026-10-31T17:43:22Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "JacksonJones2003/immersive-keyboard-patches",
+    "stable": "v1.21.3",
+    "stable_date": "2026-10-31T17:45:34Z"
+  },
+  "Kirkland-Pickles/Gboard-offline-morphe": {
+    "beta": "v0.1.3-dev.1",
+    "beta_date": "2026-11-04T23:25:33Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "Kirkland-Pickles/Gboard-offline-morphe",
+    "stable": "v0.1.2",
+    "stable_date": "2026-10-31T14:34:12Z"
+  },
+  "Mlkem/Morphe": {
+    "beta": "v1.0.0-dev.24",
+    "beta_date": "2026-11-05T02:45:39Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "Mlkem/Morphe",
+    "stable": "",
+    "stable_date": ""
+  },
+  "MorpheApp/morphe-patches": {
+    "beta": "v2.1.0-dev.12",
+    "beta_date": "2026-11-06T13:10:15Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "MorpheApp/morphe-patches",
+    "stable": "v2.1.0",
+    "stable_date": "2026-11-06T14:15:16Z"
+  },
+  "SysAdminDoc/HushFacebook": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "SysAdminDoc/HushFacebook",
+    "stable": "v0.21.0",
+    "stable_date": "2026-11-05T14:35:40Z"
+  },
+  "SysAdminDoc/HushGram": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "SysAdminDoc/HushGram",
+    "stable": "v0.0.18",
+    "stable_date": "2026-10-31T22:50:09Z"
+  },
+  "SysAdminDoc/HushMessenger": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "SysAdminDoc/HushMessenger",
+    "stable": "v0.29.0",
+    "stable_date": "2026-11-06T15:31:40Z"
+  },
+  "SysAdminDoc/HushPinterest": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "SysAdminDoc/HushPinterest",
+    "stable": "v0.0.13",
+    "stable_date": "2026-10-23T04:10:04Z"
+  },
+  "SysAdminDoc/HushTelegram": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "SysAdminDoc/HushTelegram",
+    "stable": "v0.0.23",
+    "stable_date": "2026-10-31T16:21:07Z"
+  },
+  "V4n1X/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "V4n1X/morphe-patches",
+    "stable": "v1.4.0",
+    "stable_date": "2026-09-30T02:28:11Z"
+  },
+  "VenusIsJaded/Venus-Patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "VenusIsJaded/Venus-Patches",
+    "stable": "v1.21.1",
+    "stable_date": "2026-11-03T09:15:56Z"
+  },
+  "VipinVIP/railone-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "VipinVIP/railone-patches",
+    "stable": "v1.2.2",
+    "stable_date": "2026-10-29T17:23:57Z"
+  },
+  "assc0d3r/ART-GLIDGE-CUSTOMIZATION": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
+    "stable": "v1.0.26",
+    "stable_date": "2026-11-06T13:14:00Z"
+  },
+  "bearinmindcat/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "bearinmindcat/morphe-patches",
+    "stable": "v2.8.7",
+    "stable_date": "2026-11-05T23:43:46Z"
+  },
+  "browzomje/browzomje-patches": {
+    "beta": "v1.16.0-dev.1",
+    "beta_date": "2026-11-05T19:08:56Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "browzomje/browzomje-patches",
+    "stable": "v1.16.1",
+    "stable_date": "2026-11-05T22:54:15Z"
+  },
+  "crimera/piko": {
+    "beta": "v3.11.0-dev.4",
+    "beta_date": "2026-11-01T13:26:43Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "crimera/piko",
+    "stable": "v3.10.0",
+    "stable_date": "2026-10-10T14:58:13Z"
+  },
+  "durgesh0505/chiggi_morphe_patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "durgesh0505/chiggi_morphe_patches",
+    "stable": "v1.25.0",
+    "stable_date": "2026-10-18T13:48:32Z"
+  },
+  "heval99/Heval-Morphe-Patches": {
+    "beta": "v2.2.0-dev.5",
+    "beta_date": "2026-11-04T20:02:35Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "heval99/Heval-Morphe-Patches",
+    "stable": "v2.2.0",
+    "stable_date": "2026-11-04T20:11:46Z"
+  },
+  "hsd-dles/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": true,
+    "host": "github",
+    "repo": "hsd-dles/morphe-patches",
+    "stable": "",
+    "stable_date": ""
+  },
+  "hxreborn/morphe-patches": {
+    "beta": "v1.73.0-dev.1",
+    "beta_date": "2026-11-06T14:24:00Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "hxreborn/morphe-patches",
+    "stable": "v1.72.0",
+    "stable_date": "2026-11-05T16:20:23Z"
+  },
+  "hyzor/hyzor-morphe-patches": {
+    "beta": "v1.6.2-dev.2",
+    "beta_date": "2026-11-05T19:40:17Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "hyzor/hyzor-morphe-patches",
+    "stable": "v1.6.2",
+    "stable_date": "2026-11-05T19:51:21Z"
+  },
+  "ihatenodejs/aidans-patches": {
+    "beta": "v1.9.0-dev.7",
+    "beta_date": "2026-10-24T21:43:53Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "ihatenodejs/aidans-patches",
+    "stable": "v1.8.0",
+    "stable_date": "2026-10-17T20:42:10Z"
+  },
+  "jasonwu1994/Gboard-patches": {
+    "beta": "v4.2.0-dev.5",
+    "beta_date": "2026-11-03T08:48:59Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "jasonwu1994/Gboard-patches",
+    "stable": "v4.2.0",
+    "stable_date": "2026-11-04T01:56:14Z"
+  },
+  "jkennethcarino/adobo": {
+    "beta": "v2.0.0-dev.3",
+    "beta_date": "2026-11-01T17:27:28Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "jkennethcarino/adobo",
+    "stable": "v1.7.0",
+    "stable_date": "2026-10-25T14:41:12Z"
+  },
+  "kveld9/kveld-extra-morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "kveld9/kveld-extra-morphe-patches",
+    "stable": "v1.31.0",
+    "stable_date": "2026-10-30T20:05:26Z"
+  },
+  "madushas/pdb_patch": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "madushas/pdb_patch",
+    "stable": "v0.5.8",
+    "stable_date": "2026-11-01T22:06:55Z"
+  },
+  "markpaul099/gboard-gifs-extended": {
+    "beta": "v1.0.0-dev.2",
+    "beta_date": "2026-10-27T12:09:21Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "markpaul099/gboard-gifs-extended",
+    "stable": "v1.0.0",
+    "stable_date": "2026-10-27T12:09:24Z"
+  },
+  "o0b/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "o0b/morphe-patches",
+    "stable": "v1.9.0",
+    "stable_date": "2026-10-11T11:31:26Z"
+  },
+  "riky-dev/morphe-patches": {
+    "beta": "v2.3.2-dev.1",
+    "beta_date": "2026-10-18T14:00:26Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "riky-dev/morphe-patches",
+    "stable": "v2.3.2",
+    "stable_date": "2026-10-18T14:08:26Z"
+  },
+  "rushiranpise/morphe-patches": {
+    "beta": "v1.23.1-dev.1",
+    "beta_date": "2026-10-25T13:21:08Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "rushiranpise/morphe-patches",
+    "stable": "v1.23.1",
+    "stable_date": "2026-10-28T18:16:06Z"
+  },
+  "spicetify/morphe-patches": {
+    "beta": "v1.0.0-dev.4",
+    "beta_date": "2026-09-18T15:07:57Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "spicetify/morphe-patches",
+    "stable": "v1.2.0",
+    "stable_date": "2026-10-08T17:58:34Z"
+  },
+  "thrkingunknown/gboard-theme-patch": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "thrkingunknown/gboard-theme-patch",
+    "stable": "v1.3.0",
+    "stable_date": "2026-09-15T12:37:12Z"
+  },
+  "urroxyz/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "urroxyz/morphe-patches",
+    "stable": "v0.0.4",
+    "stable_date": "2026-10-27T20:35:08Z"
+  }
+}
