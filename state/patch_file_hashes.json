@@ -19,8 +19,8 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "9855895468861edfbc9e9f85b6b707b0",
-      "shared": "19bc25f6b1b38d8ac29280ed630dc132"
+      "com.google.android.apps.maps": "12e72a5643c879e2c0d08a8a95454de0",
+      "shared": "719877b0df992cce4a249fb190c6c527"
     }
   },
   "browzomje/browzomje-patches": {
@@ -52,8 +52,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "c50eaec730a2de34774d8a77036a3b86",
-      "com.truecaller": "beb27f33322addf610aecc855aa46c5c",
+      "com.astrapaging.vff": "89471c3f05177f20bf26a762228040ab",
+      "com.truecaller": "2a7a3d5ee0bd351a55ef3648a2b93419",
       "shared": "d34c26a61bc73d3dc2fb40582b05774f"
     },
     "stable": {
@@ -64,8 +64,8 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "93d10bbc3c60000f75c33b630fa96bda",
-      "shared": "9ec72346df464be576172c07e5c9e117"
+      "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
+      "shared": "7c7157417d444cf19c5bb766116ce8c4"
     },
     "stable": {
       "ch.protonvpn.android": "7c3101fe493693f167fcec96a972da65",
@@ -270,7 +270,7 @@
   "v4n1x/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.soundcloud.android": "1401bce8cc6a6105ec6f0d0a6af73b7f",
+      "com.soundcloud.android": "03729c1436169aba03ed84cb2fbd1a67",
       "shared": "ee92353b8d6e559e4ad906c1858aecaa"
     }
   },
