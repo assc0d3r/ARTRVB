@@ -42,5 +42,151 @@
         "apk"
       ]
     }
+  },
+  "stable": {
+    "pinterest-pinterest-v14.43.0-arm64-v8a": {
+      "hash": "d02ae150b57213660e597a305fa1d383",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "truecaller-heval99-v26.43.5-arm64-v8a": {
+      "hash": "e5f982e935b50b59ae9fe7bc05ec3b31",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "instagram-hushgram-v453.0.0.57.79-arm64-v8a": {
+      "hash": "350f3e5573106119ed228fdcb55f7e31",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "discord-venus-v351.11-Stable-arm64-v8a": {
+      "hash": "3ed8a438d87dec86a4eb0179ba2a8de2",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": {
+      "hash": "81a7dd47156185cc7e580806687c27c6",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "youtube-morphe-v21.30.216-arm64-v8a": {
+      "hash": "fc6c41375e5421ce80df46598be012d8",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "facebook-hushfacebook-v585.0.0.47.54-arm64-v8a": {
+      "hash": "4ddea2d24a4ede7c120e2d72adda3563",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a": {
+      "hash": "3ed263c57f1db37484d8be7e1a84df3b",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "twitter-piko-v12.19.1-release.0-arm64-v8a": {
+      "hash": "d646daacb3449971ef8ed4ad70afb94f",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "reddit-morphe-v2026.40.0-arm64-v8a": {
+      "hash": "c3cf65554d4f2c8af9fff190773adac8",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "adobe-scan-aidan-v26.09.25-arm64-v8a": {
+      "hash": "a086a2a2ca1c6e128e137b82aa7d6e51",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a": {
+      "hash": "c81254379db4ca58fbbbe374f2cc1793",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "sd-maid-se-rushi-v2.2.2-rc0-arm64-v8a": {
+      "hash": "b3e931cdd5176869712ff28e03979ade",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "vn-video-editor-riky-v2.22.1-arm64-v8a": {
+      "hash": "3e2cbef4703baab0da958ce098e52d0c",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "netguard-rushi-v2.337-arm64-v8a": {
+      "hash": "82aeae91277c1c10470e580ea948e376",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "railone-vipinvip-v2.1.71-arm64-v8a": {
+      "hash": "021fc2edb83e74f3f6d2508e3f938a27",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "wavelet-o0b-v26.05-arm64-v8a": {
+      "hash": "5cbd36afb74b4f2f6a1dbc3359f9acfc",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
+      "hash": "c81b67771d6b15cbfc8f2a7bfc89c8ac",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "accuweather-rushi-v21.1.15-3-rc-arm64-v8a": {
+      "hash": "76e912d3b11f0121422010d7b6ad1fbf",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a": {
+      "hash": "ab3bfa4df3d0d0bae3fc1c891bb868be",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "vesselfinder-heval-v6.7.8-arm64-v8a": {
+      "hash": "e1f2e100e997fa8b73eb9e0c7d1e23ff",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a": {
+      "hash": "3117ca40bb3c7d17d7bdfce03f46998b",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "telegram-hushtelegram-v13.1.1-arm64-v8a": {
+      "hash": "0b4aab75f0149b764d36989a4cef4c20",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "pdbee-madushas-v2.135.1-arm64-v8a": {
+      "hash": "841ac41c11fd90d48f2ffdeff6eb3789",
+      "kinds": [
+        "apk"
+      ]
+    }
   }
 }
