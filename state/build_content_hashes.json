@@ -70,7 +70,7 @@
       ]
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": {
-      "hash": "81a7dd47156185cc7e580806687c27c6",
+      "hash": "ce4203cc2492517c01520c3187ff0146",
       "kinds": [
         "apk"
       ]
@@ -185,6 +185,12 @@
     },
     "pdbee-madushas-v2.135.1-arm64-v8a": {
       "hash": "841ac41c11fd90d48f2ffdeff6eb3789",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "soundcloud-v4n1x-v2026.11.02-release-arm64-v8a": {
+      "hash": "47cf087ad7e70b383ab9d18913e4bd84",
       "kinds": [
         "apk"
       ]

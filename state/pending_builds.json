@@ -5,10 +5,10 @@
       "arches": [
         "arm64-v8a"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "parked": false,
-      "run": 42246997275,
-      "ts": "2026-11-06T16:15:44Z",
+      "run": 42282199073,
+      "ts": "2026-11-06T19:57:17Z",
       "cfg": "a43ef4d7beb6134643f196baf90daa8b2c4925ae"
     },
     "AdobeAcrobat-Rushi": {
@@ -16,10 +16,10 @@
       "arches": [
         "arm64-v8a"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "parked": false,
-      "run": 42246997275,
-      "ts": "2026-11-06T16:15:44Z",
+      "run": 42282199073,
+      "ts": "2026-11-06T19:57:17Z",
       "cfg": "1e28abeb89801739b9ebe2fa63f8fcbcfd1ee0bc"
     }
   },
