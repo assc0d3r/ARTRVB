@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-06T13:00:03Z"
+    "publishedAt": "2026-11-06T16:17:37Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -150,8 +150,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -214,8 +214,8 @@
         "Remove Login",
         "Unlock Premium"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "adobe-scan-rushi-v26.08.01-arm64-v8a.apk": {
       "name": "adobe-scan-rushi",
@@ -397,8 +397,8 @@
         "Remove video ads",
         "Suppress geo / VPN block"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
       "name": "twitter-piko",
@@ -492,8 +492,8 @@
         "Show sensitive media",
         "Support external downloader"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -669,8 +669,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "wavelet-o0b-v26.05-arm64-v8a.apk": {
       "name": "wavelet-o0b",
@@ -693,8 +693,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
@@ -724,8 +724,8 @@
         "Spoof install source",
         "Unlock Premium"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "vesselfinder-heval-v6.7.8-arm64-v8a.apk": {
       "name": "vesselfinder-heval",
@@ -749,8 +749,8 @@
         "Disable ads",
         "Disable license check"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "accuweather-rushi-v21.1.15-3-rc-arm64-v8a.apk": {
       "name": "accuweather-rushi",
@@ -773,8 +773,8 @@
       "appliedPatches": [
         "Unlock Premium+"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-v4n1x",
@@ -799,8 +799,8 @@
         "Disable consent popup",
         "Enable SoundCloud Go+"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "vn-video-editor-riky-v2.22.1-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -825,8 +825,8 @@
         "Hide projects ads",
         "Unlock Premium"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -1230,8 +1230,8 @@
         "Spoof app signature",
         "Spoof install source"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "gboard-gboardpatches-module-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-gboardpatches",
@@ -1502,8 +1502,8 @@
         "Use system font",
         "Voice messages in the music player"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "messenger-hushmessenger-v584.1.0.61.98-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -1926,8 +1926,8 @@
         "Hide screenshot detection",
         "Monochrome icon support"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "gboard-combined-experimental-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined-experimental",
@@ -2148,10 +2148,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.1.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.1.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -2164,6 +2164,7 @@
         "Captions",
         "Change form factor",
         "Change header",
+        "Change picture-in-picture actions",
         "Change start page",
         "Channel search",
         "Channel whitelist",
@@ -2220,7 +2221,6 @@
         "Media notification controls",
         "Miniplayer",
         "Mute button",
-        "Navigation bar",
         "Niconico comments",
         "Open Shorts in regular player",
         "Open channel of live avatar",
@@ -2249,22 +2249,26 @@
         "Shorts autoplay",
         "Skip live Shorts",
         "Skip silence",
+        "Snackbar",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
         "Spoof video streams",
         "Swipe controls",
         "Theme",
+        "Translate live chat",
         "Translate posts",
         "Video delay",
         "Video quality",
         "Voice over translation",
+        "Watch later improvements",
         "Wide search bar",
         "Shorts icon style",
-        "Player icon style"
+        "Player icon style",
+        "Navigation bar"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -2292,8 +2296,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -2328,8 +2332,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2583,8 +2587,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "facebook-hushfacebook-v585.0.0.47.54-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
@@ -2723,8 +2727,8 @@
         "Badge and logo colors",
         "Accent color"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "pinterest-pinterest-v14.39.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
@@ -2921,8 +2925,8 @@
         "View raw data",
         "Voice channel options"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "truecaller-heval99-v26.43.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -2960,8 +2964,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "sd-maid-se-rushi-v2.2.2-rc0-arm64-v8a.apk": {
       "name": "sd-maid-se-rushi",
@@ -2984,8 +2988,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     },
     "pinterest-pinterest-v14.43.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
@@ -3044,8 +3048,119 @@
         "Show pin image information",
         "Use the system share sheet"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
+    },
+    "messenger-hushmessenger-v586.0.0.55.92-arm64-v8a.apk": {
+      "name": "messenger-hushmessenger",
+      "version": "586.0.0.55.92",
+      "appKey": "messenger",
+      "appName": "Messenger",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushmessenger",
+      "brandName": "HushMessenger",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.facebook.orca.hush",
+      "patchSources": [
+        "SysAdminDoc/patches-0.29.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/HushMessenger/releases/tag/v0.29.0"
+      ],
+      "appliedPatches": [
+        "Allow chat bubbles",
+        "Allow landscape",
+        "Allow screenshots",
+        "Android Auto messages",
+        "Ask before a call",
+        "Auto reply",
+        "Bold and italic text",
+        "Clone install under another package name",
+        "Custom launcher icon",
+        "Custom new-message sound",
+        "Customize message actions",
+        "Fix videos that won't send",
+        "GmsCore support",
+        "Hide AI sticker tools",
+        "Hide Chat Moments",
+        "Hide Facebook shortcuts",
+        "Hide Mark as read",
+        "Hide Meta AI",
+        "Hide Notifications tab",
+        "Hide People You May Know",
+        "Hide People tab",
+        "Hide Reels badge",
+        "Hide Your story when sharing",
+        "Hide ad banners in business chats",
+        "Hide avatar stickers",
+        "Hide business reply suggestions",
+        "Hide business typing suggestions",
+        "Hide call buttons",
+        "Hide chat promotions",
+        "Hide chosen chats",
+        "Hide event prompts",
+        "Hide friend request cards",
+        "Hide growth prompts",
+        "Hide inbox promotions",
+        "Hide inbox tabs",
+        "Hide joined community chats",
+        "Hide pictures on the Blocked list",
+        "Hide read receipts",
+        "Hide stories and notes",
+        "Hide tab badges",
+        "Hide the Instants button",
+        "Hide the recent photo card",
+        "Hide typing indicator",
+        "Hold stories at the end",
+        "Ignore the swipe up for disappearing messages",
+        "Install beside Meta apps",
+        "Jump to the first message or a date",
+        "Keep a message log",
+        "Keep chat pop-ups",
+        "Keep emoji search on emoji",
+        "Keep the search bar",
+        "Keep unsent messages",
+        "Mark as read button",
+        "Material You theme",
+        "Notify for restricted chats",
+        "Open settings from menu",
+        "Open web links externally",
+        "Open your gallery app",
+        "Pin more chats",
+        "Preview chats on long press",
+        "Put gallery picks in the chat",
+        "Quiet incoming calls",
+        "Record calls",
+        "Restore old emoji drawer",
+        "Restore screens on re-signed builds",
+        "Save any story",
+        "Save button for voice messages",
+        "Save voice messages you play",
+        "Search saved messages",
+        "Send photos at original quality",
+        "Send videos without re-encoding",
+        "Show People tab",
+        "Slide chats in and out",
+        "Spoof package version",
+        "Square profile pictures",
+        "Stop ad attribution uploads",
+        "Stop analytics uploads",
+        "Stop app list and device ID sharing",
+        "Stop inbox and ad link logging",
+        "Stop live connection logging",
+        "Stop nearby scans",
+        "Unlock app icons",
+        "Unlock app themes",
+        "Use system emoji",
+        "Use the phone's camera app",
+        "Use your own font",
+        "View stories anonymously",
+        "Your own home header"
+      ],
+      "originBuild": "260139",
+      "publishedAt": "2026-11-06T16:16:01Z"
     }
   }
 }
