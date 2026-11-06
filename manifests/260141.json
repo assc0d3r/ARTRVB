@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260141",
+    "channel": "stable",
+    "publishedAt": "2026-11-06T19:57:33Z"
+  },
+  "files": {
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
+      "name": "google-maps-bearinmindcat",
+      "version": "26.36.04.973607363",
+      "appKey": "googlemaps",
+      "appName": "Google Maps",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "bearinmindcat",
+      "brandName": "bearinmindcat",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "org.ungoogled.android.apps.maps",
+      "patchSources": [
+        "bearinmindcat/patches-2.8.8.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.8"
+      ],
+      "appliedPatches": [
+        "120 refresh rate",
+        "Account sheet cleanup",
+        "Any media app",
+        "Avoid Flock cameras",
+        "Better offline maps",
+        "Black theme",
+        "Blue pin",
+        "Bypass Play Services checks",
+        "Change app name",
+        "Change package name",
+        "Customization screen",
+        "Flock cameras",
+        "Follow playing media",
+        "Hide ads and clutter",
+        "Legacy icon",
+        "Location provider toggle",
+        "Offline saved places",
+        "Proxy",
+        "Rectangle shapes",
+        "Remove permissions",
+        "Remove sign-in prompts",
+        "Remove telemetry",
+        "Review counts in navigation search",
+        "Speed cameras",
+        "Speeding chime",
+        "Trim account menu",
+        "Waze alerts",
+        "Zoom controls in navigation",
+        "Power saving mode"
+      ],
+      "originBuild": "260141",
+      "publishedAt": "2026-11-06T19:57:33Z"
+    },
+    "soundcloud-v4n1x-v2026.11.02-release-arm64-v8a.apk": {
+      "name": "soundcloud-v4n1x",
+      "version": "4n1x-v2026.11.02-release",
+      "appKey": "soundcloud",
+      "appName": "SoundCloud",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "v4n1x",
+      "brandName": "V4n1X",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.soundcloud.android",
+      "patchSources": [
+        "V4n1X/patches-1.4.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/V4n1X/morphe-patches/releases/tag/v1.4.1"
+      ],
+      "appliedPatches": [
+        "Disable analytics",
+        "Disable consent popup",
+        "Enable SoundCloud Go+"
+      ],
+      "originBuild": "260141",
+      "publishedAt": "2026-11-06T19:57:33Z"
+    }
+  }
+}
