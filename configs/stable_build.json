@@ -1,7 +1,7 @@
 {
   "patches-version": "stable",
   "Pinterest": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -30,7 +30,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -45,7 +45,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -60,7 +60,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -87,7 +87,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Facebook-Messenger-HushMessenger": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "version": "auto",
@@ -101,7 +101,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'jasonwu1994/Gboard-patches' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches' 'jkennethcarino/adobo' 'Mlkem/Morphe' 'Kirkland-Pickles/Gboard-offline-morphe' 'markpaul099/gboard-gifs-extended' 'thrkingunknown/gboard-theme-patch' ",
@@ -117,11 +117,10 @@
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
   },
   "YouTube-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
-    "patches-source": " 'MorpheApp/morphe-patches' 'sashade8-ship-it/dual-vot-patches' 'sk1nnnny/morphe-patche' ",
-    "inclusive-patches": false,
+    "patches-source": " 'MorpheApp/morphe-patches' ",
     "brand": "Morphe",
     "arch": "arm64-v8a",
     "version": "auto",
@@ -133,7 +132,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "patches-source": "Akash-Sriram/morphe-google-photos",
@@ -145,7 +144,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",
@@ -160,7 +159,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
     "patches-source": "spicetify/morphe-patches",
@@ -175,7 +174,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -190,7 +189,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/reddit/com.reddit.frontpage"
   },
   "NovaLauncher-MightyMich": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.teslacoilsw.launcher",
     "app-name": "Nova Launcher",
     "patches-source": "hyzor/hyzor-morphe-patches",
@@ -205,7 +204,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/nova-launcher/com.teslacoilsw.launcher"
   },
   "AdobeScan-Aidan": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.adobe.scan.android",
     "app-name": "Adobe Scan",
     "patches-source": "ihatenodejs/aidans-patches",
@@ -220,7 +219,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-scan/com.adobe.scan.android"
   },
   "VN-Riky": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.frontrow.vlog",
     "app-name": "VN Video Editor",
     "patches-source": "riky-dev/morphe-patches",
@@ -235,7 +234,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vn/com.frontrow.vlog"
   },
   "SonyLIV-TV-Chiggi": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.sonyliv",
     "app-name": "SonyLIV (Android TV)",
     "patches-source": "durgesh0505/chiggi_morphe_patches",
@@ -250,7 +249,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sony-liv/com.sonyliv"
   },
   "GitHub-Noodles": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.github.android",
     "app-name": "GitHub",
     "version": "auto",
@@ -265,7 +264,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/github/com.github.android"
   },
   "SDMaidSE-kveld9": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "eu.darken.sdmse",
     "app-name": "SD Maid SE",
     "version": "auto",
@@ -280,7 +279,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
     "version": "auto",
@@ -295,7 +294,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/railone/org.cris.aikyam"
   },
   "AdobeAcrobat-Rushi": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.adobe.reader",
     "app-name": "Adobe Acrobat",
     "version": "auto",
@@ -310,7 +309,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/adobe-acrobat-reader/com.adobe.reader"
   },
   "NetGuard-Rushi": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "eu.faircode.netguard",
     "app-name": "NetGuard",
     "patches-source": "rushiranpise/morphe-patches",
@@ -325,7 +324,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/netguard/eu.faircode.netguard"
   },
   "Wavelet-o0b": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.pittvandewitt.wavelet",
     "app-name": "Wavelet",
     "version": "auto",
@@ -340,7 +339,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
     "version": "auto",
@@ -355,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
@@ -368,7 +367,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
   },
   "AccuWeather-Rushi": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.accuweather.android",
     "app-name": "AccuWeather",
     "patches-source": "rushiranpise/morphe-patches",
@@ -382,7 +381,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/accuweather/com.accuweather.android"
   },
   "SoundCloud-V4n1X": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.soundcloud.android",
     "app-name": "SoundCloud",
     "patches-source": "V4n1X/morphe-patches",
@@ -396,7 +395,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/soundcloud/com.soundcloud.android"
   },
   "UiMote-rushiranpise": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "sensustech.universal.tv.remote.control",
     "app-name": "Universal TV Remote",
     "brand": "rushiranpise",
@@ -411,7 +410,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/universal-tv-remote-control/sensustech.universal.tv.remote.control"
   },
   "Telegram-HushTelegram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.telegram.messenger",
     "app-name": "Telegram",
     "patches-source": "SysAdminDoc/HushTelegram",
@@ -426,7 +425,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/telegram/org.telegram.messenger/"
   },
   "Pdbee-madushas": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "pdb.app",
     "app-name": "Pdbee",
     "patches-source": "madushas/pdb_patch",
