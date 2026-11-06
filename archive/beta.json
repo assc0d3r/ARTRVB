@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-05T20:29:57Z"
+    "publishedAt": "2026-11-06T01:01:56Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1230,10 +1230,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.72.0-dev.1.mpp"
+        "hxreborn/patches-1.72.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.72.0-dev.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.72.1-dev.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1250,8 +1250,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260127",
-      "publishedAt": "2026-11-05T13:04:43Z"
+      "originBuild": "260134",
+      "publishedAt": "2026-11-06T01:01:48Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
