@@ -39,7 +39,8 @@
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
       "hash": "18ed275d520d8db42ad17baa6bd6f2c5",
       "kinds": [
-        "apk"
+        "apk",
+        "module"
       ]
     }
   },
