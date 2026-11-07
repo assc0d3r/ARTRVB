@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.18",
-    "stable_date": "2026-10-31T22:50:09Z"
+    "stable": "v0.0.19",
+    "stable_date": "2026-11-07T03:06:16Z"
   },
   "SysAdminDoc/HushMessenger": {
     "beta": "",
@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.9",
-    "stable_date": "2026-11-06T23:31:18Z"
+    "stable": "v2.8.10",
+    "stable_date": "2026-11-07T05:23:58Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",
@@ -180,13 +180,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.73.0-dev.2",
-    "beta_date": "2026-11-06T18:55:23Z",
+    "beta": "v1.73.0-dev.3",
+    "beta_date": "2026-11-07T00:31:42Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.72.0",
-    "stable_date": "2026-11-05T16:20:23Z"
+    "stable": "v1.73.0",
+    "stable_date": "2026-11-07T00:41:02Z"
   },
   "hyzor/hyzor-morphe-patches": {
     "beta": "v1.6.2-dev.2",

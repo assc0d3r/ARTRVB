@@ -19,8 +19,8 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "2a10fe2f3717a27ce299669ac6d08490",
-      "shared": "719877b0df992cce4a249fb190c6c527"
+      "com.google.android.apps.maps": "612e324233f97e1fc61ba3ca56cdf3f4",
+      "shared": "f1608f7f64265870d8e42a46a6aa5800"
     }
   },
   "browzomje/browzomje-patches": {
@@ -65,11 +65,11 @@
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
-      "shared": "7c7157417d444cf19c5bb766116ce8c4"
+      "shared": "3174eb2744b5125d2db3b92113f98204"
     },
     "stable": {
-      "ch.protonvpn.android": "7c3101fe493693f167fcec96a972da65",
-      "shared": "5bf2465f01ccd6f36b6664fbfd6f9a5c"
+      "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
+      "shared": "fa24df1c69f8857c36464c6d368fc0b1"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -228,8 +228,8 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "13ffc3adc663b8f0d85740c420e0880f",
-      "shared": "fd96a32e2357ac51432bb1dd7217cdd8"
+      "com.instagram.android": "7b63c9e714d683cf189f5532af40ef3a",
+      "shared": "06c07fe76178ca6cbc1b2fc1ea7c746d"
     }
   },
   "sysadmindoc/hushmessenger": {
