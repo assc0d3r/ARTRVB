@@ -5,7 +5,7 @@
       "shared": "796c2550311378527b1a1c1d14685ff2"
     },
     "stable": {
-      "com.google.android.apps.photos": "6e73b85a2f73ad70279eee9e0d435082",
+      "com.google.android.apps.photos": "62f9dc9d010f67152bc324deefc1a6c0",
       "shared": "796c2550311378527b1a1c1d14685ff2"
     }
   },
@@ -20,7 +20,7 @@
     "beta": {},
     "stable": {
       "com.google.android.apps.maps": "612e324233f97e1fc61ba3ca56cdf3f4",
-      "shared": "f1608f7f64265870d8e42a46a6aa5800"
+      "shared": "34a4ba14b20ae078e11d9e940ee863f5"
     }
   },
   "browzomje/browzomje-patches": {
@@ -65,7 +65,7 @@
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
-      "shared": "3174eb2744b5125d2db3b92113f98204"
+      "shared": "2777d7e28e6986bfa4823781c29686bf"
     },
     "stable": {
       "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
@@ -104,8 +104,8 @@
   },
   "jasonwu1994/gboard-patches": {
     "beta": {
-      "com.google.android.inputmethod.latin": "67dd8e6778a79f181a5a210fbf93687d",
-      "shared": "c401230287caac5cc88ae3e4d2f54ff8"
+      "com.google.android.inputmethod.latin": "65c8bc67da54314499627609aa1b38a5",
+      "shared": "17c9671692884a18816f33cf8b96c448"
     },
     "stable": {
       "com.google.android.inputmethod.latin": "c0ef178cd14c5974d7aad24e0741777b",
@@ -165,9 +165,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "502191b95cc0c725e5fd051af5a3b0eb",
-      "com.reddit.frontpage": "0ccbd2d1ffe6a5b4a851834b00fa47cd",
-      "shared": "524bdc55d024f4263ec858843466e574"
+      "com.google.android.youtube": "337a30c98c08c32ecccd9716236039ad",
+      "com.reddit.frontpage": "d084089c1692470274d9c5a0210139b5",
+      "shared": "29e029be4bef57667ea70a574a569785"
     },
     "stable": {
       "com.google.android.youtube": "502191b95cc0c725e5fd051af5a3b0eb",
