@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-07T14:58:26Z"
+    "publishedAt": "2026-11-07T17:59:45Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -955,23 +955,22 @@
       "brandName": "AkashSriram",
       "variant": null,
       "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
+      "packageName": "com.google.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.18.0-dev.1.mpp"
+        "Akash-Sriram/patches-1.18.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.18.0-dev.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.18.0-dev.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
         "DCIM & backup control",
         "Flag manager & Toolkit",
         "Media engine & AI fixes",
-        "Spoof features",
-        "GmsCore support"
+        "Spoof features"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-11-06T16:01:27Z"
+      "originBuild": "260147",
+      "publishedAt": "2026-11-07T17:59:30Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -1230,10 +1229,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.74.0-dev.2.mpp"
+        "hxreborn/patches-1.74.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.74.0-dev.2"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.74.0-dev.3"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1250,8 +1249,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260146",
-      "publishedAt": "2026-11-07T14:57:55Z"
+      "originBuild": "260147",
+      "publishedAt": "2026-11-07T17:59:30Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
