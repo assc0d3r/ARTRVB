@@ -1,7 +1,7 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "18d928cf3f9b52bd7f1f6090f532dcf5",
+      "com.google.android.apps.photos": "92947c611878cb105378df209020e23a",
       "shared": "796c2550311378527b1a1c1d14685ff2"
     },
     "stable": {
@@ -52,8 +52,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "89471c3f05177f20bf26a762228040ab",
-      "com.truecaller": "2a7a3d5ee0bd351a55ef3648a2b93419",
+      "com.astrapaging.vff": "a59d37eed44c9791e913493872b87813",
+      "com.truecaller": "78432d2289f697fea5f68036739b9ac3",
       "shared": "d34c26a61bc73d3dc2fb40582b05774f"
     },
     "stable": {
