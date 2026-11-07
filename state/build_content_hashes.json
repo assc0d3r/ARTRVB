@@ -13,7 +13,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
-      "hash": "c059286ddc0c71ab0700f2639e862340",
+      "hash": "03b8a4fce49ed6e38de01a878bb58bff",
       "kinds": [
         "apk"
       ]
@@ -25,10 +25,9 @@
       ]
     },
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
-      "hash": "18ed275d520d8db42ad17baa6bd6f2c5",
+      "hash": "bf7d988c3cd2fd0ba926ed6cadd2d6c8",
       "kinds": [
-        "apk",
-        "module"
+        "apk"
       ]
     },
     "truecaller-heval99-v26.43.5-arm64-v8a": {
@@ -39,6 +38,18 @@
     },
     "vesselfinder-heval-v6.7.8-arm64-v8a": {
       "hash": "e1f2e100e997fa8b73eb9e0c7d1e23ff",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "youtube-morphe-v21.30.216-arm64-v8a": {
+      "hash": "c3b52f205f7dec389aa3fc51a40b80c8",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "reddit-morphe-v2026.40.0-arm64-v8a": {
+      "hash": "8721ec2d64b8084fe6cd3dac83f0a37f",
       "kinds": [
         "apk"
       ]
