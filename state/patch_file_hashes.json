@@ -36,7 +36,7 @@
   "crimera/piko": {
     "beta": {
       "com.twitter.android": "defec6088d45e9604dc18ccf727e6ece",
-      "shared": "4190f095983e3deac0e70dd851523d6c"
+      "shared": "faf1c83762cbbcef469538d89f47784d"
     },
     "stable": {
       "com.twitter.android": "b8ef463a3395befffaaf196a91f1ab8f",
@@ -64,8 +64,8 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
-      "shared": "2777d7e28e6986bfa4823781c29686bf"
+      "ch.protonvpn.android": "e5dbb2096651d539c7d17a3efccf498c",
+      "shared": "f59da5f0d37617ad18650cb0e57ca8b6"
     },
     "stable": {
       "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
