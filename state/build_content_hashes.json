@@ -70,7 +70,7 @@
       ]
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": {
-      "hash": "a6f17fdc572d1ae41c66724d0e210735",
+      "hash": "9fbd3cd3f26fb974536e04804a99528b",
       "kinds": [
         "apk"
       ]
@@ -148,7 +148,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
-      "hash": "c81b67771d6b15cbfc8f2a7bfc89c8ac",
+      "hash": "94506bef8acf75420bc5783c163e8022",
       "kinds": [
         "apk"
       ]
@@ -191,6 +191,12 @@
     },
     "soundcloud-v4n1x-v2026.11.02-release-arm64-v8a": {
       "hash": "47cf087ad7e70b383ab9d18913e4bd84",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "instagram-hushgram-v454.0.0.54.77-arm64-v8a": {
+      "hash": "7ff4343de22254326c633196c0c3984c",
       "kinds": [
         "apk"
       ]
