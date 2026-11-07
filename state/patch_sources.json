@@ -1,7 +1,7 @@
 {
   "Akash-Sriram/morphe-google-photos": {
-    "beta": "v1.18.0-dev.1",
-    "beta_date": "2026-11-04T13:21:22Z",
+    "beta": "v1.18.0-dev.2",
+    "beta_date": "2026-11-07T16:19:37Z",
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.11",
-    "stable_date": "2026-11-07T09:50:55Z"
+    "stable": "v2.9.1",
+    "stable_date": "2026-11-07T16:45:17Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",
@@ -180,8 +180,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.74.0-dev.2",
-    "beta_date": "2026-11-07T14:03:36Z",
+    "beta": "v1.74.0-dev.3",
+    "beta_date": "2026-11-07T15:40:25Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

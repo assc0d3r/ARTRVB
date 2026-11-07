@@ -1,7 +1,7 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "19762647c86bbff6685e2802a57f1680",
+      "com.google.android.apps.photos": "18d928cf3f9b52bd7f1f6090f532dcf5",
       "shared": "796c2550311378527b1a1c1d14685ff2"
     },
     "stable": {
@@ -20,7 +20,7 @@
     "beta": {},
     "stable": {
       "com.google.android.apps.maps": "612e324233f97e1fc61ba3ca56cdf3f4",
-      "shared": "34a4ba14b20ae078e11d9e940ee863f5"
+      "shared": "e34e9a16b5d90669c5f625401097ac29"
     }
   },
   "browzomje/browzomje-patches": {
@@ -65,7 +65,7 @@
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "e5dbb2096651d539c7d17a3efccf498c",
-      "shared": "f59da5f0d37617ad18650cb0e57ca8b6"
+      "shared": "a90921327ef6e6293c959807ee587bdc"
     },
     "stable": {
       "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
