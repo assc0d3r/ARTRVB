@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-07T11:31:01Z"
+    "publishedAt": "2026-11-07T14:58:26Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1230,10 +1230,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.74.0-dev.1.mpp"
+        "hxreborn/patches-1.74.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.74.0-dev.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.74.0-dev.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1250,8 +1250,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260144",
-      "publishedAt": "2026-11-07T11:30:31Z"
+      "originBuild": "260146",
+      "publishedAt": "2026-11-07T14:57:55Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1446,10 +1446,10 @@
       "subVariant": null,
       "packageName": "com.twitter.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.4.mpp"
+        "crimera/patches-3.11.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.4"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
       ],
       "appliedPatches": [
         "Add ability to copy media link",
@@ -1525,8 +1525,8 @@
         "Show sensitive media",
         "Support external downloader"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-11-06T16:01:27Z"
+      "originBuild": "260146",
+      "publishedAt": "2026-11-07T14:57:55Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
