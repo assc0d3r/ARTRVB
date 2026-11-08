@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-08T15:07:07Z"
+    "publishedAt": "2026-11-08T18:14:44Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1228,10 +1228,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.75.0-dev.2.mpp"
+        "hxreborn/patches-1.75.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.0-dev.2"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.0-dev.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1248,8 +1248,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260151",
-      "publishedAt": "2026-11-08T15:06:45Z"
+      "originBuild": "260152",
+      "publishedAt": "2026-11-08T18:14:29Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1404,10 +1404,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.2.mpp"
+        "heval99/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1428,8 +1428,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260148",
-      "publishedAt": "2026-11-07T20:32:12Z"
+      "originBuild": "260152",
+      "publishedAt": "2026-11-08T18:14:29Z"
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
       "name": "twitter-piko",
