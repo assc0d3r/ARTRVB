@@ -13,7 +13,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
-      "hash": "28ee28ac09f192a5be494fe23585acdb",
+      "hash": "d234a162a7a4fc611874bc176e412562",
       "kinds": [
         "apk"
       ]
@@ -25,10 +25,9 @@
       ]
     },
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
-      "hash": "bf7d988c3cd2fd0ba926ed6cadd2d6c8",
+      "hash": "cc2cd382b030f7bcedc0b326f0c43a9b",
       "kinds": [
-        "apk",
-        "module"
+        "apk"
       ]
     },
     "truecaller-heval99-v26.43.5-arm64-v8a": {
