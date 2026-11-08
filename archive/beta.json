@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-07T20:32:31Z"
+    "publishedAt": "2026-11-08T11:40:34Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -448,7 +448,6 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
-        "Gboard AMOLED Theme Studio",
         "Gboard Theme Builder",
         "Glass Panel",
         "Glass Press Effect",
@@ -478,8 +477,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260144",
-      "publishedAt": "2026-11-07T11:30:31Z"
+      "originBuild": "260149",
+      "publishedAt": "2026-11-08T11:40:10Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -1229,10 +1228,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.74.0-dev.3.mpp"
+        "hxreborn/patches-1.75.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.74.0-dev.3"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.0-dev.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1249,8 +1248,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260147",
-      "publishedAt": "2026-11-07T17:59:30Z"
+      "originBuild": "260149",
+      "publishedAt": "2026-11-08T11:40:10Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
