@@ -65,7 +65,7 @@
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "ae01e935c32ecf9d611d8167a8f62774",
-      "shared": "46846261044637e4455b4b30bc3de234"
+      "shared": "1077f780b686f5f5a2c477d468ec4c30"
     },
     "stable": {
       "ch.protonvpn.android": "e5dbb2096651d539c7d17a3efccf498c",
@@ -249,8 +249,8 @@
   "sysadmindoc/hushtelegram": {
     "beta": {},
     "stable": {
-      "org.telegram.messenger": "bba4c012bd356ac6ea93c3e63e8d7645",
-      "shared": "7ba2d4f19614388c7ee4a39ac7dab2ab"
+      "org.telegram.messenger": "5ddba25b2c7e46a9599fa5ffd9ede735",
+      "shared": "e2a92b60060acdbc2222967673c95be1"
     }
   },
   "thrkingunknown/gboard-theme-patch": {
