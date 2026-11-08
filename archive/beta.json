@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-08T11:40:34Z"
+    "publishedAt": "2026-11-08T15:07:07Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1228,10 +1228,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.75.0-dev.1.mpp"
+        "hxreborn/patches-1.75.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.0-dev.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.0-dev.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1248,8 +1248,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260149",
-      "publishedAt": "2026-11-08T11:40:10Z"
+      "originBuild": "260151",
+      "publishedAt": "2026-11-08T15:06:45Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1644,10 +1644,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.1.mpp"
+        "MorpheApp/patches-2.2.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.1"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.2"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1718,6 +1718,7 @@
         "Miniplayer",
         "Mute button",
         "Niconico comments",
+        "On-the-go player",
         "Open Shorts in regular player",
         "Open channel of live avatar",
         "Open links externally",
@@ -1763,8 +1764,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260144",
-      "publishedAt": "2026-11-07T11:30:31Z"
+      "originBuild": "260151",
+      "publishedAt": "2026-11-08T15:06:45Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
