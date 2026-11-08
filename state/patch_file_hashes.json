@@ -65,11 +65,11 @@
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "e5dbb2096651d539c7d17a3efccf498c",
-      "shared": "a90921327ef6e6293c959807ee587bdc"
+      "shared": "5a703aae99b93675068e5c69d2f6293e"
     },
     "stable": {
-      "ch.protonvpn.android": "6fef8caeb2d309d8c5cba5ab1c555e74",
-      "shared": "fa24df1c69f8857c36464c6d368fc0b1"
+      "ch.protonvpn.android": "e5dbb2096651d539c7d17a3efccf498c",
+      "shared": "9e26e91e315751e1cd623aba36a64933"
     }
   },
   "hyzor/hyzor-morphe-patches": {
