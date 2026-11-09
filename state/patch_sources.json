@@ -158,12 +158,12 @@
     "blocked": false,
     "host": "github",
     "repo": "durgesh0505/chiggi_morphe_patches",
-    "stable": "v1.27.7",
-    "stable_date": "2026-11-09T18:34:13Z"
+    "stable": "v1.27.8",
+    "stable_date": "2026-11-09T19:03:42Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.3.0-dev.5",
-    "beta_date": "2026-11-09T15:52:05Z",
+    "beta": "v2.3.0-dev.6",
+    "beta_date": "2026-11-09T19:37:57Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -180,8 +180,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.75.1-dev.1",
-    "beta_date": "2026-11-09T15:10:48Z",
+    "beta": "v1.76.0-dev.6",
+    "beta_date": "2026-11-09T22:19:46Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -239,8 +239,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.5.8",
-    "stable_date": "2026-11-01T22:06:55Z"
+    "stable": "v0.5.9",
+    "stable_date": "2026-11-09T20:40:34Z"
   },
   "markpaul099/gboard-gifs-extended": {
     "beta": "v1.0.0-dev.2",
