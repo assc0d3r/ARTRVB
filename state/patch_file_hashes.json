@@ -47,14 +47,14 @@
     "beta": {},
     "stable": {
       "com.sonyliv": "75b1f77190177e49c48ee13c7c274743",
-      "shared": "813bc339f8fa6e2ea7f511bc5af1c816"
+      "shared": "a597ff28b01552235a9feac5907108a6"
     }
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "e66c5412061f1a532a62bf6f8a58fc89",
-      "com.truecaller": "fcdfb9387b27513da3efeb3240de6da0",
-      "shared": "0bb6d4417067f14d452a001e47cc1a71"
+      "com.astrapaging.vff": "1db001a393173d43b5821e6ddac191de",
+      "com.truecaller": "ec001be34f1abec8e75d068ba3c91272",
+      "shared": "76fc913963887402e0104de4efaf15ec"
     },
     "stable": {
       "com.astrapaging.vff": "c50eaec730a2de34774d8a77036a3b86",
