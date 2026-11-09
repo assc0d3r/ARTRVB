@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-09T06:18:02Z"
+    "publishedAt": "2026-11-09T13:32:47Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1228,15 +1228,16 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.75.0-dev.5.mpp"
+        "hxreborn/patches-1.75.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.0-dev.5"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.0-dev.8"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
         "Custom accent color",
         "Disable telemetry",
+        "Floating navigation bar",
         "Hide upgrade promotions",
         "Material 3 switches",
         "Remove server change delay",
@@ -1248,8 +1249,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260153",
-      "publishedAt": "2026-11-08T20:47:24Z"
+      "originBuild": "260156",
+      "publishedAt": "2026-11-09T13:32:16Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1644,10 +1645,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.2.mpp"
+        "MorpheApp/patches-2.2.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.3"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1730,6 +1731,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist improvements",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
@@ -1758,14 +1760,13 @@
         "Video delay",
         "Video quality",
         "Voice over translation",
-        "Watch later improvements",
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260151",
-      "publishedAt": "2026-11-08T15:06:45Z"
+      "originBuild": "260156",
+      "publishedAt": "2026-11-09T13:32:16Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1780,10 +1781,10 @@
       "subVariant": null,
       "packageName": "com.google.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.18.0-dev.4.mpp"
+        "Akash-Sriram/patches-1.18.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.18.0-dev.4"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.18.0-dev.5"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1792,8 +1793,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260148",
-      "publishedAt": "2026-11-07T20:32:12Z"
+      "originBuild": "260156",
+      "publishedAt": "2026-11-09T13:32:16Z"
     }
   }
 }
