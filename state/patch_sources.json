@@ -36,8 +36,8 @@
     "stable_date": ""
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.2.0-dev.3",
-    "beta_date": "2026-11-09T11:58:23Z",
+    "beta": "v2.2.0-dev.4",
+    "beta_date": "2026-11-09T13:47:43Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -122,8 +122,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.26",
-    "stable_date": "2026-11-06T13:14:00Z"
+    "stable": "1.0.29",
+    "stable_date": "2026-11-09T17:19:20Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -158,12 +158,12 @@
     "blocked": false,
     "host": "github",
     "repo": "durgesh0505/chiggi_morphe_patches",
-    "stable": "v1.27.4",
-    "stable_date": "2026-11-09T03:05:26Z"
+    "stable": "v1.27.7",
+    "stable_date": "2026-11-09T18:34:13Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.3.0-dev.4",
-    "beta_date": "2026-11-09T00:29:39Z",
+    "beta": "v2.3.0-dev.5",
+    "beta_date": "2026-11-09T15:52:05Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -180,13 +180,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.75.0-dev.8",
-    "beta_date": "2026-11-09T12:14:20Z",
+    "beta": "v1.75.1-dev.1",
+    "beta_date": "2026-11-09T15:10:48Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.74.0",
-    "stable_date": "2026-11-08T05:53:45Z"
+    "stable": "v1.75.1",
+    "stable_date": "2026-11-09T15:26:45Z"
   },
   "hyzor/hyzor-morphe-patches": {
     "beta": "v1.6.2-dev.2",
