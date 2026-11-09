@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-09T13:32:47Z"
+    "publishedAt": "2026-11-09T18:48:51Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1405,10 +1405,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.4.mpp"
+        "heval99/patches-2.3.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.4"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.5"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1429,8 +1429,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260155",
-      "publishedAt": "2026-11-09T06:17:43Z"
+      "originBuild": "260158",
+      "publishedAt": "2026-11-09T18:48:25Z"
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
       "name": "twitter-piko",
@@ -1645,10 +1645,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.3.mpp"
+        "MorpheApp/patches-2.2.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.4"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1765,8 +1765,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260156",
-      "publishedAt": "2026-11-09T13:32:16Z"
+      "originBuild": "260158",
+      "publishedAt": "2026-11-09T18:48:25Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
