@@ -36,8 +36,8 @@
     "stable_date": ""
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.2.0-dev.4",
-    "beta_date": "2026-11-09T13:47:43Z",
+    "beta": "v2.2.0-dev.5",
+    "beta_date": "2026-11-10T09:01:34Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -144,13 +144,13 @@
     "stable_date": "2026-11-05T22:54:15Z"
   },
   "crimera/piko": {
-    "beta": "v3.11.0-dev.5",
-    "beta_date": "2026-11-07T13:54:41Z",
+    "beta": "v3.11.1-dev.1",
+    "beta_date": "2026-11-10T10:19:04Z",
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
-    "stable": "v3.11.0",
-    "stable_date": "2026-11-09T10:54:44Z"
+    "stable": "v3.11.1",
+    "stable_date": "2026-11-10T12:59:39Z"
   },
   "durgesh0505/chiggi_morphe_patches": {
     "beta": "",
@@ -180,8 +180,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.76.0-dev.6",
-    "beta_date": "2026-11-09T22:19:46Z",
+    "beta": "v1.76.0-dev.7",
+    "beta_date": "2026-11-10T09:12:26Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
