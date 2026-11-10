@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -159,7 +159,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
     "patches-source": "spicetify/morphe-patches",
@@ -234,7 +234,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vn/com.frontrow.vlog"
   },
   "SonyLIV-TV-Chiggi": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.sonyliv",
     "app-name": "SonyLIV (Android TV)",
     "patches-source": "durgesh0505/chiggi_morphe_patches",
@@ -425,7 +425,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/telegram/org.telegram.messenger/"
   },
   "Pdbee-madushas": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "pdb.app",
     "app-name": "Pdbee",
     "patches-source": "madushas/pdb_patch",
