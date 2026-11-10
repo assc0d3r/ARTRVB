@@ -170,9 +170,9 @@
       "shared": "3944214a52fabf31805766312c7106fc"
     },
     "stable": {
-      "com.google.android.youtube": "502191b95cc0c725e5fd051af5a3b0eb",
-      "com.reddit.frontpage": "9e4383fdea6c9ea58acc76b168e7b898",
-      "shared": "524bdc55d024f4263ec858843466e574"
+      "com.google.android.youtube": "b0d90012b8e172e6665dbaa32cf1b246",
+      "com.reddit.frontpage": "7651c59bc39ee30946d3821d09cafe17",
+      "shared": "a6f067af81f0c9d47e6d1db136df2db8"
     }
   },
   "o0b/morphe-patches": {

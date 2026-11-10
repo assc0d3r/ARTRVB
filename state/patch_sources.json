@@ -41,8 +41,8 @@
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
-    "stable": "v2.1.0",
-    "stable_date": "2026-11-06T14:15:16Z"
+    "stable": "v2.2.0",
+    "stable_date": "2026-11-10T14:41:45Z"
   },
   "SysAdminDoc/HushFacebook": {
     "beta": "",
