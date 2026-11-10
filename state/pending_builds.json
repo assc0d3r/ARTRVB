@@ -1,16 +1,4 @@
 {
-  "stable": {
-    "NovaLauncher-MightyMich": {
-      "reason": "retry",
-      "arches": [
-        "arm64-v8a"
-      ],
-      "attempts": 3,
-      "parked": true,
-      "run": 42744149285,
-      "ts": "2026-11-10T02:49:30Z",
-      "cfg": "a43ef4d7beb6134643f196baf90daa8b2c4925ae"
-    }
-  },
+  "stable": {},
   "beta": {}
 }
