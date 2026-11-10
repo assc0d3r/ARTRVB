@@ -5,10 +5,10 @@
       "arches": [
         "arm64-v8a"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "parked": false,
-      "run": 42714589128,
-      "ts": "2026-11-09T22:54:39Z",
+      "run": 42727757327,
+      "ts": "2026-11-10T00:33:53Z",
       "cfg": "a43ef4d7beb6134643f196baf90daa8b2c4925ae"
     }
   },
