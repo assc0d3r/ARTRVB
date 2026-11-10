@@ -64,12 +64,12 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "8dc33529f05df6a33bb1170d0b905268",
-      "shared": "db64c3fdf2d3852818ec71bdc2738ddd"
+      "ch.protonvpn.android": "4d81bd821d60d4ce0cf6743613674029",
+      "shared": "9dd4318c63087b485364cd63d53ca0a1"
     },
     "stable": {
-      "ch.protonvpn.android": "6361a641997232a858b189c023773ee7",
-      "shared": "06bae754daa0d32b5a56ce3fe5605d8a"
+      "ch.protonvpn.android": "4d81bd821d60d4ce0cf6743613674029",
+      "shared": "135073e65ea7ef4a20d1d2dce864fef3"
     }
   },
   "hyzor/hyzor-morphe-patches": {

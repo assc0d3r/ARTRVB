@@ -180,13 +180,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.76.0-dev.7",
-    "beta_date": "2026-11-10T09:12:26Z",
+    "beta": "v1.76.0-dev.8",
+    "beta_date": "2026-11-10T19:20:59Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.75.1",
-    "stable_date": "2026-11-09T15:26:45Z"
+    "stable": "v1.76.0",
+    "stable_date": "2026-11-10T19:31:28Z"
   },
   "hyzor/hyzor-morphe-patches": {
     "beta": "v1.6.2-dev.2",
