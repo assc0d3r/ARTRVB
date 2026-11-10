@@ -122,8 +122,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "1.0.29",
-    "stable_date": "2026-11-09T17:19:20Z"
+    "stable": "v1.0.29",
+    "stable_date": "2026-11-10T05:56:07Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
