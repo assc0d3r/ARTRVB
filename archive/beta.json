@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-09T22:52:04Z"
+    "publishedAt": "2026-11-10T06:03:54Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -397,22 +397,22 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "assc0d3r/patches-1.0.26.mpp",
+        "assc0d3r/patches-1.0.29.mpp",
         "jasonwu1994/patches-4.3.0-dev.1.mpp",
         "JacksonJones2003/patches-1.21.3-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp",
-        "jkennethcarino/patches-2.0.0-dev.3.mpp",
+        "jkennethcarino/patches-2.0.0-dev.4.mpp",
         "Mlkem/patches-1.0.0-dev.24.mpp",
         "Kirkland-Pickles/patches-0.1.3-dev.1.mpp",
         "markpaul099/patches-1.0.0-dev.2.mpp",
         "thrkingunknown/patches-1.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.26",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.29",
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.3.0-dev.1",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4",
-        "https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.3",
+        "https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.4",
         "https://github.com/Mlkem/Morphe/releases/tag/v1.0.0-dev.24",
         "https://github.com/Kirkland-Pickles/Gboard-offline-morphe/releases/tag/v0.1.3-dev.1",
         "https://github.com/markpaul099/gboard-gifs-extended/releases/tag/v1.0.0-dev.2",
@@ -477,8 +477,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260149",
-      "publishedAt": "2026-11-08T11:40:10Z"
+      "originBuild": "260162",
+      "publishedAt": "2026-11-10T06:03:30Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
