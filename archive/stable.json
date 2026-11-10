@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-10T13:11:43Z"
+    "publishedAt": "2026-11-10T16:29:15Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1826,10 +1826,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.1.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.1.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1900,6 +1900,7 @@
         "Miniplayer",
         "Mute button",
         "Niconico comments",
+        "On-the-go player",
         "Open Shorts in regular player",
         "Open channel of live avatar",
         "Open links externally",
@@ -1911,6 +1912,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist improvements",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
@@ -1939,14 +1941,13 @@
         "Video delay",
         "Video quality",
         "Voice over translation",
-        "Watch later improvements",
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260165",
+      "publishedAt": "2026-11-10T16:28:47Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
