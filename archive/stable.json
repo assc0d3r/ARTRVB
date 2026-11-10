@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-09T22:55:12Z"
+    "publishedAt": "2026-11-10T13:11:43Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -415,17 +415,16 @@
       "subVariant": null,
       "packageName": "com.twitter.android",
       "patchSources": [
-        "crimera/patches-3.11.0.mpp"
+        "crimera/patches-3.11.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0"
+        "https://github.com/crimera/piko/releases/tag/v3.11.1"
       ],
       "appliedPatches": [
         "Add ability to copy media link",
         "Block redirecting to X Lite",
         "Block update screen",
         "Change app icon",
-        "Change version code",
         "Clear tracking params",
         "Control video auto scroll",
         "Custom download folder",
@@ -492,10 +491,11 @@
         "Show poll results",
         "Show post source label",
         "Show sensitive media",
-        "Support external downloader"
+        "Support external downloader",
+        "Disable Play Store updates"
       ],
-      "originBuild": "260157",
-      "publishedAt": "2026-11-09T13:34:44Z"
+      "originBuild": "260164",
+      "publishedAt": "2026-11-10T13:11:09Z"
     },
     "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
