@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-10T20:11:16Z"
+    "publishedAt": "2026-11-11T16:30:06Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -115,10 +115,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.8.10.mpp"
+        "bearinmindcat/patches-2.9.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.10"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -152,8 +152,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260143",
-      "publishedAt": "2026-11-07T05:58:47Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -216,8 +216,8 @@
         "Remove Login",
         "Unlock Premium"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "adobe-scan-rushi-v26.08.01-arm64-v8a.apk": {
       "name": "adobe-scan-rushi",
@@ -384,10 +384,10 @@
       "subVariant": null,
       "packageName": "com.sonyliv",
       "patchSources": [
-        "durgesh0505/patches-1.25.0.mpp"
+        "durgesh0505/patches-1.27.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.25.0"
+        "https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.27.8"
       ],
       "appliedPatches": [
         "Auto skip intro and recap",
@@ -399,8 +399,8 @@
         "Remove video ads",
         "Suppress geo / VPN block"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
       "name": "twitter-piko",
@@ -494,8 +494,8 @@
         "Support external downloader",
         "Disable Play Store updates"
       ],
-      "originBuild": "260164",
-      "publishedAt": "2026-11-10T13:11:09Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -671,8 +671,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "wavelet-o0b-v26.05-arm64-v8a.apk": {
       "name": "wavelet-o0b",
@@ -687,16 +687,16 @@
       "subVariant": null,
       "packageName": "com.pittvandewitt.wavelet",
       "patchSources": [
-        "o0b/patches-1.9.0.mpp"
+        "o0b/patches-1.13.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/o0b/morphe-patches/releases/tag/v1.9.0"
+        "https://github.com/o0b/morphe-patches/releases/tag/v1.13.0"
       ],
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
@@ -726,8 +726,8 @@
         "Spoof install source",
         "Unlock Premium"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "vesselfinder-heval-v6.7.8-arm64-v8a.apk": {
       "name": "vesselfinder-heval",
@@ -751,8 +751,8 @@
         "Disable ads",
         "Disable license check"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "accuweather-rushi-v21.1.15-3-rc-arm64-v8a.apk": {
       "name": "accuweather-rushi",
@@ -775,8 +775,8 @@
       "appliedPatches": [
         "Unlock Premium+"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "soundcloud-v4n1x-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-v4n1x",
@@ -827,8 +827,8 @@
         "Hide projects ads",
         "Unlock Premium"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -1142,8 +1142,8 @@
         "Spoof app signature",
         "Spoof install source"
       ],
-      "originBuild": "260161",
-      "publishedAt": "2026-11-09T22:54:49Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "gboard-gboardpatches-module-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-gboardpatches",
@@ -1604,8 +1604,8 @@
         "Hide screenshot detection",
         "Monochrome icon support"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "gboard-combined-experimental-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined-experimental",
@@ -1946,8 +1946,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260165",
-      "publishedAt": "2026-11-10T16:28:47Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1975,8 +1975,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260145",
-      "publishedAt": "2026-11-07T11:33:59Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
@@ -2012,8 +2012,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260166",
-      "publishedAt": "2026-11-10T20:11:02Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2407,8 +2407,8 @@
         "Badge and logo colors",
         "Accent color"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "pinterest-pinterest-v14.39.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
@@ -2605,8 +2605,8 @@
         "View raw data",
         "Voice channel options"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "truecaller-heval99-v26.43.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -2644,8 +2644,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "sd-maid-se-rushi-v2.2.2-rc0-arm64-v8a.apk": {
       "name": "sd-maid-se-rushi",
@@ -2668,8 +2668,8 @@
       "appliedPatches": [
         "Unlock Pro"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "pinterest-pinterest-v14.43.0-arm64-v8a.apk": {
       "name": "pinterest-pinterest",
@@ -2728,8 +2728,8 @@
         "Show pin image information",
         "Use the system share sheet"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-11-06T16:16:01Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "messenger-hushmessenger-v586.0.0.55.92-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2865,8 +2865,8 @@
         "Disable consent popup",
         "Enable SoundCloud Go+"
       ],
-      "originBuild": "260141",
-      "publishedAt": "2026-11-06T19:57:33Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "instagram-hushgram-v454.0.0.54.77-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -3041,8 +3041,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260143",
-      "publishedAt": "2026-11-07T05:58:47Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     },
     "telegram-hushtelegram-v13.2.1-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
@@ -3133,8 +3133,8 @@
         "Voice messages in the music player",
         "Strip link tracking"
       ],
-      "originBuild": "260154",
-      "publishedAt": "2026-11-08T20:49:42Z"
+      "originBuild": "260172",
+      "publishedAt": "2026-11-11T16:28:59Z"
     }
   }
 }
