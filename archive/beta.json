@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-11T14:52:51Z"
+    "publishedAt": "2026-11-11T16:14:40Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -234,8 +234,8 @@
         "Remove Attribution",
         "Remove Login"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-11-06T16:01:27Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-gboardpatches",
@@ -372,17 +372,17 @@
       "subVariant": null,
       "packageName": "com.astrapaging.vff",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.1.mpp"
+        "heval99/patches-2.3.0-dev.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.6"
       ],
       "appliedPatches": [
         "Disable ads",
         "Disable license check"
       ],
-      "originBuild": "260140",
-      "publishedAt": "2026-11-06T19:52:18Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     },
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-combined",
@@ -402,7 +402,7 @@
         "JacksonJones2003/patches-1.21.3-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp",
         "jkennethcarino/patches-2.0.0-dev.4.mpp",
-        "Mlkem/patches-1.0.0-dev.24.mpp",
+        "Mlkem/patches-1.0.0-dev.25.mpp",
         "Kirkland-Pickles/patches-0.1.3-dev.1.mpp",
         "markpaul099/patches-1.0.0-dev.2.mpp",
         "thrkingunknown/patches-1.3.0.mpp"
@@ -413,7 +413,7 @@
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4",
         "https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.4",
-        "https://github.com/Mlkem/Morphe/releases/tag/v1.0.0-dev.24",
+        "https://github.com/Mlkem/Morphe/releases/tag/v1.0.0-dev.25",
         "https://github.com/Kirkland-Pickles/Gboard-offline-morphe/releases/tag/v0.1.3-dev.1",
         "https://github.com/markpaul099/gboard-gifs-extended/releases/tag/v1.0.0-dev.2",
         "https://github.com/thrkingunknown/gboard-theme-patch/releases/tag/v1.3.0"
@@ -473,8 +473,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260170",
-      "publishedAt": "2026-11-11T14:52:27Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
@@ -1245,8 +1245,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260167",
-      "publishedAt": "2026-11-11T12:20:41Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1291,10 +1291,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.1.mpp"
+        "MorpheApp/patches-2.3.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.1"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.1"
       ],
       "appliedPatches": [
         "App icon",
@@ -1328,8 +1328,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260144",
-      "publishedAt": "2026-11-07T11:30:31Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1425,8 +1425,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260160",
-      "publishedAt": "2026-11-09T22:51:47Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a.apk": {
       "name": "twitter-piko",
@@ -1762,8 +1762,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260167",
-      "publishedAt": "2026-11-11T12:20:41Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1790,8 +1790,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260167",
-      "publishedAt": "2026-11-11T12:20:41Z"
+      "originBuild": "260171",
+      "publishedAt": "2026-11-11T16:14:09Z"
     }
   }
 }
