@@ -1,4 +1,25 @@
 {
-  "stable": {},
+  "stable": {
+    "NovaLauncher-MightyMich": {
+      "reason": "retry",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 1,
+      "parked": false,
+      "run": 43054513776,
+      "ts": "2026-11-11T16:28:42Z"
+    },
+    "AdobeAcrobat-Rushi": {
+      "reason": "retry",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 1,
+      "parked": false,
+      "run": 43054513776,
+      "ts": "2026-11-11T16:28:42Z"
+    }
+  },
   "beta": {}
 }
