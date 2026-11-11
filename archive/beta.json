@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-11T12:21:04Z"
+    "publishedAt": "2026-11-11T13:07:29Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -397,7 +397,7 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "assc0d3r/patches-1.0.29.mpp",
+        "assc0d3r/patches-1.0.30.mpp",
         "jasonwu1994/patches-4.3.0-dev.1.mpp",
         "JacksonJones2003/patches-1.21.3-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp",
@@ -408,7 +408,7 @@
         "thrkingunknown/patches-1.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.29",
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.30",
         "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.3.0-dev.1",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4",
@@ -448,21 +448,17 @@
         "Floating Web Search",
         "Frosted Glass",
         "G Logo on Spacebar",
-        "Gboard Theme Builder",
         "Glass Panel",
         "Glass Press Effect",
-        "Glide Trail Customization",
         "Google Images GIF Search",
         "Grammar Checker",
         "Immersive Keyboard",
         "Inline Suggestions",
         "Key Mapper Watchdog",
         "Key Shape Selection",
-        "Keyboard Icon Packs",
         "Keypress Vibration Intensity Control",
         "Latin Globe Key Ignore Interval",
         "Long-Press Editing Shortcuts",
-        "Multilingual Suggestion",
         "Offline system voice typing",
         "Quick Insert",
         "Rounded Keyboard Panel",
@@ -477,8 +473,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260162",
-      "publishedAt": "2026-11-10T06:03:30Z"
+      "originBuild": "260168",
+      "publishedAt": "2026-11-11T13:07:07Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
