@@ -27,8 +27,8 @@
     "stable_date": "2026-10-31T14:34:12Z"
   },
   "Mlkem/Morphe": {
-    "beta": "v1.0.0-dev.24",
-    "beta_date": "2026-11-05T02:45:39Z",
+    "beta": "v1.0.0-dev.25",
+    "beta_date": "2026-11-11T14:32:37Z",
     "blocked": false,
     "host": "github",
     "repo": "Mlkem/Morphe",
@@ -122,8 +122,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "freebuff/rea-setup-and-installation-verification",
-    "stable_date": "2026-11-11T12:01:13Z"
+    "stable": "v1.0.30",
+    "stable_date": "2026-11-11T12:50:48Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",

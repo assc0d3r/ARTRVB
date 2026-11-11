@@ -1,0 +1,16 @@
+{
+  "assc0d3r/art-glidge-customization": {
+    "beta": {},
+    "stable": {
+      "com.google.android.inputmethod.latin": "7a14e54fd93370700465739822133e15",
+      "shared": "49f9fb5fc252b5326854355d0011fabb"
+    }
+  },
+  "mlkem/morphe": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "6ca2466c555a8246561f4c61a3bc83d6",
+      "shared": "c6da3a6a94f5a5aa93c508024c3738d4"
+    },
+    "stable": {}
+  }
+}

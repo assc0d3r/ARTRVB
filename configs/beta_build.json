@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -112,12 +112,12 @@
     "build-mode": "apk",
     "included-patches": "'Better translate UX' 'Key Mapper Watchdog' 'Disable Gboard floating and one-handed modes' ",
     "excluded-patches": "'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'Gboard AMOLED Theme Studio' 'ClipCascade sync' 'AMOLED Gboard Settings' 'Always-incognito mode' 'Remove network access' 'Change app name' 'Change package name' 'Incognito Mode Toggle' 'incognito_mode_toggle' 'manual_incognito' 'Toggle feature flags' ",
-    "apkmirror-dlurl" : "https://www.apkmirror.com/apk/google-inc/gboard/",
-    "uptodown-dlurl" : "https://gboard-go.uptodown.com/android",
-    "apkpure-dlurl" : "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/gboard/",
+    "uptodown-dlurl": "https://gboard-go.uptodown.com/android",
+    "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
   },
   "YouTube-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": " 'MorpheApp/morphe-patches' ",
@@ -132,7 +132,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "patches-source": "Akash-Sriram/morphe-google-photos",
@@ -174,7 +174,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -204,7 +204,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/nova-launcher/com.teslacoilsw.launcher"
   },
   "AdobeScan-Aidan": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.adobe.scan.android",
     "app-name": "Adobe Scan",
     "patches-source": "ihatenodejs/aidans-patches",
@@ -339,7 +339,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
     "version": "auto",
@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
