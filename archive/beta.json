@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-11T13:37:57Z"
+    "publishedAt": "2026-11-11T14:52:51Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -473,8 +473,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260169",
-      "publishedAt": "2026-11-11T13:37:37Z"
+      "originBuild": "260170",
+      "publishedAt": "2026-11-11T14:52:27Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
