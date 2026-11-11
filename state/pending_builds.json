@@ -1,4 +1,15 @@
 {
   "stable": {},
-  "beta": {}
+  "beta": {
+    "Google-Gboard-Combined": {
+      "reason": "retry",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 1,
+      "parked": false,
+      "run": 43034166099,
+      "ts": "2026-11-11T14:04:11Z"
+    }
+  }
 }
