@@ -8,9 +8,9 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "5832a3dc150855c6e2031c13c7aac62e",
-      "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
-      "shared": "f4493247a72aabe702c485a2e3726850"
+      "com.astrapaging.vff": "cbf815b0aecd84245dd5463ad5b7c35c",
+      "com.truecaller": "bef2cdb711726fe69b665215d0072413",
+      "shared": "cc731049083cedc164ae718dd0a8cc1a"
     },
     "stable": {
       "com.astrapaging.vff": "5832a3dc150855c6e2031c13c7aac62e",
@@ -20,8 +20,8 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "beb1324a7e74cfa0bf8209678b97c216",
-      "shared": "cdb1c7041cd90a9b6547990299a92f45"
+      "ch.protonvpn.android": "62b334ff34690dba6c97b64ec3db8974",
+      "shared": "c9bb0cf8a1047b0d9b94d061fd6ef43f"
     },
     "stable": {
       "ch.protonvpn.android": "beb1324a7e74cfa0bf8209678b97c216",
@@ -31,8 +31,8 @@
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
-      "pdb.app": "0a7bd6474d4e6c115d3fd29418ce38d0",
-      "shared": "6116e8f23d1131f489ab1dd2637a3cdd"
+      "pdb.app": "a04b90c9580035ad0d890f085ae82a11",
+      "shared": "7d89c8c51b81ad64c78408797385cff4"
     }
   },
   "mlkem/morphe": {
@@ -49,6 +49,13 @@
       "shared": "fdbcb260b126f5423950105d0ea83eec"
     },
     "stable": {}
+  },
+  "sysadmindoc/hushfacebook": {
+    "beta": {},
+    "stable": {
+      "com.facebook.katana": "4ab53df8d33710e26b86f61f8561a63c",
+      "shared": "ea64861181d16ffd833175438832fa63"
+    }
   },
   "sysadmindoc/hushtelegram": {
     "beta": {},

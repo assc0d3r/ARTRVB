@@ -50,8 +50,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.21.0",
-    "stable_date": "2026-11-05T14:35:40Z"
+    "stable": "v0.22.0",
+    "stable_date": "2026-11-12T22:10:23Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -162,8 +162,8 @@
     "stable_date": "2026-11-09T19:03:42Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.3.0-dev.8",
-    "beta_date": "2026-11-12T15:52:26Z",
+    "beta": "v2.4.0-dev.1",
+    "beta_date": "2026-11-12T20:36:59Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -180,8 +180,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.77.1-dev.1",
-    "beta_date": "2026-11-12T18:51:31Z",
+    "beta": "v1.78.0-dev.1",
+    "beta_date": "2026-11-12T21:22:35Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -239,8 +239,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.6.0",
-    "stable_date": "2026-11-12T01:28:57Z"
+    "stable": "v0.7.0",
+    "stable_date": "2026-11-12T20:38:39Z"
   },
   "markpaul099/gboard-gifs-extended": {
     "beta": "v1.0.0-dev.2",

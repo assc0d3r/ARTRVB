@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -101,7 +101,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'jasonwu1994/Gboard-patches' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches' 'jkennethcarino/adobo' 'Mlkem/Morphe' 'Kirkland-Pickles/Gboard-offline-morphe' 'markpaul099/gboard-gifs-extended' 'thrkingunknown/gboard-theme-patch' ",
@@ -174,7 +174,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -339,7 +339,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
     "version": "auto",
