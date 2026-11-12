@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -45,7 +45,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -73,7 +73,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -101,7 +101,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'jasonwu1994/Gboard-patches' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches' 'jkennethcarino/adobo' 'Mlkem/Morphe' 'Kirkland-Pickles/Gboard-offline-morphe' 'markpaul099/gboard-gifs-extended' 'thrkingunknown/gboard-theme-patch' ",
@@ -144,7 +144,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",
@@ -234,7 +234,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vn/com.frontrow.vlog"
   },
   "SonyLIV-TV-Chiggi": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.sonyliv",
     "app-name": "SonyLIV (Android TV)",
     "patches-source": "durgesh0505/chiggi_morphe_patches",
@@ -339,7 +339,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/wavelet/com.pittvandewitt.wavelet"
   },
   "VesselFinder-Heval": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.astrapaging.vff",
     "app-name": "VesselFinder",
     "version": "auto",

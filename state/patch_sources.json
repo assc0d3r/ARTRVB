@@ -27,8 +27,8 @@
     "stable_date": "2026-10-31T14:34:12Z"
   },
   "Mlkem/Morphe": {
-    "beta": "v1.0.0-dev.26",
-    "beta_date": "2026-11-12T01:14:11Z",
+    "beta": "v1.0.0-dev.29",
+    "beta_date": "2026-11-12T14:17:36Z",
     "blocked": false,
     "host": "github",
     "repo": "Mlkem/Morphe",
@@ -36,8 +36,8 @@
     "stable_date": ""
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.3.0-dev.1",
-    "beta_date": "2026-11-11T10:57:43Z",
+    "beta": "v2.3.0-dev.2",
+    "beta_date": "2026-11-12T13:58:32Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -162,13 +162,13 @@
     "stable_date": "2026-11-09T19:03:42Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.3.0-dev.6",
-    "beta_date": "2026-11-09T19:37:57Z",
+    "beta": "v2.3.0-dev.8",
+    "beta_date": "2026-11-12T15:52:26Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
-    "stable": "v2.2.0",
-    "stable_date": "2026-11-04T20:11:46Z"
+    "stable": "v2.3.0",
+    "stable_date": "2026-11-12T16:09:46Z"
   },
   "hsd-dles/morphe-patches": {
     "beta": "",

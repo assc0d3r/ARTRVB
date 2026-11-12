@@ -6,6 +6,18 @@
       "shared": "906507f5b5894b106d28299078af5d21"
     }
   },
+  "heval99/heval-morphe-patches": {
+    "beta": {
+      "com.astrapaging.vff": "5832a3dc150855c6e2031c13c7aac62e",
+      "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
+      "shared": "f4493247a72aabe702c485a2e3726850"
+    },
+    "stable": {
+      "com.astrapaging.vff": "5832a3dc150855c6e2031c13c7aac62e",
+      "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
+      "shared": "f4493247a72aabe702c485a2e3726850"
+    }
+  },
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "7882c3871ff70b2b62579ae38a8a7611",
@@ -25,8 +37,16 @@
   },
   "mlkem/morphe": {
     "beta": {
-      "com.google.android.inputmethod.latin": "b1c010f04db48acf7473032c7232b99e",
-      "shared": "8e05323d9a9314d20a466baf7c03c30c"
+      "com.google.android.inputmethod.latin": "3594d396e57858dcc8fe6af37590b964",
+      "shared": "a89cdc6fb0abd375e13aeabf267b328c"
+    },
+    "stable": {}
+  },
+  "morpheapp/morphe-patches": {
+    "beta": {
+      "com.google.android.youtube": "d9645ed8a1b5834a7799741c5a24203d",
+      "com.reddit.frontpage": "e2574334e5d99261589c5154b1330a92",
+      "shared": "fdbcb260b126f5423950105d0ea83eec"
     },
     "stable": {}
   }
