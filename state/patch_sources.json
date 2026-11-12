@@ -27,8 +27,8 @@
     "stable_date": "2026-10-31T14:34:12Z"
   },
   "Mlkem/Morphe": {
-    "beta": "v1.0.0-dev.29",
-    "beta_date": "2026-11-12T14:17:36Z",
+    "beta": "v1.0.0-dev.30",
+    "beta_date": "2026-11-12T18:12:14Z",
     "blocked": false,
     "host": "github",
     "repo": "Mlkem/Morphe",
@@ -86,8 +86,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushTelegram",
-    "stable": "v0.0.24",
-    "stable_date": "2026-11-08T18:41:32Z"
+    "stable": "v0.0.25",
+    "stable_date": "2026-11-12T17:17:57Z"
   },
   "V4n1X/morphe-patches": {
     "beta": "",
@@ -180,8 +180,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.77.0-dev.2",
-    "beta_date": "2026-11-12T05:18:33Z",
+    "beta": "v1.77.1-dev.1",
+    "beta_date": "2026-11-12T18:51:31Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

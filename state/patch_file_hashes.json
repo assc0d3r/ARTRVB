@@ -20,8 +20,8 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "7882c3871ff70b2b62579ae38a8a7611",
-      "shared": "cc93068e3bd153d92234c28857694710"
+      "ch.protonvpn.android": "beb1324a7e74cfa0bf8209678b97c216",
+      "shared": "cdb1c7041cd90a9b6547990299a92f45"
     },
     "stable": {
       "ch.protonvpn.android": "beb1324a7e74cfa0bf8209678b97c216",
@@ -37,8 +37,8 @@
   },
   "mlkem/morphe": {
     "beta": {
-      "com.google.android.inputmethod.latin": "3594d396e57858dcc8fe6af37590b964",
-      "shared": "a89cdc6fb0abd375e13aeabf267b328c"
+      "com.google.android.inputmethod.latin": "325be92b617d648f3dc98eac6cefd8db",
+      "shared": "53f7f63a8545a8bd9e992099fde6797a"
     },
     "stable": {}
   },
@@ -49,5 +49,12 @@
       "shared": "fdbcb260b126f5423950105d0ea83eec"
     },
     "stable": {}
+  },
+  "sysadmindoc/hushtelegram": {
+    "beta": {},
+    "stable": {
+      "org.telegram.messenger": "9e555e64e5872ac5586f88ab4dfeaf17",
+      "shared": "e25533eba00698df667c1238adacd9e2"
+    }
   }
 }
