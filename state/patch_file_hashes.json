@@ -2,8 +2,18 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "7a14e54fd93370700465739822133e15",
+      "com.google.android.inputmethod.latin": "9fe9ef1ff31f6eaafd6bd3ff74edabfb",
       "shared": "49f9fb5fc252b5326854355d0011fabb"
+    }
+  },
+  "hxreborn/morphe-patches": {
+    "beta": {
+      "ch.protonvpn.android": "7882c3871ff70b2b62579ae38a8a7611",
+      "shared": "cc93068e3bd153d92234c28857694710"
+    },
+    "stable": {
+      "ch.protonvpn.android": "beb1324a7e74cfa0bf8209678b97c216",
+      "shared": "d91dccb4c20c04cb198e6088aafb441f"
     }
   },
   "madushas/pdb_patch": {

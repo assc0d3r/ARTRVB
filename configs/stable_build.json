@@ -101,7 +101,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'jasonwu1994/Gboard-patches' 'JacksonJones2003/immersive-keyboard-patches' 'urroxyz/morphe-patches' 'jkennethcarino/adobo' 'Mlkem/Morphe' 'Kirkland-Pickles/Gboard-offline-morphe' 'markpaul099/gboard-gifs-extended' 'thrkingunknown/gboard-theme-patch' ",
@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
@@ -425,7 +425,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/telegram/org.telegram.messenger/"
   },
   "Pdbee-madushas": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "pdb.app",
     "app-name": "Pdbee",
     "patches-source": "madushas/pdb_patch",
