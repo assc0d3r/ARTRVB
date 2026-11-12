@@ -178,7 +178,7 @@
       ]
     },
     "pdbee-madushas-v2.135.1-arm64-v8a": {
-      "hash": "ee6d0283751ef4904e242a2ddb32c1f3",
+      "hash": "3dcd42136d07f2a595340383d885d02d",
       "kinds": [
         "apk"
       ]
@@ -203,6 +203,12 @@
     },
     "reddit-morphe-v2026.40.0-arm64-v8a": {
       "hash": "cb2bf3f27aa721c031a12d9b8fd87ac0",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "facebook-hushfacebook-v586.0.0.52.53-arm64-v8a": {
+      "hash": "6d02a346f503ba3fcca417f4d590bb8f",
       "kinds": [
         "apk"
       ]
