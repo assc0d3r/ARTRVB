@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260184",
+    "channel": "beta",
+    "publishedAt": "2026-11-12T22:30:56Z"
+  },
+  "files": {
+    "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.21.9.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.78.0-dev.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.78.0-dev.1"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Floating navigation bar",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260184",
+      "publishedAt": "2026-11-12T22:30:56Z"
+    },
+    "truecaller-heval99-v26.44.6-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.44.6",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-2.4.0-dev.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.4.0-dev.1"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Privacy defaults",
+        "Spoof signature",
+        "Use SMS for verification codes",
+        "Patch settings"
+      ],
+      "originBuild": "260184",
+      "publishedAt": "2026-11-12T22:30:56Z"
+    }
+  }
+}
