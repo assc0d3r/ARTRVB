@@ -27,8 +27,8 @@
     "stable_date": "2026-10-31T14:34:12Z"
   },
   "Mlkem/Morphe": {
-    "beta": "v1.0.0-dev.25",
-    "beta_date": "2026-11-11T14:32:37Z",
+    "beta": "v1.0.0-dev.26",
+    "beta_date": "2026-11-12T01:14:11Z",
     "blocked": false,
     "host": "github",
     "repo": "Mlkem/Morphe",
@@ -239,8 +239,8 @@
     "blocked": false,
     "host": "github",
     "repo": "madushas/pdb_patch",
-    "stable": "v0.5.9",
-    "stable_date": "2026-11-09T20:40:34Z"
+    "stable": "v0.6.0",
+    "stable_date": "2026-11-12T01:28:57Z"
   },
   "markpaul099/gboard-gifs-extended": {
     "beta": "v1.0.0-dev.2",

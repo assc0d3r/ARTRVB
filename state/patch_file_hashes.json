@@ -6,10 +6,17 @@
       "shared": "49f9fb5fc252b5326854355d0011fabb"
     }
   },
+  "madushas/pdb_patch": {
+    "beta": {},
+    "stable": {
+      "pdb.app": "0a7bd6474d4e6c115d3fd29418ce38d0",
+      "shared": "6116e8f23d1131f489ab1dd2637a3cdd"
+    }
+  },
   "mlkem/morphe": {
     "beta": {
-      "com.google.android.inputmethod.latin": "6ca2466c555a8246561f4c61a3bc83d6",
-      "shared": "c6da3a6a94f5a5aa93c508024c3738d4"
+      "com.google.android.inputmethod.latin": "b1c010f04db48acf7473032c7232b99e",
+      "shared": "8e05323d9a9314d20a466baf7c03c30c"
     },
     "stable": {}
   }
