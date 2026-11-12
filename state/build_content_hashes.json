@@ -38,13 +38,19 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
-      "hash": "0e300139f84200b11e24c05c67df8932",
+      "hash": "aafa384d18fddba01164b2b861a7e790",
       "kinds": [
         "apk"
       ]
     },
     "vesselfinder-heval-v6.7.8-arm64-v8a": {
       "hash": "e1f2e100e997fa8b73eb9e0c7d1e23ff",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "truecaller-heval99-v26.44.6-arm64-v8a": {
+      "hash": "5d06b0a30882adb070c6cbba01c6cdaa",
       "kinds": [
         "apk"
       ]
