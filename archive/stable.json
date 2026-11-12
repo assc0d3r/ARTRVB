@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-12T16:57:06Z"
+    "publishedAt": "2026-11-12T20:40:26Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1774,10 +1774,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "App icon",
@@ -1797,6 +1797,7 @@
         "Hide media viewer components",
         "Hide navigation buttons",
         "Hide sidebar components",
+        "High quality avatars",
         "Keep feed position",
         "Media viewer black background",
         "Media viewer fade",
@@ -1810,8 +1811,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-11-06T12:58:52Z"
+      "originBuild": "260183",
+      "publishedAt": "2026-11-12T20:40:05Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -2469,44 +2470,6 @@
       "originBuild": "260123",
       "publishedAt": "2026-11-04T20:27:15Z"
     },
-    "truecaller-heval99-v26.42.5-arm64-v8a.apk": {
-      "name": "truecaller-heval99",
-      "version": "26.42.5",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-2.1.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.1.0"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable auto-launch",
-        "Disable contact upload",
-        "Disable nags",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "GmsCore support",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide Wear OS settings",
-        "Hide family button",
-        "Hide promotions",
-        "Spoof signature",
-        "Use SMS for verification codes"
-      ],
-      "originBuild": "260123",
-      "publishedAt": "2026-11-04T20:27:15Z"
-    },
     "discord-venus-v351.11-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
       "version": "351.11-Stable",
@@ -3057,19 +3020,23 @@
       "subVariant": null,
       "packageName": "org.telegram.messenger",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.24.mpp"
+        "SysAdminDoc/patches-0.0.25.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.24"
+        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.25"
       ],
       "appliedPatches": [
         "AMOLED black",
         "Add Repeat to the message menu",
         "Allow chat blur on slower phones",
         "Ask before sending a sticker",
+        "Auto-forwarding rules",
         "Black and white launch logo",
         "Bot token sign-in",
+        "Bypass channel restrictions",
+        "Bypass integrity check",
         "Change sticker size",
+        "Chat preview buttons",
         "Disable analytics",
         "Disable call debug upload",
         "Disable chat swipe actions",
@@ -3081,6 +3048,7 @@
         "Exact numbers",
         "Faster downloads",
         "Folders by chat type",
+        "Free proxies",
         "Gallery camera on tap",
         "Hide Contacts tab",
         "Hide Premium, gifts and Stars",
@@ -3108,11 +3076,16 @@
         "HushTelegram icon and name",
         "HushTelegram settings",
         "Ignore mentions in muted chats",
+        "Keep captions with their photos",
         "Keep deleted messages",
         "Keep videos muted on volume keys",
+        "Lyrics and song dates",
         "Message times with seconds",
+        "My messages",
+        "Never send an uncropped photo",
         "Open links externally",
         "Play voice messages one at a time",
+        "Proxy in the chat list menu",
         "Quiet contacts nag",
         "Repair Firebase push registration",
         "Reveal spoilers",
@@ -3120,12 +3093,15 @@
         "Show user and chat IDs",
         "Silence people outside your contacts",
         "Start the camera on the rear lens",
+        "Suppress screenshot notification",
         "Swipe back on profiles",
         "Test server sign-in",
+        "Text direction",
         "Translate with an outside service",
         "Turn off haptic feedback",
         "Turn off reaction effects",
         "UnifiedPush notifications",
+        "Unlock Premium features",
         "Use normal paste",
         "Use registered Maps API key",
         "Use registered Telegram API credentials",
@@ -3133,8 +3109,8 @@
         "Voice messages in the music player",
         "Strip link tracking"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-11-11T16:28:59Z"
+      "originBuild": "260183",
+      "publishedAt": "2026-11-12T20:40:05Z"
     },
     "truecaller-heval99-v26.44.6-arm64-v8a.apk": {
       "name": "truecaller-heval99",
