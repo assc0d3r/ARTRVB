@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-12T08:16:48Z"
+    "publishedAt": "2026-11-12T09:21:48Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -420,6 +420,7 @@
       ],
       "appliedPatches": [
         "AI Writing Tools",
+        "AMOLED Gboard Settings",
         "Access Points menu style",
         "Add Gboard Signature Bypass",
         "Advanced Voice Typing",
@@ -478,8 +479,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260177",
-      "publishedAt": "2026-11-12T08:16:25Z"
+      "originBuild": "260178",
+      "publishedAt": "2026-11-12T09:21:27Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
