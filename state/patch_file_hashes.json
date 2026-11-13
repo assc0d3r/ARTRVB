@@ -6,6 +6,13 @@
       "shared": "906507f5b5894b106d28299078af5d21"
     }
   },
+  "bearinmindcat/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.google.android.apps.maps": "1dc31644f4e31c2788a9794f7e4c5e31",
+      "shared": "e34e9a16b5d90669c5f625401097ac29"
+    }
+  },
   "heval99/heval-morphe-patches": {
     "beta": {
       "com.astrapaging.vff": "cbf815b0aecd84245dd5463ad5b7c35c",
@@ -28,6 +35,13 @@
       "shared": "d91dccb4c20c04cb198e6088aafb441f"
     }
   },
+  "jasonwu1994/gboard-patches": {
+    "beta": {},
+    "stable": {
+      "com.google.android.inputmethod.latin": "dd9c8c212e4c5165d5a3b69cda35d53b",
+      "shared": "31bbdfda3c6f74e2650f76bbdf7715e5"
+    }
+  },
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
@@ -37,8 +51,8 @@
   },
   "mlkem/morphe": {
     "beta": {
-      "com.google.android.inputmethod.latin": "325be92b617d648f3dc98eac6cefd8db",
-      "shared": "53f7f63a8545a8bd9e992099fde6797a"
+      "com.google.android.inputmethod.latin": "217eae191a616069fe7c4aa735ce0aab",
+      "shared": "442b74e261f72b22dc41bd55a658cbb7"
     },
     "stable": {}
   },
