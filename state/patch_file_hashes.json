@@ -68,9 +68,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "d9645ed8a1b5834a7799741c5a24203d",
-      "com.reddit.frontpage": "e2574334e5d99261589c5154b1330a92",
-      "shared": "fdbcb260b126f5423950105d0ea83eec"
+      "com.google.android.youtube": "fe2e01e2619720fab2620432ff1fc9d5",
+      "com.reddit.frontpage": "693cfe70d1c7a44b522c3064337d9553",
+      "shared": "4f895125eaa9c8e0ea05385d8413bbb9"
     },
     "stable": {}
   },
