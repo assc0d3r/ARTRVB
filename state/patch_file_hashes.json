@@ -1,4 +1,11 @@
 {
+  "akash-sriram/morphe-google-photos": {
+    "beta": {
+      "com.google.android.apps.photos": "07dfe89a05c752c6eec74bf1d93ba8c3",
+      "shared": "796c2550311378527b1a1c1d14685ff2"
+    },
+    "stable": {}
+  },
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
@@ -10,7 +17,7 @@
     "beta": {},
     "stable": {
       "com.google.android.apps.maps": "1dc31644f4e31c2788a9794f7e4c5e31",
-      "shared": "e34e9a16b5d90669c5f625401097ac29"
+      "shared": "f47ba329d95d0f762d8e1cc33ace781d"
     }
   },
   "heval99/heval-morphe-patches": {
@@ -36,7 +43,10 @@
     }
   },
   "jasonwu1994/gboard-patches": {
-    "beta": {},
+    "beta": {
+      "com.google.android.inputmethod.latin": "0edb715d21e87bae7c4101db6b76ed61",
+      "shared": "4bc81fbb5699c0be5f6655e785bbbd81"
+    },
     "stable": {
       "com.google.android.inputmethod.latin": "dd9c8c212e4c5165d5a3b69cda35d53b",
       "shared": "31bbdfda3c6f74e2650f76bbdf7715e5"

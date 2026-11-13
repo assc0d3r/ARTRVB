@@ -1,7 +1,7 @@
 {
   "Akash-Sriram/morphe-google-photos": {
-    "beta": "v1.18.0-dev.7",
-    "beta_date": "2026-11-11T09:40:38Z",
+    "beta": "v1.18.0-dev.8",
+    "beta_date": "2026-11-13T01:12:13Z",
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.9.5",
-    "stable_date": "2026-11-13T00:07:12Z"
+    "stable": "v2.9.6",
+    "stable_date": "2026-11-13T02:50:37Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",
@@ -207,8 +207,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.3.0-dev.1",
-    "beta_date": "2026-11-07T06:14:50Z",
+    "beta": "v4.4.0-dev.1",
+    "beta_date": "2026-11-13T02:14:37Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
