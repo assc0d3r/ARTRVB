@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-12T22:31:17Z"
+    "publishedAt": "2026-11-13T01:05:40Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -172,40 +172,6 @@
         "Wide search bar",
         "Shorts icon style",
         "Player icon style"
-      ],
-      "originBuild": "260008",
-      "publishedAt": "2026-10-16T09:03:24Z"
-    },
-    "truecaller-heval99-v26.40.5-arm64-v8a.apk": {
-      "name": "truecaller-heval99",
-      "version": "26.40.5",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-1.15.0-dev.12.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.15.0-dev.12"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "GmsCore support",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide Wear OS settings",
-        "Hide family button",
-        "Spoof signature",
-        "Use SMS for verification codes"
       ],
       "originBuild": "260008",
       "publishedAt": "2026-10-16T09:03:24Z"
@@ -402,7 +368,7 @@
         "JacksonJones2003/patches-1.21.3-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp",
         "jkennethcarino/patches-2.0.0-dev.4.mpp",
-        "Mlkem/patches-1.0.0-dev.30.mpp",
+        "Mlkem/patches-1.0.0-dev.31.mpp",
         "Kirkland-Pickles/patches-0.1.3-dev.1.mpp",
         "markpaul099/patches-1.0.0-dev.2.mpp",
         "thrkingunknown/patches-1.3.0.mpp"
@@ -413,7 +379,7 @@
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4",
         "https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.4",
-        "https://github.com/Mlkem/Morphe/releases/tag/v1.0.0-dev.30",
+        "https://github.com/Mlkem/Morphe/releases/tag/v1.0.0-dev.31",
         "https://github.com/Kirkland-Pickles/Gboard-offline-morphe/releases/tag/v0.1.3-dev.1",
         "https://github.com/markpaul099/gboard-gifs-extended/releases/tag/v1.0.0-dev.2",
         "https://github.com/thrkingunknown/gboard-theme-patch/releases/tag/v1.3.0"
@@ -478,8 +444,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-11-12T20:36:46Z"
+      "originBuild": "260186",
+      "publishedAt": "2026-11-13T01:05:22Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
