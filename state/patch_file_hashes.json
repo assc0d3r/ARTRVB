@@ -42,6 +42,13 @@
       "shared": "d91dccb4c20c04cb198e6088aafb441f"
     }
   },
+  "hyzor/hyzor-morphe-patches": {
+    "beta": {
+      "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "stable": {}
+  },
   "jasonwu1994/gboard-patches": {
     "beta": {
       "com.google.android.inputmethod.latin": "0edb715d21e87bae7c4101db6b76ed61",

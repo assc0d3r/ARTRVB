@@ -1,7 +1,7 @@
 {
   "patches-version": "stable",
   "Pinterest": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
@@ -279,7 +279,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
     "version": "auto",
