@@ -3,7 +3,8 @@
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
       "hash": "9e219ae9c583cbe90caf5c7d24d9cfe6",
       "kinds": [
-        "apk"
+        "apk",
+        "module"
       ]
     },
     "truecaller-heval99-v26.43.5-arm64-v8a": {
