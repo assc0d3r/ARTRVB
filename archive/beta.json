@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-13T06:38:25Z"
+    "publishedAt": "2026-11-13T12:46:55Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1262,10 +1262,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "App icon",
@@ -1299,8 +1299,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-11-12T16:52:20Z"
+      "originBuild": "260189",
+      "publishedAt": "2026-11-13T12:46:24Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1612,10 +1612,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1623,6 +1623,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -1665,6 +1666,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "GmsCore support",
         "Hide Shorts components",
@@ -1699,6 +1701,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -1733,8 +1736,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-11-12T16:52:20Z"
+      "originBuild": "260189",
+      "publishedAt": "2026-11-13T12:46:24Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
