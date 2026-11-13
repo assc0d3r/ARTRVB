@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.19",
-    "stable_date": "2026-11-07T03:06:16Z"
+    "stable": "v0.0.20",
+    "stable_date": "2026-11-13T21:13:11Z"
   },
   "SysAdminDoc/HushMessenger": {
     "beta": "",
@@ -180,8 +180,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.78.0-dev.2",
-    "beta_date": "2026-11-13T13:33:10Z",
+    "beta": "v1.78.0-dev.3",
+    "beta_date": "2026-11-13T21:45:44Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
