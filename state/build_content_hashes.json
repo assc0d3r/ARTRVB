@@ -1,10 +1,9 @@
 {
   "beta": {
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
-      "hash": "aeaca64edbc35d63f580fca10b2ee706",
+      "hash": "7e7d88511c41a4c69fa8bd41e70fd2ea",
       "kinds": [
-        "apk",
-        "module"
+        "apk"
       ]
     },
     "truecaller-heval99-v26.43.5-arm64-v8a": {
@@ -38,7 +37,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
-      "hash": "aafa384d18fddba01164b2b861a7e790",
+      "hash": "b8e15c27c8db7009bbe1d230a7d89a2d",
       "kinds": [
         "apk"
       ]
