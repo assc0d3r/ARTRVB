@@ -27,8 +27,8 @@
     "stable_date": "2026-10-31T14:34:12Z"
   },
   "Mlkem/Morphe": {
-    "beta": "v1.0.0-dev.31",
-    "beta_date": "2026-11-12T23:33:17Z",
+    "beta": "v1.0.0-dev.32",
+    "beta_date": "2026-11-13T13:45:39Z",
     "blocked": false,
     "host": "github",
     "repo": "Mlkem/Morphe",
@@ -180,8 +180,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.78.0-dev.1",
-    "beta_date": "2026-11-12T21:22:35Z",
+    "beta": "v1.78.0-dev.2",
+    "beta_date": "2026-11-13T13:33:10Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

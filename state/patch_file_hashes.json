@@ -35,7 +35,7 @@
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "62b334ff34690dba6c97b64ec3db8974",
-      "shared": "c9bb0cf8a1047b0d9b94d061fd6ef43f"
+      "shared": "f72e96b70c80a123529a24596ccdd221"
     },
     "stable": {
       "ch.protonvpn.android": "beb1324a7e74cfa0bf8209678b97c216",
@@ -61,8 +61,8 @@
   },
   "mlkem/morphe": {
     "beta": {
-      "com.google.android.inputmethod.latin": "217eae191a616069fe7c4aa735ce0aab",
-      "shared": "442b74e261f72b22dc41bd55a658cbb7"
+      "com.google.android.inputmethod.latin": "2104e1159b2447a41c552d9d2ee5b42e",
+      "shared": "313b257b67cbcd59f29d465282ac3be0"
     },
     "stable": {}
   },
