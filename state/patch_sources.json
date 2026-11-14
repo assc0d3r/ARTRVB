@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushMessenger",
-    "stable": "v0.29.0",
-    "stable_date": "2026-11-06T15:31:40Z"
+    "stable": "v0.30.0",
+    "stable_date": "2026-11-14T20:31:18Z"
   },
   "SysAdminDoc/HushPinterest": {
     "beta": "",
@@ -77,8 +77,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushPinterest",
-    "stable": "v0.0.13",
-    "stable_date": "2026-10-23T04:10:04Z"
+    "stable": "v0.0.14",
+    "stable_date": "2026-11-14T19:25:47Z"
   },
   "SysAdminDoc/HushTelegram": {
     "beta": "",
@@ -162,8 +162,8 @@
     "stable_date": "2026-11-09T19:03:42Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.4.0-dev.3",
-    "beta_date": "2026-11-14T10:25:11Z",
+    "beta": "v3.0.0-dev.1",
+    "beta_date": "2026-11-14T18:45:07Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -189,8 +189,8 @@
     "stable_date": "2026-11-14T10:46:23Z"
   },
   "hyzor/hyzor-morphe-patches": {
-    "beta": "v1.7.0-dev.9",
-    "beta_date": "2026-11-14T00:03:13Z",
+    "beta": "v1.7.1-dev.1",
+    "beta_date": "2026-11-14T19:56:51Z",
     "blocked": false,
     "host": "github",
     "repo": "hyzor/hyzor-morphe-patches",

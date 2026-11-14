@@ -29,9 +29,9 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "1b9548418025acacd2ecf5d871b8af81",
-      "com.truecaller": "8bb14e69efdbdae1445b647e804944c6",
-      "shared": "48abc57a15fcf2f8d33adf011db47dd1"
+      "com.astrapaging.vff": "142d4721a22bd0762252f09851ac4007",
+      "com.truecaller": "72ac5c56d2a789ab8f8cc5824f765009",
+      "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
     },
     "stable": {
       "com.astrapaging.vff": "5832a3dc150855c6e2031c13c7aac62e",
@@ -103,6 +103,20 @@
     "stable": {
       "com.instagram.android": "99b585502cd0968ebcba6c1e2bc90089",
       "shared": "5b4ce1a69de0da311f8557515bb3fdba"
+    }
+  },
+  "sysadmindoc/hushmessenger": {
+    "beta": {},
+    "stable": {
+      "com.facebook.orca": "1c67e0b0ad1d8d5ad8421b09a4ab5713",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "sysadmindoc/hushpinterest": {
+    "beta": {},
+    "stable": {
+      "com.pinterest": "1e36934e2780012d8735ee35da3d70df",
+      "shared": "ba1dc08652cf62829274a92e15f61e97"
     }
   },
   "sysadmindoc/hushtelegram": {
