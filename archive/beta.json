@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-13T22:12:33Z"
+    "publishedAt": "2026-11-14T11:54:55Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1195,17 +1195,16 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.78.0-dev.3.mpp"
+        "hxreborn/patches-1.79.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.78.0-dev.3"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.79.0-dev.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
         "Custom accent color",
         "Disable telemetry",
         "Floating navigation bar",
-        "Frosted glass",
         "Hide upgrade promotions",
         "Material 3 switches",
         "Remove server change delay",
@@ -1217,8 +1216,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260191",
-      "publishedAt": "2026-11-13T22:12:16Z"
+      "originBuild": "260195",
+      "publishedAt": "2026-11-14T11:54:32Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1263,10 +1262,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.3.mpp"
+        "MorpheApp/patches-2.3.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.5"
       ],
       "appliedPatches": [
         "App icon",
@@ -1300,8 +1299,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260189",
-      "publishedAt": "2026-11-13T12:46:24Z"
+      "originBuild": "260195",
+      "publishedAt": "2026-11-14T11:54:32Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1613,10 +1612,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.3.mpp"
+        "MorpheApp/patches-2.3.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1737,8 +1736,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260189",
-      "publishedAt": "2026-11-13T12:46:24Z"
+      "originBuild": "260195",
+      "publishedAt": "2026-11-14T11:54:32Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1781,10 +1780,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.4.0-dev.1.mpp"
+        "heval99/patches-2.4.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.4.0-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.4.0-dev.3"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1805,8 +1804,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260184",
-      "publishedAt": "2026-11-12T22:30:56Z"
+      "originBuild": "260195",
+      "publishedAt": "2026-11-14T11:54:32Z"
     }
   }
 }
