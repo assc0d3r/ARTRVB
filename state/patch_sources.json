@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.9.7",
-    "stable_date": "2026-11-14T06:07:01Z"
+    "stable": "v2.9.8",
+    "stable_date": "2026-11-14T23:42:38Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",
@@ -189,8 +189,8 @@
     "stable_date": "2026-11-14T10:46:23Z"
   },
   "hyzor/hyzor-morphe-patches": {
-    "beta": "v1.7.1-dev.1",
-    "beta_date": "2026-11-14T19:56:51Z",
+    "beta": "v1.8.0-dev.2",
+    "beta_date": "2026-11-14T21:54:17Z",
     "blocked": false,
     "host": "github",
     "repo": "hyzor/hyzor-morphe-patches",
@@ -207,8 +207,8 @@
     "stable_date": "2026-10-17T20:42:10Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v4.4.0-dev.1",
-    "beta_date": "2026-11-13T02:14:37Z",
+    "beta": "v4.4.0-dev.2",
+    "beta_date": "2026-11-14T21:23:05Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
