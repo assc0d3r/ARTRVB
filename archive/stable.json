@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-14T06:18:41Z"
+    "publishedAt": "2026-11-14T11:56:30Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1866,10 +1866,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.78.0.mpp"
+        "hxreborn/patches-1.78.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.78.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.78.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1888,8 +1888,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260194",
-      "publishedAt": "2026-11-14T06:18:09Z"
+      "originBuild": "260196",
+      "publishedAt": "2026-11-14T11:56:17Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
