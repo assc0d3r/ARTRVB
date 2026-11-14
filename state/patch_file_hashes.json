@@ -16,8 +16,8 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "1dc31644f4e31c2788a9794f7e4c5e31",
-      "shared": "f47ba329d95d0f762d8e1cc33ace781d"
+      "com.google.android.apps.maps": "bada5822a0f451e8526b65f3f5da343c",
+      "shared": "d81f86bf5726fa729e87bd5956d47f33"
     }
   },
   "browzomje/browzomje-patches": {
@@ -45,8 +45,8 @@
       "shared": "35939b42dc2027b0f7bac9b519330be2"
     },
     "stable": {
-      "ch.protonvpn.android": "beb1324a7e74cfa0bf8209678b97c216",
-      "shared": "d91dccb4c20c04cb198e6088aafb441f"
+      "ch.protonvpn.android": "694731a36a683a3eb61495c75265fdd4",
+      "shared": "9bd21bac0080ec36ad94c5ab9c140e4b"
     }
   },
   "hyzor/hyzor-morphe-patches": {

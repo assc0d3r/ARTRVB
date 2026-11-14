@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.9.6",
-    "stable_date": "2026-11-13T02:50:37Z"
+    "stable": "v2.9.7",
+    "stable_date": "2026-11-14T06:07:01Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",
@@ -185,8 +185,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.77.0",
-    "stable_date": "2026-11-12T06:00:06Z"
+    "stable": "v1.78.0",
+    "stable_date": "2026-11-14T01:18:10Z"
   },
   "hyzor/hyzor-morphe-patches": {
     "beta": "v1.7.0-dev.9",
