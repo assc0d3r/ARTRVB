@@ -8,7 +8,8 @@
       "attempts": 1,
       "parked": false,
       "run": 43607515363,
-      "ts": "2026-11-14T15:05:10Z"
+      "ts": "2026-11-14T15:05:10Z",
+      "cfg": "a43ef4d7beb6134643f196baf90daa8b2c4925ae"
     }
   },
   "beta": {}
