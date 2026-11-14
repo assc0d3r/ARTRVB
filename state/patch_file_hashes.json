@@ -41,8 +41,8 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "136bed0e8c0898315e6e1e3e27e3d6c5",
-      "shared": "5949d7009d81a083a988ecec96e3a1f9"
+      "ch.protonvpn.android": "c4f2af6817d59fe88d757decd4e927ba",
+      "shared": "0581cdb41a70884a2d8327ab29e4dd01"
     },
     "stable": {
       "ch.protonvpn.android": "694731a36a683a3eb61495c75265fdd4",
@@ -54,7 +54,10 @@
       "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
     },
-    "stable": {}
+    "stable": {
+      "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    }
   },
   "jasonwu1994/gboard-patches": {
     "beta": {
