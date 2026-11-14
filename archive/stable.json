@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-14T21:03:00Z"
+    "publishedAt": "2026-11-14T23:58:11Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -115,10 +115,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.9.7.mpp"
+        "bearinmindcat/patches-2.9.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.7"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.8"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -154,8 +154,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260194",
-      "publishedAt": "2026-11-14T06:18:09Z"
+      "originBuild": "260201",
+      "publishedAt": "2026-11-14T23:57:44Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -1890,100 +1890,6 @@
       ],
       "originBuild": "260196",
       "publishedAt": "2026-11-14T11:56:17Z"
-    },
-    "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
-      "name": "messenger-hushmessenger",
-      "version": "585.0.0.53.94",
-      "appKey": "messenger",
-      "appName": "Messenger",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "hushmessenger",
-      "brandName": "HushMessenger",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.facebook.orca.hush",
-      "patchSources": [
-        "SysAdminDoc/patches-0.28.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/SysAdminDoc/HushMessenger/releases/tag/v0.28.0"
-      ],
-      "appliedPatches": [
-        "Allow chat bubbles",
-        "Allow screenshots",
-        "Android Auto messages",
-        "Auto reply",
-        "Bold and italic text",
-        "Clone install under another package name",
-        "Custom launcher icon",
-        "Custom new-message sound",
-        "Fix videos that won't send",
-        "GmsCore support",
-        "Hide AI sticker tools",
-        "Hide Chat Moments",
-        "Hide Facebook shortcuts",
-        "Hide Mark as read",
-        "Hide Meta AI",
-        "Hide Notifications tab",
-        "Hide People You May Know",
-        "Hide People tab",
-        "Hide Reels badge",
-        "Hide Your story when sharing",
-        "Hide ad banners in business chats",
-        "Hide avatar stickers",
-        "Hide business reply suggestions",
-        "Hide business typing suggestions",
-        "Hide chat promotions",
-        "Hide event prompts",
-        "Hide friend request cards",
-        "Hide growth prompts",
-        "Hide inbox promotions",
-        "Hide inbox tabs",
-        "Hide joined community chats",
-        "Hide read receipts",
-        "Hide stories and notes",
-        "Hide tab badges",
-        "Hide the Instants button",
-        "Hide the recent photo card",
-        "Hide typing indicator",
-        "Hold stories at the end",
-        "Ignore the swipe up for disappearing messages",
-        "Install beside Meta apps",
-        "Keep a message log",
-        "Keep emoji search on emoji",
-        "Keep unsent messages",
-        "Mark as read button",
-        "Material You theme",
-        "Open settings from menu",
-        "Open web links externally",
-        "Open your gallery app",
-        "Pin more chats",
-        "Put gallery picks in the chat",
-        "Quiet incoming calls",
-        "Restore old emoji drawer",
-        "Restore screens on re-signed builds",
-        "Save any story",
-        "Save voice messages you play",
-        "Send photos at original quality",
-        "Send videos without re-encoding",
-        "Slide chats in and out",
-        "Spoof package version",
-        "Square profile pictures",
-        "Stop ad attribution uploads",
-        "Stop analytics uploads",
-        "Stop app list and device ID sharing",
-        "Stop inbox and ad link logging",
-        "Stop live connection logging",
-        "Stop nearby scans",
-        "Unlock app icons",
-        "Use system emoji",
-        "Use the phone's camera app",
-        "Use your own font",
-        "View stories anonymously"
-      ],
-      "originBuild": "260096",
-      "publishedAt": "2026-10-31T17:32:23Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
