@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-14T20:59:16Z"
+    "publishedAt": "2026-11-14T23:55:40Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -364,7 +364,7 @@
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "assc0d3r/patches-1.0.32.mpp",
-        "jasonwu1994/patches-4.4.0-dev.1.mpp",
+        "jasonwu1994/patches-4.4.0-dev.2.mpp",
         "JacksonJones2003/patches-1.21.3-dev.1.mpp",
         "urroxyz/patches-0.0.4.mpp",
         "jkennethcarino/patches-2.0.0-dev.4.mpp",
@@ -375,7 +375,7 @@
       ],
       "changelogs": [
         "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.32",
-        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.4.0-dev.1",
+        "https://github.com/jasonwu1994/Gboard-patches/releases/tag/v4.4.0-dev.2",
         "https://github.com/JacksonJones2003/immersive-keyboard-patches/releases/tag/v1.21.3-dev.1",
         "https://github.com/urroxyz/morphe-patches/releases/tag/v0.0.4",
         "https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.4",
@@ -444,8 +444,8 @@
         "Use Bluetooth Microphone",
         "GIFs Extended settings"
       ],
-      "originBuild": "260190",
-      "publishedAt": "2026-11-13T16:14:57Z"
+      "originBuild": "260200",
+      "publishedAt": "2026-11-14T23:55:20Z"
     },
     "gboard-combined-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined",
