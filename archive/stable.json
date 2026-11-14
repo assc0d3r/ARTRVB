@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-14T00:59:12Z"
+    "publishedAt": "2026-11-14T06:18:41Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -115,10 +115,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.9.5.mpp"
+        "bearinmindcat/patches-2.9.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.5"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.7"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -136,7 +136,9 @@
         "Follow playing media",
         "Hide ads and clutter",
         "Legacy icon",
+        "Light map",
         "Location provider toggle",
+        "Map region",
         "Media panel can be closed",
         "Offline saved places",
         "Proxy",
@@ -152,8 +154,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260187",
-      "publishedAt": "2026-11-13T01:07:51Z"
+      "originBuild": "260194",
+      "publishedAt": "2026-11-14T06:18:09Z"
     },
     "telegram-rushiranpise-google-play-v12.10.1-arm64-v8a.apk": {
       "name": "telegram-rushiranpise-google-play",
@@ -1819,8 +1821,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-11-11T16:28:59Z"
+      "originBuild": "260194",
+      "publishedAt": "2026-11-14T06:18:09Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1864,16 +1866,17 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.77.0.mpp"
+        "hxreborn/patches-1.78.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.77.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.78.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
         "Custom accent color",
         "Disable telemetry",
         "Floating navigation bar",
+        "Frosted glass",
         "Hide upgrade promotions",
         "Material 3 switches",
         "Remove server change delay",
@@ -1885,8 +1888,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260176",
-      "publishedAt": "2026-11-12T07:08:04Z"
+      "originBuild": "260194",
+      "publishedAt": "2026-11-14T06:18:09Z"
     },
     "messenger-hushmessenger-v585.0.0.53.94-arm64-v8a.apk": {
       "name": "messenger-hushmessenger",
@@ -2282,65 +2285,6 @@
       ],
       "originBuild": "260181",
       "publishedAt": "2026-11-12T16:56:37Z"
-    },
-    "pinterest-pinterest-v14.39.0-arm64-v8a.apk": {
-      "name": "pinterest-pinterest",
-      "version": "14.39.0",
-      "appKey": "pinterest",
-      "appName": "Pinterest",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "pinterest",
-      "brandName": "Pinterest",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.pinterest",
-      "patchSources": [
-        "SysAdminDoc/patches-0.0.13.mpp",
-        "browzomje/patches-1.14.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.13",
-        "https://github.com/browzomje/browzomje-patches/releases/tag/v1.14.1"
-      ],
-      "appliedPatches": [
-        "Choose startup tab",
-        "Copy direct link",
-        "Disable AppsFlyer tracking",
-        "Disable Google Engage",
-        "Disable Google Engage worker",
-        "Disable ads",
-        "Disable email confirmation dialog",
-        "Disable third-party trackers",
-        "Download board",
-        "Download images in highest available quality",
-        "Download pin from long press",
-        "Download video",
-        "Filter pin menu actions",
-        "Hide Create nav button",
-        "Hide Notifications nav button",
-        "Hide Search nav button",
-        "Hide ad views",
-        "Hide comments",
-        "Hide greeting header buttons",
-        "Hide save for later tooltip",
-        "Hide screenshot share menu",
-        "Hide search history",
-        "Keep Home feed",
-        "Morphe runtime names",
-        "Morphe settings entry",
-        "Morphe settings screen (label)",
-        "Morphe settings screen (manifest)",
-        "Neutralize advertising ID",
-        "Open links in the default browser",
-        "Sanitize copied links",
-        "Sanitize shared links",
-        "Set pin as wallpaper",
-        "Show pin image information",
-        "Use the system share sheet"
-      ],
-      "originBuild": "260123",
-      "publishedAt": "2026-11-04T20:27:15Z"
     },
     "discord-venus-v351.11-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
