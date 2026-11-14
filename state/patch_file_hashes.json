@@ -29,9 +29,9 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "cbf815b0aecd84245dd5463ad5b7c35c",
-      "com.truecaller": "bef2cdb711726fe69b665215d0072413",
-      "shared": "cc731049083cedc164ae718dd0a8cc1a"
+      "com.astrapaging.vff": "1b9548418025acacd2ecf5d871b8af81",
+      "com.truecaller": "8bb14e69efdbdae1445b647e804944c6",
+      "shared": "48abc57a15fcf2f8d33adf011db47dd1"
     },
     "stable": {
       "com.astrapaging.vff": "5832a3dc150855c6e2031c13c7aac62e",
@@ -41,12 +41,12 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "694731a36a683a3eb61495c75265fdd4",
-      "shared": "35939b42dc2027b0f7bac9b519330be2"
+      "ch.protonvpn.android": "136bed0e8c0898315e6e1e3e27e3d6c5",
+      "shared": "5949d7009d81a083a988ecec96e3a1f9"
     },
     "stable": {
       "ch.protonvpn.android": "694731a36a683a3eb61495c75265fdd4",
-      "shared": "9bd21bac0080ec36ad94c5ab9c140e4b"
+      "shared": "0c9d85466ef3f1a2549cc1621d86ee36"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -82,9 +82,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "fe2e01e2619720fab2620432ff1fc9d5",
-      "com.reddit.frontpage": "693cfe70d1c7a44b522c3064337d9553",
-      "shared": "4f895125eaa9c8e0ea05385d8413bbb9"
+      "com.google.android.youtube": "6724c6fe32f4d324ac95b2287eab340c",
+      "com.reddit.frontpage": "12056505f5b27f55a435ad2a31c1ae92",
+      "shared": "07429c752574f3ab298ee5d5d01b683e"
     },
     "stable": {}
   },
