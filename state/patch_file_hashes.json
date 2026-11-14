@@ -20,6 +20,13 @@
       "shared": "f47ba329d95d0f762d8e1cc33ace781d"
     }
   },
+  "browzomje/browzomje-patches": {
+    "beta": {},
+    "stable": {
+      "com.pinterest": "a470419c9723729f2420d8ec601ab4f3",
+      "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
+    }
+  },
   "heval99/heval-morphe-patches": {
     "beta": {
       "com.astrapaging.vff": "cbf815b0aecd84245dd5463ad5b7c35c",

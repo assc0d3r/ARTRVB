@@ -140,8 +140,8 @@
     "blocked": false,
     "host": "github",
     "repo": "browzomje/browzomje-patches",
-    "stable": "v1.16.1",
-    "stable_date": "2026-11-05T22:54:15Z"
+    "stable": "v1.17.0",
+    "stable_date": "2026-11-14T00:26:47Z"
   },
   "crimera/piko": {
     "beta": "v3.11.1-dev.1",
@@ -189,8 +189,8 @@
     "stable_date": "2026-11-12T06:00:06Z"
   },
   "hyzor/hyzor-morphe-patches": {
-    "beta": "v1.7.0-dev.8",
-    "beta_date": "2026-11-13T19:51:08Z",
+    "beta": "v1.7.0-dev.9",
+    "beta_date": "2026-11-14T00:03:13Z",
     "blocked": false,
     "host": "github",
     "repo": "hyzor/hyzor-morphe-patches",
