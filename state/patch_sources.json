@@ -194,8 +194,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hyzor/hyzor-morphe-patches",
-    "stable": "v1.9.0",
-    "stable_date": "2026-11-15T17:25:48Z"
+    "stable": "v1.9.1",
+    "stable_date": "2026-11-15T23:30:38Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
