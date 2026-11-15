@@ -544,7 +544,7 @@
       ],
       "cfg": {
         "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'Akshayykadam/PixelBoard' 'johninnld/nl-morphe-patches' 'urroxyz/morphe-patches' 'jkennethcarino/adobo'  'Kirkland-Pickles/Gboard-offline-morphe' 'kveld9/kveld-morphe-patches' 'gboard-ios-style-jp-en-morphe-patches' ",
-        "patches-source-host": "gitlab",
+        "patches-source-host": "github github gitlab github github github github github",
         "brand": "Combined",
         "app-name": "Gboard",
         "pkg-name": "com.google.android.inputmethod.latin",
