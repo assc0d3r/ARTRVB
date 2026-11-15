@@ -131,8 +131,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.9.10",
-    "stable_date": "2026-11-15T12:52:36Z"
+    "stable": "v2.9.11",
+    "stable_date": "2026-11-15T18:42:28Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",
@@ -189,13 +189,13 @@
     "stable_date": "2026-11-15T07:52:45Z"
   },
   "hyzor/hyzor-morphe-patches": {
-    "beta": "v1.9.0-dev.1",
-    "beta_date": "2026-11-15T14:51:00Z",
+    "beta": "v1.9.1-dev.1",
+    "beta_date": "2026-11-15T18:34:08Z",
     "blocked": false,
     "host": "github",
     "repo": "hyzor/hyzor-morphe-patches",
-    "stable": "v1.8.0",
-    "stable_date": "2026-11-15T14:28:19Z"
+    "stable": "v1.9.0",
+    "stable_date": "2026-11-15T17:25:48Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.9.0-dev.7",
