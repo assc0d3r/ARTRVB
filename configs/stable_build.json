@@ -60,7 +60,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -73,7 +73,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -144,7 +144,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",

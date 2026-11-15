@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
