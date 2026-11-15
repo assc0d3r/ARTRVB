@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-15T15:42:45Z"
+    "publishedAt": "2026-11-15T19:16:34Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -496,8 +496,8 @@
         "Support external downloader",
         "Disable Play Store updates"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-11-11T16:28:59Z"
+      "originBuild": "260206",
+      "publishedAt": "2026-11-15T19:15:59Z"
     },
     "vn-video-editor-riky-v2.20.0-arm64-v8a.apk": {
       "name": "vn-video-editor-riky",
@@ -3234,10 +3234,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.9.10.mpp"
+        "bearinmindcat/patches-2.9.11.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.10"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.11"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -3273,8 +3273,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260205",
-      "publishedAt": "2026-11-15T15:42:23Z"
+      "originBuild": "260206",
+      "publishedAt": "2026-11-15T19:15:59Z"
     }
   }
 }
