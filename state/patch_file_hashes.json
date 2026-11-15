@@ -41,12 +41,12 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "c4f2af6817d59fe88d757decd4e927ba",
-      "shared": "0581cdb41a70884a2d8327ab29e4dd01"
+      "ch.protonvpn.android": "bb4dfd1a0204c6e069dae2d69f6adf49",
+      "shared": "6512a0a4ff597f0d7b61edf887c26474"
     },
     "stable": {
-      "ch.protonvpn.android": "694731a36a683a3eb61495c75265fdd4",
-      "shared": "0c9d85466ef3f1a2549cc1621d86ee36"
+      "ch.protonvpn.android": "bb4dfd1a0204c6e069dae2d69f6adf49",
+      "shared": "4db8c406aebc22b64f7cb6dbfdf73dac"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -85,9 +85,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "6724c6fe32f4d324ac95b2287eab340c",
+      "com.google.android.youtube": "f612d6a1a515d4064e2e402a6e39e344",
       "com.reddit.frontpage": "12056505f5b27f55a435ad2a31c1ae92",
-      "shared": "07429c752574f3ab298ee5d5d01b683e"
+      "shared": "e67d4782e89f303c802c4bfbde606221"
     },
     "stable": {}
   },
