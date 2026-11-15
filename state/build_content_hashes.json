@@ -230,6 +230,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "google-maps-bearinmindcat-v26.44.06.1006895251-arm64-v8a": {
+      "hash": "884978fe24085a90b51aeb7b64eedb23",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
