@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-16T06:24:25Z"
+    "publishedAt": "2026-11-16T13:21:15Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1648,10 +1648,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "App icon",
@@ -1685,8 +1685,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260183",
-      "publishedAt": "2026-11-12T20:40:05Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-11-16T13:20:51Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1701,10 +1701,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1712,6 +1712,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -1746,7 +1747,6 @@
         "Double tap to seek",
         "Download post images",
         "Downloads",
-        "Enable debugging",
         "Exit fullscreen mode",
         "Feed card layout",
         "Feed video actions",
@@ -1754,6 +1754,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "GmsCore support",
         "Hide Shorts components",
@@ -1770,6 +1771,7 @@
         "Hide status bar",
         "Hide timestamp",
         "Hide video action buttons",
+        "Loop count",
         "Loop video",
         "Media notification controls",
         "Miniplayer",
@@ -1787,6 +1789,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -1819,10 +1822,11 @@
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
-        "Navigation bar"
+        "Navigation bar",
+        "Enable debugging"
       ],
-      "originBuild": "260194",
-      "publishedAt": "2026-11-14T06:18:09Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-11-16T13:20:51Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1865,10 +1869,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.79.0.mpp"
+        "hxreborn/patches-1.80.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.79.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.80.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1886,8 +1890,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260204",
-      "publishedAt": "2026-11-15T12:26:06Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-11-16T13:20:51Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -3233,10 +3237,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.9.11.mpp"
+        "bearinmindcat/patches-2.10.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.11"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -3272,8 +3276,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260206",
-      "publishedAt": "2026-11-15T19:15:59Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-11-16T13:20:51Z"
     }
   }
 }
