@@ -37,15 +37,15 @@
       "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
     },
     "stable": {
-      "com.astrapaging.vff": "5832a3dc150855c6e2031c13c7aac62e",
-      "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
-      "shared": "f4493247a72aabe702c485a2e3726850"
+      "com.astrapaging.vff": "c310317d9a72bc49d8f6b59f4d0d8f2c",
+      "com.truecaller": "8cbabf0ea0d56903cba0ed140168ff25",
+      "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
     }
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "2697d45324414f77564f94b4d3d7c192",
-      "shared": "00cf4d3641899e50d588bad2d05eb8a4"
+      "ch.protonvpn.android": "e32b8082e184e9f37fd0b17091457d9b",
+      "shared": "96d582518a50c05a1ff1e73e7c67b3e2"
     },
     "stable": {
       "ch.protonvpn.android": "2697d45324414f77564f94b4d3d7c192",
