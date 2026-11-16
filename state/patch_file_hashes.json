@@ -4,7 +4,10 @@
       "com.google.android.apps.photos": "07dfe89a05c752c6eec74bf1d93ba8c3",
       "shared": "796c2550311378527b1a1c1d14685ff2"
     },
-    "stable": {}
+    "stable": {
+      "com.google.android.apps.photos": "e605462c67660db4932e16e466c992c2",
+      "shared": "38be9df14e7e796bc4be389a6a7c5618"
+    }
   },
   "assc0d3r/art-glidge-customization": {
     "beta": {},
@@ -69,6 +72,13 @@
       "shared": "31bbdfda3c6f74e2650f76bbdf7715e5"
     }
   },
+  "kveld9/kveld-extra-morphe-patches": {
+    "beta": {},
+    "stable": {
+      "eu.darken.sdmse": "27d52f580b208536555d9d7abe6f47b6",
+      "shared": "8c596826f8268a84fc743ae41ed37d10"
+    }
+  },
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
@@ -78,8 +88,8 @@
   },
   "mlkem/morphe": {
     "beta": {
-      "com.google.android.inputmethod.latin": "2104e1159b2447a41c552d9d2ee5b42e",
-      "shared": "313b257b67cbcd59f29d465282ac3be0"
+      "com.google.android.inputmethod.latin": "d2c38af55d8c0e631c13484122876082",
+      "shared": "f58f69ea942b111fad1566db53d6f115"
     },
     "stable": {}
   },

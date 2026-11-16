@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.17.11",
-    "stable_date": "2026-11-07T09:58:13Z"
+    "stable": "v1.18.0",
+    "stable_date": "2026-11-16T01:23:36Z"
   },
   "JacksonJones2003/immersive-keyboard-patches": {
     "beta": "v1.21.3-dev.1",
@@ -27,8 +27,8 @@
     "stable_date": "2026-10-31T14:34:12Z"
   },
   "Mlkem/Morphe": {
-    "beta": "v1.0.0-dev.32",
-    "beta_date": "2026-11-13T13:45:39Z",
+    "beta": "v1.0.0-dev.33",
+    "beta_date": "2026-11-16T04:34:54Z",
     "blocked": false,
     "host": "github",
     "repo": "Mlkem/Morphe",
@@ -189,8 +189,8 @@
     "stable_date": "2026-11-15T07:52:45Z"
   },
   "hyzor/hyzor-morphe-patches": {
-    "beta": "v1.9.1-dev.1",
-    "beta_date": "2026-11-15T18:34:08Z",
+    "beta": "v1.10.0-dev.2",
+    "beta_date": "2026-11-16T02:14:02Z",
     "blocked": false,
     "host": "github",
     "repo": "hyzor/hyzor-morphe-patches",
@@ -230,8 +230,8 @@
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-extra-morphe-patches",
-    "stable": "v1.31.0",
-    "stable_date": "2026-10-30T20:05:26Z"
+    "stable": "v1.32.1",
+    "stable_date": "2026-11-16T03:59:20Z"
   },
   "madushas/pdb_patch": {
     "beta": "",
