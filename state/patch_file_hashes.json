@@ -1,8 +1,8 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "07dfe89a05c752c6eec74bf1d93ba8c3",
-      "shared": "796c2550311378527b1a1c1d14685ff2"
+      "com.google.android.apps.photos": "2e1ab4272f960418d1c23c0678c6ea04",
+      "shared": "6f9a04af9a32e1cb29ab30cea9f316f1"
     },
     "stable": {
       "com.google.android.apps.photos": "e605462c67660db4932e16e466c992c2",
@@ -19,8 +19,8 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "f80bc701035bd07f97c329a53b9cc015",
-      "shared": "d81f86bf5726fa729e87bd5956d47f33"
+      "com.google.android.apps.maps": "5ff1c78c65697c88566fb641bd4abc7f",
+      "shared": "ebe7d0cbb8863cd2f683202e7f6fc86e"
     }
   },
   "browzomje/browzomje-patches": {
@@ -44,12 +44,12 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "3b2baf080ae6eca727a1e760d5379eb0",
-      "shared": "ab04f8e8e746e6033eeaf0752a0cccc7"
+      "ch.protonvpn.android": "2697d45324414f77564f94b4d3d7c192",
+      "shared": "4b2f7f88c4a7c6630b7d46c24e3acfff"
     },
     "stable": {
-      "ch.protonvpn.android": "bb4dfd1a0204c6e069dae2d69f6adf49",
-      "shared": "4db8c406aebc22b64f7cb6dbfdf73dac"
+      "ch.protonvpn.android": "2697d45324414f77564f94b4d3d7c192",
+      "shared": "5af37ce75def162183f2d17f641c1c26"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -95,11 +95,15 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "f612d6a1a515d4064e2e402a6e39e344",
-      "com.reddit.frontpage": "12056505f5b27f55a435ad2a31c1ae92",
-      "shared": "e67d4782e89f303c802c4bfbde606221"
+      "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
+      "com.reddit.frontpage": "4146a108c15067fae73312586efc2dde",
+      "shared": "19c080895fc4849a352c98f64dc0d767"
     },
-    "stable": {}
+    "stable": {
+      "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
+      "com.reddit.frontpage": "4146a108c15067fae73312586efc2dde",
+      "shared": "19c080895fc4849a352c98f64dc0d767"
+    }
   },
   "sysadmindoc/hushfacebook": {
     "beta": {},
