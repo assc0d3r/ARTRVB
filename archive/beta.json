@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-16T13:17:44Z"
+    "publishedAt": "2026-11-16T18:28:08Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -338,17 +338,17 @@
       "subVariant": null,
       "packageName": "com.astrapaging.vff",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.6.mpp"
+        "heval99/patches-3.0.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.6"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0-dev.2"
       ],
       "appliedPatches": [
         "Disable ads",
         "Disable license check"
       ],
-      "originBuild": "260171",
-      "publishedAt": "2026-11-11T16:14:09Z"
+      "originBuild": "260215",
+      "publishedAt": "2026-11-16T18:27:44Z"
     },
     "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-combined",
@@ -1195,10 +1195,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.80.0-dev.1.mpp"
+        "hxreborn/patches-1.80.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.80.0-dev.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.80.1-dev.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1216,8 +1216,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260207",
-      "publishedAt": "2026-11-15T21:15:41Z"
+      "originBuild": "260215",
+      "publishedAt": "2026-11-16T18:27:44Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1781,10 +1781,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-3.0.0-dev.1.mpp"
+        "heval99/patches-3.0.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0-dev.2"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1805,8 +1805,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260198",
-      "publishedAt": "2026-11-14T20:58:59Z"
+      "originBuild": "260215",
+      "publishedAt": "2026-11-16T18:27:44Z"
     },
     "gboard-combined-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-combined",
