@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-16T14:32:42Z"
+    "publishedAt": "2026-11-16T14:37:50Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3300,6 +3300,28 @@
       "appliedPatches": [],
       "originBuild": "260213",
       "publishedAt": "2026-11-16T14:32:22Z"
+    },
+    "whatsapp-xposed-modules-repo-v2.26.45.94-arm64-v8a.apk": {
+      "name": "whatsapp-xposed-modules-repo",
+      "version": "2.26.45.94",
+      "appKey": "whatsapp",
+      "appName": "WHATSAPP",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "xposedmodulesrepo",
+      "brandName": "Xposed-Modules-Repo",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.whatsapp",
+      "patchSources": [
+        "Xposed-Modules-Repo/WaEnhancerX-v2.0.7_release.apk"
+      ],
+      "changelogs": [
+        "https://github.com/Xposed-Modules-Repo/com.waenhancer/releases/tag/20700-2.0.7"
+      ],
+      "appliedPatches": [],
+      "originBuild": "260214",
+      "publishedAt": "2026-11-16T14:37:24Z"
     }
   }
 }
