@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-16T14:37:50Z"
+    "publishedAt": "2026-11-16T22:45:58Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -744,17 +744,17 @@
       "subVariant": null,
       "packageName": "com.astrapaging.vff",
       "patchSources": [
-        "heval99/patches-2.2.0.mpp"
+        "heval99/patches-3.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.2.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0"
       ],
       "appliedPatches": [
         "Disable ads",
         "Disable license check"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-11-11T16:28:59Z"
+      "originBuild": "260217",
+      "publishedAt": "2026-11-16T22:45:12Z"
     },
     "accuweather-rushi-v21.1.15-3-rc-arm64-v8a.apk": {
       "name": "accuweather-rushi",
@@ -1016,8 +1016,8 @@
         "Spoof app signature",
         "Spoof install source"
       ],
-      "originBuild": "260185",
-      "publishedAt": "2026-11-12T22:35:03Z"
+      "originBuild": "260217",
+      "publishedAt": "2026-11-16T22:45:12Z"
     },
     "gboard-gboardpatches-module-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-gboardpatches",
@@ -2749,8 +2749,8 @@
         "View stories anonymously",
         "Watch again in the feed"
       ],
-      "originBuild": "260192",
-      "publishedAt": "2026-11-13T22:15:46Z"
+      "originBuild": "260217",
+      "publishedAt": "2026-11-16T22:45:12Z"
     },
     "telegram-hushtelegram-v13.2.1-arm64-v8a.apk": {
       "name": "telegram-hushtelegram",
@@ -2870,10 +2870,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0.mpp"
+        "heval99/patches-3.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -2894,8 +2894,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260181",
-      "publishedAt": "2026-11-12T16:56:37Z"
+      "originBuild": "260217",
+      "publishedAt": "2026-11-16T22:45:12Z"
     },
     "facebook-hushfacebook-v586.0.0.52.53-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
