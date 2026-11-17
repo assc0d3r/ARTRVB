@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-17T06:12:42Z"
+    "publishedAt": "2026-11-17T14:04:26Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1869,10 +1869,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.80.0.mpp"
+        "hxreborn/patches-1.81.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.80.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.81.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1890,8 +1890,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260212",
-      "publishedAt": "2026-11-16T13:20:51Z"
+      "originBuild": "260222",
+      "publishedAt": "2026-11-17T14:04:10Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
