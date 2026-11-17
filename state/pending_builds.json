@@ -10,7 +10,26 @@
       "run": 44097232567,
       "ts": "2026-11-17T14:04:01Z",
       "cfg": "a43ef4d7beb6134643f196baf90daa8b2c4925ae"
+    },
+    "Google-Gboard-Combined": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "c2f4fd1b24d818317f621c549b057db8700cbdc4"
     }
   },
-  "beta": {}
+  "beta": {
+    "Google-Gboard-Combined": {
+      "reason": "config",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 0,
+      "parked": false,
+      "cfg": "c2f4fd1b24d818317f621c549b057db8700cbdc4"
+    }
+  }
 }
