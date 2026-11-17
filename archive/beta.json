@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-17T17:40:17Z"
+    "publishedAt": "2026-11-17T21:32:50Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1195,10 +1195,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.82.0-dev.1.mpp"
+        "hxreborn/patches-1.82.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.82.0-dev.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.82.0-dev.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1216,8 +1216,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260221",
-      "publishedAt": "2026-11-17T14:00:25Z"
+      "originBuild": "260225",
+      "publishedAt": "2026-11-17T21:32:12Z"
     },
     "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
       "name": "railone-vipinvip",
@@ -1412,17 +1412,16 @@
       "subVariant": null,
       "packageName": "com.twitter.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.5.mpp"
+        "crimera/patches-3.12.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.3"
       ],
       "appliedPatches": [
         "Add ability to copy media link",
         "Block redirecting to X Lite",
         "Block update screen",
         "Change app icon",
-        "Change version code",
         "Clear tracking params",
         "Control video auto scroll",
         "Custom download folder",
@@ -1489,10 +1488,11 @@
         "Show poll results",
         "Show post source label",
         "Show sensitive media",
-        "Support external downloader"
+        "Support external downloader",
+        "Disable Play Store updates"
       ],
-      "originBuild": "260146",
-      "publishedAt": "2026-11-07T14:57:55Z"
+      "originBuild": "260225",
+      "publishedAt": "2026-11-17T21:32:12Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
