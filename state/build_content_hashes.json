@@ -38,7 +38,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.9.0-arm64-v8a": {
-      "hash": "85cad3100ba4f099387da3fc07bb0921",
+      "hash": "8138814fab82e93c9a2b463d0bb7c7f2",
       "kinds": [
         "apk"
       ]
@@ -63,6 +63,12 @@
     },
     "twitter-piko-v12.43.0-prod.01-arm64-v8a": {
       "hash": "b912895f06fa9432032cde16342d333a",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "twitter-piko-v12.19.1-release.0-arm64-v8a": {
+      "hash": "199c8b6eb214453caa2b57dedf61bd73",
       "kinds": [
         "apk"
       ]
