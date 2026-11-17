@@ -32,8 +32,8 @@
   },
   "crimera/piko": {
     "beta": {
-      "com.twitter.android": "749376afc8bafd3335f9c35fb39671de",
-      "shared": "65969ad26f10b8bd0f92c55ccf797305"
+      "com.twitter.android": "c5b2cef9baeec25dfc9324ac1cbdbab8",
+      "shared": "d422b5e7a86ace7243b34c24a6af25b5"
     },
     "stable": {}
   },
@@ -95,8 +95,8 @@
   },
   "mlkem/morphe": {
     "beta": {
-      "com.google.android.inputmethod.latin": "d2c38af55d8c0e631c13484122876082",
-      "shared": "f58f69ea942b111fad1566db53d6f115"
+      "com.google.android.inputmethod.latin": "22a4a3237bcaf89460b8aa2769f4a06c",
+      "shared": "747f6fe796432f0401c01b7ad3a93134"
     },
     "stable": {}
   },
