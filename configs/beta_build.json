@@ -144,7 +144,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",

@@ -30,6 +30,13 @@
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     }
   },
+  "crimera/piko": {
+    "beta": {
+      "com.twitter.android": "749376afc8bafd3335f9c35fb39671de",
+      "shared": "65969ad26f10b8bd0f92c55ccf797305"
+    },
+    "stable": {}
+  },
   "heval99/heval-morphe-patches": {
     "beta": {
       "com.astrapaging.vff": "c310317d9a72bc49d8f6b59f4d0d8f2c",
@@ -45,7 +52,7 @@
   "hxreborn/morphe-patches": {
     "beta": {
       "ch.protonvpn.android": "e32b8082e184e9f37fd0b17091457d9b",
-      "shared": "96d582518a50c05a1ff1e73e7c67b3e2"
+      "shared": "2940cb5211e89a5e57541e8220ed9539"
     },
     "stable": {
       "ch.protonvpn.android": "2697d45324414f77564f94b4d3d7c192",
