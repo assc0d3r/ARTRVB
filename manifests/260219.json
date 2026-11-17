@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260219",
+    "channel": "stable",
+    "publishedAt": "2026-11-17T06:12:18Z"
+  },
+  "files": {
+    "whatsapp-xposed-modules-repo-v2.26.45.94-arm64-v8a.apk": {
+      "name": "whatsapp-xposed-modules-repo",
+      "version": "2.26.45.94",
+      "appKey": "whatsapp",
+      "appName": "WHATSAPP",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "xposedmodulesrepo",
+      "brandName": "Xposed-Modules-Repo",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.whatsapp",
+      "patchSources": [
+        "Xposed-Modules-Repo/WaEnhancerX-v2.0.7_release.apk",
+        "Dev4Mod/WaEnhancer-1.6.5.03325CD5.apk",
+        "LuigiColantuono/CallCatcher-1.0.1-b7bd355.apk",
+        "RevealedSoulEven/WAPlusXposed-v3.0-release.apk",
+        "themrsami/WaEnhancer-Business-v1.6.0.apk"
+      ],
+      "changelogs": [
+        "https://github.com/Xposed-Modules-Repo/com.waenhancer/releases/tag/20700-2.0.7",
+        "https://github.com/Dev4Mod/WaEnhancer/releases/tag/1.6.5-03325cd5",
+        "https://github.com/LuigiColantuono/CallCatcher/releases/tag/v1.0.1",
+        "https://github.com/RevealedSoulEven/WAPlusXposed/releases/tag/v3.0",
+        "https://github.com/themrsami/waEnhancer/releases/tag/v1.6.0"
+      ],
+      "appliedPatches": [],
+      "originBuild": "260219",
+      "publishedAt": "2026-11-17T06:12:18Z"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-16T22:45:58Z"
+    "publishedAt": "2026-11-17T06:12:42Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3314,14 +3314,22 @@
       "subVariant": null,
       "packageName": "com.whatsapp",
       "patchSources": [
-        "Xposed-Modules-Repo/WaEnhancerX-v2.0.7_release.apk"
+        "Xposed-Modules-Repo/WaEnhancerX-v2.0.7_release.apk",
+        "Dev4Mod/WaEnhancer-1.6.5.03325CD5.apk",
+        "LuigiColantuono/CallCatcher-1.0.1-b7bd355.apk",
+        "RevealedSoulEven/WAPlusXposed-v3.0-release.apk",
+        "themrsami/WaEnhancer-Business-v1.6.0.apk"
       ],
       "changelogs": [
-        "https://github.com/Xposed-Modules-Repo/com.waenhancer/releases/tag/20700-2.0.7"
+        "https://github.com/Xposed-Modules-Repo/com.waenhancer/releases/tag/20700-2.0.7",
+        "https://github.com/Dev4Mod/WaEnhancer/releases/tag/1.6.5-03325cd5",
+        "https://github.com/LuigiColantuono/CallCatcher/releases/tag/v1.0.1",
+        "https://github.com/RevealedSoulEven/WAPlusXposed/releases/tag/v3.0",
+        "https://github.com/themrsami/waEnhancer/releases/tag/v1.6.0"
       ],
       "appliedPatches": [],
-      "originBuild": "260214",
-      "publishedAt": "2026-11-16T14:37:24Z"
+      "originBuild": "260219",
+      "publishedAt": "2026-11-17T06:12:18Z"
     }
   }
 }
