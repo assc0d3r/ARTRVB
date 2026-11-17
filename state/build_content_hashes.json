@@ -242,6 +242,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "gboard-combined-v18.5.4.993608717-release-arm64-v8a-arm64-v8a": {
+      "hash": "d7e4ebf8fe40d7bd7d0a2ee067850061",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
