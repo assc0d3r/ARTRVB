@@ -122,8 +122,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.32",
-    "stable_date": "2026-11-12T08:12:20Z"
+    "stable": "v1.0.33",
+    "stable_date": "2026-11-17T12:21:02Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -180,13 +180,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.81.0-dev.4",
-    "beta_date": "2026-11-16T22:55:17Z",
+    "beta": "v1.82.0-dev.1",
+    "beta_date": "2026-11-17T13:45:16Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.80.0",
-    "stable_date": "2026-11-16T08:55:10Z"
+    "stable": "v1.81.0",
+    "stable_date": "2026-11-17T09:34:48Z"
   },
   "hyzor/hyzor-morphe-patches": {
     "beta": "v1.10.0-dev.2",
@@ -216,8 +216,8 @@
     "stable_date": "2026-11-12T23:48:52Z"
   },
   "jkennethcarino/adobo": {
-    "beta": "v2.0.0-dev.4",
-    "beta_date": "2026-11-08T11:45:01Z",
+    "beta": "v2.0.0-dev.5",
+    "beta_date": "2026-11-17T11:49:09Z",
     "blocked": false,
     "host": "github",
     "repo": "jkennethcarino/adobo",

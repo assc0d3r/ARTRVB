@@ -12,8 +12,8 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "b1cd35079ad84924acc31ea53ef4e661",
-      "shared": "906507f5b5894b106d28299078af5d21"
+      "com.google.android.inputmethod.latin": "b3c8c2894ab5b9b0fc28861c1bb3d894",
+      "shared": "41f9a97de85ec6236cb0b1fe7f779334"
     }
   },
   "bearinmindcat/morphe-patches": {
@@ -51,12 +51,12 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "e32b8082e184e9f37fd0b17091457d9b",
-      "shared": "2940cb5211e89a5e57541e8220ed9539"
+      "ch.protonvpn.android": "a15dd3e93a596a6995b11637415df5d8",
+      "shared": "3070d9bd27cc39e8357b6a3f71c61e88"
     },
     "stable": {
-      "ch.protonvpn.android": "2697d45324414f77564f94b4d3d7c192",
-      "shared": "5af37ce75def162183f2d17f641c1c26"
+      "ch.protonvpn.android": "e32b8082e184e9f37fd0b17091457d9b",
+      "shared": "b7935444fb28af52148dbb5090925499"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -78,6 +78,13 @@
       "com.google.android.inputmethod.latin": "dd9c8c212e4c5165d5a3b69cda35d53b",
       "shared": "31bbdfda3c6f74e2650f76bbdf7715e5"
     }
+  },
+  "jkennethcarino/adobo": {
+    "beta": {
+      "com.google.android.inputmethod.latin": "d36575c78bc032e338398bad991c3a97",
+      "shared": "cc86f139c834d2a02cabd52889266e45"
+    },
+    "stable": {}
   },
   "kveld9/kveld-extra-morphe-patches": {
     "beta": {},
