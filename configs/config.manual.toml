@@ -1,7 +1,7 @@
 [WHATSAPP]
 cli-source = "JingMatrix/LSPatch"                        
 cli-version = "stable"
-patches-source = "Xposed-Modules-Repo/com.waenhancer"           
+patches-source = " 'Xposed-Modules-Repo/com.waenhancer' 'Dev4Mod/WaEnhancer' 'LuigiColantuono/CallCatcher' 'RevealedSoulEven/WAPlusXposed' 'themrsami/waEnhancer' "           
 version = "auto"                                         
 arch = "arm64-v8a"
 build-mode = "apk"
