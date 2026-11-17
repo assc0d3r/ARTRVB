@@ -255,6 +255,12 @@
         "apk",
         "module"
       ]
+    },
+    "telegram-hushtelegram-v13.2.2-arm64-v8a": {
+      "hash": "08e0f407dd98264e9a236dc45de6a96c",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
