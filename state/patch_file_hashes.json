@@ -150,8 +150,8 @@
   "sysadmindoc/hushtelegram": {
     "beta": {},
     "stable": {
-      "org.telegram.messenger": "9e555e64e5872ac5586f88ab4dfeaf17",
-      "shared": "e25533eba00698df667c1238adacd9e2"
+      "org.telegram.messenger": "7383288383334c868b65c6f349d78baf",
+      "shared": "0f88e43bd78130c1088549af24123599"
     }
   },
   "twelvehouse/gboard-ios-style-jp-en-morphe-patches": {
