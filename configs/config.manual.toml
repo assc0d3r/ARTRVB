@@ -2,7 +2,7 @@
 enabled = true
 pkg-name = "com.google.android.inputmethod.latin"
 app-name = "Gboard"
-patches-source = " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'urroxyz/morphe-patches' 'twelvehouse/gboard-ios-style-jp-en-morphe-patches' "
+patches-source = " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' "
 brand = "Combined"
 arch = "arm64-v8a"
 inclusive-patches = false
