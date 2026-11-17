@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-17T14:00:50Z"
+    "publishedAt": "2026-11-17T17:40:17Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1612,10 +1612,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.1"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1658,7 +1658,6 @@
         "Double tap to seek",
         "Download post images",
         "Downloads",
-        "Enable debugging",
         "Exit fullscreen mode",
         "Feed card layout",
         "Feed video actions",
@@ -1734,10 +1733,11 @@
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
-        "Navigation bar"
+        "Navigation bar",
+        "Enable debugging"
       ],
-      "originBuild": "260203",
-      "publishedAt": "2026-11-15T12:24:21Z"
+      "originBuild": "260224",
+      "publishedAt": "2026-11-17T17:39:52Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
