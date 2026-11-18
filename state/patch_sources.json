@@ -23,8 +23,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.22.0",
-    "stable_date": "2026-11-12T22:10:23Z"
+    "stable": "v0.23.0",
+    "stable_date": "2026-11-18T01:19:19Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -113,8 +113,8 @@
     "blocked": false,
     "host": "github",
     "repo": "browzomje/browzomje-patches",
-    "stable": "v1.17.0",
-    "stable_date": "2026-11-14T00:26:47Z"
+    "stable": "v1.17.1",
+    "stable_date": "2026-11-18T01:16:17Z"
   },
   "crimera/piko": {
     "beta": "v3.12.0-dev.3",
