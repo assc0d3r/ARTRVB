@@ -14,19 +14,19 @@
       ]
     },
     "youtube-morphe-v21.30.216-arm64-v8a": {
-      "hash": "4af531ddcdd696b2bc2698541ac9f9f9",
+      "hash": "43b2c692b9a85fc9070d53d774dc0959",
       "kinds": [
         "apk"
       ]
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a": {
-      "hash": "6d3e9546de35c63b882a279d1fadbbcc",
+      "hash": "46fd233b7580818cbc2e043ab04c2a53",
       "kinds": [
         "apk"
       ]
     },
     "reddit-morphe-v2026.40.0-arm64-v8a": {
-      "hash": "95aa3516d1d48f590582aa010ecd34c2",
+      "hash": "9e64192cf4a1a48565c3f34f034f24aa",
       "kinds": [
         "apk"
       ]
@@ -69,6 +69,12 @@
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a": {
       "hash": "199c8b6eb214453caa2b57dedf61bd73",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a": {
+      "hash": "0e9c2fc9de73f437bcbd96516907b8f9",
       "kinds": [
         "apk"
       ]
