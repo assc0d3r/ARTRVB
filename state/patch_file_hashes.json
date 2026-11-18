@@ -1,7 +1,7 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "3a4a406185f51dbbee9e983c4060ae6b",
+      "com.google.android.apps.photos": "58a999cc864d722fb81ca6d577b265d9",
       "shared": "6f9a04af9a32e1cb29ab30cea9f316f1"
     },
     "stable": {
@@ -12,7 +12,7 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "70920947b88b2965c5815cb613b41855",
+      "com.google.android.inputmethod.latin": "c2d976f27da60866073beec72d4d09fa",
       "shared": "59f70c776aef11f6d4a71f2b38ba880d"
     }
   },
@@ -100,6 +100,16 @@
       "shared": "7d89c8c51b81ad64c78408797385cff4"
     }
   },
+  "mirbyte/morphe-patches": {
+    "beta": {
+      "com.tradingview.tradingviewapp": "e65c1c0fb7328722ce6eee88ec6bff7a",
+      "shared": "4947a6fefc78844bef985aaa36ddba40"
+    },
+    "stable": {
+      "com.tradingview.tradingviewapp": "e65c1c0fb7328722ce6eee88ec6bff7a",
+      "shared": "4947a6fefc78844bef985aaa36ddba40"
+    }
+  },
   "mlkem/morphe": {
     "beta": {
       "com.google.android.inputmethod.latin": "22a4a3237bcaf89460b8aa2769f4a06c",
@@ -117,6 +127,16 @@
       "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
       "com.reddit.frontpage": "4146a108c15067fae73312586efc2dde",
       "shared": "19c080895fc4849a352c98f64dc0d767"
+    }
+  },
+  "sahilwasgood/patches": {
+    "beta": {
+      "com.tradingview.tradingviewapp": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "ea5e786d22f34f9ae2cef6a5e47996ce"
+    },
+    "stable": {
+      "com.tradingview.tradingviewapp": "60d05a6f103cbdd8fa04ed9147b4e7cd",
+      "shared": "049e865f2d4ac02602712125eb9e1859"
     }
   },
   "sysadmindoc/hushfacebook": {

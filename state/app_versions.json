@@ -27,7 +27,7 @@
     "keys": [
       "Facebook-HushFacebook"
     ],
-    "version": "587.0.0.39.55"
+    "version": "588.0.0.42.55"
   },
   "Facebook-Messenger-HushMessenger": {
     "keys": [
@@ -178,5 +178,11 @@
       "YouTube-Morphe"
     ],
     "version": "21.46.522-EXTENDED"
+  },
+  "TradingView": {
+    "keys": [
+      "TradingView"
+    ],
+    "version": "1.20.86.0.1002565"
   }
 }

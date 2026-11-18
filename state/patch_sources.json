@@ -1,7 +1,7 @@
 {
   "Akash-Sriram/morphe-google-photos": {
-    "beta": "v1.19.0-dev.1",
-    "beta_date": "2026-11-18T10:40:36Z",
+    "beta": "v1.19.0-dev.2",
+    "beta_date": "2026-11-18T16:28:01Z",
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.34",
-    "stable_date": "2026-11-17T14:44:00Z"
+    "stable": "v1.0.37",
+    "stable_date": "2026-11-18T15:38:33Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -197,6 +197,15 @@
     "stable": "v0.7.0",
     "stable_date": "2026-11-12T20:38:39Z"
   },
+  "mirbyte/morphe-patches": {
+    "beta": "v1.4.0-dev.3",
+    "beta_date": "2026-11-11T23:47:05Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "mirbyte/morphe-patches",
+    "stable": "v1.4.0",
+    "stable_date": "2026-11-12T16:46:01Z"
+  },
   "o0b/morphe-patches": {
     "beta": "",
     "beta_date": "",
@@ -223,6 +232,15 @@
     "repo": "rushiranpise/morphe-patches",
     "stable": "v1.23.1",
     "stable_date": "2026-10-28T18:16:06Z"
+  },
+  "sahilwasgood/patches": {
+    "beta": "v1.3.0-dev.1",
+    "beta_date": "2026-10-18T21:13:14Z",
+    "blocked": false,
+    "host": "github",
+    "repo": "sahilwasgood/patches",
+    "stable": "v1.5.0",
+    "stable_date": "2026-11-12T11:10:02Z"
   },
   "spicetify/morphe-patches": {
     "beta": "v1.0.0-dev.4",
