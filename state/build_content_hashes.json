@@ -275,13 +275,19 @@
       ]
     },
     "facebook-hushfacebook-v587.0.0.39.55-arm64-v8a": {
-      "hash": "2b885d79ff17faa47bfb7dd29de66195",
+      "hash": "9a2157dd0889d7ee99cec66b47c3d7bd",
       "kinds": [
         "apk"
       ]
     },
     "instagram-hushgram-v456.0.0.53.78-arm64-v8a": {
       "hash": "7efd2d6c389e05a923ab262a2bf82244",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a": {
+      "hash": "b37dcaa079ac3a1b4502e1c56da3c40c",
       "kinds": [
         "apk"
       ]
