@@ -261,6 +261,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "facebook-hushfacebook-v587.0.0.39.55-arm64-v8a": {
+      "hash": "2b885d79ff17faa47bfb7dd29de66195",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
