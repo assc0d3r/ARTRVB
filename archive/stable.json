@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-18T17:37:34Z"
+    "publishedAt": "2026-11-18T17:42:41Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3546,10 +3546,12 @@
         "Zhuyin Bottom Row Key Sizes",
         "Zhuyin Quick Traditional/Simplified Toggle",
         "Zhuyin Slide Input",
+        "iOS QWERTY layout",
+        "iOS flick layout",
         "Change package name"
       ],
-      "originBuild": "260232",
-      "publishedAt": "2026-11-18T17:37:01Z"
+      "originBuild": "260233",
+      "publishedAt": "2026-11-18T17:42:10Z"
     }
   }
 }
