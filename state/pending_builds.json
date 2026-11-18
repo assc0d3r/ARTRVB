@@ -10,15 +10,5 @@
       "cfg": "a468ecd9a84f0a45dd42fd15389fcbafca86730a"
     }
   },
-  "beta": {
-    "TradingView": {
-      "reason": "new",
-      "arches": [
-        "arm64-v8a"
-      ],
-      "attempts": 0,
-      "parked": false,
-      "cfg": "a468ecd9a84f0a45dd42fd15389fcbafca86730a"
-    }
-  }
+  "beta": {}
 }
