@@ -39,9 +39,9 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "c310317d9a72bc49d8f6b59f4d0d8f2c",
-      "com.truecaller": "8cbabf0ea0d56903cba0ed140168ff25",
-      "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
+      "com.astrapaging.vff": "3266a4b92a3ff7a9fa1a68b049a714bc",
+      "com.truecaller": "9066a1a1faf46dde25bd786d113940a0",
+      "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
     },
     "stable": {
       "com.astrapaging.vff": "c310317d9a72bc49d8f6b59f4d0d8f2c",
@@ -51,8 +51,9 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "33234c563a244c00dedaf3fc4c2170f9",
-      "shared": "1183bf53bd174cea1203ece308ba7271"
+      "ch.protonvpn.android": "cf64233c94077d4384e879d455ae4772",
+      "com.tradingview.tradingviewapp": "a37dd7b603a07d297988df57ec652169",
+      "shared": "50f9a2fbcccf45de1ce6c43f5aaca310"
     },
     "stable": {
       "ch.protonvpn.android": "a15dd3e93a596a6995b11637415df5d8",
