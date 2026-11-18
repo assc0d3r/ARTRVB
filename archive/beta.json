@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-18T17:18:58Z"
+    "publishedAt": "2026-11-18T21:04:31Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1945,10 +1945,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.82.1-dev.4.mpp"
+        "hxreborn/patches-1.82.1-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.82.1-dev.4"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.82.1-dev.5"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1966,8 +1966,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260228",
-      "publishedAt": "2026-11-18T13:37:00Z"
+      "originBuild": "260234",
+      "publishedAt": "2026-11-18T21:04:05Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
@@ -1982,12 +1982,12 @@
       "subVariant": null,
       "packageName": "com.tradingview.tradingviewapp",
       "patchSources": [
-        "hxreborn/patches-1.82.1-dev.4.mpp",
+        "hxreborn/patches-1.82.1-dev.5.mpp",
         "mirbyte/patches-1.4.0-dev.3.mpp",
         "sahilwasgood/patches-1.3.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.82.1-dev.4",
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.82.1-dev.5",
         "https://github.com/mirbyte/morphe-patches/releases/tag/v1.4.0-dev.3",
         "https://github.com/sahilwasgood/patches/releases/tag/v1.3.0-dev.1"
       ],
@@ -2008,8 +2008,49 @@
         "Strip permissions",
         "Unlock chart features"
       ],
-      "originBuild": "260230",
-      "publishedAt": "2026-11-18T17:18:38Z"
+      "originBuild": "260234",
+      "publishedAt": "2026-11-18T21:04:05Z"
+    },
+    "truecaller-heval99-v26.45.5-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.45.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-3.1.0-dev.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.1.0-dev.1"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Hide surveys",
+        "Privacy defaults",
+        "Spoof signature",
+        "Use SMS for verification codes",
+        "Patch settings"
+      ],
+      "originBuild": "260234",
+      "publishedAt": "2026-11-18T21:04:05Z"
     }
   }
 }
