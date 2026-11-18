@@ -1,7 +1,7 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "2e1ab4272f960418d1c23c0678c6ea04",
+      "com.google.android.apps.photos": "3a4a406185f51dbbee9e983c4060ae6b",
       "shared": "6f9a04af9a32e1cb29ab30cea9f316f1"
     },
     "stable": {
@@ -51,12 +51,12 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "a15dd3e93a596a6995b11637415df5d8",
-      "shared": "dbfda8e6f68694e7be87516e68badd78"
+      "ch.protonvpn.android": "33234c563a244c00dedaf3fc4c2170f9",
+      "shared": "1183bf53bd174cea1203ece308ba7271"
     },
     "stable": {
-      "ch.protonvpn.android": "e32b8082e184e9f37fd0b17091457d9b",
-      "shared": "b7935444fb28af52148dbb5090925499"
+      "ch.protonvpn.android": "a15dd3e93a596a6995b11637415df5d8",
+      "shared": "bdddc2c65ea0232d09eb30565379cc5f"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -109,9 +109,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "06da4c03b0873fd861e950a3d0bc9111",
-      "com.reddit.frontpage": "e409d16faa1b623c360687fb1a8f7d0e",
-      "shared": "a60041478ed5264cdf168e755b5c37b3"
+      "com.google.android.youtube": "3cf937c277135759c2604dc425993c48",
+      "com.reddit.frontpage": "ac43b793d30881f982286da20fa00985",
+      "shared": "68d0c3352f717d5d4e9f94e07ce9cfa4"
     },
     "stable": {
       "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
@@ -129,8 +129,8 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "99b585502cd0968ebcba6c1e2bc90089",
-      "shared": "5b4ce1a69de0da311f8557515bb3fdba"
+      "com.instagram.android": "da7c9be659349c7420901a0d7ad86031",
+      "shared": "52a7f16e9ceac50de201c447803c0ec0"
     }
   },
   "sysadmindoc/hushmessenger": {
