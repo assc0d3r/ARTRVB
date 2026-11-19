@@ -26,7 +26,7 @@
   "browzomje/browzomje-patches": {
     "beta": {},
     "stable": {
-      "com.pinterest": "d8483d7264b9d3f027162dc5d9dc52eb",
+      "com.pinterest": "882e7e729fbca93b117cff803363f513",
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     }
   },
@@ -53,7 +53,7 @@
     "beta": {
       "ch.protonvpn.android": "cf64233c94077d4384e879d455ae4772",
       "com.tradingview.tradingviewapp": "a37dd7b603a07d297988df57ec652169",
-      "shared": "50f9a2fbcccf45de1ce6c43f5aaca310"
+      "shared": "e0184264d46af694771bc1ddfaeed701"
     },
     "stable": {
       "ch.protonvpn.android": "a15dd3e93a596a6995b11637415df5d8",

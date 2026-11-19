@@ -1,7 +1,7 @@
 {
   "patches-version": "stable",
   "Pinterest": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
@@ -45,7 +45,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Facebook-HushFacebook": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
@@ -101,7 +101,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'urroxyz/morphe-patches' 'twelvehouse/gboard-ios-style-jp-en-morphe-patches' ",
@@ -439,7 +439,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pdb-meet-like-minded-friends/pdb.app/"
   },
   "TradingView": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.tradingview.tradingviewapp",
     "app-name": "TradingView",
     "patches-source": "'hxreborn/morphe-patches' 'mirbyte/morphe-patches' 'sahilwasgood/patches'",
