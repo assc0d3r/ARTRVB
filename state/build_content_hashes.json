@@ -184,7 +184,7 @@
       ]
     },
     "railone-vipinvip-v2.1.71-arm64-v8a": {
-      "hash": "021fc2edb83e74f3f6d2508e3f938a27",
+      "hash": "93e7f9dbdc55bf7a14b6109d060fc360",
       "kinds": [
         "apk"
       ]
@@ -293,19 +293,25 @@
       ]
     },
     "instagram-hushgram-v456.0.0.53.78-arm64-v8a": {
-      "hash": "7efd2d6c389e05a923ab262a2bf82244",
+      "hash": "1f3316d991adfea7bd4fef87d3114bbf",
       "kinds": [
         "apk"
       ]
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a": {
-      "hash": "b37dcaa079ac3a1b4502e1c56da3c40c",
+      "hash": "672be28d1ce8ff0f2d3e4de148639401",
       "kinds": [
         "apk"
       ]
     },
     "gboard-combined-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a": {
       "hash": "d3e51e1b473b38bcb60600d39957eaef",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a": {
+      "hash": "e3ed6858cebd70d496c24e48e0a437e0",
       "kinds": [
         "apk"
       ]
