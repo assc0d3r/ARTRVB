@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-18T17:42:41Z"
+    "publishedAt": "2026-11-19T06:08:36Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3473,7 +3473,7 @@
       "brandName": "Combined",
       "variant": null,
       "subVariant": null,
-      "packageName": "app.morphe.android.inputmethod.latin",
+      "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
         "assc0d3r/patches-1.0.37.mpp"
       ],
@@ -3524,6 +3524,8 @@
         "Keypress Vibration Intensity Control",
         "Long-Press Editing Shortcuts",
         "Multilingual Suggestion",
+        "Parakeet personal dictionary",
+        "Parakeet voice typing",
         "Quick Insert",
         "Rambler app context",
         "Rambler contact names",
@@ -3543,15 +3545,15 @@
         "Top Toolbar Item Count",
         "Translucent Bottom Bar",
         "Use Bluetooth Microphone",
+        "Web Clipboard",
         "Zhuyin Bottom Row Key Sizes",
         "Zhuyin Quick Traditional/Simplified Toggle",
         "Zhuyin Slide Input",
         "iOS QWERTY layout",
-        "iOS flick layout",
-        "Change package name"
+        "iOS flick layout"
       ],
-      "originBuild": "260233",
-      "publishedAt": "2026-11-18T17:42:10Z"
+      "originBuild": "260236",
+      "publishedAt": "2026-11-19T06:08:10Z"
     }
   }
 }
