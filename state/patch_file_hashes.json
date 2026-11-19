@@ -1,7 +1,7 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "58a999cc864d722fb81ca6d577b265d9",
+      "com.google.android.apps.photos": "5a769d23c9569ad6574f1a85750c271f",
       "shared": "6f9a04af9a32e1cb29ab30cea9f316f1"
     },
     "stable": {
@@ -12,8 +12,8 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "c2d976f27da60866073beec72d4d09fa",
-      "shared": "59f70c776aef11f6d4a71f2b38ba880d"
+      "com.google.android.inputmethod.latin": "41150c1287b7ddf3f193201000ced760",
+      "shared": "f27972c84673566db9ca3bbb3182e28f"
     }
   },
   "bearinmindcat/morphe-patches": {

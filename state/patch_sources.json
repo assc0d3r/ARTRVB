@@ -1,7 +1,7 @@
 {
   "Akash-Sriram/morphe-google-photos": {
-    "beta": "v1.19.0-dev.2",
-    "beta_date": "2026-11-18T16:28:01Z",
+    "beta": "v1.19.0-dev.3",
+    "beta_date": "2026-11-19T03:21:30Z",
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
-    "stable": "v1.0.37",
-    "stable_date": "2026-11-18T15:38:33Z"
+    "stable": "v1.0.40",
+    "stable_date": "2026-11-19T07:05:32Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",

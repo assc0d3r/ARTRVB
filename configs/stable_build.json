@@ -1,7 +1,7 @@
 {
   "patches-version": "stable",
   "Pinterest": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
@@ -87,7 +87,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/google-maps/com.google.android.apps.maps"
   },
   "Facebook-Messenger-HushMessenger": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "version": "auto",
@@ -101,7 +101,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "Google-Gboard-Combined": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'urroxyz/morphe-patches' 'twelvehouse/gboard-ios-style-jp-en-morphe-patches' ",
