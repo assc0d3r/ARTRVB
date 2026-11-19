@@ -109,12 +109,12 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'urroxyz/morphe-patches' 'twelvehouse/gboard-ios-style-jp-en-morphe-patches' ",
+        "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' ",
         "brand": "Combined",
         "app-name": "Gboard",
         "pkg-name": "com.google.android.inputmethod.latin",
-        "included-patches": "'Better translate UX' 'Key Mapper Watchdog' 'Disable Gboard floating and one-handed modes' ",
-        "excluded-patches": " 'Remove Translate Limit' 'Keyboard Settings' 'Block Trackers' 'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'Gboard AMOLED Theme Studio' 'ClipCascade sync' 'AMOLED Gboard Settings' 'Always-incognito mode' 'Remove network access' 'Change app name' 'Change package name' 'Incognito Mode Toggle' 'incognito_mode_toggle' 'manual_incognito' 'Toggle feature flags' ",
+        "included-patches": " 'AMOLED dark keyboard' 'Access Points menu style' 'iOS flick layout' 'iOS QWERTY layout' 'Better translate UX' 'Key Mapper Watchdog' 'Disable Gboard floating and one-handed modes' ",
+        "excluded-patches": " 'Change package name' 'Remove Translate Limit' 'Stop Remote Updates'  'Keyboard Settings' 'Block trackers' ",
         "inclusive-patches": "false",
         "arch": "arm64-v8a",
         "build-mode": "apk",
