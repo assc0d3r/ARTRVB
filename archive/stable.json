@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-19T14:08:11Z"
+    "publishedAt": "2026-11-19T17:26:36Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -831,42 +831,6 @@
       ],
       "originBuild": "260172",
       "publishedAt": "2026-11-11T16:28:59Z"
-    },
-    "proton-vpn-hxreborn-v5.20.98.0-arm64-v8a.apk": {
-      "name": "proton-vpn-hxreborn",
-      "version": "5.20.98.0",
-      "appKey": "protonvpn",
-      "appName": "Proton VPN",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "hxreborn",
-      "brandName": "hxreborn",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "ch.protonvpn.android",
-      "patchSources": [
-        "hxreborn/patches-1.66.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.66.0"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "Custom accent color",
-        "Disable telemetry",
-        "Hide upgrade promotions",
-        "Material 3 switches",
-        "Remove server change delay",
-        "Show free server locations",
-        "Unlock LAN connections",
-        "Unlock NetShield",
-        "Unlock connection preferences",
-        "Unlock custom DNS",
-        "Unlock profiles",
-        "Unlock split tunneling"
-      ],
-      "originBuild": "260079",
-      "publishedAt": "2026-10-29T15:17:03Z"
     },
     "google-photos-akashsriram-v7.98.0.1001971222-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -3475,14 +3439,16 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "assc0d3r/patches-1.0.37.mpp"
+        "assc0d3r/patches-1.0.41.mpp"
       ],
       "changelogs": [
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.37"
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.41"
       ],
       "appliedPatches": [
         "AI Writing Tools",
         "AMOLED Gboard Settings",
+        "AMOLED dark keyboard",
+        "Access Points menu style",
         "Add Gboard Signature Bypass",
         "Advanced Voice Typing",
         "Backspace Repeat Haptic Feedback",
@@ -3538,6 +3504,7 @@
         "Rounded Keyboard Panel",
         "Settings Homepage Override",
         "Simple Calculator",
+        "Spacebar double-tap undo/redo",
         "Swipe Down to Dismiss Keyboard",
         "Swipeable Custom Top Row",
         "Theme Follows Dark Mode",
@@ -3552,8 +3519,8 @@
         "iOS QWERTY layout",
         "iOS flick layout"
       ],
-      "originBuild": "260236",
-      "publishedAt": "2026-11-19T06:08:10Z"
+      "originBuild": "260241",
+      "publishedAt": "2026-11-19T17:26:07Z"
     },
     "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
