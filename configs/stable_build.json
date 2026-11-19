@@ -1,7 +1,7 @@
 {
   "patches-version": "stable",
   "Pinterest": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.pinterest",
     "app-name": "Pinterest",
     "patches-source": "'SysAdminDoc/HushPinterest' 'browzomje/browzomje-patches'",
@@ -30,7 +30,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -104,14 +104,14 @@
     "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
-    "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' 'urroxyz/morphe-patches' 'twelvehouse/gboard-ios-style-jp-en-morphe-patches' ",
+    "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' ",
     "brand": "Combined",
     "arch": "arm64-v8a",
     "inclusive-patches": false,
     "version": "auto",
     "build-mode": "apk",
-    "included-patches": "'Better translate UX' 'Key Mapper Watchdog' 'Disable Gboard floating and one-handed modes' ",
-    "excluded-patches": " 'Remove Translate Limit' 'Keyboard Settings' 'Block Trackers' 'FTP Server' 'Web Clipboard' 'Enter Key Tasker Event' 'Zhuyin Bottom Row Key Sizes' 'Zhuyin Quick Traditional/Simplified Toggle' 'Zhuyin Slide Input' 'Package Rename' 'Gboard AMOLED Theme Studio' 'ClipCascade sync' 'AMOLED Gboard Settings' 'Always-incognito mode' 'Remove network access' 'Change app name' 'Change package name' 'Incognito Mode Toggle' 'incognito_mode_toggle' 'manual_incognito' 'Toggle feature flags' ",
+    "included-patches": " 'AMOLED dark keyboard' 'Access Points menu style' 'iOS flick layout' 'iOS QWERTY layout' 'Better translate UX' 'Key Mapper Watchdog' 'Disable Gboard floating and one-handed modes' ",
+    "excluded-patches": " 'Change package name' 'Remove Translate Limit' 'Stop Remote Updates'  'Keyboard Settings' 'Block trackers' ",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/gboard/",
     "uptodown-dlurl": "https://gboard-go.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
@@ -279,7 +279,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
     "version": "auto",
@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
@@ -439,7 +439,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pdb-meet-like-minded-friends/pdb.app/"
   },
   "TradingView": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.tradingview.tradingviewapp",
     "app-name": "TradingView",
     "patches-source": "'hxreborn/morphe-patches' 'mirbyte/morphe-patches' 'sahilwasgood/patches'",
