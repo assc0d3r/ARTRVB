@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-19T07:21:58Z"
+    "publishedAt": "2026-11-19T14:04:32Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -923,10 +923,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.19.0-dev.3.mpp"
+        "Akash-Sriram/patches-1.19.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.19.0-dev.3"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.19.0-dev.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -936,8 +936,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260237",
-      "publishedAt": "2026-11-19T07:21:38Z"
+      "originBuild": "260238",
+      "publishedAt": "2026-11-19T14:04:07Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -1263,10 +1263,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.2.mpp"
+        "MorpheApp/patches-2.4.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.5"
       ],
       "appliedPatches": [
         "App icon",
@@ -1276,6 +1276,7 @@
         "Disable modern home",
         "Disable screenshot popup",
         "Download location",
+        "Feed auto-scroll",
         "Feed media max height",
         "Flair filters",
         "Force system font",
@@ -1284,6 +1285,7 @@
         "Hide Trending shelves",
         "Hide ads",
         "Hide communities shelf",
+        "Hide interactive posts",
         "Hide media viewer components",
         "Hide navigation buttons",
         "Hide sidebar components",
@@ -1294,6 +1296,8 @@
         "Media viewer fade",
         "Open links directly",
         "Open links externally",
+        "Open system share sheet",
+        "Post side panel",
         "Redgifs audio",
         "Remember collapsed comments",
         "Remove subreddit dialog",
@@ -1304,8 +1308,8 @@
         "Start as guest",
         "Tablet grid feed"
       ],
-      "originBuild": "260228",
-      "publishedAt": "2026-11-18T13:37:00Z"
+      "originBuild": "260238",
+      "publishedAt": "2026-11-19T14:04:07Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1577,10 +1581,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.2.mpp"
+        "MorpheApp/patches-2.4.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1704,8 +1708,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260228",
-      "publishedAt": "2026-11-18T13:37:00Z"
+      "originBuild": "260238",
+      "publishedAt": "2026-11-19T14:04:07Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
