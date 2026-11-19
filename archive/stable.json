@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-19T06:08:36Z"
+    "publishedAt": "2026-11-19T14:08:11Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1401,8 +1401,8 @@
         "Hide screenshot detection",
         "Monochrome icon support"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-11-11T16:28:59Z"
+      "originBuild": "260239",
+      "publishedAt": "2026-11-19T14:07:41Z"
     },
     "gboard-combined-experimental-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined-experimental",
@@ -3412,8 +3412,8 @@
         "View stories anonymously",
         "Watch again in the feed"
       ],
-      "originBuild": "260229",
-      "publishedAt": "2026-11-18T13:40:33Z"
+      "originBuild": "260239",
+      "publishedAt": "2026-11-19T14:07:41Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
@@ -3428,12 +3428,12 @@
       "subVariant": null,
       "packageName": "com.tradingview.tradingviewapp",
       "patchSources": [
-        "hxreborn/patches-1.82.0.mpp",
+        "hxreborn/patches-1.83.0.mpp",
         "mirbyte/patches-1.4.0.mpp",
         "sahilwasgood/patches-1.5.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.82.0",
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.83.0",
         "https://github.com/mirbyte/morphe-patches/releases/tag/v1.4.0",
         "https://github.com/sahilwasgood/patches/releases/tag/v1.5.0"
       ],
@@ -3459,8 +3459,8 @@
         "Unlock multi-chart layouts",
         "Watchlist Cloud Sync & Manager"
       ],
-      "originBuild": "260231",
-      "publishedAt": "2026-11-18T17:22:08Z"
+      "originBuild": "260239",
+      "publishedAt": "2026-11-19T14:07:41Z"
     },
     "gboard-combined-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-combined",
@@ -3554,6 +3554,43 @@
       ],
       "originBuild": "260236",
       "publishedAt": "2026-11-19T06:08:10Z"
+    },
+    "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.21.57.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.83.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.83.0"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Floating navigation bar",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260239",
+      "publishedAt": "2026-11-19T14:07:41Z"
     }
   }
 }
