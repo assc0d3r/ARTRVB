@@ -1,7 +1,7 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "5a769d23c9569ad6574f1a85750c271f",
+      "com.google.android.apps.photos": "f23f26ab24c704245a8a18db284fbcc0",
       "shared": "6f9a04af9a32e1cb29ab30cea9f316f1"
     },
     "stable": {
@@ -12,8 +12,8 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "41150c1287b7ddf3f193201000ced760",
-      "shared": "f27972c84673566db9ca3bbb3182e28f"
+      "com.google.android.inputmethod.latin": "8cb89867b5b12d2f574b067ea2dc5fdd",
+      "shared": "bf43840754d0c4423c7e6b409eed69f4"
     }
   },
   "bearinmindcat/morphe-patches": {
@@ -26,7 +26,7 @@
   "browzomje/browzomje-patches": {
     "beta": {},
     "stable": {
-      "com.pinterest": "882e7e729fbca93b117cff803363f513",
+      "com.pinterest": "3ea9dab63464dee5826ed3e429601081",
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     }
   },
@@ -51,13 +51,14 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "cf64233c94077d4384e879d455ae4772",
-      "com.tradingview.tradingviewapp": "a37dd7b603a07d297988df57ec652169",
-      "shared": "e0184264d46af694771bc1ddfaeed701"
+      "ch.protonvpn.android": "a48d63efef639406d166a3ce33417d0c",
+      "com.tradingview.tradingviewapp": "6f46cfdff03dfd48278fc03743e6dae5",
+      "shared": "f2b6517c3a448b02a5756014937686a3"
     },
     "stable": {
-      "ch.protonvpn.android": "a15dd3e93a596a6995b11637415df5d8",
-      "shared": "bdddc2c65ea0232d09eb30565379cc5f"
+      "ch.protonvpn.android": "a48d63efef639406d166a3ce33417d0c",
+      "com.tradingview.tradingviewapp": "6f46cfdff03dfd48278fc03743e6dae5",
+      "shared": "1e541e454fdb61a9392f21209d26d855"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -120,9 +121,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "3cf937c277135759c2604dc425993c48",
-      "com.reddit.frontpage": "ac43b793d30881f982286da20fa00985",
-      "shared": "68d0c3352f717d5d4e9f94e07ce9cfa4"
+      "com.google.android.youtube": "f7a821772bb56ad05f14a341324fd5f3",
+      "com.reddit.frontpage": "dfa1fb2e74d9f4c72d354f68a1df2d68",
+      "shared": "72ebf2af5b58ab880d64f43867f8efc9"
     },
     "stable": {
       "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
