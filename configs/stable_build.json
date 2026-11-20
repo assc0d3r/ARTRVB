@@ -117,7 +117,7 @@
     "apkpure-dlurl": "https://apkpure.com/gboard-the-google-keyboard-app/com.google.android.inputmethod.latin"
   },
   "YouTube-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patches-source": " 'MorpheApp/morphe-patches' ",
@@ -159,7 +159,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
     "patches-source": "spicetify/morphe-patches",
@@ -174,7 +174,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
@@ -264,7 +264,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/github/com.github.android"
   },
   "SDMaidSE-kveld9": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "eu.darken.sdmse",
     "app-name": "SD Maid SE",
     "version": "auto",
@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
