@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-19T17:26:36Z"
+    "publishedAt": "2026-11-20T07:13:00Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -207,19 +207,19 @@
       "subVariant": null,
       "packageName": "com.adobe.scan.android",
       "patchSources": [
-        "ihatenodejs/patches-1.8.0.mpp"
+        "ihatenodejs/patches-1.9.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.8.0"
+        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.9.0"
       ],
       "appliedPatches": [
+        "Local Premium",
         "Remove Ads and Tracking",
         "Remove Attribution",
-        "Remove Login",
-        "Unlock Premium"
+        "Remove Login"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-11-11T16:28:59Z"
+      "originBuild": "260244",
+      "publishedAt": "2026-11-20T07:12:36Z"
     },
     "adobe-scan-rushi-v26.08.01-arm64-v8a.apk": {
       "name": "adobe-scan-rushi",
