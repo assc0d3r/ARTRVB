@@ -171,13 +171,13 @@
     "stable_date": "2026-11-16T16:30:54Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.9.0-dev.9",
-    "beta_date": "2026-11-20T02:41:20Z",
+    "beta": "v1.9.3-dev.1",
+    "beta_date": "2026-11-20T18:57:34Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",
-    "stable": "v1.9.1",
-    "stable_date": "2026-11-20T16:19:29Z"
+    "stable": "v1.9.2",
+    "stable_date": "2026-11-20T18:05:19Z"
   },
   "kveld9/kveld-extra-morphe-patches": {
     "beta": "",
