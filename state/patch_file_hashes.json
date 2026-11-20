@@ -64,9 +64,9 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "709d58997d3d902e486d3e5c8574ded0",
-      "com.tradingview.tradingviewapp": "a68ff2b8934ea64fa1805ea146dabcaa",
-      "shared": "f58416e3c972f42a828f51dd41b3e322"
+      "ch.protonvpn.android": "2a707b1af8382cff594026b01235bd17",
+      "com.tradingview.tradingviewapp": "d18bfb9cf9fffa3e75972c3d988d8d62",
+      "shared": "7bb49232d899f1e59b7ee543e929cb3b"
     },
     "stable": {
       "ch.protonvpn.android": "784a0e97367e0c9fe86a08960a737851",
@@ -90,7 +90,7 @@
       "shared": "badbe4c067c62ecb4590411cd68e5c2f"
     },
     "stable": {
-      "com.adobe.scan.android": "9d7a4f7589b666e3cc5aa8d55ffa34d6",
+      "com.adobe.scan.android": "2c40fed94081cbdfe1548fb1041b4ef0",
       "shared": "badbe4c067c62ecb4590411cd68e5c2f"
     }
   },
