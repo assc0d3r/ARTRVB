@@ -51,9 +51,9 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "3ea6af2c9ed381f61a123c9c60ec4c16",
-      "com.tradingview.tradingviewapp": "693c5f0f14855dec1f1b0852f40c7989",
-      "shared": "fa406d715c563971ef22ddf0e5b51562"
+      "ch.protonvpn.android": "b8184fec58616bc40815b0a3ee320910",
+      "com.tradingview.tradingviewapp": "c3241e5f89cd5aed6e3c9427213fdc53",
+      "shared": "9bd2e52ada979c3ef350bbc6596f5df3"
     },
     "stable": {
       "ch.protonvpn.android": "a48d63efef639406d166a3ce33417d0c",
@@ -69,6 +69,16 @@
     "stable": {
       "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "ihatenodejs/aidans-patches": {
+    "beta": {
+      "com.adobe.scan.android": "45e49f572cfc72e2599da0c544974cee",
+      "shared": "badbe4c067c62ecb4590411cd68e5c2f"
+    },
+    "stable": {
+      "com.adobe.scan.android": "4213041fc1d7db4cf29919409b765119",
+      "shared": "badbe4c067c62ecb4590411cd68e5c2f"
     }
   },
   "jasonwu1994/gboard-patches": {

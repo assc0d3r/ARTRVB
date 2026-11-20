@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.84.0-dev.1",
-    "beta_date": "2026-11-19T15:24:55Z",
+    "beta": "v1.84.0-dev.2",
+    "beta_date": "2026-11-20T06:47:18Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -171,13 +171,13 @@
     "stable_date": "2026-11-16T16:30:54Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.9.0-dev.7",
-    "beta_date": "2026-10-24T21:43:53Z",
+    "beta": "v1.9.0-dev.9",
+    "beta_date": "2026-11-20T02:41:20Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",
-    "stable": "v1.8.0",
-    "stable_date": "2026-10-17T20:42:10Z"
+    "stable": "v1.9.0",
+    "stable_date": "2026-11-20T03:08:24Z"
   },
   "kveld9/kveld-extra-morphe-patches": {
     "beta": "",
