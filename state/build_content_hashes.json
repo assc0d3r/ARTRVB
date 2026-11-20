@@ -193,6 +193,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "adobe-scan-aidan-v26.09.25-arm64-v8a": {
+      "hash": "08509f941236765dc7736136c1c9c72e",
+      "kinds": [
+        "apk"
+      ]
     }
   }
 }
