@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-20T17:03:58Z"
+    "publishedAt": "2026-11-20T20:55:25Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -189,10 +189,10 @@
       "subVariant": null,
       "packageName": "com.adobe.scan.android",
       "patchSources": [
-        "ihatenodejs/patches-1.9.0-dev.7.mpp"
+        "ihatenodejs/patches-1.9.3-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.9.0-dev.7"
+        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.9.3-dev.1"
       ],
       "appliedPatches": [
         "Local Premium",
@@ -200,8 +200,8 @@
         "Remove Attribution",
         "Remove Login"
       ],
-      "originBuild": "260171",
-      "publishedAt": "2026-11-11T16:14:09Z"
+      "originBuild": "260252",
+      "publishedAt": "2026-11-20T20:55:01Z"
     },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-gboardpatches",
