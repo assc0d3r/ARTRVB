@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-20T14:03:32Z"
+    "publishedAt": "2026-11-20T14:39:26Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3439,10 +3439,10 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "assc0d3r/patches-1.0.41.mpp"
+        "assc0d3r/patches-1.0.57.mpp"
       ],
       "changelogs": [
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.41"
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.57"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -3470,7 +3470,7 @@
         "Enable OCR / Scan Text",
         "Enable accessibility layout",
         "Enable split keyboard",
-        "English QWERTY Up-Flick Uppercase",
+        "English QWERTY Flick Case",
         "Enter Key Tasker Event",
         "FTP Server",
         "Floating Web Search",
@@ -3492,6 +3492,7 @@
         "Multilingual Suggestion",
         "Parakeet personal dictionary",
         "Parakeet voice typing",
+        "Per-app profiles",
         "Quick Insert",
         "Rambler app context",
         "Rambler contact names",
@@ -3504,8 +3505,10 @@
         "Rounded Keyboard Panel",
         "Settings Homepage Override",
         "Simple Calculator",
+        "Smart bar case swipe",
         "Spacebar double-tap undo/redo",
         "Swipe Down to Dismiss Keyboard",
+        "Swipe Left to Delete",
         "Swipeable Custom Top Row",
         "Theme Follows Dark Mode",
         "Toolbar Editing Buttons",
@@ -3519,8 +3522,8 @@
         "iOS QWERTY layout",
         "iOS flick layout"
       ],
-      "originBuild": "260248",
-      "publishedAt": "2026-11-20T14:03:04Z"
+      "originBuild": "260249",
+      "publishedAt": "2026-11-20T14:38:57Z"
     },
     "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
