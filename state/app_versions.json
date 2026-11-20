@@ -135,7 +135,7 @@
     "keys": [
       "Telegram-HushTelegram"
     ],
-    "version": "13.2.2"
+    "version": "13.3.0"
   },
   "Truecaller-heval99": {
     "keys": [
@@ -183,6 +183,6 @@
     "keys": [
       "TradingView"
     ],
-    "version": "1.20.86.0.1002565"
+    "version": "1.20.87.2.1002610"
   }
 }
