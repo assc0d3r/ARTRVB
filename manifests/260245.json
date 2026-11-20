@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260245",
+    "channel": "beta",
+    "publishedAt": "2026-11-20T13:45:06Z"
+  },
+  "files": {
+    "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hxreborn",
+      "version": "5.21.57.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hxreborn/patches-1.84.0-dev.3.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.84.0-dev.3"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Custom accent color",
+        "Disable telemetry",
+        "Floating navigation bar",
+        "Hide upgrade promotions",
+        "Material 3 switches",
+        "Remove server change delay",
+        "Show free server locations",
+        "Unlock LAN connections",
+        "Unlock NetShield",
+        "Unlock connection preferences",
+        "Unlock custom DNS",
+        "Unlock profiles",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260245",
+      "publishedAt": "2026-11-20T13:45:06Z"
+    },
+    "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
+      "name": "tradingview-tradingview",
+      "version": "1.20.86.0.1002565",
+      "appKey": "tradingview",
+      "appName": "TradingView",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "tradingview",
+      "brandName": "TradingView",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.tradingview.tradingviewapp",
+      "patchSources": [
+        "hxreborn/patches-1.84.0-dev.3.mpp",
+        "mirbyte/patches-1.4.0-dev.3.mpp",
+        "sahilwasgood/patches-1.3.0-dev.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.84.0-dev.3",
+        "https://github.com/mirbyte/morphe-patches/releases/tag/v1.4.0-dev.3",
+        "https://github.com/sahilwasgood/patches/releases/tag/v1.3.0-dev.1"
+      ],
+      "appliedPatches": [
+        "Disable AdMob",
+        "Disable GoPro ad fallback",
+        "Disable analytics",
+        "Disable analytics",
+        "Disable brokers feature",
+        "Fix Google sign-in",
+        "Force local Pro plan",
+        "Hide ads",
+        "Hide broker UI",
+        "Hide profile upsell banner",
+        "Hide upgrade promotions",
+        "Holy larp",
+        "Skip sign-up screen",
+        "Strip permissions",
+        "Unlock chart features"
+      ],
+      "originBuild": "260245",
+      "publishedAt": "2026-11-20T13:45:06Z"
+    }
+  }
+}
