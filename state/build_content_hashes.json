@@ -1,7 +1,163 @@
 {
   "stable": {
     "gboard-combined-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a": {
-      "hash": "98bfb9664801a78b351b75438353824c",
+      "hash": "e9cf7e9f291171e9db943180d2f4eb51",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "truecaller-heval99-v26.44.6-arm64-v8a": {
+      "hash": "9fc57f764fcd768d3479c55796166c36",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "discord-venus-v351.11-Stable-arm64-v8a": {
+      "hash": "a3d367f8f262b55521ef57a8697c311c",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "instagram-hushgram-v456.0.0.53.78-arm64-v8a": {
+      "hash": "1ca3650e6d403fb399eb4646014dd4ce",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "google-maps-bearinmindcat-v26.44.06.1006895251-arm64-v8a": {
+      "hash": "27526c57854d170ca2e74a44783af309",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "messenger-hushmessenger-v587.0.0.54.96-arm64-v8a": {
+      "hash": "b06d654cdf5cf38eaba2e5d9dbb2b70e",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "facebook-hushfacebook-v587.0.0.39.55-arm64-v8a": {
+      "hash": "819c95930e4150293d6be2382bd9a0fa",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a": {
+      "hash": "4fa4d564ed6bcb417be5087ee4bd526a",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "youtube-morphe-v21.30.216-arm64-v8a": {
+      "hash": "aaacd20d757eebb3c4f1f6d52a19a3fd",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "nova-launcher-mightymich-v89700-arm64-v8a": {
+      "hash": "d6982b150714ec902629f47a6e83750f",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "twitter-piko-v12.19.1-release.0-arm64-v8a": {
+      "hash": "a3d2950e068dbb975881eab55d2b56f6",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "reddit-morphe-v2026.40.0-arm64-v8a": {
+      "hash": "d8299e80c69c7619f06a383ef3d2dac9",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "adobe-scan-aidan-v26.09.25-arm64-v8a": {
+      "hash": "b74021a5e0a1c58c6587d97e82e2c47c",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a": {
+      "hash": "717f12b75b82480e7df223761b363306",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "sd-maid-se-rushi-v2.2.2-rc0-arm64-v8a": {
+      "hash": "b3e931cdd5176869712ff28e03979ade",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "railone-vipinvip-v2.1.71-arm64-v8a": {
+      "hash": "93e7f9dbdc55bf7a14b6109d060fc360",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "netguard-rushi-v2.337-arm64-v8a": {
+      "hash": "82aeae91277c1c10470e580ea948e376",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "wavelet-o0b-v26.05-arm64-v8a": {
+      "hash": "944a17cc34c5d49ef2f656d57a939402",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "vesselfinder-heval-v6.7.8-arm64-v8a": {
+      "hash": "8a46b7456ff4d1c0029f164abd029154",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a": {
+      "hash": "771a097d728382350cce9c331efac637",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "accuweather-rushi-v21.1.15-3-rc-arm64-v8a": {
+      "hash": "51cfd066507c4ea8d16366cda4436d25",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "vn-video-editor-riky-v2.22.1-arm64-v8a": {
+      "hash": "ffd104c79e56fd9f65d533fa6f32cfb6",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "soundcloud-v4n1x-v2026.11.02-release-arm64-v8a": {
+      "hash": "47cf087ad7e70b383ab9d18913e4bd84",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "pdbee-madushas-v2.135.1-arm64-v8a": {
+      "hash": "f377400654b6bbcec7e58db22b95d394",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "telegram-hushtelegram-v13.2.2-arm64-v8a": {
+      "hash": "08e0f407dd98264e9a236dc45de6a96c",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a": {
+      "hash": "b04ca7c4409625f67200141e713aae3b",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a": {
+      "hash": "85ca68cf0b10601498822f2d97353269",
       "kinds": [
         "apk"
       ]
