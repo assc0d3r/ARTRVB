@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-21T01:26:57Z"
+    "publishedAt": "2026-11-21T07:04:47Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1381,10 +1381,10 @@
       "subVariant": null,
       "packageName": "com.twitter.android",
       "patchSources": [
-        "crimera/patches-3.12.0-dev.4.mpp"
+        "crimera/patches-3.12.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.4"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.5"
       ],
       "appliedPatches": [
         "Add ability to copy media link",
@@ -1462,8 +1462,8 @@
         "Support external downloader",
         "Disable Play Store updates"
       ],
-      "originBuild": "260250",
-      "publishedAt": "2026-11-20T17:03:27Z"
+      "originBuild": "260256",
+      "publishedAt": "2026-11-21T07:04:13Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
