@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-20T22:57:13Z"
+    "publishedAt": "2026-11-21T16:15:45Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1712,8 +1712,8 @@
         "Navigation bar",
         "Enable debugging"
       ],
-      "originBuild": "260251",
-      "publishedAt": "2026-11-20T17:17:22Z"
+      "originBuild": "260259",
+      "publishedAt": "2026-11-21T16:15:25Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -3392,13 +3392,13 @@
       "subVariant": null,
       "packageName": "com.tradingview.tradingviewapp",
       "patchSources": [
-        "hxreborn/patches-1.84.0.mpp",
-        "mirbyte/patches-1.4.0.mpp",
+        "hxreborn/patches-1.85.0.mpp",
+        "mirbyte/patches-1.5.0.mpp",
         "sahilwasgood/patches-1.5.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.84.0",
-        "https://github.com/mirbyte/morphe-patches/releases/tag/v1.4.0",
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.0",
+        "https://github.com/mirbyte/morphe-patches/releases/tag/v1.5.0",
         "https://github.com/sahilwasgood/patches/releases/tag/v1.5.0"
       ],
       "appliedPatches": [
@@ -3423,8 +3423,8 @@
         "Unlock multi-chart layouts",
         "Watchlist Cloud Sync & Manager"
       ],
-      "originBuild": "260251",
-      "publishedAt": "2026-11-20T17:17:22Z"
+      "originBuild": "260259",
+      "publishedAt": "2026-11-21T16:15:25Z"
     },
     "gboard-combined-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-combined",
@@ -3538,10 +3538,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.84.0.mpp"
+        "hxreborn/patches-1.85.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.84.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -3559,8 +3559,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260251",
-      "publishedAt": "2026-11-20T17:17:22Z"
+      "originBuild": "260259",
+      "publishedAt": "2026-11-21T16:15:25Z"
     },
     "nova-launcher-mightymich-v89700-arm64-v8a.apk": {
       "name": "nova-launcher-mightymich",
