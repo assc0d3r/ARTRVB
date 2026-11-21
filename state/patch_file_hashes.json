@@ -64,14 +64,14 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "2a707b1af8382cff594026b01235bd17",
-      "com.tradingview.tradingviewapp": "d18bfb9cf9fffa3e75972c3d988d8d62",
-      "shared": "0dd90bdac8890a93c609cb4e90f6929b"
+      "ch.protonvpn.android": "636c5660e9ea4db7d74f742826e120df",
+      "com.tradingview.tradingviewapp": "1d303b477bc5b16916de35a114033338",
+      "shared": "2bced5d6033347c71a7f657bffc67393"
     },
     "stable": {
-      "ch.protonvpn.android": "784a0e97367e0c9fe86a08960a737851",
-      "com.tradingview.tradingviewapp": "0bb54316527104accd23708e5e9711b5",
-      "shared": "96260b9841b96940b35a10bf954d3afa"
+      "ch.protonvpn.android": "636c5660e9ea4db7d74f742826e120df",
+      "com.tradingview.tradingviewapp": "1d303b477bc5b16916de35a114033338",
+      "shared": "33b00fbd022b104e5bace7b651422966"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -110,11 +110,11 @@
   },
   "mirbyte/morphe-patches": {
     "beta": {
-      "com.tradingview.tradingviewapp": "e65c1c0fb7328722ce6eee88ec6bff7a",
+      "com.tradingview.tradingviewapp": "e390e0e5df3ae945517dd8c33a2a2e3a",
       "shared": "4947a6fefc78844bef985aaa36ddba40"
     },
     "stable": {
-      "com.tradingview.tradingviewapp": "e65c1c0fb7328722ce6eee88ec6bff7a",
+      "com.tradingview.tradingviewapp": "a758a394505c4058dbe8bf58e6ea32df",
       "shared": "4947a6fefc78844bef985aaa36ddba40"
     }
   },
