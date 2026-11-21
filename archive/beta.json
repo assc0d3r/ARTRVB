@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-21T16:12:56Z"
+    "publishedAt": "2026-11-21T19:58:54Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1263,10 +1263,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.5.mpp"
+        "MorpheApp/patches-2.4.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.5"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
       ],
       "appliedPatches": [
         "App icon",
@@ -1283,11 +1283,14 @@
         "Full width feed media",
         "Hide Ask button",
         "Hide Trending shelves",
+        "Hide Videos for you shelf",
         "Hide ads",
         "Hide communities shelf",
+        "Hide home tabs",
         "Hide interactive posts",
         "Hide media viewer components",
         "Hide navigation buttons",
+        "Hide post buttons",
         "Hide sidebar components",
         "High quality avatars",
         "Keep feed position",
@@ -1308,8 +1311,8 @@
         "Start as guest",
         "Tablet grid feed"
       ],
-      "originBuild": "260238",
-      "publishedAt": "2026-11-19T14:04:07Z"
+      "originBuild": "260260",
+      "publishedAt": "2026-11-21T19:58:36Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1583,10 +1586,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.6.mpp"
+        "MorpheApp/patches-2.4.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1638,6 +1641,7 @@
         "Force original audio",
         "Fullscreen playlist panel",
         "Fullscreen video scale",
+        "Glass menus",
         "GmsCore support",
         "Hide Shorts components",
         "Hide ads",
@@ -1653,6 +1657,7 @@
         "Hide status bar",
         "Hide timestamp",
         "Hide video action buttons",
+        "Hold gesture",
         "Loop count",
         "Loop video",
         "Media notification controls",
@@ -1710,8 +1715,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260258",
-      "publishedAt": "2026-11-21T16:12:31Z"
+      "originBuild": "260260",
+      "publishedAt": "2026-11-21T19:58:36Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1960,10 +1965,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.85.0-dev.2.mpp"
+        "hxreborn/patches-1.85.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.0-dev.2"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.1-dev.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1981,8 +1986,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260257",
-      "publishedAt": "2026-11-21T13:11:06Z"
+      "originBuild": "260260",
+      "publishedAt": "2026-11-21T19:58:36Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
