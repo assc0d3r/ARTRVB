@@ -66,7 +66,7 @@
     "beta": {
       "ch.protonvpn.android": "2a707b1af8382cff594026b01235bd17",
       "com.tradingview.tradingviewapp": "d18bfb9cf9fffa3e75972c3d988d8d62",
-      "shared": "7bb49232d899f1e59b7ee543e929cb3b"
+      "shared": "a31dc8cf9ea2508fe8e3ce35a513be6d"
     },
     "stable": {
       "ch.protonvpn.android": "784a0e97367e0c9fe86a08960a737851",
@@ -86,7 +86,7 @@
   },
   "ihatenodejs/aidans-patches": {
     "beta": {
-      "com.adobe.scan.android": "ad8f8ae9d608b2c4aa42e2f0f9a74fa0",
+      "com.adobe.scan.android": "990a10ebd366be650afa8f59831679bc",
       "shared": "badbe4c067c62ecb4590411cd68e5c2f"
     },
     "stable": {
