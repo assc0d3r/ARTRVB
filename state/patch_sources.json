@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.85.0-dev.1",
-    "beta_date": "2026-11-20T23:22:04Z",
+    "beta": "v1.85.0-dev.2",
+    "beta_date": "2026-11-21T08:10:17Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -218,7 +218,7 @@
   "riky-dev/morphe-patches": {
     "beta": "v2.3.2-dev.1",
     "beta_date": "2026-10-18T14:00:26Z",
-    "blocked": false,
+    "blocked": true,
     "host": "github",
     "repo": "riky-dev/morphe-patches",
     "stable": "v2.3.2",
