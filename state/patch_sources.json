@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.85.1-dev.1",
-    "beta_date": "2026-11-21T17:53:21Z",
+    "beta": "v1.85.1-dev.2",
+    "beta_date": "2026-11-21T21:35:24Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
