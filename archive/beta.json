@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-21T13:11:20Z"
+    "publishedAt": "2026-11-21T16:12:56Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1710,8 +1710,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260250",
-      "publishedAt": "2026-11-20T17:03:27Z"
+      "originBuild": "260258",
+      "publishedAt": "2026-11-21T16:12:31Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
