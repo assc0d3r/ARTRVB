@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-20T22:53:03Z"
+    "publishedAt": "2026-11-21T01:26:57Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -189,10 +189,10 @@
       "subVariant": null,
       "packageName": "com.adobe.scan.android",
       "patchSources": [
-        "ihatenodejs/patches-1.9.3-dev.1.mpp"
+        "ihatenodejs/patches-1.10.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.9.3-dev.1"
+        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.10.0-dev.1"
       ],
       "appliedPatches": [
         "Local Premium",
@@ -200,8 +200,8 @@
         "Remove Attribution",
         "Remove Login"
       ],
-      "originBuild": "260252",
-      "publishedAt": "2026-11-20T20:55:01Z"
+      "originBuild": "260255",
+      "publishedAt": "2026-11-21T01:26:35Z"
     },
     "gboard-gboardpatches-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-gboardpatches",
@@ -1960,10 +1960,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.84.1-dev.1.mpp"
+        "hxreborn/patches-1.85.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.84.1-dev.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.0-dev.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1981,8 +1981,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260253",
-      "publishedAt": "2026-11-20T22:52:51Z"
+      "originBuild": "260255",
+      "publishedAt": "2026-11-21T01:26:35Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
@@ -1997,12 +1997,12 @@
       "subVariant": null,
       "packageName": "com.tradingview.tradingviewapp",
       "patchSources": [
-        "hxreborn/patches-1.84.0-dev.3.mpp",
+        "hxreborn/patches-1.85.0-dev.1.mpp",
         "mirbyte/patches-1.4.0-dev.3.mpp",
         "sahilwasgood/patches-1.3.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.84.0-dev.3",
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.0-dev.1",
         "https://github.com/mirbyte/morphe-patches/releases/tag/v1.4.0-dev.3",
         "https://github.com/sahilwasgood/patches/releases/tag/v1.3.0-dev.1"
       ],
@@ -2023,8 +2023,8 @@
         "Strip permissions",
         "Unlock chart features"
       ],
-      "originBuild": "260245",
-      "publishedAt": "2026-11-20T13:45:06Z"
+      "originBuild": "260255",
+      "publishedAt": "2026-11-21T01:26:35Z"
     },
     "truecaller-heval99-v26.45.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
