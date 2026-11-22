@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-22T16:18:41Z"
+    "publishedAt": "2026-11-22T20:07:30Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -923,10 +923,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.19.0-dev.5.mpp"
+        "Akash-Sriram/patches-1.19.0-dev.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.19.0-dev.5"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.19.0-dev.6"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -936,8 +936,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260265",
-      "publishedAt": "2026-11-22T13:01:03Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-11-22T20:07:09Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
