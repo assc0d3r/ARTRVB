@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260263",
+    "channel": "beta",
+    "publishedAt": "2026-11-22T06:42:38Z"
+  },
+  "files": {
+    "adobe-scan-aidan-v26.09.25-arm64-v8a.apk": {
+      "name": "adobe-scan-aidan",
+      "version": "26.09.25",
+      "appKey": "adobescan",
+      "appName": "Adobe Scan",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "aidan",
+      "brandName": "Aidan",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.adobe.scan.android",
+      "patchSources": [
+        "ihatenodejs/patches-1.10.0-dev.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.10.0-dev.2"
+      ],
+      "appliedPatches": [
+        "Local Premium",
+        "Remove Ads and Tracking",
+        "Remove Attribution",
+        "Remove Login"
+      ],
+      "originBuild": "260263",
+      "publishedAt": "2026-11-22T06:42:38Z"
+    }
+  }
+}
