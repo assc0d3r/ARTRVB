@@ -1,8 +1,8 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "f23f26ab24c704245a8a18db284fbcc0",
-      "shared": "6f9a04af9a32e1cb29ab30cea9f316f1"
+      "com.google.android.apps.photos": "939efdd05b00cbf02bf165a38fe62df9",
+      "shared": "9cbed3b501a4b6aa2fbc639996939ebe"
     },
     "stable": {
       "com.google.android.apps.photos": "e605462c67660db4932e16e466c992c2",
@@ -12,8 +12,8 @@
   "assc0d3r/art-glidge-customization": {
     "beta": {},
     "stable": {
-      "com.google.android.inputmethod.latin": "1e239dd6843c02210d23b0e27b0c89a0",
-      "shared": "9a497acd81e8ce6b3ac30c9b39aa3189"
+      "com.google.android.inputmethod.latin": "eeeca3c0d8df6d227f8f06f030c409f8",
+      "shared": "109a2bf69ef6065488123821a836806c"
     }
   },
   "bearinmindcat/morphe-patches": {
@@ -64,9 +64,9 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "9162139ca7177b955b3cde2a941d5544",
-      "com.tradingview.tradingviewapp": "63cde679383e715f1b109d328f8005ef",
-      "shared": "26664b75d3f0ed4452176285c0c20cac"
+      "ch.protonvpn.android": "a38f357040a225870f00384962760df5",
+      "com.tradingview.tradingviewapp": "da3f8c26fd7aeaf06d049cbfbe73b049",
+      "shared": "ab4716fcfadd4a45e92ffc8b95ee95fb"
     },
     "stable": {
       "ch.protonvpn.android": "636c5660e9ea4db7d74f742826e120df",
