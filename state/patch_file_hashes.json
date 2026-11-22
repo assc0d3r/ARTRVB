@@ -86,7 +86,7 @@
   },
   "ihatenodejs/aidans-patches": {
     "beta": {
-      "com.adobe.scan.android": "990a10ebd366be650afa8f59831679bc",
+      "com.adobe.scan.android": "a0f6481a1dca3d52166ba11f6ce76acd",
       "shared": "badbe4c067c62ecb4590411cd68e5c2f"
     },
     "stable": {

@@ -171,8 +171,8 @@
     "stable_date": "2026-11-16T16:30:54Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.10.0-dev.1",
-    "beta_date": "2026-11-21T00:48:12Z",
+    "beta": "v1.10.0-dev.2",
+    "beta_date": "2026-11-22T00:35:36Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",
