@@ -1,8 +1,8 @@
 {
   "akash-sriram/morphe-google-photos": {
     "beta": {
-      "com.google.android.apps.photos": "939efdd05b00cbf02bf165a38fe62df9",
-      "shared": "9cbed3b501a4b6aa2fbc639996939ebe"
+      "com.google.android.apps.photos": "23b7af980b3d2e2d884e7b6818cde171",
+      "shared": "850074058cdb26beace3f5a8fd41d4c5"
     },
     "stable": {
       "com.google.android.apps.photos": "e605462c67660db4932e16e466c992c2",
@@ -52,13 +52,13 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "3266a4b92a3ff7a9fa1a68b049a714bc",
-      "com.truecaller": "9066a1a1faf46dde25bd786d113940a0",
-      "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
+      "com.astrapaging.vff": "12b1e2ccf400aac091c07f3560ffb1fc",
+      "com.truecaller": "cc7d359f43916337f2503c08f654024e",
+      "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
     },
     "stable": {
-      "com.astrapaging.vff": "c310317d9a72bc49d8f6b59f4d0d8f2c",
-      "com.truecaller": "8cbabf0ea0d56903cba0ed140168ff25",
+      "com.astrapaging.vff": "12b1e2ccf400aac091c07f3560ffb1fc",
+      "com.truecaller": "cc7d359f43916337f2503c08f654024e",
       "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
     }
   },
