@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-22T13:01:23Z"
+    "publishedAt": "2026-11-22T16:18:41Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1263,10 +1263,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "App icon",
@@ -1311,8 +1311,8 @@
         "Start as guest",
         "Tablet grid feed"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-11-21T19:58:36Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-11-22T16:18:18Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1586,10 +1586,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1706,6 +1706,7 @@
         "Translate posts",
         "Ungroup notifications",
         "Video delay",
+        "Video effects",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
@@ -1715,8 +1716,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-11-21T19:58:36Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-11-22T16:18:18Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1965,10 +1966,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.86.0-dev.1.mpp"
+        "hxreborn/patches-1.86.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.86.0-dev.1"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.86.0-dev.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1986,8 +1987,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260265",
-      "publishedAt": "2026-11-22T13:01:03Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-11-22T16:18:18Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
