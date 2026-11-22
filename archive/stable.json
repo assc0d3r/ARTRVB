@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-22T07:38:29Z"
+    "publishedAt": "2026-11-22T13:04:16Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3439,10 +3439,10 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "assc0d3r/patches-1.0.57.mpp"
+        "assc0d3r/patches-1.0.58.mpp"
       ],
       "changelogs": [
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.57"
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.58"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -3522,8 +3522,8 @@
         "iOS QWERTY layout",
         "iOS flick layout"
       ],
-      "originBuild": "260264",
-      "publishedAt": "2026-11-22T07:38:01Z"
+      "originBuild": "260266",
+      "publishedAt": "2026-11-22T13:03:55Z"
     },
     "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
