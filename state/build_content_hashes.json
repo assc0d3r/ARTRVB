@@ -163,7 +163,13 @@
       ]
     },
     "truecaller-heval99-v26.45.5-arm64-v8a": {
-      "hash": "0e20285ab5981b594f982437bc5f275e",
+      "hash": "e742e3bd2057e8e327187e94256fac74",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "facebook-hushfacebook-v588.0.0.42.55-arm64-v8a": {
+      "hash": "ab6cd215b96e2ca92474dab0e620ea1c",
       "kinds": [
         "apk"
       ]
