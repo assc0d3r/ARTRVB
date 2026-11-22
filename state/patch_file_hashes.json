@@ -52,14 +52,14 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "12b1e2ccf400aac091c07f3560ffb1fc",
-      "com.truecaller": "cc7d359f43916337f2503c08f654024e",
-      "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
+      "com.astrapaging.vff": "840b9f734bffd9883bbcab707ca4a52c",
+      "com.truecaller": "bda011eeac7fdb93360ab8bf9c464422",
+      "shared": "72bea1b10a739d8fb6db83d84a41f9d4"
     },
     "stable": {
-      "com.astrapaging.vff": "12b1e2ccf400aac091c07f3560ffb1fc",
-      "com.truecaller": "cc7d359f43916337f2503c08f654024e",
-      "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
+      "com.astrapaging.vff": "840b9f734bffd9883bbcab707ca4a52c",
+      "com.truecaller": "bda011eeac7fdb93360ab8bf9c464422",
+      "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
     }
   },
   "hxreborn/morphe-patches": {
@@ -186,8 +186,8 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "9bffbc67c7d1457faced4a6f05da3fbb",
-      "shared": "ced95774c01ccae01488f6d2b9c841d6"
+      "com.facebook.katana": "9f4a859508cdca1dde9d21f8ca2a8c3b",
+      "shared": "bfb9f9616e936ae6693e0087f280551c"
     }
   },
   "sysadmindoc/hushgram": {

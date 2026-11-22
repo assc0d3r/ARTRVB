@@ -23,8 +23,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.23.0",
-    "stable_date": "2026-11-18T01:19:19Z"
+    "stable": "v0.24.0",
+    "stable_date": "2026-11-22T21:55:54Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -135,13 +135,13 @@
     "stable_date": "2026-11-09T19:03:42Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v3.1.0-dev.2",
-    "beta_date": "2026-11-22T16:55:12Z",
+    "beta": "v3.2.1-dev.1",
+    "beta_date": "2026-11-22T21:56:33Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
-    "stable": "v3.1.0",
-    "stable_date": "2026-11-22T17:14:19Z"
+    "stable": "v3.2.0",
+    "stable_date": "2026-11-22T21:30:36Z"
   },
   "hsd-dles/morphe-patches": {
     "beta": "",
