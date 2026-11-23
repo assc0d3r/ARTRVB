@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260275",
+    "channel": "beta",
+    "publishedAt": "2026-11-23T07:32:40Z"
+  },
+  "files": {
+    "adobe-scan-aidan-v26.09.25-arm64-v8a.apk": {
+      "name": "adobe-scan-aidan",
+      "version": "26.09.25",
+      "appKey": "adobescan",
+      "appName": "Adobe Scan",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "aidan",
+      "brandName": "Aidan",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.adobe.scan.android",
+      "patchSources": [
+        "ihatenodejs/patches-1.10.0-dev.10.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/ihatenodejs/aidans-patches/releases/tag/v1.10.0-dev.10"
+      ],
+      "appliedPatches": [
+        "Local Premium",
+        "Remove Ads and Tracking",
+        "Remove Attribution",
+        "Remove Login"
+      ],
+      "originBuild": "260275",
+      "publishedAt": "2026-11-23T07:32:40Z"
+    },
+    "truecaller-heval99-v26.45.5-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.45.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-3.3.0-dev.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.3.0-dev.1"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Hide surveys",
+        "Privacy defaults",
+        "Spoof signature",
+        "Use SMS for verification codes",
+        "Patch settings"
+      ],
+      "originBuild": "260275",
+      "publishedAt": "2026-11-23T07:32:40Z"
+    }
+  }
+}
