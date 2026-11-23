@@ -867,6 +867,23 @@
         "build-mode": "apk",
         "version": "auto"
       }
+    },
+    "GOOGLE-GLYPHCHEMY": {
+      "arches": [
+        "arm64-v8a"
+      ],
+      "cfg": {
+        "patches-source": " 'assc0d3r/GLYPHCHEMY' ",
+        "brand": "GLYPHCHEMY",
+        "app-name": "Gboard",
+        "pkg-name": "com.google.android.inputmethod.latin",
+        "included-patches": " 'AMOLED dark keyboard' 'Access Points menu style' 'iOS flick layout' 'iOS QWERTY layout' 'Better translate UX' 'Key Mapper Watchdog' 'Disable Gboard floating and one-handed modes' ",
+        "excluded-patches": " 'Change package name' 'Remove Translate Limit' 'Stop Remote Updates'  'Keyboard Settings' 'Block trackers' ",
+        "inclusive-patches": "false",
+        "arch": "arm64-v8a",
+        "build-mode": "apk",
+        "version": "auto"
+      }
     }
   }
 }

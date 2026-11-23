@@ -189,7 +189,7 @@
       ]
     },
     "youtube-morphe-v21.30.216-arm64-v8a": {
-      "hash": "9481004d9693c0c7f9845a463e6dd324",
+      "hash": "00b93e134b3cad092ff636476c240589",
       "kinds": [
         "apk"
       ]
@@ -201,7 +201,7 @@
       ]
     },
     "twitter-piko-v12.19.1-release.0-arm64-v8a": {
-      "hash": "2424037bb4b2120084c9862385da7fd5",
+      "hash": "221e28ed8bdd197bb5e18e75cbf45341",
       "kinds": [
         "apk"
       ]
@@ -225,7 +225,13 @@
       ]
     },
     "reddit-morphe-v2026.40.0-arm64-v8a": {
-      "hash": "adfc67bd52ff702eb02e3e08572cd721",
+      "hash": "fa34adc9af68d16fe3b03fcedb2723e4",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "gboard-glyphchemy-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a": {
+      "hash": "dec8d0f20ad8d1c2e9d38de7876e30e4",
       "kinds": [
         "apk"
       ]
