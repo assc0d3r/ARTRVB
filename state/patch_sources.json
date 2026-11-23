@@ -32,8 +32,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.21",
-    "stable_date": "2026-11-18T10:14:38Z"
+    "stable": "v0.0.22",
+    "stable_date": "2026-11-22T23:52:35Z"
   },
   "SysAdminDoc/HushMessenger": {
     "beta": "",
@@ -171,8 +171,8 @@
     "stable_date": "2026-11-16T16:30:54Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.10.0-dev.2",
-    "beta_date": "2026-11-22T00:35:36Z",
+    "beta": "v1.10.0-dev.4",
+    "beta_date": "2026-11-23T00:26:20Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",

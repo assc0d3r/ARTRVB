@@ -86,8 +86,8 @@
   },
   "ihatenodejs/aidans-patches": {
     "beta": {
-      "com.adobe.scan.android": "a0f6481a1dca3d52166ba11f6ce76acd",
-      "shared": "badbe4c067c62ecb4590411cd68e5c2f"
+      "com.adobe.scan.android": "d6907f4cf5c5c7bf75f1e08a7092a734",
+      "shared": "dae224875cfcaa6ad090ea9f367cdc06"
     },
     "stable": {
       "com.adobe.scan.android": "2c40fed94081cbdfe1548fb1041b4ef0",
@@ -193,8 +193,8 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "da7c9be659349c7420901a0d7ad86031",
-      "shared": "52a7f16e9ceac50de201c447803c0ec0"
+      "com.instagram.android": "c923074034752d32a0aece6d9a153755",
+      "shared": "f31d3e1aa95b8084eab49d3e01c1aa55"
     }
   },
   "sysadmindoc/hushmessenger": {
