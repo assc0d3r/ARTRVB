@@ -16,6 +16,13 @@
       "shared": "109a2bf69ef6065488123821a836806c"
     }
   },
+  "assc0d3r/glyphchemy": {
+    "beta": {},
+    "stable": {
+      "com.google.android.inputmethod.latin": "b37c193b5916636880b262b6bf78d71c",
+      "shared": "78af3f5b457505a7fc3d9821a55cf3f8"
+    }
+  },
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
@@ -35,8 +42,8 @@
   },
   "crimera/piko": {
     "beta": {
-      "com.twitter.android": "c3951659f934172f5df6587e5a67d65c",
-      "shared": "4d08802f6c684b60a81b52177f121ba6"
+      "com.twitter.android": "ceea7f770e4c7cceece5d41f1fa5adff",
+      "shared": "c01db3a472f6fb27f437ac8d68f14db5"
     },
     "stable": {
       "com.twitter.android": "333e61cd2831aace8ead433d56722a39",
@@ -64,14 +71,14 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "c2d846598d27cd863e86cf57901a5ae6",
+      "ch.protonvpn.android": "33a57abc539b23b76804dda50f90bddf",
       "com.tradingview.tradingviewapp": "bae8af588b302d4671cd9b905638bf97",
-      "shared": "dd72468c0a110187c2f6037442932ba4"
+      "shared": "f70c1dbf8599781ac3334fcad26c85ea"
     },
     "stable": {
-      "ch.protonvpn.android": "636c5660e9ea4db7d74f742826e120df",
-      "com.tradingview.tradingviewapp": "1d303b477bc5b16916de35a114033338",
-      "shared": "33b00fbd022b104e5bace7b651422966"
+      "ch.protonvpn.android": "33a57abc539b23b76804dda50f90bddf",
+      "com.tradingview.tradingviewapp": "bae8af588b302d4671cd9b905638bf97",
+      "shared": "f52b067b95a5b2f6cb6d740532a374bb"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -86,7 +93,7 @@
   },
   "ihatenodejs/aidans-patches": {
     "beta": {
-      "com.adobe.scan.android": "67456c33fbc2da320ea406b37591b0a2",
+      "com.adobe.scan.android": "ed0a6901c184323348a21bdb602c14fa",
       "shared": "dae224875cfcaa6ad090ea9f367cdc06"
     },
     "stable": {
@@ -120,9 +127,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "8a62cd64b7cd2ebe99657e6a3c64e9a2",
-      "com.reddit.frontpage": "ca1d72ebe5e3562f7624a2dd00447661",
-      "shared": "1fda3a80d6a892f9945b7b34aa786be3"
+      "com.google.android.youtube": "c7893660ac5887bb61d11cc6635e1ae2",
+      "com.reddit.frontpage": "36c6b30c5db79003b64df2e8d664fbed",
+      "shared": "6326914611498b5875abf3216f035d87"
     },
     "stable": {
       "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",

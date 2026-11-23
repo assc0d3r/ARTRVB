@@ -9,8 +9,8 @@
     "stable_date": "2026-11-16T01:23:36Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.4.0-dev.8",
-    "beta_date": "2026-11-22T13:44:35Z",
+    "beta": "v2.4.0-dev.9",
+    "beta_date": "2026-11-23T10:40:33Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -89,14 +89,14 @@
     "stable": "v1.2.2",
     "stable_date": "2026-10-29T17:23:57Z"
   },
-  "assc0d3r/ART-GLIDGE-CUSTOMIZATION": {
+  "assc0d3r/GLYPHCHEMY": {
     "beta": "",
     "beta_date": "",
     "blocked": false,
     "host": "github",
-    "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
+    "repo": "assc0d3r/GLYPHCHEMY",
     "stable": "v1.0.60",
-    "stable_date": "2026-11-23T06:45:34Z"
+    "stable_date": "2026-11-23T11:54:32Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -117,8 +117,8 @@
     "stable_date": "2026-11-20T14:57:12Z"
   },
   "crimera/piko": {
-    "beta": "v3.12.0-dev.5",
-    "beta_date": "2026-11-20T23:28:48Z",
+    "beta": "v3.12.0-dev.6",
+    "beta_date": "2026-11-23T08:00:05Z",
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
@@ -153,13 +153,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.86.0-dev.4",
-    "beta_date": "2026-11-22T14:14:58Z",
+    "beta": "v1.86.0-dev.6",
+    "beta_date": "2026-11-23T12:43:40Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.85.0",
-    "stable_date": "2026-11-21T14:12:49Z"
+    "stable": "v1.86.0",
+    "stable_date": "2026-11-23T13:00:56Z"
   },
   "hyzor/hyzor-morphe-patches": {
     "beta": "v1.10.0-dev.2",
@@ -171,8 +171,8 @@
     "stable_date": "2026-11-16T16:30:54Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.10.0-dev.10",
-    "beta_date": "2026-11-23T05:30:19Z",
+    "beta": "v1.10.0-dev.11",
+    "beta_date": "2026-11-23T15:23:38Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",

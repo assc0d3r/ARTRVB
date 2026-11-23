@@ -100,12 +100,12 @@
     "uptodown-dlurl": "https://facebook-messenger.en.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
-  "Google-Gboard-Combined": {
-    "enabled": false,
+  "GOOGLE-GLYPHCHEMY": {
+    "enabled": true,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
-    "patches-source": " 'assc0d3r/ART-GLIDGE-CUSTOMIZATION' ",
-    "brand": "Combined",
+    "patches-source": " 'assc0d3r/GLYPHCHEMY' ",
+    "brand": "GLYPHCHEMY",
     "arch": "arm64-v8a",
     "inclusive-patches": false,
     "version": "auto",
@@ -189,7 +189,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/reddit/com.reddit.frontpage"
   },
   "NovaLauncher-MightyMich": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.teslacoilsw.launcher",
     "app-name": "Nova Launcher",
     "patches-source": "hyzor/hyzor-morphe-patches",
@@ -279,7 +279,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/sd-maid-se/eu.darken.sdmse"
   },
   "RailOne-VipinVIP": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "org.cris.aikyam",
     "app-name": "RailOne",
     "version": "auto",
@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
@@ -439,7 +439,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pdb-meet-like-minded-friends/pdb.app/"
   },
   "TradingView": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.tradingview.tradingviewapp",
     "app-name": "TradingView",
     "patches-source": "'hxreborn/morphe-patches' 'mirbyte/morphe-patches' 'sahilwasgood/patches'",

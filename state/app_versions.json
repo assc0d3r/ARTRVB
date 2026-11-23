@@ -99,7 +99,7 @@
     "keys": [
       "RailOne-VipinVIP"
     ],
-    "version": "2.1.82"
+    "version": "2.1.83"
   },
   "Reddit-Morphe": {
     "keys": [
@@ -184,5 +184,11 @@
       "TradingView"
     ],
     "version": "1.20.87.2.1002610"
+  },
+  "GOOGLE-GLYPHCHEMY": {
+    "keys": [
+      "GOOGLE-GLYPHCHEMY"
+    ],
+    "version": "18.6.7.1002251336"
   }
 }
