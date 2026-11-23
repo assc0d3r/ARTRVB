@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-23T07:33:20Z"
+    "publishedAt": "2026-11-23T15:34:33Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1263,25 +1263,32 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "App icon",
+        "AutoModerator comments",
+        "Collapse all comments",
         "Copy text",
         "Custom font",
         "Customize post layout",
         "Disable modern home",
         "Disable screenshot popup",
+        "Download all from gallery",
         "Download location",
+        "Enable debugging",
         "Feed auto-scroll",
         "Feed media max height",
         "Flair filters",
         "Force system font",
         "Full width feed media",
+        "Full-screen reply",
         "Hide Ask button",
+        "Hide People also search for section",
+        "Hide Related Posts section",
         "Hide Trending shelves",
         "Hide Videos for you shelf",
         "Hide ads",
@@ -1293,7 +1300,9 @@
         "Hide post buttons",
         "Hide sidebar components",
         "High quality avatars",
+        "Home feed tabs",
         "Keep feed position",
+        "Keep media viewer in subreddit",
         "Keyword filters",
         "Media viewer black background",
         "Media viewer fade",
@@ -1301,18 +1310,21 @@
         "Open links externally",
         "Open system share sheet",
         "Post side panel",
+        "Private browsing mode",
         "Redgifs audio",
         "Remember collapsed comments",
         "Remove subreddit dialog",
         "Sanitize sharing links",
+        "Search hidden profiles",
         "Share post content",
         "Show flairs in home feed",
         "Spoof signature",
         "Start as guest",
+        "Swipe up for comments",
         "Tablet grid feed"
       ],
-      "originBuild": "260267",
-      "publishedAt": "2026-11-22T16:18:18Z"
+      "originBuild": "260279",
+      "publishedAt": "2026-11-23T15:34:00Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1384,10 +1396,10 @@
       "subVariant": null,
       "packageName": "com.twitter.android",
       "patchSources": [
-        "crimera/patches-3.12.0-dev.5.mpp"
+        "crimera/patches-3.12.0-dev.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.6"
       ],
       "appliedPatches": [
         "Add ability to copy media link",
@@ -1465,8 +1477,8 @@
         "Support external downloader",
         "Disable Play Store updates"
       ],
-      "originBuild": "260256",
-      "publishedAt": "2026-11-21T07:04:13Z"
+      "originBuild": "260279",
+      "publishedAt": "2026-11-23T15:34:00Z"
     },
     "universal-tv-remote-rushiranpise-v1.8.1-arm64-v8a.apk": {
       "name": "universal-tv-remote-rushiranpise",
@@ -1586,10 +1598,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1679,13 +1691,17 @@
         "Playback speed",
         "Playlist button",
         "Playlist improvements",
+        "Playlist search",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
+        "Replay slower button",
         "Restore original titles",
         "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Reverse playlist autoplay",
         "Sanitize sharing links",
         "Save to Watch later",
         "Search comments",
@@ -1716,8 +1732,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260267",
-      "publishedAt": "2026-11-22T16:18:18Z"
+      "originBuild": "260279",
+      "publishedAt": "2026-11-23T15:34:00Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -2072,6 +2088,106 @@
       ],
       "originBuild": "260275",
       "publishedAt": "2026-11-23T07:32:40Z"
+    },
+    "gboard-glyphchemy-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a.apk": {
+      "name": "gboard-glyphchemy",
+      "version": "18.6.3.1002251336-release-arm64-v8a",
+      "appKey": "gboard",
+      "appName": "Gboard",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "glyphchemy",
+      "brandName": "GLYPHCHEMY",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.google.android.inputmethod.latin",
+      "patchSources": [
+        "assc0d3r/patches-1.0.60.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/assc0d3r/GLYPHCHEMY/releases/tag/v1.0.60"
+      ],
+      "appliedPatches": [
+        "AI Writing Tools",
+        "AMOLED Gboard Settings",
+        "AMOLED dark keyboard",
+        "Access Points menu style",
+        "Add Gboard Signature Bypass",
+        "Advanced Voice Typing",
+        "Backspace Repeat Haptic Feedback",
+        "Backup & Restore",
+        "Block App Hijacking",
+        "Change emoji size",
+        "Clipboard Custom Character Limit",
+        "Clipboard Enhancements",
+        "Close Proactive Suggestions",
+        "Cursor trackpad mode",
+        "Custom Symbols",
+        "Custom Theme",
+        "Developer options",
+        "Dictionaries & Predictions",
+        "Disable Cloud Backup",
+        "Emoji Key On Right",
+        "Emojis, stickers & GIFs Tab Order",
+        "Enable Inline Autofill Suggestions",
+        "Enable OCR / Scan Text",
+        "Enable accessibility layout",
+        "Enable split keyboard",
+        "English QWERTY Flick Case",
+        "Enter Key Tasker Event",
+        "FTP Server",
+        "Floating Web Search",
+        "Frosted Glass",
+        "G Logo on Spacebar",
+        "Gboard Theme Builder",
+        "Glass Panel",
+        "Glass Press Effect",
+        "Glide Trail Customization",
+        "Grammar Checker",
+        "Immersive Keyboard",
+        "Incognito Mode Toggle",
+        "Inline Suggestions",
+        "Key Mapper Watchdog",
+        "Key Shape Selection",
+        "Keyboard Icon Packs",
+        "Keypress Vibration Intensity Control",
+        "Long-Press Editing Shortcuts",
+        "Multilingual Suggestion",
+        "Parakeet personal dictionary",
+        "Parakeet voice typing",
+        "Per-app profiles",
+        "Punctuation spacing",
+        "Quick Insert",
+        "Rambler app context",
+        "Rambler contact names",
+        "Rambler cursor-aware editing",
+        "Rambler custom instructions",
+        "Rambler personal dictionary",
+        "Rambler stop after silence",
+        "Rambler voice typing",
+        "Remove Extra Files",
+        "Rounded Keyboard Panel",
+        "Settings Homepage Override",
+        "Simple Calculator",
+        "Smart bar case swipe",
+        "Spacebar double-tap tab/undo",
+        "Swipe Down to Dismiss Keyboard",
+        "Swipe Left to Delete",
+        "Swipeable Custom Top Row",
+        "Theme Follows Dark Mode",
+        "Toolbar Editing Buttons",
+        "Top Toolbar Item Count",
+        "Translucent Bottom Bar",
+        "Use Bluetooth Microphone",
+        "Web Clipboard",
+        "Zhuyin Bottom Row Key Sizes",
+        "Zhuyin Quick Traditional/Simplified Toggle",
+        "Zhuyin Slide Input",
+        "iOS QWERTY layout",
+        "iOS flick layout"
+      ],
+      "originBuild": "260279",
+      "publishedAt": "2026-11-23T15:34:00Z"
     }
   }
 }
