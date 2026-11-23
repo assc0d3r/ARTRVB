@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-23T12:00:36Z"
+    "publishedAt": "2026-11-23T12:06:28Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3349,8 +3349,8 @@
         "iOS QWERTY layout",
         "iOS flick layout"
       ],
-      "originBuild": "260276",
-      "publishedAt": "2026-11-23T12:00:10Z"
+      "originBuild": "260277",
+      "publishedAt": "2026-11-23T12:06:06Z"
     },
     "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
