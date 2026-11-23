@@ -177,7 +177,7 @@
   },
   "beta": {
     "truecaller-heval99-v26.45.5-arm64-v8a": {
-      "hash": "11c38034da613bdf21801def13a71daa",
+      "hash": "16b92b9f21f33ed8d360c717e9ad8293",
       "kinds": [
         "apk"
       ]
@@ -207,7 +207,7 @@
       ]
     },
     "adobe-scan-aidan-v26.09.25-arm64-v8a": {
-      "hash": "7f0bcf2f9ac10ff9480209430555afdc",
+      "hash": "efc5f8c9d61aef091f9c2fecc767a862",
       "kinds": [
         "apk"
       ]
