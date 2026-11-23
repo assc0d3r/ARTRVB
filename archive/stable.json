@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-23T12:06:28Z"
+    "publishedAt": "2026-11-23T12:44:35Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3266,10 +3266,10 @@
       "subVariant": null,
       "packageName": "com.google.android.inputmethod.latin",
       "patchSources": [
-        "assc0d3r/patches-1.0.59.mpp"
+        "assc0d3r/patches-1.0.60.mpp"
       ],
       "changelogs": [
-        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.59"
+        "https://github.com/assc0d3r/ART-GLIDGE-CUSTOMIZATION/releases/tag/v1.0.60"
       ],
       "appliedPatches": [
         "AI Writing Tools",
@@ -3320,6 +3320,7 @@
         "Parakeet personal dictionary",
         "Parakeet voice typing",
         "Per-app profiles",
+        "Punctuation spacing",
         "Quick Insert",
         "Rambler app context",
         "Rambler contact names",
@@ -3333,7 +3334,7 @@
         "Settings Homepage Override",
         "Simple Calculator",
         "Smart bar case swipe",
-        "Spacebar double-tap undo/redo",
+        "Spacebar double-tap tab/undo",
         "Swipe Down to Dismiss Keyboard",
         "Swipe Left to Delete",
         "Swipeable Custom Top Row",
@@ -3349,8 +3350,8 @@
         "iOS QWERTY layout",
         "iOS flick layout"
       ],
-      "originBuild": "260277",
-      "publishedAt": "2026-11-23T12:06:06Z"
+      "originBuild": "260278",
+      "publishedAt": "2026-11-23T12:44:06Z"
     },
     "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a.apk": {
       "name": "proton-vpn-hxreborn",
