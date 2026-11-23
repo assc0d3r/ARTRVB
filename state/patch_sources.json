@@ -96,7 +96,7 @@
     "host": "github",
     "repo": "assc0d3r/ART-GLIDGE-CUSTOMIZATION",
     "stable": "v1.0.59",
-    "stable_date": "2026-11-22T07:33:28Z"
+    "stable_date": "2026-11-23T06:45:34Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -135,8 +135,8 @@
     "stable_date": "2026-11-09T19:03:42Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v3.2.1-dev.1",
-    "beta_date": "2026-11-22T21:56:33Z",
+    "beta": "v3.3.0-dev.1",
+    "beta_date": "2026-11-23T01:05:55Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -171,8 +171,8 @@
     "stable_date": "2026-11-16T16:30:54Z"
   },
   "ihatenodejs/aidans-patches": {
-    "beta": "v1.10.0-dev.4",
-    "beta_date": "2026-11-23T00:26:20Z",
+    "beta": "v1.10.0-dev.10",
+    "beta_date": "2026-11-23T05:30:19Z",
     "blocked": false,
     "host": "github",
     "repo": "ihatenodejs/aidans-patches",

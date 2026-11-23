@@ -52,9 +52,9 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "840b9f734bffd9883bbcab707ca4a52c",
-      "com.truecaller": "bda011eeac7fdb93360ab8bf9c464422",
-      "shared": "72bea1b10a739d8fb6db83d84a41f9d4"
+      "com.astrapaging.vff": "ab87dec4e418349d7e03042ec034fcfe",
+      "com.truecaller": "2c25121010e27777d7fdd60bfac46be7",
+      "shared": "ab8caa4fc2e2b395f0c479576566d769"
     },
     "stable": {
       "com.astrapaging.vff": "840b9f734bffd9883bbcab707ca4a52c",
@@ -86,7 +86,7 @@
   },
   "ihatenodejs/aidans-patches": {
     "beta": {
-      "com.adobe.scan.android": "d6907f4cf5c5c7bf75f1e08a7092a734",
+      "com.adobe.scan.android": "67456c33fbc2da320ea406b37591b0a2",
       "shared": "dae224875cfcaa6ad090ea9f367cdc06"
     },
     "stable": {
