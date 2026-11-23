@@ -1,14 +1,4 @@
 {
-  "stable": {
-    "GOOGLE-GLYPHCHEMY": {
-      "reason": "new",
-      "arches": [
-        "arm64-v8a"
-      ],
-      "attempts": 0,
-      "parked": false,
-      "cfg": "ea0b0288cf9368b9832534c180b03fcfaf39f365"
-    }
-  },
+  "stable": {},
   "beta": {}
 }

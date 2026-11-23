@@ -91,7 +91,7 @@
       ]
     },
     "railone-vipinvip-v2.1.71-arm64-v8a": {
-      "hash": "93e7f9dbdc55bf7a14b6109d060fc360",
+      "hash": "6db394b3e89fb2be132699470eb0f590",
       "kinds": [
         "apk"
       ]
@@ -115,7 +115,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a": {
-      "hash": "ca2d5ba7f82c378d14d066be1b8bb8d0",
+      "hash": "f4f80142a29a22e0decb33e5ae2ff4f1",
       "kinds": [
         "apk"
       ]
@@ -170,6 +170,12 @@
     },
     "facebook-hushfacebook-v588.0.0.42.55-arm64-v8a": {
       "hash": "ab6cd215b96e2ca92474dab0e620ea1c",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "gboard-glyphchemy-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a": {
+      "hash": "bcd0cf131a82ce4038b7df0b2e1d1ceb",
       "kinds": [
         "apk"
       ]
