@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-24T04:49:34Z"
+    "publishedAt": "2026-11-24T09:55:35Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3366,10 +3366,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.86.0.mpp"
+        "hxreborn/patches-1.87.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.86.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.87.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -3387,8 +3387,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260280",
-      "publishedAt": "2026-11-23T15:37:29Z"
+      "originBuild": "260285",
+      "publishedAt": "2026-11-24T09:55:18Z"
     },
     "nova-launcher-mightymich-v89700-arm64-v8a.apk": {
       "name": "nova-launcher-mightymich",
