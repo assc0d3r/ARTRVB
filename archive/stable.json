@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-24T00:38:14Z"
+    "publishedAt": "2026-11-24T04:49:34Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3203,8 +3203,8 @@
         "View stories anonymously",
         "Watch again in the feed"
       ],
-      "originBuild": "260273",
-      "publishedAt": "2026-11-23T00:53:57Z"
+      "originBuild": "260283",
+      "publishedAt": "2026-11-24T04:49:04Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
