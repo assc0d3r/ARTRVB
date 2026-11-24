@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-23T15:34:33Z"
+    "publishedAt": "2026-11-24T00:34:23Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1982,10 +1982,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.86.0-dev.4.mpp"
+        "hxreborn/patches-1.87.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.86.0-dev.4"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.87.0-dev.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2003,8 +2003,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260267",
-      "publishedAt": "2026-11-22T16:18:18Z"
+      "originBuild": "260281",
+      "publishedAt": "2026-11-24T00:34:08Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
