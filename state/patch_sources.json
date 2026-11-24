@@ -185,8 +185,8 @@
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-extra-morphe-patches",
-    "stable": "v1.32.1",
-    "stable_date": "2026-11-16T03:59:20Z"
+    "stable": "v1.33.0",
+    "stable_date": "2026-11-24T04:40:07Z"
   },
   "madushas/pdb_patch": {
     "beta": "",

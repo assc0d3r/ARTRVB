@@ -104,8 +104,8 @@
   "kveld9/kveld-extra-morphe-patches": {
     "beta": {},
     "stable": {
-      "eu.darken.sdmse": "27d52f580b208536555d9d7abe6f47b6",
-      "shared": "8c596826f8268a84fc743ae41ed37d10"
+      "eu.darken.sdmse": "4284af8dbb083aed20ae0bf59a94a54a",
+      "shared": "4e809391db10537217348e91e896faa2"
     }
   },
   "madushas/pdb_patch": {

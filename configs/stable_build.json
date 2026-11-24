@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
@@ -30,7 +30,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -60,7 +60,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Discord-Venus": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
@@ -73,7 +73,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/discord/com.discord"
   },
   "GoogleMaps-bearinmindcat": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "patches-source": "bearinmindcat/morphe-patches",
@@ -159,7 +159,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
     "patches-source": "spicetify/morphe-patches",
@@ -264,7 +264,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/github/com.github.android"
   },
   "SDMaidSE-kveld9": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "eu.darken.sdmse",
     "app-name": "SD Maid SE",
     "version": "auto",
