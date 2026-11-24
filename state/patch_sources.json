@@ -9,8 +9,8 @@
     "stable_date": "2026-11-16T01:23:36Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.4.0-dev.9",
-    "beta_date": "2026-11-23T10:40:33Z",
+    "beta": "v2.4.0-dev.10",
+    "beta_date": "2026-11-24T07:59:52Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -153,13 +153,13 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.87.0-dev.2",
-    "beta_date": "2026-11-23T23:09:39Z",
+    "beta": "v1.87.0-dev.3",
+    "beta_date": "2026-11-24T07:47:18Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.86.0",
-    "stable_date": "2026-11-23T13:00:56Z"
+    "stable": "v1.87.0",
+    "stable_date": "2026-11-24T08:23:04Z"
   },
   "hyzor/hyzor-morphe-patches": {
     "beta": "v1.10.0-dev.2",
@@ -182,7 +182,7 @@
   "kveld9/kveld-extra-morphe-patches": {
     "beta": "",
     "beta_date": "",
-    "blocked": false,
+    "blocked": true,
     "host": "github",
     "repo": "kveld9/kveld-extra-morphe-patches",
     "stable": "v1.33.0",

@@ -71,14 +71,14 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "aba5072f3997a41c337ffa574b154c14",
-      "com.tradingview.tradingviewapp": "de67fdab478495a7d83d74763d45f1b5",
-      "shared": "84bcfeae9692f0e378bc42e595cb9a37"
+      "ch.protonvpn.android": "f8a38aa7baecc35e358e5813721c18d7",
+      "com.tradingview.tradingviewapp": "ee55ddad2a3845c4832d78dc0cf3f1d7",
+      "shared": "19f68049f4319e3ed21bfe0da43e6e4f"
     },
     "stable": {
-      "ch.protonvpn.android": "33a57abc539b23b76804dda50f90bddf",
-      "com.tradingview.tradingviewapp": "bae8af588b302d4671cd9b905638bf97",
-      "shared": "f52b067b95a5b2f6cb6d740532a374bb"
+      "ch.protonvpn.android": "f8a38aa7baecc35e358e5813721c18d7",
+      "com.tradingview.tradingviewapp": "ee55ddad2a3845c4832d78dc0cf3f1d7",
+      "shared": "37f553164a229d49689afbcb42b099d2"
     }
   },
   "hyzor/hyzor-morphe-patches": {
@@ -127,9 +127,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "c7893660ac5887bb61d11cc6635e1ae2",
-      "com.reddit.frontpage": "36c6b30c5db79003b64df2e8d664fbed",
-      "shared": "6326914611498b5875abf3216f035d87"
+      "com.google.android.youtube": "51fd7c2d701efc617f376edf5f8c8817",
+      "com.reddit.frontpage": "12c9311600e3ef203e73bfb3335a8880",
+      "shared": "b6f85dfb5ede416251196929b194d95e"
     },
     "stable": {
       "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",

@@ -30,7 +30,7 @@
     "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Instagram-HushGram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "SysAdminDoc/HushGram",
@@ -264,7 +264,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/github/com.github.android"
   },
   "SDMaidSE-kveld9": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "eu.darken.sdmse",
     "app-name": "SD Maid SE",
     "version": "auto",
@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
@@ -439,7 +439,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pdb-meet-like-minded-friends/pdb.app/"
   },
   "TradingView": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.tradingview.tradingviewapp",
     "app-name": "TradingView",
     "patches-source": "'hxreborn/morphe-patches' 'mirbyte/morphe-patches' 'sahilwasgood/patches'",
