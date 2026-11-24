@@ -179,6 +179,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "soundcloud-v4n1x-v2026.11.20-release-arm64-v8a": {
+      "hash": "34441199aef56b90b62cbadc37653fa9",
+      "kinds": [
+        "apk"
+      ]
     }
   },
   "beta": {
