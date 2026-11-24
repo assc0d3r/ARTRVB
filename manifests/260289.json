@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260289",
+    "channel": "stable",
+    "publishedAt": "2026-11-24T22:58:05Z"
+  },
+  "files": {
+    "soundcloud-v4n1x-v2026.11.20-release-arm64-v8a.apk": {
+      "name": "soundcloud-v4n1x",
+      "version": "4n1x-v2026.11.20-release",
+      "appKey": "soundcloud",
+      "appName": "SoundCloud",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "v4n1x",
+      "brandName": "V4n1X",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.soundcloud.android",
+      "patchSources": [
+        "V4n1X/patches-1.5.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/V4n1X/morphe-patches/releases/tag/v1.5.0"
+      ],
+      "appliedPatches": [
+        "Disable analytics",
+        "Disable consent popup",
+        "Enable SoundCloud Go"
+      ],
+      "originBuild": "260289",
+      "publishedAt": "2026-11-24T22:58:05Z"
+    }
+  }
+}
