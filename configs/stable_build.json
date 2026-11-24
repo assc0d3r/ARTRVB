@@ -101,7 +101,7 @@
     "apkpure-dlurl": "https://apkpure.com/facebook-messenger/com.facebook.orca"
   },
   "GOOGLE-GLYPHCHEMY": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.inputmethod.latin",
     "app-name": "Gboard",
     "patches-source": " 'assc0d3r/GLYPHCHEMY' ",
@@ -144,7 +144,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "Twitter-Piko": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.twitter.android",
     "app-name": "Twitter",
     "patches-source": "crimera/piko",
@@ -204,7 +204,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/nova-launcher/com.teslacoilsw.launcher"
   },
   "AdobeScan-Aidan": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.adobe.scan.android",
     "app-name": "Adobe Scan",
     "patches-source": "ihatenodejs/aidans-patches",
@@ -381,7 +381,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/accuweather/com.accuweather.android"
   },
   "SoundCloud-V4n1X": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.soundcloud.android",
     "app-name": "SoundCloud",
     "patches-source": "V4n1X/morphe-patches",
