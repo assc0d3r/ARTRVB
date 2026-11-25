@@ -1,4 +1,15 @@
 {
   "stable": {},
-  "beta": {}
+  "beta": {
+    "VesselFinder-Heval": {
+      "reason": "retry",
+      "arches": [
+        "arm64-v8a"
+      ],
+      "attempts": 1,
+      "parked": false,
+      "run": 45709546676,
+      "ts": "2026-11-25T22:11:17Z"
+    }
+  }
 }
