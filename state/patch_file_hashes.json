@@ -59,9 +59,9 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.astrapaging.vff": "ab87dec4e418349d7e03042ec034fcfe",
-      "com.truecaller": "2c25121010e27777d7fdd60bfac46be7",
-      "shared": "ab8caa4fc2e2b395f0c479576566d769"
+      "com.astrapaging.vff": "bc50dbf0417acf1a3678a8b954d01e40",
+      "com.truecaller": "5ea776b98fbd71ba1064a43cbe9ecf7c",
+      "shared": "d5c4210c71a914957680926429608e14"
     },
     "stable": {
       "com.astrapaging.vff": "840b9f734bffd9883bbcab707ca4a52c",
@@ -73,7 +73,7 @@
     "beta": {
       "ch.protonvpn.android": "16ce0313bcb7dc1691e3fd0b8385c36d",
       "com.tradingview.tradingviewapp": "02ff4e4e4916aaa97aa6feb495a465e0",
-      "shared": "e28abdc21b289cdf66cb7ad7d10ddf90"
+      "shared": "6d3815e022a79e3602f069b71ff4711d"
     },
     "stable": {
       "ch.protonvpn.android": "ae5bfb12557af159519599c85b17e89d",
@@ -127,9 +127,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "c731bac796dda299c0df24d322c6a8f2",
-      "com.reddit.frontpage": "9669d16c1d7f0aacc54809a313a7c1cb",
-      "shared": "0e007a7ccfdba5821c7e0b138d83a971"
+      "com.google.android.youtube": "dc1c1d4142e8ed030c83780d2537e058",
+      "com.reddit.frontpage": "e1e006db4d7113d8eb0dff6b14cdb99d",
+      "shared": "0d29397ab2146f8cf779114eb5c28afa"
     },
     "stable": {
       "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
@@ -214,8 +214,8 @@
   "sysadmindoc/hushpinterest": {
     "beta": {},
     "stable": {
-      "com.pinterest": "1e36934e2780012d8735ee35da3d70df",
-      "shared": "ba1dc08652cf62829274a92e15f61e97"
+      "com.pinterest": "a03e37f58c4ff80d709d07762fb3840b",
+      "shared": "19053d15eb225c0750277280bf1e72ee"
     }
   },
   "sysadmindoc/hushtelegram": {
