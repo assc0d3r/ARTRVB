@@ -115,7 +115,7 @@
       ]
     },
     "proton-vpn-hxreborn-v5.21.57.0-arm64-v8a": {
-      "hash": "73f5e1559a20307fbf0ab71254a0779d",
+      "hash": "3e28ebe7bb5eadffc45dd588a2c55e22",
       "kinds": [
         "apk"
       ]
@@ -169,7 +169,7 @@
       ]
     },
     "facebook-hushfacebook-v588.0.0.42.55-arm64-v8a": {
-      "hash": "ab6cd215b96e2ca92474dab0e620ea1c",
+      "hash": "15eae0c0832d1b8c988878440572016d",
       "kinds": [
         "apk"
       ]
@@ -182,6 +182,12 @@
     },
     "soundcloud-v4n1x-v2026.11.20-release-arm64-v8a": {
       "hash": "34441199aef56b90b62cbadc37653fa9",
+      "kinds": [
+        "apk"
+      ]
+    },
+    "telegram-hushtelegram-v13.3.1-arm64-v8a": {
+      "hash": "b9a4eebda0b480e645244a46e087e6bf",
       "kinds": [
         "apk"
       ]
