@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-25T01:06:06Z"
+    "publishedAt": "2026-11-25T15:08:28Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -1263,10 +1263,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.10.mpp"
+        "MorpheApp/patches-2.4.0-dev.12.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.10"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.12"
       ],
       "appliedPatches": [
         "Always show Hide",
@@ -1280,6 +1280,7 @@
         "Disable bottom bar auto-hide",
         "Disable home feed auto-refresh",
         "Disable modern home",
+        "Disable post detail swipe",
         "Disable refresh on back to exit",
         "Disable screenshot popup",
         "Download all from gallery",
@@ -1291,13 +1292,18 @@
         "Force system font",
         "Full width feed media",
         "Full-screen reply",
+        "Glass navigation bar",
+        "Hide Answers preview",
         "Hide Ask button",
         "Hide People also search for section",
         "Hide Related Posts section",
         "Hide Trending shelves",
         "Hide Videos for you shelf",
         "Hide ads",
+        "Hide comment flairs and badges",
         "Hide communities shelf",
+        "Hide community highlights",
+        "Hide community menu badge",
         "Hide home tabs",
         "Hide interactive posts",
         "Hide media viewer components",
@@ -1321,15 +1327,17 @@
         "Remove subreddit dialog",
         "Sanitize sharing links",
         "Search hidden profiles",
+        "See-through status bar",
         "Share post content",
         "Show flairs in home feed",
         "Spoof signature",
         "Start as guest",
         "Swipe up for comments",
-        "Tablet grid feed"
+        "Tablet grid feed",
+        "Video playback speed"
       ],
-      "originBuild": "260284",
-      "publishedAt": "2026-11-24T09:52:25Z"
+      "originBuild": "260291",
+      "publishedAt": "2026-11-25T15:08:02Z"
     },
     "sonyliv-android-tv-chiggi-v6.23.1-arm64-v8a.apk": {
       "name": "sonyliv-android-tv-chiggi",
@@ -1603,10 +1611,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.11.mpp"
+        "MorpheApp/patches-2.4.0-dev.12.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.11"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.12"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1738,8 +1746,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260286",
-      "publishedAt": "2026-11-24T15:27:33Z"
+      "originBuild": "260291",
+      "publishedAt": "2026-11-25T15:08:02Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1988,10 +1996,10 @@
       "subVariant": null,
       "packageName": "ch.protonvpn.android",
       "patchSources": [
-        "hxreborn/patches-1.88.0-dev.6.mpp"
+        "hxreborn/patches-1.89.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.88.0-dev.6"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.89.0-dev.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -2009,8 +2017,8 @@
         "Unlock profiles",
         "Unlock split tunneling"
       ],
-      "originBuild": "260290",
-      "publishedAt": "2026-11-25T01:05:53Z"
+      "originBuild": "260291",
+      "publishedAt": "2026-11-25T15:08:02Z"
     },
     "tradingview-tradingview-v1.20.86.0.1002565-arm64-v8a.apk": {
       "name": "tradingview-tradingview",
@@ -2025,13 +2033,13 @@
       "subVariant": null,
       "packageName": "com.tradingview.tradingviewapp",
       "patchSources": [
-        "hxreborn/patches-1.85.0-dev.1.mpp",
-        "mirbyte/patches-1.4.0-dev.3.mpp",
+        "hxreborn/patches-1.89.0-dev.2.mpp",
+        "mirbyte/patches-1.5.0-dev.2.mpp",
         "sahilwasgood/patches-1.3.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.0-dev.1",
-        "https://github.com/mirbyte/morphe-patches/releases/tag/v1.4.0-dev.3",
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.89.0-dev.2",
+        "https://github.com/mirbyte/morphe-patches/releases/tag/v1.5.0-dev.2",
         "https://github.com/sahilwasgood/patches/releases/tag/v1.3.0-dev.1"
       ],
       "appliedPatches": [
@@ -2051,8 +2059,8 @@
         "Strip permissions",
         "Unlock chart features"
       ],
-      "originBuild": "260255",
-      "publishedAt": "2026-11-21T01:26:35Z"
+      "originBuild": "260291",
+      "publishedAt": "2026-11-25T15:08:02Z"
     },
     "truecaller-heval99-v26.45.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
