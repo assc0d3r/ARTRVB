@@ -99,9 +99,10 @@ line pointing anyone after the newest versions or Obtainium adds at NullStore) a
 scope folded once above the build table it covers. A block is keyed by the patch set of
 every kind and arch in the build, so a patch line can carry a scope tag (`module omit`,
 `arm omit`, `arm64 only`, or an explicit audience list) whenever some artifact lacks
-it. Stdlib only, no network, and every collection sorted with a tie-break, because
-unstable order would
-rewrite files whose data did not change. The counters are therefore fetched by the
+it. The key compares sets, not `appliedPatches` array order: a bundle that merely
+reorders its patches does not fork a duplicate block. Stdlib only, no network, and
+every collection sorted with a tie-break, because unstable order would rewrite
+files whose data did not change. The counters are therefore fetched by the
 workflow into a `{tag: {asset: downloads}}` map and passed as `--counts`; without the
 flag the column is not rendered at all, and an app the map never mentions gets an empty
 cell rather than a `0`, because no data is not the same as nobody downloading.
@@ -131,6 +132,34 @@ links stay on the canonical home. Unset writes no second file (the feature is op
 with `RELEASE_REPO` set to `ARCHIVE_REPO` (a step `env:` cannot shadow the runner's
 built-in `GITHUB_REPOSITORY`, so the target is named through a non-reserved variable)
 and `RELEASE_BODY_FILE: build.archive.md`.
+
+## Additive GitHub Discussions build log
+
+### `build_notify_gh.sh` + `notify_gh.sh` + `build_gh_download_table.py`
+
+One discussion per build, titled `Build <tag> · <Stable|Beta> · <UTC date>`, in
+the category named by `GH_BUILDLOG_CATEGORY` (unset means the whole feature is
+off — no written-in default). Telegram and Discord keep their own messages;
+this is the third, durable surface ([decisions/0018](../../docs/decisions/0018-github-discussions-are-an-additive-build-log.md)).
+
+The body is written once: `## 📦 Downloads` first (a `App | Version | APK |
+Module` table rendered from `build.archive.md`, so every link points at the
+permanent mirror and survives pruning of the numbered rvb release), then
+`## 🚨 Build Report` (failure tables from `build_report_failures.sh`'s
+`temp/gh_buildlog/failures.tsv`). Full logs are **not** in the body — they go
+into a `## 📄 Failure Log` comment, one sanitised, safely-fenced `<details>`
+block per app+arch; the comment is created before the body so its
+`#discussioncomment-…` URL can be linked from the failure row, and a retry
+edits the anchored comment instead of posting another. Every discussion gets
+`build_log`, `stable_build`/`beta_build` and (when failures exist) `build_issue` labels; a
+fork without them only warns. Global constants in
+`notify_gh.sh`: `GH_BODY_LIMIT=65000`, `GH_COMMENT_LIMIT=60000` — an oversized
+body fails loudly rather than being truncated. A shipped build without a
+successful archive mirror is an error, never a fallback to rvb links.
+
+Regression test: `.github/traces/test_build_log_gh.sh` (stubbed `gh` and
+`curl`; create/append, body order, archive links, log sanitisation, retry in
+place, unset category, ambiguous title, missing note, oversized body, no-op).
 
 ## Duplicate-build suppression (state branch, not the manifest)
 
