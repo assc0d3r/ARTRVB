@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-26T02:55:04Z"
+    "publishedAt": "2026-11-26T08:15:28Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -3272,16 +3272,18 @@
       "subVariant": null,
       "packageName": "com.teslacoilsw.launcher",
       "patchSources": [
-        "hyzor/patches-1.10.0.mpp"
+        "springfurst/patches-1.0.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/hyzor/hyzor-morphe-patches/releases/tag/v1.10.0"
+        "https://github.com/springfurst/morphe-patches/releases/tag/v1.0.1"
       ],
       "appliedPatches": [
-        "Enable Prime"
+        "Disable telemetry",
+        "Enable Prime",
+        "Remove internet & tracking permissions"
       ],
-      "originBuild": "260251",
-      "publishedAt": "2026-11-20T17:17:22Z"
+      "originBuild": "260297",
+      "publishedAt": "2026-11-26T08:15:12Z"
     },
     "truecaller-heval99-v26.45.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
