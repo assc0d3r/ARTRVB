@@ -132,7 +132,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/youtube/com.google.android.youtube"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "patches-source": "Akash-Sriram/morphe-google-photos",
@@ -174,7 +174,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/spotify/com.spotify.music"
   },
   "Reddit-Morphe": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.reddit.frontpage",
     "app-name": "Reddit",
     "patches-source": "MorpheApp/morphe-patches",
