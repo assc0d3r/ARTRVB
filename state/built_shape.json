@@ -663,7 +663,7 @@
         "arm64-v8a"
       ],
       "cfg": {
-        "patches-source": "hyzor/hyzor-morphe-patches",
+        "patches-source": "springfurst/morphe-patches",
         "brand": "MightyMich",
         "app-name": "Nova Launcher",
         "pkg-name": "com.teslacoilsw.launcher",
