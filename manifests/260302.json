@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260302",
+    "channel": "stable",
+    "publishedAt": "2026-11-26T22:10:20Z"
+  },
+  "files": {
+    "spotify-spicetify-v9.2.4.2644-arm64-v8a.apk": {
+      "name": "spotify-spicetify",
+      "version": "9.2.4.2644",
+      "appKey": "spotify",
+      "appName": "Spotify",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "spicetify",
+      "brandName": "Spicetify",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.spotify.music",
+      "patchSources": [
+        "spicetify/patches-1.3.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/spicetify/morphe-patches/releases/tag/v1.3.0"
+      ],
+      "appliedPatches": [
+        "Clean sharing links",
+        "Hide Home and Browse ads",
+        "Hide Premium tab",
+        "Hide player ad cards",
+        "Pin shortcuts on Home",
+        "Spicetify extensions",
+        "Theme colors"
+      ],
+      "originBuild": "260302",
+      "publishedAt": "2026-11-26T22:10:20Z"
+    }
+  }
+}
