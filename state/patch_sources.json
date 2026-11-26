@@ -9,8 +9,8 @@
     "stable_date": "2026-11-16T01:23:36Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.4.0-dev.14",
-    "beta_date": "2026-11-25T21:56:24Z",
+    "beta": "v2.4.0-dev.15",
+    "beta_date": "2026-11-26T07:52:09Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -161,15 +161,6 @@
     "stable": "v1.88.0",
     "stable_date": "2026-11-25T09:51:08Z"
   },
-  "hyzor/hyzor-morphe-patches": {
-    "beta": "v1.10.2-dev.1",
-    "beta_date": "2026-11-24T14:43:12Z",
-    "blocked": false,
-    "host": "github",
-    "repo": "hyzor/hyzor-morphe-patches",
-    "stable": "v1.10.2",
-    "stable_date": "2026-11-24T15:11:18Z"
-  },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.11.0-dev.2",
     "beta_date": "2026-11-25T20:22:13Z",
@@ -250,5 +241,14 @@
     "repo": "spicetify/morphe-patches",
     "stable": "v1.2.0",
     "stable_date": "2026-10-08T17:58:34Z"
+  },
+  "springfurst/morphe-patches": {
+    "beta": "",
+    "beta_date": "",
+    "blocked": false,
+    "host": "github",
+    "repo": "springfurst/morphe-patches",
+    "stable": "v1.0.1",
+    "stable_date": "2026-11-15T20:26:29Z"
   }
 }

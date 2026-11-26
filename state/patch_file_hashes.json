@@ -127,9 +127,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "dc1c1d4142e8ed030c83780d2537e058",
-      "com.reddit.frontpage": "e1e006db4d7113d8eb0dff6b14cdb99d",
-      "shared": "0d29397ab2146f8cf779114eb5c28afa"
+      "com.google.android.youtube": "186f73957110d9ee6d7717524ab890f6",
+      "com.reddit.frontpage": "37481eb47f3cdf26e3e41d00aa0605f1",
+      "shared": "68538fa20773c87b6443d10f3b68cbdb"
     },
     "stable": {
       "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
@@ -188,6 +188,13 @@
     "stable": {
       "com.spotify.music": "b6c317f930e4db07ba57b9de12b0d0ea",
       "shared": "1b05a35b1fdd2f827b94b270c21363b6"
+    }
+  },
+  "springfurst/morphe-patches": {
+    "beta": {},
+    "stable": {
+      "com.teslacoilsw.launcher": "d41d8cd98f00b204e9800998ecf8427e",
+      "shared": "d41d8cd98f00b204e9800998ecf8427e"
     }
   },
   "sysadmindoc/hushfacebook": {
