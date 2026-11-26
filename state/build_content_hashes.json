@@ -191,6 +191,12 @@
       "kinds": [
         "apk"
       ]
+    },
+    "spotify-spicetify-v9.2.4.2644-arm64-v8a": {
+      "hash": "7968992dc7a70717b41a36220eaa8d19",
+      "kinds": [
+        "apk"
+      ]
     }
   },
   "beta": {
