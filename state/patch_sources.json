@@ -104,8 +104,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.10.0",
-    "stable_date": "2026-11-16T09:03:26Z"
+    "stable": "v2.10.1",
+    "stable_date": "2026-11-27T03:37:26Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",
