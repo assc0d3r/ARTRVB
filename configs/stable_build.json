@@ -159,7 +159,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/x/com.twitter.android"
   },
   "Spotify-Spicetify": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.spotify.music",
     "app-name": "Spotify",
     "patches-source": "spicetify/morphe-patches",
@@ -354,7 +354,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/vesselfinder/com.astrapaging.vff"
   },
   "ProtonVPN-hxreborn": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "ch.protonvpn.android",
     "app-name": "Proton VPN",
     "version": "auto",
@@ -439,7 +439,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pdb-meet-like-minded-friends/pdb.app/"
   },
   "TradingView": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.tradingview.tradingviewapp",
     "app-name": "TradingView",
     "patches-source": "'hxreborn/morphe-patches' 'mirbyte/morphe-patches' 'sahilwasgood/patches'",

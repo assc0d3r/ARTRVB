@@ -76,9 +76,9 @@
       "shared": "04f374d8acb3048557357043c83a097f"
     },
     "stable": {
-      "ch.protonvpn.android": "ae5bfb12557af159519599c85b17e89d",
-      "com.tradingview.tradingviewapp": "7b114c67e4e8a646141f3ea0e3ef3894",
-      "shared": "fa7023c08223475d8a02094c3d435c44"
+      "ch.protonvpn.android": "5eb5c6f8f089b018459d8d46c835cdd4",
+      "com.tradingview.tradingviewapp": "3e84dc7efc4daf9280521a2f1211a377",
+      "shared": "03ee10bbbb20579665be4d1433cb3c3c"
     }
   },
   "hyzor/hyzor-morphe-patches": {

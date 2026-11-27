@@ -158,8 +158,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.88.0",
-    "stable_date": "2026-11-25T09:51:08Z"
+    "stable": "v1.89.0",
+    "stable_date": "2026-11-27T00:23:38Z"
   },
   "ihatenodejs/aidans-patches": {
     "beta": "v1.11.0-dev.2",
