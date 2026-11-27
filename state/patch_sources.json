@@ -9,8 +9,8 @@
     "stable_date": "2026-11-16T01:23:36Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.4.0-dev.15",
-    "beta_date": "2026-11-26T07:52:09Z",
+    "beta": "v2.5.0-dev.2",
+    "beta_date": "2026-11-27T12:31:01Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -104,8 +104,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.10.1",
-    "stable_date": "2026-11-27T03:37:26Z"
+    "stable": "v2.10.2",
+    "stable_date": "2026-11-27T13:49:09Z"
   },
   "browzomje/browzomje-patches": {
     "beta": "v1.16.0-dev.1",

@@ -26,8 +26,8 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "5ff1c78c65697c88566fb641bd4abc7f",
-      "shared": "58348c2490994ab1ef64c810a7dfb752"
+      "com.google.android.apps.maps": "97162041f3c0be92113a7e10440a6f84",
+      "shared": "9cb52e51214a14f78120cd24098fe63b"
     }
   },
   "browzomje/browzomje-patches": {
@@ -127,9 +127,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "186f73957110d9ee6d7717524ab890f6",
-      "com.reddit.frontpage": "37481eb47f3cdf26e3e41d00aa0605f1",
-      "shared": "68538fa20773c87b6443d10f3b68cbdb"
+      "com.google.android.youtube": "961ed817615119b9b001c0f826e8a26b",
+      "com.reddit.frontpage": "955a76ab0f394bd5e89d49827b848df2",
+      "shared": "58df5d245537f1d095baa02c0731440a"
     },
     "stable": {
       "com.google.android.youtube": "186f73957110d9ee6d7717524ab890f6",
