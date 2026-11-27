@@ -1,16 +1,4 @@
 {
   "stable": {},
-  "beta": {
-    "VesselFinder-Heval": {
-      "reason": "retry",
-      "arches": [
-        "arm64-v8a"
-      ],
-      "attempts": 3,
-      "parked": true,
-      "run": 45918403289,
-      "ts": "2026-11-27T00:52:51Z",
-      "cfg": "4c4d823800ab30da65632ffc0da2d6c37ac6e1a8"
-    }
-  }
+  "beta": {}
 }
