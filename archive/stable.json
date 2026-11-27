@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-27T08:22:24Z"
+    "publishedAt": "2026-11-27T14:35:36Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -2556,10 +2556,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.10.1.mpp"
+        "bearinmindcat/patches-2.10.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.1"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.2"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2595,8 +2595,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260304",
-      "publishedAt": "2026-11-27T08:22:03Z"
+      "originBuild": "260306",
+      "publishedAt": "2026-11-27T14:35:15Z"
     },
     "whatsapp-xposed-modules-repo-v2.26.45.94-all.apk": {
       "name": "whatsapp-xposed-modules-repo",
