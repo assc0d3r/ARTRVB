@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-27T14:35:36Z"
+    "publishedAt": "2026-11-28T02:45:29Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -926,16 +926,17 @@
       "subVariant": null,
       "packageName": "pdb.app",
       "patchSources": [
-        "madushas/patches-0.7.0.mpp"
+        "madushas/patches-0.7.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/madushas/pdb_patch/releases/tag/v0.7.0"
+        "https://github.com/madushas/pdb_patch/releases/tag/v0.7.2"
       ],
       "appliedPatches": [
         "Allow standalone install (split-less APK)",
         "Bypass PairIP license check",
         "Chat button on profiles",
         "Disable PairIP license check",
+        "Disable root checks (RootBeer)",
         "Disable trackers",
         "Fix Firebase after re-signing",
         "Fix app icon",
@@ -943,19 +944,21 @@
         "GmsCore support (MicroG)",
         "Mock Pro (client-side)",
         "No profile-visitor limit",
+        "Override certificate pinning",
         "Pdb Extras feature menu",
         "Pdb Extras — resources",
         "Provide Original app certificate",
         "Relocate runtime MMKV copy",
         "Remove ads",
+        "Remove privacy-sensitive permissions",
         "Show profile IDs on names",
         "Soul history",
         "Spoof Widevine / DRM level",
         "Spoof app signature",
         "Spoof install source"
       ],
-      "originBuild": "260251",
-      "publishedAt": "2026-11-20T17:17:22Z"
+      "originBuild": "260310",
+      "publishedAt": "2026-11-28T02:45:11Z"
     },
     "gboard-gboardpatches-module-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-gboardpatches",
