@@ -55,7 +55,7 @@
       ]
     },
     "nova-launcher-mightymich-v89700-arm64-v8a": {
-      "hash": "7b49c839e9a49f408f258fd4cdbdccd4",
+      "hash": "5b99d5f9bab927124103364ef51926a8",
       "kinds": [
         "apk"
       ]
@@ -91,7 +91,7 @@
       ]
     },
     "railone-vipinvip-v2.1.71-arm64-v8a": {
-      "hash": "6db394b3e89fb2be132699470eb0f590",
+      "hash": "68f20261829015fff97834a00b7a11c6",
       "kinds": [
         "apk"
       ]
@@ -163,7 +163,7 @@
       ]
     },
     "truecaller-heval99-v26.45.5-arm64-v8a": {
-      "hash": "e742e3bd2057e8e327187e94256fac74",
+      "hash": "ccf30b11ba2031affc68d3faed59b424",
       "kinds": [
         "apk"
       ]
