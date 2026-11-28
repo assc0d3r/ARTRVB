@@ -111,8 +111,8 @@
   "madushas/pdb_patch": {
     "beta": {},
     "stable": {
-      "pdb.app": "a04b90c9580035ad0d890f085ae82a11",
-      "shared": "7d89c8c51b81ad64c78408797385cff4"
+      "pdb.app": "62f462a94c145145bdb919ec24c3f24f",
+      "shared": "81b1db0acf3d0fc48a7c2df187547191"
     }
   },
   "mirbyte/morphe-patches": {

@@ -16,7 +16,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/pinterest/com.pinterest"
   },
   "Truecaller-heval99": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.truecaller",
     "app-name": "Truecaller",
     "brand": "heval99",
