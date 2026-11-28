@@ -71,9 +71,9 @@
   },
   "hxreborn/morphe-patches": {
     "beta": {
-      "ch.protonvpn.android": "a9a1f651c142a681c8410c9c64b915b7",
-      "com.tradingview.tradingviewapp": "b87654c58b814562613684f2db38437c",
-      "shared": "dd8120b20e896888e74094d6257902e2"
+      "ch.protonvpn.android": "47bd720f8b60c46cb19e53e78d04fb05",
+      "com.tradingview.tradingviewapp": "a01105d267a5d61e5ff09a8d2741b72c",
+      "shared": "7363b85e2cf676db1d79f040eeac9a53"
     },
     "stable": {
       "ch.protonvpn.android": "5eb5c6f8f089b018459d8d46c835cdd4",
@@ -127,9 +127,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.youtube": "961ed817615119b9b001c0f826e8a26b",
-      "com.reddit.frontpage": "955a76ab0f394bd5e89d49827b848df2",
-      "shared": "58df5d245537f1d095baa02c0731440a"
+      "com.google.android.youtube": "5b1dfbc181159acb15bd0903e8423297",
+      "com.reddit.frontpage": "7455b1d12b5b3843421784abe1700509",
+      "shared": "cda4a28daf389fcf9c2a265a0011c814"
     },
     "stable": {
       "com.google.android.youtube": "186f73957110d9ee6d7717524ab890f6",

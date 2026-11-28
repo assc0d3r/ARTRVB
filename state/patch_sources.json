@@ -9,8 +9,8 @@
     "stable_date": "2026-11-16T01:23:36Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.5.0-dev.2",
-    "beta_date": "2026-11-27T12:31:01Z",
+    "beta": "v2.5.0-dev.3",
+    "beta_date": "2026-11-28T08:30:19Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -153,8 +153,8 @@
     "stable_date": ""
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.90.0-dev.1",
-    "beta_date": "2026-11-27T18:54:51Z",
+    "beta": "v1.90.0-dev.2",
+    "beta_date": "2026-11-28T12:48:10Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
