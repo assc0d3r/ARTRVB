@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "kind": "build",
+  "meta": {
+    "build": "260312",
+    "channel": "stable",
+    "publishedAt": "2026-11-28T13:51:18Z"
+  },
+  "files": {
+    "nova-launcher-mightymich-v89700-arm64-v8a.apk": {
+      "name": "nova-launcher-mightymich",
+      "version": "89700",
+      "appKey": "novalauncher",
+      "appName": "Nova Launcher",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "mightymich",
+      "brandName": "MightyMich",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.teslacoilsw.launcher",
+      "patchSources": [
+        "springfurst/patches-1.0.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/springfurst/morphe-patches/releases/tag/v1.0.1"
+      ],
+      "appliedPatches": [
+        "Disable telemetry",
+        "Enable Prime",
+        "Remove internet & tracking permissions"
+      ],
+      "originBuild": "260312",
+      "publishedAt": "2026-11-28T13:51:18Z"
+    },
+    "railone-vipinvip-v2.1.71-arm64-v8a.apk": {
+      "name": "railone-vipinvip",
+      "version": "2.1.71",
+      "appKey": "railone",
+      "appName": "RailOne",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "vipinvip",
+      "brandName": "VipinVIP",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "org.cris.aikyam",
+      "patchSources": [
+        "VipinVIP/patches-1.2.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/VipinVIP/railone-patches/releases/tag/v1.2.2"
+      ],
+      "appliedPatches": [
+        "Allow screenshots",
+        "Bypass USB-debugging detection",
+        "Bypass rjsniffer ADB check",
+        "Bypass signature verification",
+        "Disable native security SDK",
+        "Hide screenshot detection",
+        "Monochrome icon support"
+      ],
+      "originBuild": "260312",
+      "publishedAt": "2026-11-28T13:51:18Z"
+    },
+    "truecaller-heval99-v26.45.5-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.45.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-3.2.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.2.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Hide surveys",
+        "Privacy defaults",
+        "Spoof signature",
+        "Use SMS for verification codes",
+        "Patch settings"
+      ],
+      "originBuild": "260312",
+      "publishedAt": "2026-11-28T13:51:18Z"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-28T02:45:29Z"
+    "publishedAt": "2026-11-28T13:51:39Z"
   },
   "files": {
     "pinterest-browzomje-v14.39.0-arm64-v8a.apk": {
@@ -1342,8 +1342,8 @@
         "Hide screenshot detection",
         "Monochrome icon support"
       ],
-      "originBuild": "260280",
-      "publishedAt": "2026-11-23T15:37:29Z"
+      "originBuild": "260312",
+      "publishedAt": "2026-11-28T13:51:18Z"
     },
     "gboard-combined-experimental-module-v18.5.4.993608717-release-arm64-v8a-arm64-v8a.zip": {
       "name": "gboard-combined-experimental",
@@ -3333,8 +3333,8 @@
         "Enable Prime",
         "Remove internet & tracking permissions"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-11-26T08:15:12Z"
+      "originBuild": "260312",
+      "publishedAt": "2026-11-28T13:51:18Z"
     },
     "truecaller-heval99-v26.45.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -3374,8 +3374,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260271",
-      "publishedAt": "2026-11-22T22:08:44Z"
+      "originBuild": "260312",
+      "publishedAt": "2026-11-28T13:51:18Z"
     },
     "facebook-hushfacebook-v588.0.0.42.55-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
