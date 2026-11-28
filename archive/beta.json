@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-28T13:48:44Z"
+    "publishedAt": "2026-11-28T16:55:46Z"
   },
   "files": {
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
@@ -2075,10 +2075,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-3.3.0-dev.4.mpp"
+        "heval99/patches-3.3.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.3.0-dev.4"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.3.0-dev.5"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -2100,8 +2100,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260309",
-      "publishedAt": "2026-11-28T00:18:36Z"
+      "originBuild": "260313",
+      "publishedAt": "2026-11-28T16:55:26Z"
     },
     "gboard-glyphchemy-v18.6.3.1002251336-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-glyphchemy",
